@@ -8,6 +8,7 @@ const mongoose_1 = __importDefault(require("mongoose"));
 const Player_1 = require("../models/Player");
 const PokemonInstance_1 = require("../models/PokemonInstance");
 const PokemonStats_1 = require("../models/PokemonStats");
+const PokemonDataService_1 = require("./PokemonDataService");
 const POKEMON_NATURES = [
     'Hardy', 'Lonely', 'Brave', 'Adamant', 'Naughty',
     'Bold', 'Docile', 'Relaxed', 'Impish', 'Lax',
@@ -53,7 +54,9 @@ class GameService {
      * 2. Catch Wild Pokemon
      * Generates a new PokemonInstance with random IVs and Nature for the player.
      */
-    static async catchPokemon(playerId, speciesId, baseHp) {
+    static async catchPokemon(playerId, speciesId) {
+        // Step 0: Ensure species exists and get its base stats
+        const staticData = await PokemonDataService_1.PokemonDataService.getPokemonData(speciesId);
         const session = await mongoose_1.default.startSession();
         session.startTransaction();
         try {
@@ -71,6 +74,7 @@ class GameService {
             // Basic HP Calculation (Assuming Level 1 for this scenario, adjust formula per your game's math)
             // Standard Formula at Level 1: floor(0.01 * (2 * Base + IV + floor(0.25 * EV)) * Level) + Level + 10
             const level = 1;
+            const baseHp = staticData.base_hp;
             const calculatedMaxHp = Math.floor(0.01 * (2 * baseHp + ivs.hp) * level) + level + 10;
             // Step 2: Ensure we know if the player has room in their party
             const partyCount = await PokemonInstance_1.PokemonInstanceModel.countDocuments({ owner_id: playerId, is_in_party: true }).session(session);
