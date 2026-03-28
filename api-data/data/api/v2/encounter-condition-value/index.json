@@ -1,0 +1,439 @@
+{
+    "count": 108,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "name": "swarm-yes",
+            "url": "/api/v2/encounter-condition-value/1/"
+        },
+        {
+            "name": "swarm-no",
+            "url": "/api/v2/encounter-condition-value/2/"
+        },
+        {
+            "name": "time-morning",
+            "url": "/api/v2/encounter-condition-value/3/"
+        },
+        {
+            "name": "time-day",
+            "url": "/api/v2/encounter-condition-value/4/"
+        },
+        {
+            "name": "time-night",
+            "url": "/api/v2/encounter-condition-value/5/"
+        },
+        {
+            "name": "radar-on",
+            "url": "/api/v2/encounter-condition-value/6/"
+        },
+        {
+            "name": "radar-off",
+            "url": "/api/v2/encounter-condition-value/7/"
+        },
+        {
+            "name": "slot2-none",
+            "url": "/api/v2/encounter-condition-value/8/"
+        },
+        {
+            "name": "slot2-ruby",
+            "url": "/api/v2/encounter-condition-value/9/"
+        },
+        {
+            "name": "slot2-sapphire",
+            "url": "/api/v2/encounter-condition-value/10/"
+        },
+        {
+            "name": "slot2-emerald",
+            "url": "/api/v2/encounter-condition-value/11/"
+        },
+        {
+            "name": "slot2-firered",
+            "url": "/api/v2/encounter-condition-value/12/"
+        },
+        {
+            "name": "slot2-leafgreen",
+            "url": "/api/v2/encounter-condition-value/13/"
+        },
+        {
+            "name": "radio-off",
+            "url": "/api/v2/encounter-condition-value/14/"
+        },
+        {
+            "name": "radio-hoenn",
+            "url": "/api/v2/encounter-condition-value/15/"
+        },
+        {
+            "name": "radio-sinnoh",
+            "url": "/api/v2/encounter-condition-value/16/"
+        },
+        {
+            "name": "season-spring",
+            "url": "/api/v2/encounter-condition-value/17/"
+        },
+        {
+            "name": "season-summer",
+            "url": "/api/v2/encounter-condition-value/18/"
+        },
+        {
+            "name": "season-autumn",
+            "url": "/api/v2/encounter-condition-value/19/"
+        },
+        {
+            "name": "season-winter",
+            "url": "/api/v2/encounter-condition-value/20/"
+        },
+        {
+            "name": "starter-bulbasaur",
+            "url": "/api/v2/encounter-condition-value/21/"
+        },
+        {
+            "name": "starter-squirtle",
+            "url": "/api/v2/encounter-condition-value/22/"
+        },
+        {
+            "name": "starter-charmander",
+            "url": "/api/v2/encounter-condition-value/23/"
+        },
+        {
+            "name": "starter-chespin",
+            "url": "/api/v2/encounter-condition-value/24/"
+        },
+        {
+            "name": "starter-fennekin",
+            "url": "/api/v2/encounter-condition-value/25/"
+        },
+        {
+            "name": "starter-froakie",
+            "url": "/api/v2/encounter-condition-value/26/"
+        },
+        {
+            "name": "tv-option-blue",
+            "url": "/api/v2/encounter-condition-value/27/"
+        },
+        {
+            "name": "tv-option-red",
+            "url": "/api/v2/encounter-condition-value/28/"
+        },
+        {
+            "name": "story-progress-awakened-beasts",
+            "url": "/api/v2/encounter-condition-value/29/"
+        },
+        {
+            "name": "story-progress-beat-galactic-coronet",
+            "url": "/api/v2/encounter-condition-value/30/"
+        },
+        {
+            "name": "story-progress-oak-eterna-city",
+            "url": "/api/v2/encounter-condition-value/31/"
+        },
+        {
+            "name": "story-progress-vermilion-copycat",
+            "url": "/api/v2/encounter-condition-value/32/"
+        },
+        {
+            "name": "story-progress-met-tornadus-thundurus",
+            "url": "/api/v2/encounter-condition-value/33/"
+        },
+        {
+            "name": "story-progress-beat-elite-four-round-two",
+            "url": "/api/v2/encounter-condition-value/34/"
+        },
+        {
+            "name": "story-progress-hall-of-fame",
+            "url": "/api/v2/encounter-condition-value/35/"
+        },
+        {
+            "name": "story-progress-none",
+            "url": "/api/v2/encounter-condition-value/36/"
+        },
+        {
+            "name": "story-progress-national-dex",
+            "url": "/api/v2/encounter-condition-value/37/"
+        },
+        {
+            "name": "other-none",
+            "url": "/api/v2/encounter-condition-value/38/"
+        },
+        {
+            "name": "other-snorlax-11-beat-league",
+            "url": "/api/v2/encounter-condition-value/39/"
+        },
+        {
+            "name": "other-virtual-console",
+            "url": "/api/v2/encounter-condition-value/40/"
+        },
+        {
+            "name": "story-progress-cure-eldritch-nightmares",
+            "url": "/api/v2/encounter-condition-value/41/"
+        },
+        {
+            "name": "other-talk-to-cynthias-grandmother",
+            "url": "/api/v2/encounter-condition-value/42/"
+        },
+        {
+            "name": "item-none",
+            "url": "/api/v2/encounter-condition-value/43/"
+        },
+        {
+            "name": "item-adamant-orb",
+            "url": "/api/v2/encounter-condition-value/44/"
+        },
+        {
+            "name": "item-lustrous-orb",
+            "url": "/api/v2/encounter-condition-value/45/"
+        },
+        {
+            "name": "item-helix-fossil",
+            "url": "/api/v2/encounter-condition-value/46/"
+        },
+        {
+            "name": "item-dome-fossil",
+            "url": "/api/v2/encounter-condition-value/47/"
+        },
+        {
+            "name": "item-old-amber",
+            "url": "/api/v2/encounter-condition-value/48/"
+        },
+        {
+            "name": "item-root-fossil",
+            "url": "/api/v2/encounter-condition-value/49/"
+        },
+        {
+            "name": "item-claw-fossil",
+            "url": "/api/v2/encounter-condition-value/50/"
+        },
+        {
+            "name": "story-progress-defeat-jupiter",
+            "url": "/api/v2/encounter-condition-value/51/"
+        },
+        {
+            "name": "story-progress-beat-team-galactic-iron-island",
+            "url": "/api/v2/encounter-condition-value/52/"
+        },
+        {
+            "name": "other-correct-password",
+            "url": "/api/v2/encounter-condition-value/53/"
+        },
+        {
+            "name": "story-progress-zephyr-badge",
+            "url": "/api/v2/encounter-condition-value/54/"
+        },
+        {
+            "name": "story-progress-beat-red",
+            "url": "/api/v2/encounter-condition-value/55/"
+        },
+        {
+            "name": "other-received-kanto-starter",
+            "url": "/api/v2/encounter-condition-value/56/"
+        },
+        {
+            "name": "story-progress-receive-tm-from-claire",
+            "url": "/api/v2/encounter-condition-value/57/"
+        },
+        {
+            "name": "other-regirock-regice-registeel-in-party",
+            "url": "/api/v2/encounter-condition-value/58/"
+        },
+        {
+            "name": "weekday-sunday",
+            "url": "/api/v2/encounter-condition-value/59/"
+        },
+        {
+            "name": "weekday-monday",
+            "url": "/api/v2/encounter-condition-value/60/"
+        },
+        {
+            "name": "weekday-tuesday",
+            "url": "/api/v2/encounter-condition-value/61/"
+        },
+        {
+            "name": "weekday-wednesday",
+            "url": "/api/v2/encounter-condition-value/62/"
+        },
+        {
+            "name": "weekday-thursday",
+            "url": "/api/v2/encounter-condition-value/63/"
+        },
+        {
+            "name": "weekday-friday",
+            "url": "/api/v2/encounter-condition-value/64/"
+        },
+        {
+            "name": "weekday-saturday",
+            "url": "/api/v2/encounter-condition-value/65/"
+        },
+        {
+            "name": "first-party-pokemon-high-friendship",
+            "url": "/api/v2/encounter-condition-value/66/"
+        },
+        {
+            "name": "story-progress-defeat-mars",
+            "url": "/api/v2/encounter-condition-value/67/"
+        },
+        {
+            "name": "item-odd-keystone",
+            "url": "/api/v2/encounter-condition-value/68/"
+        },
+        {
+            "name": "other-talked-to-32-people-underground",
+            "url": "/api/v2/encounter-condition-value/69/"
+        },
+        {
+            "name": "story-progress-returned-machine-part",
+            "url": "/api/v2/encounter-condition-value/70/"
+        },
+        {
+            "name": "other-event-arceus-in-party",
+            "url": "/api/v2/encounter-condition-value/71/"
+        },
+        {
+            "name": "special-encounter-couldnt-capture-before",
+            "url": "/api/v2/encounter-condition-value/72/"
+        },
+        {
+            "name": "item-ice-key",
+            "url": "/api/v2/encounter-condition-value/73/"
+        },
+        {
+            "name": "item-iron-key",
+            "url": "/api/v2/encounter-condition-value/74/"
+        },
+        {
+            "name": "story-progress-juniper-cave-of-being",
+            "url": "/api/v2/encounter-condition-value/75/"
+        },
+        {
+            "name": "item-lunar-wing",
+            "url": "/api/v2/encounter-condition-value/76/"
+        },
+        {
+            "name": "story-progress-quake-badge",
+            "url": "/api/v2/encounter-condition-value/77/"
+        },
+        {
+            "name": "item-light-stone",
+            "url": "/api/v2/encounter-condition-value/78/"
+        },
+        {
+            "name": "item-dark-stone",
+            "url": "/api/v2/encounter-condition-value/79/"
+        },
+        {
+            "name": "other-captured-reshiram-or-zekrom",
+            "url": "/api/v2/encounter-condition-value/80/"
+        },
+        {
+            "name": "defeated-ghetsis",
+            "url": "/api/v2/encounter-condition-value/81/"
+        },
+        {
+            "name": "other-found-11-times-roaming",
+            "url": "/api/v2/encounter-condition-value/82/"
+        },
+        {
+            "name": "time-minute-00-to-19",
+            "url": "/api/v2/encounter-condition-value/83/"
+        },
+        {
+            "name": "time-minute-20-to-39",
+            "url": "/api/v2/encounter-condition-value/84/"
+        },
+        {
+            "name": "time-minute-40-to-59",
+            "url": "/api/v2/encounter-condition-value/85/"
+        },
+        {
+            "name": "time-04-00-to-19-59",
+            "url": "/api/v2/encounter-condition-value/86/"
+        },
+        {
+            "name": "time-20-00-to-21-59",
+            "url": "/api/v2/encounter-condition-value/87/"
+        },
+        {
+            "name": "time-21-00-to-03-59",
+            "url": "/api/v2/encounter-condition-value/88/"
+        },
+        {
+            "name": "item-tidal-bell",
+            "url": "/api/v2/encounter-condition-value/89/"
+        },
+        {
+            "name": "item-clear-bell",
+            "url": "/api/v2/encounter-condition-value/90/"
+        },
+        {
+            "name": "story-progress-defeated-groudon-or-kyogre",
+            "url": "/api/v2/encounter-condition-value/91/"
+        },
+        {
+            "name": "other-uxie-mesprit-azelf-in-party",
+            "url": "/api/v2/encounter-condition-value/92/"
+        },
+        {
+            "name": "other-nicknamed-cold-item-regice-regirock-registeel3",
+            "url": "/api/v2/encounter-condition-value/93/"
+        },
+        {
+            "name": "other-dialga-or-palkia-in-party",
+            "url": "/api/v2/encounter-condition-value/94/"
+        },
+        {
+            "name": "other-castform-in-party",
+            "url": "/api/v2/encounter-condition-value/95/"
+        },
+        {
+            "name": "other-level-100-pokemon-in-party",
+            "url": "/api/v2/encounter-condition-value/96/"
+        },
+        {
+            "name": "other-tornadus-thundurus-in-party",
+            "url": "/api/v2/encounter-condition-value/97/"
+        },
+        {
+            "name": "other-reshiram-zekrom-in-party",
+            "url": "/api/v2/encounter-condition-value/98/"
+        },
+        {
+            "name": "other-captured-all-ultra-beasts",
+            "url": "/api/v2/encounter-condition-value/99/"
+        },
+        {
+            "name": "story-progress-finished-looker-sidequest",
+            "url": "/api/v2/encounter-condition-value/100/"
+        },
+        {
+            "name": "story-progress-beat-olivias-trial",
+            "url": "/api/v2/encounter-condition-value/101/"
+        },
+        {
+            "name": "other-raikou-entei-in-party",
+            "url": "/api/v2/encounter-condition-value/102/"
+        },
+        {
+            "name": "other-groudon-kyogre-in-party",
+            "url": "/api/v2/encounter-condition-value/103/"
+        },
+        {
+            "name": "other-dialga-palkia-in-party",
+            "url": "/api/v2/encounter-condition-value/104/"
+        },
+        {
+            "name": "other-scan-qr-code",
+            "url": "/api/v2/encounter-condition-value/105/"
+        },
+        {
+            "name": "other-caught-articuno",
+            "url": "/api/v2/encounter-condition-value/106/"
+        },
+        {
+            "name": "other-caught-zapdos",
+            "url": "/api/v2/encounter-condition-value/107/"
+        },
+        {
+            "name": "other-caught-moltres",
+            "url": "/api/v2/encounter-condition-value/108/"
+        }
+    ]
+}

@@ -1,0 +1,180 @@
+[
+    {
+        "location_area": {
+            "name": "kanto-route-7-area",
+            "url": "/api/v2/location-area/301/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 27,
+                        "method": {
+                            "name": "overworld",
+                            "url": "/api/v2/encounter-method/38/"
+                        },
+                        "min_level": 22
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "kanto-route-8-area",
+            "url": "/api/v2/location-area/302/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 27,
+                        "method": {
+                            "name": "overworld",
+                            "url": "/api/v2/encounter-method/38/"
+                        },
+                        "min_level": 22
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "abundant-shrine-area",
+            "url": "/api/v2/location-area/649/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 4,
+                        "condition_values": [],
+                        "max_level": 50,
+                        "method": {
+                            "name": "grass-spots",
+                            "url": "/api/v2/encounter-method/9/"
+                        },
+                        "min_level": 50
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [],
+                        "max_level": 50,
+                        "method": {
+                            "name": "grass-spots",
+                            "url": "/api/v2/encounter-method/9/"
+                        },
+                        "min_level": 50
+                    }
+                ],
+                "max_chance": 5,
+                "version": {
+                    "name": "black",
+                    "url": "/api/v2/version/17/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 4,
+                        "condition_values": [],
+                        "max_level": 50,
+                        "method": {
+                            "name": "grass-spots",
+                            "url": "/api/v2/encounter-method/9/"
+                        },
+                        "min_level": 50
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [],
+                        "max_level": 50,
+                        "method": {
+                            "name": "grass-spots",
+                            "url": "/api/v2/encounter-method/9/"
+                        },
+                        "min_level": 50
+                    }
+                ],
+                "max_chance": 5,
+                "version": {
+                    "name": "white",
+                    "url": "/api/v2/version/18/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 4,
+                        "condition_values": [],
+                        "max_level": 36,
+                        "method": {
+                            "name": "grass-spots",
+                            "url": "/api/v2/encounter-method/9/"
+                        },
+                        "min_level": 36
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [],
+                        "max_level": 36,
+                        "method": {
+                            "name": "grass-spots",
+                            "url": "/api/v2/encounter-method/9/"
+                        },
+                        "min_level": 36
+                    }
+                ],
+                "max_chance": 5,
+                "version": {
+                    "name": "black-2",
+                    "url": "/api/v2/version/21/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 4,
+                        "condition_values": [],
+                        "max_level": 36,
+                        "method": {
+                            "name": "grass-spots",
+                            "url": "/api/v2/encounter-method/9/"
+                        },
+                        "min_level": 36
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [],
+                        "max_level": 36,
+                        "method": {
+                            "name": "grass-spots",
+                            "url": "/api/v2/encounter-method/9/"
+                        },
+                        "min_level": 36
+                    }
+                ],
+                "max_chance": 5,
+                "version": {
+                    "name": "white-2",
+                    "url": "/api/v2/version/22/"
+                }
+            }
+        ]
+    }
+]

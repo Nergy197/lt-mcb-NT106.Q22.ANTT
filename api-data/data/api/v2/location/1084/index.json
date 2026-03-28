@@ -1,0 +1,33 @@
+{
+    "areas": [],
+    "game_indices": [],
+    "id": 1084,
+    "name": "polar-plaza",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Poste Polaire"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Polar-Platz"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Polar Plaza"
+        }
+    ],
+    "region": {
+        "name": "paldea",
+        "url": "/api/v2/region/10/"
+    }
+}

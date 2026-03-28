@@ -1,0 +1,38 @@
+{
+    "areas": [
+        {
+            "name": "bond-bridge-area",
+            "url": "/api/v2/location-area/515/"
+        }
+    ],
+    "game_indices": [],
+    "id": 508,
+    "name": "bond-bridge",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Pont du Lien"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Bundbr\u00fccke"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Bond Bridge"
+        }
+    ],
+    "region": {
+        "name": "kanto",
+        "url": "/api/v2/region/1/"
+    }
+}

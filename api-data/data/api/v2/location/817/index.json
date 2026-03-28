@@ -1,0 +1,33 @@
+{
+    "areas": [],
+    "game_indices": [],
+    "id": 817,
+    "name": "mesagoza",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Mesaledo"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Mesalona City"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Mesagoza"
+        }
+    ],
+    "region": {
+        "name": "paldea",
+        "url": "/api/v2/region/10/"
+    }
+}

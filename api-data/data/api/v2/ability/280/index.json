@@ -1,0 +1,113 @@
+{
+    "effect_changes": [],
+    "effect_entries": [
+        {
+            "effect": "Le Pok\u00e9mon se charge quand il subit des d\u00e9g\u00e2ts, boostant la puissance de la prochaine capacit\u00e9 de type \u00c9lectrik que le Pok\u00e9mon utilise.",
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "short_effect": "Quand touch\u00e9 par une attaque, la puissance de la prochaine capacit\u00e9 \u00c9lectrik qu\u2019il utilise est doubl\u00e9e."
+        },
+        {
+            "effect": "The Pok\u00e9mon becomes charged when it takes damage, boosting the power of the next Electric-type move the Pok\u00e9mon uses.",
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "short_effect": "When hit by an attack, the power of the next Electric-type move it uses is doubled."
+        }
+    ],
+    "flavor_text_entries": [
+        {
+            "flavor_text": "Si le Pok\u00e9mon subit des d\u00e9g\u00e2ts, il se charge\\nen \u00e9lectricit\u00e9.",
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "version_group": {
+                "name": "scarlet-violet",
+                "url": "/api/v2/version-group/25/"
+            }
+        },
+        {
+            "flavor_text": "The Pok\u00e9mon becomes charged when it takes damage, boosting the power of the next Electric-type move the Pok\u00e9mon uses.",
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "version_group": {
+                "name": "scarlet-violet",
+                "url": "/api/v2/version-group/25/"
+            }
+        }
+    ],
+    "generation": {
+        "name": "generation-ix",
+        "url": "/api/v2/generation/9/"
+    },
+    "id": 280,
+    "is_main_series": true,
+    "name": "electromorphosis",
+    "names": [
+        {
+            "language": {
+                "name": "ja-hrkt",
+                "url": "/api/v2/language/1/"
+            },
+            "name": "\u3067\u3093\u304d\u306b\u304b\u3048\u308b"
+        },
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Grecharge"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Dynamo"
+        },
+        {
+            "language": {
+                "name": "es",
+                "url": "/api/v2/language/7/"
+            },
+            "name": "Dinamo"
+        },
+        {
+            "language": {
+                "name": "it",
+                "url": "/api/v2/language/8/"
+            },
+            "name": "Convertivolt"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Electromorphosis"
+        },
+        {
+            "language": {
+                "name": "ja",
+                "url": "/api/v2/language/11/"
+            },
+            "name": "\u3067\u3093\u304d\u306b\u304b\u3048\u308b"
+        }
+    ],
+    "pokemon": [
+        {
+            "is_hidden": false,
+            "pokemon": {
+                "name": "bellibolt",
+                "url": "/api/v2/pokemon/939/"
+            },
+            "slot": 1
+        }
+    ]
+}

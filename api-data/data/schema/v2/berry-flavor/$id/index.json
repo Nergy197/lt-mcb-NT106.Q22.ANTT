@@ -1,0 +1,46 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "properties": {
+        "berries": {
+            "items": {
+                "properties": {
+                    "berry": {
+                        "$ref": "/schema/v2/named_api_resource.json"
+                    },
+                    "potency": {
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "berry",
+                    "potency"
+                ],
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "contest_type": {
+            "$ref": "/schema/v2/named_api_resource.json"
+        },
+        "id": {
+            "type": "integer"
+        },
+        "name": {
+            "type": "string"
+        },
+        "names": {
+            "items": {
+                "$ref": "/schema/v2/name.json"
+            },
+            "type": "array"
+        }
+    },
+    "required": [
+        "berries",
+        "contest_type",
+        "id",
+        "name",
+        "names"
+    ],
+    "type": "object"
+}

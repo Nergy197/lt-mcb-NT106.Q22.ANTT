@@ -1,0 +1,38 @@
+{
+    "areas": [
+        {
+            "name": "east-lake-axewell-area",
+            "url": "/api/v2/location-area/875/"
+        }
+    ],
+    "game_indices": [],
+    "id": 892,
+    "name": "east-lake-axewell",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Lac Coupenotte Est"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Milza-See (Osten)"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "East Lake Axewell"
+        }
+    ],
+    "region": {
+        "name": "galar",
+        "url": "/api/v2/region/8/"
+    }
+}

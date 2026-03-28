@@ -1,0 +1,38 @@
+{
+    "areas": [
+        {
+            "name": "old-cemetery-area",
+            "url": "/api/v2/location-area/910/"
+        }
+    ],
+    "game_indices": [],
+    "id": 922,
+    "name": "old-cemetery",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Cimeti\u00e8re Ancien"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Uralter Friedhof"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Old Cemetery"
+        }
+    ],
+    "region": {
+        "name": "galar",
+        "url": "/api/v2/region/8/"
+    }
+}

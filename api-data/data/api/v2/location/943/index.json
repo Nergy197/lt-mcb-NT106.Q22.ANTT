@@ -1,0 +1,42 @@
+{
+    "areas": [
+        {
+            "name": "training-lowlands-main",
+            "url": "/api/v2/location-area/936/"
+        },
+        {
+            "name": "training-lowlands-beach",
+            "url": "/api/v2/location-area/937/"
+        }
+    ],
+    "game_indices": [],
+    "id": 943,
+    "name": "training-lowlands",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Plaine des Efforts"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Flei\u00dfebene"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Training Lowlands"
+        }
+    ],
+    "region": {
+        "name": "galar",
+        "url": "/api/v2/region/8/"
+    }
+}

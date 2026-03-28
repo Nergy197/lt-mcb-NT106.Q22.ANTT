@@ -1,0 +1,33 @@
+{
+    "areas": [],
+    "game_indices": [],
+    "id": 849,
+    "name": "paldea-west-province-area-three",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Zone Ouest n\u00b0 3"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Westliche Zone 3"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "West Province (Area Three)"
+        }
+    ],
+    "region": {
+        "name": "paldea",
+        "url": "/api/v2/region/10/"
+    }
+}

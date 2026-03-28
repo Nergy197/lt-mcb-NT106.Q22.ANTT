@@ -1,0 +1,42 @@
+{
+    "areas": [
+        {
+            "name": "rolling-fields-main",
+            "url": "/api/v2/location-area/916/"
+        },
+        {
+            "name": "rolling-fields-2",
+            "url": "/api/v2/location-area/917/"
+        }
+    ],
+    "game_indices": [],
+    "id": 928,
+    "name": "rolling-fields",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Plaine Verdoyante"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Wonnewiesen"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Rolling Fields"
+        }
+    ],
+    "region": {
+        "name": "galar",
+        "url": "/api/v2/region/8/"
+    }
+}

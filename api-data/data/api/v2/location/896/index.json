@@ -1,0 +1,38 @@
+{
+    "areas": [
+        {
+            "name": "frigid-sea-area",
+            "url": "/api/v2/location-area/880/"
+        }
+    ],
+    "game_indices": [],
+    "id": 896,
+    "name": "frigid-sea",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Mer Banquise"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Schollenmeer"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Frigid Sea"
+        }
+    ],
+    "region": {
+        "name": "galar",
+        "url": "/api/v2/region/8/"
+    }
+}

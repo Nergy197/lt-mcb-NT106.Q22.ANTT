@@ -1,0 +1,38 @@
+{
+    "areas": [
+        {
+            "name": "stow-on-side-area",
+            "url": "/api/v2/location-area/932/"
+        }
+    ],
+    "game_indices": [],
+    "id": 939,
+    "name": "stow-on-side",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Old Chister"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Passbeck"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Stow-on-Side"
+        }
+    ],
+    "region": {
+        "name": "galar",
+        "url": "/api/v2/region/8/"
+    }
+}

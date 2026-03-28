@@ -1,0 +1,60 @@
+{
+    "form_name": "",
+    "form_names": [],
+    "form_order": 1,
+    "id": 901,
+    "is_battle_only": false,
+    "is_default": true,
+    "is_mega": false,
+    "name": "ursaluna",
+    "names": [],
+    "order": 1304,
+    "pokemon": {
+        "name": "ursaluna",
+        "url": "/api/v2/pokemon/901/"
+    },
+    "sprites": {
+        "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/901.png",
+        "back_female": null,
+        "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/901.png",
+        "back_shiny_female": null,
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/901.png",
+        "front_female": null,
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/901.png",
+        "front_shiny_female": null,
+        "versions": {
+            "generation-ix": {
+                "scarlet-violet": {
+                    "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ix/scarlet-violet/901.png",
+                    "front_female": null
+                }
+            },
+            "generation-viii": {
+                "brilliant-diamond-shining-pearl": {
+                    "front_default": null,
+                    "front_female": null
+                }
+            }
+        }
+    },
+    "types": [
+        {
+            "slot": 1,
+            "type": {
+                "name": "ground",
+                "url": "/api/v2/type/5/"
+            }
+        },
+        {
+            "slot": 2,
+            "type": {
+                "name": "normal",
+                "url": "/api/v2/type/1/"
+            }
+        }
+    ],
+    "version_group": {
+        "name": "legends-arceus",
+        "url": "/api/v2/version-group/24/"
+    }
+}

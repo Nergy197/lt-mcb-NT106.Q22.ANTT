@@ -1,0 +1,26 @@
+name: update-gql-v1beta2-data
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+jobs:
+  update-gql-v1beta2-data:
+    runs-on: ubuntu-24.04
+    concurrency:
+      group: serial
+      cancel-in-progress: false
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+    steps:
+    - uses: 'actions/checkout@v6'
+
+    - name: 'Update data'
+      run: |-
+        echo "$GCP_STAGING_GRAPHQL1_VM_SSH_PRIVATE_KEY" > pk.key
+        chmod 400 pk.key
+        ssh -o StrictHostKeyChecking=no -i pk.key ga@35.237.228.138 "sudo -i sh -c 'cd pokeapi && make update-graphql-data-prod'"
+      shell: bash
+      env:
+        GCP_STAGING_GRAPHQL1_VM_SSH_PRIVATE_KEY: ${{secrets.GCP_STAGING_GRAPHQL1_VM_SSH_PRIVATE_KEY}}

@@ -1,0 +1,60 @@
+{
+    "form_name": "",
+    "form_names": [],
+    "form_order": 1,
+    "id": 903,
+    "is_battle_only": false,
+    "is_default": true,
+    "is_mega": false,
+    "name": "sneasler",
+    "names": [],
+    "order": 1306,
+    "pokemon": {
+        "name": "sneasler",
+        "url": "/api/v2/pokemon/903/"
+    },
+    "sprites": {
+        "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/903.png",
+        "back_female": null,
+        "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/903.png",
+        "back_shiny_female": null,
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/903.png",
+        "front_female": null,
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/903.png",
+        "front_shiny_female": null,
+        "versions": {
+            "generation-ix": {
+                "scarlet-violet": {
+                    "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ix/scarlet-violet/903.png",
+                    "front_female": null
+                }
+            },
+            "generation-viii": {
+                "brilliant-diamond-shining-pearl": {
+                    "front_default": null,
+                    "front_female": null
+                }
+            }
+        }
+    },
+    "types": [
+        {
+            "slot": 1,
+            "type": {
+                "name": "fighting",
+                "url": "/api/v2/type/2/"
+            }
+        },
+        {
+            "slot": 2,
+            "type": {
+                "name": "poison",
+                "url": "/api/v2/type/4/"
+            }
+        }
+    ],
+    "version_group": {
+        "name": "legends-arceus",
+        "url": "/api/v2/version-group/24/"
+    }
+}

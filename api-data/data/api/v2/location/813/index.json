@@ -1,0 +1,38 @@
+{
+    "areas": [
+        {
+            "name": "hoenn-battle-frontier-area",
+            "url": "/api/v2/location-area/809/"
+        }
+    ],
+    "game_indices": [],
+    "id": 813,
+    "name": "hoenn-battle-frontier",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Zone de Combat"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Kampfzone (Hoenn)"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Hoenn Battle Frontier"
+        }
+    ],
+    "region": {
+        "name": "hoenn",
+        "url": "/api/v2/region/3/"
+    }
+}

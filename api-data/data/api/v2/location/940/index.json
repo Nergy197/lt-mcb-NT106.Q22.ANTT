@@ -1,0 +1,38 @@
+{
+    "areas": [
+        {
+            "name": "three-point-pass-area",
+            "url": "/api/v2/location-area/933/"
+        }
+    ],
+    "game_indices": [],
+    "id": 940,
+    "name": "three-point-pass",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Crois\u00e9e Trois-Voies"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Dreiwegpass"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Three-Point Pass"
+        }
+    ],
+    "region": {
+        "name": "galar",
+        "url": "/api/v2/region/8/"
+    }
+}

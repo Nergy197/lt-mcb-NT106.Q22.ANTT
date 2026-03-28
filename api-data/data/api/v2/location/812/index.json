@@ -1,0 +1,38 @@
+{
+    "areas": [
+        {
+            "name": "faraway-island-area",
+            "url": "/api/v2/location-area/808/"
+        }
+    ],
+    "game_indices": [],
+    "id": 812,
+    "name": "faraway-island",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "\u00cele lointaine"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Ferneiland"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Faraway Island"
+        }
+    ],
+    "region": {
+        "name": "hoenn",
+        "url": "/api/v2/region/3/"
+    }
+}

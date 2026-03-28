@@ -1,0 +1,38 @@
+{
+    "areas": [
+        {
+            "name": "ultra-megalopolis-area",
+            "url": "/api/v2/location-area/1162/"
+        }
+    ],
+    "game_indices": [],
+    "id": 1050,
+    "name": "ultra-megalopolis",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Ultra-M\u00e9galopole"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Ultrametropolis"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Ultra Megalopolis"
+        }
+    ],
+    "region": {
+        "name": "alola",
+        "url": "/api/v2/region/7/"
+    }
+}

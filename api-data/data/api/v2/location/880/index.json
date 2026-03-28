@@ -1,0 +1,38 @@
+{
+    "areas": [
+        {
+            "name": "ballonlea-area",
+            "url": "/api/v2/location-area/860/"
+        }
+    ],
+    "game_indices": [],
+    "id": 880,
+    "name": "ballonlea",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Corrifey"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Fairballey"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Ballonlea"
+        }
+    ],
+    "region": {
+        "name": "galar",
+        "url": "/api/v2/region/8/"
+    }
+}

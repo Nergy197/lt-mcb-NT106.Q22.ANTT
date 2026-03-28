@@ -1,0 +1,87 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "properties": {
+        "encounter_method_rates": {
+            "items": {
+                "properties": {
+                    "encounter_method": {
+                        "$ref": "/schema/v2/named_api_resource.json"
+                    },
+                    "version_details": {
+                        "items": {
+                            "properties": {
+                                "rate": {
+                                    "type": "integer"
+                                },
+                                "version": {
+                                    "$ref": "/schema/v2/named_api_resource.json"
+                                }
+                            },
+                            "required": [
+                                "rate",
+                                "version"
+                            ],
+                            "type": "object"
+                        },
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "encounter_method",
+                    "version_details"
+                ],
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "game_index": {
+            "type": "integer"
+        },
+        "id": {
+            "type": "integer"
+        },
+        "location": {
+            "$ref": "/schema/v2/named_api_resource.json"
+        },
+        "name": {
+            "type": "string"
+        },
+        "names": {
+            "items": {
+                "$ref": "/schema/v2/name.json"
+            },
+            "type": "array"
+        },
+        "pokemon_encounters": {
+            "items": {
+                "properties": {
+                    "pokemon": {
+                        "$ref": "/schema/v2/named_api_resource.json"
+                    },
+                    "version_details": {
+                        "items": {
+                            "$ref": "/schema/v2/version_encounter_detail.json"
+                        },
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "pokemon",
+                    "version_details"
+                ],
+                "type": "object"
+            },
+            "type": "array"
+        }
+    },
+    "required": [
+        "encounter_method_rates",
+        "game_index",
+        "id",
+        "location",
+        "name",
+        "names",
+        "pokemon_encounters"
+    ],
+    "type": "object"
+}

@@ -1,0 +1,38 @@
+{
+    "areas": [
+        {
+            "name": "wedgehurst-area",
+            "url": "/api/v2/location-area/942/"
+        }
+    ],
+    "game_indices": [],
+    "id": 948,
+    "name": "wedgehurst",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Brasswick"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Brassbury"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Wedgehurst"
+        }
+    ],
+    "region": {
+        "name": "galar",
+        "url": "/api/v2/region/8/"
+    }
+}

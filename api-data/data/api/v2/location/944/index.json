@@ -1,0 +1,38 @@
+{
+    "areas": [
+        {
+            "name": "tunnel-to-the-top-area",
+            "url": "/api/v2/location-area/938/"
+        }
+    ],
+    "game_indices": [],
+    "id": 944,
+    "name": "tunnel-to-the-top",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Galeries Monte-Pic"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Aufstiegstunnel"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Tunnel to the Top"
+        }
+    ],
+    "region": {
+        "name": "galar",
+        "url": "/api/v2/region/8/"
+    }
+}

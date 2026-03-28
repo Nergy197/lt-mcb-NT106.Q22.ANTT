@@ -1,0 +1,321 @@
+[
+    {
+        "location_area": {
+            "name": "marvelous-bridge-area",
+            "url": "/api/v2/location-area/622/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [
+                            {
+                                "name": "item-lunar-wing",
+                                "url": "/api/v2/encounter-condition-value/76/"
+                            }
+                        ],
+                        "max_level": 68,
+                        "method": {
+                            "name": "only-one",
+                            "url": "/api/v2/encounter-method/20/"
+                        },
+                        "min_level": 68
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "black-2",
+                    "url": "/api/v2/version/21/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [
+                            {
+                                "name": "item-lunar-wing",
+                                "url": "/api/v2/encounter-condition-value/76/"
+                            }
+                        ],
+                        "max_level": 68,
+                        "method": {
+                            "name": "only-one",
+                            "url": "/api/v2/encounter-method/20/"
+                        },
+                        "min_level": 68
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "white-2",
+                    "url": "/api/v2/version/22/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "roaming-sinnoh-area",
+            "url": "/api/v2/location-area/797/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 25,
+                        "condition_values": [
+                            {
+                                "name": "story-progress-cure-eldritch-nightmares",
+                                "url": "/api/v2/encounter-condition-value/41/"
+                            }
+                        ],
+                        "max_level": 50,
+                        "method": {
+                            "name": "roaming-grass",
+                            "url": "/api/v2/encounter-method/28/"
+                        },
+                        "min_level": 50
+                    },
+                    {
+                        "chance": 25,
+                        "condition_values": [
+                            {
+                                "name": "story-progress-cure-eldritch-nightmares",
+                                "url": "/api/v2/encounter-condition-value/41/"
+                            }
+                        ],
+                        "max_level": 50,
+                        "method": {
+                            "name": "roaming-water",
+                            "url": "/api/v2/encounter-method/29/"
+                        },
+                        "min_level": 50
+                    }
+                ],
+                "max_chance": 50,
+                "version": {
+                    "name": "diamond",
+                    "url": "/api/v2/version/12/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 25,
+                        "condition_values": [
+                            {
+                                "name": "story-progress-cure-eldritch-nightmares",
+                                "url": "/api/v2/encounter-condition-value/41/"
+                            }
+                        ],
+                        "max_level": 50,
+                        "method": {
+                            "name": "roaming-grass",
+                            "url": "/api/v2/encounter-method/28/"
+                        },
+                        "min_level": 50
+                    },
+                    {
+                        "chance": 25,
+                        "condition_values": [
+                            {
+                                "name": "story-progress-cure-eldritch-nightmares",
+                                "url": "/api/v2/encounter-condition-value/41/"
+                            }
+                        ],
+                        "max_level": 50,
+                        "method": {
+                            "name": "roaming-water",
+                            "url": "/api/v2/encounter-method/29/"
+                        },
+                        "min_level": 50
+                    }
+                ],
+                "max_chance": 50,
+                "version": {
+                    "name": "pearl",
+                    "url": "/api/v2/version/13/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 25,
+                        "condition_values": [
+                            {
+                                "name": "story-progress-cure-eldritch-nightmares",
+                                "url": "/api/v2/encounter-condition-value/41/"
+                            }
+                        ],
+                        "max_level": 50,
+                        "method": {
+                            "name": "roaming-grass",
+                            "url": "/api/v2/encounter-method/28/"
+                        },
+                        "min_level": 50
+                    },
+                    {
+                        "chance": 25,
+                        "condition_values": [
+                            {
+                                "name": "story-progress-cure-eldritch-nightmares",
+                                "url": "/api/v2/encounter-condition-value/41/"
+                            }
+                        ],
+                        "max_level": 50,
+                        "method": {
+                            "name": "roaming-water",
+                            "url": "/api/v2/encounter-method/29/"
+                        },
+                        "min_level": 50
+                    }
+                ],
+                "max_chance": 50,
+                "version": {
+                    "name": "platinum",
+                    "url": "/api/v2/version/14/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "ultra-space-wilds-cliff",
+            "url": "/api/v2/location-area/1148/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 60,
+                        "method": {
+                            "name": "only-one",
+                            "url": "/api/v2/encounter-method/20/"
+                        },
+                        "min_level": 60
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "ultra-sun",
+                    "url": "/api/v2/version/29/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 60,
+                        "method": {
+                            "name": "only-one",
+                            "url": "/api/v2/encounter-method/20/"
+                        },
+                        "min_level": 60
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "ultra-moon",
+                    "url": "/api/v2/version/30/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "crescent-isle-area",
+            "url": "/api/v2/location-area/1189/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 50,
+                        "method": {
+                            "name": "only-one",
+                            "url": "/api/v2/encounter-method/20/"
+                        },
+                        "min_level": 50
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "omega-ruby",
+                    "url": "/api/v2/version/25/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 50,
+                        "method": {
+                            "name": "only-one",
+                            "url": "/api/v2/encounter-method/20/"
+                        },
+                        "min_level": 50
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "alpha-sapphire",
+                    "url": "/api/v2/version/26/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "ultra-space-ultra-space-wilds-cliff",
+            "url": "/api/v2/location-area/1195/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 15,
+                        "condition_values": [],
+                        "max_level": 60,
+                        "method": {
+                            "name": "only-one",
+                            "url": "/api/v2/encounter-method/20/"
+                        },
+                        "min_level": 60
+                    }
+                ],
+                "max_chance": 15,
+                "version": {
+                    "name": "ultra-sun",
+                    "url": "/api/v2/version/29/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 15,
+                        "condition_values": [],
+                        "max_level": 60,
+                        "method": {
+                            "name": "only-one",
+                            "url": "/api/v2/encounter-method/20/"
+                        },
+                        "min_level": 60
+                    }
+                ],
+                "max_chance": 15,
+                "version": {
+                    "name": "ultra-moon",
+                    "url": "/api/v2/version/30/"
+                }
+            }
+        ]
+    }
+]

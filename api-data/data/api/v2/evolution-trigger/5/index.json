@@ -1,0 +1,26 @@
+{
+    "id": 5,
+    "name": "spin",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Tourner sur soi-m\u00eame"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Spin"
+        }
+    ],
+    "pokemon_species": [
+        {
+            "name": "alcremie",
+            "url": "/api/v2/pokemon-species/869/"
+        }
+    ]
+}

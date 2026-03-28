@@ -1,0 +1,38 @@
+{
+    "areas": [
+        {
+            "name": "split-decision-ruins-area",
+            "url": "/api/v2/location-area/925/"
+        }
+    ],
+    "game_indices": [],
+    "id": 935,
+    "name": "split-decision-ruins",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Ruines du Choix"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Zwiespaltruinen"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Split-Decision Ruins"
+        }
+    ],
+    "region": {
+        "name": "galar",
+        "url": "/api/v2/region/8/"
+    }
+}

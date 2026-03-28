@@ -1,0 +1,38 @@
+{
+    "areas": [
+        {
+            "name": "path-to-the-peak-area",
+            "url": "/api/v2/location-area/911/"
+        }
+    ],
+    "game_indices": [],
+    "id": 923,
+    "name": "path-to-the-peak",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Sentier Blanche-Cime"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Schneegipfelpfad"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Path to the Peak"
+        }
+    ],
+    "region": {
+        "name": "galar",
+        "url": "/api/v2/region/8/"
+    }
+}
