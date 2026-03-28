@@ -1,5 +1,6 @@
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
+using System.Text.Json.Serialization;
 
 namespace PokemonMMO.Models;
 
@@ -21,10 +22,12 @@ public class PokedexEntry
     public List<string> Types { get; set; } = new();
 
     [BsonElement("base_stats")]
+    [JsonPropertyName("base_stats")]
     public Dictionary<string, int> BaseStats { get; set; } = new();
 
     [BsonElement("sprite_url")]
-    public string Sprite_Url { get; set; } = null!;
+    [JsonPropertyName("sprite_url")]
+    public string SpriteUrl { get; set; } = null!;
 
     // Em thêm luôn 2 ông này cho đủ bộ nhé
     [BsonElement("height")]

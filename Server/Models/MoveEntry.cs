@@ -1,5 +1,6 @@
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
+using System.Text.Json.Serialization;
 
 namespace PokemonMMO.Models;
 
@@ -17,15 +18,18 @@ public class MoveEntry
     public string Name { get; set; } = null!;
 
     [BsonElement("power")]
-    public int Power { get; set; }
+    [JsonPropertyName("power")]
+    public int? Power { get; set; }
 
     [BsonElement("accuracy")]
-    public int Accuracy { get; set; }
+    [JsonPropertyName("accuracy")]
+    public int? Accuracy { get; set; }
 
     [BsonElement("type")]
     public string Type { get; set; } = null!;
 
     // Anh có thể thêm 'pp' vào nếu muốn dùng sau này
     [BsonElement("pp")]
+    [JsonPropertyName("pp")]
     public int PP { get; set; }
 }
