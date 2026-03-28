@@ -1,6 +1,5 @@
 using MongoDB.Driver;
 using PokemonMMO.Models;
-
 namespace PokemonMMO.Data;
 
 /// <summary>
@@ -35,6 +34,12 @@ public class MongoDbContext
 
     public IMongoCollection<PokemonStats> PokemonStats
         => _database.GetCollection<PokemonStats>("pokemonstats");
+
+    public IMongoCollection<PokedexEntry> Pokedex 
+    => _database.GetCollection<PokedexEntry>("pokedex");
+
+    public IMongoCollection<MoveEntry> Moves 
+    => _database.GetCollection<MoveEntry>("moves");
 
     public IMongoCollection<RevokedToken> RevokedTokens
         => _database.GetCollection<RevokedToken>("revoked_tokens");

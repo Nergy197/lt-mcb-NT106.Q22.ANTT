@@ -73,7 +73,8 @@ builder.Services.AddAuthorization();
 builder.Services.AddSingleton<PokemonDataService>();
 builder.Services.AddScoped<GameService>();
 builder.Services.AddScoped<AuthService>();
-
+// ── New services for Pokedex and Moves ─────────────────────────────────────
+builder.Services.AddScoped<PokedexService>();
 // ---------------------------------------------------------------------------
 // MVC Controllers + SignalR
 // ---------------------------------------------------------------------------
