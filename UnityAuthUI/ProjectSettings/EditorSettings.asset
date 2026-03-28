@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!159 &1
+EditorSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 12
+  m_ExternalVersionControlSupport: Hidden Meta Files
+  m_SerializationMode: Force Text
+  m_LineEndingsForNewScripts: OSDefault
+  m_DefaultBehaviorMode: 1
+  m_PrefabRegularReplaceOption: 0
+  m_PrefabUIReplaceOption: 0
+  m_SpritePackerMode: 0
+  m_SpritePackerPaddingPower: 1
+  m_EtcTextureCompressorBehavior: 1
+  m_EtcTextureCompressorTargetFormat: 0
+  m_VideoBitrateMode: 0
+  m_AssetPipelineMode: 1
+  m_AssetPipelineUpdateOnStartup: 0
+  m_AssetPipelineShowProgress: 0
+  m_RefreshCustomNativePluginDependencies: 0
+  m_ShowSerializedFileRefreshProgress: 0
+  m_ShowImportErrors: 1
+  m_HandleAssetFileModificationOnDiskTick: 1
+  m_EnableAsynchronousBuildPipeline: 0
+  m_AssetImportWorkerCount: 1
+  m_CacheServerMode: 0
+  m_CacheServerEndpoint: 
+  m_CacheServerNamespacePrefix: default
+  m_CacheServerEnableDownload: 1
+  m_CacheServerEnableUpload: 1
+  m_CacheServerEnableCloudSearch: 1
+  m_CacheServerCloudSearchTimeout: 5
+  m_CacheServerCloudSearchNamespace: 
+  m_CacheServerCloudSearchExcludeList: 
+  m_DeveloperMode: 0
+  m_EnableAutoRefresh: 1
+  m_RefreshOnFocus: 1
+  m_UseNewFreeTypeExtractor: 1
+  m_UseNewFontAssetImporter: 1
+  m_EnableXRRigBuildWarning: 1
+  m_XRRigBuildWarningMessage: 
+  m_BakeCollisionMeshes: 0
+  m_BakeCollisionMeshesOnStartup: 0
+  m_BakeCollisionMeshesProgress: 0
+  m_DefaultImageExportFormat: 0
+  m_EnterPlayModeOptionsEnabled: 0
+  m_EnterPlayModeOptions: 0
+  m_ActiveInputHandler: 0
+  m_AssetBundlesInEnterPlayMode: 0
+  m_AssetBundlesInEnterPlayModeForceRegenerate: 0
+  m_EditorAssetBundleAssetPaths: []
+  m_AssetBundlesInEnterPlayModeSearchPattern: 
+  m_AssetBundlesInEnterPlayModeIgnorePattern: 
+  m_CodeOptimization: 0
+  m_SecondarySpriteTextures: []
+  m_AssetBundlesInEnterPlayModeExcludePattern: 
+  m_AssetBundlesInEnterPlayModeEnableRecursiveSearch: 0
+  m_AssetBundlesInEnterPlayModeAutoSelectDependencies: 0
+  m_AssetBundlesInEnterPlayModeAutoSelectDependenciesRecursive: 0
+  m_AssetBundlesInEnterPlayModeAutoSelectDependenciesSearchPattern: 
+  m_AssetBundlesInEnterPlayModeAutoSelectDependenciesIgnorePattern: 
+  m_AssetBundlesInEnterPlayModeAutoSelectDependenciesExcludePattern: 
+  m_AssetBundlesInEnterPlayModeAutoSelectDependenciesEnableRecursiveSearch: 0
+  m_AssetBundlesInEnterPlayModeAutoSelectDependenciesAutoSelectDependencies: 0
+  m_AssetBundlesInEnterPlayModeAutoSelectDependenciesAutoSelectDependenciesRecursive: 0
+  m_AssetBundlesInEnterPlayModeAutoSelectDependenciesAutoSelectDependenciesSearchPattern: 
+  m_AssetBundlesInEnterPlayModeAutoSelectDependenciesAutoSelectDependenciesIgnorePattern: 
+  m_AssetBundlesInEnterPlayModeAutoSelectDependenciesAutoSelectDependenciesExcludePattern: 
+  m_AssetBundlesInEnterPlayModeAutoSelectDependenciesAutoSelectDependenciesEnableRecursiveSearch: 0
+  m_AssetBundlesInEnterPlayModeAutoSelectDependenciesAutoSelectDependenciesAutoSelectDependencies: 0
+  m_AssetBundlesInEnterPlayModeAutoSelectDependenciesAutoSelectDependenciesAutoSelectDependenciesRecursive: 0
+  m_AssetBundlesInEnterPlayModeAutoSelectDependenciesAutoSelectDependenciesAutoSelectDependenciesSearchPattern: 
+  m_AssetBundlesInEnterPlayModeAutoSelectDependenciesAutoSelectDependenciesAutoSelectDependenciesIgnorePattern: 
+  m_AssetBundlesInEnterPlayModeAutoSelectDependenciesAutoSelectDependenciesAutoSelectDependenciesExcludePattern: 
+  m_AssetBundlesInEnterPlayModeAutoSelectDependenciesAutoSelectDependenciesAutoSelectDependenciesEnableRecursiveSearch: 0
