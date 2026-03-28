@@ -33,7 +33,7 @@ public class MongoDbContext
         => _database.GetCollection<PokedexEntry>("pokedex");
 
     public IMongoCollection<MoveEntry> Moves 
-    => _database.GetCollection<MoveEntry>("moves");
+        => _database.GetCollection<MoveEntry>("moves");
 
     public IMongoCollection<RevokedToken> RevokedTokens
         => _database.GetCollection<RevokedToken>("revoked_tokens");

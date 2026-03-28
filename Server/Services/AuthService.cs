@@ -80,7 +80,19 @@ public class AuthService
         };
 
         await _db.Accounts.InsertOneAsync(account);
-        _log.LogInformation("[Register] Success — AccountId: {Id}, Username: {Username}", account.Id, account.Username);
+
+        var player = new Player
+        {
+            AccountId = account.Id,
+            Name = account.Username,
+            VP = 0,
+            MMR = 1000,
+            RankedWins = 0,
+            RankedMatches = 0
+        };
+        await _db.Players.InsertOneAsync(player);
+
+        _log.LogInformation("[Register] Success — AccountId: {Id}, Username: {Username}, PlayerId: {PlayerId}", account.Id, account.Username, player.Id);
         return (true, null);
     }
 
@@ -100,9 +112,19 @@ public class AuthService
             return (null, "Username hoặc password không đúng.");
         }
 
+        var player = await _db.Players
+            .Find(p => p.AccountId == account.Id)
+            .FirstOrDefaultAsync();
+
+        if (player is null)
+        {
+            _log.LogWarning("[Login] Failed — Player profile missing for AccountId: {Id}", account.Id);
+            return (null, "Lỗi kết cấu: Tài khoản này chưa có hồ sơ người chơi (Player).");
+        }
+
         var token = GenerateJwt(account);
         _log.LogInformation("[Login] Success — AccountId: {Id}, Username: {Username}", account.Id, account.Username);
-        return (new AuthResponse(token, account.Username, account.Id), null);
+        return (new AuthResponse(token, account.Username, account.Id, player.Id), null);
     }
 
     // ── Logout (blacklist token) ──────────────────────────────────────────────
