@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./logo.png" alt="Pokémon Champions MMO Logo" height="150">
+  <img src="./logo.png" alt="Pokémon Champions MMO Logo" height="200">
 </p>
 <p align="center">
   <img src="https://img.shields.io/badge/Unity-100000?style=flat&logo=unity&logoColor=white" alt="Unity">
