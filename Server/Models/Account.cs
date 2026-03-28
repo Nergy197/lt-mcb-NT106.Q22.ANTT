@@ -23,4 +23,10 @@ public class Account
 
     [BsonElement("created_at")]
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+    [BsonElement("password_reset_token")]
+    public string? PasswordResetToken { get; set; }
+
+    [BsonElement("password_reset_expiry")]
+    public DateTime? PasswordResetExpiry { get; set; }
 }

@@ -36,6 +36,9 @@ public class MongoDbContext
     public IMongoCollection<PokemonStats> PokemonStats
         => _database.GetCollection<PokemonStats>("pokemonstats");
 
+    public IMongoCollection<RevokedToken> RevokedTokens
+        => _database.GetCollection<RevokedToken>("revoked_tokens");
+
     // ── Indexes ──────────────────────────────────────────────────────────
     private void CreateIndexes()
     {
@@ -73,5 +76,10 @@ public class MongoDbContext
         PokemonStats.Indexes.CreateOne(new CreateIndexModel<PokemonStats>(
             Builders<PokemonStats>.IndexKeys.Ascending(s => s.PokemonInstanceId),
             new CreateIndexOptions { Unique = true }));
+
+        // RevokedTokens: TTL index — auto-delete expired tokens after 1 day buffer
+        RevokedTokens.Indexes.CreateOne(new CreateIndexModel<RevokedToken>(
+            Builders<RevokedToken>.IndexKeys.Ascending(r => r.Expiry),
+            new CreateIndexOptions { ExpireAfter = TimeSpan.FromDays(1) }));
     }
 }
