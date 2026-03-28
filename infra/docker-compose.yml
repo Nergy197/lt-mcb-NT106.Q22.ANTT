@@ -1,0 +1,101 @@
+# =============================================================================
+# NT106.Q22.ANTT — Pokémon MMO Server · Local Dev Infrastructure
+# No Dockerfile needed — 100% prebuilt images from Docker Hub
+#
+# Usage:
+#   cp .env.example .env          # copy & edit secrets
+#   docker compose up -d          # start all services
+#   docker compose logs -f server # tail server logs
+#
+# Services:
+#   Game Server:  http://localhost:2567  (ASP.NET Core + SignalR WebSocket)
+#   MongoDB:      localhost:27017       (pokemon_mmo database)
+# =============================================================================
+
+name: nt106-pokemon-mmo
+
+# ─────────────────────────────────────────────────────────────────────────────
+# NETWORKS
+# Single internal bridge — all containers communicate privately
+# ─────────────────────────────────────────────────────────────────────────────
+networks:
+  backend:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.30.0.0/24
+
+# ─────────────────────────────────────────────────────────────────────────────
+# VOLUMES
+# Named volumes persist data across restarts; `docker compose down -v` to wipe
+# ─────────────────────────────────────────────────────────────────────────────
+volumes:
+  mongo_data:
+  nuget_cache:
+
+services:
+
+  # ---------------------------------------------------------------------------
+  # DATABASE — MongoDB 7
+  # Stores: Accounts, Players, PokemonInstances, PokemonStats, PokemonMoves
+  # Data persists in named volume `mongo_data`
+  # ---------------------------------------------------------------------------
+  mongodb:
+    image: mongo:7-jammy
+    container_name: nt106-mongodb
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_DATABASE: ${MONGO_DATABASE:-pokemon_mmo}
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - backend
+    ports:
+      - "${MONGO_PORT:-27017}:27017"
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
+  # ---------------------------------------------------------------------------
+  # GAME SERVER — .NET 8 SDK (C# / ASP.NET Core + SignalR)
+  # Source code is bind-mounted from ../Server (no Dockerfile, no COPY)
+  # NuGet packages cached in named volume to avoid re-downloading
+  # `dotnet watch` enables hot-reload during development
+  # ---------------------------------------------------------------------------
+  server:
+    image: mcr.microsoft.com/dotnet/sdk:8.0
+    container_name: nt106-server
+    restart: unless-stopped
+    working_dir: /app
+    volumes:
+      - ../Server:/app                    # bind-mount source code
+      - nuget_cache:/root/.nuget          # cache NuGet packages across restarts
+    environment:
+      DOTNET_WATCH_RESTART_ON_RUDE_EDIT: "true"
+      ASPNETCORE_ENVIRONMENT: Development
+      PORT: ${SERVER_PORT:-2567}
+      MONGO_URI: mongodb://mongodb:${MONGO_PORT:-27017}
+      MONGO_DATABASE: ${MONGO_DATABASE:-pokemon_mmo}
+    networks:
+      - backend
+    ports:
+      - "${SERVER_PORT:-2567}:${SERVER_PORT:-2567}"
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    command: >
+      bash -c "
+        echo '📦 Restoring NuGet packages...' &&
+        dotnet restore &&
+        echo '🚀 Starting Pokémon MMO Server (hot-reload)...' &&
+        dotnet watch run --no-launch-profile
+      "
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost:${SERVER_PORT:-2567}/ || exit 1"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 45s
