@@ -53,61 +53,6 @@ public class GameService
         return true;
     }
 
-    // ─────────────────────────────────────────────────────────────────────
-    // 2. Catch Wild Pokemon
-    // ─────────────────────────────────────────────────────────────────────
-    public async Task<PokemonInstance> CatchPokemon(string playerId, int speciesId)
-    {
-        // Fetch base stats from PokeAPI
-        var staticData = await _pokeData.GetPokemonData(speciesId);
-
-        // Generate IVs (0–31) and random Nature
-        int GenIV() => _rng.Next(0, 32);
-        var ivs = new StatBlock
-        {
-            Hp = GenIV(), Atk = GenIV(), Def = GenIV(),
-            SpAtk = GenIV(), SpDef = GenIV(), Spd = GenIV()
-        };
-        var nature = Natures[_rng.Next(Natures.Length)];
-
-        // HP formula at level 1
-        const int level = 1;
-        int maxHp = (int)(0.01 * (2 * staticData.BaseHp + ivs.Hp) * level) + level + 10;
-
-        // Check party capacity
-        var partyCount = await _db.PokemonInstances.CountDocumentsAsync(
-            Builders<PokemonInstance>.Filter.And(
-                Builders<PokemonInstance>.Filter.Eq(p => p.OwnerId, playerId),
-                Builders<PokemonInstance>.Filter.Eq(p => p.IsInParty, true)));
-
-        bool inParty = partyCount < 6;
-        int? slot = inParty ? (int)(partyCount + 1) : null;
-
-        // Insert PokemonInstance
-        var newPokemon = new PokemonInstance
-        {
-            OwnerId         = playerId,
-            SpeciesId       = speciesId,
-            Level           = level,
-            Nature          = nature,
-            CurrentHp       = maxHp,
-            MaxHp           = maxHp,
-            IsInParty       = inParty,
-            PartySlot       = slot
-        };
-        await _db.PokemonInstances.InsertOneAsync(newPokemon);
-
-        // Insert PokemonStats (IVs + zeroed EVs)
-        var stats = new PokemonStats
-        {
-            PokemonInstanceId = newPokemon.Id,
-            Ivs = ivs,
-            Evs = new StatBlock()
-        };
-        await _db.PokemonStats.InsertOneAsync(stats);
-
-        return newPokemon;
-    }
 
     // ─────────────────────────────────────────────────────────────────────
     // 3. Secure Trading (Hub) — atomic owner swap
@@ -152,28 +97,20 @@ public class GameService
     }
 
     // ─────────────────────────────────────────────────────────────────────
-    // 4. Boss Gating System (Wilderness)
+    // 4. Boss Gating System (Wilderness) - OBSOLETE
     // ─────────────────────────────────────────────────────────────────────
-    public async Task<bool> CheckCanEnterZone(string playerId, string requiredBossId)
+    public Task<bool> CheckCanEnterZone(string playerId, string requiredBossId)
     {
-        var filter = Builders<Player>.Filter.And(
-            Builders<Player>.Filter.Eq(p => p.Id, playerId),
-            Builders<Player>.Filter.AnyEq(p => p.BeatenBosses, requiredBossId));
-
-        var exists = await _db.Players.Find(filter).AnyAsync();
-        return exists;
+        // Obsolete logic since BeatenBosses is removed in PvP pivot.
+        return Task.FromResult(true);
     }
 
     // ─────────────────────────────────────────────────────────────────────
-    // 5. Defeat Boss — record victory
+    // 5. Defeat Boss — record victory - OBSOLETE
     // ─────────────────────────────────────────────────────────────────────
-    public async Task OnBossDefeated(string playerId, string bossId)
+    public Task OnBossDefeated(string playerId, string bossId)
     {
-        var result = await _db.Players.UpdateOneAsync(
-            Builders<Player>.Filter.Eq(p => p.Id, playerId),
-            Builders<Player>.Update.AddToSet(p => p.BeatenBosses, bossId));
-
-        if (result.MatchedCount == 0)
-            throw new Exception("Player not found");
+        // Obsolete logic since BeatenBosses is removed in PvP pivot.
+        return Task.CompletedTask;
     }
 }
