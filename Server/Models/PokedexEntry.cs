@@ -21,7 +21,7 @@ public class PokedexEntry
     public List<string> Types { get; set; } = new();
 
     [BsonElement("base_stats")]
-    public Dictionary<string, int> Base_Stats { get; set; } = new();
+    public Dictionary<string, int> BaseStats { get; set; } = new();
 
     [BsonElement("sprite_url")]
     public string Sprite_Url { get; set; } = null!;

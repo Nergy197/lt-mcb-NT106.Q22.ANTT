@@ -10,7 +10,7 @@ namespace PokemonMMO.Hubs;
 /// SignalR Hub — replaces the Colyseus GameRoom.
 /// Unity clients connect via WebSocket to /game.
 ///
-/// Client → Server messages:  JoinGame, Move, Heal, CatchPokemon
+/// Client → Server messages:  JoinGame, Move, Heal
 /// Server → Client messages:  PlayerJoined, PlayerLeft, PlayerMoved, PartyUpdated, Error
 /// </summary>
 public class GameHub : Hub
@@ -47,18 +47,15 @@ public class GameHub : Hub
 
         ConnectedPlayers[Context.ConnectionId] = playerId;
 
-        // Join a SignalR group by map name (equivalent to Colyseus room)
-        await Groups.AddToGroupAsync(Context.ConnectionId, player.CurrentMap);
+        // Join a SignalR group for matchmaking lobby
+        await Groups.AddToGroupAsync(Context.ConnectionId, "Lobby");
 
-        // Send player info to all clients on the same map
-        await Clients.Group(player.CurrentMap).SendAsync("PlayerJoined", new
+        // Send player info to lobby
+        await Clients.Group("Lobby").SendAsync("PlayerJoined", new
         {
             sessionId = Context.ConnectionId,
             id        = player.Id,
-            name      = player.Name,
-            x         = player.Position.X,
-            y         = player.Position.Y,
-            z         = player.Position.Z
+            name      = player.Name
         });
 
         // Sync party to caller
@@ -68,22 +65,9 @@ public class GameHub : Hub
     // ─────────────────────────────────────────────────────────────────────
     // Move — broadcast position to all players on same map
     // ─────────────────────────────────────────────────────────────────────
-    public async Task Move(float x, float y, float z)
+    public Task Move(float x, float y, float z)
     {
-        if (!ConnectedPlayers.TryGetValue(Context.ConnectionId, out var playerId))
-            return;
-
-        var player = await _db.Players
-            .Find(Builders<Player>.Filter.Eq(p => p.Id, playerId))
-            .FirstOrDefaultAsync();
-
-        if (player == null) return;
-
-        await Clients.Group(player.CurrentMap).SendAsync("PlayerMoved", new
-        {
-            sessionId = Context.ConnectionId,
-            x, y, z
-        });
+        return Task.CompletedTask; // OBSOLETE
     }
 
     // ─────────────────────────────────────────────────────────────────────
@@ -105,32 +89,6 @@ public class GameHub : Hub
         }
     }
 
-    // ─────────────────────────────────────────────────────────────────────
-    // Catch — catch a wild Pokemon
-    // ─────────────────────────────────────────────────────────────────────
-    public async Task CatchPokemon(int speciesId)
-    {
-        if (!ConnectedPlayers.TryGetValue(Context.ConnectionId, out var playerId))
-            return;
-
-        try
-        {
-            var newPoke = await _gameService.CatchPokemon(playerId, speciesId);
-            await SyncPartyToClient(playerId);
-            await Clients.Caller.SendAsync("PokemonCaught", new
-            {
-                id        = newPoke.Id,
-                speciesId = newPoke.SpeciesId,
-                level     = newPoke.Level,
-                hp        = newPoke.CurrentHp,
-                maxHp     = newPoke.MaxHp
-            });
-        }
-        catch (Exception ex)
-        {
-            await Clients.Caller.SendAsync("Error", $"Catch failed: {ex.Message}");
-        }
-    }
 
     // ─────────────────────────────────────────────────────────────────────
     // Disconnect — equivalent to Colyseus onLeave
@@ -147,7 +105,7 @@ public class GameHub : Hub
 
             if (player != null)
             {
-                await Clients.Group(player.CurrentMap).SendAsync("PlayerLeft", new
+                await Clients.Group("Lobby").SendAsync("PlayerLeft", new
                 {
                     sessionId = Context.ConnectionId
                 });

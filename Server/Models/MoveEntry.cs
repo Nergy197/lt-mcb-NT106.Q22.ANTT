@@ -27,5 +27,5 @@ public class MoveEntry
 
     // Anh có thể thêm 'pp' vào nếu muốn dùng sau này
     [BsonElement("pp")]
-    public int Pp { get; set; }
+    public int PP { get; set; }
 }

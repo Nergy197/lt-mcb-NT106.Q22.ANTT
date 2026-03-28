@@ -29,14 +29,8 @@ public class MongoDbContext
     public IMongoCollection<PokemonInstance> PokemonInstances
         => _database.GetCollection<PokemonInstance>("pokemoninstances");
 
-    public IMongoCollection<PokemonMoves> PokemonMoves
-        => _database.GetCollection<PokemonMoves>("pokemonmoves");
-
-    public IMongoCollection<PokemonStats> PokemonStats
-        => _database.GetCollection<PokemonStats>("pokemonstats");
-
     public IMongoCollection<PokedexEntry> Pokedex 
-    => _database.GetCollection<PokedexEntry>("pokedex");
+        => _database.GetCollection<PokedexEntry>("pokedex");
 
     public IMongoCollection<MoveEntry> Moves 
     => _database.GetCollection<MoveEntry>("moves");
@@ -70,16 +64,14 @@ public class MongoDbContext
                 .Ascending(p => p.OwnerId)
                 .Ascending(p => p.IsInParty)));
 
-        // PokemonMoves: unique compound (pokemon_instance_id + slot)
-        PokemonMoves.Indexes.CreateOne(new CreateIndexModel<PokemonMoves>(
-            Builders<PokemonMoves>.IndexKeys
-                .Ascending(m => m.PokemonInstanceId)
-                .Ascending(m => m.Slot),
+        // Pokedex: unique id
+        Pokedex.Indexes.CreateOne(new CreateIndexModel<PokedexEntry>(
+            Builders<PokedexEntry>.IndexKeys.Ascending(p => p.Id),
             new CreateIndexOptions { Unique = true }));
 
-        // PokemonStats: unique on pokemon_instance_id
-        PokemonStats.Indexes.CreateOne(new CreateIndexModel<PokemonStats>(
-            Builders<PokemonStats>.IndexKeys.Ascending(s => s.PokemonInstanceId),
+        // Moves: unique id
+        Moves.Indexes.CreateOne(new CreateIndexModel<MoveEntry>(
+            Builders<MoveEntry>.IndexKeys.Ascending(m => m.Id),
             new CreateIndexOptions { Unique = true }));
 
         // RevokedTokens: TTL index — auto-delete expired tokens after 1 day buffer

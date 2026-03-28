@@ -5,6 +5,7 @@ namespace PokemonMMO.Models;
 
 /// <summary>
 /// In-game player character — linked to an Account.
+/// Refactored for PvP Esports Matchmaking.
 /// </summary>
 public class Player
 {
@@ -19,30 +20,15 @@ public class Player
     [BsonElement("name")]
     public string Name { get; set; } = null!;
 
-    [BsonElement("money")]
-    public int Money { get; set; } = 0;
+    [BsonElement("vp")]
+    public int VP { get; set; } = 0; // Victory Points
 
-    [BsonElement("current_map")]
-    public string CurrentMap { get; set; } = "PalletTown";
+    [BsonElement("mmr")]
+    public int MMR { get; set; } = 1000; // Matchmaking Rating
 
-    [BsonElement("position")]
-    public Position Position { get; set; } = new();
+    [BsonElement("ranked_wins")]
+    public int RankedWins { get; set; } = 0;
 
-    [BsonElement("beaten_bosses")]
-    public List<string> BeatenBosses { get; set; } = new();
-}
-
-/// <summary>
-/// 3D position in the game world.
-/// </summary>
-public class Position
-{
-    [BsonElement("x")]
-    public float X { get; set; } = 0f;
-
-    [BsonElement("y")]
-    public float Y { get; set; } = 0f;
-
-    [BsonElement("z")]
-    public float Z { get; set; } = 0f;
+    [BsonElement("ranked_matches")]
+    public int RankedMatches { get; set; } = 0;
 }
