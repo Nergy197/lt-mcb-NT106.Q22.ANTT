@@ -156,7 +156,7 @@ public class GameHub : Hub
                 MoveSlot = moveSlot
             };
 
-            _battleService.SubmitAction(battleId, action);
+            await _battleService.SubmitActionAsync(battleId, action);
             await Clients.Caller.SendAsync("ActionAccepted", new
             {
                 battleId,
@@ -165,6 +165,7 @@ public class GameHub : Hub
             });
 
             await NotifyTurnWaiting(battleId);
+            await TryResolveTurn(battleId);
         }
         catch (Exception ex)
         {
@@ -192,7 +193,7 @@ public class GameHub : Hub
                 SwitchIndex = partyIndex
             };
 
-            _battleService.SubmitAction(battleId, action);
+            await _battleService.SubmitActionAsync(battleId, action);
             await Clients.Caller.SendAsync("ActionAccepted", new
             {
                 battleId,
@@ -201,6 +202,7 @@ public class GameHub : Hub
             });
 
             await NotifyTurnWaiting(battleId);
+            await TryResolveTurn(battleId);
         }
         catch (Exception ex)
         {
@@ -274,6 +276,37 @@ public class GameHub : Hub
             turnNumber = battle.TurnNumber,
             ready = isReady,
             submittedPlayerIds = battle.PendingActions.Keys.ToList()
+        });
+    }
+
+    private async Task TryResolveTurn(string battleId)
+    {
+        var result = await _battleService.ResolveTurnIfReadyAsync(battleId);
+        if (result == null)
+            return;
+
+        var battleGroup = GetBattleGroupName(battleId);
+        await Clients.Group(battleGroup).SendAsync("TurnResolved", result);
+
+        if (result.State == BattleState.Ended)
+        {
+            await Clients.Group(battleGroup).SendAsync("BattleEnded", new
+            {
+                result.BattleId,
+                winnerPlayerId = result.WinnerPlayerId,
+                events = result.Events
+            });
+            return;
+        }
+
+        await Clients.Group(battleGroup).SendAsync("BattleUpdated", new
+        {
+            result.BattleId,
+            nextTurnNumber = result.NextTurnNumber,
+            result.ActiveIndex1,
+            result.ActiveIndex2,
+            result.ActiveHp1,
+            result.ActiveHp2
         });
     }
 

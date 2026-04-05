@@ -25,6 +25,9 @@ public class MoveEntry
     [BsonElement("type")]
     public string Type { get; set; } = null!;
 
+    [BsonElement("priority")]
+    public int Priority { get; set; } = 0;
+
     // Anh có thể thêm 'pp' vào nếu muốn dùng sau này
     [BsonElement("pp")]
     public int PP { get; set; }

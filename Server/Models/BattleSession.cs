@@ -1,3 +1,5 @@
+using System.Collections.Concurrent;
+
 namespace PokemonMMO.Models;
 
 public class BattleSession
@@ -16,7 +18,7 @@ public class BattleSession
     public int ActiveIndex2 { get; set; } = 0;
 
     // Key = playerId
-    public Dictionary<string, BattleAction> PendingActions { get; set; } = new();
+    public ConcurrentDictionary<string, BattleAction> PendingActions { get; set; } = new();
 
     public string? WinnerPlayerId { get; set; }
     public DateTime CreatedAtUtc { get; set; } = DateTime.UtcNow;
