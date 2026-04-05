@@ -17,14 +17,16 @@ public class GameHub : Hub
 {
     private readonly MongoDbContext _db;
     private readonly GameService _gameService;
+    private readonly BattleService _battleService;
 
     // In-memory player tracking (sessionId → playerId)
     private static readonly Dictionary<string, string> ConnectedPlayers = new();
 
-    public GameHub(MongoDbContext db, GameService gameService)
+    public GameHub(MongoDbContext db, GameService gameService, BattleService battleService)
     {
         _db = db;
         _gameService = gameService;
+        _battleService = battleService;
     }
 
     // ─────────────────────────────────────────────────────────────────────
@@ -89,6 +91,123 @@ public class GameHub : Hub
         }
     }
 
+    // ─────────────────────────────────────────────────────────────────────
+    // Battle — create a new 1v1 match
+    // ─────────────────────────────────────────────────────────────────────
+    public async Task StartMatch(string opponentPlayerId)
+    {
+        if (!ConnectedPlayers.TryGetValue(Context.ConnectionId, out var myPlayerId))
+        {
+            await Clients.Caller.SendAsync("Error", "You must join game first.");
+            return;
+        }
+
+        var opponentConnectionId = ConnectedPlayers
+            .FirstOrDefault(kv => kv.Value == opponentPlayerId).Key;
+
+        if (string.IsNullOrWhiteSpace(opponentConnectionId))
+        {
+            await Clients.Caller.SendAsync("Error", "Opponent is not online.");
+            return;
+        }
+
+        try
+        {
+            var battle = await _battleService.CreateBattle(myPlayerId, opponentPlayerId);
+            var battleGroup = GetBattleGroupName(battle.BattleId);
+
+            await Groups.AddToGroupAsync(Context.ConnectionId, battleGroup);
+            await Groups.AddToGroupAsync(opponentConnectionId, battleGroup);
+
+            await Clients.Group(battleGroup).SendAsync("BattleStarted", new
+            {
+                battleId = battle.BattleId,
+                player1Id = battle.Player1Id,
+                player2Id = battle.Player2Id,
+                turnNumber = battle.TurnNumber,
+                state = battle.State.ToString(),
+                activeIndex1 = battle.ActiveIndex1,
+                activeIndex2 = battle.ActiveIndex2
+            });
+        }
+        catch (Exception ex)
+        {
+            await Clients.Caller.SendAsync("Error", $"Failed to start match: {ex.Message}");
+        }
+    }
+
+    // ─────────────────────────────────────────────────────────────────────
+    // Battle — choose move action for current turn
+    // ─────────────────────────────────────────────────────────────────────
+    public async Task ChooseMove(string battleId, int moveSlot)
+    {
+        if (!ConnectedPlayers.TryGetValue(Context.ConnectionId, out var playerId))
+        {
+            await Clients.Caller.SendAsync("Error", "You must join game first.");
+            return;
+        }
+
+        try
+        {
+            var action = new BattleAction
+            {
+                PlayerId = playerId,
+                Type = BattleActionType.Move,
+                MoveSlot = moveSlot
+            };
+
+            _battleService.SubmitAction(battleId, action);
+            await Clients.Caller.SendAsync("ActionAccepted", new
+            {
+                battleId,
+                action = "Move",
+                moveSlot
+            });
+
+            await NotifyTurnWaiting(battleId);
+        }
+        catch (Exception ex)
+        {
+            await Clients.Caller.SendAsync("Error", $"Failed to choose move: {ex.Message}");
+        }
+    }
+
+    // ─────────────────────────────────────────────────────────────────────
+    // Battle — switch pokemon action for current turn
+    // ─────────────────────────────────────────────────────────────────────
+    public async Task SwitchPokemon(string battleId, int partyIndex)
+    {
+        if (!ConnectedPlayers.TryGetValue(Context.ConnectionId, out var playerId))
+        {
+            await Clients.Caller.SendAsync("Error", "You must join game first.");
+            return;
+        }
+
+        try
+        {
+            var action = new BattleAction
+            {
+                PlayerId = playerId,
+                Type = BattleActionType.Switch,
+                SwitchIndex = partyIndex
+            };
+
+            _battleService.SubmitAction(battleId, action);
+            await Clients.Caller.SendAsync("ActionAccepted", new
+            {
+                battleId,
+                action = "Switch",
+                partyIndex
+            });
+
+            await NotifyTurnWaiting(battleId);
+        }
+        catch (Exception ex)
+        {
+            await Clients.Caller.SendAsync("Error", $"Failed to switch pokemon: {ex.Message}");
+        }
+    }
+
 
     // ─────────────────────────────────────────────────────────────────────
     // Disconnect — equivalent to Colyseus onLeave
@@ -139,4 +258,24 @@ public class GameHub : Hub
 
         await Clients.Caller.SendAsync("PartyUpdated", partyData);
     }
+
+    private async Task NotifyTurnWaiting(string battleId)
+    {
+        var battle = _battleService.GetBattle(battleId);
+        if (battle == null)
+            return;
+
+        var isReady = _battleService.IsTurnReady(battleId);
+        var battleGroup = GetBattleGroupName(battleId);
+
+        await Clients.Group(battleGroup).SendAsync("TurnWaiting", new
+        {
+            battleId,
+            turnNumber = battle.TurnNumber,
+            ready = isReady,
+            submittedPlayerIds = battle.PendingActions.Keys.ToList()
+        });
+    }
+
+    private static string GetBattleGroupName(string battleId) => $"battle:{battleId}";
 }
