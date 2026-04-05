@@ -11,6 +11,105 @@ public class BattleService
     private static readonly ConcurrentDictionary<string, BattleSession> _battles = new();
     private static readonly ConcurrentDictionary<string, SemaphoreSlim> _battleLocks = new();
     private static readonly Random _rng = new();
+    private const int WinnerMmrGain = 25;
+    private const int LoserMmrLoss = 20;
+    private const int WinnerVpGain = 10;
+
+    // Only store non-1.0 multipliers.
+    private static readonly Dictionary<string, Dictionary<string, double>> TypeEffectiveness =
+        new(StringComparer.OrdinalIgnoreCase)
+        {
+            ["normal"] = new(StringComparer.OrdinalIgnoreCase)
+            {
+                ["rock"] = 0.5, ["ghost"] = 0.0, ["steel"] = 0.5
+            },
+            ["fire"] = new(StringComparer.OrdinalIgnoreCase)
+            {
+                ["fire"] = 0.5, ["water"] = 0.5, ["grass"] = 2.0, ["ice"] = 2.0,
+                ["bug"] = 2.0, ["rock"] = 0.5, ["dragon"] = 0.5, ["steel"] = 2.0
+            },
+            ["water"] = new(StringComparer.OrdinalIgnoreCase)
+            {
+                ["fire"] = 2.0, ["water"] = 0.5, ["grass"] = 0.5, ["ground"] = 2.0,
+                ["rock"] = 2.0, ["dragon"] = 0.5
+            },
+            ["electric"] = new(StringComparer.OrdinalIgnoreCase)
+            {
+                ["water"] = 2.0, ["electric"] = 0.5, ["grass"] = 0.5,
+                ["ground"] = 0.0, ["flying"] = 2.0, ["dragon"] = 0.5
+            },
+            ["grass"] = new(StringComparer.OrdinalIgnoreCase)
+            {
+                ["fire"] = 0.5, ["water"] = 2.0, ["grass"] = 0.5, ["poison"] = 0.5,
+                ["ground"] = 2.0, ["flying"] = 0.5, ["bug"] = 0.5, ["rock"] = 2.0,
+                ["dragon"] = 0.5, ["steel"] = 0.5
+            },
+            ["ice"] = new(StringComparer.OrdinalIgnoreCase)
+            {
+                ["fire"] = 0.5, ["water"] = 0.5, ["grass"] = 2.0, ["ground"] = 2.0,
+                ["flying"] = 2.0, ["dragon"] = 2.0, ["steel"] = 0.5, ["ice"] = 0.5
+            },
+            ["fighting"] = new(StringComparer.OrdinalIgnoreCase)
+            {
+                ["normal"] = 2.0, ["ice"] = 2.0, ["poison"] = 0.5, ["flying"] = 0.5,
+                ["psychic"] = 0.5, ["bug"] = 0.5, ["rock"] = 2.0, ["ghost"] = 0.0,
+                ["dark"] = 2.0, ["steel"] = 2.0, ["fairy"] = 0.5
+            },
+            ["poison"] = new(StringComparer.OrdinalIgnoreCase)
+            {
+                ["grass"] = 2.0, ["poison"] = 0.5, ["ground"] = 0.5, ["rock"] = 0.5,
+                ["ghost"] = 0.5, ["steel"] = 0.0, ["fairy"] = 2.0
+            },
+            ["ground"] = new(StringComparer.OrdinalIgnoreCase)
+            {
+                ["fire"] = 2.0, ["electric"] = 2.0, ["grass"] = 0.5, ["poison"] = 2.0,
+                ["flying"] = 0.0, ["bug"] = 0.5, ["rock"] = 2.0, ["steel"] = 2.0
+            },
+            ["flying"] = new(StringComparer.OrdinalIgnoreCase)
+            {
+                ["electric"] = 0.5, ["grass"] = 2.0, ["fighting"] = 2.0,
+                ["bug"] = 2.0, ["rock"] = 0.5, ["steel"] = 0.5
+            },
+            ["psychic"] = new(StringComparer.OrdinalIgnoreCase)
+            {
+                ["fighting"] = 2.0, ["poison"] = 2.0, ["psychic"] = 0.5,
+                ["dark"] = 0.0, ["steel"] = 0.5
+            },
+            ["bug"] = new(StringComparer.OrdinalIgnoreCase)
+            {
+                ["fire"] = 0.5, ["grass"] = 2.0, ["fighting"] = 0.5, ["poison"] = 0.5,
+                ["flying"] = 0.5, ["psychic"] = 2.0, ["ghost"] = 0.5, ["dark"] = 2.0,
+                ["steel"] = 0.5, ["fairy"] = 0.5
+            },
+            ["rock"] = new(StringComparer.OrdinalIgnoreCase)
+            {
+                ["fire"] = 2.0, ["ice"] = 2.0, ["fighting"] = 0.5, ["ground"] = 0.5,
+                ["flying"] = 2.0, ["bug"] = 2.0, ["steel"] = 0.5
+            },
+            ["ghost"] = new(StringComparer.OrdinalIgnoreCase)
+            {
+                ["normal"] = 0.0, ["psychic"] = 2.0, ["ghost"] = 2.0, ["dark"] = 0.5
+            },
+            ["dragon"] = new(StringComparer.OrdinalIgnoreCase)
+            {
+                ["dragon"] = 2.0, ["steel"] = 0.5, ["fairy"] = 0.0
+            },
+            ["dark"] = new(StringComparer.OrdinalIgnoreCase)
+            {
+                ["fighting"] = 0.5, ["psychic"] = 2.0, ["ghost"] = 2.0,
+                ["dark"] = 0.5, ["fairy"] = 0.5
+            },
+            ["steel"] = new(StringComparer.OrdinalIgnoreCase)
+            {
+                ["fire"] = 0.5, ["water"] = 0.5, ["electric"] = 0.5, ["ice"] = 2.0,
+                ["rock"] = 2.0, ["fairy"] = 2.0, ["steel"] = 0.5
+            },
+            ["fairy"] = new(StringComparer.OrdinalIgnoreCase)
+            {
+                ["fire"] = 0.5, ["fighting"] = 2.0, ["poison"] = 0.5,
+                ["dragon"] = 2.0, ["dark"] = 2.0, ["steel"] = 0.5
+            }
+        };
 
     public BattleService(MongoDbContext db)
     {
@@ -132,9 +231,27 @@ public class BattleService
             battle.PendingActions.Clear();
             if (battle.State == BattleState.Running)
                 battle.TurnNumber++;
+            else
+            {
+                try
+                {
+                    await PersistBattleOutcomeAsync(battle, result.Events);
+                }
+                catch (Exception ex)
+                {
+                    result.Events.Add($"Failed to persist battle result: {ex.Message}");
+                }
+            }
 
             result.NextTurnNumber = battle.TurnNumber;
             PopulateResultSnapshot(result, battle);
+
+            if (battle.State == BattleState.Ended)
+            {
+                _battles.TryRemove(battle.BattleId, out _);
+                _battleLocks.TryRemove(battle.BattleId, out _);
+            }
+
             return result;
         }
         finally
@@ -226,11 +343,8 @@ public class BattleService
             return 0;
 
         var entry = await _db.Pokedex.Find(p => p.Id == active.SpeciesId).FirstOrDefaultAsync();
-        var baseSpeed = 50;
-        if (entry?.BaseStats is not null && entry.BaseStats.TryGetValue("spd", out var spd))
-            baseSpeed = spd;
-
-        return Math.Max(1, baseSpeed + active.Level);
+        var baseSpeed = GetBaseStat(entry, "spd", "speed");
+        return CalculateBattleStat(baseSpeed, active.Level);
     }
 
     private async Task ApplyActionAsync(BattleSession battle, BattleAction action, List<string> events)
@@ -314,10 +428,21 @@ public class BattleService
         }
 
         selectedMove.CurrentPp = Math.Max(0, selectedMove.CurrentPp - 1);
-        var move = await _db.Moves.Find(m => m.Id == selectedMove.MoveId).FirstOrDefaultAsync();
+        var move = await _db.Moves.Find(m => m.Id == selectedMove.MoveId).FirstOrDefaultAsync()
+            ?? new MoveEntry
+            {
+                Id = selectedMove.MoveId,
+                Name = $"Move#{selectedMove.MoveId}",
+                Power = 40,
+                Accuracy = 100,
+                Type = "normal",
+                Priority = 0,
+                Category = "Physical",
+                PP = 10
+            };
 
-        var moveName = move?.Name ?? $"Move#{selectedMove.MoveId}";
-        var accuracy = Math.Clamp(move?.Accuracy ?? 100, 1, 100);
+        var moveName = move.Name;
+        var accuracy = Math.Clamp(move.Accuracy, 1, 100);
         var roll = _rng.Next(1, 101);
 
         if (roll > accuracy)
@@ -334,17 +459,27 @@ public class BattleService
             return;
         }
 
-        var power = Math.Max(0, move?.Power ?? 40);
-        if (power == 0)
+        var category = NormalizeCategory(move.Category);
+        var power = Math.Max(0, move.Power);
+        if (category == "status" || power == 0)
         {
             events.Add($"[{GetDisplayName(attacker)}] used {moveName}. (No direct damage)");
             return;
         }
 
-        var damage = CalculateDamage(attacker.Level, power);
+        var damageOutcome = await CalculateDamageAsync(attacker, defender, move);
+        var damage = damageOutcome.Damage;
         defender.CurrentHp = Math.Max(0, defender.CurrentHp - damage);
+
         events.Add(
             $"[{GetDisplayName(attacker)}] used {moveName} on [{GetDisplayName(defender)}] for {damage} damage.");
+
+        if (damageOutcome.TypeMultiplier == 0)
+            events.Add("It had no effect.");
+        else if (damageOutcome.TypeMultiplier >= 2)
+            events.Add("It's super effective!");
+        else if (damageOutcome.TypeMultiplier > 0 && damageOutcome.TypeMultiplier < 1)
+            events.Add("It's not very effective...");
 
         if (!defender.IsFainted)
             return;
@@ -353,12 +488,46 @@ public class BattleService
         TryAutoSwitch(battle, defenderPlayerId, events);
     }
 
-    private static int CalculateDamage(int attackerLevel, int movePower)
+    private async Task<DamageOutcome> CalculateDamageAsync(
+        BattlePokemonSnapshot attacker,
+        BattlePokemonSnapshot defender,
+        MoveEntry move)
     {
-        var baseDamage = ((2 * Math.Max(1, attackerLevel) / 5.0) + 2) * Math.Max(1, movePower) / 10.0;
+        var attackerEntry = await _db.Pokedex.Find(p => p.Id == attacker.SpeciesId).FirstOrDefaultAsync();
+        var defenderEntry = await _db.Pokedex.Find(p => p.Id == defender.SpeciesId).FirstOrDefaultAsync();
+
+        var moveType = NormalizeType(move.Type);
+        var attackerTypes = attackerEntry?.Types ?? new List<string>();
+        var defenderTypes = defenderEntry?.Types ?? new List<string>();
+
+        var typeMultiplier = GetTypeMultiplier(moveType, defenderTypes);
+        if (typeMultiplier <= 0)
+            return new DamageOutcome(0, 0, 1, typeMultiplier);
+
+        var category = NormalizeCategory(move.Category);
+
+        var attackBaseStat = category == "special"
+            ? GetBaseStat(attackerEntry, "spatk", "special-attack", "special_attack")
+            : GetBaseStat(attackerEntry, "atk", "attack");
+
+        var defenseBaseStat = category == "special"
+            ? GetBaseStat(defenderEntry, "spdef", "special-defense", "special_defense")
+            : GetBaseStat(defenderEntry, "def", "defense");
+
+        var attackStat = CalculateBattleStat(attackBaseStat, attacker.Level);
+        var defenseStat = CalculateBattleStat(defenseBaseStat, defender.Level);
+        var level = Math.Max(1, attacker.Level);
+        var power = Math.Max(1, move.Power);
+
+        var baseDamage = (((2d * level / 5d) + 2d) * power * attackStat / Math.Max(1, defenseStat)) / 50d + 2d;
+        var hasStab = attackerTypes.Any(t => NormalizeType(t) == moveType);
+        var stab = hasStab ? 1.5 : 1.0;
         var randomFactor = BattleRules.DamageRandomMin
             + (_rng.NextDouble() * (BattleRules.DamageRandomMax - BattleRules.DamageRandomMin));
-        return Math.Max(1, (int)Math.Round((baseDamage + 2) * randomFactor));
+
+        var modifier = stab * typeMultiplier * randomFactor;
+        var damage = Math.Max(1, (int)Math.Floor(baseDamage * modifier));
+        return new DamageOutcome(damage, attackStat, defenseStat, typeMultiplier);
     }
 
     private static void TryAutoSwitch(BattleSession battle, string playerId, List<string> events)
@@ -396,6 +565,41 @@ public class BattleService
 
         battle.WinnerPlayerId = player2Defeated ? battle.Player1Id : battle.Player2Id;
         events.Add($"Battle ended. Winner: {battle.WinnerPlayerId}");
+    }
+
+    private async Task PersistBattleOutcomeAsync(BattleSession battle, List<string> events)
+    {
+        var player1Filter = Builders<Player>.Filter.Eq(p => p.Id, battle.Player1Id);
+        var player2Filter = Builders<Player>.Filter.Eq(p => p.Id, battle.Player2Id);
+
+        if (string.IsNullOrWhiteSpace(battle.WinnerPlayerId))
+        {
+            var drawUpdate = Builders<Player>.Update.Inc(p => p.RankedMatches, 1);
+            await _db.Players.UpdateOneAsync(player1Filter, drawUpdate);
+            await _db.Players.UpdateOneAsync(player2Filter, drawUpdate);
+            events.Add("Ranked result persisted (draw).");
+            return;
+        }
+
+        var winnerId = battle.WinnerPlayerId;
+        var loserId = winnerId == battle.Player1Id ? battle.Player2Id : battle.Player1Id;
+
+        var winnerFilter = Builders<Player>.Filter.Eq(p => p.Id, winnerId);
+        var loserFilter = Builders<Player>.Filter.Eq(p => p.Id, loserId);
+
+        var winnerUpdate = Builders<Player>.Update
+            .Inc(p => p.RankedMatches, 1)
+            .Inc(p => p.RankedWins, 1)
+            .Inc(p => p.MMR, WinnerMmrGain)
+            .Inc(p => p.VP, WinnerVpGain);
+
+        var loserUpdate = Builders<Player>.Update
+            .Inc(p => p.RankedMatches, 1)
+            .Inc(p => p.MMR, -LoserMmrLoss);
+
+        await _db.Players.UpdateOneAsync(winnerFilter, winnerUpdate);
+        await _db.Players.UpdateOneAsync(loserFilter, loserUpdate);
+        events.Add($"Ranked result persisted (winner +{WinnerMmrGain} MMR, loser -{LoserMmrLoss} MMR).");
     }
 
     private static void PopulateResultSnapshot(BattleTurnResult result, BattleSession battle)
@@ -454,6 +658,66 @@ public class BattleService
             ? $"Pokemon#{pokemon.SpeciesId}"
             : pokemon.Nickname;
 
+    private static int GetBaseStat(PokedexEntry? entry, params string[] keys)
+    {
+        if (entry?.BaseStats == null || entry.BaseStats.Count == 0)
+            return 50;
+
+        foreach (var key in keys)
+        {
+            if (entry.BaseStats.TryGetValue(key, out var value))
+                return value;
+        }
+
+        foreach (var pair in entry.BaseStats)
+        {
+            foreach (var key in keys)
+            {
+                if (string.Equals(pair.Key, key, StringComparison.OrdinalIgnoreCase))
+                    return pair.Value;
+            }
+        }
+
+        return 50;
+    }
+
+    private static int CalculateBattleStat(int baseStat, int level)
+        => Math.Max(1, ((2 * Math.Max(1, baseStat) * Math.Max(1, level)) / 100) + 5);
+
+    private static string NormalizeType(string? type)
+        => string.IsNullOrWhiteSpace(type) ? "normal" : type.Trim().ToLowerInvariant();
+
+    private static string NormalizeCategory(string? category)
+    {
+        if (string.IsNullOrWhiteSpace(category))
+            return "physical";
+
+        var normalized = category.Trim().ToLowerInvariant();
+        if (normalized.Contains("special"))
+            return "special";
+        if (normalized.Contains("status"))
+            return "status";
+        return "physical";
+    }
+
+    private static double GetTypeMultiplier(string moveType, IEnumerable<string> defenderTypes)
+    {
+        var normalizedMoveType = NormalizeType(moveType);
+        var multiplier = 1.0;
+
+        foreach (var defenderType in defenderTypes)
+        {
+            var normalizedDefType = NormalizeType(defenderType);
+            if (!TypeEffectiveness.TryGetValue(normalizedMoveType, out var vsTable))
+                continue;
+
+            if (vsTable.TryGetValue(normalizedDefType, out var value))
+                multiplier *= value;
+        }
+
+        return multiplier;
+    }
+
     private static void ValidateAction(BattleAction action)
     {
         if (action.Type == BattleActionType.Move)
@@ -473,4 +737,5 @@ public class BattleService
     }
 
     private record OrderedAction(BattleAction Action, int Priority, int Speed, int Tiebreaker);
+    private record DamageOutcome(int Damage, int AttackStat, int DefenseStat, double TypeMultiplier);
 }

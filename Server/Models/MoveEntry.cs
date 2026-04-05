@@ -28,6 +28,9 @@ public class MoveEntry
     [BsonElement("priority")]
     public int Priority { get; set; } = 0;
 
+    [BsonElement("category")]
+    public string Category { get; set; } = "Physical";
+
     // Anh có thể thêm 'pp' vào nếu muốn dùng sau này
     [BsonElement("pp")]
     public int PP { get; set; }
