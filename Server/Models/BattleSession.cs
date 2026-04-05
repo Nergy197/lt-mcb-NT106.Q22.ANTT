@@ -20,6 +20,7 @@ public class BattleSession
     // Key = playerId
     public ConcurrentDictionary<string, BattleAction> PendingActions { get; set; } = new();
 
+    public DateTime TurnDeadlineUtc { get; set; } = DateTime.UtcNow.AddSeconds(BattleRules.TurnTimeoutSeconds);
     public string? WinnerPlayerId { get; set; }
     public DateTime CreatedAtUtc { get; set; } = DateTime.UtcNow;
 }

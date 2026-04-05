@@ -125,6 +125,8 @@ public class GameHub : Hub
                 player1Id = battle.Player1Id,
                 player2Id = battle.Player2Id,
                 turnNumber = battle.TurnNumber,
+                turnTimeoutSeconds = BattleRules.TurnTimeoutSeconds,
+                turnDeadlineUtc = battle.TurnDeadlineUtc,
                 state = battle.State.ToString(),
                 activeIndex1 = battle.ActiveIndex1,
                 activeIndex2 = battle.ActiveIndex2
@@ -210,6 +212,15 @@ public class GameHub : Hub
         }
     }
 
+    // ─────────────────────────────────────────────────────────────────────
+    // Battle — client heartbeat to trigger timeout resolution
+    // ─────────────────────────────────────────────────────────────────────
+    public async Task SyncBattle(string battleId)
+    {
+        await TryResolveTurn(battleId);
+        await NotifyTurnWaiting(battleId);
+    }
+
 
     // ─────────────────────────────────────────────────────────────────────
     // Disconnect — equivalent to Colyseus onLeave
@@ -229,6 +240,18 @@ public class GameHub : Hub
                 await Clients.Group("Lobby").SendAsync("PlayerLeft", new
                 {
                     sessionId = Context.ConnectionId
+                });
+            }
+
+            var forfeitResult = await _battleService.ForfeitPlayerAsync(playerId, "Disconnected");
+            if (forfeitResult != null)
+            {
+                var battleGroup = GetBattleGroupName(forfeitResult.BattleId);
+                await Clients.Group(battleGroup).SendAsync("BattleEnded", new
+                {
+                    forfeitResult.BattleId,
+                    winnerPlayerId = forfeitResult.WinnerPlayerId,
+                    events = forfeitResult.Events
                 });
             }
 
@@ -275,6 +298,7 @@ public class GameHub : Hub
             battleId,
             turnNumber = battle.TurnNumber,
             ready = isReady,
+            turnDeadlineUtc = battle.TurnDeadlineUtc,
             submittedPlayerIds = battle.PendingActions.Keys.ToList()
         });
     }
@@ -303,6 +327,7 @@ public class GameHub : Hub
         {
             result.BattleId,
             nextTurnNumber = result.NextTurnNumber,
+            turnDeadlineUtc = _battleService.GetBattle(result.BattleId)?.TurnDeadlineUtc,
             result.ActiveIndex1,
             result.ActiveIndex2,
             result.ActiveHp1,

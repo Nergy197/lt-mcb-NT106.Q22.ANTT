@@ -139,7 +139,8 @@ public class BattleService
             Team1 = snapshots1,
             Team2 = snapshots2,
             ActiveIndex1 = FindFirstAliveIndex(snapshots1),
-            ActiveIndex2 = FindFirstAliveIndex(snapshots2)
+            ActiveIndex2 = FindFirstAliveIndex(snapshots2),
+            TurnDeadlineUtc = DateTime.UtcNow.AddSeconds(BattleRules.TurnTimeoutSeconds)
         };
 
         if (session.ActiveIndex1 < 0 || session.ActiveIndex2 < 0)
@@ -166,12 +167,16 @@ public class BattleService
         if (action.PlayerId != battle.Player1Id && action.PlayerId != battle.Player2Id)
             throw new Exception("Player is not part of this battle.");
 
-        ValidateAction(action);
-
         var gate = GetBattleGate(battleId);
         await gate.WaitAsync();
         try
         {
+            if (battle.State != BattleState.Running)
+                throw new Exception("Battle is not running.");
+
+            ValidateAction(action);
+            ValidateActionForBattleState(battle, action);
+
             if (battle.PendingActions.ContainsKey(action.PlayerId))
                 throw new Exception("Action already submitted for this turn.");
 
@@ -189,8 +194,7 @@ public class BattleService
         if (!_battles.TryGetValue(battleId, out var battle))
             return false;
 
-        return battle.PendingActions.ContainsKey(battle.Player1Id)
-            && battle.PendingActions.ContainsKey(battle.Player2Id);
+        return HasBothActions(battle);
     }
 
     public async Task<BattleTurnResult?> ResolveTurnIfReadyAsync(string battleId)
@@ -205,11 +209,15 @@ public class BattleService
             if (battle.State != BattleState.Running)
                 return null;
 
-            if (!battle.PendingActions.TryGetValue(battle.Player1Id, out var player1Action)
-                || !battle.PendingActions.TryGetValue(battle.Player2Id, out var player2Action))
-            {
+            var timeoutEvents = new List<string>();
+            ApplyTurnTimeoutIfNeeded(battle, timeoutEvents);
+
+            battle.PendingActions.TryGetValue(battle.Player1Id, out var player1Action);
+            battle.PendingActions.TryGetValue(battle.Player2Id, out var player2Action);
+
+            if (battle.State == BattleState.Running
+                && (player1Action == null || player2Action == null))
                 return null;
-            }
 
             var resolvedTurnNumber = battle.TurnNumber;
             var result = new BattleTurnResult
@@ -217,20 +225,27 @@ public class BattleService
                 BattleId = battle.BattleId,
                 ResolvedTurnNumber = resolvedTurnNumber
             };
+            result.Events.AddRange(timeoutEvents);
 
-            var orderedActions = await BuildOrderedActionsAsync(battle, player1Action, player2Action);
-            foreach (var ordered in orderedActions)
+            if (battle.State == BattleState.Running)
             {
-                if (battle.State != BattleState.Running)
-                    break;
+                var orderedActions = await BuildOrderedActionsAsync(battle, player1Action!, player2Action!);
+                foreach (var ordered in orderedActions)
+                {
+                    if (battle.State != BattleState.Running)
+                        break;
 
-                await ApplyActionAsync(battle, ordered.Action, result.Events);
-                UpdateBattleEndState(battle, result.Events);
+                    await ApplyActionAsync(battle, ordered.Action, result.Events);
+                    UpdateBattleEndState(battle, result.Events);
+                }
             }
 
             battle.PendingActions.Clear();
             if (battle.State == BattleState.Running)
+            {
                 battle.TurnNumber++;
+                battle.TurnDeadlineUtc = DateTime.UtcNow.AddSeconds(BattleRules.TurnTimeoutSeconds);
+            }
             else
             {
                 try
@@ -252,6 +267,58 @@ public class BattleService
                 _battleLocks.TryRemove(battle.BattleId, out _);
             }
 
+            return result;
+        }
+        finally
+        {
+            gate.Release();
+        }
+    }
+
+    public async Task<BattleTurnResult?> ForfeitPlayerAsync(string playerId, string reason)
+    {
+        var battle = _battles.Values.FirstOrDefault(b =>
+            b.State == BattleState.Running
+            && (b.Player1Id == playerId || b.Player2Id == playerId));
+
+        if (battle == null)
+            return null;
+
+        var gate = GetBattleGate(battle.BattleId);
+        await gate.WaitAsync();
+        try
+        {
+            if (battle.State != BattleState.Running)
+                return null;
+
+            battle.State = BattleState.Ended;
+            battle.WinnerPlayerId = GetOpponentPlayerId(battle, playerId);
+            battle.PendingActions.Clear();
+
+            var result = new BattleTurnResult
+            {
+                BattleId = battle.BattleId,
+                ResolvedTurnNumber = battle.TurnNumber,
+                NextTurnNumber = battle.TurnNumber,
+                State = battle.State,
+                WinnerPlayerId = battle.WinnerPlayerId
+            };
+
+            result.Events.Add($"Player {playerId} forfeited: {reason}");
+            result.Events.Add($"Battle ended. Winner: {battle.WinnerPlayerId}");
+
+            try
+            {
+                await PersistBattleOutcomeAsync(battle, result.Events);
+            }
+            catch (Exception ex)
+            {
+                result.Events.Add($"Failed to persist battle result: {ex.Message}");
+            }
+
+            PopulateResultSnapshot(result, battle);
+            _battles.TryRemove(battle.BattleId, out _);
+            _battleLocks.TryRemove(battle.BattleId, out _);
             return result;
         }
         finally
@@ -716,6 +783,83 @@ public class BattleService
         }
 
         return multiplier;
+    }
+
+    private static void ApplyTurnTimeoutIfNeeded(BattleSession battle, List<string> events)
+    {
+        if (battle.State != BattleState.Running)
+            return;
+
+        if (DateTime.UtcNow < battle.TurnDeadlineUtc)
+            return;
+
+        if (HasBothActions(battle))
+            return;
+
+        var hasP1Action = battle.PendingActions.ContainsKey(battle.Player1Id);
+        var hasP2Action = battle.PendingActions.ContainsKey(battle.Player2Id);
+
+        if (!hasP1Action && !hasP2Action)
+        {
+            battle.State = BattleState.Ended;
+            battle.WinnerPlayerId = null;
+            events.Add($"Turn {battle.TurnNumber} timeout: both players inactive.");
+            events.Add("Battle ended in a draw.");
+            return;
+        }
+
+        var loserId = hasP1Action ? battle.Player2Id : battle.Player1Id;
+        battle.State = BattleState.Ended;
+        battle.WinnerPlayerId = GetOpponentPlayerId(battle, loserId);
+        events.Add($"Turn {battle.TurnNumber} timeout: {loserId} did not submit action.");
+        events.Add($"Battle ended. Winner: {battle.WinnerPlayerId}");
+    }
+
+    private static bool HasBothActions(BattleSession battle)
+        => battle.PendingActions.ContainsKey(battle.Player1Id)
+           && battle.PendingActions.ContainsKey(battle.Player2Id);
+
+    private static void ValidateActionForBattleState(BattleSession battle, BattleAction action)
+    {
+        if (battle.State != BattleState.Running)
+            throw new Exception("Battle is not running.");
+
+        var team = GetTeam(battle, action.PlayerId);
+        if (team.Count == 0)
+            throw new Exception("Player has no team in this battle.");
+
+        var active = GetActivePokemon(battle, action.PlayerId);
+        if (active == null)
+            throw new Exception("No active pokemon.");
+
+        if (action.Type == BattleActionType.Move)
+        {
+            if (active.IsFainted)
+                throw new Exception("Active pokemon fainted. You must switch.");
+
+            var moveSlot = action.MoveSlot ?? -1;
+            if (moveSlot < 0 || moveSlot >= active.Moves.Count)
+                throw new Exception("Move slot does not exist on active pokemon.");
+
+            if (active.Moves[moveSlot].CurrentPp <= 0)
+                throw new Exception("Selected move has no PP.");
+
+            return;
+        }
+
+        if (action.Type == BattleActionType.Switch)
+        {
+            var targetIndex = action.SwitchIndex ?? -1;
+            if (targetIndex < 0 || targetIndex >= team.Count)
+                throw new Exception("Switch index out of range.");
+
+            var activeIndex = GetActiveIndex(battle, action.PlayerId);
+            if (targetIndex == activeIndex)
+                throw new Exception("Target pokemon is already active.");
+
+            if (team[targetIndex].IsFainted)
+                throw new Exception("Cannot switch to a fainted pokemon.");
+        }
     }
 
     private static void ValidateAction(BattleAction action)
