@@ -1,6 +1,12 @@
+using System.Collections.Concurrent;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.SignalR;
 using PokemonMMO.Data;
 using PokemonMMO.Models;
+using PokemonMMO.Models.DTOs;
 using PokemonMMO.Services;
 using MongoDB.Driver;
 
@@ -10,9 +16,10 @@ namespace PokemonMMO.Hubs;
 /// SignalR Hub — replaces the Colyseus GameRoom.
 /// Unity clients connect via WebSocket to /game.
 ///
-/// Client → Server messages:  JoinGame, Move, Heal
-/// Server → Client messages:  PlayerJoined, PlayerLeft, PlayerMoved, PartyUpdated, Error
+/// Client → Server messages:  JoinGame, Heal, StartMatch, ChooseMove, SwitchPokemon, SyncBattle
+/// Server → Client messages:  PlayerJoined, PlayerLeft, PartyUpdated, BattleStarted, TurnResolved, Error
 /// </summary>
+[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
 public class GameHub : Hub
 {
     private readonly MongoDbContext _db;
@@ -20,7 +27,7 @@ public class GameHub : Hub
     private readonly BattleService _battleService;
 
     // In-memory player tracking (sessionId → playerId)
-    private static readonly Dictionary<string, string> ConnectedPlayers = new();
+    private static readonly ConcurrentDictionary<string, string> ConnectedPlayers = new();
 
     public GameHub(MongoDbContext db, GameService gameService, BattleService battleService)
     {
@@ -32,36 +39,36 @@ public class GameHub : Hub
     // ─────────────────────────────────────────────────────────────────────
     // Join — equivalent to Colyseus onJoin
     // ─────────────────────────────────────────────────────────────────────
-    public async Task JoinGame(string playerId)
+    public async Task JoinGame()
     {
-        Console.WriteLine($"[Join] Player joining with ID: {playerId}");
-
-        var player = await _db.Players
-            .Find(Builders<Player>.Filter.Eq(p => p.Id, playerId))
-            .FirstOrDefaultAsync();
-
+        var player = await GetAuthenticatedPlayer();
         if (player == null)
         {
-            await Clients.Caller.SendAsync("Error", "Player not found");
+            await Clients.Caller.SendAsync("Error", "Unable to resolve player from token.");
             Context.Abort();
             return;
         }
 
-        ConnectedPlayers[Context.ConnectionId] = playerId;
+        Console.WriteLine($"[Join] Player joining with ID: {player.Id}");
+
+        if (!ConnectedPlayers.TryAdd(Context.ConnectionId, player.Id))
+        {
+            ConnectedPlayers[Context.ConnectionId] = player.Id;
+        }
 
         // Join a SignalR group for matchmaking lobby
         await Groups.AddToGroupAsync(Context.ConnectionId, "Lobby");
 
         // Send player info to lobby
-        await Clients.Group("Lobby").SendAsync("PlayerJoined", new
+        await Clients.Group("Lobby").SendAsync("PlayerJoined", new PlayerJoinedEventDto
         {
-            sessionId = Context.ConnectionId,
-            id        = player.Id,
-            name      = player.Name
+            SessionId = Context.ConnectionId,
+            Id = player.Id,
+            Name = player.Name
         });
 
         // Sync party to caller
-        await SyncPartyToClient(playerId);
+        await SyncPartyToClient(player.Id);
     }
 
     // ─────────────────────────────────────────────────────────────────────
@@ -119,17 +126,17 @@ public class GameHub : Hub
             await Groups.AddToGroupAsync(Context.ConnectionId, battleGroup);
             await Groups.AddToGroupAsync(opponentConnectionId, battleGroup);
 
-            await Clients.Group(battleGroup).SendAsync("BattleStarted", new
+            await Clients.Group(battleGroup).SendAsync("BattleStarted", new BattleStartedEventDto
             {
-                battleId = battle.BattleId,
-                player1Id = battle.Player1Id,
-                player2Id = battle.Player2Id,
-                turnNumber = battle.TurnNumber,
-                turnTimeoutSeconds = BattleRules.TurnTimeoutSeconds,
-                turnDeadlineUtc = battle.TurnDeadlineUtc,
-                state = battle.State.ToString(),
-                activeIndex1 = battle.ActiveIndex1,
-                activeIndex2 = battle.ActiveIndex2
+                BattleId = battle.BattleId,
+                Player1Id = battle.Player1Id,
+                Player2Id = battle.Player2Id,
+                TurnNumber = battle.TurnNumber,
+                TurnTimeoutSeconds = _battleService.TurnTimeoutSeconds,
+                TurnDeadlineUtc = battle.TurnDeadlineUtc,
+                State = battle.State.ToString(),
+                ActiveIndex1 = battle.ActiveIndex1,
+                ActiveIndex2 = battle.ActiveIndex2
             });
         }
         catch (Exception ex)
@@ -159,11 +166,11 @@ public class GameHub : Hub
             };
 
             await _battleService.SubmitActionAsync(battleId, action);
-            await Clients.Caller.SendAsync("ActionAccepted", new
+            await Clients.Caller.SendAsync("ActionAccepted", new ActionAcceptedEventDto
             {
-                battleId,
-                action = "Move",
-                moveSlot
+                BattleId = battleId,
+                Action = "Move",
+                MoveSlot = moveSlot
             });
 
             await NotifyTurnWaiting(battleId);
@@ -196,11 +203,11 @@ public class GameHub : Hub
             };
 
             await _battleService.SubmitActionAsync(battleId, action);
-            await Clients.Caller.SendAsync("ActionAccepted", new
+            await Clients.Caller.SendAsync("ActionAccepted", new ActionAcceptedEventDto
             {
-                battleId,
-                action = "Switch",
-                partyIndex
+                BattleId = battleId,
+                Action = "Switch",
+                PartyIndex = partyIndex
             });
 
             await NotifyTurnWaiting(battleId);
@@ -237,9 +244,9 @@ public class GameHub : Hub
 
             if (player != null)
             {
-                await Clients.Group("Lobby").SendAsync("PlayerLeft", new
+                await Clients.Group("Lobby").SendAsync("PlayerLeft", new PlayerLeftEventDto
                 {
-                    sessionId = Context.ConnectionId
+                    SessionId = Context.ConnectionId
                 });
             }
 
@@ -247,15 +254,15 @@ public class GameHub : Hub
             if (forfeitResult != null)
             {
                 var battleGroup = GetBattleGroupName(forfeitResult.BattleId);
-                await Clients.Group(battleGroup).SendAsync("BattleEnded", new
+                await Clients.Group(battleGroup).SendAsync("BattleEnded", new BattleEndedEventDto
                 {
-                    forfeitResult.BattleId,
-                    winnerPlayerId = forfeitResult.WinnerPlayerId,
-                    events = forfeitResult.Events
+                    BattleId = forfeitResult.BattleId,
+                    WinnerPlayerId = forfeitResult.WinnerPlayerId,
+                    Events = forfeitResult.Events
                 });
             }
 
-            ConnectedPlayers.Remove(Context.ConnectionId);
+            ConnectedPlayers.TryRemove(Context.ConnectionId, out _);
         }
 
         await base.OnDisconnectedAsync(exception);
@@ -272,13 +279,13 @@ public class GameHub : Hub
                 Builders<PokemonInstance>.Filter.Eq(p => p.IsInParty, true)))
             .ToListAsync();
 
-        var partyData = party.Select(p => new
+        var partyData = party.Select(p => new PartyPokemonDto
         {
-            id        = p.Id,
-            speciesId = p.SpeciesId,
-            level     = p.Level,
-            hp        = p.CurrentHp,
-            maxHp     = p.MaxHp
+            Id = p.Id,
+            SpeciesId = p.SpeciesId,
+            Level = p.Level,
+            Hp = p.CurrentHp,
+            MaxHp = p.MaxHp
         }).ToList();
 
         await Clients.Caller.SendAsync("PartyUpdated", partyData);
@@ -293,13 +300,13 @@ public class GameHub : Hub
         var isReady = _battleService.IsTurnReady(battleId);
         var battleGroup = GetBattleGroupName(battleId);
 
-        await Clients.Group(battleGroup).SendAsync("TurnWaiting", new
+        await Clients.Group(battleGroup).SendAsync("TurnWaiting", new TurnWaitingEventDto
         {
-            battleId,
-            turnNumber = battle.TurnNumber,
-            ready = isReady,
-            turnDeadlineUtc = battle.TurnDeadlineUtc,
-            submittedPlayerIds = battle.PendingActions.Keys.ToList()
+            BattleId = battleId,
+            TurnNumber = battle.TurnNumber,
+            Ready = isReady,
+            TurnDeadlineUtc = battle.TurnDeadlineUtc,
+            SubmittedPlayerIds = battle.PendingActions.Keys.ToList()
         });
     }
 
@@ -314,25 +321,49 @@ public class GameHub : Hub
 
         if (result.State == BattleState.Ended)
         {
-            await Clients.Group(battleGroup).SendAsync("BattleEnded", new
+            await Clients.Group(battleGroup).SendAsync("BattleEnded", new BattleEndedEventDto
             {
-                result.BattleId,
-                winnerPlayerId = result.WinnerPlayerId,
-                events = result.Events
+                BattleId = result.BattleId,
+                WinnerPlayerId = result.WinnerPlayerId,
+                Events = result.Events
             });
             return;
         }
 
-        await Clients.Group(battleGroup).SendAsync("BattleUpdated", new
+        await Clients.Group(battleGroup).SendAsync("BattleUpdated", new BattleUpdatedEventDto
         {
-            result.BattleId,
-            nextTurnNumber = result.NextTurnNumber,
-            turnDeadlineUtc = _battleService.GetBattle(result.BattleId)?.TurnDeadlineUtc,
-            result.ActiveIndex1,
-            result.ActiveIndex2,
-            result.ActiveHp1,
-            result.ActiveHp2
+            BattleId = result.BattleId,
+            NextTurnNumber = result.NextTurnNumber,
+            TurnDeadlineUtc = _battleService.GetBattle(result.BattleId)?.TurnDeadlineUtc,
+            ActiveIndex1 = result.ActiveIndex1,
+            ActiveIndex2 = result.ActiveIndex2,
+            ActiveHp1 = result.ActiveHp1,
+            ActiveHp2 = result.ActiveHp2
         });
+    }
+
+    private async Task<Player?> GetAuthenticatedPlayer()
+    {
+        var playerId = Context.User?.FindFirst("player_id")?.Value;
+        if (!string.IsNullOrWhiteSpace(playerId))
+        {
+            var playerById = await _db.Players
+                .Find(Builders<Player>.Filter.Eq(p => p.Id, playerId))
+                .FirstOrDefaultAsync();
+            if (playerById != null)
+                return playerById;
+        }
+
+        var accountId = Context.User?.FindFirst(ClaimTypes.NameIdentifier)?.Value
+            ?? Context.User?.FindFirst(JwtRegisteredClaimNames.Sub)?.Value
+            ?? Context.User?.FindFirst("sub")?.Value;
+
+        if (string.IsNullOrWhiteSpace(accountId))
+            return null;
+
+        return await _db.Players
+            .Find(Builders<Player>.Filter.Eq(p => p.AccountId, accountId))
+            .FirstOrDefaultAsync();
     }
 
     private static string GetBattleGroupName(string battleId) => $"battle:{battleId}";

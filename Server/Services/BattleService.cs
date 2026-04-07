@@ -1,19 +1,19 @@
 using System.Collections.Concurrent;
+using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using PokemonMMO.Data;
 using PokemonMMO.Models;
+using PokemonMMO.Options;
 
 namespace PokemonMMO.Services;
 
 public class BattleService
 {
     private readonly MongoDbContext _db;
+    private readonly BattleOptions _battleOptions;
     private static readonly ConcurrentDictionary<string, BattleSession> _battles = new();
     private static readonly ConcurrentDictionary<string, SemaphoreSlim> _battleLocks = new();
     private static readonly Random _rng = new();
-    private const int WinnerMmrGain = 25;
-    private const int LoserMmrLoss = 20;
-    private const int WinnerVpGain = 10;
 
     // Only store non-1.0 multipliers.
     private static readonly Dictionary<string, Dictionary<string, double>> TypeEffectiveness =
@@ -111,10 +111,14 @@ public class BattleService
             }
         };
 
-    public BattleService(MongoDbContext db)
+    public BattleService(MongoDbContext db, IOptions<BattleOptions> battleOptions)
     {
         _db = db;
+        _battleOptions = battleOptions.Value;
+        ValidateBattleOptions(_battleOptions);
     }
+
+    public int TurnTimeoutSeconds => _battleOptions.TurnTimeoutSeconds;
 
     public async Task<BattleSession> CreateBattle(string player1Id, string player2Id)
     {
@@ -140,7 +144,7 @@ public class BattleService
             Team2 = snapshots2,
             ActiveIndex1 = FindFirstAliveIndex(snapshots1),
             ActiveIndex2 = FindFirstAliveIndex(snapshots2),
-            TurnDeadlineUtc = DateTime.UtcNow.AddSeconds(BattleRules.TurnTimeoutSeconds)
+            TurnDeadlineUtc = DateTime.UtcNow.AddSeconds(_battleOptions.TurnTimeoutSeconds)
         };
 
         if (session.ActiveIndex1 < 0 || session.ActiveIndex2 < 0)
@@ -244,7 +248,7 @@ public class BattleService
             if (battle.State == BattleState.Running)
             {
                 battle.TurnNumber++;
-                battle.TurnDeadlineUtc = DateTime.UtcNow.AddSeconds(BattleRules.TurnTimeoutSeconds);
+                battle.TurnDeadlineUtc = DateTime.UtcNow.AddSeconds(_battleOptions.TurnTimeoutSeconds);
             }
             else
             {
@@ -260,6 +264,7 @@ public class BattleService
 
             result.NextTurnNumber = battle.TurnNumber;
             PopulateResultSnapshot(result, battle);
+            await WriteBattleLogAsync(battle, result, "turn_resolve");
 
             if (battle.State == BattleState.Ended)
             {
@@ -317,6 +322,7 @@ public class BattleService
             }
 
             PopulateResultSnapshot(result, battle);
+            await WriteBattleLogAsync(battle, result, "forfeit");
             _battles.TryRemove(battle.BattleId, out _);
             _battleLocks.TryRemove(battle.BattleId, out _);
             return result;
@@ -336,7 +342,7 @@ public class BattleService
         return await _db.PokemonInstances
             .Find(filter)
             .SortBy(p => p.PartySlot)
-            .Limit(BattleRules.MaxPartySize)
+            .Limit(_battleOptions.MaxPartySize)
             .ToListAsync();
     }
 
@@ -388,7 +394,7 @@ public class BattleService
     private async Task<int> GetActionPriorityAsync(BattleSession battle, BattleAction action)
     {
         if (action.Type == BattleActionType.Switch)
-            return 6;
+            return _battleOptions.SwitchActionPriority;
 
         var active = GetActivePokemon(battle, action.PlayerId);
         if (active == null || active.IsFainted || action.MoveSlot is null)
@@ -589,8 +595,8 @@ public class BattleService
         var baseDamage = (((2d * level / 5d) + 2d) * power * attackStat / Math.Max(1, defenseStat)) / 50d + 2d;
         var hasStab = attackerTypes.Any(t => NormalizeType(t) == moveType);
         var stab = hasStab ? 1.5 : 1.0;
-        var randomFactor = BattleRules.DamageRandomMin
-            + (_rng.NextDouble() * (BattleRules.DamageRandomMax - BattleRules.DamageRandomMin));
+        var randomFactor = _battleOptions.DamageRandomMin
+            + (_rng.NextDouble() * (_battleOptions.DamageRandomMax - _battleOptions.DamageRandomMin));
 
         var modifier = stab * typeMultiplier * randomFactor;
         var damage = Math.Max(1, (int)Math.Floor(baseDamage * modifier));
@@ -657,16 +663,35 @@ public class BattleService
         var winnerUpdate = Builders<Player>.Update
             .Inc(p => p.RankedMatches, 1)
             .Inc(p => p.RankedWins, 1)
-            .Inc(p => p.MMR, WinnerMmrGain)
-            .Inc(p => p.VP, WinnerVpGain);
+            .Inc(p => p.MMR, _battleOptions.WinnerMmrGain)
+            .Inc(p => p.VP, _battleOptions.WinnerVpGain);
 
         var loserUpdate = Builders<Player>.Update
             .Inc(p => p.RankedMatches, 1)
-            .Inc(p => p.MMR, -LoserMmrLoss);
+            .Inc(p => p.MMR, -_battleOptions.LoserMmrLoss);
 
         await _db.Players.UpdateOneAsync(winnerFilter, winnerUpdate);
         await _db.Players.UpdateOneAsync(loserFilter, loserUpdate);
-        events.Add($"Ranked result persisted (winner +{WinnerMmrGain} MMR, loser -{LoserMmrLoss} MMR).");
+        events.Add($"Ranked result persisted (winner +{_battleOptions.WinnerMmrGain} MMR, loser -{_battleOptions.LoserMmrLoss} MMR).");
+    }
+
+    private async Task WriteBattleLogAsync(BattleSession battle, BattleTurnResult result, string source)
+    {
+        var logEntry = new BattleLogEntry
+        {
+            BattleId = battle.BattleId,
+            Source = source,
+            ResolvedTurnNumber = result.ResolvedTurnNumber,
+            NextTurnNumber = result.NextTurnNumber,
+            State = result.State.ToString(),
+            Player1Id = battle.Player1Id,
+            Player2Id = battle.Player2Id,
+            WinnerPlayerId = result.WinnerPlayerId,
+            Events = result.Events.ToList(),
+            CreatedAtUtc = DateTime.UtcNow
+        };
+
+        await _db.BattleLogs.InsertOneAsync(logEntry);
     }
 
     private static void PopulateResultSnapshot(BattleTurnResult result, BattleSession battle)
@@ -862,7 +887,7 @@ public class BattleService
         }
     }
 
-    private static void ValidateAction(BattleAction action)
+    private void ValidateAction(BattleAction action)
     {
         if (action.Type == BattleActionType.Move)
         {
@@ -871,7 +896,7 @@ public class BattleService
         }
         else if (action.Type == BattleActionType.Switch)
         {
-            if (action.SwitchIndex is null || action.SwitchIndex < 0 || action.SwitchIndex >= BattleRules.MaxPartySize)
+            if (action.SwitchIndex is null || action.SwitchIndex < 0 || action.SwitchIndex >= _battleOptions.MaxPartySize)
                 throw new Exception("Invalid switch index.");
         }
         else
@@ -882,4 +907,14 @@ public class BattleService
 
     private record OrderedAction(BattleAction Action, int Priority, int Speed, int Tiebreaker);
     private record DamageOutcome(int Damage, int AttackStat, int DefenseStat, double TypeMultiplier);
+
+    private static void ValidateBattleOptions(BattleOptions options)
+    {
+        if (options.MaxPartySize <= 0)
+            throw new InvalidOperationException("Battle:MaxPartySize must be positive.");
+        if (options.TurnTimeoutSeconds <= 0)
+            throw new InvalidOperationException("Battle:TurnTimeoutSeconds must be positive.");
+        if (options.DamageRandomMin <= 0 || options.DamageRandomMin > options.DamageRandomMax)
+            throw new InvalidOperationException("Battle damage random range is invalid.");
+    }
 }

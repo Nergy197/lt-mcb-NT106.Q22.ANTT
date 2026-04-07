@@ -100,9 +100,13 @@ public class AuthService
             return (null, "Username hoặc password không đúng.");
         }
 
-        var token = GenerateJwt(account);
+        var player = await _db.Players
+            .Find(p => p.AccountId == account.Id)
+            .FirstOrDefaultAsync();
+
+        var token = GenerateJwt(account, player?.Id);
         _log.LogInformation("[Login] Success — AccountId: {Id}, Username: {Username}", account.Id, account.Username);
-        return (new AuthResponse(token, account.Username, account.Id), null);
+        return (new AuthResponse(token, account.Username, account.Id, player?.Id), null);
     }
 
     // ── Logout (blacklist token) ──────────────────────────────────────────────
@@ -197,18 +201,21 @@ public class AuthService
 
     // ── JWT helper ────────────────────────────────────────────────────────────
 
-    private string GenerateJwt(Account account)
+    private string GenerateJwt(Account account, string? playerId)
     {
         var key   = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSecret));
         var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
-        var claims = new[]
+        var claims = new List<Claim>
         {
             new Claim(JwtRegisteredClaimNames.Sub, account.Id),
             new Claim(JwtRegisteredClaimNames.UniqueName, account.Username),
             new Claim(JwtRegisteredClaimNames.Email, account.Email),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
         };
+
+        if (!string.IsNullOrWhiteSpace(playerId))
+            claims.Add(new Claim("player_id", playerId));
 
         var token = new JwtSecurityToken(
             issuer:             _jwtIssuer,
