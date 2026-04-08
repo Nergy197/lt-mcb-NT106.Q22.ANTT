@@ -18,3 +18,10 @@ obj/
 # OS
 .DS_Store
 Thumbs.db
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Logs]/
+*.csproj
+*.sln
