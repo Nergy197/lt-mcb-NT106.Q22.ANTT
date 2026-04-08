@@ -1,25 +1,25 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: /Users/nergy/lt-mcb-NT106.Q22.ANTT/UnityAuthUI/Packages/manifest.json
+    m_FilePath: D:/lt-mcb-NT106.Q22.ANTT/UnityAuthUI/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639102690050000000
-    m_Hash: 268125257
+      ticks: 639112454871736913
+    m_Hash: 3677168813
   m_LockFileStatus:
-    m_FilePath: /Users/nergy/lt-mcb-NT106.Q22.ANTT/UnityAuthUI/Packages/packages-lock.json
+    m_FilePath: D:/lt-mcb-NT106.Q22.ANTT/UnityAuthUI/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639102690180000000
-    m_Hash: 1117722638
+      ticks: 639112454871736913
+    m_Hash: 3604296529
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-m_ProjectPath: /Users/nergy/lt-mcb-NT106.Q22.ANTT/UnityAuthUI/Packages
+m_ProjectPath: D:/lt-mcb-NT106.Q22.ANTT/UnityAuthUI/Packages
 m_EditorVersion: 6000.3.6f1 (bbb010bdb8a3)
 m_ResolvedPackages:
 - packageId: com.unity.multiplayer.center@1.0.1
@@ -27,7 +27,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.1
   source: 2
-  resolvedPath: /Users/nergy/lt-mcb-NT106.Q22.ANTT/UnityAuthUI/Library/PackageCache/com.unity.multiplayer.center@f01f4ba8d00a
+  resolvedPath: D:\lt-mcb-NT106.Q22.ANTT\UnityAuthUI\Library\PackageCache\com.unity.multiplayer.center@f01f4ba8d00a
   assetPath: Packages/com.unity.multiplayer.center
   name: com.unity.multiplayer.center
   displayName: Multiplayer Center
@@ -134,7 +134,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.0
   source: 2
-  resolvedPath: /Users/nergy/lt-mcb-NT106.Q22.ANTT/UnityAuthUI/Library/PackageCache/com.unity.ugui@b9d1dd437cb9
+  resolvedPath: D:\lt-mcb-NT106.Q22.ANTT\UnityAuthUI\Library\PackageCache\com.unity.ugui@b9d1dd437cb9
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: uGUI
@@ -241,7 +241,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/nergy/lt-mcb-NT106.Q22.ANTT/UnityAuthUI/Library/PackageCache/com.unity.modules.accessibility
+  resolvedPath: D:\lt-mcb-NT106.Q22.ANTT\UnityAuthUI\Library\PackageCache\com.unity.modules.accessibility
   assetPath: Packages/com.unity.modules.accessibility
   name: com.unity.modules.accessibility
   displayName: Accessibility
@@ -329,7 +329,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/nergy/lt-mcb-NT106.Q22.ANTT/UnityAuthUI/Library/PackageCache/com.unity.modules.adaptiveperformance
+  resolvedPath: D:\lt-mcb-NT106.Q22.ANTT\UnityAuthUI\Library\PackageCache\com.unity.modules.adaptiveperformance
   assetPath: Packages/com.unity.modules.adaptiveperformance
   name: com.unity.modules.adaptiveperformance
   displayName: Adaptive Performance
@@ -423,7 +423,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/nergy/lt-mcb-NT106.Q22.ANTT/UnityAuthUI/Library/PackageCache/com.unity.modules.imgui
+  resolvedPath: D:\lt-mcb-NT106.Q22.ANTT\UnityAuthUI\Library\PackageCache\com.unity.modules.imgui
   assetPath: Packages/com.unity.modules.imgui
   name: com.unity.modules.imgui
   displayName: IMGUI
@@ -511,7 +511,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/nergy/lt-mcb-NT106.Q22.ANTT/UnityAuthUI/Library/PackageCache/com.unity.modules.jsonserialize
+  resolvedPath: D:\lt-mcb-NT106.Q22.ANTT\UnityAuthUI\Library\PackageCache\com.unity.modules.jsonserialize
   assetPath: Packages/com.unity.modules.jsonserialize
   name: com.unity.modules.jsonserialize
   displayName: JSONSerialize
@@ -599,7 +599,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/nergy/lt-mcb-NT106.Q22.ANTT/UnityAuthUI/Library/PackageCache/com.unity.modules.ui
+  resolvedPath: D:\lt-mcb-NT106.Q22.ANTT\UnityAuthUI\Library\PackageCache\com.unity.modules.ui
   assetPath: Packages/com.unity.modules.ui
   name: com.unity.modules.ui
   displayName: UI
@@ -687,7 +687,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/nergy/lt-mcb-NT106.Q22.ANTT/UnityAuthUI/Library/PackageCache/com.unity.modules.vectorgraphics
+  resolvedPath: D:\lt-mcb-NT106.Q22.ANTT\UnityAuthUI\Library\PackageCache\com.unity.modules.vectorgraphics
   assetPath: Packages/com.unity.modules.vectorgraphics
   name: com.unity.modules.vectorgraphics
   displayName: Vector Graphics
@@ -794,7 +794,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/nergy/lt-mcb-NT106.Q22.ANTT/UnityAuthUI/Library/PackageCache/com.unity.2d.sprite@82f01c8c75ca
+  resolvedPath: D:\lt-mcb-NT106.Q22.ANTT\UnityAuthUI\Library\PackageCache\com.unity.2d.sprite@82f01c8c75ca
   assetPath: Packages/com.unity.2d.sprite
   name: com.unity.2d.sprite
   displayName: 2D Sprite
@@ -885,7 +885,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/nergy/lt-mcb-NT106.Q22.ANTT/UnityAuthUI/Library/PackageCache/com.unity.modules.uielements
+  resolvedPath: D:\lt-mcb-NT106.Q22.ANTT\UnityAuthUI\Library\PackageCache\com.unity.modules.uielements
   assetPath: Packages/com.unity.modules.uielements
   name: com.unity.modules.uielements
   displayName: UIElements
@@ -993,7 +993,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/nergy/lt-mcb-NT106.Q22.ANTT/UnityAuthUI/Library/PackageCache/com.unity.modules.imageconversion
+  resolvedPath: D:\lt-mcb-NT106.Q22.ANTT\UnityAuthUI\Library\PackageCache\com.unity.modules.imageconversion
   assetPath: Packages/com.unity.modules.imageconversion
   name: com.unity.modules.imageconversion
   displayName: Image Conversion
@@ -1081,7 +1081,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/nergy/lt-mcb-NT106.Q22.ANTT/UnityAuthUI/Library/PackageCache/com.unity.modules.subsystems
+  resolvedPath: D:\lt-mcb-NT106.Q22.ANTT\UnityAuthUI\Library\PackageCache\com.unity.modules.subsystems
   assetPath: Packages/com.unity.modules.subsystems
   name: com.unity.modules.subsystems
   displayName: Subsystems
@@ -1173,7 +1173,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/nergy/lt-mcb-NT106.Q22.ANTT/UnityAuthUI/Library/PackageCache/com.unity.modules.hierarchycore
+  resolvedPath: D:\lt-mcb-NT106.Q22.ANTT\UnityAuthUI\Library\PackageCache\com.unity.modules.hierarchycore
   assetPath: Packages/com.unity.modules.hierarchycore
   name: com.unity.modules.hierarchycore
   displayName: Hierarchy Core
@@ -1261,7 +1261,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: /Users/nergy/lt-mcb-NT106.Q22.ANTT/UnityAuthUI/Library/PackageCache/com.unity.modules.physics
+  resolvedPath: D:\lt-mcb-NT106.Q22.ANTT\UnityAuthUI\Library\PackageCache\com.unity.modules.physics
   assetPath: Packages/com.unity.modules.physics
   name: com.unity.modules.physics
   displayName: Physics
