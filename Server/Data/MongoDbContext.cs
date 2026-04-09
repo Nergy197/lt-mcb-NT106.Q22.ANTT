@@ -38,6 +38,9 @@ public class MongoDbContext
     public IMongoCollection<RevokedToken> RevokedTokens
         => _database.GetCollection<RevokedToken>("revoked_tokens");
 
+    public IMongoCollection<BattleLogEntry> BattleLogs
+        => _database.GetCollection<BattleLogEntry>("battle_logs");
+
     // ── Indexes ──────────────────────────────────────────────────────────
     private void CreateIndexes()
     {
@@ -78,5 +81,11 @@ public class MongoDbContext
         RevokedTokens.Indexes.CreateOne(new CreateIndexModel<RevokedToken>(
             Builders<RevokedToken>.IndexKeys.Ascending(r => r.Expiry),
             new CreateIndexOptions { ExpireAfter = TimeSpan.FromDays(1) }));
+
+        // BattleLogs: index by battle timeline
+        BattleLogs.Indexes.CreateOne(new CreateIndexModel<BattleLogEntry>(
+            Builders<BattleLogEntry>.IndexKeys
+                .Ascending(b => b.BattleId)
+                .Descending(b => b.CreatedAtUtc)));
     }
 }

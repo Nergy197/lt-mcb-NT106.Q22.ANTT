@@ -1,0 +1,20 @@
+{
+  "name": "manual-client",
+  "version": "1.0.0",
+  "main": "battle-test.js",
+  "scripts": {
+    "seed": "node seed-test-data.js",
+    "battle": "node battle-test.js",
+    "battle:timeout": "node battle-test.js timeout",
+    "battle:switch": "node battle-test.js switch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@microsoft/signalr": "^10.0.0",
+    "bcryptjs": "^3.0.3",
+    "mongodb": "^7.1.1"
+  }
+}

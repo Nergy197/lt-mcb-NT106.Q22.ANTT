@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using PokemonMMO.Data;
 using PokemonMMO.Hubs;
+using PokemonMMO.Options;
 using PokemonMMO.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -52,6 +53,19 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         // Check blacklist sau khi JWT hợp lệ về mặt cryptographic
         options.Events = new JwtBearerEvents
         {
+            // SignalR WebSocket clients commonly pass token via query string.
+            OnMessageReceived = ctx =>
+            {
+                if (!string.IsNullOrEmpty(ctx.Token))
+                    return Task.CompletedTask;
+
+                var accessToken = ctx.Request.Query["access_token"];
+                var path = ctx.HttpContext.Request.Path;
+                if (!string.IsNullOrEmpty(accessToken) && path.StartsWithSegments("/game"))
+                    ctx.Token = accessToken;
+
+                return Task.CompletedTask;
+            },
             OnTokenValidated = async ctx =>
             {
                 var authService = ctx.HttpContext.RequestServices.GetRequiredService<AuthService>();
@@ -59,13 +73,17 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                     .ToString()
                     .Replace("Bearer ", "", StringComparison.OrdinalIgnoreCase);
 
-                if (await authService.IsTokenRevokedAsync(rawToken))
+                if (string.IsNullOrWhiteSpace(rawToken))
+                    rawToken = ctx.Request.Query["access_token"].ToString();
+
+                if (!string.IsNullOrWhiteSpace(rawToken) && await authService.IsTokenRevokedAsync(rawToken))
                     ctx.Fail("Token đã bị thu hồi (đăng xuất).");
             }
         };
     });
 
 builder.Services.AddAuthorization();
+builder.Services.Configure<BattleOptions>(builder.Configuration.GetSection("Battle"));
 
 // ---------------------------------------------------------------------------
 // Game & Auth services
@@ -73,6 +91,7 @@ builder.Services.AddAuthorization();
 builder.Services.AddSingleton<PokemonDataService>();
 builder.Services.AddScoped<GameService>();
 builder.Services.AddScoped<AuthService>();
+builder.Services.AddSingleton<BattleService>();
 // ── New services for Pokedex and Moves ─────────────────────────────────────
 builder.Services.AddScoped<PokedexService>();
 // ---------------------------------------------------------------------------
