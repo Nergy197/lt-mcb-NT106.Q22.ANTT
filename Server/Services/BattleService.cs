@@ -515,7 +515,7 @@ public class BattleService
             };
 
         var moveName = move.Name;
-        var accuracy = Math.Clamp(move.Accuracy, 1, 100);
+        var accuracy = Math.Clamp(move.Accuracy ?? 100, 1, 100);
         var roll = _rng.Next(1, 101);
 
         if (roll > accuracy)
@@ -533,7 +533,7 @@ public class BattleService
         }
 
         var category = NormalizeCategory(move.Category);
-        var power = Math.Max(0, move.Power);
+        var power = Math.Max(0, move.Power ?? 0);
         if (category == "status" || power == 0)
         {
             events.Add($"[{GetDisplayName(attacker)}] used {moveName}. (No direct damage)");
@@ -590,7 +590,7 @@ public class BattleService
         var attackStat = CalculateBattleStat(attackBaseStat, attacker.Level);
         var defenseStat = CalculateBattleStat(defenseBaseStat, defender.Level);
         var level = Math.Max(1, attacker.Level);
-        var power = Math.Max(1, move.Power);
+        var power = Math.Max(1, move.Power ?? 1);
 
         var baseDamage = (((2d * level / 5d) + 2d) * power * attackStat / Math.Max(1, defenseStat)) / 50d + 2d;
         var hasStab = attackerTypes.Any(t => NormalizeType(t) == moveType);
