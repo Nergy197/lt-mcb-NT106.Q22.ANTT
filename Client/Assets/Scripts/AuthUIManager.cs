@@ -4,45 +4,55 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace PokemonMMO.UI
 {
     public class AuthUIManager : MonoBehaviour
     {
-        // ── Server config ──────────────────────────────────────────────────────
+        // ── Server ────────────────────────────────────────────────────────────
         [Header("Server")]
-        public string serverUrl = "http://localhost:2567";
+        public string serverUrl     = "http://localhost:2567";
+        [Tooltip("Scene load sau khi login thành công. Để trống = không chuyển.")]
+        public string gameSceneName = "Menu scene";
 
-        // ── Views ──────────────────────────────────────────────────────────────
+        // ── Views ─────────────────────────────────────────────────────────────
         [Header("Views")]
+        public GameObject mainMenuView;
         public GameObject loginView;
         public GameObject signUpView;
+        public GameObject forgotPasswordView;
+        public GameObject resetPasswordView;
 
-        // ── Login inputs ───────────────────────────────────────────────────────
+        // ── Login ─────────────────────────────────────────────────────────────
         [Header("Login")]
         public InputField loginUsernameInput;
         public InputField loginPasswordInput;
         public Text       loginFeedback;
 
-        // ── Sign Up inputs ─────────────────────────────────────────────────────
+        // ── Sign Up ───────────────────────────────────────────────────────────
         [Header("Sign Up")]
         public InputField signUpUsernameInput;
         public InputField signUpEmailInput;
         public InputField signUpPasswordInput;
         public Text       signUpFeedback;
 
+        // ── Forgot Password ───────────────────────────────────────────────────
+        [Header("Forgot Password")]
+        public InputField forgotEmailInput;
+        public Text       forgotFeedback;
+
+        // ── Reset Password ────────────────────────────────────────────────────
+        [Header("Reset Password")]
+        public InputField resetTokenInput;
+        public InputField resetNewPasswordInput;
+        public Text       resetFeedback;
+
+        // ─────────────────────────────────────────────────────────────────────
         private const string TokenKey = "jwt_token";
-
-        // HttpClient is reusable — one instance per MonoBehaviour
         private static readonly HttpClient Http = new HttpClient { Timeout = TimeSpan.FromSeconds(10) };
-
-        // Thread-safe queue to dispatch callbacks back onto Unity's main thread
         private readonly Queue<Action> _mainThread = new Queue<Action>();
-
-        // ── Unity lifecycle ────────────────────────────────────────────────────
-        // NOTE: no Start() — initial view state is set by the generator/caller
-        // to avoid overriding the intended view when the panel is first activated.
 
         private void Update()
         {
@@ -51,22 +61,49 @@ namespace PokemonMMO.UI
                     _mainThread.Dequeue()?.Invoke();
         }
 
-        // ── View switching ─────────────────────────────────────────────────────
+        // ── View switching ────────────────────────────────────────────────────
+
+        public void ShowMainMenuView()
+        {
+            SetActiveView(mainMenuView);
+            ClearAll();
+        }
+
         public void ShowLoginView()
         {
-            loginView?.SetActive(true);
-            signUpView?.SetActive(false);
-            ClearFeedback();
+            SetActiveView(loginView);
+            ClearAll();
         }
 
         public void ShowSignUpView()
         {
-            loginView?.SetActive(false);
-            signUpView?.SetActive(true);
-            ClearFeedback();
+            SetActiveView(signUpView);
+            ClearAll();
         }
 
-        // ── Button handlers ────────────────────────────────────────────────────
+        public void ShowForgotPasswordView()
+        {
+            SetActiveView(forgotPasswordView);
+            ClearAll();
+        }
+
+        public void ShowResetPasswordView()
+        {
+            SetActiveView(resetPasswordView);
+            ClearAll();
+        }
+
+        private void SetActiveView(GameObject target)
+        {
+            mainMenuView?.SetActive(mainMenuView == target);
+            loginView?.SetActive(loginView == target);
+            signUpView?.SetActive(signUpView == target);
+            forgotPasswordView?.SetActive(forgotPasswordView == target);
+            resetPasswordView?.SetActive(resetPasswordView == target);
+        }
+
+        // ── Button handlers ───────────────────────────────────────────────────
+
         public void OnLoginSubmit()
         {
             string username = loginUsernameInput?.text?.Trim() ?? "";
@@ -86,8 +123,8 @@ namespace PokemonMMO.UI
         public void OnSignUpSubmit()
         {
             string username = signUpUsernameInput?.text?.Trim() ?? "";
-            string email    = signUpEmailInput?.text?.Trim() ?? "";
-            string password = signUpPasswordInput?.text ?? "";
+            string email    = signUpEmailInput?.text?.Trim()    ?? "";
+            string password = signUpPasswordInput?.text         ?? "";
 
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
             {
@@ -100,7 +137,44 @@ namespace PokemonMMO.UI
             _ = RegisterAsync(username, email, password);
         }
 
-        // ── API Tasks ──────────────────────────────────────────────────────────
+        public void OnForgotPasswordSubmit()
+        {
+            string email = forgotEmailInput?.text?.Trim() ?? "";
+
+            if (string.IsNullOrEmpty(email) || !email.Contains('@'))
+            {
+                SetFeedback(forgotFeedback, "Vui lòng nhập email hợp lệ.", isError: true);
+                return;
+            }
+
+            SetFeedback(forgotFeedback, "Đang gửi yêu cầu...", isError: false);
+            SetInteractable(false);
+            _ = ForgotPasswordAsync(email);
+        }
+
+        public void OnResetPasswordSubmit()
+        {
+            string token       = resetTokenInput?.text?.Trim()       ?? "";
+            string newPassword = resetNewPasswordInput?.text          ?? "";
+
+            if (string.IsNullOrEmpty(token) || string.IsNullOrEmpty(newPassword))
+            {
+                SetFeedback(resetFeedback, "Vui lòng điền đầy đủ thông tin.", isError: true);
+                return;
+            }
+
+            if (newPassword.Length < 6)
+            {
+                SetFeedback(resetFeedback, "Mật khẩu phải có ít nhất 6 ký tự.", isError: true);
+                return;
+            }
+
+            SetFeedback(resetFeedback, "Đang đặt lại mật khẩu...", isError: false);
+            SetInteractable(false);
+            _ = ResetPasswordAsync(token, newPassword);
+        }
+
+        // ── API tasks ─────────────────────────────────────────────────────────
 
         private async Task LoginAsync(string username, string password)
         {
@@ -116,24 +190,27 @@ namespace PokemonMMO.UI
                     var data = JsonUtility.FromJson<AuthResponseDto>(json);
                     Dispatch(() =>
                     {
-                        PlayerPrefs.SetString(TokenKey, data.Token);
+                        PlayerPrefs.SetString(TokenKey,      data.Token);
+                        PlayerPrefs.SetString("username",    data.Username);
+                        PlayerPrefs.SetString("account_id",  data.AccountId);
                         PlayerPrefs.Save();
                         SetInteractable(true);
-                        SetFeedback(loginFeedback, $"Chào mừng, {data.Username}!", isError: false);
+                        SetFeedback(loginFeedback, $"Chào mừng, {data.Username}! Đang vào game...", isError: false);
                         Debug.Log($"[Auth] Login OK – AccountId: {data.AccountId}");
-                        // TODO: SceneManager.LoadScene("GameScene");
+                        if (!string.IsNullOrEmpty(gameSceneName))
+                            SceneManager.LoadScene(gameSceneName);
                     });
                 }
                 else
                 {
-                    string msg = ParseErrorMessage(json) ?? "Đăng nhập thất bại.";
+                    string msg = ParseError(json) ?? "Đăng nhập thất bại.";
                     Dispatch(() => { SetInteractable(true); SetFeedback(loginFeedback, msg, isError: true); });
                 }
             }
             catch (Exception ex)
             {
                 Dispatch(() => { SetInteractable(true); SetFeedback(loginFeedback, "Không kết nối được server.", isError: true); });
-                Debug.LogError($"[Auth] LoginAsync error: {ex.Message}");
+                Debug.LogError($"[Auth] LoginAsync: {ex.Message}");
             }
         }
 
@@ -151,10 +228,9 @@ namespace PokemonMMO.UI
                     Dispatch(async () =>
                     {
                         SetInteractable(true);
-                        SetFeedback(signUpFeedback, "Đăng ký thành công! Hãy đăng nhập.", isError: false);
+                        SetFeedback(signUpFeedback, "Đăng ký thành công! Đang chuyển sang đăng nhập...", isError: false);
                         Debug.Log("[Auth] Register OK");
-
-                        await Task.Delay(1500); // chờ 1.5s rồi chuyển sang login
+                        await Task.Delay(1500);
                         Dispatch(() =>
                         {
                             ShowLoginView();
@@ -164,29 +240,103 @@ namespace PokemonMMO.UI
                 }
                 else
                 {
-                    string msg = ParseErrorMessage(json) ?? "Đăng ký thất bại.";
+                    string msg = ParseError(json) ?? "Đăng ký thất bại.";
                     Dispatch(() => { SetInteractable(true); SetFeedback(signUpFeedback, msg, isError: true); });
                 }
             }
             catch (Exception ex)
             {
                 Dispatch(() => { SetInteractable(true); SetFeedback(signUpFeedback, "Không kết nối được server.", isError: true); });
-                Debug.LogError($"[Auth] RegisterAsync error: {ex.Message}");
+                Debug.LogError($"[Auth] RegisterAsync: {ex.Message}");
             }
         }
 
-        // ── Helpers ────────────────────────────────────────────────────────────
+        private async Task ForgotPasswordAsync(string email)
+        {
+            try
+            {
+                var body    = JsonUtility.ToJson(new ForgotPasswordDto { Email = email });
+                var content = new StringContent(body, Encoding.UTF8, "application/json");
+                var resp    = await Http.PostAsync($"{serverUrl}/api/auth/forgot-password", content);
+                var json    = await resp.Content.ReadAsStringAsync();
 
-        /// <summary>Enqueue an action to run on Unity's main thread next Update().</summary>
+                if (resp.IsSuccessStatusCode)
+                {
+                    var data = JsonUtility.FromJson<ForgotPasswordResponseDto>(json);
+                    Dispatch(async () =>
+                    {
+                        SetInteractable(true);
+                        // Server trả token thẳng (môi trường dev). Copy token vào ô reset.
+                        if (resetTokenInput != null)
+                            resetTokenInput.text = data.ResetToken ?? "";
+
+                        SetFeedback(forgotFeedback, "Đã nhận token! Đang chuyển sang đặt lại mật khẩu...", isError: false);
+                        Debug.Log($"[Auth] ForgotPassword OK – token: {data.ResetToken?[..8]}…");
+                        await Task.Delay(1200);
+                        Dispatch(ShowResetPasswordView);
+                    });
+                }
+                else
+                {
+                    string msg = ParseError(json) ?? "Không tìm thấy email này.";
+                    Dispatch(() => { SetInteractable(true); SetFeedback(forgotFeedback, msg, isError: true); });
+                }
+            }
+            catch (Exception ex)
+            {
+                Dispatch(() => { SetInteractable(true); SetFeedback(forgotFeedback, "Không kết nối được server.", isError: true); });
+                Debug.LogError($"[Auth] ForgotPasswordAsync: {ex.Message}");
+            }
+        }
+
+        private async Task ResetPasswordAsync(string token, string newPassword)
+        {
+            try
+            {
+                var body    = JsonUtility.ToJson(new ResetPasswordDto { Token = token, NewPassword = newPassword });
+                var content = new StringContent(body, Encoding.UTF8, "application/json");
+                var resp    = await Http.PostAsync($"{serverUrl}/api/auth/reset-password", content);
+                var json    = await resp.Content.ReadAsStringAsync();
+
+                if (resp.IsSuccessStatusCode)
+                {
+                    Dispatch(async () =>
+                    {
+                        SetInteractable(true);
+                        SetFeedback(resetFeedback, "Đổi mật khẩu thành công! Đang chuyển về đăng nhập...", isError: false);
+                        Debug.Log("[Auth] ResetPassword OK");
+                        await Task.Delay(1500);
+                        Dispatch(ShowLoginView);
+                    });
+                }
+                else
+                {
+                    string msg = ParseError(json) ?? "Token không hợp lệ hoặc đã hết hạn.";
+                    Dispatch(() => { SetInteractable(true); SetFeedback(resetFeedback, msg, isError: true); });
+                }
+            }
+            catch (Exception ex)
+            {
+                Dispatch(() => { SetInteractable(true); SetFeedback(resetFeedback, "Không kết nối được server.", isError: true); });
+                Debug.LogError($"[Auth] ResetPasswordAsync: {ex.Message}");
+            }
+        }
+
+        // ── Helpers ───────────────────────────────────────────────────────────
+
         private void Dispatch(Action action)
         {
             lock (_mainThread) _mainThread.Enqueue(action);
         }
 
-        private static string ParseErrorMessage(string json)
+        private static string ParseError(string json)
         {
             if (string.IsNullOrEmpty(json)) return null;
-            try { var e = JsonUtility.FromJson<ErrorDto>(json); return string.IsNullOrEmpty(e?.message) ? null : e.message; }
+            try
+            {
+                var e = JsonUtility.FromJson<ErrorDto>(json);
+                return string.IsNullOrEmpty(e?.message) ? null : e.message;
+            }
             catch { return null; }
         }
 
@@ -194,28 +344,36 @@ namespace PokemonMMO.UI
         {
             if (label == null) return;
             label.text  = msg;
-            label.color = isError ? new Color(1f, 0.40f, 0.40f) : new Color(0.40f, 1f, 0.60f);
+            label.color = isError ? new Color(1f, 0.35f, 0.35f) : new Color(0.35f, 1f, 0.55f);
         }
 
-        private void ClearFeedback()
+        private void ClearAll()
         {
-            if (loginFeedback  != null) loginFeedback.text  = "";
-            if (signUpFeedback != null) signUpFeedback.text = "";
+            if (loginFeedback        != null) loginFeedback.text        = "";
+            if (signUpFeedback       != null) signUpFeedback.text       = "";
+            if (forgotFeedback       != null) forgotFeedback.text       = "";
+            if (resetFeedback        != null) resetFeedback.text        = "";
         }
 
-        private void SetInteractable(bool value)
+        private void SetInteractable(bool on)
         {
-            if (loginUsernameInput  != null) loginUsernameInput.interactable  = value;
-            if (loginPasswordInput  != null) loginPasswordInput.interactable  = value;
-            if (signUpUsernameInput != null) signUpUsernameInput.interactable = value;
-            if (signUpEmailInput    != null) signUpEmailInput.interactable    = value;
-            if (signUpPasswordInput != null) signUpPasswordInput.interactable = value;
+            if (loginUsernameInput    != null) loginUsernameInput.interactable    = on;
+            if (loginPasswordInput    != null) loginPasswordInput.interactable    = on;
+            if (signUpUsernameInput   != null) signUpUsernameInput.interactable   = on;
+            if (signUpEmailInput      != null) signUpEmailInput.interactable      = on;
+            if (signUpPasswordInput   != null) signUpPasswordInput.interactable   = on;
+            if (forgotEmailInput      != null) forgotEmailInput.interactable      = on;
+            if (resetTokenInput       != null) resetTokenInput.interactable       = on;
+            if (resetNewPasswordInput != null) resetNewPasswordInput.interactable = on;
         }
 
         // ── DTOs ──────────────────────────────────────────────────────────────
-        [Serializable] private class LoginRequestDto    { public string Username; public string Password; }
-        [Serializable] private class RegisterRequestDto { public string Username; public string Email; public string Password; }
-        [Serializable] private class AuthResponseDto    { public string Token; public string Username; public string AccountId; }
-        [Serializable] private class ErrorDto           { public string message; }
+        [Serializable] private class LoginRequestDto           { public string Username; public string Password; }
+        [Serializable] private class RegisterRequestDto        { public string Username; public string Email; public string Password; }
+        [Serializable] private class ForgotPasswordDto         { public string Email; }
+        [Serializable] private class ResetPasswordDto          { public string Token; public string NewPassword; }
+        [Serializable] private class AuthResponseDto           { public string Token; public string Username; public string AccountId; }
+        [Serializable] private class ForgotPasswordResponseDto { public string message; public string ResetToken; }
+        [Serializable] private class ErrorDto                  { public string message; }
     }
 }
