@@ -1,2 +1,14 @@
 # Secrets — never commit
 .env
+
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# Visual Studio
+*.csproj
+*.sln
+*.userprefs
