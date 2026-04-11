@@ -1,18 +1,18 @@
 {
   "context": {
-    "projectPath": "D:/lt-mcb-NT106.Q22.ANTT/UnityAuthUI/Packages",
+    "projectPath": "/Users/nergy/lt-mcb-NT106.Q22.ANTT/Client/Packages",
     "unityVersion": "6000.3.6f1"
   },
   "inputs": [
-    "D:\\lt-mcb-NT106.Q22.ANTT\\UnityAuthUI\\Packages\\manifest.json",
-    "D:\\lt-mcb-NT106.Q22.ANTT\\UnityAuthUI\\Packages\\packages-lock.json",
-    "C:\\Program Files\\Unity\\Hub\\Editor\\6000.3.6f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\BuiltInPackagesCombined.sha1"
+    "/Users/nergy/lt-mcb-NT106.Q22.ANTT/Client/Packages/manifest.json",
+    "/Users/nergy/lt-mcb-NT106.Q22.ANTT/Client/Packages/packages-lock.json",
+    "/Applications/Unity/Hub/Editor/6000.3.6f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/BuiltInPackagesCombined.sha1"
   ],
   "outputs": {
     "com.unity.multiplayer.center@1.0.1": {
       "name": "com.unity.multiplayer.center",
       "displayName": "Multiplayer Center",
-      "resolvedPath": "D:\\lt-mcb-NT106.Q22.ANTT\\UnityAuthUI\\Library\\PackageCache\\com.unity.multiplayer.center@f01f4ba8d00a",
+      "resolvedPath": "/Users/nergy/lt-mcb-NT106.Q22.ANTT/Client/Library/PackageCache/com.unity.multiplayer.center@f01f4ba8d00a",
       "fingerprint": "f01f4ba8d00afa4e957bddf0fcd1612a564401ff",
       "editorCompatibility": "6000.0.0a1",
       "version": "1.0.1",
@@ -22,7 +22,7 @@
     "com.unity.ugui@2.0.0": {
       "name": "com.unity.ugui",
       "displayName": "uGUI",
-      "resolvedPath": "D:\\lt-mcb-NT106.Q22.ANTT\\UnityAuthUI\\Library\\PackageCache\\com.unity.ugui@b9d1dd437cb9",
+      "resolvedPath": "/Users/nergy/lt-mcb-NT106.Q22.ANTT/Client/Library/PackageCache/com.unity.ugui@b9d1dd437cb9",
       "fingerprint": "b9d1dd437cb9402dbac4aa695ff758f7808c3551",
       "editorCompatibility": "2019.2.0a1",
       "version": "2.0.0",
@@ -32,7 +32,7 @@
     "com.unity.modules.accessibility@1.0.0": {
       "name": "com.unity.modules.accessibility",
       "displayName": "Accessibility",
-      "resolvedPath": "D:\\lt-mcb-NT106.Q22.ANTT\\UnityAuthUI\\Library\\PackageCache\\com.unity.modules.accessibility",
+      "resolvedPath": "/Users/nergy/lt-mcb-NT106.Q22.ANTT/Client/Library/PackageCache/com.unity.modules.accessibility",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -40,7 +40,23 @@
     "com.unity.modules.adaptiveperformance@1.0.0": {
       "name": "com.unity.modules.adaptiveperformance",
       "displayName": "Adaptive Performance",
-      "resolvedPath": "D:\\lt-mcb-NT106.Q22.ANTT\\UnityAuthUI\\Library\\PackageCache\\com.unity.modules.adaptiveperformance",
+      "resolvedPath": "/Users/nergy/lt-mcb-NT106.Q22.ANTT/Client/Library/PackageCache/com.unity.modules.adaptiveperformance",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.animation@1.0.0": {
+      "name": "com.unity.modules.animation",
+      "displayName": "Animation",
+      "resolvedPath": "/Users/nergy/lt-mcb-NT106.Q22.ANTT/Client/Library/PackageCache/com.unity.modules.animation",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.audio@1.0.0": {
+      "name": "com.unity.modules.audio",
+      "displayName": "Audio",
+      "resolvedPath": "/Users/nergy/lt-mcb-NT106.Q22.ANTT/Client/Library/PackageCache/com.unity.modules.audio",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -48,7 +64,7 @@
     "com.unity.modules.imgui@1.0.0": {
       "name": "com.unity.modules.imgui",
       "displayName": "IMGUI",
-      "resolvedPath": "D:\\lt-mcb-NT106.Q22.ANTT\\UnityAuthUI\\Library\\PackageCache\\com.unity.modules.imgui",
+      "resolvedPath": "/Users/nergy/lt-mcb-NT106.Q22.ANTT/Client/Library/PackageCache/com.unity.modules.imgui",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -56,7 +72,23 @@
     "com.unity.modules.jsonserialize@1.0.0": {
       "name": "com.unity.modules.jsonserialize",
       "displayName": "JSONSerialize",
-      "resolvedPath": "D:\\lt-mcb-NT106.Q22.ANTT\\UnityAuthUI\\Library\\PackageCache\\com.unity.modules.jsonserialize",
+      "resolvedPath": "/Users/nergy/lt-mcb-NT106.Q22.ANTT/Client/Library/PackageCache/com.unity.modules.jsonserialize",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.physics@1.0.0": {
+      "name": "com.unity.modules.physics",
+      "displayName": "Physics",
+      "resolvedPath": "/Users/nergy/lt-mcb-NT106.Q22.ANTT/Client/Library/PackageCache/com.unity.modules.physics",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.physics2d@1.0.0": {
+      "name": "com.unity.modules.physics2d",
+      "displayName": "Physics 2D",
+      "resolvedPath": "/Users/nergy/lt-mcb-NT106.Q22.ANTT/Client/Library/PackageCache/com.unity.modules.physics2d",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -64,7 +96,15 @@
     "com.unity.modules.ui@1.0.0": {
       "name": "com.unity.modules.ui",
       "displayName": "UI",
-      "resolvedPath": "D:\\lt-mcb-NT106.Q22.ANTT\\UnityAuthUI\\Library\\PackageCache\\com.unity.modules.ui",
+      "resolvedPath": "/Users/nergy/lt-mcb-NT106.Q22.ANTT/Client/Library/PackageCache/com.unity.modules.ui",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.modules.unitywebrequest@1.0.0": {
+      "name": "com.unity.modules.unitywebrequest",
+      "displayName": "Unity Web Request",
+      "resolvedPath": "/Users/nergy/lt-mcb-NT106.Q22.ANTT/Client/Library/PackageCache/com.unity.modules.unitywebrequest",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -72,7 +112,7 @@
     "com.unity.modules.vectorgraphics@1.0.0": {
       "name": "com.unity.modules.vectorgraphics",
       "displayName": "Vector Graphics",
-      "resolvedPath": "D:\\lt-mcb-NT106.Q22.ANTT\\UnityAuthUI\\Library\\PackageCache\\com.unity.modules.vectorgraphics",
+      "resolvedPath": "/Users/nergy/lt-mcb-NT106.Q22.ANTT/Client/Library/PackageCache/com.unity.modules.vectorgraphics",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -80,7 +120,7 @@
     "com.unity.2d.sprite@1.0.0": {
       "name": "com.unity.2d.sprite",
       "displayName": "2D Sprite",
-      "resolvedPath": "D:\\lt-mcb-NT106.Q22.ANTT\\UnityAuthUI\\Library\\PackageCache\\com.unity.2d.sprite@82f01c8c75ca",
+      "resolvedPath": "/Users/nergy/lt-mcb-NT106.Q22.ANTT/Client/Library/PackageCache/com.unity.2d.sprite@82f01c8c75ca",
       "fingerprint": "82f01c8c75ca2d707990e8dc249b71ab7d1aa33e",
       "editorCompatibility": "2019.2.0a1",
       "version": "1.0.0",
@@ -90,7 +130,7 @@
     "com.unity.modules.uielements@1.0.0": {
       "name": "com.unity.modules.uielements",
       "displayName": "UIElements",
-      "resolvedPath": "D:\\lt-mcb-NT106.Q22.ANTT\\UnityAuthUI\\Library\\PackageCache\\com.unity.modules.uielements",
+      "resolvedPath": "/Users/nergy/lt-mcb-NT106.Q22.ANTT/Client/Library/PackageCache/com.unity.modules.uielements",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -98,7 +138,7 @@
     "com.unity.modules.imageconversion@1.0.0": {
       "name": "com.unity.modules.imageconversion",
       "displayName": "Image Conversion",
-      "resolvedPath": "D:\\lt-mcb-NT106.Q22.ANTT\\UnityAuthUI\\Library\\PackageCache\\com.unity.modules.imageconversion",
+      "resolvedPath": "/Users/nergy/lt-mcb-NT106.Q22.ANTT/Client/Library/PackageCache/com.unity.modules.imageconversion",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -106,7 +146,7 @@
     "com.unity.modules.subsystems@1.0.0": {
       "name": "com.unity.modules.subsystems",
       "displayName": "Subsystems",
-      "resolvedPath": "D:\\lt-mcb-NT106.Q22.ANTT\\UnityAuthUI\\Library\\PackageCache\\com.unity.modules.subsystems",
+      "resolvedPath": "/Users/nergy/lt-mcb-NT106.Q22.ANTT/Client/Library/PackageCache/com.unity.modules.subsystems",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
@@ -114,15 +154,7 @@
     "com.unity.modules.hierarchycore@1.0.0": {
       "name": "com.unity.modules.hierarchycore",
       "displayName": "Hierarchy Core",
-      "resolvedPath": "D:\\lt-mcb-NT106.Q22.ANTT\\UnityAuthUI\\Library\\PackageCache\\com.unity.modules.hierarchycore",
-      "version": "1.0.0",
-      "source": "builtin",
-      "testable": false
-    },
-    "com.unity.modules.physics@1.0.0": {
-      "name": "com.unity.modules.physics",
-      "displayName": "Physics",
-      "resolvedPath": "D:\\lt-mcb-NT106.Q22.ANTT\\UnityAuthUI\\Library\\PackageCache\\com.unity.modules.physics",
+      "resolvedPath": "/Users/nergy/lt-mcb-NT106.Q22.ANTT/Client/Library/PackageCache/com.unity.modules.hierarchycore",
       "version": "1.0.0",
       "source": "builtin",
       "testable": false
