@@ -116,13 +116,13 @@ TextureImporter:
       name: Login menu asset_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1377
-        height: 768
+        x: 1229
+        y: 394
+        width: 72
+        height: 66
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 14, z: 17, w: 15}
       customData: 
       outline: []
       physicsShape: []
@@ -134,11 +134,187 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Login menu asset_1
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 397
+        width: 67
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 15, y: 7, z: 15, w: 10}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d21724c9a6f594f99c15d1873aedad
+      internalID: -1294148160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Login menu asset_2
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 463
+        width: 197
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 10, z: 5, w: 6}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e0f91ec3da98a43a1893f07203c6c7
+      internalID: -1549585688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Login menu asset_3
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 332
+        width: 482
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0e9c7151196f34aae77081e0478e7a
+      internalID: 229056037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Login menu asset_4
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 397
+        width: 67
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 14, y: 7, z: 18, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 448cb3b752168c240b4e27cb2ba81115
+      internalID: 389410939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Login menu asset_5
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 469
+        width: 198
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 4, z: 9, w: 7}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d57b1422522dd442bee6132aa1f77a9
+      internalID: -1118626111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Login menu asset_6
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 31
+        width: 367
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 8, z: 6, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7eaf21dbaa21643af57f26c66eae6f
+      internalID: -1147926602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Login menu asset_7
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 393
+        width: 65
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 9, y: 18, z: 9, w: 20}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7037ca43558754f95ff14f07bbdc8e
+      internalID: 1388425672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Login menu asset_8
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 334
+        width: 326
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 4, z: 20, w: 6}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d47eadf5d0153643aec0ea4ec646f3c
+      internalID: 927387969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 29c755c33b44dc94290781006699a7f0
     internalID: 0
     vertices: []
     indices: 
@@ -146,9 +322,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":3.0},"gridSpriteSize":{"x":459.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      - key: SpriteEditor.SliceOnImport
+        value: False
     nameFileIdTable:
       Login menu asset_0: -8724043679812908724
+      Login menu asset_1: -1294148160
+      Login menu asset_2: -1549585688
+      Login menu asset_3: 229056037
+      Login menu asset_4: 389410939
+      Login menu asset_5: -1118626111
+      Login menu asset_6: -1147926602
+      Login menu asset_7: 1388425672
+      Login menu asset_8: 927387969
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
