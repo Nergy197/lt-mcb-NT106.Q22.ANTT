@@ -54,6 +54,15 @@ namespace PokemonMMO.UI
         private static readonly HttpClient Http = new HttpClient { Timeout = TimeSpan.FromSeconds(10) };
         private readonly Queue<Action> _mainThread = new Queue<Action>();
 
+        private void Awake()
+        {
+            // Đảm bảo các ô nhập liệu không bị giới hạn độ dài
+            if (loginUsernameInput != null) loginUsernameInput.characterLimit = 0;
+            if (signUpUsernameInput != null) signUpUsernameInput.characterLimit = 0;
+            if (signUpEmailInput != null) signUpEmailInput.characterLimit = 0;
+            if (forgotEmailInput != null) forgotEmailInput.characterLimit = 0;
+        }
+
         private void Update()
         {
             lock (_mainThread)
