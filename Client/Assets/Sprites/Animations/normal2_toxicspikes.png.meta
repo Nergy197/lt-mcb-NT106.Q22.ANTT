@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: 8959895cfccd84c4bae855a655b2f803
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3630375758881432600
+    second: normal2_toxicspikes_0
+  - first:
+      213: 5108873884616139744
+    second: normal2_toxicspikes_1
+  - first:
+      213: -1888495768443149196
+    second: normal2_toxicspikes_2
+  - first:
+      213: 238446512671156671
+    second: normal2_toxicspikes_3
+  - first:
+      213: -1502134435952769510
+    second: normal2_toxicspikes_4
+  - first:
+      213: -5892390433274907919
+    second: normal2_toxicspikes_5
+  - first:
+      213: 489207907820949242
+    second: normal2_toxicspikes_6
+  - first:
+      213: 7469941011100097530
+    second: normal2_toxicspikes_7
+  - first:
+      213: -2183603394557077990
+    second: normal2_toxicspikes_8
+  - first:
+      213: -5743816889091437181
+    second: normal2_toxicspikes_9
+  - first:
+      213: 8377815686174012202
+    second: normal2_toxicspikes_10
+  - first:
+      213: -943683707939495322
+    second: normal2_toxicspikes_11
+  - first:
+      213: -5899481261417716548
+    second: normal2_toxicspikes_12
+  - first:
+      213: -6453275827463932699
+    second: normal2_toxicspikes_13
+  - first:
+      213: 7815075258662630887
+    second: normal2_toxicspikes_14
+  - first:
+      213: -6933824911879980610
+    second: normal2_toxicspikes_15
+  - first:
+      213: 8361615357880709406
+    second: normal2_toxicspikes_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: normal2_toxicspikes_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 501
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8142155a48fa16230800000000000000
+      internalID: 3630375758881432600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: normal2_toxicspikes_1
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 465
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e3a0d6eabd56e640800000000000000
+      internalID: 5108873884616139744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: normal2_toxicspikes_2
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 434
+        width: 106
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4742e12ba17bac5e0800000000000000
+      internalID: -1888495768443149196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: normal2_toxicspikes_3
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 434
+        width: 110
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb9e1b507d12f4300800000000000000
+      internalID: 238446512671156671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: normal2_toxicspikes_4
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 432
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a16472c60b8572be0800000000000000
+      internalID: -1502134435952769510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: normal2_toxicspikes_5
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 263
+        width: 122
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f23db2ce160a3ea0800000000000000
+      internalID: -5892390433274907919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: normal2_toxicspikes_6
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 258
+        width: 122
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afecafe00040ac600800000000000000
+      internalID: 489207907820949242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: normal2_toxicspikes_7
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 227
+        width: 130
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afb5ebba5cf8aa760800000000000000
+      internalID: 7469941011100097530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: normal2_toxicspikes_8
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 225
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a169619284842b1e0800000000000000
+      internalID: -2183603394557077990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: normal2_toxicspikes_9
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 219
+        width: 154
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38dc0dea8fcd940b0800000000000000
+      internalID: -5743816889091437181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: normal2_toxicspikes_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 356
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23f810aafaf34470800000000000000
+      internalID: 8377815686174012202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: normal2_toxicspikes_11
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 105
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66261ffdaac57e2f0800000000000000
+      internalID: -943683707939495322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: normal2_toxicspikes_12
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 104
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb4af1eac05d02ea0800000000000000
+      internalID: -5899481261417716548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: normal2_toxicspikes_13
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 0
+        width: 205
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e4b56a63db5176a0800000000000000
+      internalID: -6453275827463932699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: normal2_toxicspikes_14
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 72
+        width: 62
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e5b78daa89b47c60800000000000000
+      internalID: 7815075258662630887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: normal2_toxicspikes_15
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 26
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb9b3a8cafa16cf90800000000000000
+      internalID: -6933824911879980610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: normal2_toxicspikes_16
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 57
+        width: 104
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e113ee2cddc6a0470800000000000000
+      internalID: 8361615357880709406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      normal2_toxicspikes_0: 3630375758881432600
+      normal2_toxicspikes_1: 5108873884616139744
+      normal2_toxicspikes_10: 8377815686174012202
+      normal2_toxicspikes_11: -943683707939495322
+      normal2_toxicspikes_12: -5899481261417716548
+      normal2_toxicspikes_13: -6453275827463932699
+      normal2_toxicspikes_14: 7815075258662630887
+      normal2_toxicspikes_15: -6933824911879980610
+      normal2_toxicspikes_16: 8361615357880709406
+      normal2_toxicspikes_2: -1888495768443149196
+      normal2_toxicspikes_3: 238446512671156671
+      normal2_toxicspikes_4: -1502134435952769510
+      normal2_toxicspikes_5: -5892390433274907919
+      normal2_toxicspikes_6: 489207907820949242
+      normal2_toxicspikes_7: 7469941011100097530
+      normal2_toxicspikes_8: -2183603394557077990
+      normal2_toxicspikes_9: -5743816889091437181
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

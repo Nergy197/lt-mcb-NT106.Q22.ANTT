@@ -1,0 +1,858 @@
+fileFormatVersion: 2
+guid: a7c600805c85c4d068d66fd5f85535ba
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6941669742255131912
+    second: PRAS- Judgement_0
+  - first:
+      213: -5896039549050587497
+    second: PRAS- Judgement_1
+  - first:
+      213: 1498517375951262182
+    second: PRAS- Judgement_2
+  - first:
+      213: -1113982916735633145
+    second: PRAS- Judgement_3
+  - first:
+      213: -7113251325569992216
+    second: PRAS- Judgement_4
+  - first:
+      213: -7858507958566835245
+    second: PRAS- Judgement_5
+  - first:
+      213: 5051669393074388649
+    second: PRAS- Judgement_6
+  - first:
+      213: 5582433146211518572
+    second: PRAS- Judgement_7
+  - first:
+      213: 5990599090260034751
+    second: PRAS- Judgement_8
+  - first:
+      213: 2565892691422796756
+    second: PRAS- Judgement_9
+  - first:
+      213: 2176822559132257989
+    second: PRAS- Judgement_10
+  - first:
+      213: -7873394770556668476
+    second: PRAS- Judgement_11
+  - first:
+      213: -6512049364211735878
+    second: PRAS- Judgement_12
+  - first:
+      213: 1427596034457110072
+    second: PRAS- Judgement_13
+  - first:
+      213: -4099647662882987456
+    second: PRAS- Judgement_14
+  - first:
+      213: 375230453746218158
+    second: PRAS- Judgement_15
+  - first:
+      213: 2017253354925746002
+    second: PRAS- Judgement_16
+  - first:
+      213: -5488393433519628958
+    second: PRAS- Judgement_17
+  - first:
+      213: 7134471323476711466
+    second: PRAS- Judgement_18
+  - first:
+      213: -3696330063905956722
+    second: PRAS- Judgement_19
+  - first:
+      213: -7377147416728592802
+    second: PRAS- Judgement_20
+  - first:
+      213: -4782294521041442615
+    second: PRAS- Judgement_21
+  - first:
+      213: -790407482183218493
+    second: PRAS- Judgement_22
+  - first:
+      213: 1601648025562821217
+    second: PRAS- Judgement_23
+  - first:
+      213: 6602691978571611779
+    second: PRAS- Judgement_24
+  - first:
+      213: -3936723383494499521
+    second: PRAS- Judgement_25
+  - first:
+      213: -3198957290267128649
+    second: PRAS- Judgement_26
+  - first:
+      213: -1907306663495544654
+    second: PRAS- Judgement_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Judgement_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1047
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f23ec0e52c3aaf90800000000000000
+      internalID: -6941669742255131912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_1
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1043
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7967f29c44f0d2ea0800000000000000
+      internalID: -5896039549050587497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_2
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1041
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e1535b2d9dcbc410800000000000000
+      internalID: 1498517375951262182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_3
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1039
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7097e1a70765a80f0800000000000000
+      internalID: -1113982916735633145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_4
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 1035
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e9f2556b97a84d90800000000000000
+      internalID: -7113251325569992216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_5
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 837
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3db2b09d5a8f0f290800000000000000
+      internalID: -7858507958566835245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_6
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 833
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ae79e05c822b1640800000000000000
+      internalID: 5051669393074388649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_7
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 827
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c68cd469e59c87d40800000000000000
+      internalID: 5582433146211518572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_8
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 809
+        width: 118
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb44abe0222e22350800000000000000
+      internalID: 5990599090260034751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_9
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 789
+        width: 158
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dbd604eec1eb9320800000000000000
+      internalID: 2565892691422796756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_10
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 659
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ce82209590a53e10800000000000000
+      internalID: 2176822559132257989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_11
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 653
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c53d84db251cb290800000000000000
+      internalID: -7873394770556668476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_12
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 653
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab2e9560b9d80a5a0800000000000000
+      internalID: -6512049364211735878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_13
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 657
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83682949707dfc310800000000000000
+      internalID: 1427596034457110072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_14
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 653
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0426995eb202b17c0800000000000000
+      internalID: -4099647662882987456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_15
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 461
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea4b3701c16153500800000000000000
+      internalID: 375230453746218158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_16
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 475
+        width: 38
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 257605a0d39befb10800000000000000
+      internalID: 2017253354925746002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_17
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 475
+        width: 48
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26dd97f304f45d3b0800000000000000
+      internalID: -5488393433519628958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_18
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 471
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a285a006edbb20360800000000000000
+      internalID: 7134471323476711466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_19
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 457
+        width: 8
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8cd940146ff3bcc0800000000000000
+      internalID: -3696330063905956722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_20
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 255
+        width: 10
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5e9332a28b1f9990800000000000000
+      internalID: -7377147416728592802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_21
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 255
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c827068870e1adb0800000000000000
+      internalID: -4782294521041442615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_22
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 273
+        width: 8
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca88ac2598e705f0800000000000000
+      internalID: -790407482183218493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_23
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 273
+        width: 10
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 162b0e2b4623a3610800000000000000
+      internalID: 1601648025562821217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_24
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 273
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38ef4183f5971ab50800000000000000
+      internalID: 6602691978571611779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_25
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 77
+        width: 66
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3326dbb0f2fd59c0800000000000000
+      internalID: -3936723383494499521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_26
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 77
+        width: 66
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc4bf51b450b93d0800000000000000
+      internalID: -3198957290267128649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Judgement_27
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 21
+        width: 158
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b0dc94e1b2e785e0800000000000000
+      internalID: -1907306663495544654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Judgement_0: -6941669742255131912
+      PRAS- Judgement_1: -5896039549050587497
+      PRAS- Judgement_10: 2176822559132257989
+      PRAS- Judgement_11: -7873394770556668476
+      PRAS- Judgement_12: -6512049364211735878
+      PRAS- Judgement_13: 1427596034457110072
+      PRAS- Judgement_14: -4099647662882987456
+      PRAS- Judgement_15: 375230453746218158
+      PRAS- Judgement_16: 2017253354925746002
+      PRAS- Judgement_17: -5488393433519628958
+      PRAS- Judgement_18: 7134471323476711466
+      PRAS- Judgement_19: -3696330063905956722
+      PRAS- Judgement_2: 1498517375951262182
+      PRAS- Judgement_20: -7377147416728592802
+      PRAS- Judgement_21: -4782294521041442615
+      PRAS- Judgement_22: -790407482183218493
+      PRAS- Judgement_23: 1601648025562821217
+      PRAS- Judgement_24: 6602691978571611779
+      PRAS- Judgement_25: -3936723383494499521
+      PRAS- Judgement_26: -3198957290267128649
+      PRAS- Judgement_27: -1907306663495544654
+      PRAS- Judgement_3: -1113982916735633145
+      PRAS- Judgement_4: -7113251325569992216
+      PRAS- Judgement_5: -7858507958566835245
+      PRAS- Judgement_6: 5051669393074388649
+      PRAS- Judgement_7: 5582433146211518572
+      PRAS- Judgement_8: 5990599090260034751
+      PRAS- Judgement_9: 2565892691422796756
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

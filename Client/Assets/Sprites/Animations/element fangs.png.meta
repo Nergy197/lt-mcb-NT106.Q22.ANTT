@@ -1,0 +1,910 @@
+fileFormatVersion: 2
+guid: e14b4f253ec1e4a5db0d5508ca16e285
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5452650321708017411
+    second: element fangs_0
+  - first:
+      213: -8819043595857466367
+    second: element fangs_1
+  - first:
+      213: 9144319108523121331
+    second: element fangs_2
+  - first:
+      213: -4247549745148764774
+    second: element fangs_3
+  - first:
+      213: -254170795075475613
+    second: element fangs_4
+  - first:
+      213: 498804941216325069
+    second: element fangs_5
+  - first:
+      213: -3175685146459823016
+    second: element fangs_6
+  - first:
+      213: -1328065014310395843
+    second: element fangs_7
+  - first:
+      213: 2721851567718987882
+    second: element fangs_8
+  - first:
+      213: -1735859781284641881
+    second: element fangs_9
+  - first:
+      213: 6069204382607382963
+    second: element fangs_10
+  - first:
+      213: -8515101704096888301
+    second: element fangs_11
+  - first:
+      213: -8555146319921039071
+    second: element fangs_12
+  - first:
+      213: 1297226239908120194
+    second: element fangs_13
+  - first:
+      213: 1840736068224483301
+    second: element fangs_14
+  - first:
+      213: 8682835751018413698
+    second: element fangs_15
+  - first:
+      213: 1641305870421785048
+    second: element fangs_16
+  - first:
+      213: 2200753406194586731
+    second: element fangs_17
+  - first:
+      213: 1208141141596622122
+    second: element fangs_18
+  - first:
+      213: 1209495623550915480
+    second: element fangs_19
+  - first:
+      213: -53374009120184208
+    second: element fangs_20
+  - first:
+      213: 7344955052490858888
+    second: element fangs_21
+  - first:
+      213: 3057626773630431299
+    second: element fangs_22
+  - first:
+      213: -7579449608933847351
+    second: element fangs_23
+  - first:
+      213: -9118917875273929630
+    second: element fangs_24
+  - first:
+      213: 6101883685313228728
+    second: element fangs_25
+  - first:
+      213: -154811011793643966
+    second: element fangs_26
+  - first:
+      213: -8984575556108209572
+    second: element fangs_27
+  - first:
+      213: 5521190382413814924
+    second: element fangs_28
+  - first:
+      213: 1799245773230406047
+    second: element fangs_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: element fangs_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 675
+        width: 104
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30763d50494bbab40800000000000000
+      internalID: 5452650321708017411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_1
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 682
+        width: 104
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10c6b3a23967c9580800000000000000
+      internalID: -8819043595857466367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_2
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 684
+        width: 104
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ba5650d7c527ee70800000000000000
+      internalID: 9144319108523121331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_3
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 693
+        width: 104
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9d5b92e20cad05c0800000000000000
+      internalID: -4247549745148764774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_4
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 692
+        width: 104
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3676f3f2201097cf0800000000000000
+      internalID: -254170795075475613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_5
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 619
+        width: 104
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcd9865837c1ce600800000000000000
+      internalID: 498804941216325069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_6
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 611
+        width: 104
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85427ce4f23bde3d0800000000000000
+      internalID: -3175685146459823016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_7
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 600
+        width: 104
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30a767e7e3c19de0800000000000000
+      internalID: -1328065014310395843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_8
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 589
+        width: 104
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a68fa317495f5c520800000000000000
+      internalID: 2721851567718987882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_9
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 595
+        width: 104
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a344a4d9bcf8e7e0800000000000000
+      internalID: -1735859781284641881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_10
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 497
+        width: 104
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b99e8eda352a3450800000000000000
+      internalID: 6069204382607382963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_11
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 487
+        width: 104
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31a4bf47d1844d980800000000000000
+      internalID: -8515101704096888301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_12
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 472
+        width: 104
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 129bd97cfb3064980800000000000000
+      internalID: -8555146319921039071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_13
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 444
+        width: 104
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2860a07646ca00210800000000000000
+      internalID: 1297226239908120194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_14
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 467
+        width: 104
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eff4cf83bb9b8910800000000000000
+      internalID: 1840736068224483301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_15
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 418
+        width: 104
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28eb386ac11af7870800000000000000
+      internalID: 8682835751018413698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_16
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 429
+        width: 104
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d9f04e3ef617c610800000000000000
+      internalID: 1641305870421785048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_17
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 441
+        width: 104
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6495761095aa8e10800000000000000
+      internalID: 2200753406194586731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_18
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 434
+        width: 104
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2dc66f97fd24c010800000000000000
+      internalID: 1208141141596622122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_19
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 284
+        width: 104
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89354278cddf8c010800000000000000
+      internalID: 1209495623550915480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_20
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 286
+        width: 104
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 078272a1f90624ff0800000000000000
+      internalID: -53374009120184208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_21
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 292
+        width: 104
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 881adea74b58ee560800000000000000
+      internalID: 7344955052490858888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_22
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 261
+        width: 58
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34037f1c95fde6a20800000000000000
+      internalID: 3057626773630431299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_23
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 257
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ce46820db260d690800000000000000
+      internalID: -7579449608933847351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_24
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 244
+        width: 104
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26c665ca188137180800000000000000
+      internalID: -9118917875273929630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_25
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 236
+        width: 104
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bfa8d3f1ee3ea450800000000000000
+      internalID: 6101883685313228728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_26
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 226
+        width: 104
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24698ba74300addf0800000000000000
+      internalID: -154811011793643966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_27
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 78
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5233805220605380800000000000000
+      internalID: -8984575556108209572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_28
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 72
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c141976653f9c40800000000000000
+      internalID: 5521190382413814924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: element fangs_29
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 62
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9975097f7438f810800000000000000
+      internalID: 1799245773230406047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      element fangs_0: 5452650321708017411
+      element fangs_1: -8819043595857466367
+      element fangs_10: 6069204382607382963
+      element fangs_11: -8515101704096888301
+      element fangs_12: -8555146319921039071
+      element fangs_13: 1297226239908120194
+      element fangs_14: 1840736068224483301
+      element fangs_15: 8682835751018413698
+      element fangs_16: 1641305870421785048
+      element fangs_17: 2200753406194586731
+      element fangs_18: 1208141141596622122
+      element fangs_19: 1209495623550915480
+      element fangs_2: 9144319108523121331
+      element fangs_20: -53374009120184208
+      element fangs_21: 7344955052490858888
+      element fangs_22: 3057626773630431299
+      element fangs_23: -7579449608933847351
+      element fangs_24: -9118917875273929630
+      element fangs_25: 6101883685313228728
+      element fangs_26: -154811011793643966
+      element fangs_27: -8984575556108209572
+      element fangs_28: 5521190382413814924
+      element fangs_29: 1799245773230406047
+      element fangs_3: -4247549745148764774
+      element fangs_4: -254170795075475613
+      element fangs_5: 498804941216325069
+      element fangs_6: -3175685146459823016
+      element fangs_7: -1328065014310395843
+      element fangs_8: 2721851567718987882
+      element fangs_9: -1735859781284641881
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

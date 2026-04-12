@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: 0300545a4db5047e08d1703c33e82b4a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7425967544203438289
+    second: PRAS- Clear Smog_0
+  - first:
+      213: 8818700241082102830
+    second: PRAS- Clear Smog_1
+  - first:
+      213: -703048846869184779
+    second: PRAS- Clear Smog_2
+  - first:
+      213: 7132987945027269870
+    second: PRAS- Clear Smog_3
+  - first:
+      213: -1670375473130019060
+    second: PRAS- Clear Smog_4
+  - first:
+      213: -7897491511832077295
+    second: PRAS- Clear Smog_5
+  - first:
+      213: 944224198087954945
+    second: PRAS- Clear Smog_6
+  - first:
+      213: 7545932408263871957
+    second: PRAS- Clear Smog_7
+  - first:
+      213: 3867897880310641953
+    second: PRAS- Clear Smog_8
+  - first:
+      213: 860541105775495346
+    second: PRAS- Clear Smog_9
+  - first:
+      213: 6190524891802433987
+    second: PRAS- Clear Smog_10
+  - first:
+      213: -1217813080484731118
+    second: PRAS- Clear Smog_11
+  - first:
+      213: 9182445427318545283
+    second: PRAS- Clear Smog_12
+  - first:
+      213: 4137374616278519449
+    second: PRAS- Clear Smog_13
+  - first:
+      213: 5748745897800820753
+    second: PRAS- Clear Smog_14
+  - first:
+      213: -2573685701834739961
+    second: PRAS- Clear Smog_15
+  - first:
+      213: 8115180794361360228
+    second: PRAS- Clear Smog_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Clear Smog_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 463
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d863d113265e0760800000000000000
+      internalID: 7425967544203438289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Clear Smog_1
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 447
+        width: 52
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e24b9525521526a70800000000000000
+      internalID: 8818700241082102830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Clear Smog_2
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 447
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fe3d967cc44e36f0800000000000000
+      internalID: -703048846869184779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Clear Smog_3
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 443
+        width: 70
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee47e7a6eb67df260800000000000000
+      internalID: 7132987945027269870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Clear Smog_4
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 463
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c076f827b52a1d8e0800000000000000
+      internalID: -1670375473130019060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Clear Smog_5
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 455
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c169c0059766290800000000000000
+      internalID: -7897491511832077295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Clear Smog_6
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 273
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1025c5bc7ee8a1d00800000000000000
+      internalID: 944224198087954945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Clear Smog_7
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 269
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dd0da59b8988b860800000000000000
+      internalID: 7545932408263871957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Clear Smog_8
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 265
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 125f66f01a88da530800000000000000
+      internalID: 3867897880310641953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Clear Smog_9
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 253
+        width: 72
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8ce5c839141fb00800000000000000
+      internalID: 860541105775495346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Clear Smog_10
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 253
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c9f81d179929e550800000000000000
+      internalID: 6190524891802433987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Clear Smog_11
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 247
+        width: 78
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21722ee9475791fe0800000000000000
+      internalID: -1217813080484731118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Clear Smog_12
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 275
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38b5bb827799e6f70800000000000000
+      internalID: 9182445427318545283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Clear Smog_13
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 245
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99ecff1fa48ea6930800000000000000
+      internalID: 4137374616278519449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Clear Smog_14
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 249
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 118e6669fe5a7cf40800000000000000
+      internalID: 5748745897800820753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Clear Smog_15
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 245
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f63aa7d7e684cd0800000000000000
+      internalID: -2573685701834739961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Clear Smog_16
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 79
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46f2bf7bfe9ee9070800000000000000
+      internalID: 8115180794361360228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Clear Smog_0: 7425967544203438289
+      PRAS- Clear Smog_1: 8818700241082102830
+      PRAS- Clear Smog_10: 6190524891802433987
+      PRAS- Clear Smog_11: -1217813080484731118
+      PRAS- Clear Smog_12: 9182445427318545283
+      PRAS- Clear Smog_13: 4137374616278519449
+      PRAS- Clear Smog_14: 5748745897800820753
+      PRAS- Clear Smog_15: -2573685701834739961
+      PRAS- Clear Smog_16: 8115180794361360228
+      PRAS- Clear Smog_2: -703048846869184779
+      PRAS- Clear Smog_3: 7132987945027269870
+      PRAS- Clear Smog_4: -1670375473130019060
+      PRAS- Clear Smog_5: -7897491511832077295
+      PRAS- Clear Smog_6: 944224198087954945
+      PRAS- Clear Smog_7: 7545932408263871957
+      PRAS- Clear Smog_8: 3867897880310641953
+      PRAS- Clear Smog_9: 860541105775495346
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

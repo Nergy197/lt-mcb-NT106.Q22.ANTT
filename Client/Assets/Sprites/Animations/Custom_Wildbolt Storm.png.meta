@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: c5d4fab4506d449efb159e5c738f6092
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4846930847214975312
+    second: Custom_Wildbolt Storm_0
+  - first:
+      213: -2860620190877570676
+    second: Custom_Wildbolt Storm_1
+  - first:
+      213: -4952852043500643669
+    second: Custom_Wildbolt Storm_2
+  - first:
+      213: 5037488347236107727
+    second: Custom_Wildbolt Storm_3
+  - first:
+      213: 2672345941820359026
+    second: Custom_Wildbolt Storm_4
+  - first:
+      213: -2360252674938329485
+    second: Custom_Wildbolt Storm_5
+  - first:
+      213: -7348201292266913151
+    second: Custom_Wildbolt Storm_6
+  - first:
+      213: -5747007208730960838
+    second: Custom_Wildbolt Storm_7
+  - first:
+      213: 6751374383997071125
+    second: Custom_Wildbolt Storm_8
+  - first:
+      213: -4199578044507491110
+    second: Custom_Wildbolt Storm_9
+  - first:
+      213: -2462275466287295702
+    second: Custom_Wildbolt Storm_10
+  - first:
+      213: -8434616741368440133
+    second: Custom_Wildbolt Storm_11
+  - first:
+      213: -7435304504609484751
+    second: Custom_Wildbolt Storm_12
+  - first:
+      213: 6004503763770872386
+    second: Custom_Wildbolt Storm_13
+  - first:
+      213: -8842023682812619829
+    second: Custom_Wildbolt Storm_14
+  - first:
+      213: -6965341445506573800
+    second: Custom_Wildbolt Storm_15
+  - first:
+      213: 4844077030897570693
+    second: Custom_Wildbolt Storm_16
+  - first:
+      213: 9105740535818329638
+    second: Custom_Wildbolt Storm_17
+  - first:
+      213: 245021299280470298
+    second: Custom_Wildbolt Storm_18
+  - first:
+      213: -8799293374500254603
+    second: Custom_Wildbolt Storm_19
+  - first:
+      213: 4480158792962401671
+    second: Custom_Wildbolt Storm_20
+  - first:
+      213: 3380175652783131130
+    second: Custom_Wildbolt Storm_21
+  - first:
+      213: 3059116773631820105
+    second: Custom_Wildbolt Storm_22
+  - first:
+      213: -9152305753580739351
+    second: Custom_Wildbolt Storm_23
+  - first:
+      213: 4307938656024761954
+    second: Custom_Wildbolt Storm_24
+  - first:
+      213: 1924652877801594503
+    second: Custom_Wildbolt Storm_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_0
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 457
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b64ed8131e3cbcb0800000000000000
+      internalID: -4846930847214975312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_1
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 465
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c89ae65b7190d48d0800000000000000
+      internalID: -2860620190877570676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_2
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 485
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baa931ace4fe34bb0800000000000000
+      internalID: -4952852043500643669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_3
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 435
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc58d2946f0c8e540800000000000000
+      internalID: 5037488347236107727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_4
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 443
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 271c823b974161520800000000000000
+      internalID: 2672345941820359026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_5
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 449
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 376a22282b2be3fd0800000000000000
+      internalID: -2360252674938329485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_6
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 387
+        width: 62
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1824d5c6bd1f50a90800000000000000
+      internalID: -7348201292266913151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_7
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 415
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c5bf184678e30b0800000000000000
+      internalID: -5747007208730960838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_8
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 431
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51f21df5b33b1bd50800000000000000
+      internalID: 6751374383997071125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_9
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 387
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad4f992d40a18b5c0800000000000000
+      internalID: -4199578044507491110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_10
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 427
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2359c4528d34ddd0800000000000000
+      internalID: -2462275466287295702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_11
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 401
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbadb2223c832fa80800000000000000
+      internalID: -8434616741368440133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_12
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 387
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 130d3ed62fd70d890800000000000000
+      internalID: -7435304504609484751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_13
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 403
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2421f042c58445350800000000000000
+      internalID: 6004503763770872386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_14
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 395
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc3dc5abe42da4580800000000000000
+      internalID: -8842023682812619829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_15
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 387
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81a5649fbd2265f90800000000000000
+      internalID: -6965341445506573800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_16
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 395
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5835743056e993340800000000000000
+      internalID: 4844077030897570693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_17
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 387
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62e9356e5c61e5e70800000000000000
+      internalID: 9105740535818329638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_18
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 389
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a116402d29d766300800000000000000
+      internalID: 245021299280470298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_19
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 391
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57cc67aeb41a2e580800000000000000
+      internalID: -8799293374500254603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_20
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 195
+        width: 66
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 785eddf6fa8bc2e30800000000000000
+      internalID: 4480158792962401671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_21
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 195
+        width: 64
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af90096e8dbc8ee20800000000000000
+      internalID: 3380175652783131130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_22
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 195
+        width: 66
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94183ca6f7a247a20800000000000000
+      internalID: 3059116773631820105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_23
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 195
+        width: 66
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e46e0a786a7cf080800000000000000
+      internalID: -9152305753580739351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_24
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 195
+        width: 66
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 266978a126fd8cb30800000000000000
+      internalID: 4307938656024761954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Wildbolt Storm_25
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 3
+        width: 66
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78e1c49589db5ba10800000000000000
+      internalID: 1924652877801594503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Custom_Wildbolt Storm_0: -4846930847214975312
+      Custom_Wildbolt Storm_1: -2860620190877570676
+      Custom_Wildbolt Storm_10: -2462275466287295702
+      Custom_Wildbolt Storm_11: -8434616741368440133
+      Custom_Wildbolt Storm_12: -7435304504609484751
+      Custom_Wildbolt Storm_13: 6004503763770872386
+      Custom_Wildbolt Storm_14: -8842023682812619829
+      Custom_Wildbolt Storm_15: -6965341445506573800
+      Custom_Wildbolt Storm_16: 4844077030897570693
+      Custom_Wildbolt Storm_17: 9105740535818329638
+      Custom_Wildbolt Storm_18: 245021299280470298
+      Custom_Wildbolt Storm_19: -8799293374500254603
+      Custom_Wildbolt Storm_2: -4952852043500643669
+      Custom_Wildbolt Storm_20: 4480158792962401671
+      Custom_Wildbolt Storm_21: 3380175652783131130
+      Custom_Wildbolt Storm_22: 3059116773631820105
+      Custom_Wildbolt Storm_23: -9152305753580739351
+      Custom_Wildbolt Storm_24: 4307938656024761954
+      Custom_Wildbolt Storm_25: 1924652877801594503
+      Custom_Wildbolt Storm_3: 5037488347236107727
+      Custom_Wildbolt Storm_4: 2672345941820359026
+      Custom_Wildbolt Storm_5: -2360252674938329485
+      Custom_Wildbolt Storm_6: -7348201292266913151
+      Custom_Wildbolt Storm_7: -5747007208730960838
+      Custom_Wildbolt Storm_8: 6751374383997071125
+      Custom_Wildbolt Storm_9: -4199578044507491110
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

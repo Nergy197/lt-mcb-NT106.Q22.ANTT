@@ -1,0 +1,910 @@
+fileFormatVersion: 2
+guid: dba13b994eaa84240bb39058170d85a2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4079046469434059755
+    second: scratchbattle_0
+  - first:
+      213: 6309519868071414825
+    second: scratchbattle_1
+  - first:
+      213: 5787091680162735841
+    second: scratchbattle_2
+  - first:
+      213: -1795599765788130192
+    second: scratchbattle_3
+  - first:
+      213: -1197267754394675224
+    second: scratchbattle_4
+  - first:
+      213: -130745135100307277
+    second: scratchbattle_5
+  - first:
+      213: 5064148900710921205
+    second: scratchbattle_6
+  - first:
+      213: -8287302167809555523
+    second: scratchbattle_7
+  - first:
+      213: -4779076551723887131
+    second: scratchbattle_8
+  - first:
+      213: 2492870887548937209
+    second: scratchbattle_9
+  - first:
+      213: -326128325318932256
+    second: scratchbattle_10
+  - first:
+      213: -4957385528231664180
+    second: scratchbattle_11
+  - first:
+      213: -5315432340483157246
+    second: scratchbattle_12
+  - first:
+      213: -787813420778897759
+    second: scratchbattle_13
+  - first:
+      213: 281462226949668561
+    second: scratchbattle_14
+  - first:
+      213: 5338028446517493389
+    second: scratchbattle_15
+  - first:
+      213: 6001751501186197261
+    second: scratchbattle_16
+  - first:
+      213: 8821435266442767285
+    second: scratchbattle_17
+  - first:
+      213: -215716704127254846
+    second: scratchbattle_18
+  - first:
+      213: 6013316729768634227
+    second: scratchbattle_19
+  - first:
+      213: 3720574082430987152
+    second: scratchbattle_20
+  - first:
+      213: 8917925617215828668
+    second: scratchbattle_21
+  - first:
+      213: 2453234688125291789
+    second: scratchbattle_22
+  - first:
+      213: -5742719788180599497
+    second: scratchbattle_23
+  - first:
+      213: 7348772742050330354
+    second: scratchbattle_24
+  - first:
+      213: 6256455234153815098
+    second: scratchbattle_25
+  - first:
+      213: -8106961459362090525
+    second: scratchbattle_26
+  - first:
+      213: -6974927052775752331
+    second: scratchbattle_27
+  - first:
+      213: -4390812241232231821
+    second: scratchbattle_28
+  - first:
+      213: -2688736169747433704
+    second: scratchbattle_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: scratchbattle_0
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 304
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 514521709d05467c0800000000000000
+      internalID: -4079046469434059755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_1
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 308
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92c8aa704eaef8750800000000000000
+      internalID: 6309519868071414825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_2
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 308
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e6e7b6c831ef4050800000000000000
+      internalID: 5787091680162735841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_3
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 307
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0748c69c68fb417e0800000000000000
+      internalID: -1795599765788130192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_4
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 313
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e7964e1253726fe0800000000000000
+      internalID: -1197267754394675224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_5
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 296
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b85c3a0eff7f2ef0800000000000000
+      internalID: -130745135100307277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_6
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 264
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f33f8c1898774640800000000000000
+      internalID: 5064148900710921205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_7
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 297
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db3036d16969dfc80800000000000000
+      internalID: -8287302167809555523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_8
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 294
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e55914623f4dadb0800000000000000
+      internalID: -4779076551723887131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_9
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 304
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f3644b4dd4789220800000000000000
+      internalID: 2492870887548937209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_10
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 278
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e80c2a140c597bf0800000000000000
+      internalID: -326128325318932256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_11
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 276
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc5e61f9024d33bb0800000000000000
+      internalID: -4957385528231664180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_12
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 259
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 203d0edd27acb36b0800000000000000
+      internalID: -5315432340483157246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_13
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 280
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae30392edf1115f0800000000000000
+      internalID: -787813420778897759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_14
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 264
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1de76077764f7e300800000000000000
+      internalID: 281462226949668561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_15
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 123
+        width: 113
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8efa9b079c741a40800000000000000
+      internalID: 5338028446517493389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_16
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 138
+        width: 66
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d07ee5211318a4350800000000000000
+      internalID: 6001751501186197261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_17
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 123
+        width: 175
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bbac6903a80c6a70800000000000000
+      internalID: 8821435266442767285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_18
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 123
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ce706eecce910df0800000000000000
+      internalID: -215716704127254846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_19
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 148
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 377e5cfa4b7937350800000000000000
+      internalID: 6013316729768634227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_20
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 138
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09be2df5a6222a330800000000000000
+      internalID: 3720574082430987152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_21
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 65
+        width: 189
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb271838916d2cb70800000000000000
+      internalID: 8917925617215828668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_22
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 65
+        width: 180
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0dcf5873f3ab0220800000000000000
+      internalID: 2453234688125291789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_23
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 5
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d83e467c2cd40b0800000000000000
+      internalID: -5742719788180599497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_24
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 8
+        width: 86
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f6bbf89fd51cf560800000000000000
+      internalID: 7348772742050330354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_25
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 4
+        width: 115
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c1fd823e463d650800000000000000
+      internalID: 6256455234153815098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_26
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 2
+        width: 62
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e1b0f651894e7f80800000000000000
+      internalID: -8106961459362090525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_27
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 34
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57df90ddcc4143f90800000000000000
+      internalID: -6974927052775752331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_28
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 5
+        width: 118
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3728ae5b783b013c0800000000000000
+      internalID: -4390812241232231821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scratchbattle_29
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 9
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 817b57bf2b0bfaad0800000000000000
+      internalID: -2688736169747433704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      scratchbattle_0: -4079046469434059755
+      scratchbattle_1: 6309519868071414825
+      scratchbattle_10: -326128325318932256
+      scratchbattle_11: -4957385528231664180
+      scratchbattle_12: -5315432340483157246
+      scratchbattle_13: -787813420778897759
+      scratchbattle_14: 281462226949668561
+      scratchbattle_15: 5338028446517493389
+      scratchbattle_16: 6001751501186197261
+      scratchbattle_17: 8821435266442767285
+      scratchbattle_18: -215716704127254846
+      scratchbattle_19: 6013316729768634227
+      scratchbattle_2: 5787091680162735841
+      scratchbattle_20: 3720574082430987152
+      scratchbattle_21: 8917925617215828668
+      scratchbattle_22: 2453234688125291789
+      scratchbattle_23: -5742719788180599497
+      scratchbattle_24: 7348772742050330354
+      scratchbattle_25: 6256455234153815098
+      scratchbattle_26: -8106961459362090525
+      scratchbattle_27: -6974927052775752331
+      scratchbattle_28: -4390812241232231821
+      scratchbattle_29: -2688736169747433704
+      scratchbattle_3: -1795599765788130192
+      scratchbattle_4: -1197267754394675224
+      scratchbattle_5: -130745135100307277
+      scratchbattle_6: 5064148900710921205
+      scratchbattle_7: -8287302167809555523
+      scratchbattle_8: -4779076551723887131
+      scratchbattle_9: 2492870887548937209
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

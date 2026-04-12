@@ -1,0 +1,1144 @@
+fileFormatVersion: 2
+guid: 06ce6d1d2ee314c64b8e3b5f85a466cb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5532617930812600553
+    second: poi.hear.mus_0
+  - first:
+      213: -599513893879295673
+    second: poi.hear.mus_1
+  - first:
+      213: -6121749866105362560
+    second: poi.hear.mus_2
+  - first:
+      213: -3114620703133837131
+    second: poi.hear.mus_3
+  - first:
+      213: -7995985500565661437
+    second: poi.hear.mus_4
+  - first:
+      213: -5471535124999481801
+    second: poi.hear.mus_5
+  - first:
+      213: 6398940819830854053
+    second: poi.hear.mus_6
+  - first:
+      213: 8923524247072346347
+    second: poi.hear.mus_7
+  - first:
+      213: -3578065535215485928
+    second: poi.hear.mus_8
+  - first:
+      213: 1854014179351652851
+    second: poi.hear.mus_9
+  - first:
+      213: 106784984486995284
+    second: poi.hear.mus_10
+  - first:
+      213: 6518046364376862723
+    second: poi.hear.mus_11
+  - first:
+      213: 7372812376609647422
+    second: poi.hear.mus_12
+  - first:
+      213: 3657714131750046802
+    second: poi.hear.mus_13
+  - first:
+      213: -7202224143794851588
+    second: poi.hear.mus_14
+  - first:
+      213: 220629674886800437
+    second: poi.hear.mus_15
+  - first:
+      213: 2772657490166369802
+    second: poi.hear.mus_16
+  - first:
+      213: 410200964876453372
+    second: poi.hear.mus_17
+  - first:
+      213: 1648205866845891992
+    second: poi.hear.mus_18
+  - first:
+      213: -6791387694824441479
+    second: poi.hear.mus_19
+  - first:
+      213: -6041160721698091887
+    second: poi.hear.mus_20
+  - first:
+      213: 1072300995838663751
+    second: poi.hear.mus_21
+  - first:
+      213: -6590974005992563288
+    second: poi.hear.mus_22
+  - first:
+      213: -6087219104409451344
+    second: poi.hear.mus_23
+  - first:
+      213: 4596316813613891627
+    second: poi.hear.mus_24
+  - first:
+      213: 7694359605204297113
+    second: poi.hear.mus_25
+  - first:
+      213: -3098873183943137606
+    second: poi.hear.mus_26
+  - first:
+      213: 7584983655187344169
+    second: poi.hear.mus_27
+  - first:
+      213: -441404101463336363
+    second: poi.hear.mus_28
+  - first:
+      213: -6488065772999423575
+    second: poi.hear.mus_29
+  - first:
+      213: -6475048613248900674
+    second: poi.hear.mus_30
+  - first:
+      213: 8675085023013401552
+    second: poi.hear.mus_31
+  - first:
+      213: -8716725323668341716
+    second: poi.hear.mus_32
+  - first:
+      213: -6643312708900884821
+    second: poi.hear.mus_33
+  - first:
+      213: -3423987853940883516
+    second: poi.hear.mus_34
+  - first:
+      213: -4645980559198880876
+    second: poi.hear.mus_35
+  - first:
+      213: 2960019833022663678
+    second: poi.hear.mus_36
+  - first:
+      213: 4842376936643032666
+    second: poi.hear.mus_37
+  - first:
+      213: 193975557815058610
+    second: poi.hear.mus_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: poi.hear.mus_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 471
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e0ba0ce1bec7cc40800000000000000
+      internalID: 5532617930812600553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_1
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 455
+        width: 56
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 741d9653a491ea7f0800000000000000
+      internalID: -599513893879295673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_2
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 468
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 087aef26eec2b0ba0800000000000000
+      internalID: -6121749866105362560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_3
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 463
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b851a3f8f4a6c4d0800000000000000
+      internalID: -3114620703133837131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_4
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 452
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3091c914d8d880190800000000000000
+      internalID: -7995985500565661437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_5
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 270
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73655521bc33114b0800000000000000
+      internalID: -5471535124999481801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_6
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 294
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a1d3c8c5ca9dc850800000000000000
+      internalID: 6398940819830854053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_7
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 278
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be0155b160ab6db70800000000000000
+      internalID: 8923524247072346347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_8
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 265
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81cb9666a58285ec0800000000000000
+      internalID: -3578065535215485928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_9
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 256
+        width: 46
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9eac8b218cab910800000000000000
+      internalID: 1854014179351652851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_10
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 102
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45561bba0606b7100800000000000000
+      internalID: 106784984486995284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_11
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 87
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 300953262a0c47a50800000000000000
+      internalID: 6518046364376862723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_12
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 31
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3beb6f2bcd715660800000000000000
+      internalID: 7372812376609647422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_13
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 28
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25c43e89f9fc2c230800000000000000
+      internalID: 3657714131750046802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_14
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 28
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf0bd5cdc4f8c0c90800000000000000
+      internalID: -7202224143794851588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_15
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 31
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 534a9863585df0300800000000000000
+      internalID: 220629674886800437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_16
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 31
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0e41311c457a7620800000000000000
+      internalID: 2772657490166369802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_17
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 31
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5cbfdaa9351b500800000000000000
+      internalID: 410200964876453372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_18
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 31
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89d601ad08a9fd610800000000000000
+      internalID: 1648205866845891992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_19
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 31
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 979b706bfd420c1a0800000000000000
+      internalID: -6791387694824441479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_20
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 31
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c8420c45c792ca0800000000000000
+      internalID: -6041160721698091887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_21
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 31
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74cd24d031491ee00800000000000000
+      internalID: 1072300995838663751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_22
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 31
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8addaf0ef082884a0800000000000000
+      internalID: -6590974005992563288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_23
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 28
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b404bbd97ad58ba0800000000000000
+      internalID: -6087219104409451344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_24
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 31
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b208c962ac569cf30800000000000000
+      internalID: 4596316813613891627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_25
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 31
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99521526b4bd7ca60800000000000000
+      internalID: 7694359605204297113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_26
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 31
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab6e51bf1479ef4d0800000000000000
+      internalID: -3098873183943137606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_27
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 31
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92be59a8276434960800000000000000
+      internalID: 7584983655187344169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_28
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 10
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55a90e1fe41dfd9f0800000000000000
+      internalID: -441404101463336363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_29
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 7
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a9cff00e82c5f5a0800000000000000
+      internalID: -6488065772999423575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_30
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 10
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb1e9efa7910426a0800000000000000
+      internalID: -6475048613248900674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_31
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 10
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d37609add7146870800000000000000
+      internalID: 8675085023013401552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_32
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 10
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2cb8165088f70780800000000000000
+      internalID: -8716725323668341716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_33
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 10
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baeef1ef9463ec3a0800000000000000
+      internalID: -6643312708900884821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_34
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 10
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cff99a103d8b70d0800000000000000
+      internalID: -3423987853940883516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_35
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 10
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49b749ffb49268fb0800000000000000
+      internalID: -4645980559198880876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_36
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 8
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efb4d63fa5a141920800000000000000
+      internalID: 2960019833022663678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_37
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 8
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a56f629fa24933340800000000000000
+      internalID: 4842376936643032666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poi.hear.mus_38
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 10
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b0ccaafdb321b200800000000000000
+      internalID: 193975557815058610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      poi.hear.mus_0: 5532617930812600553
+      poi.hear.mus_1: -599513893879295673
+      poi.hear.mus_10: 106784984486995284
+      poi.hear.mus_11: 6518046364376862723
+      poi.hear.mus_12: 7372812376609647422
+      poi.hear.mus_13: 3657714131750046802
+      poi.hear.mus_14: -7202224143794851588
+      poi.hear.mus_15: 220629674886800437
+      poi.hear.mus_16: 2772657490166369802
+      poi.hear.mus_17: 410200964876453372
+      poi.hear.mus_18: 1648205866845891992
+      poi.hear.mus_19: -6791387694824441479
+      poi.hear.mus_2: -6121749866105362560
+      poi.hear.mus_20: -6041160721698091887
+      poi.hear.mus_21: 1072300995838663751
+      poi.hear.mus_22: -6590974005992563288
+      poi.hear.mus_23: -6087219104409451344
+      poi.hear.mus_24: 4596316813613891627
+      poi.hear.mus_25: 7694359605204297113
+      poi.hear.mus_26: -3098873183943137606
+      poi.hear.mus_27: 7584983655187344169
+      poi.hear.mus_28: -441404101463336363
+      poi.hear.mus_29: -6488065772999423575
+      poi.hear.mus_3: -3114620703133837131
+      poi.hear.mus_30: -6475048613248900674
+      poi.hear.mus_31: 8675085023013401552
+      poi.hear.mus_32: -8716725323668341716
+      poi.hear.mus_33: -6643312708900884821
+      poi.hear.mus_34: -3423987853940883516
+      poi.hear.mus_35: -4645980559198880876
+      poi.hear.mus_36: 2960019833022663678
+      poi.hear.mus_37: 4842376936643032666
+      poi.hear.mus_38: 193975557815058610
+      poi.hear.mus_4: -7995985500565661437
+      poi.hear.mus_5: -5471535124999481801
+      poi.hear.mus_6: 6398940819830854053
+      poi.hear.mus_7: 8923524247072346347
+      poi.hear.mus_8: -3578065535215485928
+      poi.hear.mus_9: 1854014179351652851
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

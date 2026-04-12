@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 27529c1d6be844df19f6cb63af929205
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5777160660202822505
+    second: PRAS- Earth Power_0
+  - first:
+      213: 5788368443149487632
+    second: PRAS- Earth Power_1
+  - first:
+      213: -6169270450403300002
+    second: PRAS- Earth Power_2
+  - first:
+      213: -2410989414377112316
+    second: PRAS- Earth Power_3
+  - first:
+      213: 1214343359199135829
+    second: PRAS- Earth Power_4
+  - first:
+      213: 2014248095443879712
+    second: PRAS- Earth Power_5
+  - first:
+      213: 9097367383638661178
+    second: PRAS- Earth Power_6
+  - first:
+      213: 5075254070905135915
+    second: PRAS- Earth Power_7
+  - first:
+      213: 8468725901897898251
+    second: PRAS- Earth Power_8
+  - first:
+      213: 7854865736733400112
+    second: PRAS- Earth Power_9
+  - first:
+      213: 5447101486814365029
+    second: PRAS- Earth Power_10
+  - first:
+      213: -7535343825979761024
+    second: PRAS- Earth Power_11
+  - first:
+      213: 3750224743496524297
+    second: PRAS- Earth Power_12
+  - first:
+      213: 2753165502620782625
+    second: PRAS- Earth Power_13
+  - first:
+      213: 7534278980083290705
+    second: PRAS- Earth Power_14
+  - first:
+      213: -6759524272915408114
+    second: PRAS- Earth Power_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Earth Power_0
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 95
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 794ef3efcf663dfa0800000000000000
+      internalID: -5777160660202822505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Earth Power_1
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 141
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01e81035e6a645050800000000000000
+      internalID: 5788368443149487632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Earth Power_2
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 147
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5da5682639526aa0800000000000000
+      internalID: -6169270450403300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Earth Power_3
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 143
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d33dec6e17a8ed0800000000000000
+      internalID: -2410989414377112316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Earth Power_4
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 137
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5584b60f9d63ad010800000000000000
+      internalID: 1214343359199135829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Earth Power_5
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 129
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 027807a88fb04fb10800000000000000
+      internalID: 2014248095443879712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Earth Power_6
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 113
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a38d10d7f67504e70800000000000000
+      internalID: 9097367383638661178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Earth Power_7
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 95
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b23e72900bcee6640800000000000000
+      internalID: 5075254070905135915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Earth Power_8
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 95
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0916caa655f68570800000000000000
+      internalID: 8468725901897898251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Earth Power_9
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 109
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03c916c45c6120d60800000000000000
+      internalID: 7854865736733400112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Earth Power_10
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 113
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 565821931fdf79b40800000000000000
+      internalID: 5447101486814365029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Earth Power_11
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 95
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08e1b08d6b41d6790800000000000000
+      internalID: -7535343825979761024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Earth Power_12
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 99
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 902adffd8897b0430800000000000000
+      internalID: 3750224743496524297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Earth Power_13
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 105
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 120529f0075353620800000000000000
+      internalID: 2753165502620782625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Earth Power_14
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 95
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1529e8660d22f8860800000000000000
+      internalID: 7534278980083290705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Earth Power_15
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 97
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b1f3ebc785132a0800000000000000
+      internalID: -6759524272915408114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Earth Power_0: -5777160660202822505
+      PRAS- Earth Power_1: 5788368443149487632
+      PRAS- Earth Power_10: 5447101486814365029
+      PRAS- Earth Power_11: -7535343825979761024
+      PRAS- Earth Power_12: 3750224743496524297
+      PRAS- Earth Power_13: 2753165502620782625
+      PRAS- Earth Power_14: 7534278980083290705
+      PRAS- Earth Power_15: -6759524272915408114
+      PRAS- Earth Power_2: -6169270450403300002
+      PRAS- Earth Power_3: -2410989414377112316
+      PRAS- Earth Power_4: 1214343359199135829
+      PRAS- Earth Power_5: 2014248095443879712
+      PRAS- Earth Power_6: 9097367383638661178
+      PRAS- Earth Power_7: 5075254070905135915
+      PRAS- Earth Power_8: 8468725901897898251
+      PRAS- Earth Power_9: 7854865736733400112
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

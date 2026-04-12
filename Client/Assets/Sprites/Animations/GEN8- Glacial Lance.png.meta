@@ -1,0 +1,1040 @@
+fileFormatVersion: 2
+guid: 782b6bab7c5e3418ab3e142b0ba02d0a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5981444565054870244
+    second: GEN8- Glacial Lance_0
+  - first:
+      213: -2747577770678651703
+    second: GEN8- Glacial Lance_1
+  - first:
+      213: -4969917492957216196
+    second: GEN8- Glacial Lance_2
+  - first:
+      213: 2715725465276359858
+    second: GEN8- Glacial Lance_3
+  - first:
+      213: -5134497069489087110
+    second: GEN8- Glacial Lance_4
+  - first:
+      213: -2269194323061540247
+    second: GEN8- Glacial Lance_5
+  - first:
+      213: -8071818625592412845
+    second: GEN8- Glacial Lance_6
+  - first:
+      213: -3011493819375556634
+    second: GEN8- Glacial Lance_7
+  - first:
+      213: -4501808621993961638
+    second: GEN8- Glacial Lance_8
+  - first:
+      213: -4677909190930269301
+    second: GEN8- Glacial Lance_9
+  - first:
+      213: 6049493723415703681
+    second: GEN8- Glacial Lance_10
+  - first:
+      213: -4453588729455829028
+    second: GEN8- Glacial Lance_11
+  - first:
+      213: -7359543621929559679
+    second: GEN8- Glacial Lance_12
+  - first:
+      213: -2278130427179803190
+    second: GEN8- Glacial Lance_13
+  - first:
+      213: 5173546457099079575
+    second: GEN8- Glacial Lance_14
+  - first:
+      213: -844562776267789824
+    second: GEN8- Glacial Lance_15
+  - first:
+      213: -1527392922687955517
+    second: GEN8- Glacial Lance_16
+  - first:
+      213: -7678279527490205740
+    second: GEN8- Glacial Lance_17
+  - first:
+      213: -1005481551647538766
+    second: GEN8- Glacial Lance_18
+  - first:
+      213: 8936934740815174293
+    second: GEN8- Glacial Lance_19
+  - first:
+      213: 7959508122229498281
+    second: GEN8- Glacial Lance_20
+  - first:
+      213: -6549679441559636190
+    second: GEN8- Glacial Lance_21
+  - first:
+      213: 9098367649889865036
+    second: GEN8- Glacial Lance_22
+  - first:
+      213: -5225576859222502162
+    second: GEN8- Glacial Lance_23
+  - first:
+      213: -7469560376478277047
+    second: GEN8- Glacial Lance_24
+  - first:
+      213: 8938575159114021390
+    second: GEN8- Glacial Lance_25
+  - first:
+      213: -6917237008758441913
+    second: GEN8- Glacial Lance_26
+  - first:
+      213: 2789812185195086399
+    second: GEN8- Glacial Lance_27
+  - first:
+      213: -4798066825276972380
+    second: GEN8- Glacial Lance_28
+  - first:
+      213: 1585622697571342718
+    second: GEN8- Glacial Lance_29
+  - first:
+      213: -6567849764429593438
+    second: GEN8- Glacial Lance_30
+  - first:
+      213: -4316138228849818323
+    second: GEN8- Glacial Lance_31
+  - first:
+      213: 3729329811479379403
+    second: GEN8- Glacial Lance_32
+  - first:
+      213: -2003104796514084524
+    second: GEN8- Glacial Lance_33
+  - first:
+      213: 5959723943617509892
+    second: GEN8- Glacial Lance_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 398
+        width: 150
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e259cf042c520350800000000000000
+      internalID: 5981444565054870244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_1
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 389
+        width: 184
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c470f92394aed9d0800000000000000
+      internalID: -2747577770678651703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_2
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 384
+        width: 188
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3209453f5e470bb0800000000000000
+      internalID: -4969917492957216196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_3
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 384
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b4a7411ce130b520800000000000000
+      internalID: 2715725465276359858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_4
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 384
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7d91d87e1a9eb8b0800000000000000
+      internalID: -5134497069489087110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_5
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 192
+        width: 113
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96a759f29c33280e0800000000000000
+      internalID: -2269194323061540247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_6
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 193
+        width: 117
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 355be22f9b32bff80800000000000000
+      internalID: -8071818625592412845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_7
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 192
+        width: 129
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e7e5dca3560536d0800000000000000
+      internalID: -3011493819375556634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_8
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 269
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a57524fe8ec5681c0800000000000000
+      internalID: -4501808621993961638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_9
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 268
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8bf01f106ab41fb0800000000000000
+      internalID: -4677909190930269301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_10
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 274
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 180f5276d7e14f350800000000000000
+      internalID: 6049493723415703681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_11
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 280
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf1a1d85aca132c0800000000000000
+      internalID: -4453588729455829028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_12
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 221
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18995e18116add990800000000000000
+      internalID: -7359543621929559679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_13
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 216
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acd50ff42747260e0800000000000000
+      internalID: -2278130427179803190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_14
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 230
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79f0f5497112cc740800000000000000
+      internalID: 5173546457099079575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_15
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 228
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00a6a0231a28744f0800000000000000
+      internalID: -844562776267789824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_16
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 226
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cd1db2ba3c9dcae0800000000000000
+      internalID: -1527392922687955517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_17
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 233
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7cac57375417590800000000000000
+      internalID: -7678279527490205740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_18
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 89
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b107d52bdfcb02f0800000000000000
+      internalID: -1005481551647538766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_19
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 77
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ad22ffbce560c70800000000000000
+      internalID: 8936934740815174293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_20
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 91
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a16354477ad57e60800000000000000
+      internalID: 7959508122229498281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_21
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 64
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 227b825ef3dda15a0800000000000000
+      internalID: -6549679441559636190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_22
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 86
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d479f1c25e34e70800000000000000
+      internalID: 9098367649889865036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_23
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 51
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee49a8768850b77b0800000000000000
+      internalID: -5225576859222502162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_24
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 9
+        width: 147
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 942edabb96ac65890800000000000000
+      internalID: -7469560376478277047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_25
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 5
+        width: 147
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a3f15afb23c0c70800000000000000
+      internalID: 8938575159114021390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_26
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 34
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74874c1f6990100a0800000000000000
+      internalID: -6917237008758441913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_27
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 31
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f320c90c66767b620800000000000000
+      internalID: 2789812185195086399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_28
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 37
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a2a7c6c4a7d96db0800000000000000
+      internalID: -4798066825276972380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_29
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 27
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7959844173410610800000000000000
+      internalID: 1585622697571342718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_30
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 19
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a48a0def6f4ad4a0800000000000000
+      internalID: -6567849764429593438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_31
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 29
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d254ce3162ff914c0800000000000000
+      internalID: -4316138228849818323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_32
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 20
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcdb08764bd31c330800000000000000
+      internalID: 3729329811479379403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_33
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 9
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45995ebecca8334e0800000000000000
+      internalID: -2003104796514084524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Glacial Lance_34
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 24
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a36bac95135b250800000000000000
+      internalID: 5959723943617509892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GEN8- Glacial Lance_0: 5981444565054870244
+      GEN8- Glacial Lance_1: -2747577770678651703
+      GEN8- Glacial Lance_10: 6049493723415703681
+      GEN8- Glacial Lance_11: -4453588729455829028
+      GEN8- Glacial Lance_12: -7359543621929559679
+      GEN8- Glacial Lance_13: -2278130427179803190
+      GEN8- Glacial Lance_14: 5173546457099079575
+      GEN8- Glacial Lance_15: -844562776267789824
+      GEN8- Glacial Lance_16: -1527392922687955517
+      GEN8- Glacial Lance_17: -7678279527490205740
+      GEN8- Glacial Lance_18: -1005481551647538766
+      GEN8- Glacial Lance_19: 8936934740815174293
+      GEN8- Glacial Lance_2: -4969917492957216196
+      GEN8- Glacial Lance_20: 7959508122229498281
+      GEN8- Glacial Lance_21: -6549679441559636190
+      GEN8- Glacial Lance_22: 9098367649889865036
+      GEN8- Glacial Lance_23: -5225576859222502162
+      GEN8- Glacial Lance_24: -7469560376478277047
+      GEN8- Glacial Lance_25: 8938575159114021390
+      GEN8- Glacial Lance_26: -6917237008758441913
+      GEN8- Glacial Lance_27: 2789812185195086399
+      GEN8- Glacial Lance_28: -4798066825276972380
+      GEN8- Glacial Lance_29: 1585622697571342718
+      GEN8- Glacial Lance_3: 2715725465276359858
+      GEN8- Glacial Lance_30: -6567849764429593438
+      GEN8- Glacial Lance_31: -4316138228849818323
+      GEN8- Glacial Lance_32: 3729329811479379403
+      GEN8- Glacial Lance_33: -2003104796514084524
+      GEN8- Glacial Lance_34: 5959723943617509892
+      GEN8- Glacial Lance_4: -5134497069489087110
+      GEN8- Glacial Lance_5: -2269194323061540247
+      GEN8- Glacial Lance_6: -8071818625592412845
+      GEN8- Glacial Lance_7: -3011493819375556634
+      GEN8- Glacial Lance_8: -4501808621993961638
+      GEN8- Glacial Lance_9: -4677909190930269301
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

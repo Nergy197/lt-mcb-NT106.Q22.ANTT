@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: 115bf96da44624a5d9cc17f5bc193a4d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4562453940835158871
+    second: fly copy_0
+  - first:
+      213: 2349136031923105851
+    second: fly copy_1
+  - first:
+      213: -1705821962908313966
+    second: fly copy_2
+  - first:
+      213: -2601062853370079038
+    second: fly copy_3
+  - first:
+      213: 2461671626395512144
+    second: fly copy_4
+  - first:
+      213: -4212771723767763470
+    second: fly copy_5
+  - first:
+      213: 8339425171919956701
+    second: fly copy_6
+  - first:
+      213: 5760637901911441994
+    second: fly copy_7
+  - first:
+      213: 1009270884758407218
+    second: fly copy_8
+  - first:
+      213: 7400452083872231179
+    second: fly copy_9
+  - first:
+      213: -9163062630597045717
+    second: fly copy_10
+  - first:
+      213: 4316810875753485496
+    second: fly copy_11
+  - first:
+      213: -8382760252258104891
+    second: fly copy_12
+  - first:
+      213: 1114086999880467642
+    second: fly copy_13
+  - first:
+      213: -1198645300295381977
+    second: fly copy_14
+  - first:
+      213: -6255756751759303021
+    second: fly copy_15
+  - first:
+      213: 2354333047635826325
+    second: fly copy_16
+  - first:
+      213: 6826441618942728484
+    second: fly copy_17
+  - first:
+      213: -4429937673524598956
+    second: fly copy_18
+  - first:
+      213: -7269385557571179125
+    second: fly copy_19
+  - first:
+      213: 5912756434397683325
+    second: fly copy_20
+  - first:
+      213: -1365035491396986180
+    second: fly copy_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fly copy_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 849
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a470705058eea0c0800000000000000
+      internalID: -4562453940835158871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly copy_1
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 835
+        width: 46
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b30f8d756cec99020800000000000000
+      internalID: 2349136031923105851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly copy_2
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 827
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2965aca66f3b358e0800000000000000
+      internalID: -1705821962908313966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly copy_3
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 807
+        width: 58
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c8996aad1b27ebd0800000000000000
+      internalID: -2601062853370079038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly copy_4
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 807
+        width: 58
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05d66fc3d4d992220800000000000000
+      internalID: 2461671626395512144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly copy_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 645
+        width: 51
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fd230dff6a3985c0800000000000000
+      internalID: -4212771723767763470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly copy_6
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 580
+        width: 387
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dda6d3b72079bb370800000000000000
+      internalID: 8339425171919956701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly copy_7
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 609
+        width: 136
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a42451f86a5e1ff40800000000000000
+      internalID: 5760637901911441994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly copy_8
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 609
+        width: 123
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2384b28b586a10e00800000000000000
+      internalID: 1009270884758407218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly copy_9
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 440
+        width: 23
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0fe08406ffa3b660800000000000000
+      internalID: 7400452083872231179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly copy_10
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 439
+        width: 23
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b225b90e51346d080800000000000000
+      internalID: -9163062630597045717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly copy_11
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 441
+        width: 20
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b454dbbe9468eb30800000000000000
+      internalID: 4316810875753485496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly copy_12
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 456
+        width: 17
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c944eed6f37aab80800000000000000
+      internalID: -8382760252258104891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly copy_13
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 455
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab481c44938067f00800000000000000
+      internalID: 1114086999880467642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly copy_14
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 256
+        width: 32
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72cc338337e8d5fe0800000000000000
+      internalID: -1198645300295381977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly copy_15
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 263
+        width: 21
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39e9222f0661f29a0800000000000000
+      internalID: -6255756751759303021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly copy_16
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 255
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 596db4bde654ca020800000000000000
+      internalID: 2354333047635826325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly copy_17
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 259
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42916010c746cbe50800000000000000
+      internalID: 6826441618942728484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly copy_18
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 247
+        width: 28
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45722702823b582c0800000000000000
+      internalID: -4429937673524598956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly copy_19
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 77
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8d6d99a954fd1b90800000000000000
+      internalID: -7269385557571179125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly copy_20
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 77
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7edda366a45e0250800000000000000
+      internalID: 5912756434397683325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fly copy_21
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 72
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cba5b7de37b6e0de0800000000000000
+      internalID: -1365035491396986180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fly copy_0: -4562453940835158871
+      fly copy_1: 2349136031923105851
+      fly copy_10: -9163062630597045717
+      fly copy_11: 4316810875753485496
+      fly copy_12: -8382760252258104891
+      fly copy_13: 1114086999880467642
+      fly copy_14: -1198645300295381977
+      fly copy_15: -6255756751759303021
+      fly copy_16: 2354333047635826325
+      fly copy_17: 6826441618942728484
+      fly copy_18: -4429937673524598956
+      fly copy_19: -7269385557571179125
+      fly copy_2: -1705821962908313966
+      fly copy_20: 5912756434397683325
+      fly copy_21: -1365035491396986180
+      fly copy_3: -2601062853370079038
+      fly copy_4: 2461671626395512144
+      fly copy_5: -4212771723767763470
+      fly copy_6: 8339425171919956701
+      fly copy_7: 5760637901911441994
+      fly copy_8: 1009270884758407218
+      fly copy_9: 7400452083872231179
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

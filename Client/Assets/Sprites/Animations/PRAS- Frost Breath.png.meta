@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 02a97fd90a53b4024a0a53387086c9ce
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6689359727044607319
+    second: PRAS- Frost Breath_0
+  - first:
+      213: 5872006955895375228
+    second: PRAS- Frost Breath_1
+  - first:
+      213: 860355047116911034
+    second: PRAS- Frost Breath_2
+  - first:
+      213: -5206129852546558521
+    second: PRAS- Frost Breath_3
+  - first:
+      213: -2863758607582810327
+    second: PRAS- Frost Breath_4
+  - first:
+      213: 8753902698059041345
+    second: PRAS- Frost Breath_5
+  - first:
+      213: -7398223468328047887
+    second: PRAS- Frost Breath_6
+  - first:
+      213: -3427082650277177234
+    second: PRAS- Frost Breath_7
+  - first:
+      213: -433535880316391231
+    second: PRAS- Frost Breath_8
+  - first:
+      213: -4537831362894845688
+    second: PRAS- Frost Breath_9
+  - first:
+      213: -5084356869086294728
+    second: PRAS- Frost Breath_10
+  - first:
+      213: -5321347369570179798
+    second: PRAS- Frost Breath_11
+  - first:
+      213: -4142283496186588584
+    second: PRAS- Frost Breath_12
+  - first:
+      213: -7587062055749399514
+    second: PRAS- Frost Breath_13
+  - first:
+      213: 7189139460557802814
+    second: PRAS- Frost Breath_14
+  - first:
+      213: 3668365646356196026
+    second: PRAS- Frost Breath_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Frost Breath_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 190
+        width: 109
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a2c3be15ce9a23a0800000000000000
+      internalID: -6689359727044607319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Frost Breath_1
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 255
+        width: 52
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7544c4173f8d7150800000000000000
+      internalID: 5872006955895375228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Frost Breath_2
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 255
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab13e146b5890fb00800000000000000
+      internalID: 860355047116911034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Frost Breath_3
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 251
+        width: 130
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c5d76c7b7c10c7b0800000000000000
+      internalID: -5206129852546558521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Frost Breath_4
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 271
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f2f8028b2e148d0800000000000000
+      internalID: -2863758607582810327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Frost Breath_5
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 263
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14a842caf1c1c7970800000000000000
+      internalID: 8753902698059041345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Frost Breath_6
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 81
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fa2959f3fa345990800000000000000
+      internalID: -7398223468328047887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Frost Breath_7
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 73
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e68135eac7e8070d0800000000000000
+      internalID: -3427082650277177234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Frost Breath_8
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 61
+        width: 72
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c0fa50f965cbf9f0800000000000000
+      internalID: -433535880316391231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Frost Breath_9
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 61
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 809a60cfa626601c0800000000000000
+      internalID: -4537831362894845688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Frost Breath_10
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 55
+        width: 78
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d4bca9d5cb079b0800000000000000
+      internalID: -5084356869086294728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Frost Breath_11
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 87
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a256f46d2c6c626b0800000000000000
+      internalID: -5321347369570179798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Frost Breath_12
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 852d5d26b17a386c0800000000000000
+      internalID: -4142283496186588584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Frost Breath_13
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 53
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62c463e124755b690800000000000000
+      internalID: -7587062055749399514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Frost Breath_14
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 53
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3d8a4bef34f4c360800000000000000
+      internalID: 7189139460557802814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Frost Breath_15
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 57
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abaae499e17a8e230800000000000000
+      internalID: 3668365646356196026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Frost Breath_0: -6689359727044607319
+      PRAS- Frost Breath_1: 5872006955895375228
+      PRAS- Frost Breath_10: -5084356869086294728
+      PRAS- Frost Breath_11: -5321347369570179798
+      PRAS- Frost Breath_12: -4142283496186588584
+      PRAS- Frost Breath_13: -7587062055749399514
+      PRAS- Frost Breath_14: 7189139460557802814
+      PRAS- Frost Breath_15: 3668365646356196026
+      PRAS- Frost Breath_2: 860355047116911034
+      PRAS- Frost Breath_3: -5206129852546558521
+      PRAS- Frost Breath_4: -2863758607582810327
+      PRAS- Frost Breath_5: 8753902698059041345
+      PRAS- Frost Breath_6: -7398223468328047887
+      PRAS- Frost Breath_7: -3427082650277177234
+      PRAS- Frost Breath_8: -433535880316391231
+      PRAS- Frost Breath_9: -4537831362894845688
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

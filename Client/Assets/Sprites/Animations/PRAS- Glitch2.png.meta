@@ -1,0 +1,1508 @@
+fileFormatVersion: 2
+guid: 2f254ea5e20e64b0b8b8fd342ac574aa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4921919547546615060
+    second: PRAS- Glitch2_0
+  - first:
+      213: 7145075442282698063
+    second: PRAS- Glitch2_1
+  - first:
+      213: -1919015482277653331
+    second: PRAS- Glitch2_2
+  - first:
+      213: 5240127177382228349
+    second: PRAS- Glitch2_3
+  - first:
+      213: 2679368859399905615
+    second: PRAS- Glitch2_4
+  - first:
+      213: -7221148059446294190
+    second: PRAS- Glitch2_5
+  - first:
+      213: -3541041176422573124
+    second: PRAS- Glitch2_6
+  - first:
+      213: 8929916101109464027
+    second: PRAS- Glitch2_7
+  - first:
+      213: 792277915643965282
+    second: PRAS- Glitch2_8
+  - first:
+      213: 2810679816414886602
+    second: PRAS- Glitch2_9
+  - first:
+      213: 5417459949009840171
+    second: PRAS- Glitch2_10
+  - first:
+      213: 8921734888362910698
+    second: PRAS- Glitch2_11
+  - first:
+      213: 477485620256085043
+    second: PRAS- Glitch2_12
+  - first:
+      213: -1970258588407192024
+    second: PRAS- Glitch2_13
+  - first:
+      213: 4440937610122380885
+    second: PRAS- Glitch2_14
+  - first:
+      213: -3803690816459858261
+    second: PRAS- Glitch2_15
+  - first:
+      213: -8159935891494502872
+    second: PRAS- Glitch2_16
+  - first:
+      213: 6727626999423947717
+    second: PRAS- Glitch2_17
+  - first:
+      213: 5353170000884651383
+    second: PRAS- Glitch2_18
+  - first:
+      213: -5345607649741698057
+    second: PRAS- Glitch2_19
+  - first:
+      213: -4507059097348977052
+    second: PRAS- Glitch2_20
+  - first:
+      213: 6956399068374932273
+    second: PRAS- Glitch2_21
+  - first:
+      213: -2272125170804358726
+    second: PRAS- Glitch2_22
+  - first:
+      213: 5694533626407337825
+    second: PRAS- Glitch2_23
+  - first:
+      213: 1691983114673585781
+    second: PRAS- Glitch2_24
+  - first:
+      213: 3824915875333487094
+    second: PRAS- Glitch2_25
+  - first:
+      213: 8078753665730240361
+    second: PRAS- Glitch2_26
+  - first:
+      213: 241178129745915464
+    second: PRAS- Glitch2_27
+  - first:
+      213: 8663766249235887485
+    second: PRAS- Glitch2_28
+  - first:
+      213: -3680111510328468321
+    second: PRAS- Glitch2_29
+  - first:
+      213: -7974664936891485920
+    second: PRAS- Glitch2_30
+  - first:
+      213: -647992373119663283
+    second: PRAS- Glitch2_31
+  - first:
+      213: -3164487245258432174
+    second: PRAS- Glitch2_32
+  - first:
+      213: -8520867129498826238
+    second: PRAS- Glitch2_33
+  - first:
+      213: -2221853058732046268
+    second: PRAS- Glitch2_34
+  - first:
+      213: 6082551428344467459
+    second: PRAS- Glitch2_35
+  - first:
+      213: 9145697297015419008
+    second: PRAS- Glitch2_36
+  - first:
+      213: 3225306620901982523
+    second: PRAS- Glitch2_37
+  - first:
+      213: -2994520429502807843
+    second: PRAS- Glitch2_38
+  - first:
+      213: -1732047166727970088
+    second: PRAS- Glitch2_39
+  - first:
+      213: -4542737119480609517
+    second: PRAS- Glitch2_40
+  - first:
+      213: 1480195504393860436
+    second: PRAS- Glitch2_41
+  - first:
+      213: 2574724707020299604
+    second: PRAS- Glitch2_42
+  - first:
+      213: 3050494388721423891
+    second: PRAS- Glitch2_43
+  - first:
+      213: -6201163186895742880
+    second: PRAS- Glitch2_44
+  - first:
+      213: -8592678540288633887
+    second: PRAS- Glitch2_45
+  - first:
+      213: 5001330179995096370
+    second: PRAS- Glitch2_46
+  - first:
+      213: -6565751686770922140
+    second: PRAS- Glitch2_47
+  - first:
+      213: -5144716591029009592
+    second: PRAS- Glitch2_48
+  - first:
+      213: -2935987885137555621
+    second: PRAS- Glitch2_49
+  - first:
+      213: -3235176879393660429
+    second: PRAS- Glitch2_50
+  - first:
+      213: 6965771570292656509
+    second: PRAS- Glitch2_51
+  - first:
+      213: 6721136921209747377
+    second: PRAS- Glitch2_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Glitch2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 42
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41d319440cb2e4440800000000000000
+      internalID: 4921919547546615060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 320
+        width: 22
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4590ae2248682360800000000000000
+      internalID: 7145075442282698063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 320
+        width: 79
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da49d5416994e55e0800000000000000
+      internalID: -1919015482277653331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 320
+        width: 22
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d71fcb987eba8b840800000000000000
+      internalID: 5240127177382228349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_4
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 320
+        width: 44
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4166ce18c70f2520800000000000000
+      internalID: 2679368859399905615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_5
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 320
+        width: 22
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 259c336691459cb90800000000000000
+      internalID: -7221148059446294190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_6
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 320
+        width: 22
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbb1d40bfc1bbdec0800000000000000
+      internalID: -3541041176422573124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_7
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 320
+        width: 20
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdbbba8916f6deb70800000000000000
+      internalID: 8929916101109464027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_8
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 320
+        width: 22
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26f685d019cbefa00800000000000000
+      internalID: 792277915643965282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_9
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 320
+        width: 44
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acaf4c2c66a810720800000000000000
+      internalID: 2810679816414886602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_10
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 320
+        width: 22
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2823a5ee1fae2b40800000000000000
+      internalID: 5417459949009840171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_11
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 320
+        width: 76
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae3a4119c9e50db70800000000000000
+      internalID: 8921734888362910698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_12
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 248
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33498bc44ae50a600800000000000000
+      internalID: 477485620256085043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_13
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 248
+        width: 78
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 826a352b04c38a4e0800000000000000
+      internalID: -1970258588407192024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_14
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 248
+        width: 20
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55644013a3161ad30800000000000000
+      internalID: 4440937610122380885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_15
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 248
+        width: 80
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae9e71fa53963bc0800000000000000
+      internalID: -3803690816459858261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_16
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 248
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e72853a8512ce80800000000000000
+      internalID: -8159935891494502872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_17
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 248
+        width: 42
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c3ddf98c155d5d50800000000000000
+      internalID: 6727626999423947717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_18
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 248
+        width: 20
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 775d105e0c74a4a40800000000000000
+      internalID: 5353170000884651383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_19
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 248
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb09803a2690d5b0800000000000000
+      internalID: -5345607649741698057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_20
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 248
+        width: 80
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e42d061a5b371c0800000000000000
+      internalID: -4507059097348977052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_21
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 248
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b985a98181a8060800000000000000
+      internalID: 6956399068374932273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_22
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 248
+        width: 20
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab18bf4023ac770e0800000000000000
+      internalID: -2272125170804358726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 174
+        width: 42
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16fb68b892c070f40800000000000000
+      internalID: 5694533626407337825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_24
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 174
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ef314ada12b7710800000000000000
+      internalID: 1691983114673585781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_25
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 174
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f9310d29b4d41530800000000000000
+      internalID: 3824915875333487094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_26
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 174
+        width: 80
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f5cb9e7af7d1070800000000000000
+      internalID: 8078753665730240361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_27
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 174
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84e291f2b36d85300800000000000000
+      internalID: 241178129745915464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_28
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 174
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7539b64081eb3870800000000000000
+      internalID: 8663766249235887485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_29
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 174
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9c9b05541e9decc0800000000000000
+      internalID: -3680111510328468321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_30
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 174
+        width: 80
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021f1d1dd7c445190800000000000000
+      internalID: -7974664936891485920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_31
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 174
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d434a0fae5ed107f0800000000000000
+      internalID: -647992373119663283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_32
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 174
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 251ed1add9b7514d0800000000000000
+      internalID: -3164487245258432174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_33
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 174
+        width: 76
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20a8befbd7ccfb980800000000000000
+      internalID: -8520867129498826238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_34
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 102
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 448492b3a646a21e0800000000000000
+      internalID: -2221853058732046268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_35
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 102
+        width: 78
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 300548e1c40996450800000000000000
+      internalID: 6082551428344467459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_36
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 102
+        width: 20
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080bad35c3b0cee70800000000000000
+      internalID: 9145697297015419008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_37
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 102
+        width: 80
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b310496884792cc20800000000000000
+      internalID: 3225306620901982523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_38
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 102
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0c5d6f8835176d0800000000000000
+      internalID: -2994520429502807843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_39
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 102
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d225f4574886f7e0800000000000000
+      internalID: -1732047166727970088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_40
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 102
+        width: 20
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 315806588a4f4f0c0800000000000000
+      internalID: -4542737119480609517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_41
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 102
+        width: 186
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 455b68508f5ba8410800000000000000
+      internalID: 1480195504393860436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_42
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 28
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45ddd54ca724bb320800000000000000
+      internalID: 2574724707020299604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_43
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 28
+        width: 78
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 316101dfb78855a20800000000000000
+      internalID: 3050494388721423891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_44
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 28
+        width: 20
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06899dacfea01f9a0800000000000000
+      internalID: -6201163186895742880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_45
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 28
+        width: 116
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e359f0c46ca0c880800000000000000
+      internalID: -8592678540288633887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_46
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 28
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2355c0fec4b486540800000000000000
+      internalID: 5001330179995096370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_47
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 28
+        width: 20
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46de892b0a3c1e4a0800000000000000
+      internalID: -6565751686770922140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_48
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 28
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84348a1b48b4a98b0800000000000000
+      internalID: -5144716591029009592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_49
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 28
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5f8681f2964147d0800000000000000
+      internalID: -2935987885137555621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_50
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 28
+        width: 42
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f12f26d4c75a13d0800000000000000
+      internalID: -3235176879393660429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_51
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 28
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d790fc146546ba060800000000000000
+      internalID: 6965771570292656509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glitch2_52
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 28
+        width: 40
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b738737b66464d50800000000000000
+      internalID: 6721136921209747377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Glitch2_0: 4921919547546615060
+      PRAS- Glitch2_1: 7145075442282698063
+      PRAS- Glitch2_10: 5417459949009840171
+      PRAS- Glitch2_11: 8921734888362910698
+      PRAS- Glitch2_12: 477485620256085043
+      PRAS- Glitch2_13: -1970258588407192024
+      PRAS- Glitch2_14: 4440937610122380885
+      PRAS- Glitch2_15: -3803690816459858261
+      PRAS- Glitch2_16: -8159935891494502872
+      PRAS- Glitch2_17: 6727626999423947717
+      PRAS- Glitch2_18: 5353170000884651383
+      PRAS- Glitch2_19: -5345607649741698057
+      PRAS- Glitch2_2: -1919015482277653331
+      PRAS- Glitch2_20: -4507059097348977052
+      PRAS- Glitch2_21: 6956399068374932273
+      PRAS- Glitch2_22: -2272125170804358726
+      PRAS- Glitch2_23: 5694533626407337825
+      PRAS- Glitch2_24: 1691983114673585781
+      PRAS- Glitch2_25: 3824915875333487094
+      PRAS- Glitch2_26: 8078753665730240361
+      PRAS- Glitch2_27: 241178129745915464
+      PRAS- Glitch2_28: 8663766249235887485
+      PRAS- Glitch2_29: -3680111510328468321
+      PRAS- Glitch2_3: 5240127177382228349
+      PRAS- Glitch2_30: -7974664936891485920
+      PRAS- Glitch2_31: -647992373119663283
+      PRAS- Glitch2_32: -3164487245258432174
+      PRAS- Glitch2_33: -8520867129498826238
+      PRAS- Glitch2_34: -2221853058732046268
+      PRAS- Glitch2_35: 6082551428344467459
+      PRAS- Glitch2_36: 9145697297015419008
+      PRAS- Glitch2_37: 3225306620901982523
+      PRAS- Glitch2_38: -2994520429502807843
+      PRAS- Glitch2_39: -1732047166727970088
+      PRAS- Glitch2_4: 2679368859399905615
+      PRAS- Glitch2_40: -4542737119480609517
+      PRAS- Glitch2_41: 1480195504393860436
+      PRAS- Glitch2_42: 2574724707020299604
+      PRAS- Glitch2_43: 3050494388721423891
+      PRAS- Glitch2_44: -6201163186895742880
+      PRAS- Glitch2_45: -8592678540288633887
+      PRAS- Glitch2_46: 5001330179995096370
+      PRAS- Glitch2_47: -6565751686770922140
+      PRAS- Glitch2_48: -5144716591029009592
+      PRAS- Glitch2_49: -2935987885137555621
+      PRAS- Glitch2_5: -7221148059446294190
+      PRAS- Glitch2_50: -3235176879393660429
+      PRAS- Glitch2_51: 6965771570292656509
+      PRAS- Glitch2_52: 6721136921209747377
+      PRAS- Glitch2_6: -3541041176422573124
+      PRAS- Glitch2_7: 8929916101109464027
+      PRAS- Glitch2_8: 792277915643965282
+      PRAS- Glitch2_9: 2810679816414886602
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

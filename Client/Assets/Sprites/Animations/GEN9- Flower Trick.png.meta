@@ -1,0 +1,962 @@
+fileFormatVersion: 2
+guid: c8596ea558af143e8a1720c8853808fa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6367575509211431694
+    second: GEN9- Flower Trick_0
+  - first:
+      213: 4948263130142705028
+    second: GEN9- Flower Trick_1
+  - first:
+      213: -5525808971647018195
+    second: GEN9- Flower Trick_2
+  - first:
+      213: 2259495549671967859
+    second: GEN9- Flower Trick_3
+  - first:
+      213: -7537613908438830810
+    second: GEN9- Flower Trick_4
+  - first:
+      213: -8046000074647789761
+    second: GEN9- Flower Trick_5
+  - first:
+      213: 3234735168542867408
+    second: GEN9- Flower Trick_6
+  - first:
+      213: 887326577447554339
+    second: GEN9- Flower Trick_7
+  - first:
+      213: 4481414677973525025
+    second: GEN9- Flower Trick_8
+  - first:
+      213: -1736149645294860027
+    second: GEN9- Flower Trick_9
+  - first:
+      213: -6850281904490315193
+    second: GEN9- Flower Trick_10
+  - first:
+      213: 5249927990860327567
+    second: GEN9- Flower Trick_11
+  - first:
+      213: 4648831736441454956
+    second: GEN9- Flower Trick_12
+  - first:
+      213: 4173197814109803242
+    second: GEN9- Flower Trick_13
+  - first:
+      213: -5841162809644047842
+    second: GEN9- Flower Trick_14
+  - first:
+      213: -2478949978902789107
+    second: GEN9- Flower Trick_15
+  - first:
+      213: 8438805395500559786
+    second: GEN9- Flower Trick_16
+  - first:
+      213: -8530885874911851504
+    second: GEN9- Flower Trick_17
+  - first:
+      213: 1499730101369673817
+    second: GEN9- Flower Trick_18
+  - first:
+      213: -7842738089281450541
+    second: GEN9- Flower Trick_19
+  - first:
+      213: 7790735972060043923
+    second: GEN9- Flower Trick_20
+  - first:
+      213: -1989720433424101219
+    second: GEN9- Flower Trick_21
+  - first:
+      213: -1148681663368682408
+    second: GEN9- Flower Trick_22
+  - first:
+      213: 620878721632389642
+    second: GEN9- Flower Trick_23
+  - first:
+      213: 5721322972327955442
+    second: GEN9- Flower Trick_24
+  - first:
+      213: 1038225417762495362
+    second: GEN9- Flower Trick_25
+  - first:
+      213: 2793139766865403770
+    second: GEN9- Flower Trick_26
+  - first:
+      213: -2716857373369793076
+    second: GEN9- Flower Trick_27
+  - first:
+      213: -2895552093231254000
+    second: GEN9- Flower Trick_28
+  - first:
+      213: -1882974254247817664
+    second: GEN9- Flower Trick_29
+  - first:
+      213: -8136442436192186141
+    second: GEN9- Flower Trick_30
+  - first:
+      213: -1961258608942080265
+    second: GEN9- Flower Trick_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_0
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 389
+        width: 82
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fcb9fcafc3d1a7a0800000000000000
+      internalID: -6367575509211431694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_1
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 459
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 485815f8913cba440800000000000000
+      internalID: 4948263130142705028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_2
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 451
+        width: 42
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b105c64026053b0800000000000000
+      internalID: -5525808971647018195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_3
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 499
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37c06c92b375b5f10800000000000000
+      internalID: 2259495549671967859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_4
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 451
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 621b5751614056790800000000000000
+      internalID: -7537613908438830810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_5
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 489
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3f1ad7cf8dd65090800000000000000
+      internalID: -8046000074647789761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_6
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 465
+        width: 50
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dff5775f7614ec20800000000000000
+      internalID: 3234735168542867408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_7
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 271
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32d468822da605c00800000000000000
+      internalID: 887326577447554339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_8
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 263
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12265d3f7ee213e30800000000000000
+      internalID: 4481414677973525025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_9
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 263
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 509874b9815f7e7e0800000000000000
+      internalID: -1736149645294860027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_10
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 81
+        width: 56
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7428197f6e8eee0a0800000000000000
+      internalID: -6850281904490315193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_11
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 263
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8a2c9f31bd7bd840800000000000000
+      internalID: 5249927990860327567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_12
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 65
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c61c72f65d7f38040800000000000000
+      internalID: 4648831736441454956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_13
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 115
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae293772d4d2ae930800000000000000
+      internalID: 4173197814109803242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_14
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 117
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e12a1f75f5500fea0800000000000000
+      internalID: -5841162809644047842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_15
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 109
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d048983d020099dd0800000000000000
+      internalID: -2478949978902789107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_16
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 111
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aade577ebc8ac1570800000000000000
+      internalID: 8438805395500559786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_17
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 99
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c4b7ece743c9980800000000000000
+      internalID: -8530885874911851504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_18
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 105
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 958991fc49c10d410800000000000000
+      internalID: 1499730101369673817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_19
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 95
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dd04f9a24ff82390800000000000000
+      internalID: -7842738089281450541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_20
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 107
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39a1f79e6114e1c60800000000000000
+      internalID: 7790735972060043923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_21
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 101
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d909b6bcec71364e0800000000000000
+      internalID: -1989720433424101219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_22
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 79
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 854a7e6fc101f00f0800000000000000
+      internalID: -1148681663368682408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_23
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 71
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a4f7368edcd9800800000000000000
+      internalID: 620878721632389642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_24
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 83
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fbc3e23ee8366f40800000000000000
+      internalID: 5721322972327955442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_25
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 83
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28bd3864484886e00800000000000000
+      internalID: 1038225417762495362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_26
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 75
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7f970cb1d933c620800000000000000
+      internalID: 2793139766865403770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_27
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 75
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc584ea0d98cb4ad0800000000000000
+      internalID: -2716857373369793076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_28
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 71
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 016ff4666bee0d7d0800000000000000
+      internalID: -2895552093231254000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_29
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 71
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04e4a5664e45ed5e0800000000000000
+      internalID: -1882974254247817664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_30
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 67
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0d95786bc851f80800000000000000
+      internalID: -8136442436192186141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN9- Flower Trick_31
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 67
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe9455bfa538c4e0800000000000000
+      internalID: -1961258608942080265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GEN9- Flower Trick_0: -6367575509211431694
+      GEN9- Flower Trick_1: 4948263130142705028
+      GEN9- Flower Trick_10: -6850281904490315193
+      GEN9- Flower Trick_11: 5249927990860327567
+      GEN9- Flower Trick_12: 4648831736441454956
+      GEN9- Flower Trick_13: 4173197814109803242
+      GEN9- Flower Trick_14: -5841162809644047842
+      GEN9- Flower Trick_15: -2478949978902789107
+      GEN9- Flower Trick_16: 8438805395500559786
+      GEN9- Flower Trick_17: -8530885874911851504
+      GEN9- Flower Trick_18: 1499730101369673817
+      GEN9- Flower Trick_19: -7842738089281450541
+      GEN9- Flower Trick_2: -5525808971647018195
+      GEN9- Flower Trick_20: 7790735972060043923
+      GEN9- Flower Trick_21: -1989720433424101219
+      GEN9- Flower Trick_22: -1148681663368682408
+      GEN9- Flower Trick_23: 620878721632389642
+      GEN9- Flower Trick_24: 5721322972327955442
+      GEN9- Flower Trick_25: 1038225417762495362
+      GEN9- Flower Trick_26: 2793139766865403770
+      GEN9- Flower Trick_27: -2716857373369793076
+      GEN9- Flower Trick_28: -2895552093231254000
+      GEN9- Flower Trick_29: -1882974254247817664
+      GEN9- Flower Trick_3: 2259495549671967859
+      GEN9- Flower Trick_30: -8136442436192186141
+      GEN9- Flower Trick_31: -1961258608942080265
+      GEN9- Flower Trick_4: -7537613908438830810
+      GEN9- Flower Trick_5: -8046000074647789761
+      GEN9- Flower Trick_6: 3234735168542867408
+      GEN9- Flower Trick_7: 887326577447554339
+      GEN9- Flower Trick_8: 4481414677973525025
+      GEN9- Flower Trick_9: -1736149645294860027
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

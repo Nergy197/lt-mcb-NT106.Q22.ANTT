@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: a91ad9e073ac44677866799bfce8724f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5094609706700667171
+    second: Custom_Sandsear Storm_0
+  - first:
+      213: -3672644994364939213
+    second: Custom_Sandsear Storm_1
+  - first:
+      213: -1831954396998202818
+    second: Custom_Sandsear Storm_2
+  - first:
+      213: 4586132596692209944
+    second: Custom_Sandsear Storm_3
+  - first:
+      213: 4818921263060716782
+    second: Custom_Sandsear Storm_4
+  - first:
+      213: 5279562780434991955
+    second: Custom_Sandsear Storm_5
+  - first:
+      213: -964059127168803306
+    second: Custom_Sandsear Storm_6
+  - first:
+      213: 4012805076384840345
+    second: Custom_Sandsear Storm_7
+  - first:
+      213: 4519720740244888294
+    second: Custom_Sandsear Storm_8
+  - first:
+      213: -4357022275674061300
+    second: Custom_Sandsear Storm_9
+  - first:
+      213: 5609863344201593864
+    second: Custom_Sandsear Storm_10
+  - first:
+      213: -5938438249806773235
+    second: Custom_Sandsear Storm_11
+  - first:
+      213: -4700209275936454399
+    second: Custom_Sandsear Storm_12
+  - first:
+      213: 5327288387819573730
+    second: Custom_Sandsear Storm_13
+  - first:
+      213: 7377411796727148301
+    second: Custom_Sandsear Storm_14
+  - first:
+      213: -2959238935422279713
+    second: Custom_Sandsear Storm_15
+  - first:
+      213: 5115166899695523981
+    second: Custom_Sandsear Storm_16
+  - first:
+      213: 4423724556262396359
+    second: Custom_Sandsear Storm_17
+  - first:
+      213: -6868102998088452249
+    second: Custom_Sandsear Storm_18
+  - first:
+      213: -3325414447333366413
+    second: Custom_Sandsear Storm_19
+  - first:
+      213: -8176776272895187686
+    second: Custom_Sandsear Storm_20
+  - first:
+      213: 3003208837434949832
+    second: Custom_Sandsear Storm_21
+  - first:
+      213: 7024945084329816013
+    second: Custom_Sandsear Storm_22
+  - first:
+      213: 7132171165791308163
+    second: Custom_Sandsear Storm_23
+  - first:
+      213: 8424858184233669339
+    second: Custom_Sandsear Storm_24
+  - first:
+      213: -4072956144996224907
+    second: Custom_Sandsear Storm_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_0
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 457
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd689d2d67f4c49b0800000000000000
+      internalID: -5094609706700667171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_1
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 465
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 334e2cc06d4280dc0800000000000000
+      internalID: -3672644994364939213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_2
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 485
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a053a9e279396e0800000000000000
+      internalID: -1831954396998202818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_3
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 435
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 811ddae5c4735af30800000000000000
+      internalID: 4586132596692209944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_4
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 443
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eec8f456b5f30e240800000000000000
+      internalID: 4818921263060716782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_5
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 449
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35b83316066c44940800000000000000
+      internalID: 5279562780434991955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_6
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 387
+        width: 62
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61e51a6e459fe92f0800000000000000
+      internalID: -964059127168803306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_7
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 415
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99a7dcac4f850b730800000000000000
+      internalID: 4012805076384840345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_8
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 431
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea1346111649be30800000000000000
+      internalID: 4519720740244888294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_9
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 387
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c06cbf3235fb883c0800000000000000
+      internalID: -4357022275674061300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_10
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 427
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 804fe9d3dfc3add40800000000000000
+      internalID: 5609863344201593864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_11
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 401
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d04ccafffdd669da0800000000000000
+      internalID: -5938438249806773235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_12
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 387
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 109cfc9f09085ceb0800000000000000
+      internalID: -4700209275936454399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_13
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 403
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e19c0440945ee940800000000000000
+      internalID: 5327288387819573730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_14
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 395
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0fa2b121f4d16660800000000000000
+      internalID: 7377411796727148301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_15
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 387
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf56a0fddbaee6d0800000000000000
+      internalID: -2959238935422279713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_16
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 395
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d881037a139bcf640800000000000000
+      internalID: 5115166899695523981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_17
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 387
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c15138cb0a346d30800000000000000
+      internalID: 4423724556262396359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_18
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 389
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 767742646b89fa0a0800000000000000
+      internalID: -6868102998088452249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_19
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 391
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3752ebfcd21c9d1d0800000000000000
+      internalID: -3325414447333366413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_20
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 195
+        width: 66
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a156d3e5d41468e80800000000000000
+      internalID: -8176776272895187686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_21
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 195
+        width: 64
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c0cf95a68a8da920800000000000000
+      internalID: 3003208837434949832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_22
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 195
+        width: 66
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcfea1e955e9d7160800000000000000
+      internalID: 7024945084329816013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_23
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 195
+        width: 66
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 389464e23ef8af260800000000000000
+      internalID: 7132171165791308163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_24
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 195
+        width: 66
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd25a4ab1eb1be470800000000000000
+      internalID: 8424858184233669339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Sandsear Storm_25
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 3
+        width: 66
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57071cf27f3f977c0800000000000000
+      internalID: -4072956144996224907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Custom_Sandsear Storm_0: -5094609706700667171
+      Custom_Sandsear Storm_1: -3672644994364939213
+      Custom_Sandsear Storm_10: 5609863344201593864
+      Custom_Sandsear Storm_11: -5938438249806773235
+      Custom_Sandsear Storm_12: -4700209275936454399
+      Custom_Sandsear Storm_13: 5327288387819573730
+      Custom_Sandsear Storm_14: 7377411796727148301
+      Custom_Sandsear Storm_15: -2959238935422279713
+      Custom_Sandsear Storm_16: 5115166899695523981
+      Custom_Sandsear Storm_17: 4423724556262396359
+      Custom_Sandsear Storm_18: -6868102998088452249
+      Custom_Sandsear Storm_19: -3325414447333366413
+      Custom_Sandsear Storm_2: -1831954396998202818
+      Custom_Sandsear Storm_20: -8176776272895187686
+      Custom_Sandsear Storm_21: 3003208837434949832
+      Custom_Sandsear Storm_22: 7024945084329816013
+      Custom_Sandsear Storm_23: 7132171165791308163
+      Custom_Sandsear Storm_24: 8424858184233669339
+      Custom_Sandsear Storm_25: -4072956144996224907
+      Custom_Sandsear Storm_3: 4586132596692209944
+      Custom_Sandsear Storm_4: 4818921263060716782
+      Custom_Sandsear Storm_5: 5279562780434991955
+      Custom_Sandsear Storm_6: -964059127168803306
+      Custom_Sandsear Storm_7: 4012805076384840345
+      Custom_Sandsear Storm_8: 4519720740244888294
+      Custom_Sandsear Storm_9: -4357022275674061300
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

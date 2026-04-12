@@ -1,0 +1,884 @@
+fileFormatVersion: 2
+guid: 5a4646d48ce484275a8c92ab3fefd8e5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3398280168183893429
+    second: PRAS- Spectral Thief_0
+  - first:
+      213: 4014974666374977985
+    second: PRAS- Spectral Thief_1
+  - first:
+      213: -7242624324739729439
+    second: PRAS- Spectral Thief_2
+  - first:
+      213: -6243231551913856787
+    second: PRAS- Spectral Thief_3
+  - first:
+      213: -6667266450685367969
+    second: PRAS- Spectral Thief_4
+  - first:
+      213: 8443892951237351258
+    second: PRAS- Spectral Thief_5
+  - first:
+      213: 7154664251489963896
+    second: PRAS- Spectral Thief_6
+  - first:
+      213: -9111285615623675488
+    second: PRAS- Spectral Thief_7
+  - first:
+      213: 5387023917099265532
+    second: PRAS- Spectral Thief_8
+  - first:
+      213: -7889435118415568600
+    second: PRAS- Spectral Thief_9
+  - first:
+      213: 6731294108329530052
+    second: PRAS- Spectral Thief_10
+  - first:
+      213: 3444269352389162320
+    second: PRAS- Spectral Thief_11
+  - first:
+      213: -4154552649424070899
+    second: PRAS- Spectral Thief_12
+  - first:
+      213: 3150530278862400002
+    second: PRAS- Spectral Thief_13
+  - first:
+      213: 2247993397887922278
+    second: PRAS- Spectral Thief_14
+  - first:
+      213: -9160100712112805019
+    second: PRAS- Spectral Thief_15
+  - first:
+      213: -5618122828218146043
+    second: PRAS- Spectral Thief_16
+  - first:
+      213: 1017154106724707120
+    second: PRAS- Spectral Thief_17
+  - first:
+      213: 2836166579703982720
+    second: PRAS- Spectral Thief_18
+  - first:
+      213: -1749056593697461827
+    second: PRAS- Spectral Thief_19
+  - first:
+      213: -3996228570423558351
+    second: PRAS- Spectral Thief_20
+  - first:
+      213: -8702805719147186438
+    second: PRAS- Spectral Thief_21
+  - first:
+      213: 1768877395535247549
+    second: PRAS- Spectral Thief_22
+  - first:
+      213: -6270437020509160344
+    second: PRAS- Spectral Thief_23
+  - first:
+      213: 426776769357998833
+    second: PRAS- Spectral Thief_24
+  - first:
+      213: 5788794289605858009
+    second: PRAS- Spectral Thief_25
+  - first:
+      213: -4785057272172895851
+    second: PRAS- Spectral Thief_26
+  - first:
+      213: 5345625687050060783
+    second: PRAS- Spectral Thief_27
+  - first:
+      213: 7499935025470651495
+    second: PRAS- Spectral Thief_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_0
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 887
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd0bdfdecd192f20800000000000000
+      internalID: 3398280168183893429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_1
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 879
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c91973df2e08b730800000000000000
+      internalID: 4014974666374977985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_2
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 889
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e7f84abc870d7b90800000000000000
+      internalID: -7242624324739729439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_3
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 885
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de0f9a94bf59b59a0800000000000000
+      internalID: -6243231551913856787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_4
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 881
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f59e400ec7c1973a0800000000000000
+      internalID: -6667266450685367969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_5
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 869
+        width: 72
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a575de7c6ebbe2570800000000000000
+      internalID: 8443892951237351258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_6
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 869
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87fce3dca397a4360800000000000000
+      internalID: 7154664251489963896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 809
+        width: 193
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1ef9991063e8180800000000000000
+      internalID: -9111285615623675488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_8
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 861
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfd2c3ff5bd82ca40800000000000000
+      internalID: 5387023917099265532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_9
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 865
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82129505f88138290800000000000000
+      internalID: -7889435118415568600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_10
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 861
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c259add35c5a6d50800000000000000
+      internalID: 6731294108329530052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_11
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 671
+        width: 78
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 055bbeb3ab08ccf20800000000000000
+      internalID: 3444269352389162320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_12
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 689
+        width: 56
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d079b6a80601856c0800000000000000
+      internalID: -4154552649424070899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_13
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 689
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20aa4bda89ee8bb20800000000000000
+      internalID: 3150530278862400002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_14
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 689
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6607882c51a723f10800000000000000
+      internalID: 2247993397887922278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_15
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 691
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56ba6b34fe8c0e080800000000000000
+      internalID: -9160100712112805019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_16
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 491
+        width: 42
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5036b87cd0b6802b0800000000000000
+      internalID: -5618122828218146043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_17
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 539
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03be72d5548ad1e00800000000000000
+      internalID: 1017154106724707120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_18
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 491
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08a27134a761c5720800000000000000
+      internalID: 2836166579703982720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_19
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 529
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db9ab908b4a1ab7e0800000000000000
+      internalID: -1749056593697461827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_20
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 505
+        width: 50
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13ff2a2c94b8a88c0800000000000000
+      internalID: -3996228570423558351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_21
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 503
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af67ef0de4c693780800000000000000
+      internalID: -8702805719147186438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_22
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 425
+        width: 193
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db8b81c8e905c8810800000000000000
+      internalID: 1768877395535247549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_23
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 335
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86cb71680ceeaf8a0800000000000000
+      internalID: -6270437020509160344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_24
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 318
+        width: 14
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fae8f7e5373ce500800000000000000
+      internalID: 426776769357998833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_25
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 311
+        width: 16
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d254cd6cbde55050800000000000000
+      internalID: 5788794289605858009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_26
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 313
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5912c3663cf089db0800000000000000
+      internalID: -4785057272172895851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_27
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 303
+        width: 10
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe382d27d3a7f2a40800000000000000
+      internalID: 5345625687050060783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Spectral Thief_28
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 103
+        width: 8
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c30b75b2f151860800000000000000
+      internalID: 7499935025470651495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Spectral Thief_0: 3398280168183893429
+      PRAS- Spectral Thief_1: 4014974666374977985
+      PRAS- Spectral Thief_10: 6731294108329530052
+      PRAS- Spectral Thief_11: 3444269352389162320
+      PRAS- Spectral Thief_12: -4154552649424070899
+      PRAS- Spectral Thief_13: 3150530278862400002
+      PRAS- Spectral Thief_14: 2247993397887922278
+      PRAS- Spectral Thief_15: -9160100712112805019
+      PRAS- Spectral Thief_16: -5618122828218146043
+      PRAS- Spectral Thief_17: 1017154106724707120
+      PRAS- Spectral Thief_18: 2836166579703982720
+      PRAS- Spectral Thief_19: -1749056593697461827
+      PRAS- Spectral Thief_2: -7242624324739729439
+      PRAS- Spectral Thief_20: -3996228570423558351
+      PRAS- Spectral Thief_21: -8702805719147186438
+      PRAS- Spectral Thief_22: 1768877395535247549
+      PRAS- Spectral Thief_23: -6270437020509160344
+      PRAS- Spectral Thief_24: 426776769357998833
+      PRAS- Spectral Thief_25: 5788794289605858009
+      PRAS- Spectral Thief_26: -4785057272172895851
+      PRAS- Spectral Thief_27: 5345625687050060783
+      PRAS- Spectral Thief_28: 7499935025470651495
+      PRAS- Spectral Thief_3: -6243231551913856787
+      PRAS- Spectral Thief_4: -6667266450685367969
+      PRAS- Spectral Thief_5: 8443892951237351258
+      PRAS- Spectral Thief_6: 7154664251489963896
+      PRAS- Spectral Thief_7: -9111285615623675488
+      PRAS- Spectral Thief_8: 5387023917099265532
+      PRAS- Spectral Thief_9: -7889435118415568600
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

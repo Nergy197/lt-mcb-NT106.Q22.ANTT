@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 5d70019e42c704ff699aa417df2d1801
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2578509488965685771
+    second: GEN8- Land's Wrath_0
+  - first:
+      213: -6974105902807101227
+    second: GEN8- Land's Wrath_1
+  - first:
+      213: -5871364899767768718
+    second: GEN8- Land's Wrath_2
+  - first:
+      213: 7307664270062456626
+    second: GEN8- Land's Wrath_3
+  - first:
+      213: 7367738323545596562
+    second: GEN8- Land's Wrath_4
+  - first:
+      213: 5628308895475046849
+    second: GEN8- Land's Wrath_5
+  - first:
+      213: -4957808235188969439
+    second: GEN8- Land's Wrath_6
+  - first:
+      213: -5831253109406169799
+    second: GEN8- Land's Wrath_7
+  - first:
+      213: -5374509972173890297
+    second: GEN8- Land's Wrath_8
+  - first:
+      213: 6160439601354273401
+    second: GEN8- Land's Wrath_9
+  - first:
+      213: -6576418758560064020
+    second: GEN8- Land's Wrath_10
+  - first:
+      213: -499500893629463725
+    second: GEN8- Land's Wrath_11
+  - first:
+      213: -1713037944322155776
+    second: GEN8- Land's Wrath_12
+  - first:
+      213: -4144518151282547412
+    second: GEN8- Land's Wrath_13
+  - first:
+      213: -2712338954491541487
+    second: GEN8- Land's Wrath_14
+  - first:
+      213: 3191577141436139495
+    second: GEN8- Land's Wrath_15
+  - first:
+      213: -7440675616634323825
+    second: GEN8- Land's Wrath_16
+  - first:
+      213: -2979788712617543627
+    second: GEN8- Land's Wrath_17
+  - first:
+      213: -7136484769416821316
+    second: GEN8- Land's Wrath_18
+  - first:
+      213: 5343854756515647665
+    second: GEN8- Land's Wrath_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GEN8- Land's Wrath_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 239
+        width: 130
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fde934084b473cd0800000000000000
+      internalID: -2578509488965685771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Land's Wrath_1
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 237
+        width: 126
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d05a3db1aff63f90800000000000000
+      internalID: -6974105902807101227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Land's Wrath_2
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 239
+        width: 128
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27925a24bb8b48ea0800000000000000
+      internalID: -5871364899767768718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Land's Wrath_3
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 237
+        width: 128
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23f03ea9fe90a6560800000000000000
+      internalID: 7307664270062456626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Land's Wrath_4
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 95
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 292a7f428f67f3660800000000000000
+      internalID: 7367738323545596562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Land's Wrath_5
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 141
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c916f0de15cb1e40800000000000000
+      internalID: 5628308895475046849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Land's Wrath_6
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 147
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1202e0d7da3523bb0800000000000000
+      internalID: -4957808235188969439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Land's Wrath_7
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 143
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 935047a313a331fa0800000000000000
+      internalID: -5831253109406169799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Land's Wrath_8
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 137
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70dd7cad7a7e965b0800000000000000
+      internalID: -5374509972173890297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Land's Wrath_9
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 129
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97278f29d274e7550800000000000000
+      internalID: 6160439601354273401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Land's Wrath_10
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 113
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceddfc18bfddbb4a0800000000000000
+      internalID: -6576418758560064020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Land's Wrath_11
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 95
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 353c93e659a6119f0800000000000000
+      internalID: -499500893629463725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Land's Wrath_12
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 95
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00b99e1d0111a38e0800000000000000
+      internalID: -1713037944322155776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Land's Wrath_13
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 109
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2525a333b6bb76c0800000000000000
+      internalID: -4144518151282547412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Land's Wrath_14
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 113
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 118c31b6716db5ad0800000000000000
+      internalID: -2712338954491541487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Land's Wrath_15
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 95
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e7ce8c1082ca4c20800000000000000
+      internalID: 3191577141436139495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Land's Wrath_16
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 99
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8cb995f2f86db890800000000000000
+      internalID: -7440675616634323825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Land's Wrath_17
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 105
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53876b614f9a5a6d0800000000000000
+      internalID: -2979788712617543627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Land's Wrath_18
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 95
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb5cce5b9ec16fc90800000000000000
+      internalID: -7136484769416821316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Land's Wrath_19
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 97
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b0956d869f292a40800000000000000
+      internalID: 5343854756515647665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GEN8- Land's Wrath_0: -2578509488965685771
+      GEN8- Land's Wrath_1: -6974105902807101227
+      GEN8- Land's Wrath_10: -6576418758560064020
+      GEN8- Land's Wrath_11: -499500893629463725
+      GEN8- Land's Wrath_12: -1713037944322155776
+      GEN8- Land's Wrath_13: -4144518151282547412
+      GEN8- Land's Wrath_14: -2712338954491541487
+      GEN8- Land's Wrath_15: 3191577141436139495
+      GEN8- Land's Wrath_16: -7440675616634323825
+      GEN8- Land's Wrath_17: -2979788712617543627
+      GEN8- Land's Wrath_18: -7136484769416821316
+      GEN8- Land's Wrath_19: 5343854756515647665
+      GEN8- Land's Wrath_2: -5871364899767768718
+      GEN8- Land's Wrath_3: 7307664270062456626
+      GEN8- Land's Wrath_4: 7367738323545596562
+      GEN8- Land's Wrath_5: 5628308895475046849
+      GEN8- Land's Wrath_6: -4957808235188969439
+      GEN8- Land's Wrath_7: -5831253109406169799
+      GEN8- Land's Wrath_8: -5374509972173890297
+      GEN8- Land's Wrath_9: 6160439601354273401
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

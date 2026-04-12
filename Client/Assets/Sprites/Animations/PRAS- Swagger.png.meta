@@ -1,0 +1,962 @@
+fileFormatVersion: 2
+guid: 1b343216be1f44ff7954ca083a9cdfcc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4955416551383496431
+    second: PRAS- Swagger_0
+  - first:
+      213: -5792987982553040350
+    second: PRAS- Swagger_1
+  - first:
+      213: 1365454419271129469
+    second: PRAS- Swagger_2
+  - first:
+      213: 6506218580800782799
+    second: PRAS- Swagger_3
+  - first:
+      213: 3450327145280230586
+    second: PRAS- Swagger_4
+  - first:
+      213: 1802860556455390322
+    second: PRAS- Swagger_5
+  - first:
+      213: -7192744272302266020
+    second: PRAS- Swagger_6
+  - first:
+      213: 8189855162627087939
+    second: PRAS- Swagger_7
+  - first:
+      213: -8427198647244454710
+    second: PRAS- Swagger_8
+  - first:
+      213: -111259244280311166
+    second: PRAS- Swagger_9
+  - first:
+      213: 7040902329584125040
+    second: PRAS- Swagger_10
+  - first:
+      213: 4400292694788923023
+    second: PRAS- Swagger_11
+  - first:
+      213: 5317716081003801283
+    second: PRAS- Swagger_12
+  - first:
+      213: -6271299250000483776
+    second: PRAS- Swagger_13
+  - first:
+      213: 7317005910469016673
+    second: PRAS- Swagger_14
+  - first:
+      213: -2885713754129135133
+    second: PRAS- Swagger_15
+  - first:
+      213: 7277293780142023167
+    second: PRAS- Swagger_16
+  - first:
+      213: -7062159628230184925
+    second: PRAS- Swagger_17
+  - first:
+      213: 8797454120480366089
+    second: PRAS- Swagger_18
+  - first:
+      213: 5608500548808667154
+    second: PRAS- Swagger_19
+  - first:
+      213: 6904341003927298696
+    second: PRAS- Swagger_20
+  - first:
+      213: 5715315608386985061
+    second: PRAS- Swagger_21
+  - first:
+      213: 4236811719955832696
+    second: PRAS- Swagger_22
+  - first:
+      213: 7702998724405392548
+    second: PRAS- Swagger_23
+  - first:
+      213: 4095997874537444098
+    second: PRAS- Swagger_24
+  - first:
+      213: -49792848785817494
+    second: PRAS- Swagger_25
+  - first:
+      213: -7499049873682324396
+    second: PRAS- Swagger_26
+  - first:
+      213: 8312077994095149899
+    second: PRAS- Swagger_27
+  - first:
+      213: -2737419466852679576
+    second: PRAS- Swagger_28
+  - first:
+      213: 7593976206645251640
+    second: PRAS- Swagger_29
+  - first:
+      213: -2634047687203176503
+    second: PRAS- Swagger_30
+  - first:
+      213: -7776457941971955368
+    second: PRAS- Swagger_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Swagger_0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 669
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11902b4c6e2da3bb0800000000000000
+      internalID: -4955416551383496431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_1
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 675
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ab1d75f1c2b9fa0800000000000000
+      internalID: -5792987982553040350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_2
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 661
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7994a15f8113f210800000000000000
+      internalID: 1365454419271129469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_3
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 661
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc14dabe35bba4a50800000000000000
+      internalID: 6506218580800782799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_4
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 659
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab4d05d024602ef20800000000000000
+      internalID: 3450327145280230586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_5
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 656
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27c2617cf1c050910800000000000000
+      internalID: 1802860556455390322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_6
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 659
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c59a231713d3e2c90800000000000000
+      internalID: -7192744272302266020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_7
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 657
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34e5942f0e538a170800000000000000
+      internalID: 8189855162627087939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_8
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 657
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac48753ca739c0b80800000000000000
+      internalID: -8427198647244454710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_9
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 471
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28291ba8e4ab47ef0800000000000000
+      internalID: -111259244280311166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_10
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 459
+        width: 58
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 074051d4d5f46b160800000000000000
+      internalID: 7040902329584125040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_11
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 453
+        width: 68
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8ed3a464eaf01d30800000000000000
+      internalID: 4400292694788923023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_12
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 449
+        width: 78
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca2d98e9925cc940800000000000000
+      internalID: 5317716081003801283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_13
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 447
+        width: 84
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04a2c831f8ed7f8a0800000000000000
+      internalID: -6271299250000483776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_14
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 255
+        width: 92
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16c70f0cb1a3b8560800000000000000
+      internalID: 7317005910469016673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_15
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 357
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e98ca931a2e3f7d0800000000000000
+      internalID: -2885713754129135133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_16
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 353
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff16683e2242ef460800000000000000
+      internalID: 7277293780142023167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_17
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 275
+        width: 64
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3203c3c2c3b2efd90800000000000000
+      internalID: -7062159628230184925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_18
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 359
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90e570369e5d61a70800000000000000
+      internalID: 8797454120480366089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_19
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 323
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 210f256b88565dd40800000000000000
+      internalID: 5608500548808667154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_20
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 329
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8822043ff8521df50800000000000000
+      internalID: 6904341003927298696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_21
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 333
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56cd629c341e05f40800000000000000
+      internalID: 5715315608386985061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_22
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 329
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87fdd2ccfcd2cca30800000000000000
+      internalID: 4236811719955832696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_23
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 291
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a47871178c86ea60800000000000000
+      internalID: 7702998724405392548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_24
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 293
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2033f888d58e7d830800000000000000
+      internalID: 4095997874537444098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_25
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 297
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6044c7faa91f4ff0800000000000000
+      internalID: -49792848785817494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_26
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 299
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4542a3e1fd50ee790800000000000000
+      internalID: -7499049873682324396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_27
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 301
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43026775ee6a5370800000000000000
+      internalID: 8312077994095149899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_28
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 251
+        width: 72
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 860c1059f7bb20ad0800000000000000
+      internalID: -2737419466852679576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_29
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 257
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83ecbd51029336960800000000000000
+      internalID: 7593976206645251640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_30
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 65
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cfb0d2959bf17bd0800000000000000
+      internalID: -2634047687203176503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swagger_31
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 65
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8511ff504b8741490800000000000000
+      internalID: -7776457941971955368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Swagger_0: -4955416551383496431
+      PRAS- Swagger_1: -5792987982553040350
+      PRAS- Swagger_10: 7040902329584125040
+      PRAS- Swagger_11: 4400292694788923023
+      PRAS- Swagger_12: 5317716081003801283
+      PRAS- Swagger_13: -6271299250000483776
+      PRAS- Swagger_14: 7317005910469016673
+      PRAS- Swagger_15: -2885713754129135133
+      PRAS- Swagger_16: 7277293780142023167
+      PRAS- Swagger_17: -7062159628230184925
+      PRAS- Swagger_18: 8797454120480366089
+      PRAS- Swagger_19: 5608500548808667154
+      PRAS- Swagger_2: 1365454419271129469
+      PRAS- Swagger_20: 6904341003927298696
+      PRAS- Swagger_21: 5715315608386985061
+      PRAS- Swagger_22: 4236811719955832696
+      PRAS- Swagger_23: 7702998724405392548
+      PRAS- Swagger_24: 4095997874537444098
+      PRAS- Swagger_25: -49792848785817494
+      PRAS- Swagger_26: -7499049873682324396
+      PRAS- Swagger_27: 8312077994095149899
+      PRAS- Swagger_28: -2737419466852679576
+      PRAS- Swagger_29: 7593976206645251640
+      PRAS- Swagger_3: 6506218580800782799
+      PRAS- Swagger_30: -2634047687203176503
+      PRAS- Swagger_31: -7776457941971955368
+      PRAS- Swagger_4: 3450327145280230586
+      PRAS- Swagger_5: 1802860556455390322
+      PRAS- Swagger_6: -7192744272302266020
+      PRAS- Swagger_7: 8189855162627087939
+      PRAS- Swagger_8: -8427198647244454710
+      PRAS- Swagger_9: -111259244280311166
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

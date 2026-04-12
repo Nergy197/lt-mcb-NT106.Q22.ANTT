@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: 945bbc2cd7fbf40388e3d36ab50eb649
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6805562228707552801
+    second: PRAS- Mud Slap_0
+  - first:
+      213: -8016517699167514240
+    second: PRAS- Mud Slap_1
+  - first:
+      213: 2920308299124099687
+    second: PRAS- Mud Slap_2
+  - first:
+      213: 4903808458361328719
+    second: PRAS- Mud Slap_3
+  - first:
+      213: 5830633478132642381
+    second: PRAS- Mud Slap_4
+  - first:
+      213: 1484620201582395488
+    second: PRAS- Mud Slap_5
+  - first:
+      213: -3317181535098654108
+    second: PRAS- Mud Slap_6
+  - first:
+      213: -6794163510261146461
+    second: PRAS- Mud Slap_7
+  - first:
+      213: 2868062517577017616
+    second: PRAS- Mud Slap_8
+  - first:
+      213: 4328650968665650950
+    second: PRAS- Mud Slap_9
+  - first:
+      213: -5094997423126940241
+    second: PRAS- Mud Slap_10
+  - first:
+      213: 1338462856937588832
+    second: PRAS- Mud Slap_11
+  - first:
+      213: -570323826251985270
+    second: PRAS- Mud Slap_12
+  - first:
+      213: -7779638257981886721
+    second: PRAS- Mud Slap_13
+  - first:
+      213: -4058239731451147221
+    second: PRAS- Mud Slap_14
+  - first:
+      213: 1231151828589252860
+    second: PRAS- Mud Slap_15
+  - first:
+      213: -4427783907600098720
+    second: PRAS- Mud Slap_16
+  - first:
+      213: 2982053350229193668
+    second: PRAS- Mud Slap_17
+  - first:
+      213: 3396987832268587392
+    second: PRAS- Mud Slap_18
+  - first:
+      213: -8696761986651642058
+    second: PRAS- Mud Slap_19
+  - first:
+      213: -6916676564849430812
+    second: PRAS- Mud Slap_20
+  - first:
+      213: -1448134096104209276
+    second: PRAS- Mud Slap_21
+  - first:
+      213: 1787876919659327420
+    second: PRAS- Mud Slap_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Mud Slap_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 281
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12eede22ac6327e50800000000000000
+      internalID: 6805562228707552801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Mud Slap_1
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 279
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0811d7d30ab9fb090800000000000000
+      internalID: -8016517699167514240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Mud Slap_2
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 269
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76acae3fce4078820800000000000000
+      internalID: 2920308299124099687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Mud Slap_3
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 275
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f44de27bfc3dd0440800000000000000
+      internalID: 4903808458361328719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Mud Slap_4
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 289
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d42b89f91429ae050800000000000000
+      internalID: 5830633478132642381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Mud Slap_5
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 293
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06000bd153e6a9410800000000000000
+      internalID: 1484620201582395488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Mud Slap_6
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 269
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 462b5f018f007f1d0800000000000000
+      internalID: -3317181535098654108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Mud Slap_7
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 267
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ac96f0d84846b1a0800000000000000
+      internalID: -6794163510261146461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Mud Slap_8
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 105
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0196ac10aa76dc720800000000000000
+      internalID: 2868062517577017616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Mud Slap_9
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 109
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60777ff2f15721c30800000000000000
+      internalID: 4328650968665650950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Mud Slap_10
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 115
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa5fcfe86deea49b0800000000000000
+      internalID: -5094997423126940241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Mud Slap_11
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 111
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 068c1dc70ec239210800000000000000
+      internalID: 1338462856937588832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Mud Slap_12
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 91
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8e0f41708dc518f0800000000000000
+      internalID: -570323826251985270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Mud Slap_13
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 99
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffe63fff83c290490800000000000000
+      internalID: -7779638257981886721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Mud Slap_14
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 67
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2c4a79377c3ea7c0800000000000000
+      internalID: -4058239731451147221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Mud Slap_15
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 87
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf092afa01ee51110800000000000000
+      internalID: 1231151828589252860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Mud Slap_16
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 71
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a1e45def95d82c0800000000000000
+      internalID: -4427783907600098720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Mud Slap_17
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 63
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c3bca1f8b1626920800000000000000
+      internalID: 2982053350229193668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Mud Slap_18
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08181b87f66842f20800000000000000
+      internalID: 3396987832268587392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Mud Slap_19
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 65
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6372281fc05ee4780800000000000000
+      internalID: -8696761986651642058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Mud Slap_20
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 77
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee61e57f470300a0800000000000000
+      internalID: -6916676564849430812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Mud Slap_21
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 63
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 484c39e46b137ebe0800000000000000
+      internalID: -1448134096104209276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Mud Slap_22
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 65
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbfe96af590dfc810800000000000000
+      internalID: 1787876919659327420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Mud Slap_0: 6805562228707552801
+      PRAS- Mud Slap_1: -8016517699167514240
+      PRAS- Mud Slap_10: -5094997423126940241
+      PRAS- Mud Slap_11: 1338462856937588832
+      PRAS- Mud Slap_12: -570323826251985270
+      PRAS- Mud Slap_13: -7779638257981886721
+      PRAS- Mud Slap_14: -4058239731451147221
+      PRAS- Mud Slap_15: 1231151828589252860
+      PRAS- Mud Slap_16: -4427783907600098720
+      PRAS- Mud Slap_17: 2982053350229193668
+      PRAS- Mud Slap_18: 3396987832268587392
+      PRAS- Mud Slap_19: -8696761986651642058
+      PRAS- Mud Slap_2: 2920308299124099687
+      PRAS- Mud Slap_20: -6916676564849430812
+      PRAS- Mud Slap_21: -1448134096104209276
+      PRAS- Mud Slap_22: 1787876919659327420
+      PRAS- Mud Slap_3: 4903808458361328719
+      PRAS- Mud Slap_4: 5830633478132642381
+      PRAS- Mud Slap_5: 1484620201582395488
+      PRAS- Mud Slap_6: -3317181535098654108
+      PRAS- Mud Slap_7: -6794163510261146461
+      PRAS- Mud Slap_8: 2868062517577017616
+      PRAS- Mud Slap_9: 4328650968665650950
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

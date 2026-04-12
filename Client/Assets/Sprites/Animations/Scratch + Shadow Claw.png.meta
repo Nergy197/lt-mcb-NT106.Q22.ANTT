@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 482b9fa15e9c24393b4e0262fabd80a8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 192999409178822847
+    second: Scratch + Shadow Claw_0
+  - first:
+      213: 2840690047292014536
+    second: Scratch + Shadow Claw_1
+  - first:
+      213: 7457197640575023733
+    second: Scratch + Shadow Claw_2
+  - first:
+      213: -7599430808912745342
+    second: Scratch + Shadow Claw_3
+  - first:
+      213: 2153855784674855834
+    second: Scratch + Shadow Claw_4
+  - first:
+      213: 1612792732949575050
+    second: Scratch + Shadow Claw_5
+  - first:
+      213: 3587602568282879019
+    second: Scratch + Shadow Claw_6
+  - first:
+      213: 2438320689418550990
+    second: Scratch + Shadow Claw_7
+  - first:
+      213: 6637109655381951437
+    second: Scratch + Shadow Claw_8
+  - first:
+      213: -4353993711419521940
+    second: Scratch + Shadow Claw_9
+  - first:
+      213: 5120037042270005534
+    second: Scratch + Shadow Claw_10
+  - first:
+      213: 3427382197753188463
+    second: Scratch + Shadow Claw_11
+  - first:
+      213: -3309585221412212156
+    second: Scratch + Shadow Claw_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Scratch + Shadow Claw_0
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 451
+        width: 50
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8c6f9a0fbada200800000000000000
+      internalID: 192999409178822847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scratch + Shadow Claw_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 449
+        width: 50
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cff3d12c882c6720800000000000000
+      internalID: 2840690047292014536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scratch + Shadow Claw_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 444
+        width: 50
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57afa528eb94d7760800000000000000
+      internalID: 7457197640575023733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scratch + Shadow Claw_3
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 474
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28ca89b51f5698690800000000000000
+      internalID: -7599430808912745342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scratch + Shadow Claw_4
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 474
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9b07feac6804ed10800000000000000
+      internalID: 2153855784674855834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scratch + Shadow Claw_5
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 475
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a857ac7127ac16610800000000000000
+      internalID: 1612792732949575050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scratch + Shadow Claw_6
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 285
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b24b7c52789b9c130800000000000000
+      internalID: 3587602568282879019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scratch + Shadow Claw_7
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 255
+        width: 57
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ece374d8fb7a6d120800000000000000
+      internalID: 2438320689418550990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scratch + Shadow Claw_8
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 250
+        width: 51
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc34b501110cb1c50800000000000000
+      internalID: 6637109655381951437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scratch + Shadow Claw_9
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 281
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c640e84b9c18393c0800000000000000
+      internalID: -4353993711419521940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scratch + Shadow Claw_10
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 281
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e19685510960e0740800000000000000
+      internalID: 5120037042270005534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scratch + Shadow Claw_11
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 91
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f60939623f1809f20800000000000000
+      internalID: 3427382197753188463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scratch + Shadow Claw_12
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 93
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 442b7dba6cdf112d0800000000000000
+      internalID: -3309585221412212156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Scratch + Shadow Claw_0: 192999409178822847
+      Scratch + Shadow Claw_1: 2840690047292014536
+      Scratch + Shadow Claw_10: 5120037042270005534
+      Scratch + Shadow Claw_11: 3427382197753188463
+      Scratch + Shadow Claw_12: -3309585221412212156
+      Scratch + Shadow Claw_2: 7457197640575023733
+      Scratch + Shadow Claw_3: -7599430808912745342
+      Scratch + Shadow Claw_4: 2153855784674855834
+      Scratch + Shadow Claw_5: 1612792732949575050
+      Scratch + Shadow Claw_6: 3587602568282879019
+      Scratch + Shadow Claw_7: 2438320689418550990
+      Scratch + Shadow Claw_8: 6637109655381951437
+      Scratch + Shadow Claw_9: -4353993711419521940
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

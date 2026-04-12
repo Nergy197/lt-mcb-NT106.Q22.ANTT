@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: 71f83ffcd957f42619c199b18811e037
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3358737857366642887
+    second: PRAS- Twister_0
+  - first:
+      213: -2894140222783526405
+    second: PRAS- Twister_1
+  - first:
+      213: -8847484658176536702
+    second: PRAS- Twister_2
+  - first:
+      213: -7900049847620154810
+    second: PRAS- Twister_3
+  - first:
+      213: 7027257929386430572
+    second: PRAS- Twister_4
+  - first:
+      213: -2063716769413275974
+    second: PRAS- Twister_5
+  - first:
+      213: -1464991383386365601
+    second: PRAS- Twister_6
+  - first:
+      213: -8143093558712806093
+    second: PRAS- Twister_7
+  - first:
+      213: 1442661662835566466
+    second: PRAS- Twister_8
+  - first:
+      213: 7106390281221675036
+    second: PRAS- Twister_9
+  - first:
+      213: 3745316216620124373
+    second: PRAS- Twister_10
+  - first:
+      213: -5908928473114916820
+    second: PRAS- Twister_11
+  - first:
+      213: -2931240399169609950
+    second: PRAS- Twister_12
+  - first:
+      213: 2935346584289202851
+    second: PRAS- Twister_13
+  - first:
+      213: 5615271221201536243
+    second: PRAS- Twister_14
+  - first:
+      213: 7769471391908468597
+    second: PRAS- Twister_15
+  - first:
+      213: 8415873846851434354
+    second: PRAS- Twister_16
+  - first:
+      213: 6453206870745056957
+    second: PRAS- Twister_17
+  - first:
+      213: 1200552370963212577
+    second: PRAS- Twister_18
+  - first:
+      213: 4577273509191128673
+    second: PRAS- Twister_19
+  - first:
+      213: -8892292946357251721
+    second: PRAS- Twister_20
+  - first:
+      213: -2562472076763391412
+    second: PRAS- Twister_21
+  - first:
+      213: -8484163909062514563
+    second: PRAS- Twister_22
+  - first:
+      213: 8620960191376025137
+    second: PRAS- Twister_23
+  - first:
+      213: 7632238157299018087
+    second: PRAS- Twister_24
+  - first:
+      213: -3926327621050589694
+    second: PRAS- Twister_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Twister_0
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 457
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c0def13942ac9e20800000000000000
+      internalID: 3358737857366642887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_1
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 465
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf961da1dc2f5d7d0800000000000000
+      internalID: -2894140222783526405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_2
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 485
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f4ba1549b673580800000000000000
+      internalID: -8847484658176536702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_3
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 435
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64ac8b415826d5290800000000000000
+      internalID: -7900049847620154810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_4
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 443
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c601022dad5d58160800000000000000
+      internalID: 7027257929386430572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_5
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 449
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abeda1248843c53e0800000000000000
+      internalID: -2063716769413275974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_6
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 387
+        width: 62
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f516f32491e4babe0800000000000000
+      internalID: -1464991383386365601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_7
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 415
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 335d6246d8bedfe80800000000000000
+      internalID: -8143093558712806093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_8
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 431
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2876368832d550410800000000000000
+      internalID: 1442661662835566466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_9
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 387
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c18918b3f48fe9260800000000000000
+      internalID: 7106390281221675036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_10
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 427
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d8072761490af330800000000000000
+      internalID: 3745316216620124373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_11
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 401
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c284bcc4cd44ffda0800000000000000
+      internalID: -5908928473114916820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_12
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 387
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f983823642257d0800000000000000
+      internalID: -2931240399169609950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_13
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 403
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a2d6319a227cb820800000000000000
+      internalID: 2935346584289202851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_14
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 395
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f40139bc637ded40800000000000000
+      internalID: 5615271221201536243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_15
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 387
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57793470115b2db60800000000000000
+      internalID: 7769471391908468597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_16
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 395
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277741caca03bc470800000000000000
+      internalID: 8415873846851434354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_17
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 387
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db68ed855756e8950800000000000000
+      internalID: 6453206870745056957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_18
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 389
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 129e385450839a010800000000000000
+      internalID: 1200552370963212577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_19
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 391
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1669423510eb58f30800000000000000
+      internalID: 4577273509191128673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_20
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 195
+        width: 66
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7711aadbdaa389480800000000000000
+      internalID: -8892292946357251721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_21
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 195
+        width: 64
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4a19a50935407cd0800000000000000
+      internalID: -2562472076763391412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_22
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 195
+        width: 66
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d78a32030e1324a80800000000000000
+      internalID: -8484163909062514563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_23
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 195
+        width: 66
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13660c54e9dc3a770800000000000000
+      internalID: 8620960191376025137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_24
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 195
+        width: 66
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7696dfeaa282be960800000000000000
+      internalID: 7632238157299018087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Twister_25
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 3
+        width: 66
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20e997bc4d1e289c0800000000000000
+      internalID: -3926327621050589694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Twister_0: 3358737857366642887
+      PRAS- Twister_1: -2894140222783526405
+      PRAS- Twister_10: 3745316216620124373
+      PRAS- Twister_11: -5908928473114916820
+      PRAS- Twister_12: -2931240399169609950
+      PRAS- Twister_13: 2935346584289202851
+      PRAS- Twister_14: 5615271221201536243
+      PRAS- Twister_15: 7769471391908468597
+      PRAS- Twister_16: 8415873846851434354
+      PRAS- Twister_17: 6453206870745056957
+      PRAS- Twister_18: 1200552370963212577
+      PRAS- Twister_19: 4577273509191128673
+      PRAS- Twister_2: -8847484658176536702
+      PRAS- Twister_20: -8892292946357251721
+      PRAS- Twister_21: -2562472076763391412
+      PRAS- Twister_22: -8484163909062514563
+      PRAS- Twister_23: 8620960191376025137
+      PRAS- Twister_24: 7632238157299018087
+      PRAS- Twister_25: -3926327621050589694
+      PRAS- Twister_3: -7900049847620154810
+      PRAS- Twister_4: 7027257929386430572
+      PRAS- Twister_5: -2063716769413275974
+      PRAS- Twister_6: -1464991383386365601
+      PRAS- Twister_7: -8143093558712806093
+      PRAS- Twister_8: 1442661662835566466
+      PRAS- Twister_9: 7106390281221675036
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,962 @@
+fileFormatVersion: 2
+guid: 6d8a245c2703048f2b2c5dc0aeaedd74
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1336141834795948844
+    second: Firebird_0
+  - first:
+      213: 2814660547489182508
+    second: Firebird_1
+  - first:
+      213: -2382184946818039023
+    second: Firebird_2
+  - first:
+      213: -6055433921058602954
+    second: Firebird_3
+  - first:
+      213: 6332616175751826176
+    second: Firebird_4
+  - first:
+      213: 3926737258291636516
+    second: Firebird_5
+  - first:
+      213: -8000875544436554846
+    second: Firebird_6
+  - first:
+      213: 9141126874037618746
+    second: Firebird_7
+  - first:
+      213: -8915056576378411532
+    second: Firebird_8
+  - first:
+      213: 8257955959954475415
+    second: Firebird_9
+  - first:
+      213: 2325632204037295690
+    second: Firebird_10
+  - first:
+      213: 2774290267213647550
+    second: Firebird_11
+  - first:
+      213: -7861061529616767432
+    second: Firebird_12
+  - first:
+      213: 1220114366813047341
+    second: Firebird_13
+  - first:
+      213: -7669173095434698846
+    second: Firebird_14
+  - first:
+      213: 2667096459352886156
+    second: Firebird_15
+  - first:
+      213: -8894972466832082080
+    second: Firebird_16
+  - first:
+      213: -2034017856656200636
+    second: Firebird_17
+  - first:
+      213: 1927950177720086182
+    second: Firebird_18
+  - first:
+      213: 1853570008576864886
+    second: Firebird_19
+  - first:
+      213: 1389647420315162265
+    second: Firebird_20
+  - first:
+      213: 5056599355982061515
+    second: Firebird_21
+  - first:
+      213: 7315414351523384027
+    second: Firebird_22
+  - first:
+      213: -8863800488351246161
+    second: Firebird_23
+  - first:
+      213: 1995701579111497166
+    second: Firebird_24
+  - first:
+      213: -2897940170086545969
+    second: Firebird_25
+  - first:
+      213: 2812340637268497603
+    second: Firebird_26
+  - first:
+      213: 5777103988104367193
+    second: Firebird_27
+  - first:
+      213: 5849053348296892896
+    second: Firebird_28
+  - first:
+      213: 1534865312690404518
+    second: Firebird_29
+  - first:
+      213: -1910960968182620295
+    second: Firebird_30
+  - first:
+      213: -5697923725495037772
+    second: Firebird_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Firebird_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 377
+        width: 186
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2b1d886bedea8210800000000000000
+      internalID: 1336141834795948844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_1
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 660
+        width: 194
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c233660fadeaf0720800000000000000
+      internalID: 2814660547489182508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_2
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 572
+        width: 141
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 113c0a78967c0fed0800000000000000
+      internalID: -2382184946818039023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_3
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 621
+        width: 189
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 630837e8ee6c6fba0800000000000000
+      internalID: -6055433921058602954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_4
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 580
+        width: 87
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00b84963cd8f1e750800000000000000
+      internalID: 6332616175751826176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_5
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 446
+        width: 184
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429a3ce4bb29e7630800000000000000
+      internalID: 3926737258291636516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_6
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 401
+        width: 193
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a3cfb1351e27f090800000000000000
+      internalID: -8000875544436554846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_7
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 389
+        width: 182
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a380acdc57ecbde70800000000000000
+      internalID: 9141126874037618746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_8
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 384
+        width: 195
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5647c174b574480800000000000000
+      internalID: -8915056576378411532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 209
+        width: 183
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79908eb61372a9270800000000000000
+      internalID: 8257955959954475415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_10
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 202
+        width: 184
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4e0ad7fa2e464020800000000000000
+      internalID: 2325632204037295690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_11
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 207
+        width: 194
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebec7199c42408620800000000000000
+      internalID: 2774290267213647550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_12
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 358
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83624b14036e7e290800000000000000
+      internalID: -7861061529616767432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_13
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 351
+        width: 65
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2a0e3b5d87bee010800000000000000
+      internalID: 1220114366813047341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_14
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 197
+        width: 151
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2afb1a5e3bf919590800000000000000
+      internalID: -7669173095434698846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_15
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 190
+        width: 189
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8b4e61591e630520800000000000000
+      internalID: 2667096459352886156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_16
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 333
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06bf7934ba5be8480800000000000000
+      internalID: -8894972466832082080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_17
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 276
+        width: 16
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ca43b3987b5c3e0800000000000000
+      internalID: -2034017856656200636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_18
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 270
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ae28afc87471ca10800000000000000
+      internalID: 1927950177720086182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_19
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 228
+        width: 10
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 672ba872a1439b910800000000000000
+      internalID: 1853570008576864886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_20
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 249
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9965ce257f4094310800000000000000
+      internalID: 1389647420315162265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_21
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 186
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcf97c0c256ac2640800000000000000
+      internalID: 5056599355982061515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_22
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 204
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bda885f0892958560800000000000000
+      internalID: 7315414351523384027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_23
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 203
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa8d3e31b647df480800000000000000
+      internalID: -8863800488351246161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_24
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 190
+        width: 62
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecd70a4330822bb10800000000000000
+      internalID: 1995701579111497166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 178
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc508ade4c278c7d0800000000000000
+      internalID: -2897940170086545969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_26
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 182
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c4d8cfb8e0770720800000000000000
+      internalID: 2812340637268497603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_27
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 21
+        width: 189
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95c047108756c2050800000000000000
+      internalID: 5777103988104367193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_28
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 91
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e1ab89d7030c2150800000000000000
+      internalID: 5849053348296892896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_29
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 5
+        width: 188
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6acfafcaedfec4510800000000000000
+      internalID: 1534865312690404518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_30
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 0
+        width: 170
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97f96d7cf17ea75e0800000000000000
+      internalID: -1910960968182620295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firebird_31
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 0
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b019908f88ece0b0800000000000000
+      internalID: -5697923725495037772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Firebird_0: 1336141834795948844
+      Firebird_1: 2814660547489182508
+      Firebird_10: 2325632204037295690
+      Firebird_11: 2774290267213647550
+      Firebird_12: -7861061529616767432
+      Firebird_13: 1220114366813047341
+      Firebird_14: -7669173095434698846
+      Firebird_15: 2667096459352886156
+      Firebird_16: -8894972466832082080
+      Firebird_17: -2034017856656200636
+      Firebird_18: 1927950177720086182
+      Firebird_19: 1853570008576864886
+      Firebird_2: -2382184946818039023
+      Firebird_20: 1389647420315162265
+      Firebird_21: 5056599355982061515
+      Firebird_22: 7315414351523384027
+      Firebird_23: -8863800488351246161
+      Firebird_24: 1995701579111497166
+      Firebird_25: -2897940170086545969
+      Firebird_26: 2812340637268497603
+      Firebird_27: 5777103988104367193
+      Firebird_28: 5849053348296892896
+      Firebird_29: 1534865312690404518
+      Firebird_3: -6055433921058602954
+      Firebird_30: -1910960968182620295
+      Firebird_31: -5697923725495037772
+      Firebird_4: 6332616175751826176
+      Firebird_5: 3926737258291636516
+      Firebird_6: -8000875544436554846
+      Firebird_7: 9141126874037618746
+      Firebird_8: -8915056576378411532
+      Firebird_9: 8257955959954475415
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

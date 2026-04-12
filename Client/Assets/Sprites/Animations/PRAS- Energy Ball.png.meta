@@ -1,0 +1,884 @@
+fileFormatVersion: 2
+guid: 73cb0a943ef08408f897d7488b7b7cec
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3321576952645087110
+    second: PRAS- Energy Ball_0
+  - first:
+      213: 631640115020485138
+    second: PRAS- Energy Ball_1
+  - first:
+      213: -8289800542856557667
+    second: PRAS- Energy Ball_2
+  - first:
+      213: 9197404593798776462
+    second: PRAS- Energy Ball_3
+  - first:
+      213: -4789068997197299235
+    second: PRAS- Energy Ball_4
+  - first:
+      213: -5083792751328330159
+    second: PRAS- Energy Ball_5
+  - first:
+      213: 2550636494000268416
+    second: PRAS- Energy Ball_6
+  - first:
+      213: 1526411992842293449
+    second: PRAS- Energy Ball_7
+  - first:
+      213: 8965972454265988122
+    second: PRAS- Energy Ball_8
+  - first:
+      213: -5872369886863301531
+    second: PRAS- Energy Ball_9
+  - first:
+      213: -7963264073987951194
+    second: PRAS- Energy Ball_10
+  - first:
+      213: 1827750973831911948
+    second: PRAS- Energy Ball_11
+  - first:
+      213: -2603165969425018502
+    second: PRAS- Energy Ball_12
+  - first:
+      213: -2691645693645820039
+    second: PRAS- Energy Ball_13
+  - first:
+      213: 1566198944209722466
+    second: PRAS- Energy Ball_14
+  - first:
+      213: -165860094247442798
+    second: PRAS- Energy Ball_15
+  - first:
+      213: -6621473796323604562
+    second: PRAS- Energy Ball_16
+  - first:
+      213: 7937593140306541816
+    second: PRAS- Energy Ball_17
+  - first:
+      213: -3148774129620894218
+    second: PRAS- Energy Ball_18
+  - first:
+      213: -4661080663187683207
+    second: PRAS- Energy Ball_19
+  - first:
+      213: -7935388661525806696
+    second: PRAS- Energy Ball_20
+  - first:
+      213: 2871643533118431560
+    second: PRAS- Energy Ball_21
+  - first:
+      213: -7580635217249711598
+    second: PRAS- Energy Ball_22
+  - first:
+      213: 487099661497011802
+    second: PRAS- Energy Ball_23
+  - first:
+      213: -6362549065104544202
+    second: PRAS- Energy Ball_24
+  - first:
+      213: 1201806732715549382
+    second: PRAS- Energy Ball_25
+  - first:
+      213: -6758972704798663427
+    second: PRAS- Energy Ball_26
+  - first:
+      213: 1887507895781836306
+    second: PRAS- Energy Ball_27
+  - first:
+      213: 7483862502219707729
+    second: PRAS- Energy Ball_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_0
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 451
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a70177b2c5367e1d0800000000000000
+      internalID: -3321576952645087110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_1
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 451
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 212dea9865904c800800000000000000
+      internalID: 631640115020485138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_2
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 269
+        width: 56
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9bc138d356b4fc80800000000000000
+      internalID: -8289800542856557667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_3
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 451
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e860ce48fbeb3af70800000000000000
+      internalID: 9197404593798776462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_4
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 445
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd10831ee1fc98db0800000000000000
+      internalID: -4789068997197299235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_5
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 495
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e7e518d6db279b0800000000000000
+      internalID: -5083792751328330159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_6
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 497
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 084a800a06ea56320800000000000000
+      internalID: 2550636494000268416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_7
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 487
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c0d246ce97ee2510800000000000000
+      internalID: 1526411992842293449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_8
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 451
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a14267281788d6c70800000000000000
+      internalID: 8965972454265988122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_9
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 447
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 564efc773b6218ea0800000000000000
+      internalID: -5872369886863301531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_10
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 447
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a57151148dcc7190800000000000000
+      internalID: -7963264073987951194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_11
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 289
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0a102da3d97d5910800000000000000
+      internalID: 1827750973831911948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_12
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 271
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a71590dc752bfdbd0800000000000000
+      internalID: -2603165969425018502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_13
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 267
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97fe709a08a55aad0800000000000000
+      internalID: -2691645693645820039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_14
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 297
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26c563544a14cb510800000000000000
+      internalID: 1566198944209722466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_15
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 299
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 296e7ff7f1fb2bdf0800000000000000
+      internalID: -165860094247442798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_16
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 287
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea703901aaccb14a0800000000000000
+      internalID: -6621473796323604562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_17
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 259
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc7c8be7eef72e60800000000000000
+      internalID: 7937593140306541816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_18
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 293
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fdb10eac9e4d44d0800000000000000
+      internalID: -3148774129620894218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_19
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 283
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 978814115d3805fb0800000000000000
+      internalID: -4661080663187683207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_20
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 259
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 891871b4e06dfd190800000000000000
+      internalID: -7935388661525806696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_21
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 276
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 841621924902ad720800000000000000
+      internalID: 2871643533118431560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_22
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 267
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21ac3001f6c2cc690800000000000000
+      internalID: -7580635217249711598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_23
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 271
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e0eb5bf8682c600800000000000000
+      internalID: 487099661497011802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_24
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 263
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63e2374e55fa3b7a0800000000000000
+      internalID: -6362549065104544202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_25
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 263
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c2ee202bdcada010800000000000000
+      internalID: 1201806732715549382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_26
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 84
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc1ae3b22e4332a0800000000000000
+      internalID: -6758972704798663427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_27
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 77
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21642d64e66c13a10800000000000000
+      internalID: 1887507895781836306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Energy Ball_28
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 81
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 155fba86b450cd760800000000000000
+      internalID: 7483862502219707729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Energy Ball_0: -3321576952645087110
+      PRAS- Energy Ball_1: 631640115020485138
+      PRAS- Energy Ball_10: -7963264073987951194
+      PRAS- Energy Ball_11: 1827750973831911948
+      PRAS- Energy Ball_12: -2603165969425018502
+      PRAS- Energy Ball_13: -2691645693645820039
+      PRAS- Energy Ball_14: 1566198944209722466
+      PRAS- Energy Ball_15: -165860094247442798
+      PRAS- Energy Ball_16: -6621473796323604562
+      PRAS- Energy Ball_17: 7937593140306541816
+      PRAS- Energy Ball_18: -3148774129620894218
+      PRAS- Energy Ball_19: -4661080663187683207
+      PRAS- Energy Ball_2: -8289800542856557667
+      PRAS- Energy Ball_20: -7935388661525806696
+      PRAS- Energy Ball_21: 2871643533118431560
+      PRAS- Energy Ball_22: -7580635217249711598
+      PRAS- Energy Ball_23: 487099661497011802
+      PRAS- Energy Ball_24: -6362549065104544202
+      PRAS- Energy Ball_25: 1201806732715549382
+      PRAS- Energy Ball_26: -6758972704798663427
+      PRAS- Energy Ball_27: 1887507895781836306
+      PRAS- Energy Ball_28: 7483862502219707729
+      PRAS- Energy Ball_3: 9197404593798776462
+      PRAS- Energy Ball_4: -4789068997197299235
+      PRAS- Energy Ball_5: -5083792751328330159
+      PRAS- Energy Ball_6: 2550636494000268416
+      PRAS- Energy Ball_7: 1526411992842293449
+      PRAS- Energy Ball_8: 8965972454265988122
+      PRAS- Energy Ball_9: -5872369886863301531
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

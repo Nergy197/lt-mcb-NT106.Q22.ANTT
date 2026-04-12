@@ -1,0 +1,936 @@
+fileFormatVersion: 2
+guid: 9ddf211109a1940b083c6fb57551e51e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 312743113932250282
+    second: PRAS- Explosions_0
+  - first:
+      213: 5793909527320441526
+    second: PRAS- Explosions_1
+  - first:
+      213: 4656459403481056534
+    second: PRAS- Explosions_2
+  - first:
+      213: -928262227756359010
+    second: PRAS- Explosions_3
+  - first:
+      213: 7868105184780548078
+    second: PRAS- Explosions_4
+  - first:
+      213: -1325873163818032510
+    second: PRAS- Explosions_5
+  - first:
+      213: -8675559019452692120
+    second: PRAS- Explosions_6
+  - first:
+      213: -1612903753853719526
+    second: PRAS- Explosions_7
+  - first:
+      213: -5292850382218547588
+    second: PRAS- Explosions_8
+  - first:
+      213: 3648047127582087472
+    second: PRAS- Explosions_9
+  - first:
+      213: 1533084515714926799
+    second: PRAS- Explosions_10
+  - first:
+      213: 344315158370000649
+    second: PRAS- Explosions_11
+  - first:
+      213: 4432872278149557408
+    second: PRAS- Explosions_12
+  - first:
+      213: -3309391815046787069
+    second: PRAS- Explosions_13
+  - first:
+      213: -2768811113387507799
+    second: PRAS- Explosions_14
+  - first:
+      213: 4352561698435877763
+    second: PRAS- Explosions_15
+  - first:
+      213: -6635375863111879624
+    second: PRAS- Explosions_16
+  - first:
+      213: -6344360168543301237
+    second: PRAS- Explosions_17
+  - first:
+      213: -7148346427931732664
+    second: PRAS- Explosions_18
+  - first:
+      213: 7350748863213353791
+    second: PRAS- Explosions_19
+  - first:
+      213: 4545444314583711402
+    second: PRAS- Explosions_20
+  - first:
+      213: -7417048081591120075
+    second: PRAS- Explosions_21
+  - first:
+      213: 8485381976134522051
+    second: PRAS- Explosions_22
+  - first:
+      213: -5030942827183289408
+    second: PRAS- Explosions_23
+  - first:
+      213: 3093640526270527225
+    second: PRAS- Explosions_24
+  - first:
+      213: -1663668065294876106
+    second: PRAS- Explosions_25
+  - first:
+      213: -9115988202892171178
+    second: PRAS- Explosions_26
+  - first:
+      213: 2502050888829875920
+    second: PRAS- Explosions_27
+  - first:
+      213: -8239044075438226922
+    second: PRAS- Explosions_28
+  - first:
+      213: 6860298903059756848
+    second: PRAS- Explosions_29
+  - first:
+      213: -2437375261269732430
+    second: PRAS- Explosions_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Explosions_0
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 450
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aac91e38436175400800000000000000
+      internalID: 312743113932250282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_1
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 498
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b2bfa4840a186050800000000000000
+      internalID: 5793909527320441526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_2
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 480
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 615048f08211f9040800000000000000
+      internalID: 4656459403481056534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_3
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 501
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e926b280c662e13f0800000000000000
+      internalID: -928262227756359010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_4
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 507
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee7f0428aff113d60800000000000000
+      internalID: 7868105184780548078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_5
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 503
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 282276dd16d899de0800000000000000
+      internalID: -1325873163818032510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_6
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 501
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869069179093a9780800000000000000
+      internalID: -8675559019452692120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_7
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 503
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ca7a6d490dd99e0800000000000000
+      internalID: -1612903753853719526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_8
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 463
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7ea29ebe940c86b0800000000000000
+      internalID: -5292850382218547588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_9
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 448
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0391a6bc88770a230800000000000000
+      internalID: 3648047127582087472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 477
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc807d19e3c964510800000000000000
+      internalID: 1533084515714926799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_11
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 495
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f1d61ffc047c400800000000000000
+      internalID: 344315158370000649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_12
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 487
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ace7c1c9d9b48d30800000000000000
+      internalID: 4432872278149557408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_13
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 461
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3001d899dada212d0800000000000000
+      internalID: -3309391815046787069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_14
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 451
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9af326056f43399d0800000000000000
+      internalID: -2768811113387507799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_15
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 451
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38bcd3acdc7676c30800000000000000
+      internalID: 4352561698435877763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_16
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 447
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 834f308eec86ae3a0800000000000000
+      internalID: -6635375863111879624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_17
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 271
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b81d6d26a0e44f7a0800000000000000
+      internalID: -6344360168543301237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_18
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 256
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84552bf1cc8fbcc90800000000000000
+      internalID: -7148346427931732664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_19
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 257
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3b30f8252b130660800000000000000
+      internalID: 7350748863213353791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_20
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 303
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaeb4157589a41f30800000000000000
+      internalID: 4545444314583711402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_21
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 291
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53fc4c6211a511990800000000000000
+      internalID: -7417048081591120075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_22
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 297
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c4100723f122c570800000000000000
+      internalID: 8485381976134522051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_23
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 283
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cbc07c57208e2ab0800000000000000
+      internalID: -5030942827183289408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_24
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 291
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f67b17faa1deea20800000000000000
+      internalID: 3093640526270527225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_25
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 273
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63200f785b679e8e0800000000000000
+      internalID: -1663668065294876106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_26
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 277
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 658e5fd27018d7180800000000000000
+      internalID: -9115988202892171178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_27
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 265
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6b7a6e60219b220800000000000000
+      internalID: 2502050888829875920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_28
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 261
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 612c7b2d01909ad80800000000000000
+      internalID: -8239044075438226922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_29
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 75
+        width: 51
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 037f0e1418da43f50800000000000000
+      internalID: 6860298903059756848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Explosions_30
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 64
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b351b71d14bc2ed0800000000000000
+      internalID: -2437375261269732430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Explosions_0: 312743113932250282
+      PRAS- Explosions_1: 5793909527320441526
+      PRAS- Explosions_10: 1533084515714926799
+      PRAS- Explosions_11: 344315158370000649
+      PRAS- Explosions_12: 4432872278149557408
+      PRAS- Explosions_13: -3309391815046787069
+      PRAS- Explosions_14: -2768811113387507799
+      PRAS- Explosions_15: 4352561698435877763
+      PRAS- Explosions_16: -6635375863111879624
+      PRAS- Explosions_17: -6344360168543301237
+      PRAS- Explosions_18: -7148346427931732664
+      PRAS- Explosions_19: 7350748863213353791
+      PRAS- Explosions_2: 4656459403481056534
+      PRAS- Explosions_20: 4545444314583711402
+      PRAS- Explosions_21: -7417048081591120075
+      PRAS- Explosions_22: 8485381976134522051
+      PRAS- Explosions_23: -5030942827183289408
+      PRAS- Explosions_24: 3093640526270527225
+      PRAS- Explosions_25: -1663668065294876106
+      PRAS- Explosions_26: -9115988202892171178
+      PRAS- Explosions_27: 2502050888829875920
+      PRAS- Explosions_28: -8239044075438226922
+      PRAS- Explosions_29: 6860298903059756848
+      PRAS- Explosions_3: -928262227756359010
+      PRAS- Explosions_30: -2437375261269732430
+      PRAS- Explosions_4: 7868105184780548078
+      PRAS- Explosions_5: -1325873163818032510
+      PRAS- Explosions_6: -8675559019452692120
+      PRAS- Explosions_7: -1612903753853719526
+      PRAS- Explosions_8: -5292850382218547588
+      PRAS- Explosions_9: 3648047127582087472
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

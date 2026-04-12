@@ -1,0 +1,884 @@
+fileFormatVersion: 2
+guid: c4d451ddddceb4e4093d5581c8a7d5be
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3112306983749252631
+    second: face and eye_0
+  - first:
+      213: -7026074969805320585
+    second: face and eye_1
+  - first:
+      213: -1262027734215327683
+    second: face and eye_2
+  - first:
+      213: 228203470946406716
+    second: face and eye_3
+  - first:
+      213: 9074612321652851860
+    second: face and eye_4
+  - first:
+      213: -3868003777989848205
+    second: face and eye_5
+  - first:
+      213: -6470871056393822705
+    second: face and eye_6
+  - first:
+      213: 4208641805547752620
+    second: face and eye_7
+  - first:
+      213: 1639165709243902191
+    second: face and eye_8
+  - first:
+      213: 5356047329254580104
+    second: face and eye_9
+  - first:
+      213: -6921113384250251953
+    second: face and eye_10
+  - first:
+      213: 3148859762732861920
+    second: face and eye_11
+  - first:
+      213: -4040134317166469858
+    second: face and eye_12
+  - first:
+      213: 2204200143466145537
+    second: face and eye_13
+  - first:
+      213: -2827204219534278967
+    second: face and eye_14
+  - first:
+      213: 8470111823111558294
+    second: face and eye_15
+  - first:
+      213: 6061047940675261036
+    second: face and eye_16
+  - first:
+      213: 4754309382045960805
+    second: face and eye_17
+  - first:
+      213: -6493088208864015291
+    second: face and eye_18
+  - first:
+      213: -2792034426369830413
+    second: face and eye_19
+  - first:
+      213: -4633783989079499718
+    second: face and eye_20
+  - first:
+      213: 1886095291237504325
+    second: face and eye_21
+  - first:
+      213: -2003034923786038008
+    second: face and eye_22
+  - first:
+      213: 4891616142438238168
+    second: face and eye_23
+  - first:
+      213: -7525355713548574550
+    second: face and eye_24
+  - first:
+      213: -1076934581818483474
+    second: face and eye_25
+  - first:
+      213: -2035296888032331309
+    second: face and eye_26
+  - first:
+      213: -5895752525270743646
+    second: face and eye_27
+  - first:
+      213: 4250155422171028943
+    second: face and eye_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: face and eye_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 476
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 716775646b2213b20800000000000000
+      internalID: 3112306983749252631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 476
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77e8d7b6a0e5e7e90800000000000000
+      internalID: -7026074969805320585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_2
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 476
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30876556706c7ee0800000000000000
+      internalID: -1262027734215327683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_3
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 473
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c31954609ddba2300800000000000000
+      internalID: 228203470946406716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_4
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 477
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4944082c3df7fed70800000000000000
+      internalID: 9074612321652851860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_5
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 477
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373db07be07125ac0800000000000000
+      internalID: -3868003777989848205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_6
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 482
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e1a40fe09d236a0800000000000000
+      internalID: -6470871056393822705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_7
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 482
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac488e7c69186a30800000000000000
+      internalID: 4208641805547752620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_8
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 476
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe8eb73278c7fb610800000000000000
+      internalID: 1639165709243902191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_9
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 476
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88f166c1ba0845a40800000000000000
+      internalID: 5356047329254580104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_10
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 467
+        width: 28
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f45ef81fb0443ff90800000000000000
+      internalID: -6921113384250251953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_11
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 461
+        width: 39
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e98635554ff2bb20800000000000000
+      internalID: 3148859762732861920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_12
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 457
+        width: 52
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d5d6c7e3f8ee7c0800000000000000
+      internalID: -4040134317166469858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_13
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 459
+        width: 60
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1072a252a54e69e10800000000000000
+      internalID: 2204200143466145537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_14
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 444
+        width: 56
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ce7c23ddb0c3c8d0800000000000000
+      internalID: -2827204219534278967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 280
+        width: 36
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 694966893d1eb8570800000000000000
+      internalID: 8470111823111558294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_16
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 244
+        width: 65
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c62df8e3dfa2d1450800000000000000
+      internalID: 6061047940675261036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_17
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 277
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56a082d8133baf140800000000000000
+      internalID: 4754309382045960805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_18
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 279
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54c02670daae3e5a0800000000000000
+      internalID: -6493088208864015291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_19
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 238
+        width: 74
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f190976b73b049d0800000000000000
+      internalID: -2792034426369830413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_20
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 279
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c1605430e71bfb0800000000000000
+      internalID: -4633783989079499718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_21
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 277
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5459fb6aca1cc2a10800000000000000
+      internalID: 1886095291237504325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_22
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 235
+        width: 79
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 805180f695ac334e0800000000000000
+      internalID: -2003034923786038008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_23
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 279
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d70993f6f282e340800000000000000
+      internalID: 4891616142438238168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_24
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 74
+        width: 66
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa02b7d79d0909790800000000000000
+      internalID: -7525355713548574550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_25
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 70
+        width: 66
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eec106424b5fd01f0800000000000000
+      internalID: -1076934581818483474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_26
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 72
+        width: 66
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d9ff58834c21c3e0800000000000000
+      internalID: -2035296888032331309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_27
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 71
+        width: 66
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a500a7b0541e2ea0800000000000000
+      internalID: -5895752525270743646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face and eye_28
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 69
+        width: 66
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcd54b296d59bfa30800000000000000
+      internalID: 4250155422171028943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      face and eye_0: 3112306983749252631
+      face and eye_1: -7026074969805320585
+      face and eye_10: -6921113384250251953
+      face and eye_11: 3148859762732861920
+      face and eye_12: -4040134317166469858
+      face and eye_13: 2204200143466145537
+      face and eye_14: -2827204219534278967
+      face and eye_15: 8470111823111558294
+      face and eye_16: 6061047940675261036
+      face and eye_17: 4754309382045960805
+      face and eye_18: -6493088208864015291
+      face and eye_19: -2792034426369830413
+      face and eye_2: -1262027734215327683
+      face and eye_20: -4633783989079499718
+      face and eye_21: 1886095291237504325
+      face and eye_22: -2003034923786038008
+      face and eye_23: 4891616142438238168
+      face and eye_24: -7525355713548574550
+      face and eye_25: -1076934581818483474
+      face and eye_26: -2035296888032331309
+      face and eye_27: -5895752525270743646
+      face and eye_28: 4250155422171028943
+      face and eye_3: 228203470946406716
+      face and eye_4: 9074612321652851860
+      face and eye_5: -3868003777989848205
+      face and eye_6: -6470871056393822705
+      face and eye_7: 4208641805547752620
+      face and eye_8: 1639165709243902191
+      face and eye_9: 5356047329254580104
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

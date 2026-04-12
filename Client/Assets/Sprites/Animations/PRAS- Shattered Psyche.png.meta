@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 3906f92f5b7724b29a6487a94edbc271
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4678959239672759510
+    second: PRAS- Shattered Psyche_0
+  - first:
+      213: 2715688785982181882
+    second: PRAS- Shattered Psyche_1
+  - first:
+      213: -1483618871060485848
+    second: PRAS- Shattered Psyche_2
+  - first:
+      213: -5646091766288638421
+    second: PRAS- Shattered Psyche_3
+  - first:
+      213: 7315535866323148222
+    second: PRAS- Shattered Psyche_4
+  - first:
+      213: 1383375232981363181
+    second: PRAS- Shattered Psyche_5
+  - first:
+      213: 932371852684260632
+    second: PRAS- Shattered Psyche_6
+  - first:
+      213: -1977105661560529602
+    second: PRAS- Shattered Psyche_7
+  - first:
+      213: 2801431127855034400
+    second: PRAS- Shattered Psyche_8
+  - first:
+      213: 9065462938690407678
+    second: PRAS- Shattered Psyche_9
+  - first:
+      213: -8411342227747364560
+    second: PRAS- Shattered Psyche_10
+  - first:
+      213: 7426375426026269406
+    second: PRAS- Shattered Psyche_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Shattered Psyche_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 530
+        width: 156
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d40a3763a00fe040800000000000000
+      internalID: 4678959239672759510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Shattered Psyche_1
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 584
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af1daf0009010b520800000000000000
+      internalID: 2715688785982181882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Shattered Psyche_2
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 610
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 829af505f70296be0800000000000000
+      internalID: -1483618871060485848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Shattered Psyche_3
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 584
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e9b1de37d05a1b0800000000000000
+      internalID: -5646091766288638421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Shattered Psyche_4
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 610
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebd12dd6c11068560800000000000000
+      internalID: 7315535866323148222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Shattered Psyche_5
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 584
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de96de8e17cb23310800000000000000
+      internalID: 1383375232981363181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Shattered Psyche_6
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 584
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81571d5924370fc00800000000000000
+      internalID: 932371852684260632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Shattered Psyche_7
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 564
+        width: 78
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3d554f30e8ef84e0800000000000000
+      internalID: -1977105661560529602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Shattered Psyche_8
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 548
+        width: 102
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0207586a4cea0e620800000000000000
+      internalID: 2801431127855034400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Shattered Psyche_9
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 557
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efc4c19038efecd70800000000000000
+      internalID: 9065462938690407678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Shattered Psyche_10
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 558
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03120ee1fc8e44b80800000000000000
+      internalID: -8411342227747364560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Shattered Psyche_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 118
+        width: 514
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda6cf47a19cf0760800000000000000
+      internalID: 7426375426026269406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Shattered Psyche_0: 4678959239672759510
+      PRAS- Shattered Psyche_1: 2715688785982181882
+      PRAS- Shattered Psyche_10: -8411342227747364560
+      PRAS- Shattered Psyche_11: 7426375426026269406
+      PRAS- Shattered Psyche_2: -1483618871060485848
+      PRAS- Shattered Psyche_3: -5646091766288638421
+      PRAS- Shattered Psyche_4: 7315535866323148222
+      PRAS- Shattered Psyche_5: 1383375232981363181
+      PRAS- Shattered Psyche_6: 932371852684260632
+      PRAS- Shattered Psyche_7: -1977105661560529602
+      PRAS- Shattered Psyche_8: 2801431127855034400
+      PRAS- Shattered Psyche_9: 9065462938690407678
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

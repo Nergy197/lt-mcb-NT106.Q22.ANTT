@@ -1,0 +1,4082 @@
+fileFormatVersion: 2
+guid: a61b81708846f4af6a4d6acaa6cf7c5a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5022393906195612334
+    second: PRAS- Catastropika_0
+  - first:
+      213: -3146162331539239719
+    second: PRAS- Catastropika_1
+  - first:
+      213: -6763244176021534427
+    second: PRAS- Catastropika_2
+  - first:
+      213: 4163841547507351963
+    second: PRAS- Catastropika_3
+  - first:
+      213: 2399560621816771607
+    second: PRAS- Catastropika_4
+  - first:
+      213: 5109678009880877633
+    second: PRAS- Catastropika_5
+  - first:
+      213: 4625498496553888455
+    second: PRAS- Catastropika_6
+  - first:
+      213: 1804939350130256036
+    second: PRAS- Catastropika_7
+  - first:
+      213: -7916354329856639820
+    second: PRAS- Catastropika_8
+  - first:
+      213: 4287143914161544444
+    second: PRAS- Catastropika_9
+  - first:
+      213: -2904059651010820186
+    second: PRAS- Catastropika_10
+  - first:
+      213: -4191174720745577513
+    second: PRAS- Catastropika_11
+  - first:
+      213: -5245271233686237893
+    second: PRAS- Catastropika_12
+  - first:
+      213: 3153940791083770238
+    second: PRAS- Catastropika_13
+  - first:
+      213: -3641005026243971605
+    second: PRAS- Catastropika_14
+  - first:
+      213: 7052419515348612513
+    second: PRAS- Catastropika_15
+  - first:
+      213: -6865311156334051024
+    second: PRAS- Catastropika_16
+  - first:
+      213: 5624552308999930702
+    second: PRAS- Catastropika_17
+  - first:
+      213: 4550768417473589154
+    second: PRAS- Catastropika_18
+  - first:
+      213: -4182744471239354829
+    second: PRAS- Catastropika_19
+  - first:
+      213: -6640027430380673687
+    second: PRAS- Catastropika_20
+  - first:
+      213: 8974322550156066170
+    second: PRAS- Catastropika_21
+  - first:
+      213: 4001710474384730942
+    second: PRAS- Catastropika_22
+  - first:
+      213: 4553166357277856723
+    second: PRAS- Catastropika_23
+  - first:
+      213: 2493190702969450628
+    second: PRAS- Catastropika_24
+  - first:
+      213: -850779189419296311
+    second: PRAS- Catastropika_25
+  - first:
+      213: -2871743967348064691
+    second: PRAS- Catastropika_26
+  - first:
+      213: -3872387885507334895
+    second: PRAS- Catastropika_27
+  - first:
+      213: 1750813992453135969
+    second: PRAS- Catastropika_28
+  - first:
+      213: -7020796288552579828
+    second: PRAS- Catastropika_29
+  - first:
+      213: -6156538213588783329
+    second: PRAS- Catastropika_30
+  - first:
+      213: -295330996718598724
+    second: PRAS- Catastropika_31
+  - first:
+      213: 1420762030205169674
+    second: PRAS- Catastropika_32
+  - first:
+      213: -7963579308731533051
+    second: PRAS- Catastropika_33
+  - first:
+      213: 2991501240442186449
+    second: PRAS- Catastropika_34
+  - first:
+      213: -3260343413491862283
+    second: PRAS- Catastropika_35
+  - first:
+      213: 72946924224481399
+    second: PRAS- Catastropika_36
+  - first:
+      213: -160672099641640195
+    second: PRAS- Catastropika_37
+  - first:
+      213: -3588307258294166754
+    second: PRAS- Catastropika_38
+  - first:
+      213: 8255100809203206647
+    second: PRAS- Catastropika_39
+  - first:
+      213: -6459889903303500049
+    second: PRAS- Catastropika_40
+  - first:
+      213: -6337030880863718980
+    second: PRAS- Catastropika_41
+  - first:
+      213: -8623298815142978819
+    second: PRAS- Catastropika_42
+  - first:
+      213: -2213052368491828613
+    second: PRAS- Catastropika_43
+  - first:
+      213: -6707787488021477676
+    second: PRAS- Catastropika_44
+  - first:
+      213: 2695645376738625441
+    second: PRAS- Catastropika_45
+  - first:
+      213: -8416575163684029800
+    second: PRAS- Catastropika_46
+  - first:
+      213: 5461698822314710847
+    second: PRAS- Catastropika_47
+  - first:
+      213: -1906044089252326454
+    second: PRAS- Catastropika_48
+  - first:
+      213: 5201563633874149040
+    second: PRAS- Catastropika_49
+  - first:
+      213: -4098365588380635420
+    second: PRAS- Catastropika_50
+  - first:
+      213: 544240856335520560
+    second: PRAS- Catastropika_51
+  - first:
+      213: 2369707811004037991
+    second: PRAS- Catastropika_52
+  - first:
+      213: 3844120115874625709
+    second: PRAS- Catastropika_53
+  - first:
+      213: 8813003497921960329
+    second: PRAS- Catastropika_54
+  - first:
+      213: 398693757060979094
+    second: PRAS- Catastropika_55
+  - first:
+      213: 1339649767974719587
+    second: PRAS- Catastropika_56
+  - first:
+      213: -5211063514653174982
+    second: PRAS- Catastropika_57
+  - first:
+      213: -4337107569865909781
+    second: PRAS- Catastropika_58
+  - first:
+      213: 1705990899742730286
+    second: PRAS- Catastropika_59
+  - first:
+      213: -7209688486595884716
+    second: PRAS- Catastropika_60
+  - first:
+      213: 629311235703944917
+    second: PRAS- Catastropika_61
+  - first:
+      213: 8440896686425607348
+    second: PRAS- Catastropika_62
+  - first:
+      213: 6500146091591665662
+    second: PRAS- Catastropika_63
+  - first:
+      213: 1624936766831703607
+    second: PRAS- Catastropika_64
+  - first:
+      213: 1351451631139613693
+    second: PRAS- Catastropika_65
+  - first:
+      213: 4943543384887227750
+    second: PRAS- Catastropika_66
+  - first:
+      213: -3878282673749297839
+    second: PRAS- Catastropika_67
+  - first:
+      213: 6688747538386796431
+    second: PRAS- Catastropika_68
+  - first:
+      213: 957749203304699649
+    second: PRAS- Catastropika_69
+  - first:
+      213: 1845654304841998610
+    second: PRAS- Catastropika_70
+  - first:
+      213: 6038217870793728516
+    second: PRAS- Catastropika_71
+  - first:
+      213: -8904105926104044316
+    second: PRAS- Catastropika_72
+  - first:
+      213: 1009523033299779667
+    second: PRAS- Catastropika_73
+  - first:
+      213: 450771262629242290
+    second: PRAS- Catastropika_74
+  - first:
+      213: 5498698459890417025
+    second: PRAS- Catastropika_75
+  - first:
+      213: -5781267774992296805
+    second: PRAS- Catastropika_76
+  - first:
+      213: -1089973585375956849
+    second: PRAS- Catastropika_77
+  - first:
+      213: -5802862274090142693
+    second: PRAS- Catastropika_78
+  - first:
+      213: -7720536066201858130
+    second: PRAS- Catastropika_79
+  - first:
+      213: -5146203816549172133
+    second: PRAS- Catastropika_80
+  - first:
+      213: 6710240441911399295
+    second: PRAS- Catastropika_81
+  - first:
+      213: -916409301959347276
+    second: PRAS- Catastropika_82
+  - first:
+      213: 1422270739645372452
+    second: PRAS- Catastropika_83
+  - first:
+      213: 5919706657518775553
+    second: PRAS- Catastropika_84
+  - first:
+      213: -1545859660470193983
+    second: PRAS- Catastropika_85
+  - first:
+      213: -7151589360119292019
+    second: PRAS- Catastropika_86
+  - first:
+      213: -2158996619552106719
+    second: PRAS- Catastropika_87
+  - first:
+      213: -6237631205936729500
+    second: PRAS- Catastropika_88
+  - first:
+      213: -2812265959210351282
+    second: PRAS- Catastropika_89
+  - first:
+      213: -9155747117507627691
+    second: PRAS- Catastropika_90
+  - first:
+      213: 2627367316118243212
+    second: PRAS- Catastropika_91
+  - first:
+      213: -1678705132542015549
+    second: PRAS- Catastropika_92
+  - first:
+      213: 3012665394232055765
+    second: PRAS- Catastropika_93
+  - first:
+      213: 3241841322311712760
+    second: PRAS- Catastropika_94
+  - first:
+      213: 7573078261841988901
+    second: PRAS- Catastropika_95
+  - first:
+      213: -4394105810074591451
+    second: PRAS- Catastropika_96
+  - first:
+      213: -2504012301524285130
+    second: PRAS- Catastropika_97
+  - first:
+      213: -1851106803506032227
+    second: PRAS- Catastropika_98
+  - first:
+      213: -6896347827119193068
+    second: PRAS- Catastropika_99
+  - first:
+      213: -7087274085342976035
+    second: PRAS- Catastropika_100
+  - first:
+      213: 7309457956398879340
+    second: PRAS- Catastropika_101
+  - first:
+      213: 1309110156343831680
+    second: PRAS- Catastropika_102
+  - first:
+      213: -3563716803046825969
+    second: PRAS- Catastropika_103
+  - first:
+      213: 7813380518963244636
+    second: PRAS- Catastropika_104
+  - first:
+      213: -8013740437088973332
+    second: PRAS- Catastropika_105
+  - first:
+      213: -1704982639765391320
+    second: PRAS- Catastropika_106
+  - first:
+      213: -1294589910693165468
+    second: PRAS- Catastropika_107
+  - first:
+      213: 3263802450439731029
+    second: PRAS- Catastropika_108
+  - first:
+      213: -1996488801269513559
+    second: PRAS- Catastropika_109
+  - first:
+      213: 7308041803192880128
+    second: PRAS- Catastropika_110
+  - first:
+      213: 6769127994441665547
+    second: PRAS- Catastropika_111
+  - first:
+      213: -726210118932591685
+    second: PRAS- Catastropika_112
+  - first:
+      213: -2594135067675745653
+    second: PRAS- Catastropika_113
+  - first:
+      213: 5770019860999445543
+    second: PRAS- Catastropika_114
+  - first:
+      213: -941530505037041843
+    second: PRAS- Catastropika_115
+  - first:
+      213: 8718986169000754682
+    second: PRAS- Catastropika_116
+  - first:
+      213: -3150063276569050961
+    second: PRAS- Catastropika_117
+  - first:
+      213: 8947365206521700703
+    second: PRAS- Catastropika_118
+  - first:
+      213: -3166803225159599913
+    second: PRAS- Catastropika_119
+  - first:
+      213: 2513526158591529027
+    second: PRAS- Catastropika_120
+  - first:
+      213: -8512215703998901729
+    second: PRAS- Catastropika_121
+  - first:
+      213: -2524372721583690042
+    second: PRAS- Catastropika_122
+  - first:
+      213: -2165795418672528398
+    second: PRAS- Catastropika_123
+  - first:
+      213: -4692640428833203565
+    second: PRAS- Catastropika_124
+  - first:
+      213: -6551430107084009829
+    second: PRAS- Catastropika_125
+  - first:
+      213: 4522716261880360179
+    second: PRAS- Catastropika_126
+  - first:
+      213: 5823137029204884030
+    second: PRAS- Catastropika_127
+  - first:
+      213: 1665107152424459690
+    second: PRAS- Catastropika_128
+  - first:
+      213: -6297994452672997727
+    second: PRAS- Catastropika_129
+  - first:
+      213: -8291262646880614314
+    second: PRAS- Catastropika_130
+  - first:
+      213: -6676005406899757434
+    second: PRAS- Catastropika_131
+  - first:
+      213: -8399497072588621078
+    second: PRAS- Catastropika_132
+  - first:
+      213: 4803734685393658026
+    second: PRAS- Catastropika_133
+  - first:
+      213: 7279182612247122266
+    second: PRAS- Catastropika_134
+  - first:
+      213: -3867068213240896804
+    second: PRAS- Catastropika_135
+  - first:
+      213: 5915663738299925187
+    second: PRAS- Catastropika_136
+  - first:
+      213: -4705849993534869009
+    second: PRAS- Catastropika_137
+  - first:
+      213: 2261509206194893308
+    second: PRAS- Catastropika_138
+  - first:
+      213: -3935612473000967811
+    second: PRAS- Catastropika_139
+  - first:
+      213: 4115506006585194498
+    second: PRAS- Catastropika_140
+  - first:
+      213: 5821858934411229457
+    second: PRAS- Catastropika_141
+  - first:
+      213: -2943733431410377264
+    second: PRAS- Catastropika_142
+  - first:
+      213: -8372143921559203837
+    second: PRAS- Catastropika_143
+  - first:
+      213: 2372269492541263916
+    second: PRAS- Catastropika_144
+  - first:
+      213: -6836372910654472172
+    second: PRAS- Catastropika_145
+  - first:
+      213: -1469873920654743497
+    second: PRAS- Catastropika_146
+  - first:
+      213: -2162027145588710493
+    second: PRAS- Catastropika_147
+  - first:
+      213: 736606265582747125
+    second: PRAS- Catastropika_148
+  - first:
+      213: -1501665379268204971
+    second: PRAS- Catastropika_149
+  - first:
+      213: -5130099433429606665
+    second: PRAS- Catastropika_150
+  - first:
+      213: -193046560764158618
+    second: PRAS- Catastropika_151
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Catastropika_0
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 2179
+        width: 62
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea240ecd5a023b540800000000000000
+      internalID: 5022393906195612334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_1
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 2179
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc83ee47069654d0800000000000000
+      internalID: -3146162331539239719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_2
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 2183
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 529c10f41412422a0800000000000000
+      internalID: -6763244176021534427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_3
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 2175
+        width: 64
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b91403493dfe8c930800000000000000
+      internalID: 4163841547507351963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_4
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 2221
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71477601ca3fc4120800000000000000
+      internalID: 2399560621816771607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_5
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 2193
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14a1397e31939e640800000000000000
+      internalID: 5109678009880877633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_6
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 2175
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7caa23c2062113040800000000000000
+      internalID: 4625498496553888455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_7
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 2189
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a863a5a6ce6c0910800000000000000
+      internalID: 1804939350130256036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_8
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 2025
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bcf4ccfda5732290800000000000000
+      internalID: -7916354329856639820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_9
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 2007
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfc9398fcaefe7b30800000000000000
+      internalID: 4287143914161544444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_10
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 2015
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a784fe3225b2b7d0800000000000000
+      internalID: -2904059651010820186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_11
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 2015
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d3ec5a1cc4f5d5c0800000000000000
+      internalID: -4191174720745577513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_12
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 2027
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3d8e858a9d0537b0800000000000000
+      internalID: -5245271233686237893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_13
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 2023
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e71a92f607c05cb20800000000000000
+      internalID: 3153940791083770238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_14
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 2011
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be5f051383d887dc0800000000000000
+      internalID: -3641005026243971605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_15
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 2033
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a5f2631f2a3fd160800000000000000
+      internalID: 7052419515348612513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_16
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 2033
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 031ce2690e389b0a0800000000000000
+      internalID: -6865311156334051024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_17
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 2011
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e434b8e568c6e0e40800000000000000
+      internalID: 5624552308999930702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_18
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 2027
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2af6492c3c3972f30800000000000000
+      internalID: 4550768417473589154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_19
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 2005
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3369c858018e3f5c0800000000000000
+      internalID: -4182744471239354829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_20
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 2013
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9656f418b32e9d3a0800000000000000
+      internalID: -6640027430380673687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_21
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 2023
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7d74d5bfc23b8c70800000000000000
+      internalID: 8974322550156066170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_22
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 2015
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3b69a7797ee88730800000000000000
+      internalID: 4001710474384730942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_23
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 2005
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d35ec0ada8103f30800000000000000
+      internalID: 4553166357277856723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_24
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 2007
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 480fccf1cb7999220800000000000000
+      internalID: 2493190702969450628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_25
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 1993
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c93e58b5dc6134f0800000000000000
+      internalID: -850779189419296311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_26
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 2005
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4ef85ca3148528d0800000000000000
+      internalID: -2871743967348064691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_27
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 2005
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11d2fc32cb3824ac0800000000000000
+      internalID: -3872387885507334895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_28
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 1999
+        width: 46
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ed3f7cc042c4810800000000000000
+      internalID: 1750813992453135969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_29
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1989
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d417c29fe119e90800000000000000
+      internalID: -7020796288552579828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_30
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1989
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1f2cec0d159f8aa0800000000000000
+      internalID: -6156538213588783329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_31
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1989
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb50d61f506c6ebf0800000000000000
+      internalID: -295330996718598724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_32
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 1993
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a00fdb8f98f87b310800000000000000
+      internalID: 1420762030205169674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_33
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1742
+        width: 471
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 509f762cfceab7190800000000000000
+      internalID: -7963579308731533051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_34
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1621
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1da62bd4782f38920800000000000000
+      internalID: 2991501240442186449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_35
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1609
+        width: 46
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f4780180fee0c2d0800000000000000
+      internalID: -3260343413491862283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_36
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1615
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7788bd157d8230100800000000000000
+      internalID: 72946924224481399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_37
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1615
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfa3b8f939d25cdf0800000000000000
+      internalID: -160672099641640195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_38
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1615
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b9b6c6f85c33ec0800000000000000
+      internalID: -3588307258294166754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_39
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 1581
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f9c895d272009270800000000000000
+      internalID: 8255100809203206647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_40
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1407
+        width: 28
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fee5671eb5cd956a0800000000000000
+      internalID: -6459889903303500049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_41
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1407
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb1ff672df75e08a0800000000000000
+      internalID: -6337030880863718980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_42
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1407
+        width: 46
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfa1b537a63e35880800000000000000
+      internalID: -8623298815142978819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_43
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1407
+        width: 64
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7a25ba9898a941e0800000000000000
+      internalID: -2213052368491828613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_44
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 1439
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d68baba1d629e2a0800000000000000
+      internalID: -6707787488021477676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_45
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1247
+        width: 54
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a70ee0203bd86520800000000000000
+      internalID: 2695645376738625441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_46
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 1247
+        width: 62
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89afc374b71523b80800000000000000
+      internalID: -8416575163684029800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_47
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 1247
+        width: 64
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f37dc3e342adbcb40800000000000000
+      internalID: 5461698822314710847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_48
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1251
+        width: 60
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac3d1eddffe5c85e0800000000000000
+      internalID: -1906044089252326454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_49
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 1249
+        width: 56
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0be98a1e09aaf2840800000000000000
+      internalID: 5201563633874149040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_50
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1065
+        width: 38
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee23e0263eaf17c0800000000000000
+      internalID: -4098365588380635420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_51
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1057
+        width: 66
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0331222ec288d8700800000000000000
+      internalID: 544240856335520560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_52
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 1057
+        width: 66
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76b3d58e2b4e2e020800000000000000
+      internalID: 2369707811004037991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_53
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 1045
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da8f3acd0ee095530800000000000000
+      internalID: 3844120115874625709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_54
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 1059
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 989d9e1fcf31e4a70800000000000000
+      internalID: 8813003497921960329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_55
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 1059
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69919c31cd1788500800000000000000
+      internalID: 398693757060979094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_56
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 1055
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 360519fbd54679210800000000000000
+      internalID: 1339649767974719587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_57
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 1039
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a335913c7559ea7b0800000000000000
+      internalID: -5211063514653174982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_58
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 849
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be91c79e4af7fc3c0800000000000000
+      internalID: -4337107569865909781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_59
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 871
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e28e6314fa5eca710800000000000000
+      internalID: 1705990899742730286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_60
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 871
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4598a3f158a02fb90800000000000000
+      internalID: -7209688486595884716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_61
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 873
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d6bb411c33cbb800800000000000000
+      internalID: 629311235703944917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_62
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 867
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bc8b2480d6142570800000000000000
+      internalID: 8440896686425607348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_63
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 847
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef707795e68253a50800000000000000
+      internalID: 6500146091591665662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_64
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 865
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 736b971516fec8610800000000000000
+      internalID: 1624936766831703607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_65
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 873
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfbe235291251c210800000000000000
+      internalID: 1351451631139613693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_66
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 869
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6657feb348efa9440800000000000000
+      internalID: 4943543384887227750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_67
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 871
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 155fe9cc4729d2ac0800000000000000
+      internalID: -3878282673749297839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_68
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 865
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8f30d9927433dc50800000000000000
+      internalID: 6688747538386796431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_69
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 847
+        width: 10
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 107d3e673db9a4d00800000000000000
+      internalID: 957749203304699649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_70
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 847
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2112742cfc41d9910800000000000000
+      internalID: 1845654304841998610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_71
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 863
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4026311692f0cc350800000000000000
+      internalID: 6038217870793728516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_72
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 853
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec2e1016d24e6480800000000000000
+      internalID: -8904105926104044316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_73
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 859
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3508860a9db820e00800000000000000
+      internalID: 1009523033299779667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_74
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 849
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b568f73316714600800000000000000
+      internalID: 450771262629242290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_75
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 861
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18d71ccad1d4f4c40800000000000000
+      internalID: 5498698459890417025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_76
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 855
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b94db20d69fc4cfa0800000000000000
+      internalID: -5781267774992296805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_77
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 849
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f807b1d8cc2afd0f0800000000000000
+      internalID: -1089973585375956849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_78
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 849
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b147750b187187fa0800000000000000
+      internalID: -5802862274090142693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_79
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 847
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaf427a5a552bd490800000000000000
+      internalID: -7720536066201858130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_80
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 849
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5cb3d405e20598b0800000000000000
+      internalID: -5146203816549172133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_81
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 655
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f73d69921209f1d50800000000000000
+      internalID: 6710240441911399295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_82
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 655
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b379df58924843f0800000000000000
+      internalID: -916409301959347276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_83
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 653
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4289ef2c3bbecb310800000000000000
+      internalID: 1422270739645372452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_84
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 675
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10debef47d5072250800000000000000
+      internalID: 5919706657518775553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_85
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 667
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c0711144d00c8ae0800000000000000
+      internalID: -1545859660470193983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_86
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 677
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8f50a22e5370cc90800000000000000
+      internalID: -7151589360119292019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_87
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 669
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 127d35c6304b902e0800000000000000
+      internalID: -2158996619552106719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_88
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 647
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 462ff32777b7f69a0800000000000000
+      internalID: -6237631205936729500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_89
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 645
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4508579203d8f8d0800000000000000
+      internalID: -2812265959210351282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_90
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 643
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 555b6af718040f080800000000000000
+      internalID: -9155747117507627691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_91
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 485
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8703b357a8467420800000000000000
+      internalID: 2627367316118243212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_92
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 473
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c7453c739a04b8e0800000000000000
+      internalID: -1678705132542015549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_93
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 487
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d7505ad6332fc920800000000000000
+      internalID: 3012665394232055765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_94
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 481
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff7292b1855dfc20800000000000000
+      internalID: 3241841322311712760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_95
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 449
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d03552e8af81960800000000000000
+      internalID: 7573078261841988901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_96
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 475
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52f1605fb000503c0800000000000000
+      internalID: -4394105810074591451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_97
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 483
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 639cf6e1416ff3dd0800000000000000
+      internalID: -2504012301524285130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_98
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 485
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d91d6b77b2c8f46e0800000000000000
+      internalID: -1851106803506032227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_99
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 469
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 414060d80304b40a0800000000000000
+      internalID: -6896347827119193068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_100
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 485
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd7ec45f4c1f4ad90800000000000000
+      internalID: -7087274085342976035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_101
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 447
+        width: 28
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c62decfb849607560800000000000000
+      internalID: 7309457956398879340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_102
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 447
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ceab050c4ea2210800000000000000
+      internalID: 1309110156343831680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_103
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 453
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f00ad42f2722b8ec0800000000000000
+      internalID: -3563716803046825969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_104
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 447
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5ee2c75f24be6c60800000000000000
+      internalID: 7813380518963244636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_105
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 471
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cedc025f78979c090800000000000000
+      internalID: -8013740437088973332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_106
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 457
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8287390925fa658e0800000000000000
+      internalID: -1704982639765391320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_107
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 463
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4664453d551b80ee0800000000000000
+      internalID: -1294589910693165468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_108
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 461
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 557728b490b5b4d20800000000000000
+      internalID: 3263802450439731029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_109
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 465
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a2094a530c0b44e0800000000000000
+      internalID: -1996488801269513559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_110
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 449
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00c4403ec416b6560800000000000000
+      internalID: 7308041803192880128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_111
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 451
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c09dbeb06c0fd50800000000000000
+      internalID: 6769127994441665547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_112
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 459
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbb8ab49ebbfbe5f0800000000000000
+      internalID: -726210118932591685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_113
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 255
+        width: 60
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b82adc776e7cffbd0800000000000000
+      internalID: -2594135067675745653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_114
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 254
+        width: 20
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72c12d12e7a331050800000000000000
+      internalID: 5770019860999445543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_115
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 255
+        width: 14
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4fa21e7ef20fe2f0800000000000000
+      internalID: -941530505037041843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_116
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 295
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afd75dcb9bf000970800000000000000
+      internalID: 8718986169000754682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_117
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 295
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa04914c32ab844d0800000000000000
+      internalID: -3150063276569050961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_118
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 291
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f516a6a004d6b2c70800000000000000
+      internalID: 8947365206521700703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_119
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 301
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d8fcc2ce314d04d0800000000000000
+      internalID: -3166803225159599913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_120
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 295
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 340108859b6d1e220800000000000000
+      internalID: 2513526158591529027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_121
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 269
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f12d4a7bae88ed980800000000000000
+      internalID: -8512215703998901729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_122
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 285
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ce61596260a7fcd0800000000000000
+      internalID: -2524372721583690042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_123
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 263
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f30bd5aa8c81f1e0800000000000000
+      internalID: -2165795418672528398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_124
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 279
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39a92c4846460eeb0800000000000000
+      internalID: -4692640428833203565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_125
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 267
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e45705705a415a0800000000000000
+      internalID: -6551430107084009829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_126
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 261
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fce2415a7ae3ce30800000000000000
+      internalID: 4522716261880360179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_127
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 97
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a3e289640ffc050800000000000000
+      internalID: 5823137029204884030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_128
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 93
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aadd83d0226ab1710800000000000000
+      internalID: 1665107152424459690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_129
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 115
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a69b0bd9670998a0800000000000000
+      internalID: -6297994452672997727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_130
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 103
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65847393d848fec80800000000000000
+      internalID: -8291262646880614314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_131
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 119
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68e172314701a53a0800000000000000
+      internalID: -6676005406899757434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_132
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 115
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeafb683aedfe6b80800000000000000
+      internalID: -8399497072588621078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_133
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 97
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa0ac1ebe3b4aa240800000000000000
+      internalID: 4803734685393658026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_134
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 83
+        width: 10
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a519032e40ad40560800000000000000
+      internalID: 7279182612247122266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_135
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 95
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd2629bd2f9655ac0800000000000000
+      internalID: -3867068213240896804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_136
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 107
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c2c604d3d8a81250800000000000000
+      internalID: 5915663738299925187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_137
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 87
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe174111d5671beb0800000000000000
+      internalID: -4705849993534869009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_138
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 99
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf1b58b14ae726f10800000000000000
+      internalID: 2261509206194893308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_139
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 65
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d714e2dbe45e169c0800000000000000
+      internalID: -3935612473000967811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_140
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 75
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2083f7978e63d1930800000000000000
+      internalID: 4115506006585194498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_141
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 83
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 119f306fad56bc050800000000000000
+      internalID: 5821858934411229457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_142
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 69
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ddb75b6a02c527d0800000000000000
+      internalID: -2943733431410377264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_143
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 81
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 300940bf57b20db80800000000000000
+      internalID: -8372143921559203837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_144
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 67
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c201b6ed88efbe020800000000000000
+      internalID: 2372269492541263916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_145
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 83
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4104654fe035021a0800000000000000
+      internalID: -6836372910654472172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_146
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 67
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73863c6f475f99be0800000000000000
+      internalID: -1469873920654743497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_147
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 63
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a3ee6814cfeef1e0800000000000000
+      internalID: -2162027145588710493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_148
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fdf26fee73f83a00800000000000000
+      internalID: 736606265582747125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_149
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 73
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55667313b43092be0800000000000000
+      internalID: -1501665379268204971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_150
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 63
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fedef7eeb93ec8b0800000000000000
+      internalID: -5130099433429606665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Catastropika_151
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 63
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66d9a800d29225df0800000000000000
+      internalID: -193046560764158618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Catastropika_0: 5022393906195612334
+      PRAS- Catastropika_1: -3146162331539239719
+      PRAS- Catastropika_10: -2904059651010820186
+      PRAS- Catastropika_100: -7087274085342976035
+      PRAS- Catastropika_101: 7309457956398879340
+      PRAS- Catastropika_102: 1309110156343831680
+      PRAS- Catastropika_103: -3563716803046825969
+      PRAS- Catastropika_104: 7813380518963244636
+      PRAS- Catastropika_105: -8013740437088973332
+      PRAS- Catastropika_106: -1704982639765391320
+      PRAS- Catastropika_107: -1294589910693165468
+      PRAS- Catastropika_108: 3263802450439731029
+      PRAS- Catastropika_109: -1996488801269513559
+      PRAS- Catastropika_11: -4191174720745577513
+      PRAS- Catastropika_110: 7308041803192880128
+      PRAS- Catastropika_111: 6769127994441665547
+      PRAS- Catastropika_112: -726210118932591685
+      PRAS- Catastropika_113: -2594135067675745653
+      PRAS- Catastropika_114: 5770019860999445543
+      PRAS- Catastropika_115: -941530505037041843
+      PRAS- Catastropika_116: 8718986169000754682
+      PRAS- Catastropika_117: -3150063276569050961
+      PRAS- Catastropika_118: 8947365206521700703
+      PRAS- Catastropika_119: -3166803225159599913
+      PRAS- Catastropika_12: -5245271233686237893
+      PRAS- Catastropika_120: 2513526158591529027
+      PRAS- Catastropika_121: -8512215703998901729
+      PRAS- Catastropika_122: -2524372721583690042
+      PRAS- Catastropika_123: -2165795418672528398
+      PRAS- Catastropika_124: -4692640428833203565
+      PRAS- Catastropika_125: -6551430107084009829
+      PRAS- Catastropika_126: 4522716261880360179
+      PRAS- Catastropika_127: 5823137029204884030
+      PRAS- Catastropika_128: 1665107152424459690
+      PRAS- Catastropika_129: -6297994452672997727
+      PRAS- Catastropika_13: 3153940791083770238
+      PRAS- Catastropika_130: -8291262646880614314
+      PRAS- Catastropika_131: -6676005406899757434
+      PRAS- Catastropika_132: -8399497072588621078
+      PRAS- Catastropika_133: 4803734685393658026
+      PRAS- Catastropika_134: 7279182612247122266
+      PRAS- Catastropika_135: -3867068213240896804
+      PRAS- Catastropika_136: 5915663738299925187
+      PRAS- Catastropika_137: -4705849993534869009
+      PRAS- Catastropika_138: 2261509206194893308
+      PRAS- Catastropika_139: -3935612473000967811
+      PRAS- Catastropika_14: -3641005026243971605
+      PRAS- Catastropika_140: 4115506006585194498
+      PRAS- Catastropika_141: 5821858934411229457
+      PRAS- Catastropika_142: -2943733431410377264
+      PRAS- Catastropika_143: -8372143921559203837
+      PRAS- Catastropika_144: 2372269492541263916
+      PRAS- Catastropika_145: -6836372910654472172
+      PRAS- Catastropika_146: -1469873920654743497
+      PRAS- Catastropika_147: -2162027145588710493
+      PRAS- Catastropika_148: 736606265582747125
+      PRAS- Catastropika_149: -1501665379268204971
+      PRAS- Catastropika_15: 7052419515348612513
+      PRAS- Catastropika_150: -5130099433429606665
+      PRAS- Catastropika_151: -193046560764158618
+      PRAS- Catastropika_16: -6865311156334051024
+      PRAS- Catastropika_17: 5624552308999930702
+      PRAS- Catastropika_18: 4550768417473589154
+      PRAS- Catastropika_19: -4182744471239354829
+      PRAS- Catastropika_2: -6763244176021534427
+      PRAS- Catastropika_20: -6640027430380673687
+      PRAS- Catastropika_21: 8974322550156066170
+      PRAS- Catastropika_22: 4001710474384730942
+      PRAS- Catastropika_23: 4553166357277856723
+      PRAS- Catastropika_24: 2493190702969450628
+      PRAS- Catastropika_25: -850779189419296311
+      PRAS- Catastropika_26: -2871743967348064691
+      PRAS- Catastropika_27: -3872387885507334895
+      PRAS- Catastropika_28: 1750813992453135969
+      PRAS- Catastropika_29: -7020796288552579828
+      PRAS- Catastropika_3: 4163841547507351963
+      PRAS- Catastropika_30: -6156538213588783329
+      PRAS- Catastropika_31: -295330996718598724
+      PRAS- Catastropika_32: 1420762030205169674
+      PRAS- Catastropika_33: -7963579308731533051
+      PRAS- Catastropika_34: 2991501240442186449
+      PRAS- Catastropika_35: -3260343413491862283
+      PRAS- Catastropika_36: 72946924224481399
+      PRAS- Catastropika_37: -160672099641640195
+      PRAS- Catastropika_38: -3588307258294166754
+      PRAS- Catastropika_39: 8255100809203206647
+      PRAS- Catastropika_4: 2399560621816771607
+      PRAS- Catastropika_40: -6459889903303500049
+      PRAS- Catastropika_41: -6337030880863718980
+      PRAS- Catastropika_42: -8623298815142978819
+      PRAS- Catastropika_43: -2213052368491828613
+      PRAS- Catastropika_44: -6707787488021477676
+      PRAS- Catastropika_45: 2695645376738625441
+      PRAS- Catastropika_46: -8416575163684029800
+      PRAS- Catastropika_47: 5461698822314710847
+      PRAS- Catastropika_48: -1906044089252326454
+      PRAS- Catastropika_49: 5201563633874149040
+      PRAS- Catastropika_5: 5109678009880877633
+      PRAS- Catastropika_50: -4098365588380635420
+      PRAS- Catastropika_51: 544240856335520560
+      PRAS- Catastropika_52: 2369707811004037991
+      PRAS- Catastropika_53: 3844120115874625709
+      PRAS- Catastropika_54: 8813003497921960329
+      PRAS- Catastropika_55: 398693757060979094
+      PRAS- Catastropika_56: 1339649767974719587
+      PRAS- Catastropika_57: -5211063514653174982
+      PRAS- Catastropika_58: -4337107569865909781
+      PRAS- Catastropika_59: 1705990899742730286
+      PRAS- Catastropika_6: 4625498496553888455
+      PRAS- Catastropika_60: -7209688486595884716
+      PRAS- Catastropika_61: 629311235703944917
+      PRAS- Catastropika_62: 8440896686425607348
+      PRAS- Catastropika_63: 6500146091591665662
+      PRAS- Catastropika_64: 1624936766831703607
+      PRAS- Catastropika_65: 1351451631139613693
+      PRAS- Catastropika_66: 4943543384887227750
+      PRAS- Catastropika_67: -3878282673749297839
+      PRAS- Catastropika_68: 6688747538386796431
+      PRAS- Catastropika_69: 957749203304699649
+      PRAS- Catastropika_7: 1804939350130256036
+      PRAS- Catastropika_70: 1845654304841998610
+      PRAS- Catastropika_71: 6038217870793728516
+      PRAS- Catastropika_72: -8904105926104044316
+      PRAS- Catastropika_73: 1009523033299779667
+      PRAS- Catastropika_74: 450771262629242290
+      PRAS- Catastropika_75: 5498698459890417025
+      PRAS- Catastropika_76: -5781267774992296805
+      PRAS- Catastropika_77: -1089973585375956849
+      PRAS- Catastropika_78: -5802862274090142693
+      PRAS- Catastropika_79: -7720536066201858130
+      PRAS- Catastropika_8: -7916354329856639820
+      PRAS- Catastropika_80: -5146203816549172133
+      PRAS- Catastropika_81: 6710240441911399295
+      PRAS- Catastropika_82: -916409301959347276
+      PRAS- Catastropika_83: 1422270739645372452
+      PRAS- Catastropika_84: 5919706657518775553
+      PRAS- Catastropika_85: -1545859660470193983
+      PRAS- Catastropika_86: -7151589360119292019
+      PRAS- Catastropika_87: -2158996619552106719
+      PRAS- Catastropika_88: -6237631205936729500
+      PRAS- Catastropika_89: -2812265959210351282
+      PRAS- Catastropika_9: 4287143914161544444
+      PRAS- Catastropika_90: -9155747117507627691
+      PRAS- Catastropika_91: 2627367316118243212
+      PRAS- Catastropika_92: -1678705132542015549
+      PRAS- Catastropika_93: 3012665394232055765
+      PRAS- Catastropika_94: 3241841322311712760
+      PRAS- Catastropika_95: 7573078261841988901
+      PRAS- Catastropika_96: -4394105810074591451
+      PRAS- Catastropika_97: -2504012301524285130
+      PRAS- Catastropika_98: -1851106803506032227
+      PRAS- Catastropika_99: -6896347827119193068
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

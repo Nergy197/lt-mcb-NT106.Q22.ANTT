@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: f24a905601d1e472690ab01708cdac5e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6682916524385205115
+    second: Gen9- Collision Course_0
+  - first:
+      213: -1500742212068871283
+    second: Gen9- Collision Course_1
+  - first:
+      213: -7350879756592959353
+    second: Gen9- Collision Course_2
+  - first:
+      213: 4215613122547741631
+    second: Gen9- Collision Course_3
+  - first:
+      213: 5914555779056729845
+    second: Gen9- Collision Course_4
+  - first:
+      213: -8332853290423832225
+    second: Gen9- Collision Course_5
+  - first:
+      213: 907329170285456558
+    second: Gen9- Collision Course_6
+  - first:
+      213: -6242810367688992112
+    second: Gen9- Collision Course_7
+  - first:
+      213: 3809853145435686842
+    second: Gen9- Collision Course_8
+  - first:
+      213: -2718736592464341342
+    second: Gen9- Collision Course_9
+  - first:
+      213: -5019098331705608493
+    second: Gen9- Collision Course_10
+  - first:
+      213: -6851385077068427418
+    second: Gen9- Collision Course_11
+  - first:
+      213: -5003390378306759856
+    second: Gen9- Collision Course_12
+  - first:
+      213: 8967028158850794326
+    second: Gen9- Collision Course_13
+  - first:
+      213: -2725875924397182869
+    second: Gen9- Collision Course_14
+  - first:
+      213: 8400089817346373236
+    second: Gen9- Collision Course_15
+  - first:
+      213: -5249265374883463010
+    second: Gen9- Collision Course_16
+  - first:
+      213: -7281314862115469462
+    second: Gen9- Collision Course_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gen9- Collision Course_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 193
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7b719bdb2d7ebc50800000000000000
+      internalID: 6682916524385205115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Collision Course_1
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 66
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d83733ec8ea4c2be0800000000000000
+      internalID: -1500742212068871283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Collision Course_2
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 114
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 780baa9decd6cf990800000000000000
+      internalID: -7350879756592959353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Collision Course_3
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 96
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb3fee7bccdd08a30800000000000000
+      internalID: 4215613122547741631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Collision Course_4
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 117
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fef8e6f429b41250800000000000000
+      internalID: 5914555779056729845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Collision Course_5
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 123
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f51b7dae412cb5c80800000000000000
+      internalID: -8332853290423832225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Collision Course_6
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 119
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eace639b21b779c00800000000000000
+      internalID: 907329170285456558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Collision Course_7
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 117
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a95c1eb051d59a0800000000000000
+      internalID: -6242810367688992112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Collision Course_8
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 119
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7491410415fd430800000000000000
+      internalID: 3809853145435686842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Collision Course_9
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 79
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a69e40497b154ad0800000000000000
+      internalID: -2718736592464341342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Collision Course_10
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 64
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d67eedd8a4985ab0800000000000000
+      internalID: -5019098331705608493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Collision Course_11
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 93
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f8ce5929dfae0a0800000000000000
+      internalID: -6851385077068427418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Collision Course_12
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 111
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0531b64c5f2609ab0800000000000000
+      internalID: -5003390378306759856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Collision Course_13
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 103
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6530a33e998417c70800000000000000
+      internalID: 8967028158850794326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Collision Course_14
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 77
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6034800a4ebb2ad0800000000000000
+      internalID: -2725875924397182869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Collision Course_15
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 67
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4767e4cee2d139470800000000000000
+      internalID: 8400089817346373236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Collision Course_16
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 67
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e90405e04fcd627b0800000000000000
+      internalID: -5249265374883463010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Collision Course_17
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 63
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a67c5d106b293fa90800000000000000
+      internalID: -7281314862115469462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Gen9- Collision Course_0: 6682916524385205115
+      Gen9- Collision Course_1: -1500742212068871283
+      Gen9- Collision Course_10: -5019098331705608493
+      Gen9- Collision Course_11: -6851385077068427418
+      Gen9- Collision Course_12: -5003390378306759856
+      Gen9- Collision Course_13: 8967028158850794326
+      Gen9- Collision Course_14: -2725875924397182869
+      Gen9- Collision Course_15: 8400089817346373236
+      Gen9- Collision Course_16: -5249265374883463010
+      Gen9- Collision Course_17: -7281314862115469462
+      Gen9- Collision Course_2: -7350879756592959353
+      Gen9- Collision Course_3: 4215613122547741631
+      Gen9- Collision Course_4: 5914555779056729845
+      Gen9- Collision Course_5: -8332853290423832225
+      Gen9- Collision Course_6: 907329170285456558
+      Gen9- Collision Course_7: -6242810367688992112
+      Gen9- Collision Course_8: 3809853145435686842
+      Gen9- Collision Course_9: -2718736592464341342
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

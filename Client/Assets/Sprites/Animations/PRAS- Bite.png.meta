@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: 056a88392d48d4c1d9080112d4ffe042
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8070582796924348303
+    second: PRAS- Bite_0
+  - first:
+      213: -3984503733096178335
+    second: PRAS- Bite_1
+  - first:
+      213: -6514983682075973339
+    second: PRAS- Bite_2
+  - first:
+      213: -5800971613150749112
+    second: PRAS- Bite_3
+  - first:
+      213: 2028390452388297117
+    second: PRAS- Bite_4
+  - first:
+      213: 1281813800838568572
+    second: PRAS- Bite_5
+  - first:
+      213: -8289528542602697589
+    second: PRAS- Bite_6
+  - first:
+      213: 6227873665835833051
+    second: PRAS- Bite_7
+  - first:
+      213: 7861028998679792865
+    second: PRAS- Bite_8
+  - first:
+      213: -4790124176534663156
+    second: PRAS- Bite_9
+  - first:
+      213: -2323581513448590521
+    second: PRAS- Bite_10
+  - first:
+      213: 5390270599933101383
+    second: PRAS- Bite_11
+  - first:
+      213: 6524080766753729336
+    second: PRAS- Bite_12
+  - first:
+      213: 3196843528194377172
+    second: PRAS- Bite_13
+  - first:
+      213: -6237207028952049113
+    second: PRAS- Bite_14
+  - first:
+      213: -2535287776479417739
+    second: PRAS- Bite_15
+  - first:
+      213: -7827664276037668050
+    second: PRAS- Bite_16
+  - first:
+      213: 1057268824367086890
+    second: PRAS- Bite_17
+  - first:
+      213: -6701720430878021295
+    second: PRAS- Bite_18
+  - first:
+      213: -7934075237954260474
+    second: PRAS- Bite_19
+  - first:
+      213: 5034277286732876324
+    second: PRAS- Bite_20
+  - first:
+      213: -7728314826564076607
+    second: PRAS- Bite_21
+  - first:
+      213: -7305700055068345601
+    second: PRAS- Bite_22
+  - first:
+      213: 2188151223745282197
+    second: PRAS- Bite_23
+  - first:
+      213: 1196487851323941623
+    second: PRAS- Bite_24
+  - first:
+      213: 3422381661014965278
+    second: PRAS- Bite_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Bite_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 473
+        width: 126
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87ed054b48700070800000000000000
+      internalID: 8070582796924348303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_1
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 453
+        width: 126
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16d959e27f234b8c0800000000000000
+      internalID: -3984503733096178335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_2
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 461
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5292568ebd02695a0800000000000000
+      internalID: -6514983682075973339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_3
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 451
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84e560e7d0fce7fa0800000000000000
+      internalID: -5800971613150749112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_4
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 435
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d99f56c9e5a462c10800000000000000
+      internalID: 2028390452388297117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_5
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 419
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7a1d2b4cdae9c110800000000000000
+      internalID: 1281813800838568572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_6
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 427
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8464b6d5bda5fc80800000000000000
+      internalID: -8289528542602697589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_7
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 267
+        width: 58
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd697263a1add6650800000000000000
+      internalID: 6227873665835833051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_8
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 299
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ec8a5b893cf71d60800000000000000
+      internalID: 7861028998679792865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_9
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 305
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0014abc07f068db0800000000000000
+      internalID: -4790124176534663156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_10
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 287
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7437b34aceaf0cfd0800000000000000
+      internalID: -2323581513448590521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_11
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 299
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7458e304d861eca40800000000000000
+      internalID: 5390270599933101383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_12
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 281
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83b605c24e03a8a50800000000000000
+      internalID: 6524080766753729336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_13
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 289
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d5488450487d5c20800000000000000
+      internalID: 3196843528194377172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_14
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 269
+        width: 46
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a5eb8d04df079a0800000000000000
+      internalID: -6237207028952049113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_15
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 265
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57aed872339d0dcd0800000000000000
+      internalID: -2535287776479417739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_16
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 259
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2372cd40dc8e5390800000000000000
+      internalID: -7827664276037668050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_17
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 271
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2dbe74e46c2cae00800000000000000
+      internalID: 1057268824367086890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_18
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 257
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 159a98d76c4bef2a0800000000000000
+      internalID: -6701720430878021295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_19
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 267
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 602738c8b9084e190800000000000000
+      internalID: -7934075237954260474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_20
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 253
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ac78005885dd540800000000000000
+      internalID: 5034277286732876324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_21
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 93
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cb73429c928fb490800000000000000
+      internalID: -7728314826564076607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_22
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 101
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffa7916d180fc9a90800000000000000
+      internalID: -7305700055068345601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_23
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 83
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5908c26d1ffdd5e10800000000000000
+      internalID: 2188151223745282197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_24
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 101
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f2eb3c8c57ca9010800000000000000
+      internalID: 1196487851323941623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bite_25
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 85
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1cbb96fcfdbe7f20800000000000000
+      internalID: 3422381661014965278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Bite_0: 8070582796924348303
+      PRAS- Bite_1: -3984503733096178335
+      PRAS- Bite_10: -2323581513448590521
+      PRAS- Bite_11: 5390270599933101383
+      PRAS- Bite_12: 6524080766753729336
+      PRAS- Bite_13: 3196843528194377172
+      PRAS- Bite_14: -6237207028952049113
+      PRAS- Bite_15: -2535287776479417739
+      PRAS- Bite_16: -7827664276037668050
+      PRAS- Bite_17: 1057268824367086890
+      PRAS- Bite_18: -6701720430878021295
+      PRAS- Bite_19: -7934075237954260474
+      PRAS- Bite_2: -6514983682075973339
+      PRAS- Bite_20: 5034277286732876324
+      PRAS- Bite_21: -7728314826564076607
+      PRAS- Bite_22: -7305700055068345601
+      PRAS- Bite_23: 2188151223745282197
+      PRAS- Bite_24: 1196487851323941623
+      PRAS- Bite_25: 3422381661014965278
+      PRAS- Bite_3: -5800971613150749112
+      PRAS- Bite_4: 2028390452388297117
+      PRAS- Bite_5: 1281813800838568572
+      PRAS- Bite_6: -8289528542602697589
+      PRAS- Bite_7: 6227873665835833051
+      PRAS- Bite_8: 7861028998679792865
+      PRAS- Bite_9: -4790124176534663156
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

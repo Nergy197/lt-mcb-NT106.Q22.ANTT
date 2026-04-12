@@ -1,0 +1,884 @@
+fileFormatVersion: 2
+guid: 37516c15d073b4c12b2dbf4c1a05f194
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3370391580633004304
+    second: Fogo - 01_0
+  - first:
+      213: -5665209710522766165
+    second: Fogo - 01_1
+  - first:
+      213: 1253998659319040851
+    second: Fogo - 01_2
+  - first:
+      213: 5189766798137603382
+    second: Fogo - 01_3
+  - first:
+      213: -8941400289658452588
+    second: Fogo - 01_4
+  - first:
+      213: 4345963621681869467
+    second: Fogo - 01_5
+  - first:
+      213: -4209009634331750368
+    second: Fogo - 01_6
+  - first:
+      213: 8323328979730987411
+    second: Fogo - 01_7
+  - first:
+      213: -7524870997815034293
+    second: Fogo - 01_8
+  - first:
+      213: -2929292266375002532
+    second: Fogo - 01_9
+  - first:
+      213: 7479594185180281048
+    second: Fogo - 01_10
+  - first:
+      213: 7626634254912921662
+    second: Fogo - 01_11
+  - first:
+      213: 5053856076271533596
+    second: Fogo - 01_12
+  - first:
+      213: 2661314774575156291
+    second: Fogo - 01_13
+  - first:
+      213: 8946867706730653355
+    second: Fogo - 01_14
+  - first:
+      213: -5260457231313749729
+    second: Fogo - 01_15
+  - first:
+      213: -1792676214390553885
+    second: Fogo - 01_16
+  - first:
+      213: 2455050622950311434
+    second: Fogo - 01_17
+  - first:
+      213: 3584175627713019242
+    second: Fogo - 01_18
+  - first:
+      213: 2614295750807417039
+    second: Fogo - 01_19
+  - first:
+      213: -3018838092000522322
+    second: Fogo - 01_20
+  - first:
+      213: 347581783175675278
+    second: Fogo - 01_21
+  - first:
+      213: -1799054480668542533
+    second: Fogo - 01_22
+  - first:
+      213: 1810199983860976440
+    second: Fogo - 01_23
+  - first:
+      213: 206511349403486434
+    second: Fogo - 01_24
+  - first:
+      213: 3570467726687502870
+    second: Fogo - 01_25
+  - first:
+      213: -91782929532083596
+    second: Fogo - 01_26
+  - first:
+      213: 7867649144760558017
+    second: Fogo - 01_27
+  - first:
+      213: -9158444012853232190
+    second: Fogo - 01_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fogo - 01_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 575
+        width: 196
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 019f895194906ce20800000000000000
+      internalID: 3370391580633004304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_1
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 606
+        width: 167
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bac623aa8c12161b0800000000000000
+      internalID: -5665209710522766165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_2
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 576
+        width: 124
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35b078df229176110800000000000000
+      internalID: 1253998659319040851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_3
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 736
+        width: 9
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 635bb160861c50840800000000000000
+      internalID: 5189766798137603382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_4
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 593
+        width: 80
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49545546fc3c9e380800000000000000
+      internalID: -8941400289658452588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_5
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 585
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b923e1553e6ff4c30800000000000000
+      internalID: 4345963621681869467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_6
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 595
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0209571b9089695c0800000000000000
+      internalID: -4209009634331750368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_7
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 575
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3997491bb97628370800000000000000
+      internalID: 8323328979730987411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_8
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 393
+        width: 183
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4e789a22b9429790800000000000000
+      internalID: -7524870997815034293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_9
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 387
+        width: 182
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c564b6b24301957d0800000000000000
+      internalID: -2929292266375002532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_10
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 385
+        width: 186
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d87fb7684bdcc760800000000000000
+      internalID: 7479594185180281048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_11
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 388
+        width: 182
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3029eb727f37d960800000000000000
+      internalID: 7626634254912921662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_12
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 425
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1e3d1c2357e22640800000000000000
+      internalID: 5053856076271533596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_13
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 384
+        width: 186
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34c0d0eefa3eee420800000000000000
+      internalID: 2661314774575156291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_14
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 191
+        width: 56
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba62818d6c8a92c70800000000000000
+      internalID: 8946867706730653355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_15
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 386
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f19b86be40a1ff6b0800000000000000
+      internalID: -5260457231313749729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_16
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 191
+        width: 167
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e285f32b722f17e0800000000000000
+      internalID: -1792676214390553885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_17
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 197
+        width: 169
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a060e8eb887121220800000000000000
+      internalID: 2455050622950311434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_18
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 196
+        width: 169
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d727e5ebc8db130800000000000000
+      internalID: 3584175627713019242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_19
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 198
+        width: 169
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc070bc5228d74420800000000000000
+      internalID: 2614295750807417039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 327
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaf04e3ffbeea16d0800000000000000
+      internalID: -3018838092000522322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_21
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 118
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d359c4acbd2d400800000000000000
+      internalID: 347581783175675278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_22
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 74
+        width: 12
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb93d2c4b797807e0800000000000000
+      internalID: -1799054480668542533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_23
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 46
+        width: 22
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83b83726b4f1f1910800000000000000
+      internalID: 1810199983860976440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_24
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1
+        width: 398
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e808476afcadd200800000000000000
+      internalID: 206511349403486434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_25
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 1
+        width: 201
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6128433fa79dc8130800000000000000
+      internalID: 3570467726687502870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_26
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 85
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 472abc079ebe9bef0800000000000000
+      internalID: -91782929532083596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_27
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 10
+        width: 12
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c1ebda66318f2d60800000000000000
+      internalID: 7867649144760558017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fogo - 01_28
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 10
+        width: 65
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cd749e91bba6e080800000000000000
+      internalID: -9158444012853232190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Fogo - 01_0: 3370391580633004304
+      Fogo - 01_1: -5665209710522766165
+      Fogo - 01_10: 7479594185180281048
+      Fogo - 01_11: 7626634254912921662
+      Fogo - 01_12: 5053856076271533596
+      Fogo - 01_13: 2661314774575156291
+      Fogo - 01_14: 8946867706730653355
+      Fogo - 01_15: -5260457231313749729
+      Fogo - 01_16: -1792676214390553885
+      Fogo - 01_17: 2455050622950311434
+      Fogo - 01_18: 3584175627713019242
+      Fogo - 01_19: 2614295750807417039
+      Fogo - 01_2: 1253998659319040851
+      Fogo - 01_20: -3018838092000522322
+      Fogo - 01_21: 347581783175675278
+      Fogo - 01_22: -1799054480668542533
+      Fogo - 01_23: 1810199983860976440
+      Fogo - 01_24: 206511349403486434
+      Fogo - 01_25: 3570467726687502870
+      Fogo - 01_26: -91782929532083596
+      Fogo - 01_27: 7867649144760558017
+      Fogo - 01_28: -9158444012853232190
+      Fogo - 01_3: 5189766798137603382
+      Fogo - 01_4: -8941400289658452588
+      Fogo - 01_5: 4345963621681869467
+      Fogo - 01_6: -4209009634331750368
+      Fogo - 01_7: 8323328979730987411
+      Fogo - 01_8: -7524870997815034293
+      Fogo - 01_9: -2929292266375002532
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

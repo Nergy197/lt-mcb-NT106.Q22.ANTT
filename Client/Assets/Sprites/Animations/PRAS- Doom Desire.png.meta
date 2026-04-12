@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: a43944496c31e4304847c6051cc1be9e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5677793505110151124
+    second: PRAS- Doom Desire_0
+  - first:
+      213: -7011230979740491522
+    second: PRAS- Doom Desire_1
+  - first:
+      213: -4034115011656665844
+    second: PRAS- Doom Desire_2
+  - first:
+      213: 8888844412838187820
+    second: PRAS- Doom Desire_3
+  - first:
+      213: 49818337363775626
+    second: PRAS- Doom Desire_4
+  - first:
+      213: -4617529208042705027
+    second: PRAS- Doom Desire_5
+  - first:
+      213: -5770244583106664107
+    second: PRAS- Doom Desire_6
+  - first:
+      213: -1286089707970423486
+    second: PRAS- Doom Desire_7
+  - first:
+      213: 1254752225177657828
+    second: PRAS- Doom Desire_8
+  - first:
+      213: -2412275926224379599
+    second: PRAS- Doom Desire_9
+  - first:
+      213: 1184480423924758957
+    second: PRAS- Doom Desire_10
+  - first:
+      213: -2790963846174840193
+    second: PRAS- Doom Desire_11
+  - first:
+      213: 9007438210018451872
+    second: PRAS- Doom Desire_12
+  - first:
+      213: -1008175427567480272
+    second: PRAS- Doom Desire_13
+  - first:
+      213: -2312439137939842957
+    second: PRAS- Doom Desire_14
+  - first:
+      213: 8378949108120445603
+    second: PRAS- Doom Desire_15
+  - first:
+      213: 7357365154691127079
+    second: PRAS- Doom Desire_16
+  - first:
+      213: 5059573306430233095
+    second: PRAS- Doom Desire_17
+  - first:
+      213: 2085854461176400273
+    second: PRAS- Doom Desire_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Doom Desire_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 191
+        width: 193
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4df4c145c139bce40800000000000000
+      internalID: 5677793505110151124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Doom Desire_1
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 191
+        width: 194
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef0aa5e229a13be90800000000000000
+      internalID: -7011230979740491522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Doom Desire_2
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 259
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c05322345c1f308c0800000000000000
+      internalID: -4034115011656665844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Doom Desire_3
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 257
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c239feaf5e48b5b70800000000000000
+      internalID: 8888844412838187820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Doom Desire_4
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 307
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a805edd838df0b000800000000000000
+      internalID: 49818337363775626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Doom Desire_5
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 289
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7faf9666ad3befb0800000000000000
+      internalID: -4617529208042705027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Doom Desire_6
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 271
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5592eccaf19fbefa0800000000000000
+      internalID: -5770244583106664107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Doom Desire_7
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 117
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 245132f7934e62ee0800000000000000
+      internalID: -1286089707970423486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Doom Desire_8
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 123
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e168d63086c96110800000000000000
+      internalID: 1254752225177657828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Doom Desire_9
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 119
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1316b2d63dfd58ed0800000000000000
+      internalID: -2412275926224379599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Doom Desire_10
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 117
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da9707f7bae107010800000000000000
+      internalID: 1184480423924758957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Doom Desire_11
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 119
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a6ac74b218449d0800000000000000
+      internalID: -2790963846174840193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Doom Desire_12
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 93
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a12e6c1459d00d70800000000000000
+      internalID: 9007438210018451872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Doom Desire_13
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 111
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03210984acd3202f0800000000000000
+      internalID: -1008175427567480272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Doom Desire_14
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 103
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 378926a1bd098efd0800000000000000
+      internalID: -2312439137939842957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Doom Desire_15
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 77
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a2689cf1d1084470800000000000000
+      internalID: 8378949108120445603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Doom Desire_16
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 67
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 727933090ac9a1660800000000000000
+      internalID: 7357365154691127079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Doom Desire_17
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 67
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70a92dc8d17373640800000000000000
+      internalID: 5059573306430233095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Doom Desire_18
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 63
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1994593c49172fc10800000000000000
+      internalID: 2085854461176400273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Doom Desire_0: 5677793505110151124
+      PRAS- Doom Desire_1: -7011230979740491522
+      PRAS- Doom Desire_10: 1184480423924758957
+      PRAS- Doom Desire_11: -2790963846174840193
+      PRAS- Doom Desire_12: 9007438210018451872
+      PRAS- Doom Desire_13: -1008175427567480272
+      PRAS- Doom Desire_14: -2312439137939842957
+      PRAS- Doom Desire_15: 8378949108120445603
+      PRAS- Doom Desire_16: 7357365154691127079
+      PRAS- Doom Desire_17: 5059573306430233095
+      PRAS- Doom Desire_18: 2085854461176400273
+      PRAS- Doom Desire_2: -4034115011656665844
+      PRAS- Doom Desire_3: 8888844412838187820
+      PRAS- Doom Desire_4: 49818337363775626
+      PRAS- Doom Desire_5: -4617529208042705027
+      PRAS- Doom Desire_6: -5770244583106664107
+      PRAS- Doom Desire_7: -1286089707970423486
+      PRAS- Doom Desire_8: 1254752225177657828
+      PRAS- Doom Desire_9: -2412275926224379599
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

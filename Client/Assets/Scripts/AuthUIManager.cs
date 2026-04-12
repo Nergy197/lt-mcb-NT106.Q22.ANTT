@@ -13,7 +13,7 @@ namespace PokemonMMO.UI
     {
         // ── Server ────────────────────────────────────────────────────────────
         [Header("Server")]
-        public string serverUrl     = "http://localhost:2567";
+        public string serverUrl     = "http://127.0.0.1:2567";
         [Tooltip("Scene load sau khi login thành công. Để trống = không chuyển.")]
         public string gameSceneName = "Menu scene";
 

@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: 2443a35404b574ba2843350a1c38a8e7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2481578730791962903
+    second: PRAS- Oceanic Operetta_0
+  - first:
+      213: 6400300656588373042
+    second: PRAS- Oceanic Operetta_1
+  - first:
+      213: 2802367175115316163
+    second: PRAS- Oceanic Operetta_2
+  - first:
+      213: -5272003517093976171
+    second: PRAS- Oceanic Operetta_3
+  - first:
+      213: 217813085122570685
+    second: PRAS- Oceanic Operetta_4
+  - first:
+      213: -3652799845871389913
+    second: PRAS- Oceanic Operetta_5
+  - first:
+      213: 9152291919170673570
+    second: PRAS- Oceanic Operetta_6
+  - first:
+      213: 5022896132686801325
+    second: PRAS- Oceanic Operetta_7
+  - first:
+      213: -8542200972785096662
+    second: PRAS- Oceanic Operetta_8
+  - first:
+      213: -722541652151256710
+    second: PRAS- Oceanic Operetta_9
+  - first:
+      213: 1081057202918391933
+    second: PRAS- Oceanic Operetta_10
+  - first:
+      213: 1691804959086866618
+    second: PRAS- Oceanic Operetta_11
+  - first:
+      213: -4215735167526358961
+    second: PRAS- Oceanic Operetta_12
+  - first:
+      213: 5021053732702916257
+    second: PRAS- Oceanic Operetta_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Oceanic Operetta_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 215
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e6faf4da49af8dd0800000000000000
+      internalID: -2481578730791962903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Oceanic Operetta_1
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 270
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c36a3798f62d850800000000000000
+      internalID: 6400300656588373042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Oceanic Operetta_2
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 260
+        width: 52
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb96f2291204e620800000000000000
+      internalID: 2802367175115316163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Oceanic Operetta_3
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 256
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 597e005cbb416d6b0800000000000000
+      internalID: -5272003517093976171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Oceanic Operetta_4
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 262
+        width: 60
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db9a92ec8d3d50300800000000000000
+      internalID: 217813085122570685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Oceanic Operetta_5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 75
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 723fb3fb4e5ae4dc0800000000000000
+      internalID: -3652799845871389913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Oceanic Operetta_6
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 107
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ab98d27209730f70800000000000000
+      internalID: 9152291919170673570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Oceanic Operetta_7
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 111
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da9ea749b69e4b540800000000000000
+      internalID: 5022896132686801325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Oceanic Operetta_8
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 81
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a28e5294971047980800000000000000
+      internalID: -8542200972785096662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Oceanic Operetta_9
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 77
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a79b910123409f5f0800000000000000
+      internalID: -722541652151256710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Oceanic Operetta_10
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 77
+        width: 24
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7004d16ccfa00f00800000000000000
+      internalID: 1081057202918391933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Oceanic Operetta_11
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 89
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab0fd9f85af7a7710800000000000000
+      internalID: 1691804959086866618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Oceanic Operetta_12
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 99
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4038787333be75c0800000000000000
+      internalID: -4215735167526358961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Oceanic Operetta_13
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 85
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae08e764cd5ea540800000000000000
+      internalID: 5021053732702916257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Oceanic Operetta_0: -2481578730791962903
+      PRAS- Oceanic Operetta_1: 6400300656588373042
+      PRAS- Oceanic Operetta_10: 1081057202918391933
+      PRAS- Oceanic Operetta_11: 1691804959086866618
+      PRAS- Oceanic Operetta_12: -4215735167526358961
+      PRAS- Oceanic Operetta_13: 5021053732702916257
+      PRAS- Oceanic Operetta_2: 2802367175115316163
+      PRAS- Oceanic Operetta_3: -5272003517093976171
+      PRAS- Oceanic Operetta_4: 217813085122570685
+      PRAS- Oceanic Operetta_5: -3652799845871389913
+      PRAS- Oceanic Operetta_6: 9152291919170673570
+      PRAS- Oceanic Operetta_7: 5022896132686801325
+      PRAS- Oceanic Operetta_8: -8542200972785096662
+      PRAS- Oceanic Operetta_9: -722541652151256710
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

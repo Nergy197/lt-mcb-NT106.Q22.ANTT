@@ -1,0 +1,1144 @@
+fileFormatVersion: 2
+guid: 88fa68f5166e5446f97a1d87899039a4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3279020824485961565
+    second: FreezingGlare_0
+  - first:
+      213: -7616479098076604614
+    second: FreezingGlare_1
+  - first:
+      213: -1001286594809310603
+    second: FreezingGlare_2
+  - first:
+      213: 2131375618471638804
+    second: FreezingGlare_3
+  - first:
+      213: 5461831745136231087
+    second: FreezingGlare_4
+  - first:
+      213: -1020226985901705306
+    second: FreezingGlare_5
+  - first:
+      213: 2551148976069709394
+    second: FreezingGlare_6
+  - first:
+      213: -1747584994273734502
+    second: FreezingGlare_7
+  - first:
+      213: -2006509669687721826
+    second: FreezingGlare_8
+  - first:
+      213: -2571819022873780147
+    second: FreezingGlare_9
+  - first:
+      213: -4379915158836860667
+    second: FreezingGlare_10
+  - first:
+      213: -4318858256444560368
+    second: FreezingGlare_11
+  - first:
+      213: 5711782315432331604
+    second: FreezingGlare_12
+  - first:
+      213: 1043540265187685672
+    second: FreezingGlare_13
+  - first:
+      213: -7774328949658476587
+    second: FreezingGlare_14
+  - first:
+      213: -79361301565820704
+    second: FreezingGlare_15
+  - first:
+      213: -1894591798118016026
+    second: FreezingGlare_16
+  - first:
+      213: 2936030911116870515
+    second: FreezingGlare_17
+  - first:
+      213: 4002592007375475531
+    second: FreezingGlare_18
+  - first:
+      213: 8315239983674482019
+    second: FreezingGlare_19
+  - first:
+      213: -3954420260774345628
+    second: FreezingGlare_20
+  - first:
+      213: 2891466784572795069
+    second: FreezingGlare_21
+  - first:
+      213: -2186475043921013904
+    second: FreezingGlare_22
+  - first:
+      213: 5499769764463711368
+    second: FreezingGlare_23
+  - first:
+      213: 4867410755742427540
+    second: FreezingGlare_24
+  - first:
+      213: 4623452158659563443
+    second: FreezingGlare_25
+  - first:
+      213: 8900922325137597559
+    second: FreezingGlare_26
+  - first:
+      213: 1575933330743273906
+    second: FreezingGlare_27
+  - first:
+      213: 995925712196042119
+    second: FreezingGlare_28
+  - first:
+      213: 1110013039317381134
+    second: FreezingGlare_29
+  - first:
+      213: 3497163371448620105
+    second: FreezingGlare_30
+  - first:
+      213: -1470348719452361163
+    second: FreezingGlare_31
+  - first:
+      213: 6097058213428327575
+    second: FreezingGlare_32
+  - first:
+      213: 7759347427214516807
+    second: FreezingGlare_33
+  - first:
+      213: -1910470923034188742
+    second: FreezingGlare_34
+  - first:
+      213: 1481996596935075010
+    second: FreezingGlare_35
+  - first:
+      213: -5312280967933306202
+    second: FreezingGlare_36
+  - first:
+      213: 6560501619297311880
+    second: FreezingGlare_37
+  - first:
+      213: -657008323965899909
+    second: FreezingGlare_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FreezingGlare_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 576
+        width: 142
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5f189e111c618d20800000000000000
+      internalID: 3279020824485961565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 384
+        width: 142
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a37d4f73d94dc4690800000000000000
+      internalID: -7616479098076604614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 576
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 572d706a527ba12f0800000000000000
+      internalID: -1001286594809310603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_3
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 576
+        width: 142
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4173eed15da249d10800000000000000
+      internalID: 2131375618471638804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_4
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 576
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa20ccfb8035ccb40800000000000000
+      internalID: 5461831745136231087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 576
+        width: 142
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a7bf0336fc67d1f0800000000000000
+      internalID: -1020226985901705306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_6
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 576
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25e8cb72a70876320800000000000000
+      internalID: 2551148976069709394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_7
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 576
+        width: 142
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a90d281f4b45fb7e0800000000000000
+      internalID: -1747584994273734502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_8
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 576
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9080eb16127724e0800000000000000
+      internalID: -2006509669687721826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_9
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 576
+        width: 142
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d40240b89301f4cd0800000000000000
+      internalID: -2571819022873780147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_10
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 576
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5092e2b6e5a6733c0800000000000000
+      internalID: -4379915158836860667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_11
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 384
+        width: 142
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ceb5d4c455014c0800000000000000
+      internalID: -4318858256444560368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_12
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 384
+        width: 142
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 459c3b9e0c3544f40800000000000000
+      internalID: 5711782315432331604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_13
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 385
+        width: 141
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 825345f97566b7e00800000000000000
+      internalID: 1043540265187685672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_14
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 392
+        width: 158
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df129ca2090c1490800000000000000
+      internalID: -7774328949658476587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_15
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 512
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e0b143115d06eef0800000000000000
+      internalID: -79361301565820704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_16
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 384
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb9ece2cce05b5e0800000000000000
+      internalID: -1894591798118016026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_17
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 384
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37300b2de80eeb820800000000000000
+      internalID: 2936030911116870515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_18
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 384
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43de6c59301c8730800000000000000
+      internalID: 4002592007375475531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_19
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 383
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36dda0985baa56370800000000000000
+      internalID: 8315239983674482019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_20
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 389
+        width: 68
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46400f769b31f19c0800000000000000
+      internalID: -3954420260774345628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_21
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 196
+        width: 172
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db86d4e88bd802820800000000000000
+      internalID: 2891466784572795069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_22
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 299
+        width: 100
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 073d4d0388418a1e0800000000000000
+      internalID: -2186475043921013904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_23
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 339
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8841b45367b135c40800000000000000
+      internalID: 5499769764463711368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_24
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 347
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49961ff2b448c8340800000000000000
+      internalID: 4867410755742427540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_25
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 193
+        width: 96
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bf8ae00e3dc92040800000000000000
+      internalID: 4623452158659563443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_26
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 197
+        width: 75
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 774ab2312bd668b70800000000000000
+      internalID: 8900922325137597559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_27
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 191
+        width: 183
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9a6a0c307ded510800000000000000
+      internalID: 1575933330743273906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_28
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 191
+        width: 144
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d7f1a982d32dd00800000000000000
+      internalID: 995925712196042119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_29
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 325
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0070986afe876f00800000000000000
+      internalID: 1110013039317381134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_30
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 316
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 944d3bcbe8b688030800000000000000
+      internalID: 3497163371448620105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_31
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 195
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53e671141a5489be0800000000000000
+      internalID: -1470348719452361163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_32
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 194
+        width: 96
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 794f54a342a1d9450800000000000000
+      internalID: 6097058213428327575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_33
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 195
+        width: 81
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74266ffcf5dbeab60800000000000000
+      internalID: 7759347427214516807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 193
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a34a5de41d4ac75e0800000000000000
+      internalID: -1910470923034188742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_35
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 0
+        width: 192
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c427ae8d0c119410800000000000000
+      internalID: 1481996596935075010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_36
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 48
+        width: 130
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aa5447fa9cf646b0800000000000000
+      internalID: -5312280967933306202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_37
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 40
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c5796b6759b0b50800000000000000
+      internalID: 6560501619297311880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreezingGlare_38
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 56
+        width: 122
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ba98b0966d1e6f0800000000000000
+      internalID: -657008323965899909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FreezingGlare_0: 3279020824485961565
+      FreezingGlare_1: -7616479098076604614
+      FreezingGlare_10: -4379915158836860667
+      FreezingGlare_11: -4318858256444560368
+      FreezingGlare_12: 5711782315432331604
+      FreezingGlare_13: 1043540265187685672
+      FreezingGlare_14: -7774328949658476587
+      FreezingGlare_15: -79361301565820704
+      FreezingGlare_16: -1894591798118016026
+      FreezingGlare_17: 2936030911116870515
+      FreezingGlare_18: 4002592007375475531
+      FreezingGlare_19: 8315239983674482019
+      FreezingGlare_2: -1001286594809310603
+      FreezingGlare_20: -3954420260774345628
+      FreezingGlare_21: 2891466784572795069
+      FreezingGlare_22: -2186475043921013904
+      FreezingGlare_23: 5499769764463711368
+      FreezingGlare_24: 4867410755742427540
+      FreezingGlare_25: 4623452158659563443
+      FreezingGlare_26: 8900922325137597559
+      FreezingGlare_27: 1575933330743273906
+      FreezingGlare_28: 995925712196042119
+      FreezingGlare_29: 1110013039317381134
+      FreezingGlare_3: 2131375618471638804
+      FreezingGlare_30: 3497163371448620105
+      FreezingGlare_31: -1470348719452361163
+      FreezingGlare_32: 6097058213428327575
+      FreezingGlare_33: 7759347427214516807
+      FreezingGlare_34: -1910470923034188742
+      FreezingGlare_35: 1481996596935075010
+      FreezingGlare_36: -5312280967933306202
+      FreezingGlare_37: 6560501619297311880
+      FreezingGlare_38: -657008323965899909
+      FreezingGlare_4: 5461831745136231087
+      FreezingGlare_5: -1020226985901705306
+      FreezingGlare_6: 2551148976069709394
+      FreezingGlare_7: -1747584994273734502
+      FreezingGlare_8: -2006509669687721826
+      FreezingGlare_9: -2571819022873780147
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

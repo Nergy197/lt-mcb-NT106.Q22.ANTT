@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: a384b94124c0d48f99c6ac9d3f1bdbba
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -443213553932285581
+    second: PRAS- Sparkling Aria_0
+  - first:
+      213: -1422101339208296860
+    second: PRAS- Sparkling Aria_1
+  - first:
+      213: -3008339925704421488
+    second: PRAS- Sparkling Aria_2
+  - first:
+      213: -6832517338098706079
+    second: PRAS- Sparkling Aria_3
+  - first:
+      213: -5683930107632064345
+    second: PRAS- Sparkling Aria_4
+  - first:
+      213: -4784571950838111579
+    second: PRAS- Sparkling Aria_5
+  - first:
+      213: 1926817101151485886
+    second: PRAS- Sparkling Aria_6
+  - first:
+      213: -1219524517261672586
+    second: PRAS- Sparkling Aria_7
+  - first:
+      213: -19131858487988494
+    second: PRAS- Sparkling Aria_8
+  - first:
+      213: 4116145281188108637
+    second: PRAS- Sparkling Aria_9
+  - first:
+      213: -1121241334999120678
+    second: PRAS- Sparkling Aria_10
+  - first:
+      213: -7646843871643857939
+    second: PRAS- Sparkling Aria_11
+  - first:
+      213: 8560332088151030781
+    second: PRAS- Sparkling Aria_12
+  - first:
+      213: -8802221915123364352
+    second: PRAS- Sparkling Aria_13
+  - first:
+      213: 6123888911608111809
+    second: PRAS- Sparkling Aria_14
+  - first:
+      213: 2777220292101724821
+    second: PRAS- Sparkling Aria_15
+  - first:
+      213: 4716296119920754839
+    second: PRAS- Sparkling Aria_16
+  - first:
+      213: -7537419528985734047
+    second: PRAS- Sparkling Aria_17
+  - first:
+      213: -5514162580474092407
+    second: PRAS- Sparkling Aria_18
+  - first:
+      213: 319528949604412840
+    second: PRAS- Sparkling Aria_19
+  - first:
+      213: 2533770744085843998
+    second: PRAS- Sparkling Aria_20
+  - first:
+      213: 396899610220160861
+    second: PRAS- Sparkling Aria_21
+  - first:
+      213: -554032804548821053
+    second: PRAS- Sparkling Aria_22
+  - first:
+      213: 7044455789261557634
+    second: PRAS- Sparkling Aria_23
+  - first:
+      213: -2943149887339960009
+    second: PRAS- Sparkling Aria_24
+  - first:
+      213: 1184221452070651347
+    second: PRAS- Sparkling Aria_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 653
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3794a36fe9369d9f0800000000000000
+      internalID: -443213553932285581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_1
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 649
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 466d1e9dd5ea34ce0800000000000000
+      internalID: -1422101339208296860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_2
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 649
+        width: 24
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09f43c4c6ca3046d0800000000000000
+      internalID: -3008339925704421488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_3
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 649
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169dde46ea50e21a0800000000000000
+      internalID: -6832517338098706079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_4
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 651
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a8617e8eaf9e11b0800000000000000
+      internalID: -5683930107632064345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 457
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a22ff31929c99db0800000000000000
+      internalID: -4784571950838111579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_6
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 473
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf384dd1fd6dba10800000000000000
+      internalID: 1926817101151485886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_7
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 469
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67ffcb1b9e0631fe0800000000000000
+      internalID: -1219524517261672586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_8
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 457
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe2ee21da70cbff0800000000000000
+      internalID: -19131858487988494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_9
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 453
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d591e11335c7f1930800000000000000
+      internalID: 4116145281188108637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_10
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 307
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad484e742fc8070f0800000000000000
+      internalID: -1121241334999120678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_11
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 313
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deb8bc17304f0e590800000000000000
+      internalID: -7646843871643857939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_12
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 305
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfbbe99fda86cc670800000000000000
+      internalID: 8560332088151030781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_13
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 217
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00ec9eaedc938d580800000000000000
+      internalID: -8802221915123364352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_14
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 287
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c2ea54f48c6cf450800000000000000
+      internalID: 6123888911608111809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_15
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 279
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59adabd242baa8620800000000000000
+      internalID: 2777220292101724821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_16
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 285
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7900e634556a37140800000000000000
+      internalID: 4716296119920754839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_17
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 285
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16496b39fd4b56790800000000000000
+      internalID: -7537419528985734047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_18
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 283
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 984271d2952c973b0800000000000000
+      internalID: -5514162580474092407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_19
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 263
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8adef9003e13f6400800000000000000
+      internalID: 319528949604412840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_20
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 265
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1093873113c92320800000000000000
+      internalID: 2533770744085843998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_21
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 257
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d57e9a6b712128500800000000000000
+      internalID: 396899610220160861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_22
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 263
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cf34f2891eaf48f0800000000000000
+      internalID: -554032804548821053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_23
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 91
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f01ea973fe2c160800000000000000
+      internalID: 7044455789261557634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_24
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 89
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 739ee5c55c4d727d0800000000000000
+      internalID: -2943149887339960009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Sparkling Aria_25
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 89
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d5811ae2233f6010800000000000000
+      internalID: 1184221452070651347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Sparkling Aria_0: -443213553932285581
+      PRAS- Sparkling Aria_1: -1422101339208296860
+      PRAS- Sparkling Aria_10: -1121241334999120678
+      PRAS- Sparkling Aria_11: -7646843871643857939
+      PRAS- Sparkling Aria_12: 8560332088151030781
+      PRAS- Sparkling Aria_13: -8802221915123364352
+      PRAS- Sparkling Aria_14: 6123888911608111809
+      PRAS- Sparkling Aria_15: 2777220292101724821
+      PRAS- Sparkling Aria_16: 4716296119920754839
+      PRAS- Sparkling Aria_17: -7537419528985734047
+      PRAS- Sparkling Aria_18: -5514162580474092407
+      PRAS- Sparkling Aria_19: 319528949604412840
+      PRAS- Sparkling Aria_2: -3008339925704421488
+      PRAS- Sparkling Aria_20: 2533770744085843998
+      PRAS- Sparkling Aria_21: 396899610220160861
+      PRAS- Sparkling Aria_22: -554032804548821053
+      PRAS- Sparkling Aria_23: 7044455789261557634
+      PRAS- Sparkling Aria_24: -2943149887339960009
+      PRAS- Sparkling Aria_25: 1184221452070651347
+      PRAS- Sparkling Aria_3: -6832517338098706079
+      PRAS- Sparkling Aria_4: -5683930107632064345
+      PRAS- Sparkling Aria_5: -4784571950838111579
+      PRAS- Sparkling Aria_6: 1926817101151485886
+      PRAS- Sparkling Aria_7: -1219524517261672586
+      PRAS- Sparkling Aria_8: -19131858487988494
+      PRAS- Sparkling Aria_9: 4116145281188108637
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

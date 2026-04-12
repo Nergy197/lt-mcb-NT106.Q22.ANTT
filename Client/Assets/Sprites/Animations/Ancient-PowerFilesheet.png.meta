@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: 4a305e4fb91d0446cbaf5a3a8ee99792
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6093558253620313419
+    second: Ancient-PowerFilesheet_0
+  - first:
+      213: -77043916578444375
+    second: Ancient-PowerFilesheet_1
+  - first:
+      213: -4964364230698958954
+    second: Ancient-PowerFilesheet_2
+  - first:
+      213: 8971377291950190760
+    second: Ancient-PowerFilesheet_3
+  - first:
+      213: 1710273034100322664
+    second: Ancient-PowerFilesheet_4
+  - first:
+      213: -1566615594801499195
+    second: Ancient-PowerFilesheet_5
+  - first:
+      213: 3991612262628544364
+    second: Ancient-PowerFilesheet_6
+  - first:
+      213: 741112379758611496
+    second: Ancient-PowerFilesheet_7
+  - first:
+      213: -344322423304018842
+    second: Ancient-PowerFilesheet_8
+  - first:
+      213: 5407049167547102929
+    second: Ancient-PowerFilesheet_9
+  - first:
+      213: -8040952418539062546
+    second: Ancient-PowerFilesheet_10
+  - first:
+      213: 621296775169563360
+    second: Ancient-PowerFilesheet_11
+  - first:
+      213: 5227137915840794118
+    second: Ancient-PowerFilesheet_12
+  - first:
+      213: 6058701714927322963
+    second: Ancient-PowerFilesheet_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ancient-PowerFilesheet_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 462
+        width: 76
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b2cfcaad055f6ba0800000000000000
+      internalID: -6093558253620313419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient-PowerFilesheet_1
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 460
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9abac3057f84eeef0800000000000000
+      internalID: -77043916578444375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient-PowerFilesheet_2
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 460
+        width: 78
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69f7885d8090b1bb0800000000000000
+      internalID: -4964364230698958954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient-PowerFilesheet_3
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 469
+        width: 78
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a072b85d1cb08c70800000000000000
+      internalID: 8971377291950190760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient-PowerFilesheet_4
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 470
+        width: 74
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 861ba7a534c1cb710800000000000000
+      internalID: 1710273034100322664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient-PowerFilesheet_5
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 258
+        width: 74
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c3f444ba63424ae0800000000000000
+      internalID: -1566615594801499195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient-PowerFilesheet_6
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 252
+        width: 72
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6f4113543e056730800000000000000
+      internalID: 3991612262628544364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient-PowerFilesheet_7
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 256
+        width: 74
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c082668c5f84a00800000000000000
+      internalID: 741112379758611496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient-PowerFilesheet_8
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 255
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66423ce8498b83bf0800000000000000
+      internalID: -344322423304018842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient-PowerFilesheet_9
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 265
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d677b2f192b90b40800000000000000
+      internalID: 5407049167547102929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient-PowerFilesheet_10
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 84
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea392dc06cc86090800000000000000
+      internalID: -8040952418539062546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient-PowerFilesheet_11
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 76
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ead310102a4f9800800000000000000
+      internalID: 621296775169563360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient-PowerFilesheet_12
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 80
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60e8aa96d368a8840800000000000000
+      internalID: 5227137915840794118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ancient-PowerFilesheet_13
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 78
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3570b4efb15d41450800000000000000
+      internalID: 6058701714927322963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ancient-PowerFilesheet_0: -6093558253620313419
+      Ancient-PowerFilesheet_1: -77043916578444375
+      Ancient-PowerFilesheet_10: -8040952418539062546
+      Ancient-PowerFilesheet_11: 621296775169563360
+      Ancient-PowerFilesheet_12: 5227137915840794118
+      Ancient-PowerFilesheet_13: 6058701714927322963
+      Ancient-PowerFilesheet_2: -4964364230698958954
+      Ancient-PowerFilesheet_3: 8971377291950190760
+      Ancient-PowerFilesheet_4: 1710273034100322664
+      Ancient-PowerFilesheet_5: -1566615594801499195
+      Ancient-PowerFilesheet_6: 3991612262628544364
+      Ancient-PowerFilesheet_7: 741112379758611496
+      Ancient-PowerFilesheet_8: -344322423304018842
+      Ancient-PowerFilesheet_9: 5407049167547102929
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

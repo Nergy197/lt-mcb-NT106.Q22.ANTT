@@ -1,0 +1,1456 @@
+fileFormatVersion: 2
+guid: 2ba6699b9edc8443696e5fc3e815bb68
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4453984324130621918
+    second: GEN8- DragonEnergy_0
+  - first:
+      213: -4647180122560899763
+    second: GEN8- DragonEnergy_1
+  - first:
+      213: 9164497811471276366
+    second: GEN8- DragonEnergy_2
+  - first:
+      213: 8831808008883986319
+    second: GEN8- DragonEnergy_3
+  - first:
+      213: 4944437829212021848
+    second: GEN8- DragonEnergy_4
+  - first:
+      213: -6257106090441607065
+    second: GEN8- DragonEnergy_5
+  - first:
+      213: -2030718818216577298
+    second: GEN8- DragonEnergy_6
+  - first:
+      213: 3357219815080022093
+    second: GEN8- DragonEnergy_7
+  - first:
+      213: -1163276340952769028
+    second: GEN8- DragonEnergy_8
+  - first:
+      213: -5147042981943375595
+    second: GEN8- DragonEnergy_9
+  - first:
+      213: -6123015061594097760
+    second: GEN8- DragonEnergy_10
+  - first:
+      213: -7492258648516936970
+    second: GEN8- DragonEnergy_11
+  - first:
+      213: 1508200347077035381
+    second: GEN8- DragonEnergy_12
+  - first:
+      213: 4418901361349942656
+    second: GEN8- DragonEnergy_13
+  - first:
+      213: -8473039257490562184
+    second: GEN8- DragonEnergy_14
+  - first:
+      213: 5107299058123891225
+    second: GEN8- DragonEnergy_15
+  - first:
+      213: 3632898268863144026
+    second: GEN8- DragonEnergy_16
+  - first:
+      213: 4596567044726487519
+    second: GEN8- DragonEnergy_17
+  - first:
+      213: 1950796125400638433
+    second: GEN8- DragonEnergy_18
+  - first:
+      213: -6490892290583813950
+    second: GEN8- DragonEnergy_19
+  - first:
+      213: 3928878472845306081
+    second: GEN8- DragonEnergy_20
+  - first:
+      213: -2836166093088055247
+    second: GEN8- DragonEnergy_21
+  - first:
+      213: 3833024035219631019
+    second: GEN8- DragonEnergy_22
+  - first:
+      213: 5352582994784466602
+    second: GEN8- DragonEnergy_23
+  - first:
+      213: -5803822689668944487
+    second: GEN8- DragonEnergy_24
+  - first:
+      213: 289975479270813475
+    second: GEN8- DragonEnergy_25
+  - first:
+      213: -8133716237822371262
+    second: GEN8- DragonEnergy_26
+  - first:
+      213: 6736227651876492038
+    second: GEN8- DragonEnergy_27
+  - first:
+      213: 5986211816277164460
+    second: GEN8- DragonEnergy_28
+  - first:
+      213: -3428947341697306577
+    second: GEN8- DragonEnergy_29
+  - first:
+      213: -6706154852869746394
+    second: GEN8- DragonEnergy_30
+  - first:
+      213: 1710957577279714674
+    second: GEN8- DragonEnergy_31
+  - first:
+      213: -518121523494540043
+    second: GEN8- DragonEnergy_32
+  - first:
+      213: -8639849426337082192
+    second: GEN8- DragonEnergy_33
+  - first:
+      213: -744486842238215892
+    second: GEN8- DragonEnergy_34
+  - first:
+      213: 8923444356846063510
+    second: GEN8- DragonEnergy_35
+  - first:
+      213: 4046192839925890748
+    second: GEN8- DragonEnergy_36
+  - first:
+      213: -8952480594675585848
+    second: GEN8- DragonEnergy_37
+  - first:
+      213: 8192585901220366722
+    second: GEN8- DragonEnergy_38
+  - first:
+      213: 4336196309578687670
+    second: GEN8- DragonEnergy_39
+  - first:
+      213: 6641508188438059759
+    second: GEN8- DragonEnergy_40
+  - first:
+      213: -3264034103599397245
+    second: GEN8- DragonEnergy_41
+  - first:
+      213: 6108917344627414155
+    second: GEN8- DragonEnergy_42
+  - first:
+      213: -7378488736055197409
+    second: GEN8- DragonEnergy_43
+  - first:
+      213: 5493743287705565036
+    second: GEN8- DragonEnergy_44
+  - first:
+      213: 549046714834197249
+    second: GEN8- DragonEnergy_45
+  - first:
+      213: -9197002585404882253
+    second: GEN8- DragonEnergy_46
+  - first:
+      213: -1841511383633570040
+    second: GEN8- DragonEnergy_47
+  - first:
+      213: -7834939767537625417
+    second: GEN8- DragonEnergy_48
+  - first:
+      213: -1791809834433256288
+    second: GEN8- DragonEnergy_49
+  - first:
+      213: -2372106411079386106
+    second: GEN8- DragonEnergy_50
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 429
+        width: 102
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 226390dfad44032c0800000000000000
+      internalID: -4453984324130621918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_1
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 430
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d455083ec46e18fb0800000000000000
+      internalID: -4647180122560899763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_2
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 433
+        width: 92
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4917953436de2f70800000000000000
+      internalID: 9164497811471276366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_3
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 502
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8fdaf55792e09a70800000000000000
+      internalID: 8831808008883986319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_4
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 417
+        width: 106
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 854af28420c2e9440800000000000000
+      internalID: 4944437829212021848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_5
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 499
+        width: 33
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7687b4d892b4a29a0800000000000000
+      internalID: -6257106090441607065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_6
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 426
+        width: 130
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee6ff797eff61d3e0800000000000000
+      internalID: -2030718818216577298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_7
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 417
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d405fbe62ad379e20800000000000000
+      internalID: 3357219815080022093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_8
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 416
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfdd4e9c4563bdfe0800000000000000
+      internalID: -1163276340952769028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_9
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 422
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51909999da70298b0800000000000000
+      internalID: -5147042981943375595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 229
+        width: 131
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a7315b1e3ea60ba0800000000000000
+      internalID: -6123015061594097760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_11
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 235
+        width: 107
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fabcc17476260890800000000000000
+      internalID: -7492258648516936970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_12
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 215
+        width: 144
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 575c5a199343ee410800000000000000
+      internalID: 1508200347077035381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_13
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 205
+        width: 174
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08dd0c43067135d30800000000000000
+      internalID: 4418901361349942656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_14
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 209
+        width: 177
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 873e559ffa7b96a80800000000000000
+      internalID: -8473039257490562184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_15
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 204
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91269290f65c0e640800000000000000
+      internalID: 5107299058123891225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_16
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 202
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5028b44ab5aa6230800000000000000
+      internalID: 3632898268863144026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_17
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 13
+        width: 167
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd9703f9f594acf30800000000000000
+      internalID: 4596567044726487519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_18
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 26
+        width: 150
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e3a6b38dbe921b10800000000000000
+      internalID: 1950796125400638433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_19
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 18
+        width: 166
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c02e681ad7bbe5a0800000000000000
+      internalID: -6490892290583813950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_20
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 16
+        width: 144
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e8af9ba72e268630800000000000000
+      internalID: 3928878472845306081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_21
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 164
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 130aa7907f9e3a8d0800000000000000
+      internalID: -2836166093088055247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_22
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 120
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: babecc24d03a13530800000000000000
+      internalID: 3833024035219631019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_23
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 126
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa6bce2efd1384a40800000000000000
+      internalID: 5352582994784466602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_24
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 124
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99d2ee2830ea47fa0800000000000000
+      internalID: -5803822689668944487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_25
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 111
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32fa28b7923360400800000000000000
+      internalID: 289975479270813475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_26
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 126
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a55cc0d2c3f1f80800000000000000
+      internalID: -8133716237822371262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_27
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 112
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 603134cfb53eb7d50800000000000000
+      internalID: 6736227651876492038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_28
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 76
+        width: 82
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca1427b3eeb431350800000000000000
+      internalID: 5986211816277164460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_29
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 127
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f20bc906f8ee960d0800000000000000
+      internalID: -3428947341697306577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_30
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 126
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 621dfe921b3fee2a0800000000000000
+      internalID: -6706154852869746394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_31
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 48
+        width: 68
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 275358bf9da8eb710800000000000000
+      internalID: 1710957577279714674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_32
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 107
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fcaf9138334fc8f0800000000000000
+      internalID: -518121523494540043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_33
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 76
+        width: 21
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b4d05ef8b6191880800000000000000
+      internalID: -8639849426337082192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_34
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 76
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c295074592d0ba5f0800000000000000
+      internalID: -744486842238215892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_35
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 48
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69f06c63d5176db70800000000000000
+      internalID: 8923444356846063510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_36
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 34
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbef28443f6f62830800000000000000
+      internalID: 4046192839925890748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_37
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 64
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cca8c7d45662c380800000000000000
+      internalID: -8952480594675585848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_38
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 63
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2890d129879e1b170800000000000000
+      internalID: 8192585901220366722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_39
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 45
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b42cc4c1934d2c30800000000000000
+      internalID: 4336196309578687670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_40
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 39
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fead2b852806b2c50800000000000000
+      internalID: 6641508188438059759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_41
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 36
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3868230c642d3b2d0800000000000000
+      internalID: -3264034103599397245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_42
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 29
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b845db065fb37c450800000000000000
+      internalID: 6108917344627414155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_43
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 23
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f11853466975a9990800000000000000
+      internalID: -7378488736055197409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_44
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 23
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6770eeb962bd3c40800000000000000
+      internalID: 5493743287705565036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_45
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 11
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10b99c2041b9e9700800000000000000
+      internalID: 549046714834197249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_46
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 29
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2c79a50eead5080800000000000000
+      internalID: -9197002585404882253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_47
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 9
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 807dea04723a176e0800000000000000
+      internalID: -1841511383633570040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_48
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 9
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b6965feac3b44390800000000000000
+      internalID: -7834939767537625417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_49
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 9
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a4ed81f2763227e0800000000000000
+      internalID: -1791809834433256288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- DragonEnergy_50
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 9
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60cbf2e79c5941fd0800000000000000
+      internalID: -2372106411079386106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GEN8- DragonEnergy_0: -4453984324130621918
+      GEN8- DragonEnergy_1: -4647180122560899763
+      GEN8- DragonEnergy_10: -6123015061594097760
+      GEN8- DragonEnergy_11: -7492258648516936970
+      GEN8- DragonEnergy_12: 1508200347077035381
+      GEN8- DragonEnergy_13: 4418901361349942656
+      GEN8- DragonEnergy_14: -8473039257490562184
+      GEN8- DragonEnergy_15: 5107299058123891225
+      GEN8- DragonEnergy_16: 3632898268863144026
+      GEN8- DragonEnergy_17: 4596567044726487519
+      GEN8- DragonEnergy_18: 1950796125400638433
+      GEN8- DragonEnergy_19: -6490892290583813950
+      GEN8- DragonEnergy_2: 9164497811471276366
+      GEN8- DragonEnergy_20: 3928878472845306081
+      GEN8- DragonEnergy_21: -2836166093088055247
+      GEN8- DragonEnergy_22: 3833024035219631019
+      GEN8- DragonEnergy_23: 5352582994784466602
+      GEN8- DragonEnergy_24: -5803822689668944487
+      GEN8- DragonEnergy_25: 289975479270813475
+      GEN8- DragonEnergy_26: -8133716237822371262
+      GEN8- DragonEnergy_27: 6736227651876492038
+      GEN8- DragonEnergy_28: 5986211816277164460
+      GEN8- DragonEnergy_29: -3428947341697306577
+      GEN8- DragonEnergy_3: 8831808008883986319
+      GEN8- DragonEnergy_30: -6706154852869746394
+      GEN8- DragonEnergy_31: 1710957577279714674
+      GEN8- DragonEnergy_32: -518121523494540043
+      GEN8- DragonEnergy_33: -8639849426337082192
+      GEN8- DragonEnergy_34: -744486842238215892
+      GEN8- DragonEnergy_35: 8923444356846063510
+      GEN8- DragonEnergy_36: 4046192839925890748
+      GEN8- DragonEnergy_37: -8952480594675585848
+      GEN8- DragonEnergy_38: 8192585901220366722
+      GEN8- DragonEnergy_39: 4336196309578687670
+      GEN8- DragonEnergy_4: 4944437829212021848
+      GEN8- DragonEnergy_40: 6641508188438059759
+      GEN8- DragonEnergy_41: -3264034103599397245
+      GEN8- DragonEnergy_42: 6108917344627414155
+      GEN8- DragonEnergy_43: -7378488736055197409
+      GEN8- DragonEnergy_44: 5493743287705565036
+      GEN8- DragonEnergy_45: 549046714834197249
+      GEN8- DragonEnergy_46: -9197002585404882253
+      GEN8- DragonEnergy_47: -1841511383633570040
+      GEN8- DragonEnergy_48: -7834939767537625417
+      GEN8- DragonEnergy_49: -1791809834433256288
+      GEN8- DragonEnergy_5: -6257106090441607065
+      GEN8- DragonEnergy_50: -2372106411079386106
+      GEN8- DragonEnergy_6: -2030718818216577298
+      GEN8- DragonEnergy_7: 3357219815080022093
+      GEN8- DragonEnergy_8: -1163276340952769028
+      GEN8- DragonEnergy_9: -5147042981943375595
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

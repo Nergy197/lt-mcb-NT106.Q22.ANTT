@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: b8a9a838d3445441986f20a636023194
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1658897050016825673
+    second: PRAS- Venom Drench_0
+  - first:
+      213: -6912437482354584506
+    second: PRAS- Venom Drench_1
+  - first:
+      213: 1059874724372332429
+    second: PRAS- Venom Drench_2
+  - first:
+      213: -3570031784637967996
+    second: PRAS- Venom Drench_3
+  - first:
+      213: 8786315214076973897
+    second: PRAS- Venom Drench_4
+  - first:
+      213: -3545387544162277408
+    second: PRAS- Venom Drench_5
+  - first:
+      213: 2400641421029293017
+    second: PRAS- Venom Drench_6
+  - first:
+      213: 2646537733864855235
+    second: PRAS- Venom Drench_7
+  - first:
+      213: -2821099438055249330
+    second: PRAS- Venom Drench_8
+  - first:
+      213: -2714306430543712587
+    second: PRAS- Venom Drench_9
+  - first:
+      213: 267749933421243948
+    second: PRAS- Venom Drench_10
+  - first:
+      213: 813460512298296995
+    second: PRAS- Venom Drench_11
+  - first:
+      213: 3645201699308492785
+    second: PRAS- Venom Drench_12
+  - first:
+      213: -2831035001803964741
+    second: PRAS- Venom Drench_13
+  - first:
+      213: 3944705709373866117
+    second: PRAS- Venom Drench_14
+  - first:
+      213: 5527577907364344481
+    second: PRAS- Venom Drench_15
+  - first:
+      213: -9110149285417051777
+    second: PRAS- Venom Drench_16
+  - first:
+      213: -2361379816451822236
+    second: PRAS- Venom Drench_17
+  - first:
+      213: -1034016768757101792
+    second: PRAS- Venom Drench_18
+  - first:
+      213: -785997959219920611
+    second: PRAS- Venom Drench_19
+  - first:
+      213: -7920582701646594620
+    second: PRAS- Venom Drench_20
+  - first:
+      213: 4349443847096057434
+    second: PRAS- Venom Drench_21
+  - first:
+      213: -5177647757998054916
+    second: PRAS- Venom Drench_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Venom Drench_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 269
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bebdc61ce96af8e0800000000000000
+      internalID: -1658897050016825673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venom Drench_1
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 261
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 644d824cbb61210a0800000000000000
+      internalID: -6912437482354584506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venom Drench_2
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 301
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8fb0a4427e65be00800000000000000
+      internalID: 1059874724372332429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venom Drench_3
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 301
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 481dcc7b103b47ec0800000000000000
+      internalID: -3570031784637967996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venom Drench_4
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 291
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9431ba3a2234fe970800000000000000
+      internalID: 8786315214076973897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venom Drench_5
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 295
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e7ec1710d04ccec0800000000000000
+      internalID: -3545387544162277408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venom Drench_6
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 277
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9db3a8d37aac05120800000000000000
+      internalID: 2400641421029293017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venom Drench_7
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 273
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c69ea70c046ab420800000000000000
+      internalID: 2646537733864855235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venom Drench_8
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 277
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4aa9a6020179d8d0800000000000000
+      internalID: -2821099438055249330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venom Drench_9
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 303
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5be22e3bea8d45ad0800000000000000
+      internalID: -2714306430543712587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venom Drench_10
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 295
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2e2536552d37b300800000000000000
+      internalID: 267749933421243948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venom Drench_11
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 301
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a6e85aa60ef94b00800000000000000
+      internalID: 813460512298296995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venom Drench_12
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 269
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f7dee5e1ab569230800000000000000
+      internalID: 3645201699308492785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venom Drench_13
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 293
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbef6c25aa426b8d0800000000000000
+      internalID: -2831035001803964741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venom Drench_14
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 261
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5804fa651f86eb630800000000000000
+      internalID: 3944705709373866117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venom Drench_15
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 295
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a2bfb402d6e5bc40800000000000000
+      internalID: 5527577907364344481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venom Drench_16
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 285
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7910f71e7f329180800000000000000
+      internalID: -9110149285417051777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venom Drench_17
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 261
+        width: 204
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46dac9c6191ba3fd0800000000000000
+      internalID: -2361379816451822236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venom Drench_18
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 269
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02b8f6e2a3f66a1f0800000000000000
+      internalID: -1034016768757101792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venom Drench_19
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 265
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d11c38e35039715f0800000000000000
+      internalID: -785997959219920611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venom Drench_20
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 265
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cd30467fff641290800000000000000
+      internalID: -7920582701646594620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venom Drench_21
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 269
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e3ba472245c5c30800000000000000
+      internalID: 4349443847096057434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venom Drench_22
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 79
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf1ad64ebcc4528b0800000000000000
+      internalID: -5177647757998054916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Venom Drench_0: -1658897050016825673
+      PRAS- Venom Drench_1: -6912437482354584506
+      PRAS- Venom Drench_10: 267749933421243948
+      PRAS- Venom Drench_11: 813460512298296995
+      PRAS- Venom Drench_12: 3645201699308492785
+      PRAS- Venom Drench_13: -2831035001803964741
+      PRAS- Venom Drench_14: 3944705709373866117
+      PRAS- Venom Drench_15: 5527577907364344481
+      PRAS- Venom Drench_16: -9110149285417051777
+      PRAS- Venom Drench_17: -2361379816451822236
+      PRAS- Venom Drench_18: -1034016768757101792
+      PRAS- Venom Drench_19: -785997959219920611
+      PRAS- Venom Drench_2: 1059874724372332429
+      PRAS- Venom Drench_20: -7920582701646594620
+      PRAS- Venom Drench_21: 4349443847096057434
+      PRAS- Venom Drench_22: -5177647757998054916
+      PRAS- Venom Drench_3: -3570031784637967996
+      PRAS- Venom Drench_4: 8786315214076973897
+      PRAS- Venom Drench_5: -3545387544162277408
+      PRAS- Venom Drench_6: 2400641421029293017
+      PRAS- Venom Drench_7: 2646537733864855235
+      PRAS- Venom Drench_8: -2821099438055249330
+      PRAS- Venom Drench_9: -2714306430543712587
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

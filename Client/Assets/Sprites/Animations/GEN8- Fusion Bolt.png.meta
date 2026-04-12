@@ -1,0 +1,1456 @@
+fileFormatVersion: 2
+guid: e7d1ac320279f45c3b008ea0c7b0c745
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4286959298777392838
+    second: GEN8- Fusion Bolt_0
+  - first:
+      213: -6143381973732172182
+    second: GEN8- Fusion Bolt_1
+  - first:
+      213: 5160255847648364509
+    second: GEN8- Fusion Bolt_2
+  - first:
+      213: 5769268643136444805
+    second: GEN8- Fusion Bolt_3
+  - first:
+      213: 6000878843048941150
+    second: GEN8- Fusion Bolt_4
+  - first:
+      213: 7427339198578715367
+    second: GEN8- Fusion Bolt_5
+  - first:
+      213: -6897339412840196479
+    second: GEN8- Fusion Bolt_6
+  - first:
+      213: -5516567880504920979
+    second: GEN8- Fusion Bolt_7
+  - first:
+      213: -7127461902312429123
+    second: GEN8- Fusion Bolt_8
+  - first:
+      213: 5803048468838308990
+    second: GEN8- Fusion Bolt_9
+  - first:
+      213: -2444196490743139889
+    second: GEN8- Fusion Bolt_10
+  - first:
+      213: 2515580852970164576
+    second: GEN8- Fusion Bolt_11
+  - first:
+      213: -6790258744133942147
+    second: GEN8- Fusion Bolt_12
+  - first:
+      213: 5165132249768169569
+    second: GEN8- Fusion Bolt_13
+  - first:
+      213: 1299264125274665054
+    second: GEN8- Fusion Bolt_14
+  - first:
+      213: 6280611772773846942
+    second: GEN8- Fusion Bolt_15
+  - first:
+      213: -4628478971191155392
+    second: GEN8- Fusion Bolt_16
+  - first:
+      213: -1665975460239126649
+    second: GEN8- Fusion Bolt_17
+  - first:
+      213: 157199860608995731
+    second: GEN8- Fusion Bolt_18
+  - first:
+      213: -326198511468938922
+    second: GEN8- Fusion Bolt_19
+  - first:
+      213: 8142925480974893036
+    second: GEN8- Fusion Bolt_20
+  - first:
+      213: -4435167297340017756
+    second: GEN8- Fusion Bolt_21
+  - first:
+      213: 8012029270625653816
+    second: GEN8- Fusion Bolt_22
+  - first:
+      213: 5306127064416461773
+    second: GEN8- Fusion Bolt_23
+  - first:
+      213: 4597864801556106264
+    second: GEN8- Fusion Bolt_24
+  - first:
+      213: -7352944738111782054
+    second: GEN8- Fusion Bolt_25
+  - first:
+      213: 6356428728691832539
+    second: GEN8- Fusion Bolt_26
+  - first:
+      213: 4321347805737567533
+    second: GEN8- Fusion Bolt_27
+  - first:
+      213: 3425130805627349228
+    second: GEN8- Fusion Bolt_28
+  - first:
+      213: 5465317302998500873
+    second: GEN8- Fusion Bolt_29
+  - first:
+      213: -483835811822312008
+    second: GEN8- Fusion Bolt_30
+  - first:
+      213: -2037601547414995415
+    second: GEN8- Fusion Bolt_31
+  - first:
+      213: 6756148158379003170
+    second: GEN8- Fusion Bolt_32
+  - first:
+      213: 7972048220288440496
+    second: GEN8- Fusion Bolt_33
+  - first:
+      213: 127080544333060683
+    second: GEN8- Fusion Bolt_34
+  - first:
+      213: -5570409056560276950
+    second: GEN8- Fusion Bolt_35
+  - first:
+      213: -6991430238581586467
+    second: GEN8- Fusion Bolt_36
+  - first:
+      213: -5176372399122698605
+    second: GEN8- Fusion Bolt_37
+  - first:
+      213: -5878733200658859439
+    second: GEN8- Fusion Bolt_38
+  - first:
+      213: -5681462318514286339
+    second: GEN8- Fusion Bolt_39
+  - first:
+      213: -8253387102616010468
+    second: GEN8- Fusion Bolt_40
+  - first:
+      213: -999047759821009089
+    second: GEN8- Fusion Bolt_41
+  - first:
+      213: -48689992435801641
+    second: GEN8- Fusion Bolt_42
+  - first:
+      213: -8788783503651244348
+    second: GEN8- Fusion Bolt_43
+  - first:
+      213: -7757913271841981547
+    second: GEN8- Fusion Bolt_44
+  - first:
+      213: 8763235366577899029
+    second: GEN8- Fusion Bolt_45
+  - first:
+      213: 3115763843259788699
+    second: GEN8- Fusion Bolt_46
+  - first:
+      213: 8498195234123524645
+    second: GEN8- Fusion Bolt_47
+  - first:
+      213: 5630888414352508974
+    second: GEN8- Fusion Bolt_48
+  - first:
+      213: 6374631431609464267
+    second: GEN8- Fusion Bolt_49
+  - first:
+      213: -7790397186727896927
+    second: GEN8- Fusion Bolt_50
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 429
+        width: 102
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c62f2ad4c65e7b30800000000000000
+      internalID: 4286959298777392838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_1
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 430
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ed728d4a25ebaa0800000000000000
+      internalID: -6143381973732172182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_2
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 433
+        width: 92
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd7863d6a59ec9740800000000000000
+      internalID: 5160255847648364509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_3
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 502
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58992f7934f801050800000000000000
+      internalID: 5769268643136444805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_4
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 417
+        width: 106
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e56d6148387674350800000000000000
+      internalID: 6000878843048941150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_5
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 499
+        width: 33
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea6e9d36a5331760800000000000000
+      internalID: 7427339198578715367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_6
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 426
+        width: 130
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 186db52095ab740a0800000000000000
+      internalID: -6897339412840196479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_7
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 417
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d64bc2f9db63173b0800000000000000
+      internalID: -5516567880504920979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_8
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 416
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db9a98aa92b261d90800000000000000
+      internalID: -7127461902312429123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_9
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 422
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7c5b7726d1988050800000000000000
+      internalID: 5803048468838308990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 229
+        width: 131
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc1bff7dd38741ed0800000000000000
+      internalID: -2444196490743139889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_11
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 235
+        width: 107
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0619f09257329e220800000000000000
+      internalID: 2515580852970164576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_12
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 215
+        width: 144
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7408e606a724c1a0800000000000000
+      internalID: -6790258744133942147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_13
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 205
+        width: 174
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16098554a6c3ea740800000000000000
+      internalID: 5165132249768169569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_14
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 209
+        width: 177
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50b76096d9e70210800000000000000
+      internalID: 1299264125274665054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_15
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 204
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f42589127392750800000000000000
+      internalID: 6280611772773846942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_16
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 202
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04529cff5e654cfb0800000000000000
+      internalID: -4628478971191155392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_17
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 13
+        width: 167
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78fcde7452441e8e0800000000000000
+      internalID: -1665975460239126649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_18
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 26
+        width: 150
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391175ab07c7e2200800000000000000
+      internalID: 157199860608995731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_19
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 18
+        width: 166
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 659f1ad9e2c197bf0800000000000000
+      internalID: -326198511468938922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_20
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 16
+        width: 144
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cef3cf5f49b710170800000000000000
+      internalID: 8142925480974893036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_21
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 164
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a37e9277de1372c0800000000000000
+      internalID: -4435167297340017756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_22
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 120
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8349cad0c22703f60800000000000000
+      internalID: 8012029270625653816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_23
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 126
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc321a7b37623a940800000000000000
+      internalID: 5306127064416461773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_24
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 124
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81c060e2da5eecf30800000000000000
+      internalID: 4597864801556106264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_25
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 111
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5305cfd7b715f990800000000000000
+      internalID: -7352944738111782054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_26
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 126
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd6b3cd3042963850800000000000000
+      internalID: 6356428728691832539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_27
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 112
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d25c6ef0fe288fb30800000000000000
+      internalID: 4321347805737567533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_28
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 76
+        width: 82
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce86aa21252888f20800000000000000
+      internalID: 3425130805627349228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_29
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 127
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 906850e6125b8db40800000000000000
+      internalID: 5465317302998500873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_30
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 126
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b5e7b284e11949f0800000000000000
+      internalID: -483835811822312008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_31
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 48
+        width: 68
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92efa84303cf8b3e0800000000000000
+      internalID: -2037601547414995415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_32
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 107
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d071654f8a2cd50800000000000000
+      internalID: 6756148158379003170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_33
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 76
+        width: 21
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b8d39e5e9762ae60800000000000000
+      internalID: 7972048220288440496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_34
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 76
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4ad5dee41b73c100800000000000000
+      internalID: 127080544333060683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_35
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 48
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2a1b12f97ee1b2b0800000000000000
+      internalID: -5570409056560276950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_36
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 34
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd58b6d7d3379fe90800000000000000
+      internalID: -6991430238581586467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_37
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 64
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39ea7258ab4d928b0800000000000000
+      internalID: -5176372399122698605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_38
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 63
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15afe650d4b8a6ea0800000000000000
+      internalID: -5878733200658859439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_39
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 45
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df0503c7f146721b0800000000000000
+      internalID: -5681462318514286339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_40
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 39
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1148c29824167d80800000000000000
+      internalID: -8253387102616010468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_41
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 36
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3f083a0b5ba222f0800000000000000
+      internalID: -999047759821009089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_42
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 29
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d16fb8b5b4035ff0800000000000000
+      internalID: -48689992435801641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_43
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 23
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c6fd09e7f7f70680800000000000000
+      internalID: -8788783503651244348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_44
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 23
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59bf1918bfa565490800000000000000
+      internalID: -7757913271841981547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_45
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 11
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5160404e2244d9970800000000000000
+      internalID: 8763235366577899029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_46
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 29
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9d618915ba6d3b20800000000000000
+      internalID: 3115763843259788699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_47
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 9
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52aa9d14a87afe570800000000000000
+      internalID: 8498195234123524645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_48
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 9
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e28085bdd2fe42e40800000000000000
+      internalID: 5630888414352508974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_49
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 9
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc53f17438d377850800000000000000
+      internalID: 6374631431609464267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fusion Bolt_50
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 9
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a891e1b803f2e390800000000000000
+      internalID: -7790397186727896927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GEN8- Fusion Bolt_0: 4286959298777392838
+      GEN8- Fusion Bolt_1: -6143381973732172182
+      GEN8- Fusion Bolt_10: -2444196490743139889
+      GEN8- Fusion Bolt_11: 2515580852970164576
+      GEN8- Fusion Bolt_12: -6790258744133942147
+      GEN8- Fusion Bolt_13: 5165132249768169569
+      GEN8- Fusion Bolt_14: 1299264125274665054
+      GEN8- Fusion Bolt_15: 6280611772773846942
+      GEN8- Fusion Bolt_16: -4628478971191155392
+      GEN8- Fusion Bolt_17: -1665975460239126649
+      GEN8- Fusion Bolt_18: 157199860608995731
+      GEN8- Fusion Bolt_19: -326198511468938922
+      GEN8- Fusion Bolt_2: 5160255847648364509
+      GEN8- Fusion Bolt_20: 8142925480974893036
+      GEN8- Fusion Bolt_21: -4435167297340017756
+      GEN8- Fusion Bolt_22: 8012029270625653816
+      GEN8- Fusion Bolt_23: 5306127064416461773
+      GEN8- Fusion Bolt_24: 4597864801556106264
+      GEN8- Fusion Bolt_25: -7352944738111782054
+      GEN8- Fusion Bolt_26: 6356428728691832539
+      GEN8- Fusion Bolt_27: 4321347805737567533
+      GEN8- Fusion Bolt_28: 3425130805627349228
+      GEN8- Fusion Bolt_29: 5465317302998500873
+      GEN8- Fusion Bolt_3: 5769268643136444805
+      GEN8- Fusion Bolt_30: -483835811822312008
+      GEN8- Fusion Bolt_31: -2037601547414995415
+      GEN8- Fusion Bolt_32: 6756148158379003170
+      GEN8- Fusion Bolt_33: 7972048220288440496
+      GEN8- Fusion Bolt_34: 127080544333060683
+      GEN8- Fusion Bolt_35: -5570409056560276950
+      GEN8- Fusion Bolt_36: -6991430238581586467
+      GEN8- Fusion Bolt_37: -5176372399122698605
+      GEN8- Fusion Bolt_38: -5878733200658859439
+      GEN8- Fusion Bolt_39: -5681462318514286339
+      GEN8- Fusion Bolt_4: 6000878843048941150
+      GEN8- Fusion Bolt_40: -8253387102616010468
+      GEN8- Fusion Bolt_41: -999047759821009089
+      GEN8- Fusion Bolt_42: -48689992435801641
+      GEN8- Fusion Bolt_43: -8788783503651244348
+      GEN8- Fusion Bolt_44: -7757913271841981547
+      GEN8- Fusion Bolt_45: 8763235366577899029
+      GEN8- Fusion Bolt_46: 3115763843259788699
+      GEN8- Fusion Bolt_47: 8498195234123524645
+      GEN8- Fusion Bolt_48: 5630888414352508974
+      GEN8- Fusion Bolt_49: 6374631431609464267
+      GEN8- Fusion Bolt_5: 7427339198578715367
+      GEN8- Fusion Bolt_50: -7790397186727896927
+      GEN8- Fusion Bolt_6: -6897339412840196479
+      GEN8- Fusion Bolt_7: -5516567880504920979
+      GEN8- Fusion Bolt_8: -7127461902312429123
+      GEN8- Fusion Bolt_9: 5803048468838308990
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

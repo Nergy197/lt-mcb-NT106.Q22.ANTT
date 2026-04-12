@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: 34189f37137044097a77ef8fc65502ea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1671386177762208649
+    second: GEN8- Aura Wheel Ally_0
+  - first:
+      213: 8188872523617423399
+    second: GEN8- Aura Wheel Ally_1
+  - first:
+      213: -6377595380503765903
+    second: GEN8- Aura Wheel Ally_2
+  - first:
+      213: 6300017783660896302
+    second: GEN8- Aura Wheel Ally_3
+  - first:
+      213: 1263986551235395640
+    second: GEN8- Aura Wheel Ally_4
+  - first:
+      213: 448977069038164690
+    second: GEN8- Aura Wheel Ally_5
+  - first:
+      213: -5047784795600194852
+    second: GEN8- Aura Wheel Ally_6
+  - first:
+      213: 188790517192151685
+    second: GEN8- Aura Wheel Ally_7
+  - first:
+      213: -4199741888254744069
+    second: GEN8- Aura Wheel Ally_8
+  - first:
+      213: -3804105014055592551
+    second: GEN8- Aura Wheel Ally_9
+  - first:
+      213: 8729288679065111291
+    second: GEN8- Aura Wheel Ally_10
+  - first:
+      213: -3398515463240749614
+    second: GEN8- Aura Wheel Ally_11
+  - first:
+      213: -4836074958763270527
+    second: GEN8- Aura Wheel Ally_12
+  - first:
+      213: 1029372280266414212
+    second: GEN8- Aura Wheel Ally_13
+  - first:
+      213: -7305012369339568957
+    second: GEN8- Aura Wheel Ally_14
+  - first:
+      213: -7217425494449354748
+    second: GEN8- Aura Wheel Ally_15
+  - first:
+      213: -374950224832808540
+    second: GEN8- Aura Wheel Ally_16
+  - first:
+      213: -5902000005758395339
+    second: GEN8- Aura Wheel Ally_17
+  - first:
+      213: 5610725665835139285
+    second: GEN8- Aura Wheel Ally_18
+  - first:
+      213: -8731567675931031878
+    second: GEN8- Aura Wheel Ally_19
+  - first:
+      213: 4553588650087381524
+    second: GEN8- Aura Wheel Ally_20
+  - first:
+      213: 1049643992601936537
+    second: GEN8- Aura Wheel Ally_21
+  - first:
+      213: 8230155766576566303
+    second: GEN8- Aura Wheel Ally_22
+  - first:
+      213: -7173373430758684898
+    second: GEN8- Aura Wheel Ally_23
+  - first:
+      213: 7785278648596848
+    second: GEN8- Aura Wheel Ally_24
+  - first:
+      213: 995709655229012335
+    second: GEN8- Aura Wheel Ally_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 497
+        width: 43
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98ba3009fd4f13710800000000000000
+      internalID: 1671386177762208649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_1
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 473
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7205c297c28b4a170800000000000000
+      internalID: 8188872523617423399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_2
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 457
+        width: 44
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17c96e79aca3e77a0800000000000000
+      internalID: -6377595380503765903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_3
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 449
+        width: 73
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2060c99bc82e6750800000000000000
+      internalID: 6300017783660896302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_4
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 449
+        width: 81
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 830c14b42159a8110800000000000000
+      internalID: 1263986551235395640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_5
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 257
+        width: 83
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dad058f3461b3600800000000000000
+      internalID: 448977069038164690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_6
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 257
+        width: 83
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd2f1a3097aa2f9b0800000000000000
+      internalID: -5047784795600194852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_7
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 257
+        width: 83
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5825332a9f7be9200800000000000000
+      internalID: 188790517192151685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_8
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 257
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf96f3af00587b5c0800000000000000
+      internalID: -4199741888254744069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_9
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 257
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99d1fec05aa153bc0800000000000000
+      internalID: -3804105014055592551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_10
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 65
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfac389cdc9a42970800000000000000
+      internalID: 8729288679065111291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_11
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 4
+        width: 189
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ddecd9313c06d0d0800000000000000
+      internalID: -3398515463240749614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_12
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 3
+        width: 189
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18ed0c7927fc2ecb0800000000000000
+      internalID: -4836074958763270527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_13
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 21
+        width: 149
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 488d9e292a0194e00800000000000000
+      internalID: 1029372280266414212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_14
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 116
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cc2ea524f16f9a90800000000000000
+      internalID: -7305012369339568957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_15
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 122
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4088f7a90cd86db90800000000000000
+      internalID: -7217425494449354748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_16
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 118
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a93360d1c8ebcaf0800000000000000
+      internalID: -374950224832808540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_17
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 116
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53cda60d342e71ea0800000000000000
+      internalID: -5902000005758395339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_18
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 118
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d04544244d4ddd40800000000000000
+      internalID: 5610725665835139285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_19
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 92
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab609d7e57d33d680800000000000000
+      internalID: -8731567675931031878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_20
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 110
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a75b550c8913f30800000000000000
+      internalID: 4553588650087381524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_21
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 102
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99249a766a5119e00800000000000000
+      internalID: 1049643992601936537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_22
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 76
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f10dde08013673270800000000000000
+      internalID: 8230155766576566303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_23
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 66
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e174762fede037c90800000000000000
+      internalID: -7173373430758684898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_24
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 66
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 079b3507ba8ab1000800000000000000
+      internalID: 7785278648596848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Ally_25
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 62
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f691a5be7a871dd00800000000000000
+      internalID: 995709655229012335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GEN8- Aura Wheel Ally_0: 1671386177762208649
+      GEN8- Aura Wheel Ally_1: 8188872523617423399
+      GEN8- Aura Wheel Ally_10: 8729288679065111291
+      GEN8- Aura Wheel Ally_11: -3398515463240749614
+      GEN8- Aura Wheel Ally_12: -4836074958763270527
+      GEN8- Aura Wheel Ally_13: 1029372280266414212
+      GEN8- Aura Wheel Ally_14: -7305012369339568957
+      GEN8- Aura Wheel Ally_15: -7217425494449354748
+      GEN8- Aura Wheel Ally_16: -374950224832808540
+      GEN8- Aura Wheel Ally_17: -5902000005758395339
+      GEN8- Aura Wheel Ally_18: 5610725665835139285
+      GEN8- Aura Wheel Ally_19: -8731567675931031878
+      GEN8- Aura Wheel Ally_2: -6377595380503765903
+      GEN8- Aura Wheel Ally_20: 4553588650087381524
+      GEN8- Aura Wheel Ally_21: 1049643992601936537
+      GEN8- Aura Wheel Ally_22: 8230155766576566303
+      GEN8- Aura Wheel Ally_23: -7173373430758684898
+      GEN8- Aura Wheel Ally_24: 7785278648596848
+      GEN8- Aura Wheel Ally_25: 995709655229012335
+      GEN8- Aura Wheel Ally_3: 6300017783660896302
+      GEN8- Aura Wheel Ally_4: 1263986551235395640
+      GEN8- Aura Wheel Ally_5: 448977069038164690
+      GEN8- Aura Wheel Ally_6: -5047784795600194852
+      GEN8- Aura Wheel Ally_7: 188790517192151685
+      GEN8- Aura Wheel Ally_8: -4199741888254744069
+      GEN8- Aura Wheel Ally_9: -3804105014055592551
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

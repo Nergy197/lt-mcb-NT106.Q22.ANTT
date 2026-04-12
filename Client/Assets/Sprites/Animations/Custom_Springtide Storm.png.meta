@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: 2957109a53c88451fbf58dab11c10da7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7735744649662475692
+    second: Custom_Springtide Storm_0
+  - first:
+      213: -1558946586075212660
+    second: Custom_Springtide Storm_1
+  - first:
+      213: 1573433090431893175
+    second: Custom_Springtide Storm_2
+  - first:
+      213: 4722132241323619718
+    second: Custom_Springtide Storm_3
+  - first:
+      213: -423548613278647504
+    second: Custom_Springtide Storm_4
+  - first:
+      213: -6877194922784819065
+    second: Custom_Springtide Storm_5
+  - first:
+      213: 2472963129864374880
+    second: Custom_Springtide Storm_6
+  - first:
+      213: -1592112807072411182
+    second: Custom_Springtide Storm_7
+  - first:
+      213: 5763837975948628148
+    second: Custom_Springtide Storm_8
+  - first:
+      213: 1515117587073791608
+    second: Custom_Springtide Storm_9
+  - first:
+      213: -7379844870931666897
+    second: Custom_Springtide Storm_10
+  - first:
+      213: 4462697099694983673
+    second: Custom_Springtide Storm_11
+  - first:
+      213: -997327123506830021
+    second: Custom_Springtide Storm_12
+  - first:
+      213: -667678557747237019
+    second: Custom_Springtide Storm_13
+  - first:
+      213: -3681413304175809967
+    second: Custom_Springtide Storm_14
+  - first:
+      213: -3434916770918943276
+    second: Custom_Springtide Storm_15
+  - first:
+      213: -3587774918761074622
+    second: Custom_Springtide Storm_16
+  - first:
+      213: 1734878708857761757
+    second: Custom_Springtide Storm_17
+  - first:
+      213: 6672338406297905858
+    second: Custom_Springtide Storm_18
+  - first:
+      213: -5534695454120935612
+    second: Custom_Springtide Storm_19
+  - first:
+      213: 505234877298271668
+    second: Custom_Springtide Storm_20
+  - first:
+      213: 8116188604682361346
+    second: Custom_Springtide Storm_21
+  - first:
+      213: 7836794791906055917
+    second: Custom_Springtide Storm_22
+  - first:
+      213: -3019227403828268113
+    second: Custom_Springtide Storm_23
+  - first:
+      213: -2536366341426562120
+    second: Custom_Springtide Storm_24
+  - first:
+      213: -8546721477070577995
+    second: Custom_Springtide Storm_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_0
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 457
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4525db31a3d15a490800000000000000
+      internalID: -7735744649662475692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_1
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 465
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c84dd21f6528d5ae0800000000000000
+      internalID: -1558946586075212660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_2
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 485
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7beb9013f05f5d510800000000000000
+      internalID: 1573433090431893175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_3
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 435
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 685738a2142688140800000000000000
+      internalID: 4722132241323619718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_4
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 443
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03bba60c7c04f1af0800000000000000
+      internalID: -423548613278647504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_5
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 449
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7887a4897ab4f80a0800000000000000
+      internalID: -6877194922784819065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_6
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 387
+        width: 62
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a44324ddab15220800000000000000
+      internalID: 2472963129864374880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_7
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 415
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d1591c56dda7e9e0800000000000000
+      internalID: -1592112807072411182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_8
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 431
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b0135bd9144dff40800000000000000
+      internalID: 5763837975948628148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_9
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 387
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 876fa720b67c60510800000000000000
+      internalID: 1515117587073791608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_10
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 427
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2821a2a036859990800000000000000
+      internalID: -7379844870931666897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_11
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 401
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f94c772e5faeed30800000000000000
+      internalID: 4462697099694983673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_12
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 387
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b356386e348c822f0800000000000000
+      internalID: -997327123506830021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_13
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 403
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56fa455a3edebb6f0800000000000000
+      internalID: -667678557747237019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_14
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 395
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15a2435da1ef8ecc0800000000000000
+      internalID: -3681413304175809967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_15
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 387
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d538545569b450d0800000000000000
+      internalID: -3434916770918943276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_16
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 395
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 240b03168b9a53ec0800000000000000
+      internalID: -3587774918761074622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_17
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 387
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddfead17ef6831810800000000000000
+      internalID: 1734878708857761757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_18
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 389
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ca2590dd68e89c50800000000000000
+      internalID: 6672338406297905858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_19
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 391
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ff62dfecfc033b0800000000000000
+      internalID: -5534695454120935612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_20
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 195
+        width: 66
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b5608da174f20700800000000000000
+      internalID: 505234877298271668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_21
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 195
+        width: 64
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20a5a28d88e72a070800000000000000
+      internalID: 8116188604682361346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_22
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 195
+        width: 66
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de611359753e1cc60800000000000000
+      internalID: 7836794791906055917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_23
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 195
+        width: 66
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa3f0ba3cac8916d0800000000000000
+      internalID: -3019227403828268113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_24
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 195
+        width: 66
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bb330f20440dccd0800000000000000
+      internalID: -2536366341426562120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Springtide Storm_25
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 3
+        width: 66
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5be910d5912f36980800000000000000
+      internalID: -8546721477070577995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Custom_Springtide Storm_0: -7735744649662475692
+      Custom_Springtide Storm_1: -1558946586075212660
+      Custom_Springtide Storm_10: -7379844870931666897
+      Custom_Springtide Storm_11: 4462697099694983673
+      Custom_Springtide Storm_12: -997327123506830021
+      Custom_Springtide Storm_13: -667678557747237019
+      Custom_Springtide Storm_14: -3681413304175809967
+      Custom_Springtide Storm_15: -3434916770918943276
+      Custom_Springtide Storm_16: -3587774918761074622
+      Custom_Springtide Storm_17: 1734878708857761757
+      Custom_Springtide Storm_18: 6672338406297905858
+      Custom_Springtide Storm_19: -5534695454120935612
+      Custom_Springtide Storm_2: 1573433090431893175
+      Custom_Springtide Storm_20: 505234877298271668
+      Custom_Springtide Storm_21: 8116188604682361346
+      Custom_Springtide Storm_22: 7836794791906055917
+      Custom_Springtide Storm_23: -3019227403828268113
+      Custom_Springtide Storm_24: -2536366341426562120
+      Custom_Springtide Storm_25: -8546721477070577995
+      Custom_Springtide Storm_3: 4722132241323619718
+      Custom_Springtide Storm_4: -423548613278647504
+      Custom_Springtide Storm_5: -6877194922784819065
+      Custom_Springtide Storm_6: 2472963129864374880
+      Custom_Springtide Storm_7: -1592112807072411182
+      Custom_Springtide Storm_8: 5763837975948628148
+      Custom_Springtide Storm_9: 1515117587073791608
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

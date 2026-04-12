@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: 0254b238852084f3da33a13a74241b32
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -40137652315410822
+    second: PRAS- Seed Bomb_0
+  - first:
+      213: 7138881766159909692
+    second: PRAS- Seed Bomb_1
+  - first:
+      213: -5551038600355558131
+    second: PRAS- Seed Bomb_2
+  - first:
+      213: 5318239456202516346
+    second: PRAS- Seed Bomb_3
+  - first:
+      213: -8368674464538026722
+    second: PRAS- Seed Bomb_4
+  - first:
+      213: -6103891191405284639
+    second: PRAS- Seed Bomb_5
+  - first:
+      213: 3390479097740801485
+    second: PRAS- Seed Bomb_6
+  - first:
+      213: 5231582197564765083
+    second: PRAS- Seed Bomb_7
+  - first:
+      213: -3336946495813486545
+    second: PRAS- Seed Bomb_8
+  - first:
+      213: -6760953754945059386
+    second: PRAS- Seed Bomb_9
+  - first:
+      213: 5926357991425561824
+    second: PRAS- Seed Bomb_10
+  - first:
+      213: -5869377282268573630
+    second: PRAS- Seed Bomb_11
+  - first:
+      213: -8040726437415207338
+    second: PRAS- Seed Bomb_12
+  - first:
+      213: 204923695082736442
+    second: PRAS- Seed Bomb_13
+  - first:
+      213: 5649141097954781836
+    second: PRAS- Seed Bomb_14
+  - first:
+      213: 7341494161104872116
+    second: PRAS- Seed Bomb_15
+  - first:
+      213: -1523200776909314720
+    second: PRAS- Seed Bomb_16
+  - first:
+      213: 6549721288819695266
+    second: PRAS- Seed Bomb_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Seed Bomb_0
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 66
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7e2f939407617ff0800000000000000
+      internalID: -40137652315410822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Seed Bomb_1
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 114
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3389759427621360800000000000000
+      internalID: 7138881766159909692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Seed Bomb_2
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 96
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0d435bbdcfb6f2b0800000000000000
+      internalID: -5551038600355558131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Seed Bomb_3
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 117
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a77ea61bb9e2ec940800000000000000
+      internalID: 5318239456202516346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Seed Bomb_4
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 123
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d1454e9ee7cdb80800000000000000
+      internalID: -8368674464538026722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Seed Bomb_5
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 119
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e2f6ac1d4f9a4ba0800000000000000
+      internalID: -6103891191405284639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Seed Bomb_6
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 117
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc53a3f96c66d0f20800000000000000
+      internalID: 3390479097740801485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Seed Bomb_7
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 119
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b93fa136a405a9840800000000000000
+      internalID: 5231582197564765083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Seed Bomb_8
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 79
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f287d8a87d8c0b1d0800000000000000
+      internalID: -3336946495813486545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Seed Bomb_9
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 64
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c508a581644c22a0800000000000000
+      internalID: -6760953754945059386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Seed Bomb_10
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 93
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e4d7baa137ae3250800000000000000
+      internalID: 5926357991425561824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Seed Bomb_11
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 111
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24052a58578cb8ea0800000000000000
+      internalID: -5869377282268573630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Seed Bomb_12
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 103
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e36c128e9996090800000000000000
+      internalID: -8040726437415207338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Seed Bomb_13
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 85
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b8773d30908d200800000000000000
+      internalID: 204923695082736442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Seed Bomb_14
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 77
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8aa7ade5e7c56e40800000000000000
+      internalID: 5649141097954781836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Seed Bomb_15
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 67
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b2a249ea0a32e560800000000000000
+      internalID: 7341494161104872116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Seed Bomb_16
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 67
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065a8b2b6f08cdae0800000000000000
+      internalID: -1523200776909314720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Seed Bomb_17
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 63
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ae59ed6fc845ea50800000000000000
+      internalID: 6549721288819695266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Seed Bomb_0: -40137652315410822
+      PRAS- Seed Bomb_1: 7138881766159909692
+      PRAS- Seed Bomb_10: 5926357991425561824
+      PRAS- Seed Bomb_11: -5869377282268573630
+      PRAS- Seed Bomb_12: -8040726437415207338
+      PRAS- Seed Bomb_13: 204923695082736442
+      PRAS- Seed Bomb_14: 5649141097954781836
+      PRAS- Seed Bomb_15: 7341494161104872116
+      PRAS- Seed Bomb_16: -1523200776909314720
+      PRAS- Seed Bomb_17: 6549721288819695266
+      PRAS- Seed Bomb_2: -5551038600355558131
+      PRAS- Seed Bomb_3: 5318239456202516346
+      PRAS- Seed Bomb_4: -8368674464538026722
+      PRAS- Seed Bomb_5: -6103891191405284639
+      PRAS- Seed Bomb_6: 3390479097740801485
+      PRAS- Seed Bomb_7: 5231582197564765083
+      PRAS- Seed Bomb_8: -3336946495813486545
+      PRAS- Seed Bomb_9: -6760953754945059386
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

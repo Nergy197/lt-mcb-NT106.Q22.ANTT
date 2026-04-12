@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: 9ed35d52a679c4b2683b33ecd8b81a9a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3809947052958928773
+    second: fire blast_0
+  - first:
+      213: -6225856414651643909
+    second: fire blast_1
+  - first:
+      213: 8716288547408435316
+    second: fire blast_2
+  - first:
+      213: -6251005590939208896
+    second: fire blast_3
+  - first:
+      213: 4498696290644777745
+    second: fire blast_4
+  - first:
+      213: 5463676671118891331
+    second: fire blast_5
+  - first:
+      213: 7544787215597000724
+    second: fire blast_6
+  - first:
+      213: 1737121167489828060
+    second: fire blast_7
+  - first:
+      213: 2180551414690214415
+    second: fire blast_8
+  - first:
+      213: 5473332444961046339
+    second: fire blast_9
+  - first:
+      213: -7985270365360894507
+    second: fire blast_10
+  - first:
+      213: 846879619951657636
+    second: fire blast_11
+  - first:
+      213: 118829053072136350
+    second: fire blast_12
+  - first:
+      213: -7006793969673855506
+    second: fire blast_13
+  - first:
+      213: 789759212983081064
+    second: fire blast_14
+  - first:
+      213: -1398057363842937717
+    second: fire blast_15
+  - first:
+      213: 2772523115674528383
+    second: fire blast_16
+  - first:
+      213: 6558629560923172539
+    second: fire blast_17
+  - first:
+      213: 1063424037739734539
+    second: fire blast_18
+  - first:
+      213: -2773003823837638169
+    second: fire blast_19
+  - first:
+      213: 7418303025977036689
+    second: fire blast_20
+  - first:
+      213: -3176228273911288687
+    second: fire blast_21
+  - first:
+      213: -2108189623460279597
+    second: fire blast_22
+  - first:
+      213: 4977017755138842884
+    second: fire blast_23
+  - first:
+      213: 7756458522067214536
+    second: fire blast_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fire blast_0
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 492
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b70365f5759502bc0800000000000000
+      internalID: -3809947052958928773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire blast_1
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 468
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf70a1ea3905999a0800000000000000
+      internalID: -6225856414651643909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire blast_2
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 439
+        width: 90
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 478d514c04a76f870800000000000000
+      internalID: 8716288547408435316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire blast_3
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 411
+        width: 151
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0437617c887ff39a0800000000000000
+      internalID: -6251005590939208896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire blast_4
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 410
+        width: 156
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11bdf34f0749e6e30800000000000000
+      internalID: 4498696290644777745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire blast_5
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 400
+        width: 149
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34951ad0cf0e2db40800000000000000
+      internalID: 5463676671118891331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire blast_6
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 453
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4185193aff774b860800000000000000
+      internalID: 7544787215597000724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire blast_7
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 223
+        width: 158
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd40b088f7e7b1810800000000000000
+      internalID: 1737121167489828060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire blast_8
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 221
+        width: 155
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02f51765ffd24e10800000000000000
+      internalID: 2180551414690214415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire blast_9
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 279
+        width: 63
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34ff5871cde25fb40800000000000000
+      internalID: 5473332444961046339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire blast_10
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 317
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ddc53519ee9e2190800000000000000
+      internalID: -7985270365360894507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire blast_11
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 277
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a28cb20788b0cb00800000000000000
+      internalID: 846879619951657636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire blast_12
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 312
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e985c59e46a26a100800000000000000
+      internalID: 118829053072136350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire blast_13
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 276
+        width: 49
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed9d37120ed2ce90800000000000000
+      internalID: -7006793969673855506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire blast_14
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 319
+        width: 45
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 868d2f3e1d9c5fa00800000000000000
+      internalID: 789759212983081064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire blast_15
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 224
+        width: 53
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8cc58c1c3a199ce0800000000000000
+      internalID: -1398057363842937717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire blast_16
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 221
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ae651951bf97620800000000000000
+      internalID: 2772523115674528383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire blast_17
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 275
+        width: 53
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbea33826dee40b50800000000000000
+      internalID: 6558629560923172539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire blast_18
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 268
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b06a61f278a02ce00800000000000000
+      internalID: 1063424037739734539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire blast_19
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 270
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e19b57d6bf4489d0800000000000000
+      internalID: -2773003823837638169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire blast_20
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 212
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19f019b5c4b13f660800000000000000
+      internalID: 7418303025977036689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire blast_21
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 212
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c27f79635cbe3d0800000000000000
+      internalID: -3176228273911288687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire blast_22
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 214
+        width: 48
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da4c7605b43eb2e0800000000000000
+      internalID: -2108189623460279597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire blast_23
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 214
+        width: 50
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 401ecd7674be11540800000000000000
+      internalID: 4977017755138842884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire blast_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 23
+        width: 188
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c02eda2ee974ab60800000000000000
+      internalID: 7756458522067214536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fire blast_0: -3809947052958928773
+      fire blast_1: -6225856414651643909
+      fire blast_10: -7985270365360894507
+      fire blast_11: 846879619951657636
+      fire blast_12: 118829053072136350
+      fire blast_13: -7006793969673855506
+      fire blast_14: 789759212983081064
+      fire blast_15: -1398057363842937717
+      fire blast_16: 2772523115674528383
+      fire blast_17: 6558629560923172539
+      fire blast_18: 1063424037739734539
+      fire blast_19: -2773003823837638169
+      fire blast_2: 8716288547408435316
+      fire blast_20: 7418303025977036689
+      fire blast_21: -3176228273911288687
+      fire blast_22: -2108189623460279597
+      fire blast_23: 4977017755138842884
+      fire blast_24: 7756458522067214536
+      fire blast_3: -6251005590939208896
+      fire blast_4: 4498696290644777745
+      fire blast_5: 5463676671118891331
+      fire blast_6: 7544787215597000724
+      fire blast_7: 1737121167489828060
+      fire blast_8: 2180551414690214415
+      fire blast_9: 5473332444961046339
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

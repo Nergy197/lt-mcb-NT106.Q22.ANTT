@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: af78cbcabbd3d4e4cbd59c5e4811ebf7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8539543853687597852
+    second: PRAS- Prismatic Laser_0
+  - first:
+      213: -3871932511230559033
+    second: PRAS- Prismatic Laser_1
+  - first:
+      213: 3248768314535441209
+    second: PRAS- Prismatic Laser_2
+  - first:
+      213: -1272433988259567113
+    second: PRAS- Prismatic Laser_3
+  - first:
+      213: -3401270696411886153
+    second: PRAS- Prismatic Laser_4
+  - first:
+      213: 2355555423097992017
+    second: PRAS- Prismatic Laser_5
+  - first:
+      213: -2513899343226122223
+    second: PRAS- Prismatic Laser_6
+  - first:
+      213: -3113984724775918905
+    second: PRAS- Prismatic Laser_7
+  - first:
+      213: -5905109728297710040
+    second: PRAS- Prismatic Laser_8
+  - first:
+      213: -6719711022525047440
+    second: PRAS- Prismatic Laser_9
+  - first:
+      213: -938116012071104158
+    second: PRAS- Prismatic Laser_10
+  - first:
+      213: -743485728582194121
+    second: PRAS- Prismatic Laser_11
+  - first:
+      213: 5970035412613763359
+    second: PRAS- Prismatic Laser_12
+  - first:
+      213: 1662859106330263680
+    second: PRAS- Prismatic Laser_13
+  - first:
+      213: -4449432063982747458
+    second: PRAS- Prismatic Laser_14
+  - first:
+      213: 3134729773866591503
+    second: PRAS- Prismatic Laser_15
+  - first:
+      213: -3458759541285437471
+    second: PRAS- Prismatic Laser_16
+  - first:
+      213: -7754223705512313855
+    second: PRAS- Prismatic Laser_17
+  - first:
+      213: -6506509356360785500
+    second: PRAS- Prismatic Laser_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Prismatic Laser_0
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 277
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1b6be6f3ed828670800000000000000
+      internalID: 8539543853687597852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Prismatic Laser_1
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 293
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ccf0d935e1244ac0800000000000000
+      internalID: -3871932511230559033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Prismatic Laser_2
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 301
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 933fd61c191f51d20800000000000000
+      internalID: 3248768314535441209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Prismatic Laser_3
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 311
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f9a7a18708675ee0800000000000000
+      internalID: -1272433988259567113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Prismatic Laser_4
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 307
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bd8c6382524cc0d0800000000000000
+      internalID: -3401270696411886153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Prismatic Laser_5
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 305
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15330825d2d90b020800000000000000
+      internalID: 2355555423097992017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Prismatic Laser_6
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 259
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1105be5ddd5dc1dd0800000000000000
+      internalID: -2513899343226122223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Prismatic Laser_7
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 259
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c22db33467e8c4d0800000000000000
+      internalID: -3113984724775918905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Prismatic Laser_8
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 259
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e8c1d1df5dc0ea0800000000000000
+      internalID: -5905109728297710040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Prismatic Laser_9
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 277
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d1e157d6aceb2a0800000000000000
+      internalID: -6719711022525047440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Prismatic Laser_10
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 259
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 261556615742bf2f0800000000000000
+      internalID: -938116012071104158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Prismatic Laser_11
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 273
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73c29444bab9ea5f0800000000000000
+      internalID: -743485728582194121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Prismatic Laser_12
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 259
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f119851c393d9d250800000000000000
+      internalID: 5970035412613763359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Prismatic Laser_13
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 269
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080c6580c89a31710800000000000000
+      internalID: 1662859106330263680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Prismatic Laser_14
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 263
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb04316ac117042c0800000000000000
+      internalID: -4449432063982747458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Prismatic Laser_15
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 261
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f05a82eee1cc08b20800000000000000
+      internalID: 3134729773866591503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Prismatic Laser_16
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 73
+        width: 8
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ef3032c5840000d0800000000000000
+      internalID: -3458759541285437471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Prismatic Laser_17
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 63
+        width: 10
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10c760c9f96736490800000000000000
+      internalID: -7754223705512313855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Prismatic Laser_18
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 63
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a12c5e963c34b5a0800000000000000
+      internalID: -6506509356360785500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Prismatic Laser_0: 8539543853687597852
+      PRAS- Prismatic Laser_1: -3871932511230559033
+      PRAS- Prismatic Laser_10: -938116012071104158
+      PRAS- Prismatic Laser_11: -743485728582194121
+      PRAS- Prismatic Laser_12: 5970035412613763359
+      PRAS- Prismatic Laser_13: 1662859106330263680
+      PRAS- Prismatic Laser_14: -4449432063982747458
+      PRAS- Prismatic Laser_15: 3134729773866591503
+      PRAS- Prismatic Laser_16: -3458759541285437471
+      PRAS- Prismatic Laser_17: -7754223705512313855
+      PRAS- Prismatic Laser_18: -6506509356360785500
+      PRAS- Prismatic Laser_2: 3248768314535441209
+      PRAS- Prismatic Laser_3: -1272433988259567113
+      PRAS- Prismatic Laser_4: -3401270696411886153
+      PRAS- Prismatic Laser_5: 2355555423097992017
+      PRAS- Prismatic Laser_6: -2513899343226122223
+      PRAS- Prismatic Laser_7: -3113984724775918905
+      PRAS- Prismatic Laser_8: -5905109728297710040
+      PRAS- Prismatic Laser_9: -6719711022525047440
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

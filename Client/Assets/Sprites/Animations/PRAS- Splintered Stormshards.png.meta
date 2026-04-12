@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 88659cf8d2a13489bb184c010abb4c8d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1599005161577087660
+    second: PRAS- Splintered Stormshards_0
+  - first:
+      213: 4375555634550570963
+    second: PRAS- Splintered Stormshards_1
+  - first:
+      213: 330657494848821049
+    second: PRAS- Splintered Stormshards_2
+  - first:
+      213: 5305068269204003242
+    second: PRAS- Splintered Stormshards_3
+  - first:
+      213: -7577857404960524013
+    second: PRAS- Splintered Stormshards_4
+  - first:
+      213: 7793784954298645565
+    second: PRAS- Splintered Stormshards_5
+  - first:
+      213: 8059489133753996370
+    second: PRAS- Splintered Stormshards_6
+  - first:
+      213: 6746753763556507985
+    second: PRAS- Splintered Stormshards_7
+  - first:
+      213: -5050416387289711028
+    second: PRAS- Splintered Stormshards_8
+  - first:
+      213: 7607842279630904413
+    second: PRAS- Splintered Stormshards_9
+  - first:
+      213: -1061156346288318976
+    second: PRAS- Splintered Stormshards_10
+  - first:
+      213: 1016821811111364733
+    second: PRAS- Splintered Stormshards_11
+  - first:
+      213: -4984966009589664498
+    second: PRAS- Splintered Stormshards_12
+  - first:
+      213: -3951908105236234114
+    second: PRAS- Splintered Stormshards_13
+  - first:
+      213: 4242358897003444896
+    second: PRAS- Splintered Stormshards_14
+  - first:
+      213: 1266253071663683856
+    second: PRAS- Splintered Stormshards_15
+  - first:
+      213: -2331939631805045403
+    second: PRAS- Splintered Stormshards_16
+  - first:
+      213: -6162463204054065328
+    second: PRAS- Splintered Stormshards_17
+  - first:
+      213: 9119317652455447608
+    second: PRAS- Splintered Stormshards_18
+  - first:
+      213: -30536932449109322
+    second: PRAS- Splintered Stormshards_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Splintered Stormshards_0
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 258
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45d7e2607413fc9e0800000000000000
+      internalID: -1599005161577087660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Splintered Stormshards_1
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 306
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df785cbaa819bc30800000000000000
+      internalID: 4375555634550570963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Splintered Stormshards_2
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 288
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 937d8ca5d3bb69400800000000000000
+      internalID: 330657494848821049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Splintered Stormshards_3
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 309
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa9d91fbb736f9940800000000000000
+      internalID: 5305068269204003242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Splintered Stormshards_4
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 315
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 319b3c2e6da06d690800000000000000
+      internalID: -7577857404960524013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Splintered Stormshards_5
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 311
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c31c86f16192c60800000000000000
+      internalID: 7793784954298645565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Splintered Stormshards_6
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 309
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25417888aae09df60800000000000000
+      internalID: 8059489133753996370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Splintered Stormshards_7
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 311
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 151c0d75dc841ad50800000000000000
+      internalID: 6746753763556507985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Splintered Stormshards_8
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 271
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4ef8c3dd0159e9b0800000000000000
+      internalID: -5050416387289711028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Splintered Stormshards_9
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 256
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5c1998ce3c749960800000000000000
+      internalID: 7607842279630904413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Splintered Stormshards_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 285
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0065550ece30641f0800000000000000
+      internalID: -1061156346288318976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Splintered Stormshards_11
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 303
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d788923cc0a7c1e00800000000000000
+      internalID: 1016821811111364733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Splintered Stormshards_12
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 295
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e05f20563d7d1dab0800000000000000
+      internalID: -4984966009589664498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Splintered Stormshards_13
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 269
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e70486234800829c0800000000000000
+      internalID: -3951908105236234114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Splintered Stormshards_14
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 259
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aabb9990f2efda30800000000000000
+      internalID: 4242358897003444896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Splintered Stormshards_15
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 259
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 019d244b572a29110800000000000000
+      internalID: 1266253071663683856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Splintered Stormshards_16
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 255
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 565ea90924943afd0800000000000000
+      internalID: -2331939631805045403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Splintered Stormshards_17
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 81
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05f11f4bd588a7aa0800000000000000
+      internalID: -6162463204054065328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Splintered Stormshards_18
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 77
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83c5e84b6135e8e70800000000000000
+      internalID: 9119317652455447608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Splintered Stormshards_19
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 81
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ba37dc52d2839ff0800000000000000
+      internalID: -30536932449109322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Splintered Stormshards_0: -1599005161577087660
+      PRAS- Splintered Stormshards_1: 4375555634550570963
+      PRAS- Splintered Stormshards_10: -1061156346288318976
+      PRAS- Splintered Stormshards_11: 1016821811111364733
+      PRAS- Splintered Stormshards_12: -4984966009589664498
+      PRAS- Splintered Stormshards_13: -3951908105236234114
+      PRAS- Splintered Stormshards_14: 4242358897003444896
+      PRAS- Splintered Stormshards_15: 1266253071663683856
+      PRAS- Splintered Stormshards_16: -2331939631805045403
+      PRAS- Splintered Stormshards_17: -6162463204054065328
+      PRAS- Splintered Stormshards_18: 9119317652455447608
+      PRAS- Splintered Stormshards_19: -30536932449109322
+      PRAS- Splintered Stormshards_2: 330657494848821049
+      PRAS- Splintered Stormshards_3: 5305068269204003242
+      PRAS- Splintered Stormshards_4: -7577857404960524013
+      PRAS- Splintered Stormshards_5: 7793784954298645565
+      PRAS- Splintered Stormshards_6: 8059489133753996370
+      PRAS- Splintered Stormshards_7: 6746753763556507985
+      PRAS- Splintered Stormshards_8: -5050416387289711028
+      PRAS- Splintered Stormshards_9: 7607842279630904413
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

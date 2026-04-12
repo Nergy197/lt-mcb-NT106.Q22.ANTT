@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 66cd72ab0633c4013a9b198e5a2a3afd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 862597766605716948
+    second: Divine_Smash_0
+  - first:
+      213: -7063886093358703655
+    second: Divine_Smash_1
+  - first:
+      213: 6135212998782830853
+    second: Divine_Smash_2
+  - first:
+      213: -7429298617006809808
+    second: Divine_Smash_3
+  - first:
+      213: -493197543864900899
+    second: Divine_Smash_4
+  - first:
+      213: -5861066551646482650
+    second: Divine_Smash_5
+  - first:
+      213: 4219944436425695567
+    second: Divine_Smash_6
+  - first:
+      213: 436058646189407834
+    second: Divine_Smash_7
+  - first:
+      213: -4769951859166715343
+    second: Divine_Smash_8
+  - first:
+      213: -2418028186241122706
+    second: Divine_Smash_9
+  - first:
+      213: -1035002782501457631
+    second: Divine_Smash_10
+  - first:
+      213: 5135887189773800154
+    second: Divine_Smash_11
+  - first:
+      213: 8447165701801898738
+    second: Divine_Smash_12
+  - first:
+      213: -550700282361381244
+    second: Divine_Smash_13
+  - first:
+      213: -4936582818739005470
+    second: Divine_Smash_14
+  - first:
+      213: 8012485714970498495
+    second: Divine_Smash_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Divine_Smash_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 381
+        width: 138
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dd3496391098fb00800000000000000
+      internalID: 862597766605716948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Divine_Smash_1
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 384
+        width: 38
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9db588f260908fd90800000000000000
+      internalID: -7063886093358703655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Divine_Smash_2
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 418
+        width: 137
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5094fc577b7a42550800000000000000
+      internalID: 6135212998782830853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Divine_Smash_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 383
+        width: 360
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03d120b1544d5e890800000000000000
+      internalID: -7429298617006809808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Divine_Smash_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 241
+        width: 190
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd266d9627fc729f0800000000000000
+      internalID: -493197543864900899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Divine_Smash_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 191
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62f0038460f49aea0800000000000000
+      internalID: -5861066551646482650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Divine_Smash_6
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 192
+        width: 94
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f412a015b11409a30800000000000000
+      internalID: 4219944436425695567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Divine_Smash_7
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 200
+        width: 11
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e7b5347013d0600800000000000000
+      internalID: 436058646189407834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Divine_Smash_8
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 281
+        width: 203
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13267ae6e0abdcdb0800000000000000
+      internalID: -4769951859166715343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Divine_Smash_9
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 71
+        width: 145
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e37360d20717ed0800000000000000
+      internalID: -2418028186241122706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Divine_Smash_10
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 36
+        width: 118
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 121b577f37ee2a1f0800000000000000
+      internalID: -1035002782501457631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Divine_Smash_11
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 13
+        width: 144
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad252f02036564740800000000000000
+      internalID: 5135887189773800154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Divine_Smash_12
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 0
+        width: 182
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f2f3c6637c5a3570800000000000000
+      internalID: 8447165701801898738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Divine_Smash_13
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 0
+        width: 194
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e742cc2058b58f0800000000000000
+      internalID: -550700282361381244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Divine_Smash_14
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 54
+        width: 6
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e7d3ccd41cbd7bb0800000000000000
+      internalID: -4936582818739005470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Divine_Smash_15
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 41
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb555b84e41123f60800000000000000
+      internalID: 8012485714970498495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Divine_Smash_0: 862597766605716948
+      Divine_Smash_1: -7063886093358703655
+      Divine_Smash_10: -1035002782501457631
+      Divine_Smash_11: 5135887189773800154
+      Divine_Smash_12: 8447165701801898738
+      Divine_Smash_13: -550700282361381244
+      Divine_Smash_14: -4936582818739005470
+      Divine_Smash_15: 8012485714970498495
+      Divine_Smash_2: 6135212998782830853
+      Divine_Smash_3: -7429298617006809808
+      Divine_Smash_4: -493197543864900899
+      Divine_Smash_5: -5861066551646482650
+      Divine_Smash_6: 4219944436425695567
+      Divine_Smash_7: 436058646189407834
+      Divine_Smash_8: -4769951859166715343
+      Divine_Smash_9: -2418028186241122706
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

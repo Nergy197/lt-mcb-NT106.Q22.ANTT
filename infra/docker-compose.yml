@@ -66,7 +66,7 @@ services:
   # `dotnet watch` enables hot-reload during development
   # ---------------------------------------------------------------------------
   server:
-    image: mcr.microsoft.com/dotnet/sdk:10.0
+    image: mcr.microsoft.com/dotnet/sdk:9.0
     container_name: nt106-server
     restart: unless-stopped
     working_dir: /app
@@ -75,27 +75,17 @@ services:
       - nuget_cache:/root/.nuget          # cache NuGet packages across restarts
     environment:
       DOTNET_WATCH_RESTART_ON_RUDE_EDIT: "true"
+      DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: "true"
       ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:2567
       PORT: ${SERVER_PORT:-2567}
       MONGO_URI: mongodb://mongodb:${MONGO_PORT:-27017}
       MONGO_DATABASE: ${MONGO_DATABASE:-pokemon_mmo}
     networks:
       - backend
     ports:
-      - "${SERVER_PORT:-2567}:${SERVER_PORT:-2567}"
+      - "${SERVER_PORT:-2567}:2567"
     depends_on:
       mongodb:
         condition: service_healthy
-    command: >
-      bash -c "
-        echo '📦 Restoring NuGet packages...' &&
-        dotnet restore &&
-        echo '🚀 Starting Pokémon MMO Server (hot-reload)...' &&
-        dotnet watch run --no-launch-profile
-      "
-    healthcheck:
-      test: ["CMD-SHELL", "curl -sf http://localhost:${SERVER_PORT:-2567}/ || exit 1"]
-      interval: 15s
-      timeout: 10s
-      retries: 5
-      start_period: 45s
+    command: dotnet run --no-launch-profile

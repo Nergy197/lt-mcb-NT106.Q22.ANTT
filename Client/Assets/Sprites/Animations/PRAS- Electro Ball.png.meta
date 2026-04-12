@@ -1,0 +1,962 @@
+fileFormatVersion: 2
+guid: 99751a8461c164fac82fdabed525b83a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7629816059359797220
+    second: PRAS- Electro Ball_0
+  - first:
+      213: 7000020471283690945
+    second: PRAS- Electro Ball_1
+  - first:
+      213: -5769561646818356171
+    second: PRAS- Electro Ball_2
+  - first:
+      213: 5945878965987868369
+    second: PRAS- Electro Ball_3
+  - first:
+      213: 661200978295573637
+    second: PRAS- Electro Ball_4
+  - first:
+      213: -6899306298479257295
+    second: PRAS- Electro Ball_5
+  - first:
+      213: 8832421671466671325
+    second: PRAS- Electro Ball_6
+  - first:
+      213: 1423491916768039850
+    second: PRAS- Electro Ball_7
+  - first:
+      213: -762567999643934301
+    second: PRAS- Electro Ball_8
+  - first:
+      213: -8275286732819977708
+    second: PRAS- Electro Ball_9
+  - first:
+      213: -804691152464471209
+    second: PRAS- Electro Ball_10
+  - first:
+      213: -5769881933931069500
+    second: PRAS- Electro Ball_11
+  - first:
+      213: 1081908606999557242
+    second: PRAS- Electro Ball_12
+  - first:
+      213: -4677065046466491142
+    second: PRAS- Electro Ball_13
+  - first:
+      213: -7370769927287170416
+    second: PRAS- Electro Ball_14
+  - first:
+      213: 8109833732473739021
+    second: PRAS- Electro Ball_15
+  - first:
+      213: -1538699475202760217
+    second: PRAS- Electro Ball_16
+  - first:
+      213: 2643712135533023048
+    second: PRAS- Electro Ball_17
+  - first:
+      213: -2102241793976108495
+    second: PRAS- Electro Ball_18
+  - first:
+      213: 2117194682841087868
+    second: PRAS- Electro Ball_19
+  - first:
+      213: -510990126266768441
+    second: PRAS- Electro Ball_20
+  - first:
+      213: 216181730523825769
+    second: PRAS- Electro Ball_21
+  - first:
+      213: -6091388999992473642
+    second: PRAS- Electro Ball_22
+  - first:
+      213: -642207107605932098
+    second: PRAS- Electro Ball_23
+  - first:
+      213: -6362238763907796856
+    second: PRAS- Electro Ball_24
+  - first:
+      213: -8308593937726998550
+    second: PRAS- Electro Ball_25
+  - first:
+      213: -4674032952904614084
+    second: PRAS- Electro Ball_26
+  - first:
+      213: 623065042297037097
+    second: PRAS- Electro Ball_27
+  - first:
+      213: -2266715561960065033
+    second: PRAS- Electro Ball_28
+  - first:
+      213: 7611961086509014433
+    second: PRAS- Electro Ball_29
+  - first:
+      213: -4989320318909381299
+    second: PRAS- Electro Ball_30
+  - first:
+      213: 7699518195853753919
+    second: PRAS- Electro Ball_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_0
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 451
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ef16bf084d82e960800000000000000
+      internalID: 7629816059359797220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_1
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 451
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cda35be781152160800000000000000
+      internalID: 7000020471283690945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_2
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 451
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5349cab20466eefa0800000000000000
+      internalID: -5769561646818356171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_3
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 451
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1de7c2dba61048250800000000000000
+      internalID: 5945878965987868369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_4
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 489
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58cc27c59ce0d2900800000000000000
+      internalID: 661200978295573637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_5
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 461
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1395782c97db040a0800000000000000
+      internalID: -6899306298479257295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_6
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 443
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddc9b3ac6b0139a70800000000000000
+      internalID: 8832421671466671325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_7
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 457
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa359973b5241c310800000000000000
+      internalID: 1423491916768039850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_8
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 293
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a1a420d170da65f0800000000000000
+      internalID: -762567999643934301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_9
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 275
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a23c39f86482d80800000000000000
+      internalID: -8275286732819977708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_10
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 283
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75b947709a925d4f0800000000000000
+      internalID: -804691152464471209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_11
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 283
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cf381483f24defa0800000000000000
+      internalID: -5769881933931069500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_12
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 295
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7475a75526b30f00800000000000000
+      internalID: 1081908606999557242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_13
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 291
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afc08f1de1ab71fb0800000000000000
+      internalID: -4677065046466491142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_14
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 279
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a9aea9dc3c5b990800000000000000
+      internalID: -7370769927287170416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_15
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 301
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d07d39bdfcaeb8070800000000000000
+      internalID: 8109833732473739021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_16
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 301
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e1a57ccaf075aae0800000000000000
+      internalID: -1538699475202760217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_17
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 279
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84fc5d62e2a50b420800000000000000
+      internalID: 2643712135533023048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_18
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 295
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13af21ef93653d2e0800000000000000
+      internalID: -2102241793976108495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_19
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 273
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7fb61fb859c16d10800000000000000
+      internalID: 2117194682841087868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_20
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 281
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c32320003998e8f0800000000000000
+      internalID: -510990126266768441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_21
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 291
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9664dc67328000300800000000000000
+      internalID: 216181730523825769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_22
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 283
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d70ab26af9077ba0800000000000000
+      internalID: -6091388999992473642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_23
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 273
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb7dae6c90c6617f0800000000000000
+      internalID: -642207107605932098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_24
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 275
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8803e058d89c4b7a0800000000000000
+      internalID: -6362238763907796856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_25
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 261
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae771de95d1f1bc80800000000000000
+      internalID: -8308593937726998550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_26
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 273
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3f76ad1bcf722fb0800000000000000
+      internalID: -4674032952904614084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_27
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 273
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9212416da5295a800800000000000000
+      internalID: 623065042297037097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_28
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 257
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f7358ab4320b80e0800000000000000
+      internalID: -2266715561960065033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_29
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 257
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad577d374e13a960800000000000000
+      internalID: 7611961086509014433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_30
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 257
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4584c0ca9f52cab0800000000000000
+      internalID: -4989320318909381299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electro Ball_31
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 261
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3ef48d510f2ada60800000000000000
+      internalID: 7699518195853753919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Electro Ball_0: 7629816059359797220
+      PRAS- Electro Ball_1: 7000020471283690945
+      PRAS- Electro Ball_10: -804691152464471209
+      PRAS- Electro Ball_11: -5769881933931069500
+      PRAS- Electro Ball_12: 1081908606999557242
+      PRAS- Electro Ball_13: -4677065046466491142
+      PRAS- Electro Ball_14: -7370769927287170416
+      PRAS- Electro Ball_15: 8109833732473739021
+      PRAS- Electro Ball_16: -1538699475202760217
+      PRAS- Electro Ball_17: 2643712135533023048
+      PRAS- Electro Ball_18: -2102241793976108495
+      PRAS- Electro Ball_19: 2117194682841087868
+      PRAS- Electro Ball_2: -5769561646818356171
+      PRAS- Electro Ball_20: -510990126266768441
+      PRAS- Electro Ball_21: 216181730523825769
+      PRAS- Electro Ball_22: -6091388999992473642
+      PRAS- Electro Ball_23: -642207107605932098
+      PRAS- Electro Ball_24: -6362238763907796856
+      PRAS- Electro Ball_25: -8308593937726998550
+      PRAS- Electro Ball_26: -4674032952904614084
+      PRAS- Electro Ball_27: 623065042297037097
+      PRAS- Electro Ball_28: -2266715561960065033
+      PRAS- Electro Ball_29: 7611961086509014433
+      PRAS- Electro Ball_3: 5945878965987868369
+      PRAS- Electro Ball_30: -4989320318909381299
+      PRAS- Electro Ball_31: 7699518195853753919
+      PRAS- Electro Ball_4: 661200978295573637
+      PRAS- Electro Ball_5: -6899306298479257295
+      PRAS- Electro Ball_6: 8832421671466671325
+      PRAS- Electro Ball_7: 1423491916768039850
+      PRAS- Electro Ball_8: -762567999643934301
+      PRAS- Electro Ball_9: -8275286732819977708
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

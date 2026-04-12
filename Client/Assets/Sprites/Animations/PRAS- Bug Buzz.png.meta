@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: 527e4f38347274814ae35cbeb606675a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1846803002709746701
+    second: PRAS- Bug Buzz_0
+  - first:
+      213: -7833470255850830837
+    second: PRAS- Bug Buzz_1
+  - first:
+      213: -6332834806576325746
+    second: PRAS- Bug Buzz_2
+  - first:
+      213: 4452497294027176736
+    second: PRAS- Bug Buzz_3
+  - first:
+      213: -3014033029812852001
+    second: PRAS- Bug Buzz_4
+  - first:
+      213: -1035639263583293071
+    second: PRAS- Bug Buzz_5
+  - first:
+      213: 895550121438004373
+    second: PRAS- Bug Buzz_6
+  - first:
+      213: -2550577470733108215
+    second: PRAS- Bug Buzz_7
+  - first:
+      213: -7019350487424317482
+    second: PRAS- Bug Buzz_8
+  - first:
+      213: -8311509042111450148
+    second: PRAS- Bug Buzz_9
+  - first:
+      213: -4664354674416322019
+    second: PRAS- Bug Buzz_10
+  - first:
+      213: 7347220286994622117
+    second: PRAS- Bug Buzz_11
+  - first:
+      213: -9173224627985436999
+    second: PRAS- Bug Buzz_12
+  - first:
+      213: -4722904939824831295
+    second: PRAS- Bug Buzz_13
+  - first:
+      213: -8517974961543556238
+    second: PRAS- Bug Buzz_14
+  - first:
+      213: -1290488614944363698
+    second: PRAS- Bug Buzz_15
+  - first:
+      213: 7020906941480580772
+    second: PRAS- Bug Buzz_16
+  - first:
+      213: 8465882859329265417
+    second: PRAS- Bug Buzz_17
+  - first:
+      213: 8763867739268017197
+    second: PRAS- Bug Buzz_18
+  - first:
+      213: 2130123454780425658
+    second: PRAS- Bug Buzz_19
+  - first:
+      213: 7378567414797630464
+    second: PRAS- Bug Buzz_20
+  - first:
+      213: -7280869866369539042
+    second: PRAS- Bug Buzz_21
+  - first:
+      213: -3056049898267738102
+    second: PRAS- Bug Buzz_22
+  - first:
+      213: -7431996188236942447
+    second: PRAS- Bug Buzz_23
+  - first:
+      213: 7105601909904275692
+    second: PRAS- Bug Buzz_24
+  - first:
+      213: 1687808605074124613
+    second: PRAS- Bug Buzz_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_0
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 476
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fb5c5d2476de56e0800000000000000
+      internalID: -1846803002709746701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 482
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b044c694e4ce94390800000000000000
+      internalID: -7833470255850830837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_2
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 458
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8bd9c4db404d18a0800000000000000
+      internalID: -6332834806576325746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_3
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 501
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02bb0e5d2b27acd30800000000000000
+      internalID: 4452497294027176736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_4
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 493
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdae5bcade00c26d0800000000000000
+      internalID: -3014033029812852001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_5
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 453
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 171bbaaa39ba0a1f0800000000000000
+      internalID: -1035639263583293071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_6
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 463
+        width: 10
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 594ced23712ad6c00800000000000000
+      internalID: 895550121438004373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_7
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 467
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90cb6dccd478a9cd0800000000000000
+      internalID: -2550577470733108215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_8
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 459
+        width: 10
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d7cb1bfbe1469e90800000000000000
+      internalID: -7019350487424317482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_9
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 442
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd3ff7dff8697ac80800000000000000
+      internalID: -8311509042111450148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_10
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 470
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1a7bfce222e44fb0800000000000000
+      internalID: -4664354674416322019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_11
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 468
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a6abdc7ce196f560800000000000000
+      internalID: 7347220286994622117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_12
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 461
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9be201c7dc822b080800000000000000
+      internalID: -9173224627985436999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_13
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 447
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c4adc1fafed47eb0800000000000000
+      internalID: -4722904939824831295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_14
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 444
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 273568317e21ac980800000000000000
+      internalID: -8517974961543556238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_15
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 442
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4b2e872173471ee0800000000000000
+      internalID: -1290488614944363698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_16
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 253
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a636083aa54f6160800000000000000
+      internalID: 7020906941480580772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_17
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 245
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f936c3b9bdc7570800000000000000
+      internalID: 8465882859329265417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_18
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 237
+        width: 102
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2c6391a6438f9970800000000000000
+      internalID: 8763867739268017197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_19
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 229
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab54ae90ff7bf8d10800000000000000
+      internalID: 2130123454780425658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_20
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 223
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00cf84e68ffe56660800000000000000
+      internalID: 7378567414797630464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_21
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 25
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e14a237ae6725fa90800000000000000
+      internalID: -7280869866369539042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_22
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 19
+        width: 154
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0002e52fcab695d0800000000000000
+      internalID: -3056049898267738102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_23
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 13
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 193741cd7de3cd890800000000000000
+      internalID: -7431996188236942447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_24
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 7
+        width: 178
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce87e2b3a4b2c9260800000000000000
+      internalID: 7105601909904275692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bug Buzz_25
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 1
+        width: 190
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f6a42ebfc4c6710800000000000000
+      internalID: 1687808605074124613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Bug Buzz_0: -1846803002709746701
+      PRAS- Bug Buzz_1: -7833470255850830837
+      PRAS- Bug Buzz_10: -4664354674416322019
+      PRAS- Bug Buzz_11: 7347220286994622117
+      PRAS- Bug Buzz_12: -9173224627985436999
+      PRAS- Bug Buzz_13: -4722904939824831295
+      PRAS- Bug Buzz_14: -8517974961543556238
+      PRAS- Bug Buzz_15: -1290488614944363698
+      PRAS- Bug Buzz_16: 7020906941480580772
+      PRAS- Bug Buzz_17: 8465882859329265417
+      PRAS- Bug Buzz_18: 8763867739268017197
+      PRAS- Bug Buzz_19: 2130123454780425658
+      PRAS- Bug Buzz_2: -6332834806576325746
+      PRAS- Bug Buzz_20: 7378567414797630464
+      PRAS- Bug Buzz_21: -7280869866369539042
+      PRAS- Bug Buzz_22: -3056049898267738102
+      PRAS- Bug Buzz_23: -7431996188236942447
+      PRAS- Bug Buzz_24: 7105601909904275692
+      PRAS- Bug Buzz_25: 1687808605074124613
+      PRAS- Bug Buzz_3: 4452497294027176736
+      PRAS- Bug Buzz_4: -3014033029812852001
+      PRAS- Bug Buzz_5: -1035639263583293071
+      PRAS- Bug Buzz_6: 895550121438004373
+      PRAS- Bug Buzz_7: -2550577470733108215
+      PRAS- Bug Buzz_8: -7019350487424317482
+      PRAS- Bug Buzz_9: -8311509042111450148
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

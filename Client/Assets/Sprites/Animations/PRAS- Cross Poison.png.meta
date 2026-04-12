@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 0407c6d3242754d388a9b31f751a1b95
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3712497454210504949
+    second: PRAS- Cross Poison_0
+  - first:
+      213: 8320214783731646690
+    second: PRAS- Cross Poison_1
+  - first:
+      213: -3203956589627489696
+    second: PRAS- Cross Poison_2
+  - first:
+      213: -8332231179624687439
+    second: PRAS- Cross Poison_3
+  - first:
+      213: -143776584084815253
+    second: PRAS- Cross Poison_4
+  - first:
+      213: -5270562476532967609
+    second: PRAS- Cross Poison_5
+  - first:
+      213: 653328232199405664
+    second: PRAS- Cross Poison_6
+  - first:
+      213: -7502308353290326680
+    second: PRAS- Cross Poison_7
+  - first:
+      213: 5437135818540210419
+    second: PRAS- Cross Poison_8
+  - first:
+      213: -7679920499798804720
+    second: PRAS- Cross Poison_9
+  - first:
+      213: -1294021724476701553
+    second: PRAS- Cross Poison_10
+  - first:
+      213: -2256979335393638632
+    second: PRAS- Cross Poison_11
+  - first:
+      213: 2030968565098085626
+    second: PRAS- Cross Poison_12
+  - first:
+      213: -543690944398023693
+    second: PRAS- Cross Poison_13
+  - first:
+      213: 7686153782524102645
+    second: PRAS- Cross Poison_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Cross Poison_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 271
+        width: 116
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f852c3d3c0758330800000000000000
+      internalID: 3712497454210504949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Cross Poison_1
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 307
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e0474f6347577370800000000000000
+      internalID: 8320214783731646690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Cross Poison_2
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 323
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0624b7ff4724983d0800000000000000
+      internalID: -3203956589627489696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Cross Poison_3
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 307
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b8590063e7fd5c80800000000000000
+      internalID: -8332231179624687439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Cross Poison_4
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 271
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b620b9265f3310ef0800000000000000
+      internalID: -143776584084815253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Cross Poison_5
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 271
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 747dfbb2a533bd6b0800000000000000
+      internalID: -5270562476532967609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Cross Poison_6
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 271
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 060caf1d096111900800000000000000
+      internalID: 653328232199405664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Cross Poison_7
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 277
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86d2fa63d4272e790800000000000000
+      internalID: -7502308353290326680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Cross Poison_8
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 102
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f854a34836947b40800000000000000
+      internalID: 5437135818540210419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Cross Poison_9
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 118
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0177042def07b6590800000000000000
+      internalID: -7679920499798804720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Cross Poison_10
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 102
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f848decf816ba0ee0800000000000000
+      internalID: -1294021724476701553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Cross Poison_11
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 60
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8170770a0499da0e0800000000000000
+      internalID: -2256979335393638632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Cross Poison_12
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 60
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afcf7a046237f2c10800000000000000
+      internalID: 2030968565098085626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Cross Poison_13
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 60
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f32f8777fb6478f0800000000000000
+      internalID: -543690944398023693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Cross Poison_14
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 83
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f7cf586424baaa60800000000000000
+      internalID: 7686153782524102645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Cross Poison_0: 3712497454210504949
+      PRAS- Cross Poison_1: 8320214783731646690
+      PRAS- Cross Poison_10: -1294021724476701553
+      PRAS- Cross Poison_11: -2256979335393638632
+      PRAS- Cross Poison_12: 2030968565098085626
+      PRAS- Cross Poison_13: -543690944398023693
+      PRAS- Cross Poison_14: 7686153782524102645
+      PRAS- Cross Poison_2: -3203956589627489696
+      PRAS- Cross Poison_3: -8332231179624687439
+      PRAS- Cross Poison_4: -143776584084815253
+      PRAS- Cross Poison_5: -5270562476532967609
+      PRAS- Cross Poison_6: 653328232199405664
+      PRAS- Cross Poison_7: -7502308353290326680
+      PRAS- Cross Poison_8: 5437135818540210419
+      PRAS- Cross Poison_9: -7679920499798804720
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

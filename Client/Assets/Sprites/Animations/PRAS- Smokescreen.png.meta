@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 046f4705aa65948a19ec01d7624194a3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1737816076223008029
+    second: PRAS- Smokescreen_0
+  - first:
+      213: -6678623621877920464
+    second: PRAS- Smokescreen_1
+  - first:
+      213: 5528370896846730373
+    second: PRAS- Smokescreen_2
+  - first:
+      213: -7472284079261063726
+    second: PRAS- Smokescreen_3
+  - first:
+      213: 2571009891549482234
+    second: PRAS- Smokescreen_4
+  - first:
+      213: -22032376381687251
+    second: PRAS- Smokescreen_5
+  - first:
+      213: -6013625561819166078
+    second: PRAS- Smokescreen_6
+  - first:
+      213: 5382432842179021163
+    second: PRAS- Smokescreen_7
+  - first:
+      213: -8203671965855448297
+    second: PRAS- Smokescreen_8
+  - first:
+      213: -1566446373377103575
+    second: PRAS- Smokescreen_9
+  - first:
+      213: -3751767130300257639
+    second: PRAS- Smokescreen_10
+  - first:
+      213: -6475373617227982513
+    second: PRAS- Smokescreen_11
+  - first:
+      213: -2017633335797915071
+    second: PRAS- Smokescreen_12
+  - first:
+      213: -8265742256608771072
+    second: PRAS- Smokescreen_13
+  - first:
+      213: -282954464385257794
+    second: PRAS- Smokescreen_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Smokescreen_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 271
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d4c349386fd1810800000000000000
+      internalID: 1737816076223008029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Smokescreen_1
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 255
+        width: 52
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03d0f656333c053a0800000000000000
+      internalID: -6678623621877920464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Smokescreen_2
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 255
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58438254a08b8bc40800000000000000
+      internalID: 5528370896846730373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Smokescreen_3
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 251
+        width: 130
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d566d2483d1d4890800000000000000
+      internalID: -7472284079261063726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Smokescreen_4
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 271
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afc82d3efdf0ea320800000000000000
+      internalID: 2571009891549482234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Smokescreen_5
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 263
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2a3630aba9b1bff0800000000000000
+      internalID: -22032376381687251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Smokescreen_6
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 81
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28a4f8fb96f4b8ca0800000000000000
+      internalID: -6013625561819166078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Smokescreen_7
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b690a71172e32ba40800000000000000
+      internalID: 5382432842179021163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Smokescreen_8
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 73
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7130b5ddfc3b62e80800000000000000
+      internalID: -8203671965855448297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Smokescreen_9
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 61
+        width: 72
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 929a823a25dd24ae0800000000000000
+      internalID: -1566446373377103575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Smokescreen_10
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 61
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99a67763cab0febc0800000000000000
+      internalID: -3751767130300257639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Smokescreen_11
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 55
+        width: 78
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f49903dc00ad226a0800000000000000
+      internalID: -6475373617227982513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Smokescreen_12
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 53
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14267c4cb2deff3e0800000000000000
+      internalID: -2017633335797915071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Smokescreen_13
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 57
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00406ed163f2a4d80800000000000000
+      internalID: -8265742256608771072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Smokescreen_14
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 53
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebea4bee96eb21cf0800000000000000
+      internalID: -282954464385257794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Smokescreen_0: 1737816076223008029
+      PRAS- Smokescreen_1: -6678623621877920464
+      PRAS- Smokescreen_10: -3751767130300257639
+      PRAS- Smokescreen_11: -6475373617227982513
+      PRAS- Smokescreen_12: -2017633335797915071
+      PRAS- Smokescreen_13: -8265742256608771072
+      PRAS- Smokescreen_14: -282954464385257794
+      PRAS- Smokescreen_2: 5528370896846730373
+      PRAS- Smokescreen_3: -7472284079261063726
+      PRAS- Smokescreen_4: 2571009891549482234
+      PRAS- Smokescreen_5: -22032376381687251
+      PRAS- Smokescreen_6: -6013625561819166078
+      PRAS- Smokescreen_7: 5382432842179021163
+      PRAS- Smokescreen_8: -8203671965855448297
+      PRAS- Smokescreen_9: -1566446373377103575
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

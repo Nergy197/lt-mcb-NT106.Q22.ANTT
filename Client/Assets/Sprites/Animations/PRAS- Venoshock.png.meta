@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 8a12b1085679b406caa72d9cf3c8d2c1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3952298250283847135
+    second: PRAS- Venoshock_0
+  - first:
+      213: 9102730226513378145
+    second: PRAS- Venoshock_1
+  - first:
+      213: 3624157558691201537
+    second: PRAS- Venoshock_2
+  - first:
+      213: -7496534906371241811
+    second: PRAS- Venoshock_3
+  - first:
+      213: 6525382869803523570
+    second: PRAS- Venoshock_4
+  - first:
+      213: -4082855181112106032
+    second: PRAS- Venoshock_5
+  - first:
+      213: -1759623863997176932
+    second: PRAS- Venoshock_6
+  - first:
+      213: 6715586940113298716
+    second: PRAS- Venoshock_7
+  - first:
+      213: -5289915185535124162
+    second: PRAS- Venoshock_8
+  - first:
+      213: -4441029162149568745
+    second: PRAS- Venoshock_9
+  - first:
+      213: -5377981240366566664
+    second: PRAS- Venoshock_10
+  - first:
+      213: -400521479508228910
+    second: PRAS- Venoshock_11
+  - first:
+      213: 4211713255783538536
+    second: PRAS- Venoshock_12
+  - first:
+      213: -2234187901797977307
+    second: PRAS- Venoshock_13
+  - first:
+      213: 4394188354971772374
+    second: PRAS- Venoshock_14
+  - first:
+      213: 7191413083057592433
+    second: PRAS- Venoshock_15
+  - first:
+      213: -2979409636555139193
+    second: PRAS- Venoshock_16
+  - first:
+      213: 2266684287864189460
+    second: PRAS- Venoshock_17
+  - first:
+      213: -2561734961236626636
+    second: PRAS- Venoshock_18
+  - first:
+      213: 4629060803194410610
+    second: PRAS- Venoshock_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Venoshock_0
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 105
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 122fe697ead9629c0800000000000000
+      internalID: -3952298250283847135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venoshock_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 87
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16b7a85a9e4635e70800000000000000
+      internalID: 9102730226513378145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venoshock_2
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 95
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10206d719189b4230800000000000000
+      internalID: 3624157558691201537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venoshock_3
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 95
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da80d639835f6f790800000000000000
+      internalID: -7496534906371241811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venoshock_4
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 103
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fdde0aa521de8a50800000000000000
+      internalID: 6525382869803523570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venoshock_5
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 91
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d3237c38d8c657c0800000000000000
+      internalID: -4082855181112106032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venoshock_6
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 93
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c93e5282b6f8497e0800000000000000
+      internalID: -1759623863997176932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venoshock_7
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 107
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c15a4b7cdbe823d50800000000000000
+      internalID: 6715586940113298716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venoshock_8
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 91
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3dfb3a7a227696b0800000000000000
+      internalID: -5289915185535124162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venoshock_9
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 107
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f9ce0b18b4e52c0800000000000000
+      internalID: -4441029162149568745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venoshock_10
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 79
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f27c3f3e829d55b0800000000000000
+      internalID: -5377981240366566664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venoshock_11
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 87
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d48ff026df017af0800000000000000
+      internalID: -400521479508228910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venoshock_12
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 95
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86f18ca34e2037a30800000000000000
+      internalID: 4211713255783538536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venoshock_13
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 69
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5233bd7c0f19ef0e0800000000000000
+      internalID: -2234187901797977307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venoshock_14
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 85
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d52046070b4bfc30800000000000000
+      internalID: 4394188354971772374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venoshock_15
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 73
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1789eb8e8180dc360800000000000000
+      internalID: 7191413083057592433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venoshock_16
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 85
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78751cc98b207a6d0800000000000000
+      internalID: -2979409636555139193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venoshock_17
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 73
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 412ba14b951e47f10800000000000000
+      internalID: 2266684287864189460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venoshock_18
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 69
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 433baca10a3e27cd0800000000000000
+      internalID: -2561734961236626636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Venoshock_19
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 69
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2765612564abd3040800000000000000
+      internalID: 4629060803194410610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Venoshock_0: -3952298250283847135
+      PRAS- Venoshock_1: 9102730226513378145
+      PRAS- Venoshock_10: -5377981240366566664
+      PRAS- Venoshock_11: -400521479508228910
+      PRAS- Venoshock_12: 4211713255783538536
+      PRAS- Venoshock_13: -2234187901797977307
+      PRAS- Venoshock_14: 4394188354971772374
+      PRAS- Venoshock_15: 7191413083057592433
+      PRAS- Venoshock_16: -2979409636555139193
+      PRAS- Venoshock_17: 2266684287864189460
+      PRAS- Venoshock_18: -2561734961236626636
+      PRAS- Venoshock_19: 4629060803194410610
+      PRAS- Venoshock_2: 3624157558691201537
+      PRAS- Venoshock_3: -7496534906371241811
+      PRAS- Venoshock_4: 6525382869803523570
+      PRAS- Venoshock_5: -4082855181112106032
+      PRAS- Venoshock_6: -1759623863997176932
+      PRAS- Venoshock_7: 6715586940113298716
+      PRAS- Venoshock_8: -5289915185535124162
+      PRAS- Venoshock_9: -4441029162149568745
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

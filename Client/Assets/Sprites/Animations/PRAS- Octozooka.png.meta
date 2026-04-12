@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: 17ec7cbd0f62147ab8b92c62d875f7b4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3149482884930467691
+    second: PRAS- Octozooka_0
+  - first:
+      213: 8301440672625005150
+    second: PRAS- Octozooka_1
+  - first:
+      213: 7765112252226238332
+    second: PRAS- Octozooka_2
+  - first:
+      213: 5142598325228254600
+    second: PRAS- Octozooka_3
+  - first:
+      213: -8619551207997685035
+    second: PRAS- Octozooka_4
+  - first:
+      213: 2862977828165617957
+    second: PRAS- Octozooka_5
+  - first:
+      213: -7039182199914194630
+    second: PRAS- Octozooka_6
+  - first:
+      213: -6088745131179311589
+    second: PRAS- Octozooka_7
+  - first:
+      213: 9156968675945609748
+    second: PRAS- Octozooka_8
+  - first:
+      213: -1327463313943478149
+    second: PRAS- Octozooka_9
+  - first:
+      213: 8261174750555289819
+    second: PRAS- Octozooka_10
+  - first:
+      213: -274235516375717854
+    second: PRAS- Octozooka_11
+  - first:
+      213: -2385604892795857615
+    second: PRAS- Octozooka_12
+  - first:
+      213: 6821683658007514987
+    second: PRAS- Octozooka_13
+  - first:
+      213: -3560492638582339007
+    second: PRAS- Octozooka_14
+  - first:
+      213: 78753592227533112
+    second: PRAS- Octozooka_15
+  - first:
+      213: 2765524561987826850
+    second: PRAS- Octozooka_16
+  - first:
+      213: 8560890114806118658
+    second: PRAS- Octozooka_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Octozooka_0
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 258
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5980c89b00aca44d0800000000000000
+      internalID: -3149482884930467691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Octozooka_1
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 260
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e521bcf0f44a43370800000000000000
+      internalID: 8301440672625005150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Octozooka_2
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 304
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c777afab37833cb60800000000000000
+      internalID: 7765112252226238332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Octozooka_3
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 316
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 885bfbd1eed2e5740800000000000000
+      internalID: 5142598325228254600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Octozooka_4
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 276
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d2420c38d3316880800000000000000
+      internalID: -8619551207997685035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Octozooka_5
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 284
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52981af7a275bb720800000000000000
+      internalID: 2862977828165617957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Octozooka_6
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 292
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a399cd8951dcf4e90800000000000000
+      internalID: -7039182199914194630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Octozooka_7
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 292
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1efa20109e608ba0800000000000000
+      internalID: -6088745131179311589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Octozooka_8
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 298
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41afd1dbe76141f70800000000000000
+      internalID: 9156968675945609748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Octozooka_9
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 296
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7049003627e39de0800000000000000
+      internalID: -1327463313943478149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Octozooka_10
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 266
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd836428aa695a270800000000000000
+      internalID: 8261174750555289819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Octozooka_11
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 288
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22821a53048b13cf0800000000000000
+      internalID: -274235516375717854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Octozooka_12
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 274
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 135187e4df0a4eed0800000000000000
+      internalID: -2385604892795857615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Octozooka_13
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 278
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6f00a5e42d7bae50800000000000000
+      internalID: 6821683658007514987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Octozooka_14
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 274
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14a08eb3fc6969ec0800000000000000
+      internalID: -3560492638582339007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Octozooka_15
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 278
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831128199f9c71100800000000000000
+      internalID: 78753592227533112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Octozooka_16
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 262
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a4f6eecfed116620800000000000000
+      internalID: 2765524561987826850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Octozooka_17
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 84
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 209fb2ea3346ec670800000000000000
+      internalID: 8560890114806118658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Octozooka_0: -3149482884930467691
+      PRAS- Octozooka_1: 8301440672625005150
+      PRAS- Octozooka_10: 8261174750555289819
+      PRAS- Octozooka_11: -274235516375717854
+      PRAS- Octozooka_12: -2385604892795857615
+      PRAS- Octozooka_13: 6821683658007514987
+      PRAS- Octozooka_14: -3560492638582339007
+      PRAS- Octozooka_15: 78753592227533112
+      PRAS- Octozooka_16: 2765524561987826850
+      PRAS- Octozooka_17: 8560890114806118658
+      PRAS- Octozooka_2: 7765112252226238332
+      PRAS- Octozooka_3: 5142598325228254600
+      PRAS- Octozooka_4: -8619551207997685035
+      PRAS- Octozooka_5: 2862977828165617957
+      PRAS- Octozooka_6: -7039182199914194630
+      PRAS- Octozooka_7: -6088745131179311589
+      PRAS- Octozooka_8: 9156968675945609748
+      PRAS- Octozooka_9: -1327463313943478149
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

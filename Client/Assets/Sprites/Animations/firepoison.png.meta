@@ -1,0 +1,1248 @@
+fileFormatVersion: 2
+guid: 3d36fdc4f08e449f8a7bd18ff30853fb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4691275838927675427
+    second: firepoison_0
+  - first:
+      213: -8305434752014966068
+    second: firepoison_1
+  - first:
+      213: 7015897615071914524
+    second: firepoison_2
+  - first:
+      213: -7122826497183390652
+    second: firepoison_3
+  - first:
+      213: 6348986340337011873
+    second: firepoison_4
+  - first:
+      213: -7078258149718124514
+    second: firepoison_5
+  - first:
+      213: 8526612153118299345
+    second: firepoison_6
+  - first:
+      213: 7839533055197883205
+    second: firepoison_7
+  - first:
+      213: 2929373673952175034
+    second: firepoison_8
+  - first:
+      213: -7987874512936119215
+    second: firepoison_9
+  - first:
+      213: -2755365364073547198
+    second: firepoison_10
+  - first:
+      213: 8552957346308271019
+    second: firepoison_11
+  - first:
+      213: -421318232840040542
+    second: firepoison_12
+  - first:
+      213: 3456167110398016575
+    second: firepoison_13
+  - first:
+      213: -4837824658151165311
+    second: firepoison_14
+  - first:
+      213: -6579712075378070799
+    second: firepoison_15
+  - first:
+      213: -6684598048619561742
+    second: firepoison_16
+  - first:
+      213: 7111967122712956238
+    second: firepoison_17
+  - first:
+      213: -1999856914852511941
+    second: firepoison_18
+  - first:
+      213: 5205558211389689401
+    second: firepoison_19
+  - first:
+      213: 7186325069941709491
+    second: firepoison_20
+  - first:
+      213: 3870605578960296063
+    second: firepoison_21
+  - first:
+      213: -7572628407562474516
+    second: firepoison_22
+  - first:
+      213: -8903460042328041627
+    second: firepoison_23
+  - first:
+      213: 7270142458291053345
+    second: firepoison_24
+  - first:
+      213: 2358518579772542354
+    second: firepoison_25
+  - first:
+      213: 9108434081937226655
+    second: firepoison_26
+  - first:
+      213: 3400704769540061661
+    second: firepoison_27
+  - first:
+      213: 1925211947192083693
+    second: firepoison_28
+  - first:
+      213: -491626731093840147
+    second: firepoison_29
+  - first:
+      213: 3096471816276683633
+    second: firepoison_30
+  - first:
+      213: 7515493174958550227
+    second: firepoison_31
+  - first:
+      213: 7210839451674646696
+    second: firepoison_32
+  - first:
+      213: 8881048949480333669
+    second: firepoison_33
+  - first:
+      213: 215021866555105343
+    second: firepoison_34
+  - first:
+      213: 1412334494788184178
+    second: firepoison_35
+  - first:
+      213: 3942658259208517064
+    second: firepoison_36
+  - first:
+      213: -6404817788453995165
+    second: firepoison_37
+  - first:
+      213: 3838879946514268721
+    second: firepoison_38
+  - first:
+      213: -3544984445173571849
+    second: firepoison_39
+  - first:
+      213: -1172246807213164832
+    second: firepoison_40
+  - first:
+      213: -8965385043183070619
+    second: firepoison_41
+  - first:
+      213: -8856443705489525097
+    second: firepoison_42
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: firepoison_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 437
+        width: 55
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddfd75dda7d35eeb0800000000000000
+      internalID: -4691275838927675427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_1
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 433
+        width: 54
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc2a6fcd81b2dbc80800000000000000
+      internalID: -8305434752014966068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_2
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 512
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a2fd685b97d5160800000000000000
+      internalID: 7015897615071914524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_3
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 522
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 444e4a60a03a62d90800000000000000
+      internalID: -7122826497183390652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_4
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 529
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ac489b20712c1850800000000000000
+      internalID: 6348986340337011873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_5
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 431
+        width: 51
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e18998d07b9f4cd90800000000000000
+      internalID: -7078258149718124514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_6
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 505
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d4152cc39c945670800000000000000
+      internalID: 8526612153118299345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_7
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 431
+        width: 55
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54ba00037cd9bcc60800000000000000
+      internalID: 7839533055197883205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_8
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 427
+        width: 103
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab3ec4206d937a820800000000000000
+      internalID: 2929373673952175034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_9
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 236
+        width: 107
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 154db0ab37e552190800000000000000
+      internalID: -7987874512936119215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_10
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 235
+        width: 104
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a3bf7ccc9f2c9d0800000000000000
+      internalID: -2755365364073547198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_11
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 232
+        width: 111
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baba5c5146532b670800000000000000
+      internalID: 8552957346308271019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_12
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 327
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2af8c2aac4d272af0800000000000000
+      internalID: -421318232840040542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_13
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 249
+        width: 86
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3c79a3eca5c6ff20800000000000000
+      internalID: 3456167110398016575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_14
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 267
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1823645fa189cdcb0800000000000000
+      internalID: -4837824658151165311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_15
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 35
+        width: 107
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1faedbe6aba20b4a0800000000000000
+      internalID: -6579712075378070799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_16
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 34
+        width: 145
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fcf2c5cd798b33a0800000000000000
+      internalID: -6684598048619561742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_17
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 26
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d0093da68c2b260800000000000000
+      internalID: 7111967122712956238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_18
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 26
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f7b9c4bb41f34e0800000000000000
+      internalID: -1999856914852511941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_19
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 107
+        width: 40
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93e008fec9bdd3840800000000000000
+      internalID: 5205558211389689401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_20
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 111
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ba1c5a8394fab360800000000000000
+      internalID: 7186325069941709491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_21
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 118
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f78d297444727b530800000000000000
+      internalID: 3870605578960296063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_22
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 111
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cebe437b59e98e690800000000000000
+      internalID: -7572628407562474516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_23
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 107
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5671729934e807480800000000000000
+      internalID: -8903460042328041627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_24
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 48
+        width: 37
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1236ce40c0cb4e460800000000000000
+      internalID: 7270142458291053345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_25
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 100
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29d408ff6242bb020800000000000000
+      internalID: 2358518579772542354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_26
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 90
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9bfde9f988a76e70800000000000000
+      internalID: 9108434081937226655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_27
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 100
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd9796e58fab13f20800000000000000
+      internalID: 3400704769540061661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_28
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 69
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de4e8b5d01ab7ba10800000000000000
+      internalID: 1925211947192083693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_29
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 48
+        width: 37
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deea013c7146d29f0800000000000000
+      internalID: -491626731093840147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_30
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 100
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17b2e2a06b0e8fa20800000000000000
+      internalID: 3096471816276683633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_31
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 69
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dce64d49356c4860800000000000000
+      internalID: 7515493174958550227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_32
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 79
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a89071d64c021460800000000000000
+      internalID: 7210839451674646696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_33
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 41
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 561a1aa37f2df3b70800000000000000
+      internalID: 8881048949480333669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_34
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 51
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3065f69f39ebf200800000000000000
+      internalID: 215021866555105343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_35
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 44
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27861e97dbe999310800000000000000
+      internalID: 1412334494788184178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_36
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 51
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c532e23cc227b630800000000000000
+      internalID: 3942658259208517064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_37
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 41
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36db814d7248d17a0800000000000000
+      internalID: -6404817788453995165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_38
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 20
+        width: 40
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1328a5bd8f0764530800000000000000
+      internalID: 3838879946514268721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_39
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 34
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fed423ed6fadcec0800000000000000
+      internalID: -3544984445173571849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_40
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 20
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e639fa5db75bbfe0800000000000000
+      internalID: -1172246807213164832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_41
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 34
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 562197acdcd849380800000000000000
+      internalID: -8965385043183070619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firepoison_42
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 20
+        width: 41
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7967d019f57971580800000000000000
+      internalID: -8856443705489525097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      firepoison_0: -4691275838927675427
+      firepoison_1: -8305434752014966068
+      firepoison_10: -2755365364073547198
+      firepoison_11: 8552957346308271019
+      firepoison_12: -421318232840040542
+      firepoison_13: 3456167110398016575
+      firepoison_14: -4837824658151165311
+      firepoison_15: -6579712075378070799
+      firepoison_16: -6684598048619561742
+      firepoison_17: 7111967122712956238
+      firepoison_18: -1999856914852511941
+      firepoison_19: 5205558211389689401
+      firepoison_2: 7015897615071914524
+      firepoison_20: 7186325069941709491
+      firepoison_21: 3870605578960296063
+      firepoison_22: -7572628407562474516
+      firepoison_23: -8903460042328041627
+      firepoison_24: 7270142458291053345
+      firepoison_25: 2358518579772542354
+      firepoison_26: 9108434081937226655
+      firepoison_27: 3400704769540061661
+      firepoison_28: 1925211947192083693
+      firepoison_29: -491626731093840147
+      firepoison_3: -7122826497183390652
+      firepoison_30: 3096471816276683633
+      firepoison_31: 7515493174958550227
+      firepoison_32: 7210839451674646696
+      firepoison_33: 8881048949480333669
+      firepoison_34: 215021866555105343
+      firepoison_35: 1412334494788184178
+      firepoison_36: 3942658259208517064
+      firepoison_37: -6404817788453995165
+      firepoison_38: 3838879946514268721
+      firepoison_39: -3544984445173571849
+      firepoison_4: 6348986340337011873
+      firepoison_40: -1172246807213164832
+      firepoison_41: -8965385043183070619
+      firepoison_42: -8856443705489525097
+      firepoison_5: -7078258149718124514
+      firepoison_6: 8526612153118299345
+      firepoison_7: 7839533055197883205
+      firepoison_8: 2929373673952175034
+      firepoison_9: -7987874512936119215
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

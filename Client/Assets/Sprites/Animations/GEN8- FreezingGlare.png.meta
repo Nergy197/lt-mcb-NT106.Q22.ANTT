@@ -1,0 +1,1144 @@
+fileFormatVersion: 2
+guid: fea82864f82ea4243a94b3fc986ba8f2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6964425132156949863
+    second: GEN8- FreezingGlare_0
+  - first:
+      213: -4758670496437723285
+    second: GEN8- FreezingGlare_1
+  - first:
+      213: 138846894899916587
+    second: GEN8- FreezingGlare_2
+  - first:
+      213: 3932121604435873218
+    second: GEN8- FreezingGlare_3
+  - first:
+      213: 5069097898636935259
+    second: GEN8- FreezingGlare_4
+  - first:
+      213: -3230807547933325799
+    second: GEN8- FreezingGlare_5
+  - first:
+      213: 5828428012739004993
+    second: GEN8- FreezingGlare_6
+  - first:
+      213: -5602802041075914878
+    second: GEN8- FreezingGlare_7
+  - first:
+      213: 9161907788085385070
+    second: GEN8- FreezingGlare_8
+  - first:
+      213: 204408146839147761
+    second: GEN8- FreezingGlare_9
+  - first:
+      213: 4945870306678184374
+    second: GEN8- FreezingGlare_10
+  - first:
+      213: 7066989507250795408
+    second: GEN8- FreezingGlare_11
+  - first:
+      213: -7587558987231890949
+    second: GEN8- FreezingGlare_12
+  - first:
+      213: -3097892117680775312
+    second: GEN8- FreezingGlare_13
+  - first:
+      213: 5054543703909600699
+    second: GEN8- FreezingGlare_14
+  - first:
+      213: 2612217588335119550
+    second: GEN8- FreezingGlare_15
+  - first:
+      213: 5972780269423178053
+    second: GEN8- FreezingGlare_16
+  - first:
+      213: -6126238207741873738
+    second: GEN8- FreezingGlare_17
+  - first:
+      213: 3137470077041113030
+    second: GEN8- FreezingGlare_18
+  - first:
+      213: 4471557510154032239
+    second: GEN8- FreezingGlare_19
+  - first:
+      213: -1440245418155420596
+    second: GEN8- FreezingGlare_20
+  - first:
+      213: 8599473392613336528
+    second: GEN8- FreezingGlare_21
+  - first:
+      213: 3877454413665939761
+    second: GEN8- FreezingGlare_22
+  - first:
+      213: 7347796237924844460
+    second: GEN8- FreezingGlare_23
+  - first:
+      213: -3214814470179006248
+    second: GEN8- FreezingGlare_24
+  - first:
+      213: -501229679650068772
+    second: GEN8- FreezingGlare_25
+  - first:
+      213: -1814470191943096993
+    second: GEN8- FreezingGlare_26
+  - first:
+      213: 5884422238255702706
+    second: GEN8- FreezingGlare_27
+  - first:
+      213: 7721606949991420275
+    second: GEN8- FreezingGlare_28
+  - first:
+      213: 7126363823826630693
+    second: GEN8- FreezingGlare_29
+  - first:
+      213: 7365950096948391830
+    second: GEN8- FreezingGlare_30
+  - first:
+      213: 409637621592548975
+    second: GEN8- FreezingGlare_31
+  - first:
+      213: 1003131987868473149
+    second: GEN8- FreezingGlare_32
+  - first:
+      213: -2022863983983580364
+    second: GEN8- FreezingGlare_33
+  - first:
+      213: -2066895620472910639
+    second: GEN8- FreezingGlare_34
+  - first:
+      213: 1398837190154047212
+    second: GEN8- FreezingGlare_35
+  - first:
+      213: -8639148401986484474
+    second: GEN8- FreezingGlare_36
+  - first:
+      213: -7976594250503186837
+    second: GEN8- FreezingGlare_37
+  - first:
+      213: -4698907406735273711
+    second: GEN8- FreezingGlare_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 576
+        width: 142
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99a6bfccd34695f90800000000000000
+      internalID: -6964425132156949863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 384
+        width: 142
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6f92b0656ec5fdb0800000000000000
+      internalID: -4758670496437723285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 576
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2feca8e3884de100800000000000000
+      internalID: 138846894899916587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_3
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 576
+        width: 142
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cd0a0614c3b19630800000000000000
+      internalID: 3932121604435873218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_4
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 576
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b500feb7ead095640800000000000000
+      internalID: 5069097898636935259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 576
+        width: 142
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91688c717add923d0800000000000000
+      internalID: -3230807547933325799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_6
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 576
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14a8e32b56cb2e050800000000000000
+      internalID: 5828428012739004993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_7
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 576
+        width: 142
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28726d28a39de32b0800000000000000
+      internalID: -5602802041075914878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_8
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 576
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e67d6b56792a52f70800000000000000
+      internalID: 9161907788085385070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_9
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 576
+        width: 142
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f41b85602436d200800000000000000
+      internalID: 204408146839147761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_10
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 576
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b994bee6d243a440800000000000000
+      internalID: 4945870306678184374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_11
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 384
+        width: 142
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 093b81ba38df21260800000000000000
+      internalID: 7066989507250795408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_12
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 384
+        width: 142
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf178bd3d4393b690800000000000000
+      internalID: -7587558987231890949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_13
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 385
+        width: 141
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07f972548831205d0800000000000000
+      internalID: -3097892117680775312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_14
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 392
+        width: 158
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbd0835f7b8552640800000000000000
+      internalID: 5054543703909600699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_15
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 512
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc0eb47e06704420800000000000000
+      internalID: 2612217588335119550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_16
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 384
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5413e68820493e250800000000000000
+      internalID: 5972780269423178053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_17
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 384
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b1be1aeeca3bfaa0800000000000000
+      internalID: -6126238207741873738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_18
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 384
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c7f37b79688a8b20800000000000000
+      internalID: 3137470077041113030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_19
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 383
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6416793dd92e0e30800000000000000
+      internalID: 4471557510154032239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_20
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 389
+        width: 68
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4456754c68330ce0800000000000000
+      internalID: -1440245418155420596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_21
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 196
+        width: 172
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d524261d77775770800000000000000
+      internalID: 8599473392613336528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_22
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 299
+        width: 100
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 131345fde3c7fc530800000000000000
+      internalID: 3877454413665939761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_23
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 339
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca346738fbd98f560800000000000000
+      internalID: 7347796237924844460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_24
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 347
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d8d13ea54fa263d0800000000000000
+      internalID: -3214814470179006248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_25
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 193
+        width: 96
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd6239113464b09f0800000000000000
+      internalID: -501229679650068772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_26
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 197
+        width: 75
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5562b159f4b1d6e0800000000000000
+      internalID: -1814470191943096993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_27
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 191
+        width: 183
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b2e3a349daa9a150800000000000000
+      internalID: 5884422238255702706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_28
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 191
+        width: 144
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3711d653c98a82b60800000000000000
+      internalID: 7721606949991420275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_29
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 325
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5287163042ee5e260800000000000000
+      internalID: 7126363823826630693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_30
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 316
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69fecd1369c193660800000000000000
+      internalID: 7365950096948391830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_31
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 195
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f66e8a91f335fa500800000000000000
+      internalID: 409637621592548975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_32
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 194
+        width: 96
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d375bb76a37dbed00800000000000000
+      internalID: 1003131987868473149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_33
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 195
+        width: 81
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43b2ab59ce75de3e0800000000000000
+      internalID: -2022863983983580364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 193
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dcc6e15269e053e0800000000000000
+      internalID: -2066895620472910639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_35
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 0
+        width: 192
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceeccb9530ba96310800000000000000
+      internalID: 1398837190154047212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_36
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 48
+        width: 130
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60746b1fc449b1880800000000000000
+      internalID: -8639148401986484474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_37
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 40
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b66955d7ac17d4190800000000000000
+      internalID: -7976594250503186837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- FreezingGlare_38
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 56
+        width: 122
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11197150c902aceb0800000000000000
+      internalID: -4698907406735273711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GEN8- FreezingGlare_0: -6964425132156949863
+      GEN8- FreezingGlare_1: -4758670496437723285
+      GEN8- FreezingGlare_10: 4945870306678184374
+      GEN8- FreezingGlare_11: 7066989507250795408
+      GEN8- FreezingGlare_12: -7587558987231890949
+      GEN8- FreezingGlare_13: -3097892117680775312
+      GEN8- FreezingGlare_14: 5054543703909600699
+      GEN8- FreezingGlare_15: 2612217588335119550
+      GEN8- FreezingGlare_16: 5972780269423178053
+      GEN8- FreezingGlare_17: -6126238207741873738
+      GEN8- FreezingGlare_18: 3137470077041113030
+      GEN8- FreezingGlare_19: 4471557510154032239
+      GEN8- FreezingGlare_2: 138846894899916587
+      GEN8- FreezingGlare_20: -1440245418155420596
+      GEN8- FreezingGlare_21: 8599473392613336528
+      GEN8- FreezingGlare_22: 3877454413665939761
+      GEN8- FreezingGlare_23: 7347796237924844460
+      GEN8- FreezingGlare_24: -3214814470179006248
+      GEN8- FreezingGlare_25: -501229679650068772
+      GEN8- FreezingGlare_26: -1814470191943096993
+      GEN8- FreezingGlare_27: 5884422238255702706
+      GEN8- FreezingGlare_28: 7721606949991420275
+      GEN8- FreezingGlare_29: 7126363823826630693
+      GEN8- FreezingGlare_3: 3932121604435873218
+      GEN8- FreezingGlare_30: 7365950096948391830
+      GEN8- FreezingGlare_31: 409637621592548975
+      GEN8- FreezingGlare_32: 1003131987868473149
+      GEN8- FreezingGlare_33: -2022863983983580364
+      GEN8- FreezingGlare_34: -2066895620472910639
+      GEN8- FreezingGlare_35: 1398837190154047212
+      GEN8- FreezingGlare_36: -8639148401986484474
+      GEN8- FreezingGlare_37: -7976594250503186837
+      GEN8- FreezingGlare_38: -4698907406735273711
+      GEN8- FreezingGlare_4: 5069097898636935259
+      GEN8- FreezingGlare_5: -3230807547933325799
+      GEN8- FreezingGlare_6: 5828428012739004993
+      GEN8- FreezingGlare_7: -5602802041075914878
+      GEN8- FreezingGlare_8: 9161907788085385070
+      GEN8- FreezingGlare_9: 204408146839147761
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

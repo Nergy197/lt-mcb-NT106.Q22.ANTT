@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: 94013d77b89874210acbb043b9d9f65f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8542471729858171882
+    second: PRAS- Nasty Plot_0
+  - first:
+      213: -1255980284080376712
+    second: PRAS- Nasty Plot_1
+  - first:
+      213: 6515908428575589783
+    second: PRAS- Nasty Plot_2
+  - first:
+      213: 1962498709734654991
+    second: PRAS- Nasty Plot_3
+  - first:
+      213: 7055303399565558773
+    second: PRAS- Nasty Plot_4
+  - first:
+      213: 112287704159632015
+    second: PRAS- Nasty Plot_5
+  - first:
+      213: 2302098439007439175
+    second: PRAS- Nasty Plot_6
+  - first:
+      213: -80024878702034433
+    second: PRAS- Nasty Plot_7
+  - first:
+      213: -5903053755655417136
+    second: PRAS- Nasty Plot_8
+  - first:
+      213: 7697418765562579081
+    second: PRAS- Nasty Plot_9
+  - first:
+      213: -2865442535991781035
+    second: PRAS- Nasty Plot_10
+  - first:
+      213: 7300085473749136568
+    second: PRAS- Nasty Plot_11
+  - first:
+      213: 5855802467169726946
+    second: PRAS- Nasty Plot_12
+  - first:
+      213: -6796043100555649096
+    second: PRAS- Nasty Plot_13
+  - first:
+      213: -7286107964737344211
+    second: PRAS- Nasty Plot_14
+  - first:
+      213: -9021995582317978617
+    second: PRAS- Nasty Plot_15
+  - first:
+      213: -8115699610885126619
+    second: PRAS- Nasty Plot_16
+  - first:
+      213: -3830540931773680390
+    second: PRAS- Nasty Plot_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Nasty Plot_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 298
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae3530247c4fc8670800000000000000
+      internalID: 8542471729858171882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Nasty Plot_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 286
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 874be7a069cd19ee0800000000000000
+      internalID: -1255980284080376712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Nasty Plot_2
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 292
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 795c83a61382d6a50800000000000000
+      internalID: 6515908428575589783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Nasty Plot_3
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 255
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0485e1cd223c3b10800000000000000
+      internalID: 1962498709734654991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Nasty Plot_4
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 255
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f306b1bf0979e160800000000000000
+      internalID: 7055303399565558773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Nasty Plot_5
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 255
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8a341f621dee8100800000000000000
+      internalID: 112287704159632015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Nasty Plot_6
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 255
+        width: 52
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 749050f4552b2ff10800000000000000
+      internalID: 2302098439007439175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Nasty Plot_7
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 278
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff185cbfbc1b3eef0800000000000000
+      internalID: -80024878702034433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Nasty Plot_8
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 286
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d29f1c82e3241ea0800000000000000
+      internalID: -5903053755655417136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Nasty Plot_9
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 272
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98888c8a599b2da60800000000000000
+      internalID: 7697418765562579081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Nasty Plot_10
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 260
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5595aedf137eb38d0800000000000000
+      internalID: -2865442535991781035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Nasty Plot_11
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 275
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b47ec49f0d1f4560800000000000000
+      internalID: 7300085473749136568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Nasty Plot_12
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 273
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e1f18a815df34150800000000000000
+      internalID: 5855802467169726946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Nasty Plot_13
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 268
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bfd2299eca9fa1a0800000000000000
+      internalID: -6796043100555649096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Nasty Plot_14
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 256
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2dafa6d86b82ea90800000000000000
+      internalID: -7286107964737344211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Nasty Plot_15
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 81
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70c1bc681de6bc280800000000000000
+      internalID: -9021995582317978617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Nasty Plot_16
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 74
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5268a65e33e3f5f80800000000000000
+      internalID: -8115699610885126619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Nasty Plot_17
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 63
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af43900515f27dac0800000000000000
+      internalID: -3830540931773680390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Nasty Plot_0: 8542471729858171882
+      PRAS- Nasty Plot_1: -1255980284080376712
+      PRAS- Nasty Plot_10: -2865442535991781035
+      PRAS- Nasty Plot_11: 7300085473749136568
+      PRAS- Nasty Plot_12: 5855802467169726946
+      PRAS- Nasty Plot_13: -6796043100555649096
+      PRAS- Nasty Plot_14: -7286107964737344211
+      PRAS- Nasty Plot_15: -9021995582317978617
+      PRAS- Nasty Plot_16: -8115699610885126619
+      PRAS- Nasty Plot_17: -3830540931773680390
+      PRAS- Nasty Plot_2: 6515908428575589783
+      PRAS- Nasty Plot_3: 1962498709734654991
+      PRAS- Nasty Plot_4: 7055303399565558773
+      PRAS- Nasty Plot_5: 112287704159632015
+      PRAS- Nasty Plot_6: 2302098439007439175
+      PRAS- Nasty Plot_7: -80024878702034433
+      PRAS- Nasty Plot_8: -5903053755655417136
+      PRAS- Nasty Plot_9: 7697418765562579081
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1404 @@
+fileFormatVersion: 2
+guid: 7ffcf3bd5a6b34b90b6afaa88f60d49c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3977509559030078997
+    second: PRAS- Acid Downpour_0
+  - first:
+      213: 7253748731271240839
+    second: PRAS- Acid Downpour_1
+  - first:
+      213: 1676112935413641694
+    second: PRAS- Acid Downpour_2
+  - first:
+      213: -3783294882722897189
+    second: PRAS- Acid Downpour_3
+  - first:
+      213: -6274372188840030202
+    second: PRAS- Acid Downpour_4
+  - first:
+      213: 5808513696630713810
+    second: PRAS- Acid Downpour_5
+  - first:
+      213: -8664908108178196105
+    second: PRAS- Acid Downpour_6
+  - first:
+      213: -2786778006602204725
+    second: PRAS- Acid Downpour_7
+  - first:
+      213: -8528537617355573789
+    second: PRAS- Acid Downpour_8
+  - first:
+      213: 5947949798492427986
+    second: PRAS- Acid Downpour_9
+  - first:
+      213: 2331353624142272631
+    second: PRAS- Acid Downpour_10
+  - first:
+      213: -6456410108283030708
+    second: PRAS- Acid Downpour_11
+  - first:
+      213: -3671892039702005147
+    second: PRAS- Acid Downpour_12
+  - first:
+      213: 8365207216069261932
+    second: PRAS- Acid Downpour_13
+  - first:
+      213: 4167099382344104150
+    second: PRAS- Acid Downpour_14
+  - first:
+      213: 5397224673957064672
+    second: PRAS- Acid Downpour_15
+  - first:
+      213: 3023914731930027870
+    second: PRAS- Acid Downpour_16
+  - first:
+      213: -280445405138426057
+    second: PRAS- Acid Downpour_17
+  - first:
+      213: 4778033558162647733
+    second: PRAS- Acid Downpour_18
+  - first:
+      213: 4845796260414343079
+    second: PRAS- Acid Downpour_19
+  - first:
+      213: -8274672158428231430
+    second: PRAS- Acid Downpour_20
+  - first:
+      213: 1890722072755839667
+    second: PRAS- Acid Downpour_21
+  - first:
+      213: 162160357561214992
+    second: PRAS- Acid Downpour_22
+  - first:
+      213: 91171222619392913
+    second: PRAS- Acid Downpour_23
+  - first:
+      213: -8709300186770843146
+    second: PRAS- Acid Downpour_24
+  - first:
+      213: -2895198299009377073
+    second: PRAS- Acid Downpour_25
+  - first:
+      213: 6910562953104520937
+    second: PRAS- Acid Downpour_26
+  - first:
+      213: 7612129074610518771
+    second: PRAS- Acid Downpour_27
+  - first:
+      213: -5349988359735861701
+    second: PRAS- Acid Downpour_28
+  - first:
+      213: -6215131887744039975
+    second: PRAS- Acid Downpour_29
+  - first:
+      213: 6403919440811224657
+    second: PRAS- Acid Downpour_30
+  - first:
+      213: 3306568599834110263
+    second: PRAS- Acid Downpour_31
+  - first:
+      213: 3633353675488824502
+    second: PRAS- Acid Downpour_32
+  - first:
+      213: 3184177973317443331
+    second: PRAS- Acid Downpour_33
+  - first:
+      213: 1717479787939734209
+    second: PRAS- Acid Downpour_34
+  - first:
+      213: 3255129338437990827
+    second: PRAS- Acid Downpour_35
+  - first:
+      213: -4344751880112233748
+    second: PRAS- Acid Downpour_36
+  - first:
+      213: 2506861056412010308
+    second: PRAS- Acid Downpour_37
+  - first:
+      213: 6472512258358488609
+    second: PRAS- Acid Downpour_38
+  - first:
+      213: 3430847188585314394
+    second: PRAS- Acid Downpour_39
+  - first:
+      213: 2351708034109607416
+    second: PRAS- Acid Downpour_40
+  - first:
+      213: -3791311030025663987
+    second: PRAS- Acid Downpour_41
+  - first:
+      213: -7114498583665795673
+    second: PRAS- Acid Downpour_42
+  - first:
+      213: -5901395716199430284
+    second: PRAS- Acid Downpour_43
+  - first:
+      213: 3812907134083195606
+    second: PRAS- Acid Downpour_44
+  - first:
+      213: 7557229858658861057
+    second: PRAS- Acid Downpour_45
+  - first:
+      213: -8440699507828533347
+    second: PRAS- Acid Downpour_46
+  - first:
+      213: 4397823580697729022
+    second: PRAS- Acid Downpour_47
+  - first:
+      213: 4613970338221093977
+    second: PRAS- Acid Downpour_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_0
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 865
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51e55b4ced3f23730800000000000000
+      internalID: 3977509559030078997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_1
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 869
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78cdc510a0e7aa460800000000000000
+      internalID: 7253748731271240839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_2
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 863
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed174c695dfb24710800000000000000
+      internalID: 1676112935413641694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_3
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 879
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd2afb259590f7bc0800000000000000
+      internalID: -3783294882722897189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_4
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 873
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 600999fbcb3fce8a0800000000000000
+      internalID: -6274372188840030202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_5
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 873
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dd2aa8ae6cfb9050800000000000000
+      internalID: 5808513696630713810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_6
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 879
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 779f2a8fbff00c780800000000000000
+      internalID: -8664908108178196105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_7
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 859
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc9ba900b206359d0800000000000000
+      internalID: -2786778006602204725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_8
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 859
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e5f6ff193c84a980800000000000000
+      internalID: -8528537617355573789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_9
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 672
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d65ff004dc5b8250800000000000000
+      internalID: 5947949798492427986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_10
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 680
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 778d1d4e4c1aa5020800000000000000
+      internalID: 2331353624142272631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_11
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 700
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c437c8bc6393666a0800000000000000
+      internalID: -6456410108283030708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_12
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 650
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56a3af7f4a1da0dc0800000000000000
+      internalID: -3671892039702005147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_13
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 658
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6ab75a64af271470800000000000000
+      internalID: 8365207216069261932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_14
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 664
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d8be5c5fc284d930800000000000000
+      internalID: 4167099382344104150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_15
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 602
+        width: 62
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef2f28ce3bc6ea40800000000000000
+      internalID: 5397224673957064672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_16
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 630
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5782c36d6a17f920800000000000000
+      internalID: 3023914731930027870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_17
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 646
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73765dfc368ab1cf0800000000000000
+      internalID: -280445405138426057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_18
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 602
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba2e2fb43cfe4240800000000000000
+      internalID: 4778033558162647733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_19
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 642
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a7c9e3560abf3340800000000000000
+      internalID: 4845796260414343079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_20
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 616
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af8021453857a2d80800000000000000
+      internalID: -8274672158428231430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_21
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 602
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b22a9b25b13d3a10800000000000000
+      internalID: 1890722072755839667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_22
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 618
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 018261d6cfb104200800000000000000
+      internalID: 162160357561214992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_23
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 610
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19b87f17eb7e34100800000000000000
+      internalID: 91171222619392913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_24
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 602
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f9d74dbf99522780800000000000000
+      internalID: -8709300186770843146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_25
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 610
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcc1b398c7032d7d0800000000000000
+      internalID: -2895198299009377073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_26
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 602
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e6f4c1646047ef50800000000000000
+      internalID: 6910562953104520937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_27
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 604
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa35940017b3a960800000000000000
+      internalID: 7612129074610518771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_28
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 606
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3e1879aee501c5b0800000000000000
+      internalID: -5349988359735861701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_29
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 410
+        width: 66
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d340de2a7a6fb9a0800000000000000
+      internalID: -6215131887744039975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_30
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 410
+        width: 64
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e65cf4dca4fd850800000000000000
+      internalID: 6403919440811224657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_31
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 410
+        width: 66
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 739a2926f9a43ed20800000000000000
+      internalID: 3306568599834110263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_32
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 410
+        width: 66
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc0fd2eae34c6230800000000000000
+      internalID: 3633353675488824502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_33
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 410
+        width: 66
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f95390ff8703c20800000000000000
+      internalID: 3184177973317443331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_34
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 271
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c2af0d74c6b5d710800000000000000
+      internalID: 1717479787939734209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_35
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 271
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba97c8b03ea8c2d20800000000000000
+      internalID: 3255129338437990827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_36
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 301
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce223bc3f2754b3c0800000000000000
+      internalID: -4344751880112233748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_37
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 267
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 447c2b059d82ac220800000000000000
+      internalID: 2506861056412010308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_38
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 271
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12ea1db2b9bf2d950800000000000000
+      internalID: 6472512258358488609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_39
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 271
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5876423751dc9f20800000000000000
+      internalID: 3430847188585314394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_40
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 76
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fd09844ff1f2a020800000000000000
+      internalID: 2351708034109607416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_41
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 76
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0acc4694be826bc0800000000000000
+      internalID: -3791311030025663987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_42
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 104
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad949d7b39344d90800000000000000
+      internalID: -7114498583665795673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_43
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 74
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477cbe0fcd70a1ea0800000000000000
+      internalID: -5901395716199430284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_44
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 112
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d2e49836da2ae430800000000000000
+      internalID: 3812907134083195606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_45
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 84
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 100465b348ca0e860800000000000000
+      internalID: 7557229858658861057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_46
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 98
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d97d014b48c9cda80800000000000000
+      internalID: -8440699507828533347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_47
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 94
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef71358fe35380d30800000000000000
+      internalID: 4397823580697729022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Acid Downpour_48
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 78
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9547bd5a39d180040800000000000000
+      internalID: 4613970338221093977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Acid Downpour_0: 3977509559030078997
+      PRAS- Acid Downpour_1: 7253748731271240839
+      PRAS- Acid Downpour_10: 2331353624142272631
+      PRAS- Acid Downpour_11: -6456410108283030708
+      PRAS- Acid Downpour_12: -3671892039702005147
+      PRAS- Acid Downpour_13: 8365207216069261932
+      PRAS- Acid Downpour_14: 4167099382344104150
+      PRAS- Acid Downpour_15: 5397224673957064672
+      PRAS- Acid Downpour_16: 3023914731930027870
+      PRAS- Acid Downpour_17: -280445405138426057
+      PRAS- Acid Downpour_18: 4778033558162647733
+      PRAS- Acid Downpour_19: 4845796260414343079
+      PRAS- Acid Downpour_2: 1676112935413641694
+      PRAS- Acid Downpour_20: -8274672158428231430
+      PRAS- Acid Downpour_21: 1890722072755839667
+      PRAS- Acid Downpour_22: 162160357561214992
+      PRAS- Acid Downpour_23: 91171222619392913
+      PRAS- Acid Downpour_24: -8709300186770843146
+      PRAS- Acid Downpour_25: -2895198299009377073
+      PRAS- Acid Downpour_26: 6910562953104520937
+      PRAS- Acid Downpour_27: 7612129074610518771
+      PRAS- Acid Downpour_28: -5349988359735861701
+      PRAS- Acid Downpour_29: -6215131887744039975
+      PRAS- Acid Downpour_3: -3783294882722897189
+      PRAS- Acid Downpour_30: 6403919440811224657
+      PRAS- Acid Downpour_31: 3306568599834110263
+      PRAS- Acid Downpour_32: 3633353675488824502
+      PRAS- Acid Downpour_33: 3184177973317443331
+      PRAS- Acid Downpour_34: 1717479787939734209
+      PRAS- Acid Downpour_35: 3255129338437990827
+      PRAS- Acid Downpour_36: -4344751880112233748
+      PRAS- Acid Downpour_37: 2506861056412010308
+      PRAS- Acid Downpour_38: 6472512258358488609
+      PRAS- Acid Downpour_39: 3430847188585314394
+      PRAS- Acid Downpour_4: -6274372188840030202
+      PRAS- Acid Downpour_40: 2351708034109607416
+      PRAS- Acid Downpour_41: -3791311030025663987
+      PRAS- Acid Downpour_42: -7114498583665795673
+      PRAS- Acid Downpour_43: -5901395716199430284
+      PRAS- Acid Downpour_44: 3812907134083195606
+      PRAS- Acid Downpour_45: 7557229858658861057
+      PRAS- Acid Downpour_46: -8440699507828533347
+      PRAS- Acid Downpour_47: 4397823580697729022
+      PRAS- Acid Downpour_48: 4613970338221093977
+      PRAS- Acid Downpour_5: 5808513696630713810
+      PRAS- Acid Downpour_6: -8664908108178196105
+      PRAS- Acid Downpour_7: -2786778006602204725
+      PRAS- Acid Downpour_8: -8528537617355573789
+      PRAS- Acid Downpour_9: 5947949798492427986
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

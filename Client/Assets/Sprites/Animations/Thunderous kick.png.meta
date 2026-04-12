@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: 0070ed8f39dac4535ab48e68065bcce3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5075858924924430471
+    second: Thunderous kick_0
+  - first:
+      213: 7848202793368498600
+    second: Thunderous kick_1
+  - first:
+      213: -2597201588742020189
+    second: Thunderous kick_2
+  - first:
+      213: -1999292513141369444
+    second: Thunderous kick_3
+  - first:
+      213: 5839297517614990444
+    second: Thunderous kick_4
+  - first:
+      213: 40060297021294288
+    second: Thunderous kick_5
+  - first:
+      213: 8567823414396161946
+    second: Thunderous kick_6
+  - first:
+      213: 3720213910361146452
+    second: Thunderous kick_7
+  - first:
+      213: 3619049109148602256
+    second: Thunderous kick_8
+  - first:
+      213: -8752482134121454593
+    second: Thunderous kick_9
+  - first:
+      213: -3045693584854542055
+    second: Thunderous kick_10
+  - first:
+      213: 5205171829133392008
+    second: Thunderous kick_11
+  - first:
+      213: 5302655109844689976
+    second: Thunderous kick_12
+  - first:
+      213: 1730308272239077363
+    second: Thunderous kick_13
+  - first:
+      213: 8105427294088385311
+    second: Thunderous kick_14
+  - first:
+      213: -7911500515147184233
+    second: Thunderous kick_15
+  - first:
+      213: 2430840033518985489
+    second: Thunderous kick_16
+  - first:
+      213: 8349650090012390912
+    second: Thunderous kick_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Thunderous kick_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 849
+        width: 69
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 788ed169cc2117640800000000000000
+      internalID: 5075858924924430471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunderous kick_1
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 810
+        width: 149
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a135f7ebda6aec60800000000000000
+      internalID: 7848202793368498600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunderous kick_2
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 817
+        width: 147
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a3a3f46ae2e4fbd0800000000000000
+      internalID: -2597201588742020189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunderous kick_3
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 816
+        width: 149
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c955c105d061144e0800000000000000
+      internalID: -1999292513141369444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunderous kick_4
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 814
+        width: 142
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c640343872a590150800000000000000
+      internalID: 5839297517614990444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunderous kick_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 613
+        width: 151
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d60d8db0a25e8000800000000000000
+      internalID: 40060297021294288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunderous kick_6
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 620
+        width: 153
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f8b59400607e670800000000000000
+      internalID: 8567823414396161946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunderous kick_7
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 761
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4540b8747dad0a330800000000000000
+      internalID: 3720213910361146452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunderous kick_8
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 624
+        width: 155
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09f0f7f7df1793230800000000000000
+      internalID: 3619049109148602256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunderous kick_9
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 676
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff3ecb42fdfe88680800000000000000
+      internalID: -8752482134121454593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunderous kick_10
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 639
+        width: 70
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9191f0442d58bb5d0800000000000000
+      internalID: -3045693584854542055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunderous kick_11
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 619
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 888bd5e433c7c3840800000000000000
+      internalID: 5205171829133392008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunderous kick_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 404
+        width: 182
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 834e3bc4ab0d69940800000000000000
+      internalID: 5302655109844689976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunderous kick_13
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 400
+        width: 182
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7eabeb43a430810800000000000000
+      internalID: 1730308272239077363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunderous kick_14
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 400
+        width: 186
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f13d4e8fd234c7070800000000000000
+      internalID: 8105427294088385311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunderous kick_15
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 400
+        width: 182
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 797055ac234b43290800000000000000
+      internalID: -7911500515147184233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunderous kick_16
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 436
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 111a2bf91241cb120800000000000000
+      internalID: 2430840033518985489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thunderous kick_17
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 400
+        width: 187
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0063ffdb48aefd370800000000000000
+      internalID: 8349650090012390912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Thunderous kick_0: 5075858924924430471
+      Thunderous kick_1: 7848202793368498600
+      Thunderous kick_10: -3045693584854542055
+      Thunderous kick_11: 5205171829133392008
+      Thunderous kick_12: 5302655109844689976
+      Thunderous kick_13: 1730308272239077363
+      Thunderous kick_14: 8105427294088385311
+      Thunderous kick_15: -7911500515147184233
+      Thunderous kick_16: 2430840033518985489
+      Thunderous kick_17: 8349650090012390912
+      Thunderous kick_2: -2597201588742020189
+      Thunderous kick_3: -1999292513141369444
+      Thunderous kick_4: 5839297517614990444
+      Thunderous kick_5: 40060297021294288
+      Thunderous kick_6: 8567823414396161946
+      Thunderous kick_7: 3720213910361146452
+      Thunderous kick_8: 3619049109148602256
+      Thunderous kick_9: -8752482134121454593
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

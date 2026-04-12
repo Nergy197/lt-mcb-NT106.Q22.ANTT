@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: dd86c7807be274f40b1d3bb85f308936
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 215291168736394679
+    second: PRAS- Bloom Doom_0
+  - first:
+      213: 5421630577096534912
+    second: PRAS- Bloom Doom_1
+  - first:
+      213: 1740005920672286015
+    second: PRAS- Bloom Doom_2
+  - first:
+      213: -6325818894373247359
+    second: PRAS- Bloom Doom_3
+  - first:
+      213: -6435430238065838818
+    second: PRAS- Bloom Doom_4
+  - first:
+      213: -6612599257123549808
+    second: PRAS- Bloom Doom_5
+  - first:
+      213: 4012163576108176556
+    second: PRAS- Bloom Doom_6
+  - first:
+      213: 2205914127053285880
+    second: PRAS- Bloom Doom_7
+  - first:
+      213: 3550919793154107792
+    second: PRAS- Bloom Doom_8
+  - first:
+      213: 6735316145440154925
+    second: PRAS- Bloom Doom_9
+  - first:
+      213: -5181197819944689811
+    second: PRAS- Bloom Doom_10
+  - first:
+      213: 6121724171913408521
+    second: PRAS- Bloom Doom_11
+  - first:
+      213: -1972556577723454631
+    second: PRAS- Bloom Doom_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Bloom Doom_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 743
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bdbfc36d2edcf200800000000000000
+      internalID: 215291168736394679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bloom Doom_1
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 748
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08b2c3be8408d3b40800000000000000
+      internalID: 5421630577096534912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bloom Doom_2
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 748
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f358fb87a2eb52810800000000000000
+      internalID: 1740005920672286015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bloom Doom_3
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 750
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 186ad6f2b3d2638a0800000000000000
+      internalID: -6325818894373247359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bloom Doom_4
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 746
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e15374b7b42c0b6a0800000000000000
+      internalID: -6435430238065838818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bloom Doom_5
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 560
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09d832db2045b34a0800000000000000
+      internalID: -6612599257123549808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bloom Doom_6
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 562
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca450bed3811ea730800000000000000
+      internalID: 4012163576108176556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bloom Doom_7
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 560
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f9e60c063bfc9e10800000000000000
+      internalID: 2205914127053285880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bloom Doom_8
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 555
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 099aad00db6674130800000000000000
+      internalID: 3550919793154107792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bloom Doom_9
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 555
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d25e9ea5956a87d50800000000000000
+      internalID: 6735316145440154925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bloom Doom_10
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 367
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f1b2fa800b818b0800000000000000
+      internalID: -5181197819944689811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bloom Doom_11
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 360
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90032d733bbb4f450800000000000000
+      internalID: 6121724171913408521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bloom Doom_12
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 342
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95bee6d5e3210a4e0800000000000000
+      internalID: -1972556577723454631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Bloom Doom_0: 215291168736394679
+      PRAS- Bloom Doom_1: 5421630577096534912
+      PRAS- Bloom Doom_10: -5181197819944689811
+      PRAS- Bloom Doom_11: 6121724171913408521
+      PRAS- Bloom Doom_12: -1972556577723454631
+      PRAS- Bloom Doom_2: 1740005920672286015
+      PRAS- Bloom Doom_3: -6325818894373247359
+      PRAS- Bloom Doom_4: -6435430238065838818
+      PRAS- Bloom Doom_5: -6612599257123549808
+      PRAS- Bloom Doom_6: 4012163576108176556
+      PRAS- Bloom Doom_7: 2205914127053285880
+      PRAS- Bloom Doom_8: 3550919793154107792
+      PRAS- Bloom Doom_9: 6735316145440154925
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: 2c7626831de7546d7b947f24ab94a144
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7104812368244010334
+    second: PRAS- Uproar_0
+  - first:
+      213: -4878586485497927628
+    second: PRAS- Uproar_1
+  - first:
+      213: -6315194646223226197
+    second: PRAS- Uproar_2
+  - first:
+      213: -5105454031019955061
+    second: PRAS- Uproar_3
+  - first:
+      213: 2765777654026435872
+    second: PRAS- Uproar_4
+  - first:
+      213: 5399711275449474064
+    second: PRAS- Uproar_5
+  - first:
+      213: -3121521527287929896
+    second: PRAS- Uproar_6
+  - first:
+      213: 3759558130441580478
+    second: PRAS- Uproar_7
+  - first:
+      213: -699223027645956677
+    second: PRAS- Uproar_8
+  - first:
+      213: 1743601702387361725
+    second: PRAS- Uproar_9
+  - first:
+      213: -6466880200450092108
+    second: PRAS- Uproar_10
+  - first:
+      213: -2544251104233458092
+    second: PRAS- Uproar_11
+  - first:
+      213: 657750769103995208
+    second: PRAS- Uproar_12
+  - first:
+      213: -1412222757023890765
+    second: PRAS- Uproar_13
+  - first:
+      213: -5719822697748321023
+    second: PRAS- Uproar_14
+  - first:
+      213: 7846612775890094613
+    second: PRAS- Uproar_15
+  - first:
+      213: -2732517586232289318
+    second: PRAS- Uproar_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Uproar_0
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 653
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a293034bc2a66d90800000000000000
+      internalID: -7104812368244010334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Uproar_1
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 645
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 438efd57077cb4cb0800000000000000
+      internalID: -4878586485497927628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Uproar_2
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 637
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baa7a68bdebeb58a0800000000000000
+      internalID: -6315194646223226197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Uproar_3
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 629
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8c28ffcb98c529b0800000000000000
+      internalID: -5105454031019955061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Uproar_4
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 621
+        width: 102
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02d75f36f14026620800000000000000
+      internalID: 2765777654026435872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Uproar_5
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 421
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c56decbc0afea40800000000000000
+      internalID: 5399711275449474064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Uproar_6
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 415
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d3a44f95b02ea4d0800000000000000
+      internalID: -3121521527287929896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Uproar_7
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 409
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebfe66d5332ac2430800000000000000
+      internalID: 3759558130441580478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Uproar_8
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 403
+        width: 154
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbdb36a6c5cdb46f0800000000000000
+      internalID: -699223027645956677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Uproar_9
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 397
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db7a094a284823810800000000000000
+      internalID: 1743601702387361725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Uproar_10
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 199
+        width: 178
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b35a2f78b60146a0800000000000000
+      internalID: -6466880200450092108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Uproar_11
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 193
+        width: 190
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 456f4c8c91101bcd0800000000000000
+      internalID: -2544251104233458092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Uproar_12
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 264
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8410f2fe6dcc02900800000000000000
+      internalID: 657750769103995208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Uproar_13
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 266
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b24edf72e6c66ce0800000000000000
+      internalID: -1412222757023890765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Uproar_14
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 263
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10dae72bf8b1f90b0800000000000000
+      internalID: -5719822697748321023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Uproar_15
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 71
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51a88fc1fb4c4ec60800000000000000
+      internalID: 7846612775890094613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Uproar_16
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 71
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad7dd1a9bb5241ad0800000000000000
+      internalID: -2732517586232289318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Uproar_0: -7104812368244010334
+      PRAS- Uproar_1: -4878586485497927628
+      PRAS- Uproar_10: -6466880200450092108
+      PRAS- Uproar_11: -2544251104233458092
+      PRAS- Uproar_12: 657750769103995208
+      PRAS- Uproar_13: -1412222757023890765
+      PRAS- Uproar_14: -5719822697748321023
+      PRAS- Uproar_15: 7846612775890094613
+      PRAS- Uproar_16: -2732517586232289318
+      PRAS- Uproar_2: -6315194646223226197
+      PRAS- Uproar_3: -5105454031019955061
+      PRAS- Uproar_4: 2765777654026435872
+      PRAS- Uproar_5: 5399711275449474064
+      PRAS- Uproar_6: -3121521527287929896
+      PRAS- Uproar_7: 3759558130441580478
+      PRAS- Uproar_8: -699223027645956677
+      PRAS- Uproar_9: 1743601702387361725
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

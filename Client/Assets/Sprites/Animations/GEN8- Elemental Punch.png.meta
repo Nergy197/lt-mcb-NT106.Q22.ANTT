@@ -1,0 +1,1534 @@
+fileFormatVersion: 2
+guid: dd4aa450a817c47fa8fb91de2525108d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4906151305791613295
+    second: GEN8- Elemental Punch_0
+  - first:
+      213: -1427304346791131142
+    second: GEN8- Elemental Punch_1
+  - first:
+      213: -3720330657882536029
+    second: GEN8- Elemental Punch_2
+  - first:
+      213: 3748005522113776515
+    second: GEN8- Elemental Punch_3
+  - first:
+      213: -1851200252706992336
+    second: GEN8- Elemental Punch_4
+  - first:
+      213: 6697243316240070226
+    second: GEN8- Elemental Punch_5
+  - first:
+      213: -278849754582757959
+    second: GEN8- Elemental Punch_6
+  - first:
+      213: 867463604319729829
+    second: GEN8- Elemental Punch_7
+  - first:
+      213: 1240515329358479227
+    second: GEN8- Elemental Punch_8
+  - first:
+      213: -3717758786262237246
+    second: GEN8- Elemental Punch_9
+  - first:
+      213: 2181966177968504712
+    second: GEN8- Elemental Punch_10
+  - first:
+      213: 8036447136157773789
+    second: GEN8- Elemental Punch_11
+  - first:
+      213: -5460189420276826373
+    second: GEN8- Elemental Punch_12
+  - first:
+      213: -5727216504557817114
+    second: GEN8- Elemental Punch_13
+  - first:
+      213: -5639014591141071987
+    second: GEN8- Elemental Punch_14
+  - first:
+      213: -5082963019816179011
+    second: GEN8- Elemental Punch_15
+  - first:
+      213: 5410701089327610027
+    second: GEN8- Elemental Punch_16
+  - first:
+      213: -3504196298446563975
+    second: GEN8- Elemental Punch_17
+  - first:
+      213: 4420612700901625521
+    second: GEN8- Elemental Punch_18
+  - first:
+      213: -7340271472089870910
+    second: GEN8- Elemental Punch_19
+  - first:
+      213: -8628364382713345103
+    second: GEN8- Elemental Punch_20
+  - first:
+      213: -4557630761421993444
+    second: GEN8- Elemental Punch_21
+  - first:
+      213: 8972105059423426223
+    second: GEN8- Elemental Punch_22
+  - first:
+      213: 3462699374917096319
+    second: GEN8- Elemental Punch_23
+  - first:
+      213: -941982165313998950
+    second: GEN8- Elemental Punch_24
+  - first:
+      213: -1482356191926860057
+    second: GEN8- Elemental Punch_25
+  - first:
+      213: -2332822950547653140
+    second: GEN8- Elemental Punch_26
+  - first:
+      213: 5994489892883934217
+    second: GEN8- Elemental Punch_27
+  - first:
+      213: -5274299348199849347
+    second: GEN8- Elemental Punch_28
+  - first:
+      213: -3764136058404194407
+    second: GEN8- Elemental Punch_29
+  - first:
+      213: 3735558948048268771
+    second: GEN8- Elemental Punch_30
+  - first:
+      213: -1555308883805451943
+    second: GEN8- Elemental Punch_31
+  - first:
+      213: -2818812496270964412
+    second: GEN8- Elemental Punch_32
+  - first:
+      213: 7360645673765164411
+    second: GEN8- Elemental Punch_33
+  - first:
+      213: -6063934008731641474
+    second: GEN8- Elemental Punch_34
+  - first:
+      213: -1398319506887623695
+    second: GEN8- Elemental Punch_35
+  - first:
+      213: -5024904513602985674
+    second: GEN8- Elemental Punch_36
+  - first:
+      213: -8605327745737128263
+    second: GEN8- Elemental Punch_37
+  - first:
+      213: 1881000698727094342
+    second: GEN8- Elemental Punch_38
+  - first:
+      213: -6300492940070089683
+    second: GEN8- Elemental Punch_39
+  - first:
+      213: 7050035813167008161
+    second: GEN8- Elemental Punch_40
+  - first:
+      213: 3278270291402267127
+    second: GEN8- Elemental Punch_41
+  - first:
+      213: 8355466764805494240
+    second: GEN8- Elemental Punch_42
+  - first:
+      213: 2940228990078311182
+    second: GEN8- Elemental Punch_43
+  - first:
+      213: 505698078308188180
+    second: GEN8- Elemental Punch_44
+  - first:
+      213: 372467141526732886
+    second: GEN8- Elemental Punch_45
+  - first:
+      213: 449569601154653565
+    second: GEN8- Elemental Punch_46
+  - first:
+      213: -8728479577089580420
+    second: GEN8- Elemental Punch_47
+  - first:
+      213: -5586700966563588980
+    second: GEN8- Elemental Punch_48
+  - first:
+      213: 8708938848434377983
+    second: GEN8- Elemental Punch_49
+  - first:
+      213: -1570945338101447963
+    second: GEN8- Elemental Punch_50
+  - first:
+      213: 4702284017791349909
+    second: GEN8- Elemental Punch_51
+  - first:
+      213: -8337013959066351938
+    second: GEN8- Elemental Punch_52
+  - first:
+      213: -1235037522967903490
+    second: GEN8- Elemental Punch_53
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_0
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 853
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6927046e96261440800000000000000
+      internalID: 4906151305791613295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_1
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 853
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af7c42f3242313ce0800000000000000
+      internalID: -1427304346791131142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_2
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 853
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a78ae15afabe5cc0800000000000000
+      internalID: -3720330657882536029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_3
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 881
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38b4bc12a27930430800000000000000
+      internalID: 3748005522113776515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_4
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 851
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03f4941ad273f46e0800000000000000
+      internalID: -1851200252706992336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_5
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 889
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25639d6005361fc50800000000000000
+      internalID: 6697243316240070226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_6
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 875
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bdc36820a3512cf0800000000000000
+      internalID: -278849754582757959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_7
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 857
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a8be075d89d90c00800000000000000
+      internalID: 867463604319729829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_8
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 679
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7fb6d89e12373110800000000000000
+      internalID: 1240515329358479227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_9
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 669
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cf7048d41ed76cc0800000000000000
+      internalID: -3717758786262237246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_10
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 663
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88fbab5ada6e74e10800000000000000
+      internalID: 2181966177968504712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_11
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 647
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddfa3e66712378f60800000000000000
+      internalID: 8036447136157773789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_12
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 647
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfebd0ec6a28934b0800000000000000
+      internalID: -5460189420276826373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_13
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 675
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e2b316eee6d480b0800000000000000
+      internalID: -5727216504557817114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_14
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 667
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d83bacb2b123eb1b0800000000000000
+      internalID: -5639014591141071987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_15
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 677
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbae86d6010b579b0800000000000000
+      internalID: -5082963019816179011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_16
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 663
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba8f03f39fba61b40800000000000000
+      internalID: 5410701089327610027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_17
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 645
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9759ad758089e5fc0800000000000000
+      internalID: -3504196298446563975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_18
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 643
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1be42de74db295d30800000000000000
+      internalID: 4420612700901625521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_19
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 669
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cd462f8cfd122a90800000000000000
+      internalID: -7340271472089870910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_20
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 485
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb0db71f44e14880800000000000000
+      internalID: -8628364382713345103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_21
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 473
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a8c0848fa00c0c0800000000000000
+      internalID: -4557630761421993444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_22
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 487
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa61b6ae302538c70800000000000000
+      internalID: 8972105059423426223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_23
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 481
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7396ed3cbafd0030800000000000000
+      internalID: 3462699374917096319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_24
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 477
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9fa4b326386de2f0800000000000000
+      internalID: -941982165313998950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_25
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 485
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e64995b5ec9d6be0800000000000000
+      internalID: -1482356191926860057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_26
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 487
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ced7ab4e2e520afd0800000000000000
+      internalID: -2332822950547653140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_27
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 471
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90c24032cc4b03350800000000000000
+      internalID: 5994489892883934217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_28
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 487
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d72497fefacedc6b0800000000000000
+      internalID: -5274299348199849347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_29
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 446
+        width: 28
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9973498b23a13cbc0800000000000000
+      internalID: -3764136058404194407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_30
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 447
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ede2f7421f57d330800000000000000
+      internalID: 3735558948048268771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_31
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 446
+        width: 60
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95944c08fce6a6ae0800000000000000
+      internalID: -1555308883805451943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_32
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 453
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 449465728f091e8d0800000000000000
+      internalID: -2818812496270964412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_33
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 447
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b75d94eed34462660800000000000000
+      internalID: 7360645673765164411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_34
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 471
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e79d32ca52498dba0800000000000000
+      internalID: -6063934008731641474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_35
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 459
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fbb67d21db289ce0800000000000000
+      internalID: -1398319506887623695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_36
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 465
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 631ef6cc7f3f34ab0800000000000000
+      internalID: -5024904513602985674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_37
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 463
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b6868b120cb39880800000000000000
+      internalID: -8605327745737128263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_38
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 467
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648d3e56b28aa1a10800000000000000
+      internalID: 1881000698727094342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_39
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 451
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2c044d6d072098a0800000000000000
+      internalID: -6300492940070089683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_40
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 453
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a90a992832c6d160800000000000000
+      internalID: 7050035813167008161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_41
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 461
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f99fb40671ce7d20800000000000000
+      internalID: 3278270291402267127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_42
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 257
+        width: 18
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e550d0e0c494f370800000000000000
+      internalID: 8355466764805494240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_43
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 256
+        width: 14
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b5cef30bacdc820800000000000000
+      internalID: 2940228990078311182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_44
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 309
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 410482119b9940700800000000000000
+      internalID: 505698078308188180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_45
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 277
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 650c43d44e44b2500800000000000000
+      internalID: 372467141526732886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_46
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 313
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7d13aa9b213d3600800000000000000
+      internalID: 449569601154653565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_47
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 309
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c72e252f1163ed680800000000000000
+      internalID: -8728479577089580420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_48
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 277
+        width: 41
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8455ad021d0872b0800000000000000
+      internalID: -5586700966563588980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_49
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 61
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4d78f9dbd5cd870800000000000000
+      internalID: 8708938848434377983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_50
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 80
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e248e8c981e23ae0800000000000000
+      internalID: -1570945338101447963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_51
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 84
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5943371866ed14140800000000000000
+      internalID: 4702284017791349909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_52
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 79
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb68062c9f9fc4c80800000000000000
+      internalID: -8337013959066351938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Elemental Punch_53
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 82
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef248379ae34cdee0800000000000000
+      internalID: -1235037522967903490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GEN8- Elemental Punch_0: 4906151305791613295
+      GEN8- Elemental Punch_1: -1427304346791131142
+      GEN8- Elemental Punch_10: 2181966177968504712
+      GEN8- Elemental Punch_11: 8036447136157773789
+      GEN8- Elemental Punch_12: -5460189420276826373
+      GEN8- Elemental Punch_13: -5727216504557817114
+      GEN8- Elemental Punch_14: -5639014591141071987
+      GEN8- Elemental Punch_15: -5082963019816179011
+      GEN8- Elemental Punch_16: 5410701089327610027
+      GEN8- Elemental Punch_17: -3504196298446563975
+      GEN8- Elemental Punch_18: 4420612700901625521
+      GEN8- Elemental Punch_19: -7340271472089870910
+      GEN8- Elemental Punch_2: -3720330657882536029
+      GEN8- Elemental Punch_20: -8628364382713345103
+      GEN8- Elemental Punch_21: -4557630761421993444
+      GEN8- Elemental Punch_22: 8972105059423426223
+      GEN8- Elemental Punch_23: 3462699374917096319
+      GEN8- Elemental Punch_24: -941982165313998950
+      GEN8- Elemental Punch_25: -1482356191926860057
+      GEN8- Elemental Punch_26: -2332822950547653140
+      GEN8- Elemental Punch_27: 5994489892883934217
+      GEN8- Elemental Punch_28: -5274299348199849347
+      GEN8- Elemental Punch_29: -3764136058404194407
+      GEN8- Elemental Punch_3: 3748005522113776515
+      GEN8- Elemental Punch_30: 3735558948048268771
+      GEN8- Elemental Punch_31: -1555308883805451943
+      GEN8- Elemental Punch_32: -2818812496270964412
+      GEN8- Elemental Punch_33: 7360645673765164411
+      GEN8- Elemental Punch_34: -6063934008731641474
+      GEN8- Elemental Punch_35: -1398319506887623695
+      GEN8- Elemental Punch_36: -5024904513602985674
+      GEN8- Elemental Punch_37: -8605327745737128263
+      GEN8- Elemental Punch_38: 1881000698727094342
+      GEN8- Elemental Punch_39: -6300492940070089683
+      GEN8- Elemental Punch_4: -1851200252706992336
+      GEN8- Elemental Punch_40: 7050035813167008161
+      GEN8- Elemental Punch_41: 3278270291402267127
+      GEN8- Elemental Punch_42: 8355466764805494240
+      GEN8- Elemental Punch_43: 2940228990078311182
+      GEN8- Elemental Punch_44: 505698078308188180
+      GEN8- Elemental Punch_45: 372467141526732886
+      GEN8- Elemental Punch_46: 449569601154653565
+      GEN8- Elemental Punch_47: -8728479577089580420
+      GEN8- Elemental Punch_48: -5586700966563588980
+      GEN8- Elemental Punch_49: 8708938848434377983
+      GEN8- Elemental Punch_5: 6697243316240070226
+      GEN8- Elemental Punch_50: -1570945338101447963
+      GEN8- Elemental Punch_51: 4702284017791349909
+      GEN8- Elemental Punch_52: -8337013959066351938
+      GEN8- Elemental Punch_53: -1235037522967903490
+      GEN8- Elemental Punch_6: -278849754582757959
+      GEN8- Elemental Punch_7: 867463604319729829
+      GEN8- Elemental Punch_8: 1240515329358479227
+      GEN8- Elemental Punch_9: -3717758786262237246
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

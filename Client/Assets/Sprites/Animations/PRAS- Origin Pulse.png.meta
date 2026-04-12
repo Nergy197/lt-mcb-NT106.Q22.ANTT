@@ -1,0 +1,676 @@
+fileFormatVersion: 2
+guid: 2f593ded4f2aa4aea9847d9002c56d5f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -839405694013167880
+    second: PRAS- Origin Pulse_0
+  - first:
+      213: 7642491149781164134
+    second: PRAS- Origin Pulse_1
+  - first:
+      213: 5952592715417820775
+    second: PRAS- Origin Pulse_2
+  - first:
+      213: -2285199844508226586
+    second: PRAS- Origin Pulse_3
+  - first:
+      213: -289006858911478483
+    second: PRAS- Origin Pulse_4
+  - first:
+      213: -3679649805444556895
+    second: PRAS- Origin Pulse_5
+  - first:
+      213: 1056097675950679074
+    second: PRAS- Origin Pulse_6
+  - first:
+      213: -2980825763320673519
+    second: PRAS- Origin Pulse_7
+  - first:
+      213: -7758414682539639404
+    second: PRAS- Origin Pulse_8
+  - first:
+      213: -8567977332817031649
+    second: PRAS- Origin Pulse_9
+  - first:
+      213: -5314198329597306128
+    second: PRAS- Origin Pulse_10
+  - first:
+      213: -8778012032261957606
+    second: PRAS- Origin Pulse_11
+  - first:
+      213: 793149154453322121
+    second: PRAS- Origin Pulse_12
+  - first:
+      213: 6957979644610082383
+    second: PRAS- Origin Pulse_13
+  - first:
+      213: -7680127610786062166
+    second: PRAS- Origin Pulse_14
+  - first:
+      213: 4486910954574904175
+    second: PRAS- Origin Pulse_15
+  - first:
+      213: -3360092057878390229
+    second: PRAS- Origin Pulse_16
+  - first:
+      213: -2915225238802417298
+    second: PRAS- Origin Pulse_17
+  - first:
+      213: -3979201187927184931
+    second: PRAS- Origin Pulse_18
+  - first:
+      213: 7878138132592551117
+    second: PRAS- Origin Pulse_19
+  - first:
+      213: 1766104984649085650
+    second: PRAS- Origin Pulse_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Origin Pulse_0
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 455
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f6a7e9f7f4d954f0800000000000000
+      internalID: -839405694013167880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Origin Pulse_1
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 455
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 660e5c585359f0a60800000000000000
+      internalID: 7642491149781164134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Origin Pulse_2
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 455
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e9e07598bdb9250800000000000000
+      internalID: 5952592715417820775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Origin Pulse_3
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 455
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb2f4359d65940e0800000000000000
+      internalID: -2285199844508226586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Origin Pulse_4
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 451
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2d0ee40bcd3dfbf0800000000000000
+      internalID: -289006858911478483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Origin Pulse_5
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 277
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a754a06ff14fecc0800000000000000
+      internalID: -3679649805444556895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Origin Pulse_6
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 293
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 224e727ad3308ae00800000000000000
+      internalID: 1056097675950679074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Origin Pulse_7
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 301
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b40f7e2caf1a6d0800000000000000
+      internalID: -2980825763320673519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Origin Pulse_8
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 311
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49dbc0bb3f2945490800000000000000
+      internalID: -7758414682539639404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Origin Pulse_9
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 307
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1e87d9c20e681980800000000000000
+      internalID: -8567977332817031649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Origin Pulse_10
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 305
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fad06a66cc2046b0800000000000000
+      internalID: -5314198329597306128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Origin Pulse_11
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 259
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a18dbe6809c3e2680800000000000000
+      internalID: -8778012032261957606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Origin Pulse_12
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 191
+        width: 193
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 989771524f4d10b00800000000000000
+      internalID: 793149154453322121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Origin Pulse_13
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 259
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f46f16f2f95bf8060800000000000000
+      internalID: 6957979644610082383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Origin Pulse_14
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 277
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa06d6901a4ba6590800000000000000
+      internalID: -7680127610786062166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Origin Pulse_15
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 259
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6bfe329db5b44e30800000000000000
+      internalID: 4486910954574904175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Origin Pulse_16
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 273
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2a1c8d631e8e51d0800000000000000
+      internalID: -3360092057878390229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Origin Pulse_17
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 259
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e69bde0471a0b87d0800000000000000
+      internalID: -2915225238802417298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Origin Pulse_18
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 269
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd9a9cf2a9907c8c0800000000000000
+      internalID: -3979201187927184931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Origin Pulse_19
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 263
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc463a434e4c45d60800000000000000
+      internalID: 7878138132592551117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Origin Pulse_20
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 261
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d23e065027728810800000000000000
+      internalID: 1766104984649085650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Origin Pulse_0: -839405694013167880
+      PRAS- Origin Pulse_1: 7642491149781164134
+      PRAS- Origin Pulse_10: -5314198329597306128
+      PRAS- Origin Pulse_11: -8778012032261957606
+      PRAS- Origin Pulse_12: 793149154453322121
+      PRAS- Origin Pulse_13: 6957979644610082383
+      PRAS- Origin Pulse_14: -7680127610786062166
+      PRAS- Origin Pulse_15: 4486910954574904175
+      PRAS- Origin Pulse_16: -3360092057878390229
+      PRAS- Origin Pulse_17: -2915225238802417298
+      PRAS- Origin Pulse_18: -3979201187927184931
+      PRAS- Origin Pulse_19: 7878138132592551117
+      PRAS- Origin Pulse_2: 5952592715417820775
+      PRAS- Origin Pulse_20: 1766104984649085650
+      PRAS- Origin Pulse_3: -2285199844508226586
+      PRAS- Origin Pulse_4: -289006858911478483
+      PRAS- Origin Pulse_5: -3679649805444556895
+      PRAS- Origin Pulse_6: 1056097675950679074
+      PRAS- Origin Pulse_7: -2980825763320673519
+      PRAS- Origin Pulse_8: -7758414682539639404
+      PRAS- Origin Pulse_9: -8567977332817031649
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

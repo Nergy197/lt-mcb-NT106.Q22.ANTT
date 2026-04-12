@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: f328963b364ba45d8a1ef7c1b5f2be0e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8154850150625355837
+    second: PRAS- Fusion Flare_0
+  - first:
+      213: -130781976816461448
+    second: PRAS- Fusion Flare_1
+  - first:
+      213: 2242943114672734626
+    second: PRAS- Fusion Flare_2
+  - first:
+      213: 2916939006643171438
+    second: PRAS- Fusion Flare_3
+  - first:
+      213: 6674713852489762001
+    second: PRAS- Fusion Flare_4
+  - first:
+      213: 951439249007962547
+    second: PRAS- Fusion Flare_5
+  - first:
+      213: -1040349557325364855
+    second: PRAS- Fusion Flare_6
+  - first:
+      213: 6113293014466932133
+    second: PRAS- Fusion Flare_7
+  - first:
+      213: 1974675308583551972
+    second: PRAS- Fusion Flare_8
+  - first:
+      213: -6930466017038854628
+    second: PRAS- Fusion Flare_9
+  - first:
+      213: 8513646322693889607
+    second: PRAS- Fusion Flare_10
+  - first:
+      213: 1209618738630553562
+    second: PRAS- Fusion Flare_11
+  - first:
+      213: 1876199090876090624
+    second: PRAS- Fusion Flare_12
+  - first:
+      213: -4705362125676991432
+    second: PRAS- Fusion Flare_13
+  - first:
+      213: 2622953042276075063
+    second: PRAS- Fusion Flare_14
+  - first:
+      213: 7630857518496296335
+    second: PRAS- Fusion Flare_15
+  - first:
+      213: -5696058155497161809
+    second: PRAS- Fusion Flare_16
+  - first:
+      213: 7725118848453585818
+    second: PRAS- Fusion Flare_17
+  - first:
+      213: -2563469730333208651
+    second: PRAS- Fusion Flare_18
+  - first:
+      213: -6476917168766058220
+    second: PRAS- Fusion Flare_19
+  - first:
+      213: 1999853031773528415
+    second: PRAS- Fusion Flare_20
+  - first:
+      213: -1134433213587595658
+    second: PRAS- Fusion Flare_21
+  - first:
+      213: -1823676623079815137
+    second: PRAS- Fusion Flare_22
+  - first:
+      213: 5247961652704860203
+    second: PRAS- Fusion Flare_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Fusion Flare_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 793
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c75f678ef624de80800000000000000
+      internalID: -8154850150625355837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Fusion Flare_1
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 819
+        width: 66
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 879d4d82c7e5f2ef0800000000000000
+      internalID: -130781976816461448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Fusion Flare_2
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 819
+        width: 66
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a10a7111e8802f10800000000000000
+      internalID: 2242943114672734626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Fusion Flare_3
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 819
+        width: 66
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e60727a629c0b7820800000000000000
+      internalID: 2916939006643171438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Fusion Flare_4
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 819
+        width: 68
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d4080b72e851ac50800000000000000
+      internalID: 6674713852489762001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Fusion Flare_5
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 627
+        width: 66
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b9eb7eb4f0343d00800000000000000
+      internalID: 951439249007962547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Fusion Flare_6
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 627
+        width: 66
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9810361f69fef81f0800000000000000
+      internalID: -1040349557325364855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Fusion Flare_7
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 623
+        width: 120
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5adad276b97c6d450800000000000000
+      internalID: 6113293014466932133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Fusion Flare_8
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 627
+        width: 68
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e38bda1bb4776b10800000000000000
+      internalID: 1974675308583551972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Fusion Flare_9
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 619
+        width: 193
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c169b7e60e902df90800000000000000
+      internalID: -6930466017038854628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Fusion Flare_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 479
+        width: 193
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74eda77293c862670800000000000000
+      internalID: 8513646322693889607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Fusion Flare_11
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 449
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adfeabd75dd69c010800000000000000
+      internalID: 1209618738630553562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Fusion Flare_12
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 419
+        width: 124
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0098493f129990a10800000000000000
+      internalID: 1876199090876090624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Fusion Flare_13
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 455
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83c2277a31233beb0800000000000000
+      internalID: -4705362125676991432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Fusion Flare_14
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 427
+        width: 24
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 736456b15e9966420800000000000000
+      internalID: 2622953042276075063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Fusion Flare_15
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 279
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d2799ab7046e960800000000000000
+      internalID: 7630857518496296335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Fusion Flare_16
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 279
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fabff9d594983f0b0800000000000000
+      internalID: -5696058155497161809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Fusion Flare_17
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 289
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9b20c9c9a2253b60800000000000000
+      internalID: 7725118848453585818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Fusion Flare_18
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 279
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bfc503bcd9bc6cd0800000000000000
+      internalID: -2563469730333208651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Fusion Flare_19
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 279
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4110214b62e5d16a0800000000000000
+      internalID: -6476917168766058220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Fusion Flare_20
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 279
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5169d99cb7e0cb10800000000000000
+      internalID: 1999853031773528415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Fusion Flare_21
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 87
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67ed4b2b00fa140f0800000000000000
+      internalID: -1134433213587595658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Fusion Flare_22
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 87
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18c42806cff0b6e0800000000000000
+      internalID: -1823676623079815137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Fusion Flare_23
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 87
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b285858715184d840800000000000000
+      internalID: 5247961652704860203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Fusion Flare_0: -8154850150625355837
+      PRAS- Fusion Flare_1: -130781976816461448
+      PRAS- Fusion Flare_10: 8513646322693889607
+      PRAS- Fusion Flare_11: 1209618738630553562
+      PRAS- Fusion Flare_12: 1876199090876090624
+      PRAS- Fusion Flare_13: -4705362125676991432
+      PRAS- Fusion Flare_14: 2622953042276075063
+      PRAS- Fusion Flare_15: 7630857518496296335
+      PRAS- Fusion Flare_16: -5696058155497161809
+      PRAS- Fusion Flare_17: 7725118848453585818
+      PRAS- Fusion Flare_18: -2563469730333208651
+      PRAS- Fusion Flare_19: -6476917168766058220
+      PRAS- Fusion Flare_2: 2242943114672734626
+      PRAS- Fusion Flare_20: 1999853031773528415
+      PRAS- Fusion Flare_21: -1134433213587595658
+      PRAS- Fusion Flare_22: -1823676623079815137
+      PRAS- Fusion Flare_23: 5247961652704860203
+      PRAS- Fusion Flare_3: 2916939006643171438
+      PRAS- Fusion Flare_4: 6674713852489762001
+      PRAS- Fusion Flare_5: 951439249007962547
+      PRAS- Fusion Flare_6: -1040349557325364855
+      PRAS- Fusion Flare_7: 6113293014466932133
+      PRAS- Fusion Flare_8: 1974675308583551972
+      PRAS- Fusion Flare_9: -6930466017038854628
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

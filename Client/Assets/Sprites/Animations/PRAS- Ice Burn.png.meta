@@ -1,0 +1,832 @@
+fileFormatVersion: 2
+guid: 658072d364d614726857c8db1811076a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2174222509262966897
+    second: PRAS- Ice Burn_0
+  - first:
+      213: -9116744598286223698
+    second: PRAS- Ice Burn_1
+  - first:
+      213: 4579014430365936243
+    second: PRAS- Ice Burn_2
+  - first:
+      213: -2192071545005754946
+    second: PRAS- Ice Burn_3
+  - first:
+      213: -4370349062086338165
+    second: PRAS- Ice Burn_4
+  - first:
+      213: 381322489920053409
+    second: PRAS- Ice Burn_5
+  - first:
+      213: -5036330697206505482
+    second: PRAS- Ice Burn_6
+  - first:
+      213: 1717438306607160675
+    second: PRAS- Ice Burn_7
+  - first:
+      213: 6063577380819261870
+    second: PRAS- Ice Burn_8
+  - first:
+      213: 6669906252658959434
+    second: PRAS- Ice Burn_9
+  - first:
+      213: 5500180644876541140
+    second: PRAS- Ice Burn_10
+  - first:
+      213: 2349363459255318338
+    second: PRAS- Ice Burn_11
+  - first:
+      213: -2183145993644909980
+    second: PRAS- Ice Burn_12
+  - first:
+      213: 4469402146206661193
+    second: PRAS- Ice Burn_13
+  - first:
+      213: 4145041541567409664
+    second: PRAS- Ice Burn_14
+  - first:
+      213: 5419868135427274434
+    second: PRAS- Ice Burn_15
+  - first:
+      213: 29216788114351084
+    second: PRAS- Ice Burn_16
+  - first:
+      213: 5747914326231332020
+    second: PRAS- Ice Burn_17
+  - first:
+      213: -1237494638343805192
+    second: PRAS- Ice Burn_18
+  - first:
+      213: 7455768196340174947
+    second: PRAS- Ice Burn_19
+  - first:
+      213: -4458892092977852581
+    second: PRAS- Ice Burn_20
+  - first:
+      213: 1290960634883090723
+    second: PRAS- Ice Burn_21
+  - first:
+      213: 7848904358122688779
+    second: PRAS- Ice Burn_22
+  - first:
+      213: 3118731523381475556
+    second: PRAS- Ice Burn_23
+  - first:
+      213: -896793048192197126
+    second: PRAS- Ice Burn_24
+  - first:
+      213: 5420339307206943629
+    second: PRAS- Ice Burn_25
+  - first:
+      213: 9146810432533075003
+    second: PRAS- Ice Burn_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_0
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 603
+        width: 124
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8fe8b8b52c93d1e0800000000000000
+      internalID: -2174222509262966897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_1
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 637
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea630372711da7180800000000000000
+      internalID: -9116744598286223698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_2
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 635
+        width: 72
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37a695f1d5deb8f30800000000000000
+      internalID: 4579014430365936243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_3
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 641
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb5b0bd3b823491e0800000000000000
+      internalID: -2192071545005754946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_4
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 655
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b89d1e1eea66953c0800000000000000
+      internalID: -4370349062086338165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 467
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a06d84c8caba4500800000000000000
+      internalID: 381322489920053409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_6
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 475
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff5c9d1aeb5b1ab0800000000000000
+      internalID: -5036330697206505482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_7
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 435
+        width: 100
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36dd7fc5a0195d710800000000000000
+      internalID: 1717438306607160675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_8
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 483
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea953db6087262450800000000000000
+      internalID: 6063577380819261870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_9
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 439
+        width: 86
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a44e4eae564409c50800000000000000
+      internalID: 6669906252658959434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_10
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 437
+        width: 74
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dc5852c721945c40800000000000000
+      internalID: 5500180644876541140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_11
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 229
+        width: 70
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24732356e9d9a9020800000000000000
+      internalID: 2349363459255318338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_12
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 271
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46a5afb1948e3b1e0800000000000000
+      internalID: -2183145993644909980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_13
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 255
+        width: 52
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94a34037291860e30800000000000000
+      internalID: 4469402146206661193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_14
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 255
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00eec581255268930800000000000000
+      internalID: 4145041541567409664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_15
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 251
+        width: 70
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c6f99d7a5d373b40800000000000000
+      internalID: 5419868135427274434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_16
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 79
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce3a805938cc76000800000000000000
+      internalID: 29216788114351084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_17
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 71
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b4b56e30a1b4cf40800000000000000
+      internalID: 5747914326231332020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_18
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 81
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f62116de2983dee0800000000000000
+      internalID: -1237494638343805192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_19
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 360d2861ca5387760800000000000000
+      internalID: 7455768196340174947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_20
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 73
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5fc1420445de12c0800000000000000
+      internalID: -4458892092977852581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_21
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 61
+        width: 72
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 329283d8bd96ae110800000000000000
+      internalID: 1290960634883090723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_22
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 61
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b011bedade8ecec60800000000000000
+      internalID: 7848904358122688779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_23
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 55
+        width: 78
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e837f8fbc5f74b20800000000000000
+      internalID: 3118731523381475556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_24
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 53
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afdd67d5973fd83f0800000000000000
+      internalID: -896793048192197126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_25
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 57
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d832828b1e9e83b40800000000000000
+      internalID: 5420339307206943629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Ice Burn_26
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 53
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3498f260afffee70800000000000000
+      internalID: 9146810432533075003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Ice Burn_0: -2174222509262966897
+      PRAS- Ice Burn_1: -9116744598286223698
+      PRAS- Ice Burn_10: 5500180644876541140
+      PRAS- Ice Burn_11: 2349363459255318338
+      PRAS- Ice Burn_12: -2183145993644909980
+      PRAS- Ice Burn_13: 4469402146206661193
+      PRAS- Ice Burn_14: 4145041541567409664
+      PRAS- Ice Burn_15: 5419868135427274434
+      PRAS- Ice Burn_16: 29216788114351084
+      PRAS- Ice Burn_17: 5747914326231332020
+      PRAS- Ice Burn_18: -1237494638343805192
+      PRAS- Ice Burn_19: 7455768196340174947
+      PRAS- Ice Burn_2: 4579014430365936243
+      PRAS- Ice Burn_20: -4458892092977852581
+      PRAS- Ice Burn_21: 1290960634883090723
+      PRAS- Ice Burn_22: 7848904358122688779
+      PRAS- Ice Burn_23: 3118731523381475556
+      PRAS- Ice Burn_24: -896793048192197126
+      PRAS- Ice Burn_25: 5420339307206943629
+      PRAS- Ice Burn_26: 9146810432533075003
+      PRAS- Ice Burn_3: -2192071545005754946
+      PRAS- Ice Burn_4: -4370349062086338165
+      PRAS- Ice Burn_5: 381322489920053409
+      PRAS- Ice Burn_6: -5036330697206505482
+      PRAS- Ice Burn_7: 1717438306607160675
+      PRAS- Ice Burn_8: 6063577380819261870
+      PRAS- Ice Burn_9: 6669906252658959434
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

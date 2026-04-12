@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: 77ada1dc56ac44af0b5a9be6c5ccfab3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5394485857132020089
+    second: PRAS- False Swipe_0
+  - first:
+      213: -3457883911504555044
+    second: PRAS- False Swipe_1
+  - first:
+      213: -1219976263424548629
+    second: PRAS- False Swipe_2
+  - first:
+      213: -7386064266629814470
+    second: PRAS- False Swipe_3
+  - first:
+      213: -3084664246046448071
+    second: PRAS- False Swipe_4
+  - first:
+      213: 6819235309194581900
+    second: PRAS- False Swipe_5
+  - first:
+      213: -6691816965158407806
+    second: PRAS- False Swipe_6
+  - first:
+      213: -1856461662853513979
+    second: PRAS- False Swipe_7
+  - first:
+      213: 7788426643585914950
+    second: PRAS- False Swipe_8
+  - first:
+      213: 9139124346297532871
+    second: PRAS- False Swipe_9
+  - first:
+      213: 8472903382133885632
+    second: PRAS- False Swipe_10
+  - first:
+      213: 4021316482726989629
+    second: PRAS- False Swipe_11
+  - first:
+      213: 7355224280244881544
+    second: PRAS- False Swipe_12
+  - first:
+      213: 3259134162576141659
+    second: PRAS- False Swipe_13
+  - first:
+      213: -6001964776592328573
+    second: PRAS- False Swipe_14
+  - first:
+      213: -8195545264053784824
+    second: PRAS- False Swipe_15
+  - first:
+      213: 7067438369686039384
+    second: PRAS- False Swipe_16
+  - first:
+      213: 1575762855213812986
+    second: PRAS- False Swipe_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- False Swipe_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 279
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78ef6c3b1bfe225b0800000000000000
+      internalID: -5394485857132020089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- False Swipe_1
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 271
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd39b3437e02300d0800000000000000
+      internalID: -3457883911504555044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- False Swipe_2
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 255
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be0eb285d06c11fe0800000000000000
+      internalID: -1219976263424548629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- False Swipe_3
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 251
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a37e25bbead6f7990800000000000000
+      internalID: -7386064266629814470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- False Swipe_4
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 295
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 936ad0326321135d0800000000000000
+      internalID: -3084664246046448071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- False Swipe_5
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 293
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c871854426ac2ae50800000000000000
+      internalID: 6819235309194581900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- False Swipe_6
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 279
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 281fcc9cce3e123a0800000000000000
+      internalID: -6691816965158407806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- False Swipe_7
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 67
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50d3c7e14f58c36e0800000000000000
+      internalID: -1856461662853513979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- False Swipe_8
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 113
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648502a74cc061c60800000000000000
+      internalID: 7788426643585914950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- False Swipe_9
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 119
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c1403bfb21b4de70800000000000000
+      internalID: 9139124346297532871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- False Swipe_10
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 111
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cacb441cbcc59570800000000000000
+      internalID: 8472903382133885632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- False Swipe_11
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 85
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3f8d5209069ec730800000000000000
+      internalID: 4021316482726989629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- False Swipe_12
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 73
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88803536381031660800000000000000
+      internalID: 7355224280244881544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- False Swipe_13
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 93
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5de0b3d045ca3d20800000000000000
+      internalID: 3259134162576141659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- False Swipe_14
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 85
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 388bec0e5dcb4bca0800000000000000
+      internalID: -6001964776592328573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- False Swipe_15
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 69
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80f60731103934e80800000000000000
+      internalID: -8195545264053784824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- False Swipe_16
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 63
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85b2a1990c5941260800000000000000
+      internalID: 7067438369686039384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- False Swipe_17
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 69
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afc4643d7fb3ed510800000000000000
+      internalID: 1575762855213812986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- False Swipe_0: -5394485857132020089
+      PRAS- False Swipe_1: -3457883911504555044
+      PRAS- False Swipe_10: 8472903382133885632
+      PRAS- False Swipe_11: 4021316482726989629
+      PRAS- False Swipe_12: 7355224280244881544
+      PRAS- False Swipe_13: 3259134162576141659
+      PRAS- False Swipe_14: -6001964776592328573
+      PRAS- False Swipe_15: -8195545264053784824
+      PRAS- False Swipe_16: 7067438369686039384
+      PRAS- False Swipe_17: 1575762855213812986
+      PRAS- False Swipe_2: -1219976263424548629
+      PRAS- False Swipe_3: -7386064266629814470
+      PRAS- False Swipe_4: -3084664246046448071
+      PRAS- False Swipe_5: 6819235309194581900
+      PRAS- False Swipe_6: -6691816965158407806
+      PRAS- False Swipe_7: -1856461662853513979
+      PRAS- False Swipe_8: 7788426643585914950
+      PRAS- False Swipe_9: 9139124346297532871
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

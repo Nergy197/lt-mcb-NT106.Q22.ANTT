@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: e2d2b9e3b7a8049d4ae824717f57c2d6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6276288539502590158
+    second: PRAS- Magnet bomb_0
+  - first:
+      213: 2497357880336460229
+    second: PRAS- Magnet bomb_1
+  - first:
+      213: -5672519233016850676
+    second: PRAS- Magnet bomb_2
+  - first:
+      213: -3337342605451054424
+    second: PRAS- Magnet bomb_3
+  - first:
+      213: -4090954049929747382
+    second: PRAS- Magnet bomb_4
+  - first:
+      213: 3687555436782607562
+    second: PRAS- Magnet bomb_5
+  - first:
+      213: -1896516559216968696
+    second: PRAS- Magnet bomb_6
+  - first:
+      213: -1188696533789104022
+    second: PRAS- Magnet bomb_7
+  - first:
+      213: -7579387637589073770
+    second: PRAS- Magnet bomb_8
+  - first:
+      213: -3830020232880613628
+    second: PRAS- Magnet bomb_9
+  - first:
+      213: -6765298171422618603
+    second: PRAS- Magnet bomb_10
+  - first:
+      213: 8806685160471278689
+    second: PRAS- Magnet bomb_11
+  - first:
+      213: 5843397297451921624
+    second: PRAS- Magnet bomb_12
+  - first:
+      213: 3921043182374941261
+    second: PRAS- Magnet bomb_13
+  - first:
+      213: 4978850899365400382
+    second: PRAS- Magnet bomb_14
+  - first:
+      213: -7675309633277597098
+    second: PRAS- Magnet bomb_15
+  - first:
+      213: 5432958168525300122
+    second: PRAS- Magnet bomb_16
+  - first:
+      213: 5924832921335468365
+    second: PRAS- Magnet bomb_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Magnet bomb_0
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 66
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 237c71793d426e8a0800000000000000
+      internalID: -6276288539502590158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magnet bomb_1
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 114
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c92a76b2c568a220800000000000000
+      internalID: 2497357880336460229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magnet bomb_2
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 96
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c079576dfc92741b0800000000000000
+      internalID: -5672519233016850676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magnet bomb_3
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 117
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a2305415906fa1d0800000000000000
+      internalID: -3337342605451054424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magnet bomb_4
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 123
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a44ed7567f20a37c0800000000000000
+      internalID: -4090954049929747382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magnet bomb_5
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 119
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: accdcfad124dc2330800000000000000
+      internalID: 3687555436782607562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magnet bomb_6
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 117
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80cf931dc383ea5e0800000000000000
+      internalID: -1896516559216968696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magnet bomb_7
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 119
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6823cdecc6e08fe0800000000000000
+      internalID: -1188696533789104022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magnet bomb_8
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 79
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6902486d91b90d690800000000000000
+      internalID: -7579387637589073770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magnet bomb_9
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 64
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4079798f3e809dac0800000000000000
+      internalID: -3830020232880613628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magnet bomb_10
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 93
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51c41cc3825dc12a0800000000000000
+      internalID: -6765298171422618603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magnet bomb_11
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 111
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164389e5e71a73a70800000000000000
+      internalID: 8806685160471278689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magnet bomb_12
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 103
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d07914e1eae71150800000000000000
+      internalID: 5843397297451921624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magnet bomb_13
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 85
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d42fc62fff75a6630800000000000000
+      internalID: 3921043182374941261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magnet bomb_14
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 77
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3f0f4e838e681540800000000000000
+      internalID: 4978850899365400382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magnet bomb_15
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 67
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65aea57dd82db7590800000000000000
+      internalID: -7675309633277597098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magnet bomb_16
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 67
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a91e1825baeb56b40800000000000000
+      internalID: 5432958168525300122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magnet bomb_17
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 63
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d419dbd962c393250800000000000000
+      internalID: 5924832921335468365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Magnet bomb_0: -6276288539502590158
+      PRAS- Magnet bomb_1: 2497357880336460229
+      PRAS- Magnet bomb_10: -6765298171422618603
+      PRAS- Magnet bomb_11: 8806685160471278689
+      PRAS- Magnet bomb_12: 5843397297451921624
+      PRAS- Magnet bomb_13: 3921043182374941261
+      PRAS- Magnet bomb_14: 4978850899365400382
+      PRAS- Magnet bomb_15: -7675309633277597098
+      PRAS- Magnet bomb_16: 5432958168525300122
+      PRAS- Magnet bomb_17: 5924832921335468365
+      PRAS- Magnet bomb_2: -5672519233016850676
+      PRAS- Magnet bomb_3: -3337342605451054424
+      PRAS- Magnet bomb_4: -4090954049929747382
+      PRAS- Magnet bomb_5: 3687555436782607562
+      PRAS- Magnet bomb_6: -1896516559216968696
+      PRAS- Magnet bomb_7: -1188696533789104022
+      PRAS- Magnet bomb_8: -7579387637589073770
+      PRAS- Magnet bomb_9: -3830020232880613628
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

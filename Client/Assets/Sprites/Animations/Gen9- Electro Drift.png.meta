@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: 8cfe4934ad9164cfcbfd0130adc6d015
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8596466176201088197
+    second: Gen9- Electro Drift_0
+  - first:
+      213: -3930811393300484033
+    second: Gen9- Electro Drift_1
+  - first:
+      213: -4985580961879891994
+    second: Gen9- Electro Drift_2
+  - first:
+      213: -5043263308447407714
+    second: Gen9- Electro Drift_3
+  - first:
+      213: -487783981298611305
+    second: Gen9- Electro Drift_4
+  - first:
+      213: -3487183633534970167
+    second: Gen9- Electro Drift_5
+  - first:
+      213: -3178349319722740701
+    second: Gen9- Electro Drift_6
+  - first:
+      213: 823443028224235997
+    second: Gen9- Electro Drift_7
+  - first:
+      213: 2291025573175379475
+    second: Gen9- Electro Drift_8
+  - first:
+      213: -218603413983615360
+    second: Gen9- Electro Drift_9
+  - first:
+      213: -8839682410350768022
+    second: Gen9- Electro Drift_10
+  - first:
+      213: 8088032614290227843
+    second: Gen9- Electro Drift_11
+  - first:
+      213: 8906469958172188024
+    second: Gen9- Electro Drift_12
+  - first:
+      213: 199229275445841712
+    second: Gen9- Electro Drift_13
+  - first:
+      213: -8994359860045770318
+    second: Gen9- Electro Drift_14
+  - first:
+      213: 8546577590672122561
+    second: Gen9- Electro Drift_15
+  - first:
+      213: -2306176525513597880
+    second: Gen9- Electro Drift_16
+  - first:
+      213: 5624097936543345957
+    second: Gen9- Electro Drift_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gen9- Electro Drift_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 193
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b33afdb0f8733b880800000000000000
+      internalID: -8596466176201088197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Electro Drift_1
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 65
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3034473dd3f279c0800000000000000
+      internalID: -3930811393300484033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Electro Drift_2
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 113
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6efd238a788afcab0800000000000000
+      internalID: -4985580961879891994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Electro Drift_3
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 95
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e912b37cdbab20ab0800000000000000
+      internalID: -5043263308447407714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Electro Drift_4
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 117
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b029bad0b0b39f0800000000000000
+      internalID: -487783981298611305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Electro Drift_5
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 123
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c6979016f80b9fc0800000000000000
+      internalID: -3487183633534970167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Electro Drift_6
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 119
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32452d1222c34e3d0800000000000000
+      internalID: -3178349319722740701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Electro Drift_7
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 117
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd9d31642157d6b00800000000000000
+      internalID: 823443028224235997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Electro Drift_8
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 121
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3164474de9b5bcf10800000000000000
+      internalID: 2291025573175379475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Electro Drift_9
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 79
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 086a1da6a5d57fcf0800000000000000
+      internalID: -218603413983615360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Electro Drift_10
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 63
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6016c3bea3235580800000000000000
+      internalID: -8839682410350768022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Electro Drift_11
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 93
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3820b8a7fc67e3070800000000000000
+      internalID: 8088032614290227843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Electro Drift_12
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 111
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87d9a8b0d332a9b70800000000000000
+      internalID: 8906469958172188024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Electro Drift_13
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 103
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03fcecf68fdc3c200800000000000000
+      internalID: 199229275445841712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Electro Drift_14
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 77
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b190f78c5d9d2380800000000000000
+      internalID: -8994359860045770318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Electro Drift_15
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 67
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c26359790b8b9670800000000000000
+      internalID: 8546577590672122561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Electro Drift_16
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 67
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84cda6f2ba0deffd0800000000000000
+      internalID: -2306176525513597880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen9- Electro Drift_17
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 63
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d6ca9864fcc0e40800000000000000
+      internalID: 5624097936543345957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Gen9- Electro Drift_0: -8596466176201088197
+      Gen9- Electro Drift_1: -3930811393300484033
+      Gen9- Electro Drift_10: -8839682410350768022
+      Gen9- Electro Drift_11: 8088032614290227843
+      Gen9- Electro Drift_12: 8906469958172188024
+      Gen9- Electro Drift_13: 199229275445841712
+      Gen9- Electro Drift_14: -8994359860045770318
+      Gen9- Electro Drift_15: 8546577590672122561
+      Gen9- Electro Drift_16: -2306176525513597880
+      Gen9- Electro Drift_17: 5624097936543345957
+      Gen9- Electro Drift_2: -4985580961879891994
+      Gen9- Electro Drift_3: -5043263308447407714
+      Gen9- Electro Drift_4: -487783981298611305
+      Gen9- Electro Drift_5: -3487183633534970167
+      Gen9- Electro Drift_6: -3178349319722740701
+      Gen9- Electro Drift_7: 823443028224235997
+      Gen9- Electro Drift_8: 2291025573175379475
+      Gen9- Electro Drift_9: -218603413983615360
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

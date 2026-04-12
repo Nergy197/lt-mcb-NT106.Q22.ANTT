@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: bf982c6592c514e2ca839afc4e97edf1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8302303671335740839
+    second: PRAS- Revenge_0
+  - first:
+      213: 1657187936885014264
+    second: PRAS- Revenge_1
+  - first:
+      213: 2996871641663844026
+    second: PRAS- Revenge_2
+  - first:
+      213: 6906611111509090070
+    second: PRAS- Revenge_3
+  - first:
+      213: 192328945822502194
+    second: PRAS- Revenge_4
+  - first:
+      213: -557862339662610504
+    second: PRAS- Revenge_5
+  - first:
+      213: 3730739048783627226
+    second: PRAS- Revenge_6
+  - first:
+      213: -1132131842273055215
+    second: PRAS- Revenge_7
+  - first:
+      213: 531761781071945905
+    second: PRAS- Revenge_8
+  - first:
+      213: 5447398748934516408
+    second: PRAS- Revenge_9
+  - first:
+      213: 5079179893284514644
+    second: PRAS- Revenge_10
+  - first:
+      213: -5587003961741742378
+    second: PRAS- Revenge_11
+  - first:
+      213: -2713994774837340293
+    second: PRAS- Revenge_12
+  - first:
+      213: 5203929924799575692
+    second: PRAS- Revenge_13
+  - first:
+      213: 8952605331175365572
+    second: PRAS- Revenge_14
+  - first:
+      213: 6382122454505326675
+    second: PRAS- Revenge_15
+  - first:
+      213: -3297523190320227998
+    second: PRAS- Revenge_16
+  - first:
+      213: -134624496276381303
+    second: PRAS- Revenge_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Revenge_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 463
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a5636b9335b73370800000000000000
+      internalID: 8302303671335740839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Revenge_1
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 447
+        width: 52
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fef71006a38ff610800000000000000
+      internalID: 1657187936885014264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Revenge_2
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 447
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abea0d641e6079920800000000000000
+      internalID: 2996871641663844026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Revenge_3
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 443
+        width: 70
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61fd34f863639df50800000000000000
+      internalID: 6906611111509090070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Revenge_4
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 463
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23d86cf382a4ba200800000000000000
+      internalID: 192328945822502194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Revenge_5
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 455
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bf77d268231248f0800000000000000
+      internalID: -557862339662610504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Revenge_6
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 273
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad34d68066f36c330800000000000000
+      internalID: 3730739048783627226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Revenge_7
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 269
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11ee766761cd940f0800000000000000
+      internalID: -1132131842273055215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Revenge_8
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 265
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b02ce1c582316700800000000000000
+      internalID: 531761781071945905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Revenge_9
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 253
+        width: 72
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8be2624fc4c099b40800000000000000
+      internalID: 5447398748934516408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Revenge_10
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 253
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45ba789c33fdc7640800000000000000
+      internalID: 5079179893284514644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Revenge_11
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 247
+        width: 78
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6deeead7f79f672b0800000000000000
+      internalID: -5587003961741742378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Revenge_12
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 231
+        width: 104
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b77dd83b124f55ad0800000000000000
+      internalID: -2713994774837340293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Revenge_13
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 245
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8634bbe1b2183840800000000000000
+      internalID: 5203929924799575692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Revenge_14
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 249
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cbd9f2ad1b0e3c70800000000000000
+      internalID: 8952605331175365572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Revenge_15
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 245
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35885d5fe8ad19850800000000000000
+      internalID: 6382122454505326675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Revenge_16
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 60
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26999522128dc32d0800000000000000
+      internalID: -3297523190320227998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Revenge_17
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 42
+        width: 70
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9816161ebb7b12ef0800000000000000
+      internalID: -134624496276381303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Revenge_0: 8302303671335740839
+      PRAS- Revenge_1: 1657187936885014264
+      PRAS- Revenge_10: 5079179893284514644
+      PRAS- Revenge_11: -5587003961741742378
+      PRAS- Revenge_12: -2713994774837340293
+      PRAS- Revenge_13: 5203929924799575692
+      PRAS- Revenge_14: 8952605331175365572
+      PRAS- Revenge_15: 6382122454505326675
+      PRAS- Revenge_16: -3297523190320227998
+      PRAS- Revenge_17: -134624496276381303
+      PRAS- Revenge_2: 2996871641663844026
+      PRAS- Revenge_3: 6906611111509090070
+      PRAS- Revenge_4: 192328945822502194
+      PRAS- Revenge_5: -557862339662610504
+      PRAS- Revenge_6: 3730739048783627226
+      PRAS- Revenge_7: -1132131842273055215
+      PRAS- Revenge_8: 531761781071945905
+      PRAS- Revenge_9: 5447398748934516408
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

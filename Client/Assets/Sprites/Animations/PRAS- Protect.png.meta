@@ -1,0 +1,1040 @@
+fileFormatVersion: 2
+guid: 987ef6eb637d948409e3234e0c7de085
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6023146281377366165
+    second: PRAS- Protect_0
+  - first:
+      213: -2556008685429266676
+    second: PRAS- Protect_1
+  - first:
+      213: -336184528827645912
+    second: PRAS- Protect_2
+  - first:
+      213: -2388241029996097770
+    second: PRAS- Protect_3
+  - first:
+      213: 4018303405010666612
+    second: PRAS- Protect_4
+  - first:
+      213: -1398044681855229392
+    second: PRAS- Protect_5
+  - first:
+      213: 8303792951577247628
+    second: PRAS- Protect_6
+  - first:
+      213: -8990426105015905652
+    second: PRAS- Protect_7
+  - first:
+      213: -3893433823952727510
+    second: PRAS- Protect_8
+  - first:
+      213: -3150888455211114490
+    second: PRAS- Protect_9
+  - first:
+      213: -8027764475649924180
+    second: PRAS- Protect_10
+  - first:
+      213: 5993626738177143185
+    second: PRAS- Protect_11
+  - first:
+      213: 945921855466541622
+    second: PRAS- Protect_12
+  - first:
+      213: 1967834630431458519
+    second: PRAS- Protect_13
+  - first:
+      213: 2238156012846262076
+    second: PRAS- Protect_14
+  - first:
+      213: -503934734038726910
+    second: PRAS- Protect_15
+  - first:
+      213: -4759567727879855339
+    second: PRAS- Protect_16
+  - first:
+      213: 2025176850473626090
+    second: PRAS- Protect_17
+  - first:
+      213: -4500487204667268136
+    second: PRAS- Protect_18
+  - first:
+      213: 562862728056057247
+    second: PRAS- Protect_19
+  - first:
+      213: -8682210913011872292
+    second: PRAS- Protect_20
+  - first:
+      213: -6147881595108886945
+    second: PRAS- Protect_21
+  - first:
+      213: 4809552698199504670
+    second: PRAS- Protect_22
+  - first:
+      213: 8106565140669633249
+    second: PRAS- Protect_23
+  - first:
+      213: 1852020472278579108
+    second: PRAS- Protect_24
+  - first:
+      213: -5788415573525412165
+    second: PRAS- Protect_25
+  - first:
+      213: 592760413505333901
+    second: PRAS- Protect_26
+  - first:
+      213: 5133484958931590628
+    second: PRAS- Protect_27
+  - first:
+      213: -6036042738451852002
+    second: PRAS- Protect_28
+  - first:
+      213: -7210397389539350818
+    second: PRAS- Protect_29
+  - first:
+      213: 2516489895372574253
+    second: PRAS- Protect_30
+  - first:
+      213: -7013998946134956696
+    second: PRAS- Protect_31
+  - first:
+      213: 3769051460987442033
+    second: PRAS- Protect_32
+  - first:
+      213: -7132656261530047384
+    second: PRAS- Protect_33
+  - first:
+      213: 1549022016003608752
+    second: PRAS- Protect_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Protect_0
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59086b381a3869350800000000000000
+      internalID: 6023146281377366165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 105
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c07ec2694ab378cd0800000000000000
+      internalID: -2556008685429266676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_2
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8200f34c3f1a55bf0800000000000000
+      internalID: -336184528827645912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 105
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61fc119cf634bded0800000000000000
+      internalID: -2388241029996097770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_4
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 474476f28a1e3c730800000000000000
+      internalID: 4018303405010666612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_5
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03225edd4c5299ce0800000000000000
+      internalID: -1398044681855229392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_6
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 105
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8f772fa1bffc3370800000000000000
+      internalID: 8303792951577247628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_7
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c82d02f37179b3380800000000000000
+      internalID: -8990426105015905652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_8
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 105
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a229eceb09eb7f9c0800000000000000
+      internalID: -3893433823952727510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_9
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6002344e4abc544d0800000000000000
+      internalID: -3150888455211114490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_10
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca3e2680eb6a79090800000000000000
+      internalID: -8027764475649924180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_11
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 105
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 191f45543c3ad2350800000000000000
+      internalID: 5993626738177143185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_12
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6329c547ae6902d00800000000000000
+      internalID: 945921855466541622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_13
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 105
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d4449b9b272f4b10800000000000000
+      internalID: 1967834630431458519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_14
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c372b9119078f0f10800000000000000
+      internalID: 2238156012846262076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_15
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20704a3870aa109f0800000000000000
+      internalID: -503934734038726910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_16
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 105
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 513ee476e5e92fdb0800000000000000
+      internalID: -4759567727879855339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_17
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae923db9d9fda1c10800000000000000
+      internalID: 2025176850473626090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_18
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 105
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d3ed916bbe0b81c0800000000000000
+      internalID: -4500487204667268136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_19
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9da6134ba0bfc700800000000000000
+      internalID: 562862728056057247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_20
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdd48e8cc27928780800000000000000
+      internalID: -8682210913011872292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_21
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 105
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f567f5a13465eaaa0800000000000000
+      internalID: -6147881595108886945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_22
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e17f3b862b6feb240800000000000000
+      internalID: 4809552698199504670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_23
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 105
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e29d268b0e408070800000000000000
+      internalID: 8106565140669633249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_24
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a77aee9ec2b3b910800000000000000
+      internalID: 1852020472278579108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_25
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 52
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb6cda744ba6bafa0800000000000000
+      internalID: -5788415573525412165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_26
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 53
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8a26eb9478e93800800000000000000
+      internalID: 592760413505333901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_27
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 52
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ed9dec2f5dcd3740800000000000000
+      internalID: 5133484958931590628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_28
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 53
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1550851c1bab3ca0800000000000000
+      internalID: -6036042738451852002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_29
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 52
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed66a1bc6c58feb90800000000000000
+      internalID: -7210397389539350818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_30
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 53
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2eca861a3e5ce220800000000000000
+      internalID: 2516489895372574253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_31
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 52
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86569a8ce1549ae90800000000000000
+      internalID: -7013998946134956696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_32
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 53
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 173d250a55c5e4430800000000000000
+      internalID: 3769051460987442033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_33
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 52
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86c298aabe6b30d90800000000000000
+      internalID: -7132656261530047384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Protect_34
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 53
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b09725015b3f7510800000000000000
+      internalID: 1549022016003608752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Protect_0: 6023146281377366165
+      PRAS- Protect_1: -2556008685429266676
+      PRAS- Protect_10: -8027764475649924180
+      PRAS- Protect_11: 5993626738177143185
+      PRAS- Protect_12: 945921855466541622
+      PRAS- Protect_13: 1967834630431458519
+      PRAS- Protect_14: 2238156012846262076
+      PRAS- Protect_15: -503934734038726910
+      PRAS- Protect_16: -4759567727879855339
+      PRAS- Protect_17: 2025176850473626090
+      PRAS- Protect_18: -4500487204667268136
+      PRAS- Protect_19: 562862728056057247
+      PRAS- Protect_2: -336184528827645912
+      PRAS- Protect_20: -8682210913011872292
+      PRAS- Protect_21: -6147881595108886945
+      PRAS- Protect_22: 4809552698199504670
+      PRAS- Protect_23: 8106565140669633249
+      PRAS- Protect_24: 1852020472278579108
+      PRAS- Protect_25: -5788415573525412165
+      PRAS- Protect_26: 592760413505333901
+      PRAS- Protect_27: 5133484958931590628
+      PRAS- Protect_28: -6036042738451852002
+      PRAS- Protect_29: -7210397389539350818
+      PRAS- Protect_3: -2388241029996097770
+      PRAS- Protect_30: 2516489895372574253
+      PRAS- Protect_31: -7013998946134956696
+      PRAS- Protect_32: 3769051460987442033
+      PRAS- Protect_33: -7132656261530047384
+      PRAS- Protect_34: 1549022016003608752
+      PRAS- Protect_4: 4018303405010666612
+      PRAS- Protect_5: -1398044681855229392
+      PRAS- Protect_6: 8303792951577247628
+      PRAS- Protect_7: -8990426105015905652
+      PRAS- Protect_8: -3893433823952727510
+      PRAS- Protect_9: -3150888455211114490
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

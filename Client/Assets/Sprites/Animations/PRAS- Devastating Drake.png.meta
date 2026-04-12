@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: b666c061699e84e99ac87247a497e7fc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8063541766595992483
+    second: PRAS- Devastating Drake_0
+  - first:
+      213: 8744061500697123637
+    second: PRAS- Devastating Drake_1
+  - first:
+      213: 3532235764471681393
+    second: PRAS- Devastating Drake_2
+  - first:
+      213: -2908756282857770467
+    second: PRAS- Devastating Drake_3
+  - first:
+      213: 2605737356740878823
+    second: PRAS- Devastating Drake_4
+  - first:
+      213: 5642625410394216381
+    second: PRAS- Devastating Drake_5
+  - first:
+      213: 2601793724638544616
+    second: PRAS- Devastating Drake_6
+  - first:
+      213: -2594651521098906653
+    second: PRAS- Devastating Drake_7
+  - first:
+      213: -2052707310847679919
+    second: PRAS- Devastating Drake_8
+  - first:
+      213: 2273717106074816641
+    second: PRAS- Devastating Drake_9
+  - first:
+      213: 1207945093916057109
+    second: PRAS- Devastating Drake_10
+  - first:
+      213: 4036422035175370217
+    second: PRAS- Devastating Drake_11
+  - first:
+      213: -7892183728032740369
+    second: PRAS- Devastating Drake_12
+  - first:
+      213: -2384053797365985018
+    second: PRAS- Devastating Drake_13
+  - first:
+      213: 8851404742005983321
+    second: PRAS- Devastating Drake_14
+  - first:
+      213: -7743187716531155552
+    second: PRAS- Devastating Drake_15
+  - first:
+      213: 1447708344150223782
+    second: PRAS- Devastating Drake_16
+  - first:
+      213: 6482854929493874390
+    second: PRAS- Devastating Drake_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Devastating Drake_0
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 245
+        width: 68
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3abda75a38477ef60800000000000000
+      internalID: 8063541766595992483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Devastating Drake_1
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 241
+        width: 78
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53b983b5b95295970800000000000000
+      internalID: 8744061500697123637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Devastating Drake_2
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 174
+        width: 140
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 171d34496b5050130800000000000000
+      internalID: 3532235764471681393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Devastating Drake_3
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 239
+        width: 92
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d12b31e629502a7d0800000000000000
+      internalID: -2908756282857770467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Devastating Drake_4
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 341
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e16186f150792420800000000000000
+      internalID: 2605737356740878823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Devastating Drake_5
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 251
+        width: 58
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db7d3233ae1ae4e40800000000000000
+      internalID: 5642625410394216381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Devastating Drake_6
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 145
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e2cbef8b9d6b1420800000000000000
+      internalID: 2601793724638544616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Devastating Drake_7
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 67
+        width: 64
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e309f84032fdfbd0800000000000000
+      internalID: -2594651521098906653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Devastating Drake_8
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 32
+        width: 193
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 152a31593915383e0800000000000000
+      internalID: -2052707310847679919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Devastating Drake_9
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 115
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 180915b49addd8f10800000000000000
+      internalID: 2273717106074816641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Devastating Drake_10
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 85
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51eda07b9ab73c010800000000000000
+      internalID: 1207945093916057109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Devastating Drake_11
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 85
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9edef228470440830800000000000000
+      internalID: 4036422035175370217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Devastating Drake_12
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 113
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feb8d74c6b4597290800000000000000
+      internalID: -7892183728032740369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Devastating Drake_13
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 83
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 601549ad3b32aeed0800000000000000
+      internalID: -2384053797365985018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Devastating Drake_14
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 121
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 958897257b186da70800000000000000
+      internalID: 8851404742005983321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Devastating Drake_15
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 83
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad0ef60ccbaa8490800000000000000
+      internalID: -7743187716531155552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Devastating Drake_16
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 107
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab6177911b471410800000000000000
+      internalID: 1447708344150223782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Devastating Drake_17
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 85
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d65fd2f53ab7f950800000000000000
+      internalID: 6482854929493874390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Devastating Drake_0: 8063541766595992483
+      PRAS- Devastating Drake_1: 8744061500697123637
+      PRAS- Devastating Drake_10: 1207945093916057109
+      PRAS- Devastating Drake_11: 4036422035175370217
+      PRAS- Devastating Drake_12: -7892183728032740369
+      PRAS- Devastating Drake_13: -2384053797365985018
+      PRAS- Devastating Drake_14: 8851404742005983321
+      PRAS- Devastating Drake_15: -7743187716531155552
+      PRAS- Devastating Drake_16: 1447708344150223782
+      PRAS- Devastating Drake_17: 6482854929493874390
+      PRAS- Devastating Drake_2: 3532235764471681393
+      PRAS- Devastating Drake_3: -2908756282857770467
+      PRAS- Devastating Drake_4: 2605737356740878823
+      PRAS- Devastating Drake_5: 5642625410394216381
+      PRAS- Devastating Drake_6: 2601793724638544616
+      PRAS- Devastating Drake_7: -2594651521098906653
+      PRAS- Devastating Drake_8: -2052707310847679919
+      PRAS- Devastating Drake_9: 2273717106074816641
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

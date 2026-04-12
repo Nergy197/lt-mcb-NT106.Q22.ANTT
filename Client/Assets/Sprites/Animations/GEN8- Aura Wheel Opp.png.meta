@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: fe050760f02524b24b8e73fc536247a3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1822071930048706955
+    second: GEN8- Aura Wheel Opp_0
+  - first:
+      213: -272050098046992487
+    second: GEN8- Aura Wheel Opp_1
+  - first:
+      213: 4274552955914486972
+    second: GEN8- Aura Wheel Opp_2
+  - first:
+      213: 6918642621297238212
+    second: GEN8- Aura Wheel Opp_3
+  - first:
+      213: -63030123581594726
+    second: GEN8- Aura Wheel Opp_4
+  - first:
+      213: 5328050057340513752
+    second: GEN8- Aura Wheel Opp_5
+  - first:
+      213: 5245687816185562606
+    second: GEN8- Aura Wheel Opp_6
+  - first:
+      213: -2241539770646176976
+    second: GEN8- Aura Wheel Opp_7
+  - first:
+      213: 7694944431914278468
+    second: GEN8- Aura Wheel Opp_8
+  - first:
+      213: -6026049900283327149
+    second: GEN8- Aura Wheel Opp_9
+  - first:
+      213: -356874934610977558
+    second: GEN8- Aura Wheel Opp_10
+  - first:
+      213: -3903131142303690252
+    second: GEN8- Aura Wheel Opp_11
+  - first:
+      213: -1378114750889902909
+    second: GEN8- Aura Wheel Opp_12
+  - first:
+      213: -5977726010435498428
+    second: GEN8- Aura Wheel Opp_13
+  - first:
+      213: 2788918242141823724
+    second: GEN8- Aura Wheel Opp_14
+  - first:
+      213: 582818314876903997
+    second: GEN8- Aura Wheel Opp_15
+  - first:
+      213: -90262671914621859
+    second: GEN8- Aura Wheel Opp_16
+  - first:
+      213: -6784952806635347497
+    second: GEN8- Aura Wheel Opp_17
+  - first:
+      213: -3807875882338761990
+    second: GEN8- Aura Wheel Opp_18
+  - first:
+      213: 8726050951970322091
+    second: GEN8- Aura Wheel Opp_19
+  - first:
+      213: 2395342473557926411
+    second: GEN8- Aura Wheel Opp_20
+  - first:
+      213: -2966689210049422366
+    second: GEN8- Aura Wheel Opp_21
+  - first:
+      213: 3602852407173637770
+    second: GEN8- Aura Wheel Opp_22
+  - first:
+      213: 6159752323122089005
+    second: GEN8- Aura Wheel Opp_23
+  - first:
+      213: 8897792722274965514
+    second: GEN8- Aura Wheel Opp_24
+  - first:
+      213: -1726063959252508897
+    second: GEN8- Aura Wheel Opp_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_0
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 429
+        width: 60
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5768c3ebb33b6b6e0800000000000000
+      internalID: -1822071930048706955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_1
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 429
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99f7cc090eb793cf0800000000000000
+      internalID: -272050098046992487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_2
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 429
+        width: 62
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb401ee0443425b30800000000000000
+      internalID: 4274552955914486972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_3
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 429
+        width: 74
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c0ac4abec4f30060800000000000000
+      internalID: 6918642621297238212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_4
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 429
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9325c1cf62102ff0800000000000000
+      internalID: -63030123581594726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_5
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 237
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dde7454c4901f940800000000000000
+      internalID: 5328050057340513752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_6
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 237
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee5c556a64d6cc840800000000000000
+      internalID: 5245687816185562606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_7
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 237
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03b59bc647374e0e0800000000000000
+      internalID: -2241539770646176976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_8
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 237
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ede96f03fe9ca60800000000000000
+      internalID: 7694944431914278468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_9
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 237
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d85d60b8b2f5ca0800000000000000
+      internalID: -6026049900283327149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_10
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 45
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aec954543202c0bf0800000000000000
+      internalID: -356874934610977558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_11
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 4
+        width: 175
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f1593fd7ea45d9c0800000000000000
+      internalID: -3903131142303690252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_12
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 3
+        width: 189
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cc3b758fe3ffdce0800000000000000
+      internalID: -1378114750889902909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_13
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 21
+        width: 149
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44e01676dd9da0da0800000000000000
+      internalID: -5977726010435498428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_14
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 116
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce2687a6d5a34b620800000000000000
+      internalID: 2788918242141823724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_15
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 122
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3264d26b26961800800000000000000
+      internalID: 582818314876903997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_16
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 118
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d542d0004925fbef0800000000000000
+      internalID: -90262671914621859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_17
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 116
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d1e5bede5107d1a0800000000000000
+      internalID: -6784952806635347497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_18
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 118
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af2cb6c5f05b72bc0800000000000000
+      internalID: -3807875882338761990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_19
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 92
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba67624bb19291970800000000000000
+      internalID: 8726050951970322091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_20
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 110
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0263d3e947fd3120800000000000000
+      internalID: 2395342473557926411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_21
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 102
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eb1504b1e334d6d0800000000000000
+      internalID: -2966689210049422366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_22
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 76
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a86eeb3fc27eff130800000000000000
+      internalID: 3602852407173637770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_23
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 66
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2c44142a16db7550800000000000000
+      internalID: 6159752323122089005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_24
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 66
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a085140a65f4b7b70800000000000000
+      internalID: 8897792722274965514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Aura Wheel Opp_25
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 62
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1f562169f9cb08e0800000000000000
+      internalID: -1726063959252508897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GEN8- Aura Wheel Opp_0: -1822071930048706955
+      GEN8- Aura Wheel Opp_1: -272050098046992487
+      GEN8- Aura Wheel Opp_10: -356874934610977558
+      GEN8- Aura Wheel Opp_11: -3903131142303690252
+      GEN8- Aura Wheel Opp_12: -1378114750889902909
+      GEN8- Aura Wheel Opp_13: -5977726010435498428
+      GEN8- Aura Wheel Opp_14: 2788918242141823724
+      GEN8- Aura Wheel Opp_15: 582818314876903997
+      GEN8- Aura Wheel Opp_16: -90262671914621859
+      GEN8- Aura Wheel Opp_17: -6784952806635347497
+      GEN8- Aura Wheel Opp_18: -3807875882338761990
+      GEN8- Aura Wheel Opp_19: 8726050951970322091
+      GEN8- Aura Wheel Opp_2: 4274552955914486972
+      GEN8- Aura Wheel Opp_20: 2395342473557926411
+      GEN8- Aura Wheel Opp_21: -2966689210049422366
+      GEN8- Aura Wheel Opp_22: 3602852407173637770
+      GEN8- Aura Wheel Opp_23: 6159752323122089005
+      GEN8- Aura Wheel Opp_24: 8897792722274965514
+      GEN8- Aura Wheel Opp_25: -1726063959252508897
+      GEN8- Aura Wheel Opp_3: 6918642621297238212
+      GEN8- Aura Wheel Opp_4: -63030123581594726
+      GEN8- Aura Wheel Opp_5: 5328050057340513752
+      GEN8- Aura Wheel Opp_6: 5245687816185562606
+      GEN8- Aura Wheel Opp_7: -2241539770646176976
+      GEN8- Aura Wheel Opp_8: 7694944431914278468
+      GEN8- Aura Wheel Opp_9: -6026049900283327149
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

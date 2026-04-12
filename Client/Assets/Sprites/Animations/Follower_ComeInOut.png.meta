@@ -1,0 +1,676 @@
+fileFormatVersion: 2
+guid: 4b699adea5d234c15a4b9cf89a34ebc4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8330217879053322852
+    second: Follower_ComeInOut_0
+  - first:
+      213: 1984896997756741363
+    second: Follower_ComeInOut_1
+  - first:
+      213: 1473348960420027558
+    second: Follower_ComeInOut_2
+  - first:
+      213: -2504222709396796062
+    second: Follower_ComeInOut_3
+  - first:
+      213: 1937860934261417741
+    second: Follower_ComeInOut_4
+  - first:
+      213: 4276159851156242219
+    second: Follower_ComeInOut_5
+  - first:
+      213: -3439147584129223106
+    second: Follower_ComeInOut_6
+  - first:
+      213: -7089184920858496259
+    second: Follower_ComeInOut_7
+  - first:
+      213: -4865262782596978624
+    second: Follower_ComeInOut_8
+  - first:
+      213: -3550094572436461026
+    second: Follower_ComeInOut_9
+  - first:
+      213: 2255493151605496139
+    second: Follower_ComeInOut_10
+  - first:
+      213: 5818895378237063061
+    second: Follower_ComeInOut_11
+  - first:
+      213: 865993540440938336
+    second: Follower_ComeInOut_12
+  - first:
+      213: -58728792615173642
+    second: Follower_ComeInOut_13
+  - first:
+      213: -1995680234303481889
+    second: Follower_ComeInOut_14
+  - first:
+      213: -1920293553578326380
+    second: Follower_ComeInOut_15
+  - first:
+      213: -3958299810712927725
+    second: Follower_ComeInOut_16
+  - first:
+      213: 5712914811322674626
+    second: Follower_ComeInOut_17
+  - first:
+      213: 4941212728751084403
+    second: Follower_ComeInOut_18
+  - first:
+      213: 4888135617878945120
+    second: Follower_ComeInOut_19
+  - first:
+      213: 5449269485884802866
+    second: Follower_ComeInOut_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Follower_ComeInOut_0
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 308
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46ac49e8601ea9370800000000000000
+      internalID: 8330217879053322852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Follower_ComeInOut_1
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 303
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f6a7039d45cb8b10800000000000000
+      internalID: 1984896997756741363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Follower_ComeInOut_2
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 317
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6acd608c213627410800000000000000
+      internalID: 1473348960420027558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Follower_ComeInOut_3
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 303
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26d00f7b6b63f3dd0800000000000000
+      internalID: -2504222709396796062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Follower_ComeInOut_4
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 277
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0722c2a04aa4ea10800000000000000
+      internalID: 1937860934261417741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Follower_ComeInOut_5
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 263
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f74f28ab8f75b30800000000000000
+      internalID: 4276159851156242219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Follower_ComeInOut_6
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 298
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e36b5dd5e71b540d0800000000000000
+      internalID: -3439147584129223106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Follower_ComeInOut_7
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 298
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df27c25efd72e9d90800000000000000
+      internalID: -7089184920858496259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Follower_ComeInOut_8
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 280
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048e068c64d1b7cb0800000000000000
+      internalID: -4865262782596978624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Follower_ComeInOut_9
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 280
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1ae1eaabc78bbec0800000000000000
+      internalID: -3550094572436461026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Follower_ComeInOut_10
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 279
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4995ce321f1d4f10800000000000000
+      internalID: 2255493151605496139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Follower_ComeInOut_11
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 281
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59f7bf4448ed0c050800000000000000
+      internalID: 5818895378237063061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Follower_ComeInOut_12
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 262
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 067d3cb6980a40c00800000000000000
+      internalID: 865993540440938336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Follower_ComeInOut_13
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 254
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f1c51a697a5f2ff0800000000000000
+      internalID: -58728792615173642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Follower_ComeInOut_14
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 262
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd79215866bed44e0800000000000000
+      internalID: -1995680234303481889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Follower_ComeInOut_15
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 257
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 496cd7aef2fb955e0800000000000000
+      internalID: -1920293553578326380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Follower_ComeInOut_16
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 257
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 312c5fb4b4b4119c0800000000000000
+      internalID: -3958299810712927725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Follower_ComeInOut_17
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 245
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cda4f8a0c9584f40800000000000000
+      internalID: 5712914811322674626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Follower_ComeInOut_18
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 85
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373d8d01cc6b29440800000000000000
+      internalID: 4941212728751084403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Follower_ComeInOut_19
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 85
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06deb9d227526d340800000000000000
+      internalID: 4888135617878945120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Follower_ComeInOut_20
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 85
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2370a87d9b1bf9b40800000000000000
+      internalID: 5449269485884802866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Follower_ComeInOut_0: 8330217879053322852
+      Follower_ComeInOut_1: 1984896997756741363
+      Follower_ComeInOut_10: 2255493151605496139
+      Follower_ComeInOut_11: 5818895378237063061
+      Follower_ComeInOut_12: 865993540440938336
+      Follower_ComeInOut_13: -58728792615173642
+      Follower_ComeInOut_14: -1995680234303481889
+      Follower_ComeInOut_15: -1920293553578326380
+      Follower_ComeInOut_16: -3958299810712927725
+      Follower_ComeInOut_17: 5712914811322674626
+      Follower_ComeInOut_18: 4941212728751084403
+      Follower_ComeInOut_19: 4888135617878945120
+      Follower_ComeInOut_2: 1473348960420027558
+      Follower_ComeInOut_20: 5449269485884802866
+      Follower_ComeInOut_3: -2504222709396796062
+      Follower_ComeInOut_4: 1937860934261417741
+      Follower_ComeInOut_5: 4276159851156242219
+      Follower_ComeInOut_6: -3439147584129223106
+      Follower_ComeInOut_7: -7089184920858496259
+      Follower_ComeInOut_8: -4865262782596978624
+      Follower_ComeInOut_9: -3550094572436461026
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

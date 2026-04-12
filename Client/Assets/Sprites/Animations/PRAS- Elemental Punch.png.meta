@@ -1,0 +1,1534 @@
+fileFormatVersion: 2
+guid: e7a5adabd942a4866a2283f980457922
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3342486216054890033
+    second: PRAS- Elemental Punch_0
+  - first:
+      213: -9036695081893563613
+    second: PRAS- Elemental Punch_1
+  - first:
+      213: 7349369084018149334
+    second: PRAS- Elemental Punch_2
+  - first:
+      213: -6160708895614311365
+    second: PRAS- Elemental Punch_3
+  - first:
+      213: -5365061988835204820
+    second: PRAS- Elemental Punch_4
+  - first:
+      213: -4471476049569975941
+    second: PRAS- Elemental Punch_5
+  - first:
+      213: -7428520589327972051
+    second: PRAS- Elemental Punch_6
+  - first:
+      213: -3561116839577414394
+    second: PRAS- Elemental Punch_7
+  - first:
+      213: 8749271191366371985
+    second: PRAS- Elemental Punch_8
+  - first:
+      213: 7937282370139300983
+    second: PRAS- Elemental Punch_9
+  - first:
+      213: 4300641314102489697
+    second: PRAS- Elemental Punch_10
+  - first:
+      213: -4269144973139346244
+    second: PRAS- Elemental Punch_11
+  - first:
+      213: -3079928611536768826
+    second: PRAS- Elemental Punch_12
+  - first:
+      213: -7822543073126910352
+    second: PRAS- Elemental Punch_13
+  - first:
+      213: -5060925320498898885
+    second: PRAS- Elemental Punch_14
+  - first:
+      213: -2323019591349790475
+    second: PRAS- Elemental Punch_15
+  - first:
+      213: -4922765490275476857
+    second: PRAS- Elemental Punch_16
+  - first:
+      213: -7282618219631723634
+    second: PRAS- Elemental Punch_17
+  - first:
+      213: 4725689434111943039
+    second: PRAS- Elemental Punch_18
+  - first:
+      213: -4207667541339340826
+    second: PRAS- Elemental Punch_19
+  - first:
+      213: 6994318105072387444
+    second: PRAS- Elemental Punch_20
+  - first:
+      213: 462910463054094462
+    second: PRAS- Elemental Punch_21
+  - first:
+      213: -9189514979005290312
+    second: PRAS- Elemental Punch_22
+  - first:
+      213: 3580352341693685885
+    second: PRAS- Elemental Punch_23
+  - first:
+      213: 3164107915476797537
+    second: PRAS- Elemental Punch_24
+  - first:
+      213: 7417490261442255122
+    second: PRAS- Elemental Punch_25
+  - first:
+      213: 8005848075753873592
+    second: PRAS- Elemental Punch_26
+  - first:
+      213: 5999068076786908093
+    second: PRAS- Elemental Punch_27
+  - first:
+      213: -886441214159827585
+    second: PRAS- Elemental Punch_28
+  - first:
+      213: 8095715683305745491
+    second: PRAS- Elemental Punch_29
+  - first:
+      213: 6763608713929423931
+    second: PRAS- Elemental Punch_30
+  - first:
+      213: -213322219976261575
+    second: PRAS- Elemental Punch_31
+  - first:
+      213: 3417008946328183076
+    second: PRAS- Elemental Punch_32
+  - first:
+      213: -6870409248017475017
+    second: PRAS- Elemental Punch_33
+  - first:
+      213: 1545954633041329998
+    second: PRAS- Elemental Punch_34
+  - first:
+      213: -4217275319227638102
+    second: PRAS- Elemental Punch_35
+  - first:
+      213: 4616062895555420034
+    second: PRAS- Elemental Punch_36
+  - first:
+      213: -932796399570096007
+    second: PRAS- Elemental Punch_37
+  - first:
+      213: -4403628844245539223
+    second: PRAS- Elemental Punch_38
+  - first:
+      213: -2510911996038076794
+    second: PRAS- Elemental Punch_39
+  - first:
+      213: 1358653245680300324
+    second: PRAS- Elemental Punch_40
+  - first:
+      213: 1917983739100737983
+    second: PRAS- Elemental Punch_41
+  - first:
+      213: -4260967098870762755
+    second: PRAS- Elemental Punch_42
+  - first:
+      213: -6098447965273811308
+    second: PRAS- Elemental Punch_43
+  - first:
+      213: 2210637007245460139
+    second: PRAS- Elemental Punch_44
+  - first:
+      213: -2292915870574348928
+    second: PRAS- Elemental Punch_45
+  - first:
+      213: 3244989841354164872
+    second: PRAS- Elemental Punch_46
+  - first:
+      213: 8676318105635137062
+    second: PRAS- Elemental Punch_47
+  - first:
+      213: 6147937214245585026
+    second: PRAS- Elemental Punch_48
+  - first:
+      213: 582298687537551796
+    second: PRAS- Elemental Punch_49
+  - first:
+      213: -534065365875689964
+    second: PRAS- Elemental Punch_50
+  - first:
+      213: -6736981742959191925
+    second: PRAS- Elemental Punch_51
+  - first:
+      213: -951755013624653477
+    second: PRAS- Elemental Punch_52
+  - first:
+      213: -6326020018615224052
+    second: PRAS- Elemental Punch_53
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_0
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 853
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc1a869ee7a1d91d0800000000000000
+      internalID: -3342486216054890033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_1
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 853
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 323f63493b5379280800000000000000
+      internalID: -9036695081893563613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_2
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 853
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d7c3284e343ef560800000000000000
+      internalID: 7349369084018149334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_3
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 881
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b34e15876e3c08aa0800000000000000
+      internalID: -6160708895614311365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_4
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 851
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c21e685eb887b85b0800000000000000
+      internalID: -5365061988835204820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_5
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 889
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b71f6bb493022f1c0800000000000000
+      internalID: -4471476049569975941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_6
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 875
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d294e6ac1e798e890800000000000000
+      internalID: -7428520589327972051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_7
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 857
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 605935d1a1f549ec0800000000000000
+      internalID: -3561116839577414394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_8
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 679
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19a83fcfac7ab6970800000000000000
+      internalID: 8749271191366371985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_9
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 669
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 774af1a1344e62e60800000000000000
+      internalID: 7937282370139300983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_10
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 663
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 162b2794d72feab30800000000000000
+      internalID: 4300641314102489697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_11
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 647
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbc726d0443f0c4c0800000000000000
+      internalID: -4269144973139346244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_12
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 647
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c0f9c7fe35e145d0800000000000000
+      internalID: -3079928611536768826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_13
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 675
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 076f316458eb07390800000000000000
+      internalID: -7822543073126910352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_14
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 667
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3812e42c3bf3c9b0800000000000000
+      internalID: -5060925320498898885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_15
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 677
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f892535df9f2cfd0800000000000000
+      internalID: -2323019591349790475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_16
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 663
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78a14975ed2deabb0800000000000000
+      internalID: -4922765490275476857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_17
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 645
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8b30107051feea90800000000000000
+      internalID: -7282618219631723634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_18
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 643
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f712f07a085059140800000000000000
+      internalID: 4725689434111943039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_19
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 669
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eff6811aac5b95c0800000000000000
+      internalID: -4207667541339340826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_20
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 485
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4754ce2524fc01160800000000000000
+      internalID: 6994318105072387444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_21
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 473
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e70a6211d969c6600800000000000000
+      internalID: 462910463054094462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_22
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 487
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b8224290d8487080800000000000000
+      internalID: -9189514979005290312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_23
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 481
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70e3693c77ffa130800000000000000
+      internalID: 3580352341693685885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_24
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 477
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1680ffc826b29eb20800000000000000
+      internalID: 3164107915476797537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_25
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 485
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2195f2ed71830f660800000000000000
+      internalID: 7417490261442255122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_26
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 487
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b0ed09786c7a1f60800000000000000
+      internalID: 8005848075753873592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_27
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 471
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbbf444a1a8f04350800000000000000
+      internalID: 5999068076786908093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_28
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 487
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7dccbb896ab2b3f0800000000000000
+      internalID: -886441214159827585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_29
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 446
+        width: 28
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35c6ff16582c95070800000000000000
+      internalID: 8095715683305745491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_30
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 447
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3cff794a4a2ddd50800000000000000
+      internalID: 6763608713929423931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_31
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 446
+        width: 60
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9300e9732902a0df0800000000000000
+      internalID: -213322219976261575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_32
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 453
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42129385887ab6f20800000000000000
+      internalID: 3417008946328183076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_33
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 447
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73a1c5e903767a0a0800000000000000
+      internalID: -6870409248017475017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_34
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 471
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4f3c454c85547510800000000000000
+      internalID: 1545954633041329998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_35
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 459
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aae1a65f07a3975c0800000000000000
+      internalID: -4217275319227638102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_36
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 465
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f117e1fbc8f0040800000000000000
+      internalID: 4616062895555420034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_37
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 463
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9707cd3ed9a0e03f0800000000000000
+      internalID: -932796399570096007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_38
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 467
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 966a418c5ea23e2c0800000000000000
+      internalID: -4403628844245539223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_39
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 451
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68622edc7d2772dd0800000000000000
+      internalID: -2510911996038076794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_40
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 453
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 421b4b1bde7ead210800000000000000
+      internalID: 1358653245680300324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_41
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 461
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb1331e7c0c0e9a10800000000000000
+      internalID: 1917983739100737983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_42
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 257
+        width: 18
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df27e28cff00ed4c0800000000000000
+      internalID: -4260967098870762755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_43
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 256
+        width: 14
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49696a4f2e5fd5ba0800000000000000
+      internalID: -6098447965273811308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_44
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 309
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba2c23845a2cdae10800000000000000
+      internalID: 2210637007245460139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_45
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 277
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0857f820a2ded20e0800000000000000
+      internalID: -2292915870574348928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_46
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 313
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88a8aa96115880d20800000000000000
+      internalID: 3244989841354164872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_47
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 309
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6262ca41959786870800000000000000
+      internalID: 8676318105635137062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_48
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 277
+        width: 41
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 280438cb25cd15550800000000000000
+      internalID: 6147937214245585026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_49
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 61
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b91ad7329db41800800000000000000
+      internalID: 582298687537551796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_50
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 80
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 416f32c116e9698f0800000000000000
+      internalID: -534065365875689964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_51
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 84
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8810a08cce6182a0800000000000000
+      internalID: -6736981742959191925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_52
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 79
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5994b39bdfaac2f0800000000000000
+      internalID: -951755013624653477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Elemental Punch_53
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 82
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c09fd6c4f467538a0800000000000000
+      internalID: -6326020018615224052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Elemental Punch_0: -3342486216054890033
+      PRAS- Elemental Punch_1: -9036695081893563613
+      PRAS- Elemental Punch_10: 4300641314102489697
+      PRAS- Elemental Punch_11: -4269144973139346244
+      PRAS- Elemental Punch_12: -3079928611536768826
+      PRAS- Elemental Punch_13: -7822543073126910352
+      PRAS- Elemental Punch_14: -5060925320498898885
+      PRAS- Elemental Punch_15: -2323019591349790475
+      PRAS- Elemental Punch_16: -4922765490275476857
+      PRAS- Elemental Punch_17: -7282618219631723634
+      PRAS- Elemental Punch_18: 4725689434111943039
+      PRAS- Elemental Punch_19: -4207667541339340826
+      PRAS- Elemental Punch_2: 7349369084018149334
+      PRAS- Elemental Punch_20: 6994318105072387444
+      PRAS- Elemental Punch_21: 462910463054094462
+      PRAS- Elemental Punch_22: -9189514979005290312
+      PRAS- Elemental Punch_23: 3580352341693685885
+      PRAS- Elemental Punch_24: 3164107915476797537
+      PRAS- Elemental Punch_25: 7417490261442255122
+      PRAS- Elemental Punch_26: 8005848075753873592
+      PRAS- Elemental Punch_27: 5999068076786908093
+      PRAS- Elemental Punch_28: -886441214159827585
+      PRAS- Elemental Punch_29: 8095715683305745491
+      PRAS- Elemental Punch_3: -6160708895614311365
+      PRAS- Elemental Punch_30: 6763608713929423931
+      PRAS- Elemental Punch_31: -213322219976261575
+      PRAS- Elemental Punch_32: 3417008946328183076
+      PRAS- Elemental Punch_33: -6870409248017475017
+      PRAS- Elemental Punch_34: 1545954633041329998
+      PRAS- Elemental Punch_35: -4217275319227638102
+      PRAS- Elemental Punch_36: 4616062895555420034
+      PRAS- Elemental Punch_37: -932796399570096007
+      PRAS- Elemental Punch_38: -4403628844245539223
+      PRAS- Elemental Punch_39: -2510911996038076794
+      PRAS- Elemental Punch_4: -5365061988835204820
+      PRAS- Elemental Punch_40: 1358653245680300324
+      PRAS- Elemental Punch_41: 1917983739100737983
+      PRAS- Elemental Punch_42: -4260967098870762755
+      PRAS- Elemental Punch_43: -6098447965273811308
+      PRAS- Elemental Punch_44: 2210637007245460139
+      PRAS- Elemental Punch_45: -2292915870574348928
+      PRAS- Elemental Punch_46: 3244989841354164872
+      PRAS- Elemental Punch_47: 8676318105635137062
+      PRAS- Elemental Punch_48: 6147937214245585026
+      PRAS- Elemental Punch_49: 582298687537551796
+      PRAS- Elemental Punch_5: -4471476049569975941
+      PRAS- Elemental Punch_50: -534065365875689964
+      PRAS- Elemental Punch_51: -6736981742959191925
+      PRAS- Elemental Punch_52: -951755013624653477
+      PRAS- Elemental Punch_53: -6326020018615224052
+      PRAS- Elemental Punch_6: -7428520589327972051
+      PRAS- Elemental Punch_7: -3561116839577414394
+      PRAS- Elemental Punch_8: 8749271191366371985
+      PRAS- Elemental Punch_9: 7937282370139300983
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

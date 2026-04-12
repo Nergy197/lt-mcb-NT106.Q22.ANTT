@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: 0fd3a4f5842ab4f6ea8fd0d509835c85
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2485815204663671726
+    second: mixed status_0
+  - first:
+      213: 6956576425534043642
+    second: mixed status_1
+  - first:
+      213: -8275192070078063811
+    second: mixed status_2
+  - first:
+      213: 2122562444169475230
+    second: mixed status_3
+  - first:
+      213: -2969406470376092886
+    second: mixed status_4
+  - first:
+      213: 4105608083264978434
+    second: mixed status_5
+  - first:
+      213: 2276467656717326845
+    second: mixed status_6
+  - first:
+      213: -6862240408830849208
+    second: mixed status_7
+  - first:
+      213: -6860214314546451058
+    second: mixed status_8
+  - first:
+      213: 5301287311227583940
+    second: mixed status_9
+  - first:
+      213: 1523951969353632214
+    second: mixed status_10
+  - first:
+      213: -4464679400963331146
+    second: mixed status_11
+  - first:
+      213: -8224614767155433692
+    second: mixed status_12
+  - first:
+      213: -3558704456723071050
+    second: mixed status_13
+  - first:
+      213: 4029176082408610885
+    second: mixed status_14
+  - first:
+      213: 9019618978875906266
+    second: mixed status_15
+  - first:
+      213: 2640178112811517371
+    second: mixed status_16
+  - first:
+      213: -7494468188596109663
+    second: mixed status_17
+  - first:
+      213: -5309817352094212873
+    second: mixed status_18
+  - first:
+      213: -7934103901321891597
+    second: mixed status_19
+  - first:
+      213: 5093160753085513259
+    second: mixed status_20
+  - first:
+      213: 2772080900361403503
+    second: mixed status_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mixed status_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 619
+        width: 113
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eab3e3b12c36f7220800000000000000
+      internalID: 2485815204663671726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mixed status_1
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 449
+        width: 299
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af530d8c669ba8060800000000000000
+      internalID: 6956576425534043642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mixed status_2
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 670
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3b1ed6f7ac982d80800000000000000
+      internalID: -8275192070078063811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mixed status_3
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 655
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e947e421c4bd47d10800000000000000
+      internalID: 2122562444169475230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mixed status_4
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 668
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b8c7b3c8c8ac6d0800000000000000
+      internalID: -2969406470376092886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mixed status_5
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 656
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20e3bfd9ccc0af830800000000000000
+      internalID: 4105608083264978434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mixed status_6
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 416
+        width: 258
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df95d45c543a79f10800000000000000
+      internalID: 2276467656717326845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mixed status_7
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 402
+        width: 52
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84f4e44b4bc64c0a0800000000000000
+      internalID: -6862240408830849208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mixed status_8
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 467
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8da86a8d6f9bc0a0800000000000000
+      internalID: -6860214314546451058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mixed status_9
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 231
+        width: 160
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cd710ed8b4f19940800000000000000
+      internalID: 5301287311227583940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mixed status_10
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 278
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d9841ced3a262510800000000000000
+      internalID: 1523951969353632214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mixed status_11
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 255
+        width: 66
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bba39d5db54a02c0800000000000000
+      internalID: -4464679400963331146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mixed status_12
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 250
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42fa445f17c4cdd80800000000000000
+      internalID: -8224614767155433692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mixed status_13
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 264
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bffb64c621fc9ec0800000000000000
+      internalID: -3558704456723071050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mixed status_14
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 260
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54c1779ac428ae730800000000000000
+      internalID: 4029176082408610885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mixed status_15
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 77
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad8154d5caf1c2d70800000000000000
+      internalID: 9019618978875906266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mixed status_16
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 73
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb544ed510cc3a420800000000000000
+      internalID: 2640178112811517371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mixed status_17
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 52
+        width: 484
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae734ec3ec4ef790800000000000000
+      internalID: -7494468188596109663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mixed status_18
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 49
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc183a304dbf46b0800000000000000
+      internalID: -5309817352094212873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mixed status_19
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 49
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f0faa6d98664e190800000000000000
+      internalID: -7934103901321891597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mixed status_20
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 50
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e7f9f58ba8ea640800000000000000
+      internalID: 5093160753085513259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mixed status_21
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 50
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6cbfaa44e8687620800000000000000
+      internalID: 2772080900361403503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mixed status_0: 2485815204663671726
+      mixed status_1: 6956576425534043642
+      mixed status_10: 1523951969353632214
+      mixed status_11: -4464679400963331146
+      mixed status_12: -8224614767155433692
+      mixed status_13: -3558704456723071050
+      mixed status_14: 4029176082408610885
+      mixed status_15: 9019618978875906266
+      mixed status_16: 2640178112811517371
+      mixed status_17: -7494468188596109663
+      mixed status_18: -5309817352094212873
+      mixed status_19: -7934103901321891597
+      mixed status_2: -8275192070078063811
+      mixed status_20: 5093160753085513259
+      mixed status_21: 2772080900361403503
+      mixed status_3: 2122562444169475230
+      mixed status_4: -2969406470376092886
+      mixed status_5: 4105608083264978434
+      mixed status_6: 2276467656717326845
+      mixed status_7: -6862240408830849208
+      mixed status_8: -6860214314546451058
+      mixed status_9: 5301287311227583940
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

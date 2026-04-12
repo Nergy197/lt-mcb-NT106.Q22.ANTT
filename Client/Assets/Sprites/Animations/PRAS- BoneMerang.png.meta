@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: 36a92f0cf6cf04b1198815bae2500343
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 597399334824951261
+    second: PRAS- BoneMerang_0
+  - first:
+      213: 3739595786575140348
+    second: PRAS- BoneMerang_1
+  - first:
+      213: 4198671498204906970
+    second: PRAS- BoneMerang_2
+  - first:
+      213: 7078583860120229517
+    second: PRAS- BoneMerang_3
+  - first:
+      213: -7376964554735728384
+    second: PRAS- BoneMerang_4
+  - first:
+      213: -1933405195396273414
+    second: PRAS- BoneMerang_5
+  - first:
+      213: -8447867946125571730
+    second: PRAS- BoneMerang_6
+  - first:
+      213: -5297375675976413219
+    second: PRAS- BoneMerang_7
+  - first:
+      213: -250103704957963541
+    second: PRAS- BoneMerang_8
+  - first:
+      213: -4066817459690799245
+    second: PRAS- BoneMerang_9
+  - first:
+      213: 96606008949860807
+    second: PRAS- BoneMerang_10
+  - first:
+      213: 4157783100763995388
+    second: PRAS- BoneMerang_11
+  - first:
+      213: -3300585354194402538
+    second: PRAS- BoneMerang_12
+  - first:
+      213: 2421329314721169820
+    second: PRAS- BoneMerang_13
+  - first:
+      213: 4699688272966000006
+    second: PRAS- BoneMerang_14
+  - first:
+      213: 7829676910151148046
+    second: PRAS- BoneMerang_15
+  - first:
+      213: -4604537246892331231
+    second: PRAS- BoneMerang_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- BoneMerang_0
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 277
+        width: 58
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dddbb45a7836a4800800000000000000
+      internalID: 597399334824951261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- BoneMerang_1
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 263
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5db5efd86b5e330800000000000000
+      internalID: 3739595786575140348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- BoneMerang_2
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 263
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad58f0b6b7da44a30800000000000000
+      internalID: 4198671498204906970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- BoneMerang_3
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 259
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d86974f448e2c3260800000000000000
+      internalID: 7078583860120229517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- BoneMerang_4
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 263
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 009445282d1cf9990800000000000000
+      internalID: -7376964554735728384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- BoneMerang_5
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 71
+        width: 54
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afaa289e73a2b25e0800000000000000
+      internalID: -1933405195396273414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- BoneMerang_6
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 67
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e69c6c99cd423ca80800000000000000
+      internalID: -8447867946125571730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- BoneMerang_7
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 113
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddf81afa3e0fb76b0800000000000000
+      internalID: -5297375675976413219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- BoneMerang_8
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 119
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be2b8f46104778cf0800000000000000
+      internalID: -250103704957963541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- BoneMerang_9
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 111
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37ff5cc3113cf87c0800000000000000
+      internalID: -4066817459690799245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- BoneMerang_10
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 85
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c9ef9e37a6375100800000000000000
+      internalID: 96606008949860807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- BoneMerang_11
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 73
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfcf82683b963b930800000000000000
+      internalID: 4157783100763995388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- BoneMerang_12
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 93
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 613c26c8b17f132d0800000000000000
+      internalID: -3300585354194402538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- BoneMerang_13
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 85
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c910238de2a4a9120800000000000000
+      internalID: 2421329314721169820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- BoneMerang_14
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 69
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68d15319595a83140800000000000000
+      internalID: 4699688272966000006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- BoneMerang_15
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 63
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0223a79aa998ac60800000000000000
+      internalID: 7829676910151148046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- BoneMerang_16
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 69
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12f6de315c56910c0800000000000000
+      internalID: -4604537246892331231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- BoneMerang_0: 597399334824951261
+      PRAS- BoneMerang_1: 3739595786575140348
+      PRAS- BoneMerang_10: 96606008949860807
+      PRAS- BoneMerang_11: 4157783100763995388
+      PRAS- BoneMerang_12: -3300585354194402538
+      PRAS- BoneMerang_13: 2421329314721169820
+      PRAS- BoneMerang_14: 4699688272966000006
+      PRAS- BoneMerang_15: 7829676910151148046
+      PRAS- BoneMerang_16: -4604537246892331231
+      PRAS- BoneMerang_2: 4198671498204906970
+      PRAS- BoneMerang_3: 7078583860120229517
+      PRAS- BoneMerang_4: -7376964554735728384
+      PRAS- BoneMerang_5: -1933405195396273414
+      PRAS- BoneMerang_6: -8447867946125571730
+      PRAS- BoneMerang_7: -5297375675976413219
+      PRAS- BoneMerang_8: -250103704957963541
+      PRAS- BoneMerang_9: -4066817459690799245
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

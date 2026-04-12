@@ -1,0 +1,1118 @@
+fileFormatVersion: 2
+guid: 60855cc456e264fdb85d84dcc1275ff7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6919475409372546760
+    second: PRAS- Metal Burst_0
+  - first:
+      213: 2394139534921423868
+    second: PRAS- Metal Burst_1
+  - first:
+      213: 7491155254565861953
+    second: PRAS- Metal Burst_2
+  - first:
+      213: 6685460511538447385
+    second: PRAS- Metal Burst_3
+  - first:
+      213: -1757335806831262256
+    second: PRAS- Metal Burst_4
+  - first:
+      213: 3071583179136262443
+    second: PRAS- Metal Burst_5
+  - first:
+      213: -4357623260629948977
+    second: PRAS- Metal Burst_6
+  - first:
+      213: -2022146820402779999
+    second: PRAS- Metal Burst_7
+  - first:
+      213: -9144967518611902094
+    second: PRAS- Metal Burst_8
+  - first:
+      213: 1515642580895032614
+    second: PRAS- Metal Burst_9
+  - first:
+      213: 6219917804062529815
+    second: PRAS- Metal Burst_10
+  - first:
+      213: -8321942932216254091
+    second: PRAS- Metal Burst_11
+  - first:
+      213: 3101095102865102367
+    second: PRAS- Metal Burst_12
+  - first:
+      213: 2767245819049593856
+    second: PRAS- Metal Burst_13
+  - first:
+      213: 2006397483702336070
+    second: PRAS- Metal Burst_14
+  - first:
+      213: -6529517889392297650
+    second: PRAS- Metal Burst_15
+  - first:
+      213: -1091919208961948141
+    second: PRAS- Metal Burst_16
+  - first:
+      213: -8610379781093386947
+    second: PRAS- Metal Burst_17
+  - first:
+      213: -1467617038839633158
+    second: PRAS- Metal Burst_18
+  - first:
+      213: 6790418423324640790
+    second: PRAS- Metal Burst_19
+  - first:
+      213: -3062380000192350445
+    second: PRAS- Metal Burst_20
+  - first:
+      213: 8288831172458705071
+    second: PRAS- Metal Burst_21
+  - first:
+      213: -1302615726822366520
+    second: PRAS- Metal Burst_22
+  - first:
+      213: -4517981548676045594
+    second: PRAS- Metal Burst_23
+  - first:
+      213: 8623366910951925353
+    second: PRAS- Metal Burst_24
+  - first:
+      213: -4417527454331275446
+    second: PRAS- Metal Burst_25
+  - first:
+      213: -2206190984103616788
+    second: PRAS- Metal Burst_26
+  - first:
+      213: 1127459341129880937
+    second: PRAS- Metal Burst_27
+  - first:
+      213: -2065094619196873181
+    second: PRAS- Metal Burst_28
+  - first:
+      213: -7771419433490963435
+    second: PRAS- Metal Burst_29
+  - first:
+      213: 1446807426180009355
+    second: PRAS- Metal Burst_30
+  - first:
+      213: 4250727901531675839
+    second: PRAS- Metal Burst_31
+  - first:
+      213: -7737212631628060351
+    second: PRAS- Metal Burst_32
+  - first:
+      213: 2763182260748509344
+    second: PRAS- Metal Burst_33
+  - first:
+      213: 3842853845195164748
+    second: PRAS- Metal Burst_34
+  - first:
+      213: -8122505099066842930
+    second: PRAS- Metal Burst_35
+  - first:
+      213: 2134027337696871266
+    second: PRAS- Metal Burst_36
+  - first:
+      213: -3384147705264209155
+    second: PRAS- Metal Burst_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1433
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8397c40b6c519ff90800000000000000
+      internalID: -6919475409372546760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_1
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1435
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfbd5b9e831b93120800000000000000
+      internalID: 2394139534921423868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_2
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 1435
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14af2b1a30ee5f760800000000000000
+      internalID: 7491155254565861953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_3
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 1433
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91486260ae687cc50800000000000000
+      internalID: 6685460511538447385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_4
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 1435
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d58fbaf460bc97e0800000000000000
+      internalID: -1757335806831262256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_5
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1243
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b216b72a0a470aa20800000000000000
+      internalID: 3071583179136262443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_6
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1243
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc52c2d6bbc9683c0800000000000000
+      internalID: -4357623260629948977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_7
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 1241
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a8e43e3e24efe3e0800000000000000
+      internalID: -2022146820402779999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_8
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 1243
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 271f6a27e7c861180800000000000000
+      internalID: -9144967518611902094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_9
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 1243
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62564b8a5e4a80510800000000000000
+      internalID: 1515642580895032614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_10
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1049
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 719564bc946915650800000000000000
+      internalID: 6219917804062529815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_11
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1051
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5717d24aef4828c80800000000000000
+      internalID: -8321942932216254091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_12
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 1051
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f165af4d09d490b20800000000000000
+      internalID: 3101095102865102367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_13
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1051
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00cc2a2396b376620800000000000000
+      internalID: 2767245819049593856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_14
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 1049
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64ab05e81e728db10800000000000000
+      internalID: 2006397483702336070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_15
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 859
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e49b630131e7265a0800000000000000
+      internalID: -6529517889392297650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_16
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 859
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 316c562c349b8d0f0800000000000000
+      internalID: -1091919208961948141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_17
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 857
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3519b67539c18880800000000000000
+      internalID: -8610379781093386947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_18
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 859
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa27a5341af1abe0800000000000000
+      internalID: -1467617038839633158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_19
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 859
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 616888e24996c3e50800000000000000
+      internalID: 6790418423324640790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_20
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 667
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31736417d9d3085d0800000000000000
+      internalID: -3062380000192350445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_21
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 665
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa0f5950908d70370800000000000000
+      internalID: 8288831172458705071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_22
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 667
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c26ae3e5ed2cede0800000000000000
+      internalID: -1302615726822366520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_23
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 667
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e4256108b7ec41c0800000000000000
+      internalID: -4517981548676045594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_24
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 665
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 966a527548a5ca770800000000000000
+      internalID: 8623366910951925353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_25
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 475
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a477c037f2ac1b2c0800000000000000
+      internalID: -4417527454331275446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_26
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 475
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cee95d52df80261e0800000000000000
+      internalID: -2206190984103616788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_27
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 475
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9651eb61c4a85af00800000000000000
+      internalID: 1127459341129880937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_28
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 475
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 326233b926f4753e0800000000000000
+      internalID: -2065094619196873181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_29
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 473
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5142432333f562490800000000000000
+      internalID: -7771419433490963435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_30
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 283
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8d4bd740b7141410800000000000000
+      internalID: 1446807426180009355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_31
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 283
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc13af418e9dfa30800000000000000
+      internalID: 4250727901531675839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_32
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 7
+        width: 16
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 149e424ea16ef9490800000000000000
+      internalID: -7737212631628060351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_33
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 283
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a0639d40abc85620800000000000000
+      internalID: 2763182260748509344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_34
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 283
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c0a9e363f845530800000000000000
+      internalID: 3842853845195164748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_35
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 376
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec062d3b5a0174f80800000000000000
+      internalID: -8122505099066842930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_36
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 59
+        width: 72
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 263056c9e869d9d10800000000000000
+      internalID: 2134027337696871266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Metal Burst_37
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 65
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2064097971901d0800000000000000
+      internalID: -3384147705264209155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Metal Burst_0: -6919475409372546760
+      PRAS- Metal Burst_1: 2394139534921423868
+      PRAS- Metal Burst_10: 6219917804062529815
+      PRAS- Metal Burst_11: -8321942932216254091
+      PRAS- Metal Burst_12: 3101095102865102367
+      PRAS- Metal Burst_13: 2767245819049593856
+      PRAS- Metal Burst_14: 2006397483702336070
+      PRAS- Metal Burst_15: -6529517889392297650
+      PRAS- Metal Burst_16: -1091919208961948141
+      PRAS- Metal Burst_17: -8610379781093386947
+      PRAS- Metal Burst_18: -1467617038839633158
+      PRAS- Metal Burst_19: 6790418423324640790
+      PRAS- Metal Burst_2: 7491155254565861953
+      PRAS- Metal Burst_20: -3062380000192350445
+      PRAS- Metal Burst_21: 8288831172458705071
+      PRAS- Metal Burst_22: -1302615726822366520
+      PRAS- Metal Burst_23: -4517981548676045594
+      PRAS- Metal Burst_24: 8623366910951925353
+      PRAS- Metal Burst_25: -4417527454331275446
+      PRAS- Metal Burst_26: -2206190984103616788
+      PRAS- Metal Burst_27: 1127459341129880937
+      PRAS- Metal Burst_28: -2065094619196873181
+      PRAS- Metal Burst_29: -7771419433490963435
+      PRAS- Metal Burst_3: 6685460511538447385
+      PRAS- Metal Burst_30: 1446807426180009355
+      PRAS- Metal Burst_31: 4250727901531675839
+      PRAS- Metal Burst_32: -7737212631628060351
+      PRAS- Metal Burst_33: 2763182260748509344
+      PRAS- Metal Burst_34: 3842853845195164748
+      PRAS- Metal Burst_35: -8122505099066842930
+      PRAS- Metal Burst_36: 2134027337696871266
+      PRAS- Metal Burst_37: -3384147705264209155
+      PRAS- Metal Burst_4: -1757335806831262256
+      PRAS- Metal Burst_5: 3071583179136262443
+      PRAS- Metal Burst_6: -4357623260629948977
+      PRAS- Metal Burst_7: -2022146820402779999
+      PRAS- Metal Burst_8: -9144967518611902094
+      PRAS- Metal Burst_9: 1515642580895032614
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

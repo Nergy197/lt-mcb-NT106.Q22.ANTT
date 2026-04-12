@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: 72ba204e2f157484abb7ac6412bc65b3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7157755797478058771
+    second: Gen 9 - Temper Flare_0
+  - first:
+      213: -6988941811372754316
+    second: Gen 9 - Temper Flare_1
+  - first:
+      213: -3930377048406171079
+    second: Gen 9 - Temper Flare_2
+  - first:
+      213: 1586298198334017265
+    second: Gen 9 - Temper Flare_3
+  - first:
+      213: -1164493851696669355
+    second: Gen 9 - Temper Flare_4
+  - first:
+      213: -8747379030393054568
+    second: Gen 9 - Temper Flare_5
+  - first:
+      213: -2079541072735865495
+    second: Gen 9 - Temper Flare_6
+  - first:
+      213: 6703758635869764017
+    second: Gen 9 - Temper Flare_7
+  - first:
+      213: 6731630822559899017
+    second: Gen 9 - Temper Flare_8
+  - first:
+      213: 6558570718152644514
+    second: Gen 9 - Temper Flare_9
+  - first:
+      213: -2491807445102810500
+    second: Gen 9 - Temper Flare_10
+  - first:
+      213: 2914695974316551355
+    second: Gen 9 - Temper Flare_11
+  - first:
+      213: -1145942093854196411
+    second: Gen 9 - Temper Flare_12
+  - first:
+      213: -1128611023547965092
+    second: Gen 9 - Temper Flare_13
+  - first:
+      213: 7433624057895459601
+    second: Gen 9 - Temper Flare_14
+  - first:
+      213: 8119603076895753265
+    second: Gen 9 - Temper Flare_15
+  - first:
+      213: 670034839283593278
+    second: Gen 9 - Temper Flare_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gen 9 - Temper Flare_0
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 469
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31b2ca179f4755360800000000000000
+      internalID: 7157755797478058771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen 9 - Temper Flare_1
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 465
+        width: 51
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47a7049937a420f90800000000000000
+      internalID: -6988941811372754316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen 9 - Temper Flare_2
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 453
+        width: 83
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 932e66406ee7479c0800000000000000
+      internalID: -3930377048406171079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen 9 - Temper Flare_3
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 435
+        width: 93
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fe8a8b8ec9a30610800000000000000
+      internalID: 1586298198334017265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen 9 - Temper Flare_4
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 426
+        width: 107
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55d5e7af203e6dfe0800000000000000
+      internalID: -1164493851696669355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen 9 - Temper Flare_5
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 234
+        width: 121
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89a98b11e111b9680800000000000000
+      internalID: -8747379030393054568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen 9 - Temper Flare_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 228
+        width: 124
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9657eb7896cf323e0800000000000000
+      internalID: -2079541072735865495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen 9 - Temper Flare_7
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 216
+        width: 142
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b979f616f8880d50800000000000000
+      internalID: 6703758635869764017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen 9 - Temper Flare_8
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 215
+        width: 149
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98dd0c1419e8b6d50800000000000000
+      internalID: 6731630822559899017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen 9 - Temper Flare_9
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 213
+        width: 135
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a754c1c159b40b50800000000000000
+      internalID: 6558570718152644514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen 9 - Temper Flare_10
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 40
+        width: 103
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7a29f1b4525b6dd0800000000000000
+      internalID: -2491807445102810500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen 9 - Temper Flare_11
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 54
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbc2661cb84137820800000000000000
+      internalID: 2914695974316551355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen 9 - Temper Flare_12
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 30
+        width: 99
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d37a2bcbbc810f0800000000000000
+      internalID: -1145942093854196411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen 9 - Temper Flare_13
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 95
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5165d3f04e5650f0800000000000000
+      internalID: -1128611023547965092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen 9 - Temper Flare_14
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 101
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b18a412b9892760800000000000000
+      internalID: 7433624057895459601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen 9 - Temper Flare_15
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 87
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1344a8b9aff9ea070800000000000000
+      internalID: 8119603076895753265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gen 9 - Temper Flare_16
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 83
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3072a6e2217c4900800000000000000
+      internalID: 670034839283593278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Gen 9 - Temper Flare_0: 7157755797478058771
+      Gen 9 - Temper Flare_1: -6988941811372754316
+      Gen 9 - Temper Flare_10: -2491807445102810500
+      Gen 9 - Temper Flare_11: 2914695974316551355
+      Gen 9 - Temper Flare_12: -1145942093854196411
+      Gen 9 - Temper Flare_13: -1128611023547965092
+      Gen 9 - Temper Flare_14: 7433624057895459601
+      Gen 9 - Temper Flare_15: 8119603076895753265
+      Gen 9 - Temper Flare_16: 670034839283593278
+      Gen 9 - Temper Flare_2: -3930377048406171079
+      Gen 9 - Temper Flare_3: 1586298198334017265
+      Gen 9 - Temper Flare_4: -1164493851696669355
+      Gen 9 - Temper Flare_5: -8747379030393054568
+      Gen 9 - Temper Flare_6: -2079541072735865495
+      Gen 9 - Temper Flare_7: 6703758635869764017
+      Gen 9 - Temper Flare_8: 6731630822559899017
+      Gen 9 - Temper Flare_9: 6558570718152644514
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

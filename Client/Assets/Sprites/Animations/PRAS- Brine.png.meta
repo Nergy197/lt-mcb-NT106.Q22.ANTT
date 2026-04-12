@@ -1,0 +1,676 @@
+fileFormatVersion: 2
+guid: 40c40804acfa24038bfda5bbaf434900
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1646162738483267734
+    second: PRAS- Brine_0
+  - first:
+      213: -1445531490344647497
+    second: PRAS- Brine_1
+  - first:
+      213: -7972560092847071078
+    second: PRAS- Brine_2
+  - first:
+      213: -5983067335733834548
+    second: PRAS- Brine_3
+  - first:
+      213: 141908269002675461
+    second: PRAS- Brine_4
+  - first:
+      213: -410321089739522913
+    second: PRAS- Brine_5
+  - first:
+      213: -3882374754132497159
+    second: PRAS- Brine_6
+  - first:
+      213: 6700848936417533434
+    second: PRAS- Brine_7
+  - first:
+      213: -6045732330992336774
+    second: PRAS- Brine_8
+  - first:
+      213: -8265650779236505412
+    second: PRAS- Brine_9
+  - first:
+      213: -5174085214348743370
+    second: PRAS- Brine_10
+  - first:
+      213: 5514862404974952244
+    second: PRAS- Brine_11
+  - first:
+      213: -2885201475080575357
+    second: PRAS- Brine_12
+  - first:
+      213: 4725910226967822667
+    second: PRAS- Brine_13
+  - first:
+      213: -1704646021702044738
+    second: PRAS- Brine_14
+  - first:
+      213: 4548626278774214309
+    second: PRAS- Brine_15
+  - first:
+      213: 631800821355720724
+    second: PRAS- Brine_16
+  - first:
+      213: 1866794217455091557
+    second: PRAS- Brine_17
+  - first:
+      213: 7452639039012464109
+    second: PRAS- Brine_18
+  - first:
+      213: -3089501683531689362
+    second: PRAS- Brine_19
+  - first:
+      213: -6619386099059528793
+    second: PRAS- Brine_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Brine_0
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 276
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69887c5f94858d610800000000000000
+      internalID: 1646162738483267734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Brine_1
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 292
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b4cd5ea4c070fbe0800000000000000
+      internalID: -1445531490344647497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Brine_2
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 300
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a90256306d6cb5190800000000000000
+      internalID: -7972560092847071078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Brine_3
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 310
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccc875235ffd7fca0800000000000000
+      internalID: -5983067335733834548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Brine_4
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 306
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 505589c91d828f100800000000000000
+      internalID: 141908269002675461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Brine_5
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 304
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9c7932942f3e4af0800000000000000
+      internalID: -410321089739522913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Brine_6
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 258
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fcecf61bb80f1ac0800000000000000
+      internalID: -3882374754132497159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Brine_7
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 259
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afd98b4ea923efc50800000000000000
+      internalID: 6700848936417533434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Brine_8
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 258
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a708b140a7e391ca0800000000000000
+      internalID: -6045732330992336774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Brine_9
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 276
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb86d2ad8628a4d80800000000000000
+      internalID: -8265650779236505412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Brine_10
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 258
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63d642939e4f138b0800000000000000
+      internalID: -5174085214348743370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Brine_11
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 272
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43f30b9632ab88c40800000000000000
+      internalID: 5514862404974952244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Brine_12
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 258
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386a36c7b84b5f7d0800000000000000
+      internalID: -2885201475080575357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Brine_13
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 268
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b418dceff4ec59140800000000000000
+      internalID: 4725910226967822667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Brine_14
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 262
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb3baa09971e758e0800000000000000
+      internalID: -1704646021702044738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Brine_15
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 260
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae085a3087ff1f30800000000000000
+      internalID: 4548626278774214309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Brine_16
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 79
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41035b5ef7b94c800800000000000000
+      internalID: 631800821355720724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Brine_17
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 63
+        width: 52
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56ff928337f28e910800000000000000
+      internalID: 1866794217455091557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Brine_18
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 63
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de5eb8f58b71d6760800000000000000
+      internalID: 7452639039012464109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Brine_19
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 59
+        width: 70
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e625f147692ef15d0800000000000000
+      internalID: -3089501683531689362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Brine_20
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 87
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7abe566f9673324a0800000000000000
+      internalID: -6619386099059528793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Brine_0: 1646162738483267734
+      PRAS- Brine_1: -1445531490344647497
+      PRAS- Brine_10: -5174085214348743370
+      PRAS- Brine_11: 5514862404974952244
+      PRAS- Brine_12: -2885201475080575357
+      PRAS- Brine_13: 4725910226967822667
+      PRAS- Brine_14: -1704646021702044738
+      PRAS- Brine_15: 4548626278774214309
+      PRAS- Brine_16: 631800821355720724
+      PRAS- Brine_17: 1866794217455091557
+      PRAS- Brine_18: 7452639039012464109
+      PRAS- Brine_19: -3089501683531689362
+      PRAS- Brine_2: -7972560092847071078
+      PRAS- Brine_20: -6619386099059528793
+      PRAS- Brine_3: -5983067335733834548
+      PRAS- Brine_4: 141908269002675461
+      PRAS- Brine_5: -410321089739522913
+      PRAS- Brine_6: -3882374754132497159
+      PRAS- Brine_7: 6700848936417533434
+      PRAS- Brine_8: -6045732330992336774
+      PRAS- Brine_9: -8265650779236505412
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

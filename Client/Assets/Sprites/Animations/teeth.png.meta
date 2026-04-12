@@ -1,0 +1,1664 @@
+fileFormatVersion: 2
+guid: c8f3d51cbc47b466f8648be6f4eb92f4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 121673578717679584
+    second: teeth_0
+  - first:
+      213: -3140067640586414885
+    second: teeth_1
+  - first:
+      213: -8662721242383372651
+    second: teeth_2
+  - first:
+      213: 8437487090100363993
+    second: teeth_3
+  - first:
+      213: 9116022100804073087
+    second: teeth_4
+  - first:
+      213: -5442356622340390511
+    second: teeth_5
+  - first:
+      213: 5545952783774025380
+    second: teeth_6
+  - first:
+      213: -218051326777144565
+    second: teeth_7
+  - first:
+      213: -5945649306936316432
+    second: teeth_8
+  - first:
+      213: -4338673752596767509
+    second: teeth_9
+  - first:
+      213: -4515719146323702667
+    second: teeth_10
+  - first:
+      213: -4356618874060388302
+    second: teeth_11
+  - first:
+      213: 4576251647692691214
+    second: teeth_12
+  - first:
+      213: 5664513095020227874
+    second: teeth_13
+  - first:
+      213: 4062887851041680297
+    second: teeth_14
+  - first:
+      213: -6507502158769009526
+    second: teeth_15
+  - first:
+      213: 2509539890230195311
+    second: teeth_16
+  - first:
+      213: 8123172849999933322
+    second: teeth_17
+  - first:
+      213: 4727780191154316699
+    second: teeth_18
+  - first:
+      213: -347606890899595764
+    second: teeth_19
+  - first:
+      213: -319380028638200021
+    second: teeth_20
+  - first:
+      213: -5885929465381726582
+    second: teeth_21
+  - first:
+      213: 3977168908939297361
+    second: teeth_22
+  - first:
+      213: -8792386036773602832
+    second: teeth_23
+  - first:
+      213: -2206871647749770725
+    second: teeth_24
+  - first:
+      213: -6576510361597709639
+    second: teeth_25
+  - first:
+      213: 444005444259006742
+    second: teeth_26
+  - first:
+      213: -1143878222850705133
+    second: teeth_27
+  - first:
+      213: -3354687135105693454
+    second: teeth_28
+  - first:
+      213: 2777671797663723168
+    second: teeth_29
+  - first:
+      213: 1598519144437495840
+    second: teeth_30
+  - first:
+      213: -714702720440570085
+    second: teeth_31
+  - first:
+      213: -9013410250196415219
+    second: teeth_32
+  - first:
+      213: -2620094182042453846
+    second: teeth_33
+  - first:
+      213: -172608721287246163
+    second: teeth_34
+  - first:
+      213: 622853165114604157
+    second: teeth_35
+  - first:
+      213: 6131482849583405947
+    second: teeth_36
+  - first:
+      213: 8297349951354523071
+    second: teeth_37
+  - first:
+      213: 6654127949465903300
+    second: teeth_38
+  - first:
+      213: -3377292605096363934
+    second: teeth_39
+  - first:
+      213: 858773040846554173
+    second: teeth_40
+  - first:
+      213: -4611806891633408690
+    second: teeth_41
+  - first:
+      213: 8439023402509272566
+    second: teeth_42
+  - first:
+      213: -7883642232339141674
+    second: teeth_43
+  - first:
+      213: 7230308428476666386
+    second: teeth_44
+  - first:
+      213: -8707360702998634732
+    second: teeth_45
+  - first:
+      213: -5928028164271846041
+    second: teeth_46
+  - first:
+      213: -3243006258985325247
+    second: teeth_47
+  - first:
+      213: 5622551288654043004
+    second: teeth_48
+  - first:
+      213: -6385373818366009174
+    second: teeth_49
+  - first:
+      213: -2203977007784765681
+    second: teeth_50
+  - first:
+      213: 7257375000570440123
+    second: teeth_51
+  - first:
+      213: -792207039524587358
+    second: teeth_52
+  - first:
+      213: -4846917831394407673
+    second: teeth_53
+  - first:
+      213: -7302533780375084059
+    second: teeth_54
+  - first:
+      213: 1373406967066076349
+    second: teeth_55
+  - first:
+      213: -8598407156936513836
+    second: teeth_56
+  - first:
+      213: -4425727742403450811
+    second: teeth_57
+  - first:
+      213: -5951367019118777348
+    second: teeth_58
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: teeth_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 675
+        width: 104
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef8406a97540b100800000000000000
+      internalID: 121673578717679584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_1
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 682
+        width: 104
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd4d5202e1d3c64d0800000000000000
+      internalID: -3140067640586414885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_2
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 684
+        width: 104
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e22875de4d7c780800000000000000
+      internalID: -8662721242383372651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_3
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 693
+        width: 104
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d260620ec9f71570800000000000000
+      internalID: 8437487090100363993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_4
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 692
+        width: 104
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f76790b4dcd928e70800000000000000
+      internalID: 9116022100804073087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_5
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 619
+        width: 104
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1910860ac7dd874b0800000000000000
+      internalID: -5442356622340390511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_6
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 611
+        width: 104
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a680f15cae27fc40800000000000000
+      internalID: 5545952783774025380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_7
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 600
+        width: 104
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b45ac397359fcf0800000000000000
+      internalID: -218051326777144565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_8
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 589
+        width: 104
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fd630de47fcc7da0800000000000000
+      internalID: -5945649306936316432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_9
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 595
+        width: 104
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bec9824953fe9c3c0800000000000000
+      internalID: -4338673752596767509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_10
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 497
+        width: 104
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57c02f99c51f451c0800000000000000
+      internalID: -4515719146323702667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_11
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 487
+        width: 104
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2384ed5673e2a83c0800000000000000
+      internalID: -4356618874060388302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_12
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 472
+        width: 104
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e07d487a0ac128f30800000000000000
+      internalID: 4576251647692691214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_13
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 444
+        width: 104
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22daa36e5a46c9e40800000000000000
+      internalID: 5664513095020227874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_14
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 467
+        width: 104
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9abe69379f6426830800000000000000
+      internalID: 4062887851041680297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_15
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 418
+        width: 104
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8c4c7bc345b0b5a0800000000000000
+      internalID: -6507502158769009526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_16
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 429
+        width: 104
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f64f7daeb3da3d220800000000000000
+      internalID: 2509539890230195311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_17
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 441
+        width: 104
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8fe75d2bae4bb070800000000000000
+      internalID: 8123172849999933322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_18
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 434
+        width: 104
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b95a1e5f8037c9140800000000000000
+      internalID: 4727780191154316699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_19
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 284
+        width: 104
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0e937adf5d0d2bf0800000000000000
+      internalID: -347606890899595764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_20
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 286
+        width: 104
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f7aac5e85519bf0800000000000000
+      internalID: -319380028638200021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_21
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 295
+        width: 104
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a86dae2165af05ea0800000000000000
+      internalID: -5885929465381726582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_22
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 244
+        width: 104
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1520e0dfc0eb13730800000000000000
+      internalID: 3977168908939297361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_23
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 236
+        width: 104
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f9310ecb7b2bf580800000000000000
+      internalID: -8792386036773602832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_24
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 229
+        width: 104
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b127efacded9f51e0800000000000000
+      internalID: -2206871647749770725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_25
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 270
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b2fa438baa8bb4a0800000000000000
+      internalID: -6576510361597709639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_26
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 265
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 619c56f599c692600800000000000000
+      internalID: 444005444259006742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_27
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 249
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 319bdac11d02020f0800000000000000
+      internalID: -1143878222850705133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_28
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 255
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f8c37313d1c171d0800000000000000
+      internalID: -3354687135105693454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_29
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 241
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aeed5288c54c8620800000000000000
+      internalID: 2777671797663723168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_30
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 72
+        width: 58
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 028bbda41b41f2610800000000000000
+      internalID: 1598519144437495840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_31
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 86
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f622499add416f0800000000000000
+      internalID: -714702720440570085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_32
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 86
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0d8d2ee12fe9e280800000000000000
+      internalID: -9013410250196415219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_33
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 86
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa8ba49293e83abd0800000000000000
+      internalID: -2620094182042453846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_34
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 86
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dae0a825845ca9df0800000000000000
+      internalID: -172608721287246163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_35
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 54
+        width: 82
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a32e557a1d4a800800000000000000
+      internalID: 622853165114604157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_36
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 54
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7b91db6a27671550800000000000000
+      internalID: 6131482849583405947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_37
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 54
+        width: 56
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbd479bc1db162370800000000000000
+      internalID: 8297349951354523071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_38
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 54
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c0e9ed6d16385c50800000000000000
+      internalID: 6654127949465903300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_39
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 54
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2687da2f4427121d0800000000000000
+      internalID: -3377292605096363934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_40
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 32
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34475ad789faeb00800000000000000
+      internalID: 858773040846554173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_41
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 32
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e450e7301129fffb0800000000000000
+      internalID: -4611806891633408690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_42
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 32
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f506cd921f6d1570800000000000000
+      internalID: 8439023402509272566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_43
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 29
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db6825b82da79290800000000000000
+      internalID: -7883642232339141674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_44
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 32
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2125dd73537375460800000000000000
+      internalID: 7230308428476666386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_45
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 32
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f129ef29d392780800000000000000
+      internalID: -8707360702998634732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_46
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 32
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76dc01aeac96bbda0800000000000000
+      internalID: -5928028164271846041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_47
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 32
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14dafc85df68ef2d0800000000000000
+      internalID: -3243006258985325247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_48
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 32
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7793a38b90570e40800000000000000
+      internalID: 5622551288654043004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_49
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 29
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa0e636e7589267a0800000000000000
+      internalID: -6385373818366009174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_50
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 10
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f075cdda696e961e0800000000000000
+      internalID: -2203977007784765681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_51
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 10
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb92dce9c1067b460800000000000000
+      internalID: 7257375000570440123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_52
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 10
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a8b29415e38105f0800000000000000
+      internalID: -792207039524587358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_53
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 10
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70bca3499e94cbcb0800000000000000
+      internalID: -4846917831394407673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_54
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 10
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e3e37c973038aa90800000000000000
+      internalID: -7302533780375084059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_55
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 10
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db425042c525f0310800000000000000
+      internalID: 1373406967066076349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_56
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 8
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d66f904f325ca880800000000000000
+      internalID: -8598407156936513836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_57
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 8
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54863791118a492c0800000000000000
+      internalID: -4425727742403450811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teeth_58
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 10
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb23715a3f786da0800000000000000
+      internalID: -5951367019118777348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      teeth_0: 121673578717679584
+      teeth_1: -3140067640586414885
+      teeth_10: -4515719146323702667
+      teeth_11: -4356618874060388302
+      teeth_12: 4576251647692691214
+      teeth_13: 5664513095020227874
+      teeth_14: 4062887851041680297
+      teeth_15: -6507502158769009526
+      teeth_16: 2509539890230195311
+      teeth_17: 8123172849999933322
+      teeth_18: 4727780191154316699
+      teeth_19: -347606890899595764
+      teeth_2: -8662721242383372651
+      teeth_20: -319380028638200021
+      teeth_21: -5885929465381726582
+      teeth_22: 3977168908939297361
+      teeth_23: -8792386036773602832
+      teeth_24: -2206871647749770725
+      teeth_25: -6576510361597709639
+      teeth_26: 444005444259006742
+      teeth_27: -1143878222850705133
+      teeth_28: -3354687135105693454
+      teeth_29: 2777671797663723168
+      teeth_3: 8437487090100363993
+      teeth_30: 1598519144437495840
+      teeth_31: -714702720440570085
+      teeth_32: -9013410250196415219
+      teeth_33: -2620094182042453846
+      teeth_34: -172608721287246163
+      teeth_35: 622853165114604157
+      teeth_36: 6131482849583405947
+      teeth_37: 8297349951354523071
+      teeth_38: 6654127949465903300
+      teeth_39: -3377292605096363934
+      teeth_4: 9116022100804073087
+      teeth_40: 858773040846554173
+      teeth_41: -4611806891633408690
+      teeth_42: 8439023402509272566
+      teeth_43: -7883642232339141674
+      teeth_44: 7230308428476666386
+      teeth_45: -8707360702998634732
+      teeth_46: -5928028164271846041
+      teeth_47: -3243006258985325247
+      teeth_48: 5622551288654043004
+      teeth_49: -6385373818366009174
+      teeth_5: -5442356622340390511
+      teeth_50: -2203977007784765681
+      teeth_51: 7257375000570440123
+      teeth_52: -792207039524587358
+      teeth_53: -4846917831394407673
+      teeth_54: -7302533780375084059
+      teeth_55: 1373406967066076349
+      teeth_56: -8598407156936513836
+      teeth_57: -4425727742403450811
+      teeth_58: -5951367019118777348
+      teeth_6: 5545952783774025380
+      teeth_7: -218051326777144565
+      teeth_8: -5945649306936316432
+      teeth_9: -4338673752596767509
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

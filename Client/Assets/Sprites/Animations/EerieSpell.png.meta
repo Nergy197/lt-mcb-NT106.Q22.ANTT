@@ -1,0 +1,1326 @@
+fileFormatVersion: 2
+guid: bf88353bee9dd41c9bb06a1a822033a6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -323392029203127423
+    second: EerieSpell_0
+  - first:
+      213: -8734506136661268416
+    second: EerieSpell_1
+  - first:
+      213: -7804687707307141244
+    second: EerieSpell_2
+  - first:
+      213: 3357056183746619923
+    second: EerieSpell_3
+  - first:
+      213: -2218578673094578775
+    second: EerieSpell_4
+  - first:
+      213: 3157232796214366756
+    second: EerieSpell_5
+  - first:
+      213: 4303374948691618939
+    second: EerieSpell_6
+  - first:
+      213: -1409682656553987100
+    second: EerieSpell_7
+  - first:
+      213: -3758143262027666719
+    second: EerieSpell_8
+  - first:
+      213: -3963743964751164040
+    second: EerieSpell_9
+  - first:
+      213: -292627033446032154
+    second: EerieSpell_10
+  - first:
+      213: 2226659848915798093
+    second: EerieSpell_11
+  - first:
+      213: -2896460871072298638
+    second: EerieSpell_12
+  - first:
+      213: -7904570525977822853
+    second: EerieSpell_13
+  - first:
+      213: 4684053157048211438
+    second: EerieSpell_14
+  - first:
+      213: 8994669644903275007
+    second: EerieSpell_15
+  - first:
+      213: -731185983623156895
+    second: EerieSpell_16
+  - first:
+      213: -2191263189949222077
+    second: EerieSpell_17
+  - first:
+      213: 4945372591220134834
+    second: EerieSpell_18
+  - first:
+      213: -1827963477663281777
+    second: EerieSpell_19
+  - first:
+      213: 2178633561460824113
+    second: EerieSpell_20
+  - first:
+      213: -1681769853441112570
+    second: EerieSpell_21
+  - first:
+      213: 118917524795291388
+    second: EerieSpell_22
+  - first:
+      213: -935206955548395412
+    second: EerieSpell_23
+  - first:
+      213: 4105563309473100772
+    second: EerieSpell_24
+  - first:
+      213: -3763960044296910875
+    second: EerieSpell_25
+  - first:
+      213: 724591040854152944
+    second: EerieSpell_26
+  - first:
+      213: -9074119541853627322
+    second: EerieSpell_27
+  - first:
+      213: -6265116260934198944
+    second: EerieSpell_28
+  - first:
+      213: 3659113917080991532
+    second: EerieSpell_29
+  - first:
+      213: -5272754251262858276
+    second: EerieSpell_30
+  - first:
+      213: 775253963100836566
+    second: EerieSpell_31
+  - first:
+      213: -8435650734203161325
+    second: EerieSpell_32
+  - first:
+      213: -399030888756987582
+    second: EerieSpell_33
+  - first:
+      213: 592103474991739207
+    second: EerieSpell_34
+  - first:
+      213: 2487036260887773019
+    second: EerieSpell_35
+  - first:
+      213: -7599411899122508893
+    second: EerieSpell_36
+  - first:
+      213: 1087644246114572691
+    second: EerieSpell_37
+  - first:
+      213: -7249372178791442747
+    second: EerieSpell_38
+  - first:
+      213: -7690856558553661143
+    second: EerieSpell_39
+  - first:
+      213: -8363910188741301268
+    second: EerieSpell_40
+  - first:
+      213: 8680346877876737238
+    second: EerieSpell_41
+  - first:
+      213: 3949799027427640037
+    second: EerieSpell_42
+  - first:
+      213: -8419236919352142147
+    second: EerieSpell_43
+  - first:
+      213: 2990350557698093103
+    second: EerieSpell_44
+  - first:
+      213: -7810196372639089502
+    second: EerieSpell_45
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EerieSpell_0
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 963
+        width: 133
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 183a720b9a4138bf0800000000000000
+      internalID: -323392029203127423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_1
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 962
+        width: 137
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048e5d332fcc8c680800000000000000
+      internalID: -8734506136661268416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_2
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1091
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 487991791ed20b390800000000000000
+      internalID: -7804687707307141244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_3
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 1085
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31aee3b00d8a69e20800000000000000
+      internalID: 3357056183746619923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_4
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 961
+        width: 145
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ada0fb83760631e0800000000000000
+      internalID: -2218578673094578775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 970
+        width: 122
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 422129b108eb0db20800000000000000
+      internalID: 3157232796214366756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_6
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 969
+        width: 130
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7c241037b8a8bb30800000000000000
+      internalID: 4303374948691618939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_7
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 770
+        width: 156
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e3121ab71dcf6ce0800000000000000
+      internalID: -1409682656553987100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_8
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 770
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea20db5d9468dbc0800000000000000
+      internalID: -3758143262027666719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_9
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 923
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87d88686dd3fdf8c0800000000000000
+      internalID: -3963743964751164040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_10
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 771
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ecd5c3734160fbf0800000000000000
+      internalID: -292627033446032154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_11
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 771
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d484042d55fa6ee10800000000000000
+      internalID: 2226659848915798093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_12
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 771
+        width: 152
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 279cae11f24bdc7d0800000000000000
+      internalID: -2896460871072298638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_13
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 580
+        width: 168
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b79b111acf25d4290800000000000000
+      internalID: -7904570525977822853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_14
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 750
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee7d7e67789110140800000000000000
+      internalID: 4684053157048211438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_15
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 580
+        width: 171
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff9d270e26c73dc70800000000000000
+      internalID: 8994669644903275007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_16
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 754
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ba56dc83e4ad5f0800000000000000
+      internalID: -731185983623156895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_17
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 757
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 343ffa11db11791e0800000000000000
+      internalID: -2191263189949222077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_18
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 581
+        width: 172
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b311a58b2e71a440800000000000000
+      internalID: 4945372591220134834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_19
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 757
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d0e7be6e4c1a6e0800000000000000
+      internalID: -1827963477663281777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_20
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 581
+        width: 171
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 138dd966eaf0c3e10800000000000000
+      internalID: 2178633561460824113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_21
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 579
+        width: 171
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6068eab8a3729a8e0800000000000000
+      internalID: -1681769853441112570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_22
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 386
+        width: 168
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf6fdf6dbda76a100800000000000000
+      internalID: 118917524795291388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_23
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 386
+        width: 168
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6830179a3a7503f0800000000000000
+      internalID: -935206955548395412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_24
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 568
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e37508e314e9f830800000000000000
+      internalID: 4105563309473100772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_25
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 386
+        width: 167
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e74be2384ab3cbc0800000000000000
+      internalID: -3763960044296910875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_26
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 560
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6da8d66b34e0a00800000000000000
+      internalID: 724591040854152944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_27
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 568
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c526a7a50421280800000000000000
+      internalID: -9074119541853627322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_28
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 386
+        width: 164
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0695e7664f5dd09a0800000000000000
+      internalID: -6265116260934198944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_29
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 387
+        width: 163
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c27fc4488b8c7c230800000000000000
+      internalID: 3659113917080991532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_30
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 569
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdbeb89d1f963d6b0800000000000000
+      internalID: -5272754251262858276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_31
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 194
+        width: 165
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d2d6593f5142ca00800000000000000
+      internalID: 775253963100836566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_32
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 195
+        width: 166
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 315be8ae95c8eea80800000000000000
+      internalID: -8435650734203161325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_33
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 195
+        width: 169
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2493b35558b567af0800000000000000
+      internalID: -399030888756987582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_34
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 377
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 741382139f2973800800000000000000
+      internalID: 592103474991739207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_35
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 374
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5f3bb96d4ab38220800000000000000
+      internalID: 2487036260887773019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_36
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 191
+        width: 172
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ab1de22427798690800000000000000
+      internalID: -7599411899122508893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_37
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 184
+        width: 172
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39918a3eda6181f00800000000000000
+      internalID: 1087644246114572691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_38
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 0
+        width: 168
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c65986896e056b90800000000000000
+      internalID: -7249372178791442747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_39
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 0
+        width: 171
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9210de835b6944590800000000000000
+      internalID: -7690856558553661143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_40
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 3
+        width: 165
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cebedca4ffb6deb80800000000000000
+      internalID: -8363910188741301268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_41
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 0
+        width: 176
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d49307be79c67870800000000000000
+      internalID: 8680346877876737238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_42
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 10
+        width: 152
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e2020cd94180d630800000000000000
+      internalID: 3949799027427640037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_43
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 179
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db6592ef0acd82b80800000000000000
+      internalID: -8419236919352142147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_44
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 172
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f207c791dfbdf7920800000000000000
+      internalID: 2990350557698093103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EerieSpell_45
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 13
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ac7dce77cb9c9390800000000000000
+      internalID: -7810196372639089502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      EerieSpell_0: -323392029203127423
+      EerieSpell_1: -8734506136661268416
+      EerieSpell_10: -292627033446032154
+      EerieSpell_11: 2226659848915798093
+      EerieSpell_12: -2896460871072298638
+      EerieSpell_13: -7904570525977822853
+      EerieSpell_14: 4684053157048211438
+      EerieSpell_15: 8994669644903275007
+      EerieSpell_16: -731185983623156895
+      EerieSpell_17: -2191263189949222077
+      EerieSpell_18: 4945372591220134834
+      EerieSpell_19: -1827963477663281777
+      EerieSpell_2: -7804687707307141244
+      EerieSpell_20: 2178633561460824113
+      EerieSpell_21: -1681769853441112570
+      EerieSpell_22: 118917524795291388
+      EerieSpell_23: -935206955548395412
+      EerieSpell_24: 4105563309473100772
+      EerieSpell_25: -3763960044296910875
+      EerieSpell_26: 724591040854152944
+      EerieSpell_27: -9074119541853627322
+      EerieSpell_28: -6265116260934198944
+      EerieSpell_29: 3659113917080991532
+      EerieSpell_3: 3357056183746619923
+      EerieSpell_30: -5272754251262858276
+      EerieSpell_31: 775253963100836566
+      EerieSpell_32: -8435650734203161325
+      EerieSpell_33: -399030888756987582
+      EerieSpell_34: 592103474991739207
+      EerieSpell_35: 2487036260887773019
+      EerieSpell_36: -7599411899122508893
+      EerieSpell_37: 1087644246114572691
+      EerieSpell_38: -7249372178791442747
+      EerieSpell_39: -7690856558553661143
+      EerieSpell_4: -2218578673094578775
+      EerieSpell_40: -8363910188741301268
+      EerieSpell_41: 8680346877876737238
+      EerieSpell_42: 3949799027427640037
+      EerieSpell_43: -8419236919352142147
+      EerieSpell_44: 2990350557698093103
+      EerieSpell_45: -7810196372639089502
+      EerieSpell_5: 3157232796214366756
+      EerieSpell_6: 4303374948691618939
+      EerieSpell_7: -1409682656553987100
+      EerieSpell_8: -3758143262027666719
+      EerieSpell_9: -3963743964751164040
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

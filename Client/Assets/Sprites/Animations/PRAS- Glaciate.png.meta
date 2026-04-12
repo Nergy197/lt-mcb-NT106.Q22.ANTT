@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 2c044eaeab062451094811235940285f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1669429355344920729
+    second: PRAS- Glaciate_0
+  - first:
+      213: 3756042319778741007
+    second: PRAS- Glaciate_1
+  - first:
+      213: 4599509082610192513
+    second: PRAS- Glaciate_2
+  - first:
+      213: 5515161632210225674
+    second: PRAS- Glaciate_3
+  - first:
+      213: 2748515617047409651
+    second: PRAS- Glaciate_4
+  - first:
+      213: 3782062480798827569
+    second: PRAS- Glaciate_5
+  - first:
+      213: -6924481386303925799
+    second: PRAS- Glaciate_6
+  - first:
+      213: 6257847995867090950
+    second: PRAS- Glaciate_7
+  - first:
+      213: -7747495375787693681
+    second: PRAS- Glaciate_8
+  - first:
+      213: 6145022532611152031
+    second: PRAS- Glaciate_9
+  - first:
+      213: 8441744479842772111
+    second: PRAS- Glaciate_10
+  - first:
+      213: 9136304926724620076
+    second: PRAS- Glaciate_11
+  - first:
+      213: -2234440580597879203
+    second: PRAS- Glaciate_12
+  - first:
+      213: -8384540154628965320
+    second: PRAS- Glaciate_13
+  - first:
+      213: 1669609510711488324
+    second: PRAS- Glaciate_14
+  - first:
+      213: 1120728517375920573
+    second: PRAS- Glaciate_15
+  - first:
+      213: -7228222151845449186
+    second: PRAS- Glaciate_16
+  - first:
+      213: -1571155433338740183
+    second: PRAS- Glaciate_17
+  - first:
+      213: -4040296114522328499
+    second: PRAS- Glaciate_18
+  - first:
+      213: -8756690834172466847
+    second: PRAS- Glaciate_19
+  - first:
+      213: -1689312762110825273
+    second: PRAS- Glaciate_20
+  - first:
+      213: 5147059889755017493
+    second: PRAS- Glaciate_21
+  - first:
+      213: -8851074736413367763
+    second: PRAS- Glaciate_22
+  - first:
+      213: -6622860464468851130
+    second: PRAS- Glaciate_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Glaciate_0
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 849
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f7e09a8def4d8e0800000000000000
+      internalID: -1669429355344920729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glaciate_1
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 849
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0bfeb7e694202430800000000000000
+      internalID: 3756042319778741007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glaciate_2
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 851
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 180d922342db4df30800000000000000
+      internalID: 4599509082610192513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glaciate_3
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 851
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a01cea84ac98c40800000000000000
+      internalID: 5515161632210225674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glaciate_4
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 853
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f379b53460b42620800000000000000
+      internalID: 2748515617047409651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glaciate_5
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 661
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 134c85eb9c59c7430800000000000000
+      internalID: 3782062480798827569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glaciate_6
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 661
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d1dc8bdddc47ef90800000000000000
+      internalID: -6924481386303925799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glaciate_7
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 661
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6005c04c89758d650800000000000000
+      internalID: 6257847995867090950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glaciate_8
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 659
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f896133f00e5b7490800000000000000
+      internalID: -7747495375787693681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glaciate_9
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 659
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f981f098f61874550800000000000000
+      internalID: 6145022532611152031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glaciate_10
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 463
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f84a4adc0e9172570800000000000000
+      internalID: 8441744479842772111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glaciate_11
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 447
+        width: 52
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f7215bcecaace70800000000000000
+      internalID: 9136304926724620076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glaciate_12
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 447
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5eeeb9612cadf0e0800000000000000
+      internalID: -2234440580597879203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glaciate_13
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 443
+        width: 70
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83c775e072124ab80800000000000000
+      internalID: -8384540154628965320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glaciate_14
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 477
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44f62970105ab2710800000000000000
+      internalID: 1669609510711488324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glaciate_15
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 285
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db987df06a0ad8f00800000000000000
+      internalID: 1120728517375920573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glaciate_16
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 283
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1274a9ef3230bb90800000000000000
+      internalID: -7228222151845449186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glaciate_17
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 283
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9226bec2572223ae0800000000000000
+      internalID: -1571155433338740183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glaciate_18
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 281
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d42718a171cfde7c0800000000000000
+      internalID: -4040296114522328499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glaciate_19
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 281
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1692b3dc41cf97680800000000000000
+      internalID: -8756690834172466847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glaciate_20
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 65
+        width: 130
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cca9d34efa5e88e0800000000000000
+      internalID: -1689312762110825273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glaciate_21
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 65
+        width: 130
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 511528e03b70e6740800000000000000
+      internalID: 5147059889755017493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glaciate_22
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 69
+        width: 130
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d22a5a71c6aaa2580800000000000000
+      internalID: -8851074736413367763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Glaciate_23
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 65
+        width: 130
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6460b5a3f7fd614a0800000000000000
+      internalID: -6622860464468851130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Glaciate_0: -1669429355344920729
+      PRAS- Glaciate_1: 3756042319778741007
+      PRAS- Glaciate_10: 8441744479842772111
+      PRAS- Glaciate_11: 9136304926724620076
+      PRAS- Glaciate_12: -2234440580597879203
+      PRAS- Glaciate_13: -8384540154628965320
+      PRAS- Glaciate_14: 1669609510711488324
+      PRAS- Glaciate_15: 1120728517375920573
+      PRAS- Glaciate_16: -7228222151845449186
+      PRAS- Glaciate_17: -1571155433338740183
+      PRAS- Glaciate_18: -4040296114522328499
+      PRAS- Glaciate_19: -8756690834172466847
+      PRAS- Glaciate_2: 4599509082610192513
+      PRAS- Glaciate_20: -1689312762110825273
+      PRAS- Glaciate_21: 5147059889755017493
+      PRAS- Glaciate_22: -8851074736413367763
+      PRAS- Glaciate_23: -6622860464468851130
+      PRAS- Glaciate_3: 5515161632210225674
+      PRAS- Glaciate_4: 2748515617047409651
+      PRAS- Glaciate_5: 3782062480798827569
+      PRAS- Glaciate_6: -6924481386303925799
+      PRAS- Glaciate_7: 6257847995867090950
+      PRAS- Glaciate_8: -7747495375787693681
+      PRAS- Glaciate_9: 6145022532611152031
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

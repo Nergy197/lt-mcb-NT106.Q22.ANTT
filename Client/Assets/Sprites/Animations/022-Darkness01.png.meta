@@ -1,0 +1,1092 @@
+fileFormatVersion: 2
+guid: d45819294f4dc4c4fb53808f4283377b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8595859537347330799
+    second: 022-Darkness01_0
+  - first:
+      213: 3109816830344756984
+    second: 022-Darkness01_1
+  - first:
+      213: -7466938754603256016
+    second: 022-Darkness01_2
+  - first:
+      213: 3512770811652589175
+    second: 022-Darkness01_3
+  - first:
+      213: 6576799198202273470
+    second: 022-Darkness01_4
+  - first:
+      213: -1075074290704475307
+    second: 022-Darkness01_5
+  - first:
+      213: 3004749097591672867
+    second: 022-Darkness01_6
+  - first:
+      213: -8644328252065015579
+    second: 022-Darkness01_7
+  - first:
+      213: -5451711460226285551
+    second: 022-Darkness01_8
+  - first:
+      213: 1599822084683674302
+    second: 022-Darkness01_9
+  - first:
+      213: -4765884441287648908
+    second: 022-Darkness01_10
+  - first:
+      213: 367145624519899804
+    second: 022-Darkness01_11
+  - first:
+      213: 692727263800573555
+    second: 022-Darkness01_12
+  - first:
+      213: -6926587429503870058
+    second: 022-Darkness01_13
+  - first:
+      213: -1985501235791972505
+    second: 022-Darkness01_14
+  - first:
+      213: 4381350777392060203
+    second: 022-Darkness01_15
+  - first:
+      213: -6157255162417591862
+    second: 022-Darkness01_16
+  - first:
+      213: -6201575799245646240
+    second: 022-Darkness01_17
+  - first:
+      213: -2425394430744593977
+    second: 022-Darkness01_18
+  - first:
+      213: -208005861622801470
+    second: 022-Darkness01_19
+  - first:
+      213: 9186896581159773719
+    second: 022-Darkness01_20
+  - first:
+      213: 2144648123511871997
+    second: 022-Darkness01_21
+  - first:
+      213: 7484128500464737847
+    second: 022-Darkness01_22
+  - first:
+      213: -3245082448671264500
+    second: 022-Darkness01_23
+  - first:
+      213: -4770310738329406421
+    second: 022-Darkness01_24
+  - first:
+      213: 4882578635397340321
+    second: 022-Darkness01_25
+  - first:
+      213: -2294876582085175653
+    second: 022-Darkness01_26
+  - first:
+      213: 6896678345023287774
+    second: 022-Darkness01_27
+  - first:
+      213: -418318892705901480
+    second: 022-Darkness01_28
+  - first:
+      213: -8191878853497332576
+    second: 022-Darkness01_29
+  - first:
+      213: -6168608662903794158
+    second: 022-Darkness01_30
+  - first:
+      213: 1768442152526858402
+    second: 022-Darkness01_31
+  - first:
+      213: -7160273476399647865
+    second: 022-Darkness01_32
+  - first:
+      213: 5153849282749821214
+    second: 022-Darkness01_33
+  - first:
+      213: 8027607642777351741
+    second: 022-Darkness01_34
+  - first:
+      213: -4768666663775537082
+    second: 022-Darkness01_35
+  - first:
+      213: 2615524734008277486
+    second: 022-Darkness01_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 022-Darkness01_0
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 424
+        width: 150
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe2cdb6d4b0aa4770800000000000000
+      internalID: 8595859537347330799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_1
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 425
+        width: 112
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fefa314ee9482b20800000000000000
+      internalID: 3109816830344756984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_2
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 423
+        width: 114
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0377644a3ca106890800000000000000
+      internalID: -7466938754603256016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_3
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 448
+        width: 114
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 776c9e5117edfb030800000000000000
+      internalID: 3512770811652589175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_4
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 426
+        width: 9
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe9bef760c754b50800000000000000
+      internalID: 6576799198202273470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_5
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 448
+        width: 113
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55b976be0a19411f0800000000000000
+      internalID: -1075074290704475307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_6
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 446
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3209029626303b920800000000000000
+      internalID: 3004749097591672867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_7
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 257
+        width: 93
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e89acd114d290880800000000000000
+      internalID: -8644328252065015579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_8
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 305
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1104943bf41a754b0800000000000000
+      internalID: -5451711460226285551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_9
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 227
+        width: 86
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb23565b5b5b33610800000000000000
+      internalID: 1599822084683674302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_10
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 231
+        width: 79
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4791d74f95d2cddb0800000000000000
+      internalID: -4765884441287648908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_11
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 276
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9af852100d581500800000000000000
+      internalID: 367145624519899804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_12
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 283
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37ebf05b6cf0d9900800000000000000
+      internalID: 692727263800573555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_13
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 223
+        width: 84
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b5cb67e61dfdf90800000000000000
+      internalID: -6926587429503870058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_14
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 265
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 767358b45251274e0800000000000000
+      internalID: -1985501235791972505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_15
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 224
+        width: 85
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b27d5d2915fadcc30800000000000000
+      internalID: 4381350777392060203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_16
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 118
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac9c8a46d090d8aa0800000000000000
+      internalID: -6157255162417591862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_17
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 72
+        width: 51
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 066dd4efaa39fe9a0800000000000000
+      internalID: -6201575799245646240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_18
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 31
+        width: 73
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c9f1439d94475ed0800000000000000
+      internalID: -2425394430744593977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_19
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 122
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cb16ca55c30d1df0800000000000000
+      internalID: -208005861622801470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_20
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 43
+        width: 115
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 716674c24c96e7f70800000000000000
+      internalID: 9186896581159773719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_21
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 48
+        width: 111
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df912220b1253cd10800000000000000
+      internalID: 2144648123511871997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_22
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 10
+        width: 121
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73ed393f737fcd760800000000000000
+      internalID: 7484128500464737847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_23
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 110
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c013814c4b627f2d0800000000000000
+      internalID: -3245082448671264500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_24
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 87
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b24f4ad58a37ccdb0800000000000000
+      internalID: -4770310738329406421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_25
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 87
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ac15ce566762c340800000000000000
+      internalID: 4882578635397340321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_26
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 87
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b96537948e5f620e0800000000000000
+      internalID: -2294876582085175653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_27
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 75
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed1fd352a6ce5bf50800000000000000
+      internalID: 6896678345023287774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_28
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 61
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8541e65fe25d13af0800000000000000
+      internalID: -418318892705901480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_29
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 75
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0acd14ec599905e80800000000000000
+      internalID: -8191878853497332576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_30
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 32
+        width: 71
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 216d8319a13b46aa0800000000000000
+      internalID: -6168608662903794158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_31
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 75
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a8c033a4c4ca8810800000000000000
+      internalID: 1768442152526858402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_32
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 51
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7833c80c53991ac90800000000000000
+      internalID: -7160273476399647865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_33
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 35
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e11743ccd96268740800000000000000
+      internalID: 5153849282749821214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_34
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 35
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3674f77e9ac76f60800000000000000
+      internalID: 8027607642777351741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_35
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 32
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648796d4fea42ddb0800000000000000
+      internalID: -4768666663775537082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 022-Darkness01_36
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 32
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee9bfcf43e53c4420800000000000000
+      internalID: 2615524734008277486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      022-Darkness01_0: 8595859537347330799
+      022-Darkness01_1: 3109816830344756984
+      022-Darkness01_10: -4765884441287648908
+      022-Darkness01_11: 367145624519899804
+      022-Darkness01_12: 692727263800573555
+      022-Darkness01_13: -6926587429503870058
+      022-Darkness01_14: -1985501235791972505
+      022-Darkness01_15: 4381350777392060203
+      022-Darkness01_16: -6157255162417591862
+      022-Darkness01_17: -6201575799245646240
+      022-Darkness01_18: -2425394430744593977
+      022-Darkness01_19: -208005861622801470
+      022-Darkness01_2: -7466938754603256016
+      022-Darkness01_20: 9186896581159773719
+      022-Darkness01_21: 2144648123511871997
+      022-Darkness01_22: 7484128500464737847
+      022-Darkness01_23: -3245082448671264500
+      022-Darkness01_24: -4770310738329406421
+      022-Darkness01_25: 4882578635397340321
+      022-Darkness01_26: -2294876582085175653
+      022-Darkness01_27: 6896678345023287774
+      022-Darkness01_28: -418318892705901480
+      022-Darkness01_29: -8191878853497332576
+      022-Darkness01_3: 3512770811652589175
+      022-Darkness01_30: -6168608662903794158
+      022-Darkness01_31: 1768442152526858402
+      022-Darkness01_32: -7160273476399647865
+      022-Darkness01_33: 5153849282749821214
+      022-Darkness01_34: 8027607642777351741
+      022-Darkness01_35: -4768666663775537082
+      022-Darkness01_36: 2615524734008277486
+      022-Darkness01_4: 6576799198202273470
+      022-Darkness01_5: -1075074290704475307
+      022-Darkness01_6: 3004749097591672867
+      022-Darkness01_7: -8644328252065015579
+      022-Darkness01_8: -5451711460226285551
+      022-Darkness01_9: 1599822084683674302
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

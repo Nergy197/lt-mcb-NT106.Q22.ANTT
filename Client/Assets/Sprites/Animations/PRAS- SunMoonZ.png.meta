@@ -1,0 +1,1014 @@
+fileFormatVersion: 2
+guid: ba53372bfa22443c4a42e4e3f3047c9d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -988775099048212995
+    second: PRAS- SunMoonZ_0
+  - first:
+      213: -1396975370884567639
+    second: PRAS- SunMoonZ_1
+  - first:
+      213: 8123713344834460623
+    second: PRAS- SunMoonZ_2
+  - first:
+      213: 953716249700764985
+    second: PRAS- SunMoonZ_3
+  - first:
+      213: -406716206609402528
+    second: PRAS- SunMoonZ_4
+  - first:
+      213: -6030866814461000529
+    second: PRAS- SunMoonZ_5
+  - first:
+      213: -2104567665514376979
+    second: PRAS- SunMoonZ_6
+  - first:
+      213: 6667709645210697534
+    second: PRAS- SunMoonZ_7
+  - first:
+      213: -8028330460198723078
+    second: PRAS- SunMoonZ_8
+  - first:
+      213: 8020439733372527127
+    second: PRAS- SunMoonZ_9
+  - first:
+      213: 1215677090310250882
+    second: PRAS- SunMoonZ_10
+  - first:
+      213: 4913488068689827476
+    second: PRAS- SunMoonZ_11
+  - first:
+      213: 1051396995156829253
+    second: PRAS- SunMoonZ_12
+  - first:
+      213: -6035967683142604165
+    second: PRAS- SunMoonZ_13
+  - first:
+      213: 6722720381341849029
+    second: PRAS- SunMoonZ_14
+  - first:
+      213: -8969021453956515809
+    second: PRAS- SunMoonZ_15
+  - first:
+      213: 7935287767629668811
+    second: PRAS- SunMoonZ_16
+  - first:
+      213: -1777298513777822677
+    second: PRAS- SunMoonZ_17
+  - first:
+      213: 8783610601860061036
+    second: PRAS- SunMoonZ_18
+  - first:
+      213: -5965324367760527175
+    second: PRAS- SunMoonZ_19
+  - first:
+      213: 3523126910378558094
+    second: PRAS- SunMoonZ_20
+  - first:
+      213: -6367529310304959224
+    second: PRAS- SunMoonZ_21
+  - first:
+      213: -1985500070352445909
+    second: PRAS- SunMoonZ_22
+  - first:
+      213: -139753771676365875
+    second: PRAS- SunMoonZ_23
+  - first:
+      213: 4699761403495063371
+    second: PRAS- SunMoonZ_24
+  - first:
+      213: 7205876881750895604
+    second: PRAS- SunMoonZ_25
+  - first:
+      213: -6944707606708010582
+    second: PRAS- SunMoonZ_26
+  - first:
+      213: -8843586648835261693
+    second: PRAS- SunMoonZ_27
+  - first:
+      213: 4870762134768786414
+    second: PRAS- SunMoonZ_28
+  - first:
+      213: 372556783509463226
+    second: PRAS- SunMoonZ_29
+  - first:
+      213: -2815630929384024090
+    second: PRAS- SunMoonZ_30
+  - first:
+      213: 1305361906185384800
+    second: PRAS- SunMoonZ_31
+  - first:
+      213: 1464454065778605928
+    second: PRAS- SunMoonZ_32
+  - first:
+      213: 2307954812839521426
+    second: PRAS- SunMoonZ_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 959
+        width: 193
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df5ca72494a2742f0800000000000000
+      internalID: -988775099048212995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_1
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 985
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ada47a3d42fc9ce0800000000000000
+      internalID: -1396975370884567639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_2
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 1015
+        width: 92
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcb55ffee3a3db070800000000000000
+      internalID: 8123713344834460623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_3
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 1117
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d8ee740e74c3d00800000000000000
+      internalID: 953716249700764985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_4
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 1113
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065f6a4d3cd0b5af0800000000000000
+      internalID: -406716206609402528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_5
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 1035
+        width: 64
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa44c5cc59e0e4ca0800000000000000
+      internalID: -6030866814461000529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_6
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 1119
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de01e33dbd21bc2e0800000000000000
+      internalID: -2104567665514376979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_7
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 1083
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3fba346896788c50800000000000000
+      internalID: 6667709645210697534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_8
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 1089
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af1286c7bf3a59090800000000000000
+      internalID: -8028330460198723078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_9
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 1093
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 712291281735e4f60800000000000000
+      internalID: 8020439733372527127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_10
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 1089
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 281e5896fd3fed010800000000000000
+      internalID: 1215677090310250882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_11
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 1051
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 496906e9d57303440800000000000000
+      internalID: 4913488068689827476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_12
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 1053
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5446c3e1fff479e00800000000000000
+      internalID: 1051396995156829253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_13
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1057
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7a2c824f5feb3ca0800000000000000
+      internalID: -6035967683142604165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_14
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 1059
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c5d82e7196eb4d50800000000000000
+      internalID: 6722720381341849029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_15
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 1061
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18701ee182a78380800000000000000
+      internalID: -8969021453956515809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_16
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 863
+        width: 130
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc1a1148e2ecf1e60800000000000000
+      internalID: 7935287767629668811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_17
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 815
+        width: 130
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2471721b64c557e0800000000000000
+      internalID: -1777298513777822677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_18
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 863
+        width: 124
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6759390e47a5e970800000000000000
+      internalID: 8783610601860061036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_19
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 813
+        width: 126
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b0f6a9d719e63da0800000000000000
+      internalID: -5965324367760527175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_20
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 863
+        width: 128
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e82cbb73249a4e030800000000000000
+      internalID: 3523126910378558094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_21
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 623
+        width: 128
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 805826234ddf1a7a0800000000000000
+      internalID: -6367529310304959224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_22
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 671
+        width: 126
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2e1125a4361274e0800000000000000
+      internalID: -1985500070352445909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_23
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 621
+        width: 126
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcb85336fae7f0ef0800000000000000
+      internalID: -139753771676365875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_24
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 477
+        width: 194
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4f1a689818e83140800000000000000
+      internalID: 4699761403495063371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_25
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 575
+        width: 193
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb26f778da600460800000000000000
+      internalID: 7205876881750895604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_26
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 383
+        width: 134
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa14731f9317f9f90800000000000000
+      internalID: -6944707606708010582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_27
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 477
+        width: 134
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b79c75cc4454580800000000000000
+      internalID: -8843586648835261693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_28
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 383
+        width: 134
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeb115cea5c689340800000000000000
+      internalID: 4870762134768786414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_29
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab06eb3bb669b2500800000000000000
+      internalID: 372556783509463226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_30
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 284
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e7567b669edce8d0800000000000000
+      internalID: -2815630929384024090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_31
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 280
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 063b181dcb39d1210800000000000000
+      internalID: 1305361906185384800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_32
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 272
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86f3c9cb639c25410800000000000000
+      internalID: 1464454065778605928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- SunMoonZ_33
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 270
+        width: 52
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ce3f89ca0870020800000000000000
+      internalID: 2307954812839521426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- SunMoonZ_0: -988775099048212995
+      PRAS- SunMoonZ_1: -1396975370884567639
+      PRAS- SunMoonZ_10: 1215677090310250882
+      PRAS- SunMoonZ_11: 4913488068689827476
+      PRAS- SunMoonZ_12: 1051396995156829253
+      PRAS- SunMoonZ_13: -6035967683142604165
+      PRAS- SunMoonZ_14: 6722720381341849029
+      PRAS- SunMoonZ_15: -8969021453956515809
+      PRAS- SunMoonZ_16: 7935287767629668811
+      PRAS- SunMoonZ_17: -1777298513777822677
+      PRAS- SunMoonZ_18: 8783610601860061036
+      PRAS- SunMoonZ_19: -5965324367760527175
+      PRAS- SunMoonZ_2: 8123713344834460623
+      PRAS- SunMoonZ_20: 3523126910378558094
+      PRAS- SunMoonZ_21: -6367529310304959224
+      PRAS- SunMoonZ_22: -1985500070352445909
+      PRAS- SunMoonZ_23: -139753771676365875
+      PRAS- SunMoonZ_24: 4699761403495063371
+      PRAS- SunMoonZ_25: 7205876881750895604
+      PRAS- SunMoonZ_26: -6944707606708010582
+      PRAS- SunMoonZ_27: -8843586648835261693
+      PRAS- SunMoonZ_28: 4870762134768786414
+      PRAS- SunMoonZ_29: 372556783509463226
+      PRAS- SunMoonZ_3: 953716249700764985
+      PRAS- SunMoonZ_30: -2815630929384024090
+      PRAS- SunMoonZ_31: 1305361906185384800
+      PRAS- SunMoonZ_32: 1464454065778605928
+      PRAS- SunMoonZ_33: 2307954812839521426
+      PRAS- SunMoonZ_4: -406716206609402528
+      PRAS- SunMoonZ_5: -6030866814461000529
+      PRAS- SunMoonZ_6: -2104567665514376979
+      PRAS- SunMoonZ_7: 6667709645210697534
+      PRAS- SunMoonZ_8: -8028330460198723078
+      PRAS- SunMoonZ_9: 8020439733372527127
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

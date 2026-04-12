@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: e47c1583aaa6e49a496f16382b56900f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5147452672090033444
+    second: PRAS- Psystrike_0
+  - first:
+      213: 7205302575470132571
+    second: PRAS- Psystrike_1
+  - first:
+      213: 5293587184587522218
+    second: PRAS- Psystrike_2
+  - first:
+      213: -8912833945022590296
+    second: PRAS- Psystrike_3
+  - first:
+      213: -2779561073829740728
+    second: PRAS- Psystrike_4
+  - first:
+      213: 347025996482179146
+    second: PRAS- Psystrike_5
+  - first:
+      213: -5293513518040002366
+    second: PRAS- Psystrike_6
+  - first:
+      213: -4421502971202037507
+    second: PRAS- Psystrike_7
+  - first:
+      213: -352012830831468851
+    second: PRAS- Psystrike_8
+  - first:
+      213: 6936197410599315443
+    second: PRAS- Psystrike_9
+  - first:
+      213: -8011628672662117007
+    second: PRAS- Psystrike_10
+  - first:
+      213: -6795337948499169901
+    second: PRAS- Psystrike_11
+  - first:
+      213: -609025994943899462
+    second: PRAS- Psystrike_12
+  - first:
+      213: -6992254694857193484
+    second: PRAS- Psystrike_13
+  - first:
+      213: 4989779049116057686
+    second: PRAS- Psystrike_14
+  - first:
+      213: -1575198033817232069
+    second: PRAS- Psystrike_15
+  - first:
+      213: -8481665792874153081
+    second: PRAS- Psystrike_16
+  - first:
+      213: 4699435913083597006
+    second: PRAS- Psystrike_17
+  - first:
+      213: -6458740280330670333
+    second: PRAS- Psystrike_18
+  - first:
+      213: -140725842473751056
+    second: PRAS- Psystrike_19
+  - first:
+      213: -5093490918111944370
+    second: PRAS- Psystrike_20
+  - first:
+      213: 7627647476283920079
+    second: PRAS- Psystrike_21
+  - first:
+      213: 8273890239284724436
+    second: PRAS- Psystrike_22
+  - first:
+      213: -4851418506433595291
+    second: PRAS- Psystrike_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Psystrike_0
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 259
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42dcf02deec6f6740800000000000000
+      internalID: 5147452672090033444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psystrike_1
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 258
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5dba1e54806ef360800000000000000
+      internalID: 7205302575470132571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psystrike_2
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 306
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa046ec6f79967940800000000000000
+      internalID: 5293587184587522218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psystrike_3
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 288
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a292eccfb04f4480800000000000000
+      internalID: -8912833945022590296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psystrike_4
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 309
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84fffda1ee30d69d0800000000000000
+      internalID: -2779561073829740728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psystrike_5
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 315
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4075202e42e0d400800000000000000
+      internalID: 347025996482179146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psystrike_6
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 311
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c05f776089a986b0800000000000000
+      internalID: -5293513518040002366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psystrike_7
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 309
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df81b2c497aa3a2c0800000000000000
+      internalID: -4421502971202037507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psystrike_8
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 311
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dce19e502366d1bf0800000000000000
+      internalID: -352012830831468851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psystrike_9
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 271
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7a1ce9bc2524060800000000000000
+      internalID: 6936197410599315443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psystrike_10
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 256
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 175e3ad6b2af0d090800000000000000
+      internalID: -8011628672662117007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psystrike_11
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 285
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39da9fa932c12b1a0800000000000000
+      internalID: -6795337948499169901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psystrike_12
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 303
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab8d368951e4c87f0800000000000000
+      internalID: -609025994943899462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psystrike_13
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 295
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f7cafdc66586fe90800000000000000
+      internalID: -6992254694857193484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psystrike_14
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 269
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 650cf32bb914f3540800000000000000
+      internalID: 4989779049116057686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psystrike_15
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 259
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3d1e67ebb5c32ae0800000000000000
+      internalID: -1575198033817232069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psystrike_16
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 259
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b772036e11b4a80800000000000000
+      internalID: -8481665792874153081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psystrike_17
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 255
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec0bf047010c73140800000000000000
+      internalID: 4699435913083597006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psystrike_18
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 77
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f22665fe1fd56a0800000000000000
+      internalID: -6458740280330670333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psystrike_19
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 57
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fd62a4879a0c0ef0800000000000000
+      internalID: -140725842473751056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psystrike_20
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 35
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4162471ff84059b0800000000000000
+      internalID: -5093490918111944370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psystrike_21
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 53
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcecec777f8dad960800000000000000
+      internalID: 7627647476283920079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psystrike_22
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 51
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d2432fe553c2d270800000000000000
+      internalID: 8273890239284724436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psystrike_23
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 45
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 568f443829c4cacb0800000000000000
+      internalID: -4851418506433595291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Psystrike_0: 5147452672090033444
+      PRAS- Psystrike_1: 7205302575470132571
+      PRAS- Psystrike_10: -8011628672662117007
+      PRAS- Psystrike_11: -6795337948499169901
+      PRAS- Psystrike_12: -609025994943899462
+      PRAS- Psystrike_13: -6992254694857193484
+      PRAS- Psystrike_14: 4989779049116057686
+      PRAS- Psystrike_15: -1575198033817232069
+      PRAS- Psystrike_16: -8481665792874153081
+      PRAS- Psystrike_17: 4699435913083597006
+      PRAS- Psystrike_18: -6458740280330670333
+      PRAS- Psystrike_19: -140725842473751056
+      PRAS- Psystrike_2: 5293587184587522218
+      PRAS- Psystrike_20: -5093490918111944370
+      PRAS- Psystrike_21: 7627647476283920079
+      PRAS- Psystrike_22: 8273890239284724436
+      PRAS- Psystrike_23: -4851418506433595291
+      PRAS- Psystrike_3: -8912833945022590296
+      PRAS- Psystrike_4: -2779561073829740728
+      PRAS- Psystrike_5: 347025996482179146
+      PRAS- Psystrike_6: -5293513518040002366
+      PRAS- Psystrike_7: -4421502971202037507
+      PRAS- Psystrike_8: -352012830831468851
+      PRAS- Psystrike_9: 6936197410599315443
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

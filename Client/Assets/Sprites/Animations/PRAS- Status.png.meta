@@ -1,0 +1,988 @@
+fileFormatVersion: 2
+guid: d3904f0066e734b14a9a8ea71010d5f4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1469544627161283738
+    second: PRAS- Status_0
+  - first:
+      213: 8161969936441201592
+    second: PRAS- Status_1
+  - first:
+      213: 7073981662076125698
+    second: PRAS- Status_2
+  - first:
+      213: 4872653358398856903
+    second: PRAS- Status_3
+  - first:
+      213: 3854678766777166529
+    second: PRAS- Status_4
+  - first:
+      213: 1502945779826316116
+    second: PRAS- Status_5
+  - first:
+      213: 2502130047796468602
+    second: PRAS- Status_6
+  - first:
+      213: -6803336044287130983
+    second: PRAS- Status_7
+  - first:
+      213: -4374319026681568753
+    second: PRAS- Status_8
+  - first:
+      213: -8656769889166686859
+    second: PRAS- Status_9
+  - first:
+      213: 7918374079918587112
+    second: PRAS- Status_10
+  - first:
+      213: -5842060302943053707
+    second: PRAS- Status_11
+  - first:
+      213: 1463949410265858265
+    second: PRAS- Status_12
+  - first:
+      213: -4746821606260051965
+    second: PRAS- Status_13
+  - first:
+      213: -2979913061736296391
+    second: PRAS- Status_14
+  - first:
+      213: -6224369055354074648
+    second: PRAS- Status_15
+  - first:
+      213: -7964708201144631304
+    second: PRAS- Status_16
+  - first:
+      213: 4148874728882577136
+    second: PRAS- Status_17
+  - first:
+      213: -4189816589911814788
+    second: PRAS- Status_18
+  - first:
+      213: -7166433405776727442
+    second: PRAS- Status_19
+  - first:
+      213: 7190673853469355989
+    second: PRAS- Status_20
+  - first:
+      213: -5356424223542054786
+    second: PRAS- Status_21
+  - first:
+      213: -8683691312421605703
+    second: PRAS- Status_22
+  - first:
+      213: -5731015757372228449
+    second: PRAS- Status_23
+  - first:
+      213: -6340649824053046805
+    second: PRAS- Status_24
+  - first:
+      213: -8547128948726137341
+    second: PRAS- Status_25
+  - first:
+      213: 8279742529067836909
+    second: PRAS- Status_26
+  - first:
+      213: -7133514999417542078
+    second: PRAS- Status_27
+  - first:
+      213: -8792508626094515402
+    second: PRAS- Status_28
+  - first:
+      213: -196262611378158378
+    second: PRAS- Status_29
+  - first:
+      213: 4057714852676571385
+    second: PRAS- Status_30
+  - first:
+      213: -6735113435679346104
+    second: PRAS- Status_31
+  - first:
+      213: 770087135426457314
+    second: PRAS- Status_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Status_0
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1043
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 663c77492f02b9be0800000000000000
+      internalID: -1469544627161283738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_1
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1045
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b3def8c964254170800000000000000
+      internalID: 8161969936441201592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_2
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1055
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 202cca397d4db2260800000000000000
+      internalID: 7073981662076125698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_3
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1055
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ce5afcb9642f9340800000000000000
+      internalID: 4872653358398856903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_4
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 1055
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ca6ef85ae19e7530800000000000000
+      internalID: 3854678766777166529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_5
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 893
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 453583b49398bd410800000000000000
+      internalID: 1502945779826316116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_6
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 863
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7b5db8850a59b220800000000000000
+      internalID: 2502130047796468602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_7
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 863
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99287a0d9e1b591a0800000000000000
+      internalID: -6803336044287130983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_8
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 863
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02a968750c4b43c0800000000000000
+      internalID: -4374319026681568753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_9
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 863
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5750cedb6a9fcd780800000000000000
+      internalID: -8656769889166686859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_10
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 849
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ec3538b547b3ed60800000000000000
+      internalID: 7918374079918587112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_11
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 663
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5781ba66b15dceea0800000000000000
+      internalID: -5842060302943053707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_12
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 661
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d00a087b3ef05410800000000000000
+      internalID: 1463949410265858265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_13
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 689
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30078ba16e6ef1eb0800000000000000
+      internalID: -4746821606260051965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_14
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 683
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93059adcbd835a6d0800000000000000
+      internalID: -2979913061736296391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_15
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 661
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e9cfa082599e99a0800000000000000
+      internalID: -6224369055354074648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_16
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 655
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff3223071ca77190800000000000000
+      internalID: -7964708201144631304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_17
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 667
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fe14a09593c39930800000000000000
+      internalID: 4148874728882577136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_18
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 467
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d84449208cad5c0800000000000000
+      internalID: -4189816589911814788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_19
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 505
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e627f2e69c6bb8c90800000000000000
+      internalID: -7166433405776727442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_20
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 475
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dfeabb95c76ac360800000000000000
+      internalID: 7190673853469355989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_21
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 485
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e707a795c882aa5b0800000000000000
+      internalID: -5356424223542054786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_22
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 473
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bee6ff62c45d7780800000000000000
+      internalID: -8683691312421605703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_23
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 469
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9c79ab68875770b0800000000000000
+      internalID: -5731015757372228449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_24
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 473
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be1dc28449c7108a0800000000000000
+      internalID: -6340649824053046805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_25
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 469
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e78b9718f726980800000000000000
+      internalID: -8547128948726137341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_26
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 281
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de568c456fd87e270800000000000000
+      internalID: 8279742529067836909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_27
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 275
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24aebcb27e9a00d90800000000000000
+      internalID: -7133514999417542078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_28
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 269
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63b14114dfbbaf580800000000000000
+      internalID: -8792508626094515402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_29
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 267
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d44d1ed13cb64df0800000000000000
+      internalID: -196262611378158378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_30
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 275
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f01d99e826ef4830800000000000000
+      internalID: 4057714852676571385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_31
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 79
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8423f50b3021882a0800000000000000
+      internalID: -6735113435679346104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Status_32
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 9
+        width: 174
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee21396b26efaa00800000000000000
+      internalID: 770087135426457314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Status_0: -1469544627161283738
+      PRAS- Status_1: 8161969936441201592
+      PRAS- Status_10: 7918374079918587112
+      PRAS- Status_11: -5842060302943053707
+      PRAS- Status_12: 1463949410265858265
+      PRAS- Status_13: -4746821606260051965
+      PRAS- Status_14: -2979913061736296391
+      PRAS- Status_15: -6224369055354074648
+      PRAS- Status_16: -7964708201144631304
+      PRAS- Status_17: 4148874728882577136
+      PRAS- Status_18: -4189816589911814788
+      PRAS- Status_19: -7166433405776727442
+      PRAS- Status_2: 7073981662076125698
+      PRAS- Status_20: 7190673853469355989
+      PRAS- Status_21: -5356424223542054786
+      PRAS- Status_22: -8683691312421605703
+      PRAS- Status_23: -5731015757372228449
+      PRAS- Status_24: -6340649824053046805
+      PRAS- Status_25: -8547128948726137341
+      PRAS- Status_26: 8279742529067836909
+      PRAS- Status_27: -7133514999417542078
+      PRAS- Status_28: -8792508626094515402
+      PRAS- Status_29: -196262611378158378
+      PRAS- Status_3: 4872653358398856903
+      PRAS- Status_30: 4057714852676571385
+      PRAS- Status_31: -6735113435679346104
+      PRAS- Status_32: 770087135426457314
+      PRAS- Status_4: 3854678766777166529
+      PRAS- Status_5: 1502945779826316116
+      PRAS- Status_6: 2502130047796468602
+      PRAS- Status_7: -6803336044287130983
+      PRAS- Status_8: -4374319026681568753
+      PRAS- Status_9: -8656769889166686859
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

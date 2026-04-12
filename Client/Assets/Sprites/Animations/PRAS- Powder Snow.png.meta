@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: ed8dcd617bdf24c45b094bdc107b42e7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8472627357274638794
+    second: PRAS- Powder Snow_0
+  - first:
+      213: 6325621526564394055
+    second: PRAS- Powder Snow_1
+  - first:
+      213: 3674791478955340313
+    second: PRAS- Powder Snow_2
+  - first:
+      213: -5179929498522288904
+    second: PRAS- Powder Snow_3
+  - first:
+      213: 5869340528021734129
+    second: PRAS- Powder Snow_4
+  - first:
+      213: -6979260693296888343
+    second: PRAS- Powder Snow_5
+  - first:
+      213: 1328270527361878426
+    second: PRAS- Powder Snow_6
+  - first:
+      213: -6366115372992316262
+    second: PRAS- Powder Snow_7
+  - first:
+      213: -6110910505222502962
+    second: PRAS- Powder Snow_8
+  - first:
+      213: 8713699308336513853
+    second: PRAS- Powder Snow_9
+  - first:
+      213: 3266816854492643675
+    second: PRAS- Powder Snow_10
+  - first:
+      213: -5531068578389214370
+    second: PRAS- Powder Snow_11
+  - first:
+      213: -398127184397801367
+    second: PRAS- Powder Snow_12
+  - first:
+      213: 7070177095417693583
+    second: PRAS- Powder Snow_13
+  - first:
+      213: -7094286682409418778
+    second: PRAS- Powder Snow_14
+  - first:
+      213: 5572854433003610507
+    second: PRAS- Powder Snow_15
+  - first:
+      213: -5985145010925598931
+    second: PRAS- Powder Snow_16
+  - first:
+      213: 3676317612973212855
+    second: PRAS- Powder Snow_17
+  - first:
+      213: -2284540487127696879
+    second: PRAS- Powder Snow_18
+  - first:
+      213: -6143327362809978889
+    second: PRAS- Powder Snow_19
+  - first:
+      213: -4784291566864893440
+    second: PRAS- Powder Snow_20
+  - first:
+      213: -6641631136008405799
+    second: PRAS- Powder Snow_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Powder Snow_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 190
+        width: 109
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac98c9801b1d49570800000000000000
+      internalID: 8472627357274638794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Powder Snow_1
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 255
+        width: 52
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7445f6a834f19c750800000000000000
+      internalID: 6325621526564394055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Powder Snow_2
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 255
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 912f3c6516b7ff230800000000000000
+      internalID: 3674791478955340313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Powder Snow_3
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 251
+        width: 130
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fcf207c0913d18b0800000000000000
+      internalID: -5179929498522288904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Powder Snow_4
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 271
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f20a86fc16147150800000000000000
+      internalID: 5869340528021734129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Powder Snow_5
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 263
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e5413d806fa42f90800000000000000
+      internalID: -6979260693296888343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Powder Snow_6
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 81
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a998605d107fe6210800000000000000
+      internalID: 1328270527361878426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Powder Snow_7
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 61
+        width: 72
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9cb3a12cc307a7a0800000000000000
+      internalID: -6366115372992316262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Powder Snow_8
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 61
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec58202c54fa13ba0800000000000000
+      internalID: -6110910505222502962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Powder Snow_9
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 55
+        width: 78
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3307f09a574de870800000000000000
+      internalID: 8713699308336513853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Powder Snow_10
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 117
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b510b4eee90165d20800000000000000
+      internalID: 3266816854492643675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Powder Snow_11
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 109
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b39ccce62bd33b0800000000000000
+      internalID: -5531068578389214370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Powder Snow_12
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 73
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 968ea866f61997af0800000000000000
+      internalID: -398127184397801367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Powder Snow_13
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 93
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85897fdb905e1260800000000000000
+      internalID: 7070177095417693583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Powder Snow_14
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 95
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6efb33879d70c8d90800000000000000
+      internalID: -7094286682409418778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Powder Snow_15
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b812420a491c65d40800000000000000
+      internalID: 5572854433003610507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Powder Snow_16
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 53
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d27049eb25e70fca0800000000000000
+      internalID: -5985145010925598931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Powder Snow_17
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 67
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b4c7ca1467e40330800000000000000
+      internalID: 3676317612973212855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Powder Snow_18
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 65
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11a71cde78eab40e0800000000000000
+      internalID: -2284540487127696879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Powder Snow_19
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 75
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ff16c0ff448ebaa0800000000000000
+      internalID: -6143327362809978889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Powder Snow_20
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 53
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00afe1f0b28ca9db0800000000000000
+      internalID: -4784291566864893440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Powder Snow_21
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 57
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc7b01bbaf24d3a0800000000000000
+      internalID: -6641631136008405799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Powder Snow_0: 8472627357274638794
+      PRAS- Powder Snow_1: 6325621526564394055
+      PRAS- Powder Snow_10: 3266816854492643675
+      PRAS- Powder Snow_11: -5531068578389214370
+      PRAS- Powder Snow_12: -398127184397801367
+      PRAS- Powder Snow_13: 7070177095417693583
+      PRAS- Powder Snow_14: -7094286682409418778
+      PRAS- Powder Snow_15: 5572854433003610507
+      PRAS- Powder Snow_16: -5985145010925598931
+      PRAS- Powder Snow_17: 3676317612973212855
+      PRAS- Powder Snow_18: -2284540487127696879
+      PRAS- Powder Snow_19: -6143327362809978889
+      PRAS- Powder Snow_2: 3674791478955340313
+      PRAS- Powder Snow_20: -4784291566864893440
+      PRAS- Powder Snow_21: -6641631136008405799
+      PRAS- Powder Snow_3: -5179929498522288904
+      PRAS- Powder Snow_4: 5869340528021734129
+      PRAS- Powder Snow_5: -6979260693296888343
+      PRAS- Powder Snow_6: 1328270527361878426
+      PRAS- Powder Snow_7: -6366115372992316262
+      PRAS- Powder Snow_8: -6110910505222502962
+      PRAS- Powder Snow_9: 8713699308336513853
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

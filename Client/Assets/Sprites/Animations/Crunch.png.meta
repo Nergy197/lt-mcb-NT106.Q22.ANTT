@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: e39909932d4264b6188898904bc9ab2a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2362238628220053054
+    second: Crunch_0
+  - first:
+      213: 2795400827097183654
+    second: Crunch_1
+  - first:
+      213: -7826207973369240513
+    second: Crunch_2
+  - first:
+      213: -1287611082787360421
+    second: Crunch_3
+  - first:
+      213: -3632097434897165980
+    second: Crunch_4
+  - first:
+      213: -1672825165411703523
+    second: Crunch_5
+  - first:
+      213: -4153231258267438579
+    second: Crunch_6
+  - first:
+      213: -8965147496324515651
+    second: Crunch_7
+  - first:
+      213: 2670789023272755766
+    second: Crunch_8
+  - first:
+      213: -7768577852792858627
+    second: Crunch_9
+  - first:
+      213: -2585631579173480328
+    second: Crunch_10
+  - first:
+      213: -2008340920410201397
+    second: Crunch_11
+  - first:
+      213: 8696566143309580235
+    second: Crunch_12
+  - first:
+      213: 2420585480501418448
+    second: Crunch_13
+  - first:
+      213: -8523122251880447753
+    second: Crunch_14
+  - first:
+      213: -3182181054218077754
+    second: Crunch_15
+  - first:
+      213: 3440820326048507941
+    second: Crunch_16
+  - first:
+      213: 5034292740315564103
+    second: Crunch_17
+  - first:
+      213: 2887411336847525883
+    second: Crunch_18
+  - first:
+      213: -260692168396551304
+    second: Crunch_19
+  - first:
+      213: 6869470153425871986
+    second: Crunch_20
+  - first:
+      213: 8381485519894303296
+    second: Crunch_21
+  - first:
+      213: 1313352811506053053
+    second: Crunch_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Crunch_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 807
+        width: 106
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3623c5448b58c020800000000000000
+      internalID: 2362238628220053054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crunch_1
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 867
+        width: 106
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a5f5f7dd324bc620800000000000000
+      internalID: 2795400827097183654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crunch_2
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 872
+        width: 106
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f342ff03059b36390800000000000000
+      internalID: -7826207973369240513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crunch_3
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 881
+        width: 106
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b517a91da8c712ee0800000000000000
+      internalID: -1287611082787360421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crunch_4
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 797
+        width: 106
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 461d85b60a2389dc0800000000000000
+      internalID: -3632097434897165980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crunch_5
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 789
+        width: 106
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d152d44006ee8c8e0800000000000000
+      internalID: -1672825165411703523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crunch_6
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 778
+        width: 106
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d02bbe4ec22cc56c0800000000000000
+      internalID: -4153231258267438579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crunch_7
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 689
+        width: 106
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db8389af9d5659380800000000000000
+      internalID: -8965147496324515651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crunch_8
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 682
+        width: 106
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6326f2a577c801520800000000000000
+      internalID: 2670789023272755766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crunch_9
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 673
+        width: 106
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df790524a97703490800000000000000
+      internalID: -7768577852792858627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crunch_10
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 632
+        width: 106
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 878155b27cdfd1cd0800000000000000
+      internalID: -2585631579173480328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crunch_11
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 593
+        width: 106
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc2a113d290f024e0800000000000000
+      internalID: -2008340920410201397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crunch_12
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 604
+        width: 106
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc708a9b4d860b870800000000000000
+      internalID: 8696566143309580235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crunch_13
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 615
+        width: 106
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d951c17ba5a79120800000000000000
+      internalID: 2420585480501418448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crunch_14
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 446
+        width: 106
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f040772879c7b980800000000000000
+      internalID: -8523122251880447753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crunch_15
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 439
+        width: 106
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c97a5ce03f96d3d0800000000000000
+      internalID: -3182181054218077754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crunch_16
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 434
+        width: 106
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 528a0163bdf30cf20800000000000000
+      internalID: 3440820326048507941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crunch_17
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 425
+        width: 106
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74846d113966dd540800000000000000
+      internalID: 5034292740315564103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crunch_18
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 281
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf78b3d0055221820800000000000000
+      internalID: 2887411336847525883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crunch_19
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 280
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b4ff2aad5d16cf0800000000000000
+      internalID: -260692168396551304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crunch_20
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 281
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 274e81265b2455f50800000000000000
+      internalID: 6869470153425871986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crunch_21
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 284
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 042516f5ca4015470800000000000000
+      internalID: 8381485519894303296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crunch_22
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 90
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbf24927c67f93210800000000000000
+      internalID: 1313352811506053053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Crunch_0: 2362238628220053054
+      Crunch_1: 2795400827097183654
+      Crunch_10: -2585631579173480328
+      Crunch_11: -2008340920410201397
+      Crunch_12: 8696566143309580235
+      Crunch_13: 2420585480501418448
+      Crunch_14: -8523122251880447753
+      Crunch_15: -3182181054218077754
+      Crunch_16: 3440820326048507941
+      Crunch_17: 5034292740315564103
+      Crunch_18: 2887411336847525883
+      Crunch_19: -260692168396551304
+      Crunch_2: -7826207973369240513
+      Crunch_20: 6869470153425871986
+      Crunch_21: 8381485519894303296
+      Crunch_22: 1313352811506053053
+      Crunch_3: -1287611082787360421
+      Crunch_4: -3632097434897165980
+      Crunch_5: -1672825165411703523
+      Crunch_6: -4153231258267438579
+      Crunch_7: -8965147496324515651
+      Crunch_8: 2670789023272755766
+      Crunch_9: -7768577852792858627
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

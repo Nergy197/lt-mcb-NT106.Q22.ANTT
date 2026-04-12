@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 4ed3ff2625f1245cc9eca246c644ae1f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6107110536344024998
+    second: PRAS- Stats_0
+  - first:
+      213: -1455534926475113930
+    second: PRAS- Stats_1
+  - first:
+      213: -161518386679542362
+    second: PRAS- Stats_2
+  - first:
+      213: 8970625193020471819
+    second: PRAS- Stats_3
+  - first:
+      213: 7950062770657903713
+    second: PRAS- Stats_4
+  - first:
+      213: -3390102853230563445
+    second: PRAS- Stats_5
+  - first:
+      213: 549716867199801282
+    second: PRAS- Stats_6
+  - first:
+      213: -7185518446193463839
+    second: PRAS- Stats_7
+  - first:
+      213: -1316255629025964030
+    second: PRAS- Stats_8
+  - first:
+      213: -7420860254276148229
+    second: PRAS- Stats_9
+  - first:
+      213: -538499290207152593
+    second: PRAS- Stats_10
+  - first:
+      213: -1878225345909546362
+    second: PRAS- Stats_11
+  - first:
+      213: -4925254715306282432
+    second: PRAS- Stats_12
+  - first:
+      213: 7317583058365113766
+    second: PRAS- Stats_13
+  - first:
+      213: -6373506528804010586
+    second: PRAS- Stats_14
+  - first:
+      213: -4081998775127708599
+    second: PRAS- Stats_15
+  - first:
+      213: -9165664495750185388
+    second: PRAS- Stats_16
+  - first:
+      213: -3543107464173128393
+    second: PRAS- Stats_17
+  - first:
+      213: -6645530262793624878
+    second: PRAS- Stats_18
+  - first:
+      213: 5799639920736135727
+    second: PRAS- Stats_19
+  - first:
+      213: 7824821943976594209
+    second: PRAS- Stats_20
+  - first:
+      213: -7312609472221620862
+    second: PRAS- Stats_21
+  - first:
+      213: -2254748579560962065
+    second: PRAS- Stats_22
+  - first:
+      213: -3588576804294528021
+    second: PRAS- Stats_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Stats_0
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 857
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a584b25f25f2f3ba0800000000000000
+      internalID: -6107110536344024998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Stats_1
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 855
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63ac64532b6eccbe0800000000000000
+      internalID: -1455534926475113930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Stats_2
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 851
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ad854112eb22cdf0800000000000000
+      internalID: -161518386679542362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Stats_3
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 859
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ab72ba5101e7c70800000000000000
+      internalID: 8970625193020471819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Stats_4
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 857
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1644f1bf7fb445e60800000000000000
+      internalID: 7950062770657903713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Stats_5
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 663
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f6721aa6fe3f0d0800000000000000
+      internalID: -3390102853230563445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Stats_6
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 661
+        width: 62
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c71c74049cf0a700800000000000000
+      internalID: 549716867199801282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Stats_7
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 659
+        width: 74
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed2f9f2b09e74c90800000000000000
+      internalID: -7185518446193463839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Stats_8
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 655
+        width: 92
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2009c4eaa78bbbde0800000000000000
+      internalID: -1316255629025964030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Stats_9
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 653
+        width: 110
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf32e088aeec30990800000000000000
+      internalID: -7420860254276148229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Stats_10
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 499
+        width: 114
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f261767afbdd688f0800000000000000
+      internalID: -538499290207152593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Stats_11
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 501
+        width: 94
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6822de8cff33fe5e0800000000000000
+      internalID: -1878225345909546362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Stats_12
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 505
+        width: 28
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 042f9d97eeaf5abb0800000000000000
+      internalID: -4925254715306282432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Stats_13
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 453
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a5e44875074d8560800000000000000
+      internalID: 7317583058365113766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Stats_14
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 454
+        width: 104
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a501019491cc87a0800000000000000
+      internalID: -6373506528804010586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Stats_15
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 459
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ceeeacdb3d957c0800000000000000
+      internalID: -4081998775127708599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Stats_16
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 457
+        width: 84
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45e7660f3b40dc080800000000000000
+      internalID: -9165664495750185388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Stats_17
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 453
+        width: 146
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735fce4988a54dec0800000000000000
+      internalID: -3543107464173128393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Stats_18
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 459
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d2e31e7f6556c3a0800000000000000
+      internalID: -6645530262793624878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Stats_19
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 465
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2ae6a4b7c57c7050800000000000000
+      internalID: 5799639920736135727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Stats_20
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 453
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12b0861b91a579c60800000000000000
+      internalID: 7824821943976594209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Stats_21
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 451
+        width: 108
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 285d21bcd64648a90800000000000000
+      internalID: -7312609472221620862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Stats_22
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 447
+        width: 78
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe7c371fc1685b0e0800000000000000
+      internalID: -2254748579560962065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Stats_23
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 449
+        width: 28
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be371dad860d23ec0800000000000000
+      internalID: -3588576804294528021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Stats_0: -6107110536344024998
+      PRAS- Stats_1: -1455534926475113930
+      PRAS- Stats_10: -538499290207152593
+      PRAS- Stats_11: -1878225345909546362
+      PRAS- Stats_12: -4925254715306282432
+      PRAS- Stats_13: 7317583058365113766
+      PRAS- Stats_14: -6373506528804010586
+      PRAS- Stats_15: -4081998775127708599
+      PRAS- Stats_16: -9165664495750185388
+      PRAS- Stats_17: -3543107464173128393
+      PRAS- Stats_18: -6645530262793624878
+      PRAS- Stats_19: 5799639920736135727
+      PRAS- Stats_2: -161518386679542362
+      PRAS- Stats_20: 7824821943976594209
+      PRAS- Stats_21: -7312609472221620862
+      PRAS- Stats_22: -2254748579560962065
+      PRAS- Stats_23: -3588576804294528021
+      PRAS- Stats_3: 8970625193020471819
+      PRAS- Stats_4: 7950062770657903713
+      PRAS- Stats_5: -3390102853230563445
+      PRAS- Stats_6: 549716867199801282
+      PRAS- Stats_7: -7185518446193463839
+      PRAS- Stats_8: -1316255629025964030
+      PRAS- Stats_9: -7420860254276148229
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

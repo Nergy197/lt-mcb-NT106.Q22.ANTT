@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: cbb019596e6164b5bb28bf72fbe0709b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3611940587637238910
+    second: finger.spoon_0
+  - first:
+      213: -1891479116721834355
+    second: finger.spoon_1
+  - first:
+      213: 3903021844975694780
+    second: finger.spoon_2
+  - first:
+      213: -8658209106449041418
+    second: finger.spoon_3
+  - first:
+      213: -2258564880419511926
+    second: finger.spoon_4
+  - first:
+      213: 5088838892289093054
+    second: finger.spoon_5
+  - first:
+      213: 8143314649369432932
+    second: finger.spoon_6
+  - first:
+      213: -8947322439213763157
+    second: finger.spoon_7
+  - first:
+      213: 1740771897464012000
+    second: finger.spoon_8
+  - first:
+      213: 7975327586541717897
+    second: finger.spoon_9
+  - first:
+      213: 9081700407808801088
+    second: finger.spoon_10
+  - first:
+      213: 1043418695719152974
+    second: finger.spoon_11
+  - first:
+      213: -1547118464715027753
+    second: finger.spoon_12
+  - first:
+      213: -4814164471770174082
+    second: finger.spoon_13
+  - first:
+      213: -4561738228391891302
+    second: finger.spoon_14
+  - first:
+      213: -7431811770460431117
+    second: finger.spoon_15
+  - first:
+      213: -2495633742739872929
+    second: finger.spoon_16
+  - first:
+      213: 834516721466461440
+    second: finger.spoon_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: finger.spoon_0
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 654
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7ceeebd3d0302230800000000000000
+      internalID: 3611940587637238910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: finger.spoon_1
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 653
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d86b9bbc3cd10c5e0800000000000000
+      internalID: -1891479116721834355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: finger.spoon_2
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 638
+        width: 32
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb3bd5c50b15a2630800000000000000
+      internalID: 3903021844975694780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: finger.spoon_3
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 639
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f77d0bd0bcd7d780800000000000000
+      internalID: -8658209106449041418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: finger.spoon_4
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 645
+        width: 35
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a812c682537f7a0e0800000000000000
+      internalID: -2258564880419511926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: finger.spoon_5
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 459
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebd651eb2003f9640800000000000000
+      internalID: 5088838892289093054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: finger.spoon_6
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 407
+        width: 172
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46356e9478dd20170800000000000000
+      internalID: 8143314649369432932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: finger.spoon_7
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 463
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba538cf75a9b4d380800000000000000
+      internalID: -8947322439213763157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: finger.spoon_8
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 453
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec335751d6782810800000000000000
+      internalID: 1740771897464012000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: finger.spoon_9
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 462
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98941335f2e0eae60800000000000000
+      internalID: 7975327586541717897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: finger.spoon_10
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 265
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 049b6fb676ea80e70800000000000000
+      internalID: 9081700407808801088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: finger.spoon_11
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 274
+        width: 40
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d675686c7fa7e00800000000000000
+      internalID: 1043418695719152974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: finger.spoon_12
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 233
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7da863d04f7878ae0800000000000000
+      internalID: -1547118464715027753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: finger.spoon_13
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 224
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d25d16be6a03db0800000000000000
+      internalID: -4814164471770174082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: finger.spoon_14
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 275
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ea16a104371b0c0800000000000000
+      internalID: -4561738228391891302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: finger.spoon_15
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 265
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc9328f196ecd890800000000000000
+      internalID: -7431811770460431117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: finger.spoon_16
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 84
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f53e28a555abd5dd0800000000000000
+      internalID: -2495633742739872929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: finger.spoon_17
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 86
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00dc126698cc49b00800000000000000
+      internalID: 834516721466461440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      finger.spoon_0: 3611940587637238910
+      finger.spoon_1: -1891479116721834355
+      finger.spoon_10: 9081700407808801088
+      finger.spoon_11: 1043418695719152974
+      finger.spoon_12: -1547118464715027753
+      finger.spoon_13: -4814164471770174082
+      finger.spoon_14: -4561738228391891302
+      finger.spoon_15: -7431811770460431117
+      finger.spoon_16: -2495633742739872929
+      finger.spoon_17: 834516721466461440
+      finger.spoon_2: 3903021844975694780
+      finger.spoon_3: -8658209106449041418
+      finger.spoon_4: -2258564880419511926
+      finger.spoon_5: 5088838892289093054
+      finger.spoon_6: 8143314649369432932
+      finger.spoon_7: -8947322439213763157
+      finger.spoon_8: 1740771897464012000
+      finger.spoon_9: 7975327586541717897
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

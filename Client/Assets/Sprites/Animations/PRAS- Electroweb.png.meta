@@ -1,0 +1,1534 @@
+fileFormatVersion: 2
+guid: 2d35f6d85d57041bd83c4fc4f88f560b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8951167267776310599
+    second: PRAS- Electroweb_0
+  - first:
+      213: 5443030951651202244
+    second: PRAS- Electroweb_1
+  - first:
+      213: 4672605974777801709
+    second: PRAS- Electroweb_2
+  - first:
+      213: -6364315822840001629
+    second: PRAS- Electroweb_3
+  - first:
+      213: -1977802374841257425
+    second: PRAS- Electroweb_4
+  - first:
+      213: 3068103010333088923
+    second: PRAS- Electroweb_5
+  - first:
+      213: -4324317045690623162
+    second: PRAS- Electroweb_6
+  - first:
+      213: 3910348818252624942
+    second: PRAS- Electroweb_7
+  - first:
+      213: -6782462242887527727
+    second: PRAS- Electroweb_8
+  - first:
+      213: 4839796393983410519
+    second: PRAS- Electroweb_9
+  - first:
+      213: -8209970295288107633
+    second: PRAS- Electroweb_10
+  - first:
+      213: -8088754452272372235
+    second: PRAS- Electroweb_11
+  - first:
+      213: -8735823422547801611
+    second: PRAS- Electroweb_12
+  - first:
+      213: 4471547616550701459
+    second: PRAS- Electroweb_13
+  - first:
+      213: -6920206465139506485
+    second: PRAS- Electroweb_14
+  - first:
+      213: -2870952539861772453
+    second: PRAS- Electroweb_15
+  - first:
+      213: -6751692722716402461
+    second: PRAS- Electroweb_16
+  - first:
+      213: -2904274871203201319
+    second: PRAS- Electroweb_17
+  - first:
+      213: -3920018405959455019
+    second: PRAS- Electroweb_18
+  - first:
+      213: 8534325999558690560
+    second: PRAS- Electroweb_19
+  - first:
+      213: -481327715008186076
+    second: PRAS- Electroweb_20
+  - first:
+      213: 370910713868617883
+    second: PRAS- Electroweb_21
+  - first:
+      213: -3636820963516925812
+    second: PRAS- Electroweb_22
+  - first:
+      213: -6748056383179900118
+    second: PRAS- Electroweb_23
+  - first:
+      213: -1187401056193290025
+    second: PRAS- Electroweb_24
+  - first:
+      213: -6555818658281415233
+    second: PRAS- Electroweb_25
+  - first:
+      213: 1838346201790435814
+    second: PRAS- Electroweb_26
+  - first:
+      213: -2184258492589095854
+    second: PRAS- Electroweb_27
+  - first:
+      213: 3639962344013066492
+    second: PRAS- Electroweb_28
+  - first:
+      213: 6333385752203705788
+    second: PRAS- Electroweb_29
+  - first:
+      213: 1348127434533406185
+    second: PRAS- Electroweb_30
+  - first:
+      213: -1612480864888822807
+    second: PRAS- Electroweb_31
+  - first:
+      213: -8849216391023679108
+    second: PRAS- Electroweb_32
+  - first:
+      213: -1969738176823801834
+    second: PRAS- Electroweb_33
+  - first:
+      213: -2251235504354665541
+    second: PRAS- Electroweb_34
+  - first:
+      213: -2872733649164900170
+    second: PRAS- Electroweb_35
+  - first:
+      213: 6076672801631356674
+    second: PRAS- Electroweb_36
+  - first:
+      213: -7825690298973826898
+    second: PRAS- Electroweb_37
+  - first:
+      213: -5602321017473210443
+    second: PRAS- Electroweb_38
+  - first:
+      213: 4215505022415454836
+    second: PRAS- Electroweb_39
+  - first:
+      213: -4768768344750243655
+    second: PRAS- Electroweb_40
+  - first:
+      213: 1678355064065500990
+    second: PRAS- Electroweb_41
+  - first:
+      213: 948345461712490910
+    second: PRAS- Electroweb_42
+  - first:
+      213: 3056971574055677737
+    second: PRAS- Electroweb_43
+  - first:
+      213: -2187837533413442732
+    second: PRAS- Electroweb_44
+  - first:
+      213: 6440041722894018325
+    second: PRAS- Electroweb_45
+  - first:
+      213: 8923154481006803206
+    second: PRAS- Electroweb_46
+  - first:
+      213: -8047153506945718633
+    second: PRAS- Electroweb_47
+  - first:
+      213: 3415615510342530949
+    second: PRAS- Electroweb_48
+  - first:
+      213: -4452541059749370884
+    second: PRAS- Electroweb_49
+  - first:
+      213: -4463590500916743825
+    second: PRAS- Electroweb_50
+  - first:
+      213: 3741243756179084120
+    second: PRAS- Electroweb_51
+  - first:
+      213: 3051441886547090501
+    second: PRAS- Electroweb_52
+  - first:
+      213: 8664235238996902316
+    second: PRAS- Electroweb_53
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Electroweb_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 419
+        width: 130
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d29e8643fe83c70800000000000000
+      internalID: 8951167267776310599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_1
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 417
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c450a6efc7898b40800000000000000
+      internalID: 5443030951651202244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_2
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 417
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: debaff5a06e68d040800000000000000
+      internalID: 4672605974777801709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_3
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 417
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ab493d8a786da7a0800000000000000
+      internalID: -6364315822840001629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_4
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 469
+        width: 62
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f22b9ab083f6d84e0800000000000000
+      internalID: -1977802374841257425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_5
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 309
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9cd531be67149a20800000000000000
+      internalID: 3068103010333088923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_6
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 305
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64b9173ee80fcf3c0800000000000000
+      internalID: -4324317045690623162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_7
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 319
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e24f0d34889544630800000000000000
+      internalID: 3910348818252624942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_8
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 305
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d2903e668adfd1a0800000000000000
+      internalID: -6782462242887527727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_9
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 277
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75109909d296a2340800000000000000
+      internalID: 4839796393983410519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_10
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 291
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8de7d4c383501e80800000000000000
+      internalID: -8209970295288107633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_11
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 277
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f522f48ea8febf80800000000000000
+      internalID: -8088754452272372235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_12
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 293
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f9408ea1ee14c680800000000000000
+      internalID: -8735823422547801611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_13
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 297
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 399cfb0bdd02e0e30800000000000000
+      internalID: 4471547616550701459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_14
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 293
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc28ff082ec76ff90800000000000000
+      internalID: -6920206465139506485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_15
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 301
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b57988e30e35828d0800000000000000
+      internalID: -2870952539861772453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_16
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 301
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ec16ed9d3b2d42a0800000000000000
+      internalID: -6751692722716402461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_17
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 281
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9def6d36461f1b7d0800000000000000
+      internalID: -2904274871203201319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_18
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 283
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5de2bc7670c4999c0800000000000000
+      internalID: -3920018405959455019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_19
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 287
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0078311a744007670800000000000000
+      internalID: 8534325999558690560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_20
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 285
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429f26e4efaf159f0800000000000000
+      internalID: -481327715008186076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_21
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 289
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b98868f345db52500800000000000000
+      internalID: 370910713868617883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_22
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 285
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8831e53a9a678dc0800000000000000
+      internalID: -3636820963516925812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_23
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 289
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b3144e8761a52a0800000000000000
+      internalID: -6748056383179900118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_24
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 275
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d0ecafc701858fe0800000000000000
+      internalID: -1187401056193290025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_25
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 273
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbd124d1aad0505a0800000000000000
+      internalID: -6555818658281415233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_26
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 263
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e158eb612e138910800000000000000
+      internalID: 1838346201790435814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_27
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 273
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 254c8934974ffa1e0800000000000000
+      internalID: -2184258492589095854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_28
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 269
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf072be677eb38230800000000000000
+      internalID: 3639962344013066492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_29
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 269
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd3f9139c4b4e750800000000000000
+      internalID: 6333385752203705788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_30
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 261
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e5825f42c285b210800000000000000
+      internalID: 1348127434533406185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_31
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 261
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e3ef2952315f99e0800000000000000
+      internalID: -1612480864888822807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_32
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 253
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c792878d394413580800000000000000
+      internalID: -8849216391023679108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_33
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 241
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61844e570951aa4e0800000000000000
+      internalID: -1969738176823801834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_34
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 139
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbb51318c3102c0e0800000000000000
+      internalID: -2251235504354665541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_35
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 151
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8e63b67fff128d0800000000000000
+      internalID: -2872733649164900170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_36
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 97
+        width: 76
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 207c38da7bda45450800000000000000
+      internalID: 6076672801631356674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_37
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 95
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea0d177a220956390800000000000000
+      internalID: -7825690298973826898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_38
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 121
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b7edcb87be8042b0800000000000000
+      internalID: -5602321017473210443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_39
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 121
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 472c2f1bb7b708a30800000000000000
+      internalID: 4215505022415454836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_40
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 99
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b0c80bd47ee1ddb0800000000000000
+      internalID: -4768768344750243655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_41
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 95
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e372a98d907ba4710800000000000000
+      internalID: 1678355064065500990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_42
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 133
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e911ab14c23392d00800000000000000
+      internalID: 948345461712490910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_43
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 133
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f2e08337b8c6a20800000000000000
+      internalID: 3056971574055677737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_44
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 99
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45bff92ea5d33a1e0800000000000000
+      internalID: -2187837533413442732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_45
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 101
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 517eacf73df9f5950800000000000000
+      internalID: 6440041722894018325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_46
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 61
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 609785c39b965db70800000000000000
+      internalID: 8923154481006803206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_47
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 61
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79626756584c25090800000000000000
+      internalID: -8047153506945718633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_48
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 53
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 587f74fb534b66f20800000000000000
+      internalID: 3415615510342530949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_49
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 51
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf32cc92f756532c0800000000000000
+      internalID: -4452541059749370884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_50
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 39
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f61bc0aa6142e02c0800000000000000
+      internalID: -4463590500916743825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_51
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 27
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 853d331df519be330800000000000000
+      internalID: 3741243756179084120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_52
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 23
+        width: 52
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54c13648a36e85a20800000000000000
+      internalID: 3051441886547090501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Electroweb_53
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 47
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca105d67b0c8d3870800000000000000
+      internalID: 8664235238996902316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Electroweb_0: 8951167267776310599
+      PRAS- Electroweb_1: 5443030951651202244
+      PRAS- Electroweb_10: -8209970295288107633
+      PRAS- Electroweb_11: -8088754452272372235
+      PRAS- Electroweb_12: -8735823422547801611
+      PRAS- Electroweb_13: 4471547616550701459
+      PRAS- Electroweb_14: -6920206465139506485
+      PRAS- Electroweb_15: -2870952539861772453
+      PRAS- Electroweb_16: -6751692722716402461
+      PRAS- Electroweb_17: -2904274871203201319
+      PRAS- Electroweb_18: -3920018405959455019
+      PRAS- Electroweb_19: 8534325999558690560
+      PRAS- Electroweb_2: 4672605974777801709
+      PRAS- Electroweb_20: -481327715008186076
+      PRAS- Electroweb_21: 370910713868617883
+      PRAS- Electroweb_22: -3636820963516925812
+      PRAS- Electroweb_23: -6748056383179900118
+      PRAS- Electroweb_24: -1187401056193290025
+      PRAS- Electroweb_25: -6555818658281415233
+      PRAS- Electroweb_26: 1838346201790435814
+      PRAS- Electroweb_27: -2184258492589095854
+      PRAS- Electroweb_28: 3639962344013066492
+      PRAS- Electroweb_29: 6333385752203705788
+      PRAS- Electroweb_3: -6364315822840001629
+      PRAS- Electroweb_30: 1348127434533406185
+      PRAS- Electroweb_31: -1612480864888822807
+      PRAS- Electroweb_32: -8849216391023679108
+      PRAS- Electroweb_33: -1969738176823801834
+      PRAS- Electroweb_34: -2251235504354665541
+      PRAS- Electroweb_35: -2872733649164900170
+      PRAS- Electroweb_36: 6076672801631356674
+      PRAS- Electroweb_37: -7825690298973826898
+      PRAS- Electroweb_38: -5602321017473210443
+      PRAS- Electroweb_39: 4215505022415454836
+      PRAS- Electroweb_4: -1977802374841257425
+      PRAS- Electroweb_40: -4768768344750243655
+      PRAS- Electroweb_41: 1678355064065500990
+      PRAS- Electroweb_42: 948345461712490910
+      PRAS- Electroweb_43: 3056971574055677737
+      PRAS- Electroweb_44: -2187837533413442732
+      PRAS- Electroweb_45: 6440041722894018325
+      PRAS- Electroweb_46: 8923154481006803206
+      PRAS- Electroweb_47: -8047153506945718633
+      PRAS- Electroweb_48: 3415615510342530949
+      PRAS- Electroweb_49: -4452541059749370884
+      PRAS- Electroweb_5: 3068103010333088923
+      PRAS- Electroweb_50: -4463590500916743825
+      PRAS- Electroweb_51: 3741243756179084120
+      PRAS- Electroweb_52: 3051441886547090501
+      PRAS- Electroweb_53: 8664235238996902316
+      PRAS- Electroweb_6: -4324317045690623162
+      PRAS- Electroweb_7: 3910348818252624942
+      PRAS- Electroweb_8: -6782462242887527727
+      PRAS- Electroweb_9: 4839796393983410519
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

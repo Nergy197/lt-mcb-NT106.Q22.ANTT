@@ -1,0 +1,936 @@
+fileFormatVersion: 2
+guid: ec221b5132c3b4e5da48f754ea1b93a4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4657038253784352813
+    second: GEN8- Misty Explosion_0
+  - first:
+      213: 4787329288381229691
+    second: GEN8- Misty Explosion_1
+  - first:
+      213: 5014853267459456114
+    second: GEN8- Misty Explosion_2
+  - first:
+      213: -1457000002022748787
+    second: GEN8- Misty Explosion_3
+  - first:
+      213: 3478311540409738210
+    second: GEN8- Misty Explosion_4
+  - first:
+      213: 2699716080831947784
+    second: GEN8- Misty Explosion_5
+  - first:
+      213: -1945598822583686634
+    second: GEN8- Misty Explosion_6
+  - first:
+      213: -3567843446357859749
+    second: GEN8- Misty Explosion_7
+  - first:
+      213: 1333685509482384609
+    second: GEN8- Misty Explosion_8
+  - first:
+      213: 7083087396611580741
+    second: GEN8- Misty Explosion_9
+  - first:
+      213: -2243645312725973236
+    second: GEN8- Misty Explosion_10
+  - first:
+      213: -7448264825533169566
+    second: GEN8- Misty Explosion_11
+  - first:
+      213: -1245932244757177046
+    second: GEN8- Misty Explosion_12
+  - first:
+      213: 8056690003137829905
+    second: GEN8- Misty Explosion_13
+  - first:
+      213: -8418775552598217392
+    second: GEN8- Misty Explosion_14
+  - first:
+      213: 6256172514351188642
+    second: GEN8- Misty Explosion_15
+  - first:
+      213: 827176613917257884
+    second: GEN8- Misty Explosion_16
+  - first:
+      213: -7562828897811823392
+    second: GEN8- Misty Explosion_17
+  - first:
+      213: -6417600193839055386
+    second: GEN8- Misty Explosion_18
+  - first:
+      213: 8523855283036496423
+    second: GEN8- Misty Explosion_19
+  - first:
+      213: -2474248248504355562
+    second: GEN8- Misty Explosion_20
+  - first:
+      213: -863557665691827638
+    second: GEN8- Misty Explosion_21
+  - first:
+      213: 6134028849477072731
+    second: GEN8- Misty Explosion_22
+  - first:
+      213: 9133912420730513160
+    second: GEN8- Misty Explosion_23
+  - first:
+      213: 5412830654659683664
+    second: GEN8- Misty Explosion_24
+  - first:
+      213: -6950193572497114650
+    second: GEN8- Misty Explosion_25
+  - first:
+      213: 4216969268884370029
+    second: GEN8- Misty Explosion_26
+  - first:
+      213: 4417810687560787383
+    second: GEN8- Misty Explosion_27
+  - first:
+      213: 2077000634798620933
+    second: GEN8- Misty Explosion_28
+  - first:
+      213: 270614508703571164
+    second: GEN8- Misty Explosion_29
+  - first:
+      213: -3973070826339736120
+    second: GEN8- Misty Explosion_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_0
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 450
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d737c9d160ee5fb0800000000000000
+      internalID: -4657038253784352813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_1
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 498
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7a69c89f92007240800000000000000
+      internalID: 4787329288381229691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_2
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 480
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27cb0a71a76589540800000000000000
+      internalID: 5014853267459456114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_3
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 501
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8dc0b9b732b7cbe0800000000000000
+      internalID: -1457000002022748787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_4
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 507
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e3a348cae1754030800000000000000
+      internalID: 3478311540409738210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_5
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 503
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 804e568c871577520800000000000000
+      internalID: 2699716080831947784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_6
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 501
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61a2b78dd28dff4e0800000000000000
+      internalID: -1945598822583686634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_7
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 503
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5262ade9497c7ec0800000000000000
+      internalID: -3567843446357859749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_8
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 463
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ec88ca97e3328210800000000000000
+      internalID: 1333685509482384609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_9
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 448
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 543641c957e2c4260800000000000000
+      internalID: 7083087396611580741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 477
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c078ff4b978fcd0e0800000000000000
+      internalID: -2243645312725973236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_11
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 495
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2600f019a9272a890800000000000000
+      internalID: -7448264825533169566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_12
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 487
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2d1b01893f85bee0800000000000000
+      internalID: -1245932244757177046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_13
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 461
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c98762fdc1fcf60800000000000000
+      internalID: 8056690003137829905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_14
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 451
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05de3af4d308a2b80800000000000000
+      internalID: -8418775552598217392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_15
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 451
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aa077351c362d650800000000000000
+      internalID: 6256172514351188642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_16
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 447
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c907c0f6fb8ba7b00800000000000000
+      internalID: 827176613917257884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_17
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 271
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e40ed0ef2f6b0790800000000000000
+      internalID: -7562828897811823392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_18
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 256
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6edbeb720aa10f6a0800000000000000
+      internalID: -6417600193839055386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_19
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 257
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7222a36f731da4670800000000000000
+      internalID: 8523855283036496423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_20
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 303
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 615f3cdb354b9add0800000000000000
+      internalID: -2474248248504355562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_21
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 291
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a428f5dd0e60404f0800000000000000
+      internalID: -863557665691827638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_22
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 297
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5734173db2702550800000000000000
+      internalID: 6134028849477072731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_23
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 283
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 807ab2ff3fc22ce70800000000000000
+      internalID: 9133912420730513160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_24
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 291
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 055e5505dcc3e1b40800000000000000
+      internalID: 5412830654659683664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_25
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 273
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e93b1ff4c3fb8f90800000000000000
+      internalID: -6950193572497114650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_26
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 277
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d627794253fa58a30800000000000000
+      internalID: 4216969268884370029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_27
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 265
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b52cfce9673f4d30800000000000000
+      internalID: 4417810687560787383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_28
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 261
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 501ce6ba21df2dc10800000000000000
+      internalID: 2077000634798620933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_29
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 75
+        width: 51
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdcd75e367a61c300800000000000000
+      internalID: 270614508703571164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Misty Explosion_30
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 64
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c56d883221dcd8c0800000000000000
+      internalID: -3973070826339736120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GEN8- Misty Explosion_0: -4657038253784352813
+      GEN8- Misty Explosion_1: 4787329288381229691
+      GEN8- Misty Explosion_10: -2243645312725973236
+      GEN8- Misty Explosion_11: -7448264825533169566
+      GEN8- Misty Explosion_12: -1245932244757177046
+      GEN8- Misty Explosion_13: 8056690003137829905
+      GEN8- Misty Explosion_14: -8418775552598217392
+      GEN8- Misty Explosion_15: 6256172514351188642
+      GEN8- Misty Explosion_16: 827176613917257884
+      GEN8- Misty Explosion_17: -7562828897811823392
+      GEN8- Misty Explosion_18: -6417600193839055386
+      GEN8- Misty Explosion_19: 8523855283036496423
+      GEN8- Misty Explosion_2: 5014853267459456114
+      GEN8- Misty Explosion_20: -2474248248504355562
+      GEN8- Misty Explosion_21: -863557665691827638
+      GEN8- Misty Explosion_22: 6134028849477072731
+      GEN8- Misty Explosion_23: 9133912420730513160
+      GEN8- Misty Explosion_24: 5412830654659683664
+      GEN8- Misty Explosion_25: -6950193572497114650
+      GEN8- Misty Explosion_26: 4216969268884370029
+      GEN8- Misty Explosion_27: 4417810687560787383
+      GEN8- Misty Explosion_28: 2077000634798620933
+      GEN8- Misty Explosion_29: 270614508703571164
+      GEN8- Misty Explosion_3: -1457000002022748787
+      GEN8- Misty Explosion_30: -3973070826339736120
+      GEN8- Misty Explosion_4: 3478311540409738210
+      GEN8- Misty Explosion_5: 2699716080831947784
+      GEN8- Misty Explosion_6: -1945598822583686634
+      GEN8- Misty Explosion_7: -3567843446357859749
+      GEN8- Misty Explosion_8: 1333685509482384609
+      GEN8- Misty Explosion_9: 7083087396611580741
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

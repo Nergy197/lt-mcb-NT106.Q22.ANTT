@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: 43934facec981401da7805e3a1e62536
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3892934738147434658
+    second: PRAS- Magma Storm_0
+  - first:
+      213: -1896107240338932926
+    second: PRAS- Magma Storm_1
+  - first:
+      213: -518268195726917453
+    second: PRAS- Magma Storm_2
+  - first:
+      213: 3890841286100808704
+    second: PRAS- Magma Storm_3
+  - first:
+      213: -6896807140289348304
+    second: PRAS- Magma Storm_4
+  - first:
+      213: -3335939409306703094
+    second: PRAS- Magma Storm_5
+  - first:
+      213: -1679045762048016515
+    second: PRAS- Magma Storm_6
+  - first:
+      213: -1537043230391919931
+    second: PRAS- Magma Storm_7
+  - first:
+      213: -8212229308407760863
+    second: PRAS- Magma Storm_8
+  - first:
+      213: 6628452008058197849
+    second: PRAS- Magma Storm_9
+  - first:
+      213: 5112245717205206707
+    second: PRAS- Magma Storm_10
+  - first:
+      213: -7169902089352899560
+    second: PRAS- Magma Storm_11
+  - first:
+      213: -5108006120830237605
+    second: PRAS- Magma Storm_12
+  - first:
+      213: 2798391818261837844
+    second: PRAS- Magma Storm_13
+  - first:
+      213: 1285632445414274008
+    second: PRAS- Magma Storm_14
+  - first:
+      213: -1205738029604347049
+    second: PRAS- Magma Storm_15
+  - first:
+      213: 670937575869396548
+    second: PRAS- Magma Storm_16
+  - first:
+      213: -2357299897156001229
+    second: PRAS- Magma Storm_17
+  - first:
+      213: -8513082405344429945
+    second: PRAS- Magma Storm_18
+  - first:
+      213: -7541649005075744861
+    second: PRAS- Magma Storm_19
+  - first:
+      213: 335043722358816847
+    second: PRAS- Magma Storm_20
+  - first:
+      213: -9112796273512518916
+    second: PRAS- Magma Storm_21
+  - first:
+      213: -3548013983696649357
+    second: PRAS- Magma Storm_22
+  - first:
+      213: 2623332146853254800
+    second: PRAS- Magma Storm_23
+  - first:
+      213: 8763064636861536639
+    second: PRAS- Magma Storm_24
+  - first:
+      213: 5544257165778104176
+    second: PRAS- Magma Storm_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_0
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 457
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5f91f63b7489f9c0800000000000000
+      internalID: -3892934738147434658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_1
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 465
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24b3d8bc28cafa5e0800000000000000
+      internalID: -1896107240338932926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_2
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 485
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b0805762ddbec8f0800000000000000
+      internalID: -518268195726917453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_3
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 435
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 004767ff88b0ff530800000000000000
+      internalID: 3890841286100808704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_4
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 443
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03dfcae527e9940a0800000000000000
+      internalID: -6896807140289348304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_5
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 449
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b2c0428cc54b1d0800000000000000
+      internalID: -3335939409306703094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_6
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 387
+        width: 62
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7fb08f76c4d2b8e0800000000000000
+      internalID: -1679045762048016515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_7
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 415
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ca121853535baae0800000000000000
+      internalID: -1537043230391919931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_8
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 431
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 128bd4a44fc480e80800000000000000
+      internalID: -8212229308407760863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_9
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 387
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95798077bfdfcfb50800000000000000
+      internalID: 6628452008058197849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_10
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 427
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b6478ad46852f640800000000000000
+      internalID: 5112245717205206707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_11
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 401
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8141ac999046f7c90800000000000000
+      internalID: -7169902089352899560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_12
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 387
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5484691f77bc19b0800000000000000
+      internalID: -5108006120830237605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_13
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 403
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4183bdd3882e5d620800000000000000
+      internalID: 2798391818261837844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_14
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 395
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d372a4c5eb77d110800000000000000
+      internalID: 1285632445414274008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_15
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 387
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 753e04d76ab544fe0800000000000000
+      internalID: -1205738029604347049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_16
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 395
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4463824ab26af4900800000000000000
+      internalID: 670937575869396548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_17
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 387
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 332a3f8ab30394fd0800000000000000
+      internalID: -2357299897156001229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_18
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 389
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78831d518a47bd980800000000000000
+      internalID: -8513082405344429945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_19
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 391
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a738cfef2ea65790800000000000000
+      internalID: -7541649005075744861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_20
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 195
+        width: 66
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f400c678d7056a400800000000000000
+      internalID: 335043722358816847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_21
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 195
+        width: 64
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa68c62218d88180800000000000000
+      internalID: -9112796273512518916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_22
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 195
+        width: 66
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37384ab741ce2cec0800000000000000
+      internalID: -3548013983696649357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_23
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 195
+        width: 66
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0961d0540b2f76420800000000000000
+      internalID: 2623332146853254800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_24
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 195
+        width: 66
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f795be7cbd8ac9970800000000000000
+      internalID: 8763064636861536639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magma Storm_25
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 3
+        width: 66
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07f2e9d748821fc40800000000000000
+      internalID: 5544257165778104176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Magma Storm_0: -3892934738147434658
+      PRAS- Magma Storm_1: -1896107240338932926
+      PRAS- Magma Storm_10: 5112245717205206707
+      PRAS- Magma Storm_11: -7169902089352899560
+      PRAS- Magma Storm_12: -5108006120830237605
+      PRAS- Magma Storm_13: 2798391818261837844
+      PRAS- Magma Storm_14: 1285632445414274008
+      PRAS- Magma Storm_15: -1205738029604347049
+      PRAS- Magma Storm_16: 670937575869396548
+      PRAS- Magma Storm_17: -2357299897156001229
+      PRAS- Magma Storm_18: -8513082405344429945
+      PRAS- Magma Storm_19: -7541649005075744861
+      PRAS- Magma Storm_2: -518268195726917453
+      PRAS- Magma Storm_20: 335043722358816847
+      PRAS- Magma Storm_21: -9112796273512518916
+      PRAS- Magma Storm_22: -3548013983696649357
+      PRAS- Magma Storm_23: 2623332146853254800
+      PRAS- Magma Storm_24: 8763064636861536639
+      PRAS- Magma Storm_25: 5544257165778104176
+      PRAS- Magma Storm_3: 3890841286100808704
+      PRAS- Magma Storm_4: -6896807140289348304
+      PRAS- Magma Storm_5: -3335939409306703094
+      PRAS- Magma Storm_6: -1679045762048016515
+      PRAS- Magma Storm_7: -1537043230391919931
+      PRAS- Magma Storm_8: -8212229308407760863
+      PRAS- Magma Storm_9: 6628452008058197849
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

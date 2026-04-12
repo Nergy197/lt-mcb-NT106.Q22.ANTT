@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: 5cb628ae0ee414f31abb6466e01280f7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6552541788559925455
+    second: PRAS- Heal Bell_0
+  - first:
+      213: -413625826624598325
+    second: PRAS- Heal Bell_1
+  - first:
+      213: -7768760180747882717
+    second: PRAS- Heal Bell_2
+  - first:
+      213: -4364093317547895194
+    second: PRAS- Heal Bell_3
+  - first:
+      213: 5708943738823758139
+    second: PRAS- Heal Bell_4
+  - first:
+      213: -1772249747088730612
+    second: PRAS- Heal Bell_5
+  - first:
+      213: -7960944899739975978
+    second: PRAS- Heal Bell_6
+  - first:
+      213: -6692041210717488307
+    second: PRAS- Heal Bell_7
+  - first:
+      213: -433203049525282771
+    second: PRAS- Heal Bell_8
+  - first:
+      213: -4898919818011365307
+    second: PRAS- Heal Bell_9
+  - first:
+      213: 6652616688768000699
+    second: PRAS- Heal Bell_10
+  - first:
+      213: 7274853625484750747
+    second: PRAS- Heal Bell_11
+  - first:
+      213: 4711290607021033215
+    second: PRAS- Heal Bell_12
+  - first:
+      213: 447623054513668826
+    second: PRAS- Heal Bell_13
+  - first:
+      213: 1551550234957767964
+    second: PRAS- Heal Bell_14
+  - first:
+      213: -7197983320128346780
+    second: PRAS- Heal Bell_15
+  - first:
+      213: 6069470463393502617
+    second: PRAS- Heal Bell_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Heal Bell_0
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 651
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc064033a0e4fea50800000000000000
+      internalID: 6552541788559925455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Heal Bell_1
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 647
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce0d1e8081824af0800000000000000
+      internalID: -413625826624598325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Heal Bell_2
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 647
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32fa259b6c1df2490800000000000000
+      internalID: -7768760180747882717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Heal Bell_3
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 645
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 666d6e8ef30af63c0800000000000000
+      internalID: -4364093317547895194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Heal Bell_4
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 649
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b31d74b451e3a3f40800000000000000
+      internalID: 5708943738823758139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Heal Bell_5
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 421
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c06108bae34b767e0800000000000000
+      internalID: -1772249747088730612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Heal Bell_6
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 429
+        width: 102
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6de7a86eaca058190800000000000000
+      internalID: -7960944899739975978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Heal Bell_7
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 437
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4bb8ec89f71123a0800000000000000
+      internalID: -6692041210717488307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Heal Bell_8
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 445
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d28fd652f14fcf9f0800000000000000
+      internalID: -433203049525282771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Heal Bell_9
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 453
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 540bf40916a830cb0800000000000000
+      internalID: -4898919818011365307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Heal Bell_10
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 269
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb22ad0a1a7d25c50800000000000000
+      internalID: 6652616688768000699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Heal Bell_11
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 267
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9f2bfb14d875f460800000000000000
+      internalID: 7274853625484750747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Heal Bell_12
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 263
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff68f1978ddd16140800000000000000
+      internalID: 4711290607021033215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Heal Bell_13
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 263
+        width: 24
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad20095ebc6463600800000000000000
+      internalID: 447623054513668826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Heal Bell_14
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 263
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c15e4ddd7b6388510800000000000000
+      internalID: 1551550234957767964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Heal Bell_15
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 73
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46520909e40ab1c90800000000000000
+      internalID: -7197983320128346780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Heal Bell_16
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 71
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9959b41aa371b3450800000000000000
+      internalID: 6069470463393502617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Heal Bell_0: 6552541788559925455
+      PRAS- Heal Bell_1: -413625826624598325
+      PRAS- Heal Bell_10: 6652616688768000699
+      PRAS- Heal Bell_11: 7274853625484750747
+      PRAS- Heal Bell_12: 4711290607021033215
+      PRAS- Heal Bell_13: 447623054513668826
+      PRAS- Heal Bell_14: 1551550234957767964
+      PRAS- Heal Bell_15: -7197983320128346780
+      PRAS- Heal Bell_16: 6069470463393502617
+      PRAS- Heal Bell_2: -7768760180747882717
+      PRAS- Heal Bell_3: -4364093317547895194
+      PRAS- Heal Bell_4: 5708943738823758139
+      PRAS- Heal Bell_5: -1772249747088730612
+      PRAS- Heal Bell_6: -7960944899739975978
+      PRAS- Heal Bell_7: -6692041210717488307
+      PRAS- Heal Bell_8: -433203049525282771
+      PRAS- Heal Bell_9: -4898919818011365307
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

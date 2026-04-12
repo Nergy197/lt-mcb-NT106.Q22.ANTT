@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: a54e5aabf82234326a3177638f3c4714
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -784113056144613119
+    second: PRAS- Absorption2_0
+  - first:
+      213: -3420319355582860469
+    second: PRAS- Absorption2_1
+  - first:
+      213: -8799516126744943570
+    second: PRAS- Absorption2_2
+  - first:
+      213: -1311445336958913136
+    second: PRAS- Absorption2_3
+  - first:
+      213: 728777896727737207
+    second: PRAS- Absorption2_4
+  - first:
+      213: 3989825627637850701
+    second: PRAS- Absorption2_5
+  - first:
+      213: -2243100769964547546
+    second: PRAS- Absorption2_6
+  - first:
+      213: -6509038313303445640
+    second: PRAS- Absorption2_7
+  - first:
+      213: 3369494319759582400
+    second: PRAS- Absorption2_8
+  - first:
+      213: 9025289393242137929
+    second: PRAS- Absorption2_9
+  - first:
+      213: 8784579479478007873
+    second: PRAS- Absorption2_10
+  - first:
+      213: 6285042681506435869
+    second: PRAS- Absorption2_11
+  - first:
+      213: 2234717348458786545
+    second: PRAS- Absorption2_12
+  - first:
+      213: -2838941142907421238
+    second: PRAS- Absorption2_13
+  - first:
+      213: -4916396472596493617
+    second: PRAS- Absorption2_14
+  - first:
+      213: 7064201058874891573
+    second: PRAS- Absorption2_15
+  - first:
+      213: 3229595797995455474
+    second: PRAS- Absorption2_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Absorption2_0
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 658
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10121c074554e15f0800000000000000
+      internalID: -784113056144613119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Absorption2_1
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 654
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b433710faa59880d0800000000000000
+      internalID: -3420319355582860469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Absorption2_2
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 644
+        width: 52
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e24eb0e54b6d1e580800000000000000
+      internalID: -8799516126744943570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Absorption2_3
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 640
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 095b8341a6fcccde0800000000000000
+      internalID: -1311445336958913136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Absorption2_4
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 646
+        width: 60
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 773fc96c2a32d1a00800000000000000
+      internalID: 728777896727737207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Absorption2_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 460
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d42aa13f445be5730800000000000000
+      internalID: 3989825627637850701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Absorption2_6
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 492
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 622abd2fbb7eed0e0800000000000000
+      internalID: -2243100769964547546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Absorption2_7
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 488
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87fe322f3204ba5a0800000000000000
+      internalID: -6509038313303445640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Absorption2_8
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 476
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c467f14b39d2ce20800000000000000
+      internalID: 3369494319759582400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Absorption2_9
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 466
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9456c4792e4404d70800000000000000
+      internalID: 9025289393242137929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Absorption2_10
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 466
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 148f87f6e7819e970800000000000000
+      internalID: 8784579479478007873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Absorption2_11
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 476
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d131c5de405f83750800000000000000
+      internalID: 6285042681506435869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Absorption2_12
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 478
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fee940a69f430f10800000000000000
+      internalID: 2234717348458786545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Absorption2_13
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 462
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acdf2c6621e0a98d0800000000000000
+      internalID: -2838941142907421238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Absorption2_14
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 284
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fca07e3d47375cbb0800000000000000
+      internalID: -4916396472596493617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Absorption2_15
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 278
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53d1d207f65190260800000000000000
+      internalID: 7064201058874891573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Absorption2_16
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 283
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f30d936444d1dc20800000000000000
+      internalID: 3229595797995455474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Absorption2_0: -784113056144613119
+      PRAS- Absorption2_1: -3420319355582860469
+      PRAS- Absorption2_10: 8784579479478007873
+      PRAS- Absorption2_11: 6285042681506435869
+      PRAS- Absorption2_12: 2234717348458786545
+      PRAS- Absorption2_13: -2838941142907421238
+      PRAS- Absorption2_14: -4916396472596493617
+      PRAS- Absorption2_15: 7064201058874891573
+      PRAS- Absorption2_16: 3229595797995455474
+      PRAS- Absorption2_2: -8799516126744943570
+      PRAS- Absorption2_3: -1311445336958913136
+      PRAS- Absorption2_4: 728777896727737207
+      PRAS- Absorption2_5: 3989825627637850701
+      PRAS- Absorption2_6: -2243100769964547546
+      PRAS- Absorption2_7: -6509038313303445640
+      PRAS- Absorption2_8: 3369494319759582400
+      PRAS- Absorption2_9: 9025289393242137929
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

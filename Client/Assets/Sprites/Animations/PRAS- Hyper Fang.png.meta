@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: c5908030e60764693943b8305de9abee
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4958608803750518960
+    second: PRAS- Hyper Fang_0
+  - first:
+      213: -3459287782944479960
+    second: PRAS- Hyper Fang_1
+  - first:
+      213: -8501217005051873208
+    second: PRAS- Hyper Fang_2
+  - first:
+      213: 140369324528382388
+    second: PRAS- Hyper Fang_3
+  - first:
+      213: 8842871859180477453
+    second: PRAS- Hyper Fang_4
+  - first:
+      213: -3228003234941864241
+    second: PRAS- Hyper Fang_5
+  - first:
+      213: -9025529515461829142
+    second: PRAS- Hyper Fang_6
+  - first:
+      213: -1764599316299303344
+    second: PRAS- Hyper Fang_7
+  - first:
+      213: -6857263962088874033
+    second: PRAS- Hyper Fang_8
+  - first:
+      213: 276567230800667712
+    second: PRAS- Hyper Fang_9
+  - first:
+      213: 252516657600437174
+    second: PRAS- Hyper Fang_10
+  - first:
+      213: -6584552786609790387
+    second: PRAS- Hyper Fang_11
+  - first:
+      213: -4186184347189210477
+    second: PRAS- Hyper Fang_12
+  - first:
+      213: 4163181780127970958
+    second: PRAS- Hyper Fang_13
+  - first:
+      213: -4954884505924972406
+    second: PRAS- Hyper Fang_14
+  - first:
+      213: 6954700677666722983
+    second: PRAS- Hyper Fang_15
+  - first:
+      213: 8536564187123076231
+    second: PRAS- Hyper Fang_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Hyper Fang_0
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 277
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b0aca76f6480d440800000000000000
+      internalID: 4958608803750518960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Hyper Fang_1
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 283
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 825eeb9e6142effc0800000000000000
+      internalID: -3459287782944479960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Hyper Fang_2
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 263
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8487f5fdc2c950a80800000000000000
+      internalID: -8501217005051873208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Hyper Fang_3
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 275
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b130ed2821b2f100800000000000000
+      internalID: 140369324528382388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Hyper Fang_4
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 262
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c10c8ba1138ba70800000000000000
+      internalID: 8842871859180477453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Hyper Fang_5
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 270
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc67a771924d333d0800000000000000
+      internalID: -3228003234941864241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Hyper Fang_6
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 279
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aed181999b0eeb280800000000000000
+      internalID: -9025529515461829142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Hyper Fang_7
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 287
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05635156542e287e0800000000000000
+      internalID: -1764599316299303344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Hyper Fang_8
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 269
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcfda9002ca16d0a0800000000000000
+      internalID: -6857263962088874033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Hyper Fang_9
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 287
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 044236c5e6096d300800000000000000
+      internalID: 276567230800667712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Hyper Fang_10
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 271
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bb942cef8e118300800000000000000
+      internalID: 252516657600437174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Hyper Fang_11
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 102
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d42a0558028fe94a0800000000000000
+      internalID: -6584552786609790387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Hyper Fang_12
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 92
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3929c7df38fa7e5c0800000000000000
+      internalID: -4186184347189210477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Hyper Fang_13
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 104
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e86f7e385c796c930800000000000000
+      internalID: 4163181780127970958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Hyper Fang_14
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 91
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8051414bc6bc3bb0800000000000000
+      internalID: -4954884505924972406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Hyper Fang_15
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 101
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a45e733b6f048060800000000000000
+      internalID: 6954700677666722983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Hyper Fang_16
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 90
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78ccac746e7f77670800000000000000
+      internalID: 8536564187123076231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Hyper Fang_0: 4958608803750518960
+      PRAS- Hyper Fang_1: -3459287782944479960
+      PRAS- Hyper Fang_10: 252516657600437174
+      PRAS- Hyper Fang_11: -6584552786609790387
+      PRAS- Hyper Fang_12: -4186184347189210477
+      PRAS- Hyper Fang_13: 4163181780127970958
+      PRAS- Hyper Fang_14: -4954884505924972406
+      PRAS- Hyper Fang_15: 6954700677666722983
+      PRAS- Hyper Fang_16: 8536564187123076231
+      PRAS- Hyper Fang_2: -8501217005051873208
+      PRAS- Hyper Fang_3: 140369324528382388
+      PRAS- Hyper Fang_4: 8842871859180477453
+      PRAS- Hyper Fang_5: -3228003234941864241
+      PRAS- Hyper Fang_6: -9025529515461829142
+      PRAS- Hyper Fang_7: -1764599316299303344
+      PRAS- Hyper Fang_8: -6857263962088874033
+      PRAS- Hyper Fang_9: 276567230800667712
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

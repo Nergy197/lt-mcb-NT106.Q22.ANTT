@@ -1,0 +1,1560 @@
+fileFormatVersion: 2
+guid: cdee53b4939954e27b6a5630382376ba
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6216846876944645348
+    second: PRAS- Steam Eruption_0
+  - first:
+      213: 4109569505311900275
+    second: PRAS- Steam Eruption_1
+  - first:
+      213: 7649501197308437289
+    second: PRAS- Steam Eruption_2
+  - first:
+      213: 3201429669717103729
+    second: PRAS- Steam Eruption_3
+  - first:
+      213: -2446334392379086252
+    second: PRAS- Steam Eruption_4
+  - first:
+      213: -3532106196745677700
+    second: PRAS- Steam Eruption_5
+  - first:
+      213: 1692449187271985873
+    second: PRAS- Steam Eruption_6
+  - first:
+      213: -2967507105689094056
+    second: PRAS- Steam Eruption_7
+  - first:
+      213: 3885440756699026405
+    second: PRAS- Steam Eruption_8
+  - first:
+      213: 6170312588496957375
+    second: PRAS- Steam Eruption_9
+  - first:
+      213: 9146824447681114762
+    second: PRAS- Steam Eruption_10
+  - first:
+      213: 6562913815145431080
+    second: PRAS- Steam Eruption_11
+  - first:
+      213: 5665382609207888933
+    second: PRAS- Steam Eruption_12
+  - first:
+      213: -9092928672463732205
+    second: PRAS- Steam Eruption_13
+  - first:
+      213: 5831115415820089739
+    second: PRAS- Steam Eruption_14
+  - first:
+      213: 3470308948774995698
+    second: PRAS- Steam Eruption_15
+  - first:
+      213: 4391003573545248794
+    second: PRAS- Steam Eruption_16
+  - first:
+      213: 2092708586250123687
+    second: PRAS- Steam Eruption_17
+  - first:
+      213: 1403213980442424721
+    second: PRAS- Steam Eruption_18
+  - first:
+      213: -7518291864473726581
+    second: PRAS- Steam Eruption_19
+  - first:
+      213: -3241690903475144527
+    second: PRAS- Steam Eruption_20
+  - first:
+      213: -5924745620605148444
+    second: PRAS- Steam Eruption_21
+  - first:
+      213: -2625273746651019777
+    second: PRAS- Steam Eruption_22
+  - first:
+      213: 6021198758263038532
+    second: PRAS- Steam Eruption_23
+  - first:
+      213: 679037605232313425
+    second: PRAS- Steam Eruption_24
+  - first:
+      213: 6429790159653114260
+    second: PRAS- Steam Eruption_25
+  - first:
+      213: 6025641966749202496
+    second: PRAS- Steam Eruption_26
+  - first:
+      213: 6292609659389159584
+    second: PRAS- Steam Eruption_27
+  - first:
+      213: -3884483029195848921
+    second: PRAS- Steam Eruption_28
+  - first:
+      213: -7567314254017443471
+    second: PRAS- Steam Eruption_29
+  - first:
+      213: -6144714726287131929
+    second: PRAS- Steam Eruption_30
+  - first:
+      213: 8078884709395005643
+    second: PRAS- Steam Eruption_31
+  - first:
+      213: -7815772251369872739
+    second: PRAS- Steam Eruption_32
+  - first:
+      213: -5892140285878704012
+    second: PRAS- Steam Eruption_33
+  - first:
+      213: 2991357219024253099
+    second: PRAS- Steam Eruption_34
+  - first:
+      213: -8845981563609212703
+    second: PRAS- Steam Eruption_35
+  - first:
+      213: 7541878481213845553
+    second: PRAS- Steam Eruption_36
+  - first:
+      213: -864928629165383659
+    second: PRAS- Steam Eruption_37
+  - first:
+      213: 4093406922777573979
+    second: PRAS- Steam Eruption_38
+  - first:
+      213: 187803964170673587
+    second: PRAS- Steam Eruption_39
+  - first:
+      213: 7373167101982642851
+    second: PRAS- Steam Eruption_40
+  - first:
+      213: -435215741695169161
+    second: PRAS- Steam Eruption_41
+  - first:
+      213: 8619097207814645090
+    second: PRAS- Steam Eruption_42
+  - first:
+      213: 7951389829521853990
+    second: PRAS- Steam Eruption_43
+  - first:
+      213: 2776604731551739923
+    second: PRAS- Steam Eruption_44
+  - first:
+      213: 5325156100156905119
+    second: PRAS- Steam Eruption_45
+  - first:
+      213: 587784558850694143
+    second: PRAS- Steam Eruption_46
+  - first:
+      213: 7552006681030145023
+    second: PRAS- Steam Eruption_47
+  - first:
+      213: -1113650652692451033
+    second: PRAS- Steam Eruption_48
+  - first:
+      213: 1083378221122609454
+    second: PRAS- Steam Eruption_49
+  - first:
+      213: 5472570621374637691
+    second: PRAS- Steam Eruption_50
+  - first:
+      213: 2525824009962348500
+    second: PRAS- Steam Eruption_51
+  - first:
+      213: -8188564536301256242
+    second: PRAS- Steam Eruption_52
+  - first:
+      213: 9126315848020546949
+    second: PRAS- Steam Eruption_53
+  - first:
+      213: 6047641560544424022
+    second: PRAS- Steam Eruption_54
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_0
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 661
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec384bdb4da64650800000000000000
+      internalID: 6216846876944645348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_1
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 677
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 372c4ef01bf180930800000000000000
+      internalID: 4109569505311900275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_2
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 685
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 923ae766fcc782a60800000000000000
+      internalID: 7649501197308437289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_3
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 695
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17452ec9253cd6c20800000000000000
+      internalID: 3201429669717103729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_4
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 691
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45a6c64d4dfdc0ed0800000000000000
+      internalID: -2446334392379086252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_5
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 689
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c749402c0207bfec0800000000000000
+      internalID: -3532106196745677700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_6
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 643
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dacebf9199cc7710800000000000000
+      internalID: 1692449187271985873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_7
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 643
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85834f8820c41d6d0800000000000000
+      internalID: -2967507105689094056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_8
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 643
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e3ded248cbdbe530800000000000000
+      internalID: 3885440756699026405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_9
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 661
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbf6b768b9a51a550800000000000000
+      internalID: 6170312588496957375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_10
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 643
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8234ea8f5c00fe70800000000000000
+      internalID: 9146824447681114762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_11
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 657
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8204f33d757241b50800000000000000
+      internalID: 6562913815145431080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_12
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 643
+        width: 36
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52c0382777b7f9e40800000000000000
+      internalID: 5665382609207888933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_13
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 653
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 312c5dd7c8d6fc180800000000000000
+      internalID: -9092928672463732205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_14
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 647
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b89b24c73984ce050800000000000000
+      internalID: 5831115415820089739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_15
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 645
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f6c7983a93092030800000000000000
+      internalID: 3470308948774995698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_16
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 463
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a18a2a05c7affec30800000000000000
+      internalID: 4391003573545248794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_17
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 447
+        width: 52
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a939dd1f5bca0d10800000000000000
+      internalID: 2092708586250123687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_18
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 447
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 195f1204ea7397310800000000000000
+      internalID: 1403213980442424721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_19
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 443
+        width: 70
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8195540269a9a790800000000000000
+      internalID: -7518291864473726581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_20
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 431
+        width: 90
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b8bfba6c433303d0800000000000000
+      internalID: -3241690903475144527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_21
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 253
+        width: 66
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e2674baf3317cda0800000000000000
+      internalID: -5924745620605148444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_22
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 263
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff505bccf67219bd0800000000000000
+      internalID: -2625273746651019777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_23
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 311
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 442aa447e589f8350800000000000000
+      internalID: 6021198758263038532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_24
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 269
+        width: 52
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1540101ba1d6c6900800000000000000
+      internalID: 679037605232313425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_25
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 297
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4911d6e65143b3950800000000000000
+      internalID: 6429790159653114260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_26
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 299
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048b5cb81716f9350800000000000000
+      internalID: 6025641966749202496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_27
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 293
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a825124527d35750800000000000000
+      internalID: 6292609659389159584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_28
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 295
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7238fbc044b871ac0800000000000000
+      internalID: -3884483029195848921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_29
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 297
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1794a8187cf7bf690800000000000000
+      internalID: -7567314254017443471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_30
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 281
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea3b85338699baa0800000000000000
+      internalID: -6144714726287131929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_31
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 299
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc003d4e6d6fd1070800000000000000
+      internalID: 8078884709395005643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_32
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 295
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d926ebf0c8cc88390800000000000000
+      internalID: -7815772251369872739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_33
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 299
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4786e6db0a9ea3ea0800000000000000
+      internalID: -5892140285878704012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_34
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 291
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba0bd34ba8f638920800000000000000
+      internalID: 2991357219024253099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_35
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 280
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e81b6bc2a2cc3580800000000000000
+      internalID: -8845981563609212703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_36
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 283
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 130f9e325822aa860800000000000000
+      internalID: 7541878481213845553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_37
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 279
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 510288e8ef72ff3f0800000000000000
+      internalID: -864928629165383659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_38
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 277
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5a384198e3bec830800000000000000
+      internalID: 4093406922777573979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_39
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 263
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bd9dcbd5b63b9200800000000000000
+      internalID: 187803964170673587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_40
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 267
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a2954f1a60c25660800000000000000
+      internalID: 7373167101982642851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_41
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 271
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77de99bb69dc5f9f0800000000000000
+      internalID: -435215741695169161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_42
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 69
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2656a5c9e3f2d9770800000000000000
+      internalID: 8619097207814645090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_43
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 115
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62ecd43fbe2095e60800000000000000
+      internalID: 7951389829521853990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_44
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 121
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3107fc1da4b788620800000000000000
+      internalID: 2776604731551739923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_45
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 113
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f965b5b5241c6e940800000000000000
+      internalID: 5325156100156905119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_46
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 89
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb51ca21fa382800800000000000000
+      internalID: 587784558850694143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_47
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 85
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff3bd2c601e1ec860800000000000000
+      internalID: 7552006681030145023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_48
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 73
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 721726ab1a48b80f0800000000000000
+      internalID: -1113650652692451033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_49
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 95
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e21686b80cee80f00800000000000000
+      internalID: 1083378221122609454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_50
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 87
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7626473cf972fb40800000000000000
+      internalID: 5472570621374637691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_51
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 71
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4df55fefd878d0320800000000000000
+      internalID: 2525824009962348500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_52
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 73
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec1076960ff5c5e80800000000000000
+      internalID: -8188564536301256242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_53
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 65
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 585584519ef27ae70800000000000000
+      internalID: 9126315848020546949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Steam Eruption_54
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 71
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 650b32125f98de350800000000000000
+      internalID: 6047641560544424022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Steam Eruption_0: 6216846876944645348
+      PRAS- Steam Eruption_1: 4109569505311900275
+      PRAS- Steam Eruption_10: 9146824447681114762
+      PRAS- Steam Eruption_11: 6562913815145431080
+      PRAS- Steam Eruption_12: 5665382609207888933
+      PRAS- Steam Eruption_13: -9092928672463732205
+      PRAS- Steam Eruption_14: 5831115415820089739
+      PRAS- Steam Eruption_15: 3470308948774995698
+      PRAS- Steam Eruption_16: 4391003573545248794
+      PRAS- Steam Eruption_17: 2092708586250123687
+      PRAS- Steam Eruption_18: 1403213980442424721
+      PRAS- Steam Eruption_19: -7518291864473726581
+      PRAS- Steam Eruption_2: 7649501197308437289
+      PRAS- Steam Eruption_20: -3241690903475144527
+      PRAS- Steam Eruption_21: -5924745620605148444
+      PRAS- Steam Eruption_22: -2625273746651019777
+      PRAS- Steam Eruption_23: 6021198758263038532
+      PRAS- Steam Eruption_24: 679037605232313425
+      PRAS- Steam Eruption_25: 6429790159653114260
+      PRAS- Steam Eruption_26: 6025641966749202496
+      PRAS- Steam Eruption_27: 6292609659389159584
+      PRAS- Steam Eruption_28: -3884483029195848921
+      PRAS- Steam Eruption_29: -7567314254017443471
+      PRAS- Steam Eruption_3: 3201429669717103729
+      PRAS- Steam Eruption_30: -6144714726287131929
+      PRAS- Steam Eruption_31: 8078884709395005643
+      PRAS- Steam Eruption_32: -7815772251369872739
+      PRAS- Steam Eruption_33: -5892140285878704012
+      PRAS- Steam Eruption_34: 2991357219024253099
+      PRAS- Steam Eruption_35: -8845981563609212703
+      PRAS- Steam Eruption_36: 7541878481213845553
+      PRAS- Steam Eruption_37: -864928629165383659
+      PRAS- Steam Eruption_38: 4093406922777573979
+      PRAS- Steam Eruption_39: 187803964170673587
+      PRAS- Steam Eruption_4: -2446334392379086252
+      PRAS- Steam Eruption_40: 7373167101982642851
+      PRAS- Steam Eruption_41: -435215741695169161
+      PRAS- Steam Eruption_42: 8619097207814645090
+      PRAS- Steam Eruption_43: 7951389829521853990
+      PRAS- Steam Eruption_44: 2776604731551739923
+      PRAS- Steam Eruption_45: 5325156100156905119
+      PRAS- Steam Eruption_46: 587784558850694143
+      PRAS- Steam Eruption_47: 7552006681030145023
+      PRAS- Steam Eruption_48: -1113650652692451033
+      PRAS- Steam Eruption_49: 1083378221122609454
+      PRAS- Steam Eruption_5: -3532106196745677700
+      PRAS- Steam Eruption_50: 5472570621374637691
+      PRAS- Steam Eruption_51: 2525824009962348500
+      PRAS- Steam Eruption_52: -8188564536301256242
+      PRAS- Steam Eruption_53: 9126315848020546949
+      PRAS- Steam Eruption_54: 6047641560544424022
+      PRAS- Steam Eruption_6: 1692449187271985873
+      PRAS- Steam Eruption_7: -2967507105689094056
+      PRAS- Steam Eruption_8: 3885440756699026405
+      PRAS- Steam Eruption_9: 6170312588496957375
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

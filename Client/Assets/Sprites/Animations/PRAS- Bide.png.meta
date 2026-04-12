@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: a4ba766d0eb3b47f1bff9892f0ca7563
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1792250896138872384
+    second: PRAS- Bide_0
+  - first:
+      213: 3231028522601124418
+    second: PRAS- Bide_1
+  - first:
+      213: 7296422317677590391
+    second: PRAS- Bide_2
+  - first:
+      213: 5200652158868517729
+    second: PRAS- Bide_3
+  - first:
+      213: 4863454940023393770
+    second: PRAS- Bide_4
+  - first:
+      213: 6282240167298502208
+    second: PRAS- Bide_5
+  - first:
+      213: -7637262606362313372
+    second: PRAS- Bide_6
+  - first:
+      213: 1453383904624775156
+    second: PRAS- Bide_7
+  - first:
+      213: 861782964306132990
+    second: PRAS- Bide_8
+  - first:
+      213: -7192893778671329655
+    second: PRAS- Bide_9
+  - first:
+      213: 5875929173820389412
+    second: PRAS- Bide_10
+  - first:
+      213: -1512437690284477661
+    second: PRAS- Bide_11
+  - first:
+      213: 855415718547315929
+    second: PRAS- Bide_12
+  - first:
+      213: 2760744569863100474
+    second: PRAS- Bide_13
+  - first:
+      213: 1229579106211894623
+    second: PRAS- Bide_14
+  - first:
+      213: 7124952086378975734
+    second: PRAS- Bide_15
+  - first:
+      213: 765813807620949238
+    second: PRAS- Bide_16
+  - first:
+      213: -4584093328565437078
+    second: PRAS- Bide_17
+  - first:
+      213: 8793347787026338213
+    second: PRAS- Bide_18
+  - first:
+      213: 4902888405228433896
+    second: PRAS- Bide_19
+  - first:
+      213: -3435443284466277470
+    second: PRAS- Bide_20
+  - first:
+      213: 6207651052401902405
+    second: PRAS- Bide_21
+  - first:
+      213: -7311420254903650817
+    second: PRAS- Bide_22
+  - first:
+      213: -8033237703446474277
+    second: PRAS- Bide_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Bide_0
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 683
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 046abbcb1ba5fd810800000000000000
+      internalID: 1792250896138872384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bide_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 653
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2429bc4925be6dc20800000000000000
+      internalID: 3231028522601124418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bide_2
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 691
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 777b7689079124560800000000000000
+      internalID: 7296422317677590391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bide_3
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 683
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 163f9b1959d6c2840800000000000000
+      internalID: 5200652158868517729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bide_4
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 653
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aed863110867e7340800000000000000
+      internalID: 4863454940023393770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bide_5
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 665
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04e848db5200f2750800000000000000
+      internalID: 6282240167298502208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bide_6
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 665
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46d766b9f1ef20690800000000000000
+      internalID: -7637262606362313372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bide_7
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 659
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ff0e6df5f47b2410800000000000000
+      internalID: 1453383904624775156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bide_8
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 663
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eff33f44a0ba5fb00800000000000000
+      internalID: 861782964306132990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bide_9
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 663
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98e9d27c735bd2c90800000000000000
+      internalID: -7192893778671329655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bide_10
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 647
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4283bea937e7b8150800000000000000
+      internalID: 5875929173820389412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bide_11
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 639
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3237ea51fedb20be0800000000000000
+      internalID: -1512437690284477661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bide_12
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 647
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc5c47501c0fdb00800000000000000
+      internalID: 855415718547315929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bide_13
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 471
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a38574a2f82205620800000000000000
+      internalID: 2760744569863100474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bide_14
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 471
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f559009bea7501110800000000000000
+      internalID: 1229579106211894623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bide_15
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 471
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f11c464c2ae0e260800000000000000
+      internalID: 7124952086378975734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bide_16
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 471
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f4065fb997b0aa00800000000000000
+      internalID: 765813807620949238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bide_17
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 471
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d7e9db7670260c0800000000000000
+      internalID: -4584093328565437078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bide_18
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 275
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a11c20293f380a70800000000000000
+      internalID: 8793347787026338213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bide_19
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 265
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e1b507270f8a0440800000000000000
+      internalID: 4902888405228433896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bide_20
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 263
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a3e267d88ad250d0800000000000000
+      internalID: -3435443284466277470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bide_21
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 259
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 543cefb1eb1062650800000000000000
+      internalID: 6207651052401902405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bide_22
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 251
+        width: 72
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff53fd6040e988a90800000000000000
+      internalID: -7311420254903650817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Bide_23
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 65
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd15cc1eed4348090800000000000000
+      internalID: -8033237703446474277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Bide_0: 1792250896138872384
+      PRAS- Bide_1: 3231028522601124418
+      PRAS- Bide_10: 5875929173820389412
+      PRAS- Bide_11: -1512437690284477661
+      PRAS- Bide_12: 855415718547315929
+      PRAS- Bide_13: 2760744569863100474
+      PRAS- Bide_14: 1229579106211894623
+      PRAS- Bide_15: 7124952086378975734
+      PRAS- Bide_16: 765813807620949238
+      PRAS- Bide_17: -4584093328565437078
+      PRAS- Bide_18: 8793347787026338213
+      PRAS- Bide_19: 4902888405228433896
+      PRAS- Bide_2: 7296422317677590391
+      PRAS- Bide_20: -3435443284466277470
+      PRAS- Bide_21: 6207651052401902405
+      PRAS- Bide_22: -7311420254903650817
+      PRAS- Bide_23: -8033237703446474277
+      PRAS- Bide_3: 5200652158868517729
+      PRAS- Bide_4: 4863454940023393770
+      PRAS- Bide_5: 6282240167298502208
+      PRAS- Bide_6: -7637262606362313372
+      PRAS- Bide_7: 1453383904624775156
+      PRAS- Bide_8: 861782964306132990
+      PRAS- Bide_9: -7192893778671329655
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

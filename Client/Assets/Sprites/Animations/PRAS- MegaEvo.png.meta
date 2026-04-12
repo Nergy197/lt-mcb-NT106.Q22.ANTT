@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 35c98634c712643c790c907f5b6feee9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2076854995560289885
+    second: PRAS- MegaEvo_0
+  - first:
+      213: -8221852949617285086
+    second: PRAS- MegaEvo_1
+  - first:
+      213: -5088621854161784578
+    second: PRAS- MegaEvo_2
+  - first:
+      213: 9181659533292377571
+    second: PRAS- MegaEvo_3
+  - first:
+      213: -6821550106489567943
+    second: PRAS- MegaEvo_4
+  - first:
+      213: -3538895216478626491
+    second: PRAS- MegaEvo_5
+  - first:
+      213: 4003994804595981915
+    second: PRAS- MegaEvo_6
+  - first:
+      213: -2393675932515631269
+    second: PRAS- MegaEvo_7
+  - first:
+      213: -3303085584073635062
+    second: PRAS- MegaEvo_8
+  - first:
+      213: -659888141167174160
+    second: PRAS- MegaEvo_9
+  - first:
+      213: -4125001538739657558
+    second: PRAS- MegaEvo_10
+  - first:
+      213: 1522769807525091317
+    second: PRAS- MegaEvo_11
+  - first:
+      213: -3745915240858436127
+    second: PRAS- MegaEvo_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- MegaEvo_0
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 465
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d56dd546d9872dc10800000000000000
+      internalID: 2076854995560289885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- MegaEvo_1
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 463
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2286096bd4c16ed80800000000000000
+      internalID: -8221852949617285086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- MegaEvo_2
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 449
+        width: 70
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef0b56262659169b0800000000000000
+      internalID: -5088621854161784578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- MegaEvo_3
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 435
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e59872f2becb6f70800000000000000
+      internalID: 9181659533292377571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- MegaEvo_4
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 421
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 935492df15cf451a0800000000000000
+      internalID: -6821550106489567943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- MegaEvo_5
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 227
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d567cec8153eec0800000000000000
+      internalID: -3538895216478626491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- MegaEvo_6
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 219
+        width: 128
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5ef37a8f0c019730800000000000000
+      internalID: 4003994804595981915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- MegaEvo_7
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 227
+        width: 126
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5ff00feb64f7ced0800000000000000
+      internalID: -2393675932515631269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- MegaEvo_8
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 231
+        width: 124
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0bc39a69251922d0800000000000000
+      internalID: -3303085584073635062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- MegaEvo_9
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 233
+        width: 110
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fddc3a5b3b97d6f0800000000000000
+      internalID: -659888141167174160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- MegaEvo_10
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 51
+        width: 106
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa4ab79a4fc01c6c0800000000000000
+      internalID: -4125001538739657558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- MegaEvo_11
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 49
+        width: 94
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f7193c6217f12510800000000000000
+      internalID: 1522769807525091317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- MegaEvo_12
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 43
+        width: 104
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed39e56fe5d30cc0800000000000000
+      internalID: -3745915240858436127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- MegaEvo_0: 2076854995560289885
+      PRAS- MegaEvo_1: -8221852949617285086
+      PRAS- MegaEvo_10: -4125001538739657558
+      PRAS- MegaEvo_11: 1522769807525091317
+      PRAS- MegaEvo_12: -3745915240858436127
+      PRAS- MegaEvo_2: -5088621854161784578
+      PRAS- MegaEvo_3: 9181659533292377571
+      PRAS- MegaEvo_4: -6821550106489567943
+      PRAS- MegaEvo_5: -3538895216478626491
+      PRAS- MegaEvo_6: 4003994804595981915
+      PRAS- MegaEvo_7: -2393675932515631269
+      PRAS- MegaEvo_8: -3303085584073635062
+      PRAS- MegaEvo_9: -659888141167174160
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

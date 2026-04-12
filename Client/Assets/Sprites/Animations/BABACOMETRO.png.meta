@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: 72e428244cad64732962612c497068f5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 521869551359911833
+    second: BABACOMETRO_0
+  - first:
+      213: -7896687528797211478
+    second: BABACOMETRO_1
+  - first:
+      213: -702529843424230550
+    second: BABACOMETRO_2
+  - first:
+      213: -1133163491790945650
+    second: BABACOMETRO_3
+  - first:
+      213: -1334445368969901061
+    second: BABACOMETRO_4
+  - first:
+      213: -6826196144084465926
+    second: BABACOMETRO_5
+  - first:
+      213: -2180035785900132879
+    second: BABACOMETRO_6
+  - first:
+      213: -13564805864882887
+    second: BABACOMETRO_7
+  - first:
+      213: -1036924408275732188
+    second: BABACOMETRO_8
+  - first:
+      213: -7192073230654142804
+    second: BABACOMETRO_9
+  - first:
+      213: 9021256537943684846
+    second: BABACOMETRO_10
+  - first:
+      213: -7737061455966193658
+    second: BABACOMETRO_11
+  - first:
+      213: -3349783429512016539
+    second: BABACOMETRO_12
+  - first:
+      213: 1136710053397719079
+    second: BABACOMETRO_13
+  - first:
+      213: -5895163259960125482
+    second: BABACOMETRO_14
+  - first:
+      213: -2727663418722263292
+    second: BABACOMETRO_15
+  - first:
+      213: 4845666381415912991
+    second: BABACOMETRO_16
+  - first:
+      213: -5640570780097455843
+    second: BABACOMETRO_17
+  - first:
+      213: -2048363664518976985
+    second: BABACOMETRO_18
+  - first:
+      213: -8319229478586640681
+    second: BABACOMETRO_19
+  - first:
+      213: -5547371161022366444
+    second: BABACOMETRO_20
+  - first:
+      213: -1004434134873275976
+    second: BABACOMETRO_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BABACOMETRO_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 853
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99766eb879d0e3700800000000000000
+      internalID: 521869551359911833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABACOMETRO_1
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 833
+        width: 80
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa4f8cfe784596290800000000000000
+      internalID: -7896687528797211478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABACOMETRO_2
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 831
+        width: 134
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a63869e54dc1046f0800000000000000
+      internalID: -702529843424230550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABACOMETRO_3
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 833
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e820c57dec13640f0800000000000000
+      internalID: -1133163491790945650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABACOMETRO_4
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 837
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfb4262d1091b7de0800000000000000
+      internalID: -1334445368969901061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABACOMETRO_5
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 645
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af644b016ca7441a0800000000000000
+      internalID: -6826196144084465926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABACOMETRO_6
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 639
+        width: 68
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f578c7c005feb1e0800000000000000
+      internalID: -2180035785900132879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABACOMETRO_7
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 639
+        width: 68
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93df9f481eecfcff0800000000000000
+      internalID: -13564805864882887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABACOMETRO_8
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 651
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429fac99eba1c91f0800000000000000
+      internalID: -1036924408275732188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABACOMETRO_9
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 643
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca68340808f903c90800000000000000
+      internalID: -7192073230654142804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABACOMETRO_10
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 383
+        width: 152
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee6bdcb4601f13d70800000000000000
+      internalID: 9021256537943684846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABACOMETRO_11
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 383
+        width: 152
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 608b4c7399f60a490800000000000000
+      internalID: -7737061455966193658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABACOMETRO_12
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 551
+        width: 48
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56d427108bd2381d0800000000000000
+      internalID: -3349783429512016539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABACOMETRO_13
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 383
+        width: 152
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 728e26165c766cf00800000000000000
+      internalID: 1136710053397719079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABACOMETRO_14
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 451
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d7942dbf3c203ea0800000000000000
+      internalID: -5895163259960125482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABACOMETRO_15
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 451
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40f5b3c8294652ad0800000000000000
+      internalID: -2727663418722263292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABACOMETRO_16
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 257
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f16195486e34f3340800000000000000
+      internalID: 4845666381415912991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABACOMETRO_17
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 257
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19d7d1b2caa8b1b0800000000000000
+      internalID: -5640570780097455843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABACOMETRO_18
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 263
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a678d8910c293e0800000000000000
+      internalID: -2048363664518976985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABACOMETRO_19
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 263
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d692ebcdd82c8c80800000000000000
+      internalID: -8319229478586640681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABACOMETRO_20
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 249
+        width: 72
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41df30ef157c303b0800000000000000
+      internalID: -5547371161022366444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABACOMETRO_21
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 59
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b10a9ed9788f02f0800000000000000
+      internalID: -1004434134873275976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BABACOMETRO_0: 521869551359911833
+      BABACOMETRO_1: -7896687528797211478
+      BABACOMETRO_10: 9021256537943684846
+      BABACOMETRO_11: -7737061455966193658
+      BABACOMETRO_12: -3349783429512016539
+      BABACOMETRO_13: 1136710053397719079
+      BABACOMETRO_14: -5895163259960125482
+      BABACOMETRO_15: -2727663418722263292
+      BABACOMETRO_16: 4845666381415912991
+      BABACOMETRO_17: -5640570780097455843
+      BABACOMETRO_18: -2048363664518976985
+      BABACOMETRO_19: -8319229478586640681
+      BABACOMETRO_2: -702529843424230550
+      BABACOMETRO_20: -5547371161022366444
+      BABACOMETRO_21: -1004434134873275976
+      BABACOMETRO_3: -1133163491790945650
+      BABACOMETRO_4: -1334445368969901061
+      BABACOMETRO_5: -6826196144084465926
+      BABACOMETRO_6: -2180035785900132879
+      BABACOMETRO_7: -13564805864882887
+      BABACOMETRO_8: -1036924408275732188
+      BABACOMETRO_9: -7192073230654142804
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

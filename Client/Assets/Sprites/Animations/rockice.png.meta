@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: 7277f940c954a4d39964823904db4b63
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2823588321752475043
+    second: rockice_0
+  - first:
+      213: -6182109919898502701
+    second: rockice_1
+  - first:
+      213: 758588125845302034
+    second: rockice_2
+  - first:
+      213: -8570775570780450386
+    second: rockice_3
+  - first:
+      213: 2896574358961849063
+    second: rockice_4
+  - first:
+      213: -688378379018695763
+    second: rockice_5
+  - first:
+      213: 8607072443873395041
+    second: rockice_6
+  - first:
+      213: -476597221315836605
+    second: rockice_7
+  - first:
+      213: 5210952026136573193
+    second: rockice_8
+  - first:
+      213: -4792427423251565188
+    second: rockice_9
+  - first:
+      213: -576042128212151496
+    second: rockice_10
+  - first:
+      213: -3856263648824617904
+    second: rockice_11
+  - first:
+      213: 3183468637597891546
+    second: rockice_12
+  - first:
+      213: 7789298882827589197
+    second: rockice_13
+  - first:
+      213: -7893966377837037784
+    second: rockice_14
+  - first:
+      213: -1373499693686084889
+    second: rockice_15
+  - first:
+      213: 5252124346749703518
+    second: rockice_16
+  - first:
+      213: 4750393853993807492
+    second: rockice_17
+  - first:
+      213: 3455554396086517669
+    second: rockice_18
+  - first:
+      213: -2268587759386102075
+    second: rockice_19
+  - first:
+      213: -1249158165788787467
+    second: rockice_20
+  - first:
+      213: 2221213607997172648
+    second: rockice_21
+  - first:
+      213: -3780390858721369358
+    second: rockice_22
+  - first:
+      213: 4220504229874543017
+    second: rockice_23
+  - first:
+      213: 7972765106283930896
+    second: rockice_24
+  - first:
+      213: 2229839220220387646
+    second: rockice_25
+  - first:
+      213: -8940320364935415949
+    second: rockice_26
+  - first:
+      213: 1985507683664507625
+    second: rockice_27
+  - first:
+      213: -6920501314802017549
+    second: rockice_28
+  - first:
+      213: 5482599856997763258
+    second: rockice_29
+  - first:
+      213: -5414030854166998451
+    second: rockice_30
+  - first:
+      213: 257217839549369890
+    second: rockice_31
+  - first:
+      213: -8991460027894381006
+    second: rockice_32
+  - first:
+      213: -7665213950098233920
+    second: rockice_33
+  - first:
+      213: 2554196427884278555
+    second: rockice_34
+  - first:
+      213: 7447405520627658231
+    second: rockice_35
+  - first:
+      213: -7294916394659562420
+    second: rockice_36
+  - first:
+      213: -1028050971052879928
+    second: rockice_37
+  - first:
+      213: 422412153152743777
+    second: rockice_38
+  - first:
+      213: -7619474270332649007
+    second: rockice_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rockice_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 426
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5a9002a16990d8d0800000000000000
+      internalID: -2823588321752475043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_1
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 423
+        width: 117
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d9f70638cbb43aa0800000000000000
+      internalID: -6182109919898502701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_2
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 504
+        width: 44
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21ba6db91eb078a00800000000000000
+      internalID: 758588125845302034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_3
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 508
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea1190e370d7e0980800000000000000
+      internalID: -8570775570780450386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_4
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 487
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e20d636803b23820800000000000000
+      internalID: 2896574358961849063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_5
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 509
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dab088fe2836276f0800000000000000
+      internalID: -688378379018695763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_6
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 512
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 161802519c6727770800000000000000
+      internalID: 8607072443873395041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_7
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 495
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34508823a59c269f0800000000000000
+      internalID: -476597221315836605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_8
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 498
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 905f87b4245015840800000000000000
+      internalID: 5210952026136573193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_9
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 441
+        width: 44
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c75ff3166a0ed7db0800000000000000
+      internalID: -4792427423251565188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_10
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 462
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83331448cbc7108f0800000000000000
+      internalID: -576042128212151496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_11
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 477
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0549e8b84accb7ac0800000000000000
+      internalID: -3856263648824617904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_12
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 453
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adb7e91fbd3fd2c20800000000000000
+      internalID: 3183468637597891546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_13
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 467
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4619408016291c60800000000000000
+      internalID: 7789298882827589197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_14
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 424
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8277524476ff27290800000000000000
+      internalID: -7893966377837037784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_15
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 431
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eaabb24e4950fce0800000000000000
+      internalID: -1373499693686084889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_16
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 428
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e555234344b43e840800000000000000
+      internalID: 5252124346749703518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_17
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 459
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48eef72aa0acce140800000000000000
+      internalID: 4750393853993807492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_18
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 435
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5afb6c83a6894ff20800000000000000
+      internalID: 3455554396086517669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_19
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 435
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c6fdfbc37b5480e0800000000000000
+      internalID: -2268587759386102075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_20
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 219
+        width: 58
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc71eb34491aaee0800000000000000
+      internalID: -1249158165788787467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_21
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 275
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ab6fea020653de10800000000000000
+      internalID: 2221213607997172648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_22
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 289
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f267c91b8a598bc0800000000000000
+      internalID: -3780390858721369358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_23
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 279
+        width: 19
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a9a4b26c3e329a30800000000000000
+      internalID: 4220504229874543017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_24
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 307
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 015eea56f93f4ae60800000000000000
+      internalID: 7972765106283930896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_25
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 254
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e316873e4faf1fe10800000000000000
+      internalID: 2229839220220387646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_26
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 258
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37775d5fef99de380800000000000000
+      internalID: -8940320364935415949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_27
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 265
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e2b1a7f7b0fd8b10800000000000000
+      internalID: 1985507683664507625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_28
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 275
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa1a9778b075ff90800000000000000
+      internalID: -6920501314802017549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_29
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 265
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab885f9958b161c40800000000000000
+      internalID: 5482599856997763258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_30
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 276
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d421f567f9f7dd4b0800000000000000
+      internalID: -5414030854166998451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_31
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 277
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ecb342342d19300800000000000000
+      internalID: 257217839549369890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_32
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 226
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2364b315ebae73380800000000000000
+      internalID: -8991460027894381006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_33
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 240
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c5a6014680bf9590800000000000000
+      internalID: -7665213950098233920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_34
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 233
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b133d925e14527320800000000000000
+      internalID: 2554196427884278555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_35
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 79
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fd6b4becdf7a5760800000000000000
+      internalID: 7447405520627658231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_36
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 73
+        width: 113
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4cb42e603043ca90800000000000000
+      internalID: -7294916394659562420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_37
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 70
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cfc563b611abb1f0800000000000000
+      internalID: -1028050971052879928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_38
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 66
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1692a718d95bcd500800000000000000
+      internalID: 422412153152743777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rockice_39
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 69
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d108955580324690800000000000000
+      internalID: -7619474270332649007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      rockice_0: -2823588321752475043
+      rockice_1: -6182109919898502701
+      rockice_10: -576042128212151496
+      rockice_11: -3856263648824617904
+      rockice_12: 3183468637597891546
+      rockice_13: 7789298882827589197
+      rockice_14: -7893966377837037784
+      rockice_15: -1373499693686084889
+      rockice_16: 5252124346749703518
+      rockice_17: 4750393853993807492
+      rockice_18: 3455554396086517669
+      rockice_19: -2268587759386102075
+      rockice_2: 758588125845302034
+      rockice_20: -1249158165788787467
+      rockice_21: 2221213607997172648
+      rockice_22: -3780390858721369358
+      rockice_23: 4220504229874543017
+      rockice_24: 7972765106283930896
+      rockice_25: 2229839220220387646
+      rockice_26: -8940320364935415949
+      rockice_27: 1985507683664507625
+      rockice_28: -6920501314802017549
+      rockice_29: 5482599856997763258
+      rockice_3: -8570775570780450386
+      rockice_30: -5414030854166998451
+      rockice_31: 257217839549369890
+      rockice_32: -8991460027894381006
+      rockice_33: -7665213950098233920
+      rockice_34: 2554196427884278555
+      rockice_35: 7447405520627658231
+      rockice_36: -7294916394659562420
+      rockice_37: -1028050971052879928
+      rockice_38: 422412153152743777
+      rockice_39: -7619474270332649007
+      rockice_4: 2896574358961849063
+      rockice_5: -688378379018695763
+      rockice_6: 8607072443873395041
+      rockice_7: -476597221315836605
+      rockice_8: 5210952026136573193
+      rockice_9: -4792427423251565188
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

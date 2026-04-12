@@ -1,0 +1,1872 @@
+fileFormatVersion: 2
+guid: d2dacb1e87d1647f09c47879aab7a830
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8563490708813345299
+    second: PRAS- Healing Wish_0
+  - first:
+      213: -5370955480566847147
+    second: PRAS- Healing Wish_1
+  - first:
+      213: -5292285582386119681
+    second: PRAS- Healing Wish_2
+  - first:
+      213: 6503048791896027631
+    second: PRAS- Healing Wish_3
+  - first:
+      213: -7889231100123435623
+    second: PRAS- Healing Wish_4
+  - first:
+      213: 711022800176028413
+    second: PRAS- Healing Wish_5
+  - first:
+      213: -9152515729742193286
+    second: PRAS- Healing Wish_6
+  - first:
+      213: -5189869493723815221
+    second: PRAS- Healing Wish_7
+  - first:
+      213: -5679926246122723218
+    second: PRAS- Healing Wish_8
+  - first:
+      213: -6308387902037059718
+    second: PRAS- Healing Wish_9
+  - first:
+      213: 3977486506899883899
+    second: PRAS- Healing Wish_10
+  - first:
+      213: -1226530670205804394
+    second: PRAS- Healing Wish_11
+  - first:
+      213: 4480157166252203411
+    second: PRAS- Healing Wish_12
+  - first:
+      213: -5136197972542812565
+    second: PRAS- Healing Wish_13
+  - first:
+      213: -6235097461541959007
+    second: PRAS- Healing Wish_14
+  - first:
+      213: 8782343076380228954
+    second: PRAS- Healing Wish_15
+  - first:
+      213: -577967116713048496
+    second: PRAS- Healing Wish_16
+  - first:
+      213: 4678912155869847006
+    second: PRAS- Healing Wish_17
+  - first:
+      213: 1293624276986614037
+    second: PRAS- Healing Wish_18
+  - first:
+      213: -6693081684602979076
+    second: PRAS- Healing Wish_19
+  - first:
+      213: 3273428135228641488
+    second: PRAS- Healing Wish_20
+  - first:
+      213: -90118691724693799
+    second: PRAS- Healing Wish_21
+  - first:
+      213: -4583138043726884797
+    second: PRAS- Healing Wish_22
+  - first:
+      213: -2835029191284050684
+    second: PRAS- Healing Wish_23
+  - first:
+      213: -2066868183440025618
+    second: PRAS- Healing Wish_24
+  - first:
+      213: 3252380575483569330
+    second: PRAS- Healing Wish_25
+  - first:
+      213: -8672676044724171037
+    second: PRAS- Healing Wish_26
+  - first:
+      213: 8128865724457219880
+    second: PRAS- Healing Wish_27
+  - first:
+      213: 6739772474776180435
+    second: PRAS- Healing Wish_28
+  - first:
+      213: 4142644719704702292
+    second: PRAS- Healing Wish_29
+  - first:
+      213: -8864715763442908613
+    second: PRAS- Healing Wish_30
+  - first:
+      213: 8846543046713068668
+    second: PRAS- Healing Wish_31
+  - first:
+      213: -340368402407270319
+    second: PRAS- Healing Wish_32
+  - first:
+      213: 8577392736875026823
+    second: PRAS- Healing Wish_33
+  - first:
+      213: -3585835009686094878
+    second: PRAS- Healing Wish_34
+  - first:
+      213: -4736227120124488708
+    second: PRAS- Healing Wish_35
+  - first:
+      213: -2692185961888648098
+    second: PRAS- Healing Wish_36
+  - first:
+      213: 24547728235689776
+    second: PRAS- Healing Wish_37
+  - first:
+      213: 1935336093433499837
+    second: PRAS- Healing Wish_38
+  - first:
+      213: 1610765271931136874
+    second: PRAS- Healing Wish_39
+  - first:
+      213: -2118166337072150040
+    second: PRAS- Healing Wish_40
+  - first:
+      213: 4104150525125497923
+    second: PRAS- Healing Wish_41
+  - first:
+      213: 4413311692621591209
+    second: PRAS- Healing Wish_42
+  - first:
+      213: -5613986636833566606
+    second: PRAS- Healing Wish_43
+  - first:
+      213: 1748210160925428275
+    second: PRAS- Healing Wish_44
+  - first:
+      213: 133754574545277583
+    second: PRAS- Healing Wish_45
+  - first:
+      213: -7084549806913167672
+    second: PRAS- Healing Wish_46
+  - first:
+      213: -8235014452751209744
+    second: PRAS- Healing Wish_47
+  - first:
+      213: 5299515074268601162
+    second: PRAS- Healing Wish_48
+  - first:
+      213: -8079475907688379348
+    second: PRAS- Healing Wish_49
+  - first:
+      213: 7406970281034792879
+    second: PRAS- Healing Wish_50
+  - first:
+      213: 2133194653659571238
+    second: PRAS- Healing Wish_51
+  - first:
+      213: -2400228656889306607
+    second: PRAS- Healing Wish_52
+  - first:
+      213: -7408934341217023529
+    second: PRAS- Healing Wish_53
+  - first:
+      213: 1094578997350415146
+    second: PRAS- Healing Wish_54
+  - first:
+      213: -1321917312523381918
+    second: PRAS- Healing Wish_55
+  - first:
+      213: -4661780951260655114
+    second: PRAS- Healing Wish_56
+  - first:
+      213: 1512033724723876468
+    second: PRAS- Healing Wish_57
+  - first:
+      213: 3311605548568903651
+    second: PRAS- Healing Wish_58
+  - first:
+      213: -155424576532291515
+    second: PRAS- Healing Wish_59
+  - first:
+      213: -6447189098871389402
+    second: PRAS- Healing Wish_60
+  - first:
+      213: -5394899898580588172
+    second: PRAS- Healing Wish_61
+  - first:
+      213: -7366566420457459124
+    second: PRAS- Healing Wish_62
+  - first:
+      213: -1316479521774078813
+    second: PRAS- Healing Wish_63
+  - first:
+      213: 339980049365931097
+    second: PRAS- Healing Wish_64
+  - first:
+      213: 3794672094231336387
+    second: PRAS- Healing Wish_65
+  - first:
+      213: 5658357809594993197
+    second: PRAS- Healing Wish_66
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 691
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3127d28ad61a7d670800000000000000
+      internalID: 8563490708813345299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_1
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 695
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559206c62788675b0800000000000000
+      internalID: -5370955480566847147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_2
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 695
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb34f37d460e86b0800000000000000
+      internalID: -5292285582386119681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_3
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 693
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe1fefdeb687f3a50800000000000000
+      internalID: 6503048791896027631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_4
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 693
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99dad260d12d38290800000000000000
+      internalID: -7889231100123435623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_5
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 679
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfa12b7387f0ed900800000000000000
+      internalID: 711022800176028413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_6
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 675
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7d9a879f6bbbf080800000000000000
+      internalID: -9152515729742193286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_7
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 679
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc2a4fb4131e9f7b0800000000000000
+      internalID: -5189869493723815221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_8
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 675
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e68ef653c29dc21b0800000000000000
+      internalID: -5679926246122723218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_9
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 677
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7795b950aa1478a0800000000000000
+      internalID: -6308387902037059718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_10
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 673
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b774da687eed23730800000000000000
+      internalID: 3977486506899883899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_11
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 677
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 690e2489adc7afee0800000000000000
+      internalID: -1226530670205804394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_12
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 673
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39d1260b437bc2e30800000000000000
+      internalID: 4480157166252203411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_13
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 675
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e018e182f88b8b0800000000000000
+      internalID: -5136197972542812565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_14
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 677
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aa0ad8c4eb7879a0800000000000000
+      internalID: -6235097461541959007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_15
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 661
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5d31434f7621e970800000000000000
+      internalID: 8782343076380228954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_16
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 663
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 056467438f5aaf7f0800000000000000
+      internalID: -577967116713048496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_17
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 661
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edd11e9d0d5dee040800000000000000
+      internalID: 4678912155869847006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_18
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 663
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 511db9e0d60e3f110800000000000000
+      internalID: 1293624276986614037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_19
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 665
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfcf0985ba56d13a0800000000000000
+      internalID: -6693081684602979076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_20
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 661
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d0921eab8d8d6d20800000000000000
+      internalID: 3273428135228641488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_21
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 665
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9de60200785dfbef0800000000000000
+      internalID: -90118691724693799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_22
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 661
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34094135b3c6560c0800000000000000
+      internalID: -4583138043726884797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_23
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 663
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 405b6ad98f3f7a8d0800000000000000
+      internalID: -2835029191284050684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_24
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 659
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee7108086520153e0800000000000000
+      internalID: -2066868183440025618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_25
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 639
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b4241cc6e6c22d20800000000000000
+      internalID: 3252380575483569330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_26
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 645
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ee0d2e461774a780800000000000000
+      internalID: -8672676044724171037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_27
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 635
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 827fe1dce488fc070800000000000000
+      internalID: 8128865724457219880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_28
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 637
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d65df16b5b788d50800000000000000
+      internalID: 6739772474776180435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_29
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 645
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45d75a48c61ad7930800000000000000
+      internalID: 4142644719704702292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_30
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 639
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b320e2dfaf33af480800000000000000
+      internalID: -8864715763442908613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_31
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 637
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7cc88da70c35ca70800000000000000
+      internalID: 8846543046713068668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_32
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 643
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1585fb9cdb4c64bf0800000000000000
+      internalID: -340368402407270319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_33
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 639
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 789937ccf35090770800000000000000
+      internalID: 8577392736875026823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_34
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 641
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eb3088ae0e8c3ec0800000000000000
+      internalID: -3585835009686094878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_35
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 643
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf39861278a854eb0800000000000000
+      internalID: -4736227120124488708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_36
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 637
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e547558a12f63aad0800000000000000
+      internalID: -2692185961888648098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_37
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 641
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 037f78d5706375000800000000000000
+      internalID: 24547728235689776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_38
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 647
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db098125ce1bbda10800000000000000
+      internalID: 1935336093433499837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_39
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 637
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6badf90b769a5610800000000000000
+      internalID: 1610765271931136874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_40
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 633
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e9cf9f50f2ca92e0800000000000000
+      internalID: -2118166337072150040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_41
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 633
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34496da682fd4f830800000000000000
+      internalID: 4104150525125497923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_42
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 631
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a2b9c90a9b3f3d30800000000000000
+      internalID: 4413311692621591209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_43
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 631
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 270deb1e5ec1712b0800000000000000
+      internalID: -5613986636833566606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_44
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 629
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33a40b201e3e24810800000000000000
+      internalID: 1748210160925428275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_45
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 483
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f82dadea3113bd100800000000000000
+      internalID: 133754574545277583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_46
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 499
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ced0657c7f9ead90800000000000000
+      internalID: -7084549806913167672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_47
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 485
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fa6e877cf957bd80800000000000000
+      internalID: -8235014452751209744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_48
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 477
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4b9b9bc1e8ab8940800000000000000
+      internalID: 5299515074268601162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_49
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 475
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2c48e6087fefdf80800000000000000
+      internalID: -8079475907688379348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_50
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 475
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faf34fe0a38dac660800000000000000
+      internalID: 7406970281034792879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_51
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 471
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62424204c31aa9d10800000000000000
+      internalID: 2133194653659571238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_52
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 467
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1126666e0cca0bed0800000000000000
+      internalID: -2400228656889306607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_53
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 449
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d9019b887d2e2990800000000000000
+      internalID: -7408934341217023529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_54
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 455
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2bbcab7cc9b03f00800000000000000
+      internalID: 1094578997350415146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_55
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 443
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 263da94453b97ade0800000000000000
+      internalID: -1321917312523381918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_56
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 437
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f11d6b8ce60e4fb0800000000000000
+      internalID: -4661780951260655114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_57
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 281
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 472d39a59a2dbf410800000000000000
+      internalID: 1512033724723876468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_58
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 281
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef79a663bf25fd20800000000000000
+      internalID: 3311605548568903651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_59
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 269
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5406d6ecb22d7ddf0800000000000000
+      internalID: -155424576532291515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_60
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 261
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 623000a5cabf686a0800000000000000
+      internalID: -6447189098871389402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_61
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 253
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 479205a20277125b0800000000000000
+      internalID: -5394899898580588172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_62
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 53
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c42ff4eced2b4c990800000000000000
+      internalID: -7366566420457459124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_63
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 45
+        width: 102
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a4749699dceabde0800000000000000
+      internalID: -1316479521774078813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_64
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 37
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9541d29bd0ad7b400800000000000000
+      internalID: 339980049365931097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_65
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 31
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c51fb72a2269a430800000000000000
+      internalID: 3794672094231336387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Healing Wish_66
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 25
+        width: 142
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2a87f4d276868e40800000000000000
+      internalID: 5658357809594993197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Healing Wish_0: 8563490708813345299
+      PRAS- Healing Wish_1: -5370955480566847147
+      PRAS- Healing Wish_10: 3977486506899883899
+      PRAS- Healing Wish_11: -1226530670205804394
+      PRAS- Healing Wish_12: 4480157166252203411
+      PRAS- Healing Wish_13: -5136197972542812565
+      PRAS- Healing Wish_14: -6235097461541959007
+      PRAS- Healing Wish_15: 8782343076380228954
+      PRAS- Healing Wish_16: -577967116713048496
+      PRAS- Healing Wish_17: 4678912155869847006
+      PRAS- Healing Wish_18: 1293624276986614037
+      PRAS- Healing Wish_19: -6693081684602979076
+      PRAS- Healing Wish_2: -5292285582386119681
+      PRAS- Healing Wish_20: 3273428135228641488
+      PRAS- Healing Wish_21: -90118691724693799
+      PRAS- Healing Wish_22: -4583138043726884797
+      PRAS- Healing Wish_23: -2835029191284050684
+      PRAS- Healing Wish_24: -2066868183440025618
+      PRAS- Healing Wish_25: 3252380575483569330
+      PRAS- Healing Wish_26: -8672676044724171037
+      PRAS- Healing Wish_27: 8128865724457219880
+      PRAS- Healing Wish_28: 6739772474776180435
+      PRAS- Healing Wish_29: 4142644719704702292
+      PRAS- Healing Wish_3: 6503048791896027631
+      PRAS- Healing Wish_30: -8864715763442908613
+      PRAS- Healing Wish_31: 8846543046713068668
+      PRAS- Healing Wish_32: -340368402407270319
+      PRAS- Healing Wish_33: 8577392736875026823
+      PRAS- Healing Wish_34: -3585835009686094878
+      PRAS- Healing Wish_35: -4736227120124488708
+      PRAS- Healing Wish_36: -2692185961888648098
+      PRAS- Healing Wish_37: 24547728235689776
+      PRAS- Healing Wish_38: 1935336093433499837
+      PRAS- Healing Wish_39: 1610765271931136874
+      PRAS- Healing Wish_4: -7889231100123435623
+      PRAS- Healing Wish_40: -2118166337072150040
+      PRAS- Healing Wish_41: 4104150525125497923
+      PRAS- Healing Wish_42: 4413311692621591209
+      PRAS- Healing Wish_43: -5613986636833566606
+      PRAS- Healing Wish_44: 1748210160925428275
+      PRAS- Healing Wish_45: 133754574545277583
+      PRAS- Healing Wish_46: -7084549806913167672
+      PRAS- Healing Wish_47: -8235014452751209744
+      PRAS- Healing Wish_48: 5299515074268601162
+      PRAS- Healing Wish_49: -8079475907688379348
+      PRAS- Healing Wish_5: 711022800176028413
+      PRAS- Healing Wish_50: 7406970281034792879
+      PRAS- Healing Wish_51: 2133194653659571238
+      PRAS- Healing Wish_52: -2400228656889306607
+      PRAS- Healing Wish_53: -7408934341217023529
+      PRAS- Healing Wish_54: 1094578997350415146
+      PRAS- Healing Wish_55: -1321917312523381918
+      PRAS- Healing Wish_56: -4661780951260655114
+      PRAS- Healing Wish_57: 1512033724723876468
+      PRAS- Healing Wish_58: 3311605548568903651
+      PRAS- Healing Wish_59: -155424576532291515
+      PRAS- Healing Wish_6: -9152515729742193286
+      PRAS- Healing Wish_60: -6447189098871389402
+      PRAS- Healing Wish_61: -5394899898580588172
+      PRAS- Healing Wish_62: -7366566420457459124
+      PRAS- Healing Wish_63: -1316479521774078813
+      PRAS- Healing Wish_64: 339980049365931097
+      PRAS- Healing Wish_65: 3794672094231336387
+      PRAS- Healing Wish_66: 5658357809594993197
+      PRAS- Healing Wish_7: -5189869493723815221
+      PRAS- Healing Wish_8: -5679926246122723218
+      PRAS- Healing Wish_9: -6308387902037059718
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

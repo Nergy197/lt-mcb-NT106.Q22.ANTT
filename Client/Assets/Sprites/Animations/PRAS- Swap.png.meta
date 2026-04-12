@@ -1,0 +1,1144 @@
+fileFormatVersion: 2
+guid: 6cb9f4d389a8a4d6a99ecc056c516b69
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4362902514305402752
+    second: PRAS- Swap_0
+  - first:
+      213: 5569108947628644293
+    second: PRAS- Swap_1
+  - first:
+      213: 8196404810751463866
+    second: PRAS- Swap_2
+  - first:
+      213: -2960963728950776841
+    second: PRAS- Swap_3
+  - first:
+      213: -3295085669697754070
+    second: PRAS- Swap_4
+  - first:
+      213: -3541793794876888603
+    second: PRAS- Swap_5
+  - first:
+      213: -261909480065390393
+    second: PRAS- Swap_6
+  - first:
+      213: -2016733151491217265
+    second: PRAS- Swap_7
+  - first:
+      213: -831523725307682679
+    second: PRAS- Swap_8
+  - first:
+      213: -2287790306800918611
+    second: PRAS- Swap_9
+  - first:
+      213: -5313725911894959441
+    second: PRAS- Swap_10
+  - first:
+      213: 6475664903049867101
+    second: PRAS- Swap_11
+  - first:
+      213: 6446986252358378217
+    second: PRAS- Swap_12
+  - first:
+      213: 997233380189896323
+    second: PRAS- Swap_13
+  - first:
+      213: 3530397422671162215
+    second: PRAS- Swap_14
+  - first:
+      213: -336122200038417992
+    second: PRAS- Swap_15
+  - first:
+      213: 6511266847543759627
+    second: PRAS- Swap_16
+  - first:
+      213: 7067110460114803300
+    second: PRAS- Swap_17
+  - first:
+      213: -3807091813087272437
+    second: PRAS- Swap_18
+  - first:
+      213: 8820210617825618967
+    second: PRAS- Swap_19
+  - first:
+      213: -4512051847518489900
+    second: PRAS- Swap_20
+  - first:
+      213: -2547170410777361981
+    second: PRAS- Swap_21
+  - first:
+      213: 8484914423973706620
+    second: PRAS- Swap_22
+  - first:
+      213: 4118433518303568433
+    second: PRAS- Swap_23
+  - first:
+      213: -6538903117879092343
+    second: PRAS- Swap_24
+  - first:
+      213: 7346001566499917576
+    second: PRAS- Swap_25
+  - first:
+      213: 8776841193429548466
+    second: PRAS- Swap_26
+  - first:
+      213: 4737811611293039624
+    second: PRAS- Swap_27
+  - first:
+      213: -346921102157241674
+    second: PRAS- Swap_28
+  - first:
+      213: 7646127949702380318
+    second: PRAS- Swap_29
+  - first:
+      213: -7750588889710892152
+    second: PRAS- Swap_30
+  - first:
+      213: -4760523948032953666
+    second: PRAS- Swap_31
+  - first:
+      213: 1939915744871900167
+    second: PRAS- Swap_32
+  - first:
+      213: 2701127676333285641
+    second: PRAS- Swap_33
+  - first:
+      213: 5632024255074418191
+    second: PRAS- Swap_34
+  - first:
+      213: 4800462357474200240
+    second: PRAS- Swap_35
+  - first:
+      213: -8117471462390155900
+    second: PRAS- Swap_36
+  - first:
+      213: -8921842147140008705
+    second: PRAS- Swap_37
+  - first:
+      213: 2650728813449464778
+    second: PRAS- Swap_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Swap_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1423
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 088fa25674bd373c0800000000000000
+      internalID: -4362902514305402752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_1
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1423
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c7dadad413794d40800000000000000
+      internalID: 5569108947628644293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_2
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1423
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab1d42cbfba7fb170800000000000000
+      internalID: 8196404810751463866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_3
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1423
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fba2172d2b88e6d0800000000000000
+      internalID: -2960963728950776841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_4
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 1423
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2c6f21aa018542d0800000000000000
+      internalID: -3295085669697754070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_5
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1231
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e92eac0f4509dec0800000000000000
+      internalID: -3541793794876888603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_6
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1231
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8256d27b28d5cf0800000000000000
+      internalID: -261909480065390393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_7
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1231
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f88ac9242ef1304e0800000000000000
+      internalID: -2016733151491217265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_8
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1231
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 980e9b2d395d574f0800000000000000
+      internalID: -831523725307682679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_9
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 1231
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daf9c8256d22040e0800000000000000
+      internalID: -2287790306800918611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_10
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1039
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faa56bbbf6ad146b0800000000000000
+      internalID: -5313725911894959441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_11
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1039
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5f60c67bee2ed950800000000000000
+      internalID: 6475664903049867101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_12
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1039
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e2e5a3c6db487950800000000000000
+      internalID: 6446986252358378217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_13
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1039
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38e7168c972e6dd00800000000000000
+      internalID: 997233380189896323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_14
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 1039
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76be44640cd7ef030800000000000000
+      internalID: 3530397422671162215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_15
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 847
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b95691d3aad55bf0800000000000000
+      internalID: -336122200038417992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_16
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 847
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b039f9d13baac5a50800000000000000
+      internalID: 6511266847543759627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_17
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 847
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46a1793358b631260800000000000000
+      internalID: 7067110460114803300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_18
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 847
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b02a2a5ba2e7a2bc0800000000000000
+      internalID: -3807091813087272437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_19
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 847
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71cef9f43dea76a70800000000000000
+      internalID: 8820210617825618967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_20
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 655
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d2f38420c8f161c0800000000000000
+      internalID: -4512051847518489900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_21
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 655
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c1ca33c102a6acd0800000000000000
+      internalID: -2547170410777361981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_22
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 655
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7b7a8ea6b870c570800000000000000
+      internalID: 8484914423973706620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_23
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 655
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 132eb89e67d972930800000000000000
+      internalID: 4118433518303568433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_24
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 655
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98b5f1642462145a0800000000000000
+      internalID: -6538903117879092343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_25
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 463
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80fc0b2018d32f560800000000000000
+      internalID: 7346001566499917576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_26
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 463
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bd3260509a9dc970800000000000000
+      internalID: 8776841193429548466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_27
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 463
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80cb7d7fe8610c140800000000000000
+      internalID: 4737811611293039624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_28
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 463
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b2a4dc781d7f2bf0800000000000000
+      internalID: -346921102157241674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_29
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 463
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b323dfbd08c1a60800000000000000
+      internalID: 7646127949702380318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_30
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 271
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88b61bc1870607490800000000000000
+      internalID: -7750588889710892152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_31
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 271
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb271cc01b83fedb0800000000000000
+      internalID: -4760523948032953666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_32
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 271
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 704e6438717fbea10800000000000000
+      internalID: 1939915744871900167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_33
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 275
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90162d87f455c7520800000000000000
+      internalID: 2701127676333285641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_34
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 279
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e38126838f82e40800000000000000
+      internalID: 5632024255074418191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_35
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 81
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba42e6841bae9240800000000000000
+      internalID: 4800462357474200240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_36
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 65
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4853dd196b2f85f80800000000000000
+      internalID: -8117471462390155900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_37
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 33
+        width: 126
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff48c9d46df3f2480800000000000000
+      internalID: -8921842147140008705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Swap_38
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 63
+        width: 385
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acb4c89cfc749c420800000000000000
+      internalID: 2650728813449464778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Swap_0: -4362902514305402752
+      PRAS- Swap_1: 5569108947628644293
+      PRAS- Swap_10: -5313725911894959441
+      PRAS- Swap_11: 6475664903049867101
+      PRAS- Swap_12: 6446986252358378217
+      PRAS- Swap_13: 997233380189896323
+      PRAS- Swap_14: 3530397422671162215
+      PRAS- Swap_15: -336122200038417992
+      PRAS- Swap_16: 6511266847543759627
+      PRAS- Swap_17: 7067110460114803300
+      PRAS- Swap_18: -3807091813087272437
+      PRAS- Swap_19: 8820210617825618967
+      PRAS- Swap_2: 8196404810751463866
+      PRAS- Swap_20: -4512051847518489900
+      PRAS- Swap_21: -2547170410777361981
+      PRAS- Swap_22: 8484914423973706620
+      PRAS- Swap_23: 4118433518303568433
+      PRAS- Swap_24: -6538903117879092343
+      PRAS- Swap_25: 7346001566499917576
+      PRAS- Swap_26: 8776841193429548466
+      PRAS- Swap_27: 4737811611293039624
+      PRAS- Swap_28: -346921102157241674
+      PRAS- Swap_29: 7646127949702380318
+      PRAS- Swap_3: -2960963728950776841
+      PRAS- Swap_30: -7750588889710892152
+      PRAS- Swap_31: -4760523948032953666
+      PRAS- Swap_32: 1939915744871900167
+      PRAS- Swap_33: 2701127676333285641
+      PRAS- Swap_34: 5632024255074418191
+      PRAS- Swap_35: 4800462357474200240
+      PRAS- Swap_36: -8117471462390155900
+      PRAS- Swap_37: -8921842147140008705
+      PRAS- Swap_38: 2650728813449464778
+      PRAS- Swap_4: -3295085669697754070
+      PRAS- Swap_5: -3541793794876888603
+      PRAS- Swap_6: -261909480065390393
+      PRAS- Swap_7: -2016733151491217265
+      PRAS- Swap_8: -831523725307682679
+      PRAS- Swap_9: -2287790306800918611
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

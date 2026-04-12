@@ -1,0 +1,1040 @@
+fileFormatVersion: 2
+guid: 516247c12da16432eabe481452f53c29
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 64885803367361666
+    second: PRAS- King's Shield_0
+  - first:
+      213: -1756702827578699424
+    second: PRAS- King's Shield_1
+  - first:
+      213: 7067382050365100161
+    second: PRAS- King's Shield_2
+  - first:
+      213: -3611495661677955885
+    second: PRAS- King's Shield_3
+  - first:
+      213: 5309139053427064145
+    second: PRAS- King's Shield_4
+  - first:
+      213: 7898574199252090276
+    second: PRAS- King's Shield_5
+  - first:
+      213: 2668729312573354792
+    second: PRAS- King's Shield_6
+  - first:
+      213: 993131624441144104
+    second: PRAS- King's Shield_7
+  - first:
+      213: 1141461790719119541
+    second: PRAS- King's Shield_8
+  - first:
+      213: 6483076875684939317
+    second: PRAS- King's Shield_9
+  - first:
+      213: -4542548652797191865
+    second: PRAS- King's Shield_10
+  - first:
+      213: 5809040813377092740
+    second: PRAS- King's Shield_11
+  - first:
+      213: 3558620835210501590
+    second: PRAS- King's Shield_12
+  - first:
+      213: 779632368719947885
+    second: PRAS- King's Shield_13
+  - first:
+      213: 571294840693906296
+    second: PRAS- King's Shield_14
+  - first:
+      213: 349147322176067954
+    second: PRAS- King's Shield_15
+  - first:
+      213: 4284386912348267769
+    second: PRAS- King's Shield_16
+  - first:
+      213: 1995580331395712935
+    second: PRAS- King's Shield_17
+  - first:
+      213: -3961396035929157999
+    second: PRAS- King's Shield_18
+  - first:
+      213: -697677927181449683
+    second: PRAS- King's Shield_19
+  - first:
+      213: -4607674474720369390
+    second: PRAS- King's Shield_20
+  - first:
+      213: 3684201177738281552
+    second: PRAS- King's Shield_21
+  - first:
+      213: -8889987459705397317
+    second: PRAS- King's Shield_22
+  - first:
+      213: 1129542880395761071
+    second: PRAS- King's Shield_23
+  - first:
+      213: -6381600800182180531
+    second: PRAS- King's Shield_24
+  - first:
+      213: -8152781437899479847
+    second: PRAS- King's Shield_25
+  - first:
+      213: -1802560769565225237
+    second: PRAS- King's Shield_26
+  - first:
+      213: 4963823252276420067
+    second: PRAS- King's Shield_27
+  - first:
+      213: -7646643053312096170
+    second: PRAS- King's Shield_28
+  - first:
+      213: 261490433175285910
+    second: PRAS- King's Shield_29
+  - first:
+      213: 7216809851779071385
+    second: PRAS- King's Shield_30
+  - first:
+      213: -1775524685506114150
+    second: PRAS- King's Shield_31
+  - first:
+      213: -6396809031728480524
+    second: PRAS- King's Shield_32
+  - first:
+      213: -2084841560224178512
+    second: PRAS- King's Shield_33
+  - first:
+      213: 1422899226082252895
+    second: PRAS- King's Shield_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- King's Shield_0
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28c6dac5b4586e000800000000000000
+      internalID: 64885803367361666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 105
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0615f32f510fe97e0800000000000000
+      internalID: -1756702827578699424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_2
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 180dbfbb782641260800000000000000
+      internalID: 7067382050365100161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 105
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d432d984d361edc0800000000000000
+      internalID: -3611495661677955885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_4
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15d7cae07d9dda940800000000000000
+      internalID: 5309139053427064145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_5
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ad7c72c26f5d9d60800000000000000
+      internalID: 7898574199252090276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_6
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 105
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8237b959b2b390520800000000000000
+      internalID: 2668729312573354792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_7
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 823650a53ff48cd00800000000000000
+      internalID: 993131624441144104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_8
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 105
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b09e70737947df00800000000000000
+      internalID: 1141461790719119541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_9
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53600c2d11488f950800000000000000
+      internalID: 6483076875684939317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_10
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74918175110a5f0c0800000000000000
+      internalID: -4542548652797191865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_11
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 105
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48c761797dbdd9050800000000000000
+      internalID: 5809040813377092740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_12
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd96059bc2c26130800000000000000
+      internalID: 3558620835210501590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_13
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 105
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d68e2f8328fc1da00800000000000000
+      internalID: 779632368719947885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_14
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87bd29971a5ade700800000000000000
+      internalID: 571294840693906296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_15
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2795590c3ab68d400800000000000000
+      internalID: 349147322176067954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_16
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 105
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f4e9d67233357b30800000000000000
+      internalID: 4284386912348267769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_17
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a709950db9b1bb10800000000000000
+      internalID: 1995580331395712935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_18
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 105
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19e4dcf2b4b4609c0800000000000000
+      internalID: -3961396035929157999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_19
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2608b62f995156f0800000000000000
+      internalID: -697677927181449683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_20
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21568ad4a704e00c0800000000000000
+      internalID: -4607674474720369390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_21
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 105
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0528a209379e02330800000000000000
+      internalID: 3684201177738281552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_22
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbf159ea18b60a480800000000000000
+      internalID: -8889987459705397317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_23
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 105
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa59f80e341fcaf00800000000000000
+      internalID: 1129542880395761071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_24
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 79
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d45eac622efff67a0800000000000000
+      internalID: -6381600800182180531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_25
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 52
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d46a9e3a708bde80800000000000000
+      internalID: -8152781437899479847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_26
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 53
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee820cc7840cf6e0800000000000000
+      internalID: -1802560769565225237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_27
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 52
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ed92cfc2fa03e440800000000000000
+      internalID: 4963823252276420067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_28
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 53
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 658cf1b18aaa1e590800000000000000
+      internalID: -7646643053312096170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_29
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 52
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 690739dd92001a300800000000000000
+      internalID: 261490433175285910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_30
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 53
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99db4dae252472460800000000000000
+      internalID: 7216809851779071385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_31
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 52
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9d8876a4b11c57e0800000000000000
+      internalID: -1775524685506114150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_32
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 53
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe30dfc318f937a0800000000000000
+      internalID: -6396809031728480524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_33
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 52
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bedddd95a72113e0800000000000000
+      internalID: -2084841560224178512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- King's Shield_34
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 53
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f589fc9ae472fb310800000000000000
+      internalID: 1422899226082252895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- King's Shield_0: 64885803367361666
+      PRAS- King's Shield_1: -1756702827578699424
+      PRAS- King's Shield_10: -4542548652797191865
+      PRAS- King's Shield_11: 5809040813377092740
+      PRAS- King's Shield_12: 3558620835210501590
+      PRAS- King's Shield_13: 779632368719947885
+      PRAS- King's Shield_14: 571294840693906296
+      PRAS- King's Shield_15: 349147322176067954
+      PRAS- King's Shield_16: 4284386912348267769
+      PRAS- King's Shield_17: 1995580331395712935
+      PRAS- King's Shield_18: -3961396035929157999
+      PRAS- King's Shield_19: -697677927181449683
+      PRAS- King's Shield_2: 7067382050365100161
+      PRAS- King's Shield_20: -4607674474720369390
+      PRAS- King's Shield_21: 3684201177738281552
+      PRAS- King's Shield_22: -8889987459705397317
+      PRAS- King's Shield_23: 1129542880395761071
+      PRAS- King's Shield_24: -6381600800182180531
+      PRAS- King's Shield_25: -8152781437899479847
+      PRAS- King's Shield_26: -1802560769565225237
+      PRAS- King's Shield_27: 4963823252276420067
+      PRAS- King's Shield_28: -7646643053312096170
+      PRAS- King's Shield_29: 261490433175285910
+      PRAS- King's Shield_3: -3611495661677955885
+      PRAS- King's Shield_30: 7216809851779071385
+      PRAS- King's Shield_31: -1775524685506114150
+      PRAS- King's Shield_32: -6396809031728480524
+      PRAS- King's Shield_33: -2084841560224178512
+      PRAS- King's Shield_34: 1422899226082252895
+      PRAS- King's Shield_4: 5309139053427064145
+      PRAS- King's Shield_5: 7898574199252090276
+      PRAS- King's Shield_6: 2668729312573354792
+      PRAS- King's Shield_7: 993131624441144104
+      PRAS- King's Shield_8: 1141461790719119541
+      PRAS- King's Shield_9: 6483076875684939317
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

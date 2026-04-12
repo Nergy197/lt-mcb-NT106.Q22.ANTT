@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: ef9ea54133f5d4cdf965e63eef85f396
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4359860442923868635
+    second: PRAS- Magical Leaf_0
+  - first:
+      213: 6927924477066127606
+    second: PRAS- Magical Leaf_1
+  - first:
+      213: -1029327507911588025
+    second: PRAS- Magical Leaf_2
+  - first:
+      213: -3144471952627467561
+    second: PRAS- Magical Leaf_3
+  - first:
+      213: 1393263160607171143
+    second: PRAS- Magical Leaf_4
+  - first:
+      213: -5341359183226631689
+    second: PRAS- Magical Leaf_5
+  - first:
+      213: 7657500356540293578
+    second: PRAS- Magical Leaf_6
+  - first:
+      213: -236017297848218305
+    second: PRAS- Magical Leaf_7
+  - first:
+      213: -5208467402297109472
+    second: PRAS- Magical Leaf_8
+  - first:
+      213: 340821107547171704
+    second: PRAS- Magical Leaf_9
+  - first:
+      213: -2678953334600082378
+    second: PRAS- Magical Leaf_10
+  - first:
+      213: 69405503068118942
+    second: PRAS- Magical Leaf_11
+  - first:
+      213: -5798673367171481639
+    second: PRAS- Magical Leaf_12
+  - first:
+      213: -1553843935649603278
+    second: PRAS- Magical Leaf_13
+  - first:
+      213: 601399010452182331
+    second: PRAS- Magical Leaf_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Magical Leaf_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 463
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd121ca29f5518c30800000000000000
+      internalID: 4359860442923868635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magical Leaf_1
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 463
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f8a24e2b9ee42060800000000000000
+      internalID: 6927924477066127606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magical Leaf_2
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 463
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 747446dc51817b1f0800000000000000
+      internalID: -1029327507911588025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magical Leaf_3
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 463
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7daf5715b679c54d0800000000000000
+      internalID: -3144471952627467561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magical Leaf_4
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 487
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 742e0a6767dd55310800000000000000
+      internalID: 1393263160607171143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magical Leaf_5
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 295
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f981026f1eafd5b0800000000000000
+      internalID: -5341359183226631689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magical Leaf_6
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 297
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac1e20bc008e44a60800000000000000
+      internalID: 7657500356540293578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magical Leaf_7
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 293
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3dc8e0a48f79bcf0800000000000000
+      internalID: -236017297848218305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magical Leaf_8
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 295
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02411e54e7ec7b7b0800000000000000
+      internalID: -5208467402297109472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magical Leaf_9
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 297
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87bed47ddf6dab400800000000000000
+      internalID: 340821107547171704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magical Leaf_10
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 103
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63c5059c22272dad0800000000000000
+      internalID: -2678953334600082378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magical Leaf_11
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 103
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f15d3ffe396f000800000000000000
+      internalID: 69405503068118942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magical Leaf_12
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 103
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dfb9359b49f68fa0800000000000000
+      internalID: -5798673367171481639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magical Leaf_13
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 59
+        width: 72
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 231e5335c23af6ae0800000000000000
+      internalID: -1553843935649603278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Magical Leaf_14
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 65
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b351642b639985800800000000000000
+      internalID: 601399010452182331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Magical Leaf_0: 4359860442923868635
+      PRAS- Magical Leaf_1: 6927924477066127606
+      PRAS- Magical Leaf_10: -2678953334600082378
+      PRAS- Magical Leaf_11: 69405503068118942
+      PRAS- Magical Leaf_12: -5798673367171481639
+      PRAS- Magical Leaf_13: -1553843935649603278
+      PRAS- Magical Leaf_14: 601399010452182331
+      PRAS- Magical Leaf_2: -1029327507911588025
+      PRAS- Magical Leaf_3: -3144471952627467561
+      PRAS- Magical Leaf_4: 1393263160607171143
+      PRAS- Magical Leaf_5: -5341359183226631689
+      PRAS- Magical Leaf_6: 7657500356540293578
+      PRAS- Magical Leaf_7: -236017297848218305
+      PRAS- Magical Leaf_8: -5208467402297109472
+      PRAS- Magical Leaf_9: 340821107547171704
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

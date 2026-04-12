@@ -1,0 +1,1378 @@
+fileFormatVersion: 2
+guid: d2c6e73dce3f74ce69ef06a30f6908a8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5629406071698635567
+    second: electric1_0
+  - first:
+      213: -7514406269632726146
+    second: electric1_1
+  - first:
+      213: 3692109671799154117
+    second: electric1_2
+  - first:
+      213: 6418348578695890859
+    second: electric1_3
+  - first:
+      213: 7962916344254616745
+    second: electric1_4
+  - first:
+      213: 1588449859096706689
+    second: electric1_5
+  - first:
+      213: 5668153710532647189
+    second: electric1_6
+  - first:
+      213: -1982732514085415022
+    second: electric1_7
+  - first:
+      213: 7396998704502760194
+    second: electric1_8
+  - first:
+      213: 9107505294632571006
+    second: electric1_9
+  - first:
+      213: -6515005798004446877
+    second: electric1_10
+  - first:
+      213: -9191854144858165130
+    second: electric1_11
+  - first:
+      213: -7076295715491854562
+    second: electric1_12
+  - first:
+      213: -5856232467326289113
+    second: electric1_13
+  - first:
+      213: 8275788249688308904
+    second: electric1_14
+  - first:
+      213: 3687738160382306275
+    second: electric1_15
+  - first:
+      213: -4237697086713842820
+    second: electric1_16
+  - first:
+      213: -8881162218718797901
+    second: electric1_17
+  - first:
+      213: -3845802943411615929
+    second: electric1_18
+  - first:
+      213: 5235782854486116880
+    second: electric1_19
+  - first:
+      213: -6883856200119376053
+    second: electric1_20
+  - first:
+      213: -18282704554077094
+    second: electric1_21
+  - first:
+      213: 2223015093120483092
+    second: electric1_22
+  - first:
+      213: -1080613867735392461
+    second: electric1_23
+  - first:
+      213: 2577384637515572740
+    second: electric1_24
+  - first:
+      213: -1355434291639461356
+    second: electric1_25
+  - first:
+      213: 9169890330040859306
+    second: electric1_26
+  - first:
+      213: 3934513264842537058
+    second: electric1_27
+  - first:
+      213: -1333530147848703153
+    second: electric1_28
+  - first:
+      213: -4834727914177149731
+    second: electric1_29
+  - first:
+      213: -4158984066052510584
+    second: electric1_30
+  - first:
+      213: -6947206807212793072
+    second: electric1_31
+  - first:
+      213: 4345189201547659353
+    second: electric1_32
+  - first:
+      213: -2852062211231288962
+    second: electric1_33
+  - first:
+      213: 1717378872283275374
+    second: electric1_34
+  - first:
+      213: -5131903917749747471
+    second: electric1_35
+  - first:
+      213: 4063403766119321841
+    second: electric1_36
+  - first:
+      213: -1780515925950239681
+    second: electric1_37
+  - first:
+      213: 4042738673214480820
+    second: electric1_38
+  - first:
+      213: 6575521159364290992
+    second: electric1_39
+  - first:
+      213: 2837683301077419285
+    second: electric1_40
+  - first:
+      213: 8374100556912263405
+    second: electric1_41
+  - first:
+      213: -3383572581944597985
+    second: electric1_42
+  - first:
+      213: -1839847605490532019
+    second: electric1_43
+  - first:
+      213: 583045176564863086
+    second: electric1_44
+  - first:
+      213: -130050145675848871
+    second: electric1_45
+  - first:
+      213: -1315303911403360366
+    second: electric1_46
+  - first:
+      213: -7018603849180550269
+    second: electric1_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: electric1_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 424
+        width: 122
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d4c9ffe00550e1b0800000000000000
+      internalID: -5629406071698635567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_1
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 422
+        width: 122
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7bb2909f4777b790800000000000000
+      internalID: -7514406269632726146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_2
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 431
+        width: 102
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c56f535f220d3330800000000000000
+      internalID: 3692109671799154117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_3
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 416
+        width: 126
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba74dc5c60e821950800000000000000
+      internalID: 6418348578695890859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_4
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 506
+        width: 62
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a4d27bc936f18e60800000000000000
+      internalID: 7962916344254616745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_5
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 450
+        width: 70
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18e7afa1bbe4b0610800000000000000
+      internalID: 1588449859096706689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_6
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 414
+        width: 74
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5195c90c4c359ae40800000000000000
+      internalID: 5668153710532647189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_7
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 442
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 297525d884beb74e0800000000000000
+      internalID: -1982732514085415022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 307
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20369e9712b67a660800000000000000
+      internalID: 7396998704502760194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_9
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 334
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e705094dfcb546e70800000000000000
+      internalID: 9107505294632571006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_10
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 337
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 369a554aebc0695a0800000000000000
+      internalID: -6515005798004446877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_11
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 329
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 670f6841b59ff6080800000000000000
+      internalID: -9191854144858165130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_12
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 271
+        width: 58
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e174d70e982fbcd90800000000000000
+      internalID: -7076295715491854562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_13
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 287
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72b38ee399b7abea0800000000000000
+      internalID: -5856232467326289113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_14
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 302
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8acf50be09189d270800000000000000
+      internalID: 8275788249688308904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_15
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 310
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e76d32815a7d2330800000000000000
+      internalID: 3687738160382306275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_16
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 277
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c73b6b0b3fca035c0800000000000000
+      internalID: -4237697086713842820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_17
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 321
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bf55a83406cfb480800000000000000
+      internalID: -8881162218718797901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_18
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 321
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7478cc15996f0aac0800000000000000
+      internalID: -3845802943411615929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_19
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 285
+        width: 22
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ac9ba04cc39a840800000000000000
+      internalID: 5235782854486116880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_20
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 234
+        width: 114
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b47a30b1241a770a0800000000000000
+      internalID: -6883856200119376053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_21
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 302
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5455812afb0fbff0800000000000000
+      internalID: -18282704554077094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_22
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 301
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f37cbf27cb9de10800000000000000
+      internalID: 2223015093120483092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_23
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 309
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33f5542a963e001f0800000000000000
+      internalID: -1080613867735392461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_24
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 286
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4062aa81ca5b4c320800000000000000
+      internalID: 2577384637515572740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_25
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 266
+        width: 58
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a527271b7803de0800000000000000
+      internalID: -1355434291639461356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_26
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 281
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaaff57cbaef14f70800000000000000
+      internalID: 9169890330040859306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_27
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 285
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 268700be7f23a9630800000000000000
+      internalID: 3934513264842537058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 267
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f43343855695e7de0800000000000000
+      internalID: -1333530147848703153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_29
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 269
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd44ec9d39897ecb0800000000000000
+      internalID: -4834727914177149731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_30
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 273
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c2e64f6025846c0800000000000000
+      internalID: -4158984066052510584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_31
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 277
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 013e7ea7730969f90800000000000000
+      internalID: -6947206807212793072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_32
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 265
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9588c189e863d4c30800000000000000
+      internalID: 4345189201547659353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_33
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 265
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e717e3e97807b68d0800000000000000
+      internalID: -2852062211231288962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 235
+        width: 78
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e60a43b3cfa55d710800000000000000
+      internalID: 1717378872283275374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_35
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 234
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f04719a390d7c8b0800000000000000
+      internalID: -5131903917749747471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_36
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 234
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f0d68a423c146830800000000000000
+      internalID: 4063403766119321841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_37
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 241
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3c6fcce2365a47e0800000000000000
+      internalID: -1780515925950239681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_38
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 241
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b1eea86761ba1830800000000000000
+      internalID: 4042738673214480820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_39
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 241
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b929f4e7a1f04b50800000000000000
+      internalID: 6575521159364290992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_40
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 35
+        width: 170
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51507c97de9716720800000000000000
+      internalID: 2837683301077419285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_41
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 39
+        width: 128
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de00820b618c63470800000000000000
+      internalID: 8374100556912263405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_42
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 36
+        width: 199
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f12e075e9a22b01d0800000000000000
+      internalID: -3383572581944597985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_43
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 37
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4142e9c95c8776e0800000000000000
+      internalID: -1839847605490532019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_44
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 142
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e60572dbf74671800800000000000000
+      internalID: 583045176564863086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_45
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 119
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 953d000e418f13ef0800000000000000
+      internalID: -130050145675848871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_46
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 42
+        width: 68
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29fee15bf0a1fbde0800000000000000
+      internalID: -1315303911403360366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electric1_47
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 45
+        width: 149
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38b676e3cf8e89e90800000000000000
+      internalID: -7018603849180550269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      electric1_0: -5629406071698635567
+      electric1_1: -7514406269632726146
+      electric1_10: -6515005798004446877
+      electric1_11: -9191854144858165130
+      electric1_12: -7076295715491854562
+      electric1_13: -5856232467326289113
+      electric1_14: 8275788249688308904
+      electric1_15: 3687738160382306275
+      electric1_16: -4237697086713842820
+      electric1_17: -8881162218718797901
+      electric1_18: -3845802943411615929
+      electric1_19: 5235782854486116880
+      electric1_2: 3692109671799154117
+      electric1_20: -6883856200119376053
+      electric1_21: -18282704554077094
+      electric1_22: 2223015093120483092
+      electric1_23: -1080613867735392461
+      electric1_24: 2577384637515572740
+      electric1_25: -1355434291639461356
+      electric1_26: 9169890330040859306
+      electric1_27: 3934513264842537058
+      electric1_28: -1333530147848703153
+      electric1_29: -4834727914177149731
+      electric1_3: 6418348578695890859
+      electric1_30: -4158984066052510584
+      electric1_31: -6947206807212793072
+      electric1_32: 4345189201547659353
+      electric1_33: -2852062211231288962
+      electric1_34: 1717378872283275374
+      electric1_35: -5131903917749747471
+      electric1_36: 4063403766119321841
+      electric1_37: -1780515925950239681
+      electric1_38: 4042738673214480820
+      electric1_39: 6575521159364290992
+      electric1_4: 7962916344254616745
+      electric1_40: 2837683301077419285
+      electric1_41: 8374100556912263405
+      electric1_42: -3383572581944597985
+      electric1_43: -1839847605490532019
+      electric1_44: 583045176564863086
+      electric1_45: -130050145675848871
+      electric1_46: -1315303911403360366
+      electric1_47: -7018603849180550269
+      electric1_5: 1588449859096706689
+      electric1_6: 5668153710532647189
+      electric1_7: -1982732514085415022
+      electric1_8: 7396998704502760194
+      electric1_9: 9107505294632571006
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

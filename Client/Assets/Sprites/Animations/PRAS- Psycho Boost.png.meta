@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: d1b55a13fee764b27bb757a8d8ab3013
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2876544884190358312
+    second: PRAS- Psycho Boost_0
+  - first:
+      213: -5921973167070328286
+    second: PRAS- Psycho Boost_1
+  - first:
+      213: 9110217940075182345
+    second: PRAS- Psycho Boost_2
+  - first:
+      213: -6223675694077697768
+    second: PRAS- Psycho Boost_3
+  - first:
+      213: -5160123792297406707
+    second: PRAS- Psycho Boost_4
+  - first:
+      213: -4490076499827227703
+    second: PRAS- Psycho Boost_5
+  - first:
+      213: 7247648119016242334
+    second: PRAS- Psycho Boost_6
+  - first:
+      213: 3566611403268946997
+    second: PRAS- Psycho Boost_7
+  - first:
+      213: -2929712027374531736
+    second: PRAS- Psycho Boost_8
+  - first:
+      213: 5799809850403500111
+    second: PRAS- Psycho Boost_9
+  - first:
+      213: 7151547927901532331
+    second: PRAS- Psycho Boost_10
+  - first:
+      213: 556098855827269914
+    second: PRAS- Psycho Boost_11
+  - first:
+      213: 3358839348297022433
+    second: PRAS- Psycho Boost_12
+  - first:
+      213: -8459497295545692817
+    second: PRAS- Psycho Boost_13
+  - first:
+      213: 305450025033198164
+    second: PRAS- Psycho Boost_14
+  - first:
+      213: -3802080263334697580
+    second: PRAS- Psycho Boost_15
+  - first:
+      213: 6340381278788604550
+    second: PRAS- Psycho Boost_16
+  - first:
+      213: 8711878369232745745
+    second: PRAS- Psycho Boost_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Psycho Boost_0
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 263
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d4dd5d1ba57418d0800000000000000
+      internalID: -2876544884190358312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psycho Boost_1
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 263
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ac06fc7cce0dda0800000000000000
+      internalID: -5921973167070328286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psycho Boost_2
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 263
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9097290d2fefd6e70800000000000000
+      internalID: 9110217940075182345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psycho Boost_3
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 263
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81124414eef01a9a0800000000000000
+      internalID: -6223675694077697768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psycho Boost_4
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 277
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0f421b10ce8368b0800000000000000
+      internalID: -5160123792297406707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psycho Boost_5
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 69
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c3087d763b00b1c0800000000000000
+      internalID: -4490076499827227703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psycho Boost_6
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 115
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9cbdf68091d49460800000000000000
+      internalID: 7247648119016242334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psycho Boost_7
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 121
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53cf3bfac262f7130800000000000000
+      internalID: 3566611403268946997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psycho Boost_8
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 113
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86bc622fe629757d0800000000000000
+      internalID: -2929712027374531736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psycho Boost_9
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 65
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f40bc1a84501d7050800000000000000
+      internalID: 5799809850403500111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psycho Boost_10
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 35
+        width: 124
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba070cc23f66f3360800000000000000
+      internalID: 7151547927901532331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psycho Boost_11
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 73
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a19e59986f8a7b700800000000000000
+      internalID: 556098855827269914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psycho Boost_12
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 95
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eb39d4679efc9e20800000000000000
+      internalID: 3358839348297022433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psycho Boost_13
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 87
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6d0f90b704d99a80800000000000000
+      internalID: -8459497295545692817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psycho Boost_14
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 71
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45aecbeed2d2d3400800000000000000
+      internalID: 305450025033198164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psycho Boost_15
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 73
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4956960152c4c3bc0800000000000000
+      internalID: -3802080263334697580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psycho Boost_16
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 65
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6825bb62e2f8df750800000000000000
+      internalID: 6340381278788604550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Psycho Boost_17
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 71
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 115f684283fc6e870800000000000000
+      internalID: 8711878369232745745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Psycho Boost_0: -2876544884190358312
+      PRAS- Psycho Boost_1: -5921973167070328286
+      PRAS- Psycho Boost_10: 7151547927901532331
+      PRAS- Psycho Boost_11: 556098855827269914
+      PRAS- Psycho Boost_12: 3358839348297022433
+      PRAS- Psycho Boost_13: -8459497295545692817
+      PRAS- Psycho Boost_14: 305450025033198164
+      PRAS- Psycho Boost_15: -3802080263334697580
+      PRAS- Psycho Boost_16: 6340381278788604550
+      PRAS- Psycho Boost_17: 8711878369232745745
+      PRAS- Psycho Boost_2: 9110217940075182345
+      PRAS- Psycho Boost_3: -6223675694077697768
+      PRAS- Psycho Boost_4: -5160123792297406707
+      PRAS- Psycho Boost_5: -4490076499827227703
+      PRAS- Psycho Boost_6: 7247648119016242334
+      PRAS- Psycho Boost_7: 3566611403268946997
+      PRAS- Psycho Boost_8: -2929712027374531736
+      PRAS- Psycho Boost_9: 5799809850403500111
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

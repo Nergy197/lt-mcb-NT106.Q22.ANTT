@@ -114,15 +114,6 @@ builder.Services.AddCors(opt =>
 var app = builder.Build();
 
 // ---------------------------------------------------------------------------
-// Seed Database
-// ---------------------------------------------------------------------------
-using (var scope = app.Services.CreateScope())
-{
-    var pokedexService = scope.ServiceProvider.GetRequiredService<PokedexService>();
-    await pokedexService.SeedDatabaseAsync();
-}
-
-// ---------------------------------------------------------------------------
 // Middleware pipeline
 // ---------------------------------------------------------------------------
 app.UseCors();

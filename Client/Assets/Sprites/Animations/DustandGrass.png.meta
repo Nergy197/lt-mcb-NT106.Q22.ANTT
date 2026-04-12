@@ -1,0 +1,884 @@
+fileFormatVersion: 2
+guid: a34126d4d6ac54811b6ebc910c683190
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3069227631137796512
+    second: DustandGrass_0
+  - first:
+      213: 6146606289465964679
+    second: DustandGrass_1
+  - first:
+      213: 2705313482770383024
+    second: DustandGrass_2
+  - first:
+      213: 9162229954069406986
+    second: DustandGrass_3
+  - first:
+      213: -8891894546188937560
+    second: DustandGrass_4
+  - first:
+      213: 7774731350107592277
+    second: DustandGrass_5
+  - first:
+      213: -2712152580541361128
+    second: DustandGrass_6
+  - first:
+      213: -1422072403430279618
+    second: DustandGrass_7
+  - first:
+      213: -5793103543227613313
+    second: DustandGrass_8
+  - first:
+      213: -2862817184772204185
+    second: DustandGrass_9
+  - first:
+      213: 5421340695745139472
+    second: DustandGrass_10
+  - first:
+      213: 7941308281152390369
+    second: DustandGrass_11
+  - first:
+      213: 8921273817322202000
+    second: DustandGrass_12
+  - first:
+      213: -4596822694273231367
+    second: DustandGrass_13
+  - first:
+      213: 6158601023295142741
+    second: DustandGrass_14
+  - first:
+      213: -4256034932931322364
+    second: DustandGrass_15
+  - first:
+      213: -91496943384774901
+    second: DustandGrass_16
+  - first:
+      213: 4891801114283128162
+    second: DustandGrass_17
+  - first:
+      213: -8102824220527840457
+    second: DustandGrass_18
+  - first:
+      213: 1590678824734091285
+    second: DustandGrass_19
+  - first:
+      213: -155997121085922259
+    second: DustandGrass_20
+  - first:
+      213: -7745182888675837414
+    second: DustandGrass_21
+  - first:
+      213: -417339681518132344
+    second: DustandGrass_22
+  - first:
+      213: -4413757498956893256
+    second: DustandGrass_23
+  - first:
+      213: 6106653575019362192
+    second: DustandGrass_24
+  - first:
+      213: 6132371779908453867
+    second: DustandGrass_25
+  - first:
+      213: -3102282905562449440
+    second: DustandGrass_26
+  - first:
+      213: 1775086311037968203
+    second: DustandGrass_27
+  - first:
+      213: -404246173719884285
+    second: DustandGrass_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DustandGrass_0
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 293
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a138c0e446189a20800000000000000
+      internalID: 3069227631137796512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_1
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 283
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 788fcc9aad12d4550800000000000000
+      internalID: 6146606289465964679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_2
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 289
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b08a9a77443b8520800000000000000
+      internalID: 2705313482770383024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_3
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 271
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0520c28997c62f70800000000000000
+      internalID: 9162229954069406986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_4
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 273
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a6dc228505a99480800000000000000
+      internalID: -8891894546188937560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_5
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 273
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 556914b78f465eb60800000000000000
+      internalID: 7774731350107592277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_6
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 273
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8145c2cf89f7c5ad0800000000000000
+      internalID: -2712152580541361128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_7
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 273
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e36f6acfea8c34ce0800000000000000
+      internalID: -1422072403430279618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_8
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 281
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7f7cd64503ca9fa0800000000000000
+      internalID: -5793103543227613313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_9
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 281
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 769d4c430fa3548d0800000000000000
+      internalID: -2862817184772204185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_10
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 125
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0131248a3a87c3b40800000000000000
+      internalID: 5421340695745139472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_11
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 119
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e4c4fd8ec1353e60800000000000000
+      internalID: 7941308281152390369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_12
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 129
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 093ab79154bbecb70800000000000000
+      internalID: 8921273817322202000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_13
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 123
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f5d3645d1ec430c0800000000000000
+      internalID: -4596822694273231367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_14
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 115
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55b3dd2400fb77550800000000000000
+      internalID: 6158601023295142741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_15
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40e99f627c68fe4c0800000000000000
+      internalID: -4256034932931322364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_16
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 97
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b073487c300fabef0800000000000000
+      internalID: -91496943384774901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_17
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 93
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 265b4b0123b23e340800000000000000
+      internalID: 4891801114283128162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_18
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 95
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 733b1025d4cfc8f80800000000000000
+      internalID: -8102824220527840457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_19
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 101
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 518e20c96f9331610800000000000000
+      internalID: 1590678824734091285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_20
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 91
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d24a0b3e179c5ddf0800000000000000
+      internalID: -155997121085922259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_21
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1afa00d235938490800000000000000
+      internalID: -7745182888675837414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_22
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 87
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883ef6455cf453af0800000000000000
+      internalID: -417339681518132344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_23
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 93
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b335f590fe2fb2c0800000000000000
+      internalID: -4413757498956893256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_24
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 85
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 097f56172113fb450800000000000000
+      internalID: 6106653575019362192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_25
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 87
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be5c214a4af8a1550800000000000000
+      internalID: 6132371779908453867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_26
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 83
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e9fe2d422a72f4d0800000000000000
+      internalID: -3102282905562449440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_27
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 87
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4f9317589f52a810800000000000000
+      internalID: 1775086311037968203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustandGrass_28
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 85
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e8d9d2f34d36af0800000000000000
+      internalID: -404246173719884285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DustandGrass_0: 3069227631137796512
+      DustandGrass_1: 6146606289465964679
+      DustandGrass_10: 5421340695745139472
+      DustandGrass_11: 7941308281152390369
+      DustandGrass_12: 8921273817322202000
+      DustandGrass_13: -4596822694273231367
+      DustandGrass_14: 6158601023295142741
+      DustandGrass_15: -4256034932931322364
+      DustandGrass_16: -91496943384774901
+      DustandGrass_17: 4891801114283128162
+      DustandGrass_18: -8102824220527840457
+      DustandGrass_19: 1590678824734091285
+      DustandGrass_2: 2705313482770383024
+      DustandGrass_20: -155997121085922259
+      DustandGrass_21: -7745182888675837414
+      DustandGrass_22: -417339681518132344
+      DustandGrass_23: -4413757498956893256
+      DustandGrass_24: 6106653575019362192
+      DustandGrass_25: 6132371779908453867
+      DustandGrass_26: -3102282905562449440
+      DustandGrass_27: 1775086311037968203
+      DustandGrass_28: -404246173719884285
+      DustandGrass_3: 9162229954069406986
+      DustandGrass_4: -8891894546188937560
+      DustandGrass_5: 7774731350107592277
+      DustandGrass_6: -2712152580541361128
+      DustandGrass_7: -1422072403430279618
+      DustandGrass_8: -5793103543227613313
+      DustandGrass_9: -2862817184772204185
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: 0908e0d57f4234f7899904a0987b9cc9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7799087395572056744
+    second: anim sheet_0
+  - first:
+      213: 6521626711203379911
+    second: anim sheet_1
+  - first:
+      213: 6038867153755457047
+    second: anim sheet_2
+  - first:
+      213: -7851103370392115156
+    second: anim sheet_3
+  - first:
+      213: 2661768442271334365
+    second: anim sheet_4
+  - first:
+      213: -3580459982210550347
+    second: anim sheet_5
+  - first:
+      213: -7394256714357606047
+    second: anim sheet_6
+  - first:
+      213: 3427545276395713120
+    second: anim sheet_7
+  - first:
+      213: 7316305417446412995
+    second: anim sheet_8
+  - first:
+      213: 251323824190779371
+    second: anim sheet_9
+  - first:
+      213: -8314767251713808977
+    second: anim sheet_10
+  - first:
+      213: -4715546950345107436
+    second: anim sheet_11
+  - first:
+      213: 7216624753435404530
+    second: anim sheet_12
+  - first:
+      213: -5178718154024997988
+    second: anim sheet_13
+  - first:
+      213: -3970004164804364027
+    second: anim sheet_14
+  - first:
+      213: 2359928761807602686
+    second: anim sheet_15
+  - first:
+      213: -8391662801855930410
+    second: anim sheet_16
+  - first:
+      213: -4386965542015355898
+    second: anim sheet_17
+  - first:
+      213: -3740147665114893483
+    second: anim sheet_18
+  - first:
+      213: 1544063802513247694
+    second: anim sheet_19
+  - first:
+      213: -8996610262670598841
+    second: anim sheet_20
+  - first:
+      213: 7009673576907888368
+    second: anim sheet_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: anim sheet_0
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 667
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a28c493aaceb3c60800000000000000
+      internalID: 7799087395572056744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim sheet_1
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 669
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7caf9f6d0f8718a50800000000000000
+      internalID: 6521626711203379911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim sheet_2
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 669
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7164e595ead5ec350800000000000000
+      internalID: 6038867153755457047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim sheet_3
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 669
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c28e7e0e4174b0390800000000000000
+      internalID: -7851103370392115156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim sheet_4
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 655
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddf7debab4080f420800000000000000
+      internalID: 2661768442271334365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim sheet_5
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 685
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b5b6d3cd96af4ec0800000000000000
+      internalID: -3580459982210550347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim sheet_6
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 508
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169faaad1b2526990800000000000000
+      internalID: -7394256714357606047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim sheet_7
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 452
+        width: 64
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 062722bd446119f20800000000000000
+      internalID: 3427545276395713120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim sheet_8
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 457
+        width: 52
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c2d823830db88560800000000000000
+      internalID: 7316305417446412995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim sheet_9
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 404
+        width: 176
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: befeb70cfa1ec7300800000000000000
+      internalID: 251323824190779371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim sheet_10
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 486
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa52c83fc330c9c80800000000000000
+      internalID: -8314767251713808977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim sheet_11
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 496
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 418d00f58030f8eb0800000000000000
+      internalID: -4715546950345107436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim sheet_12
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 467
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f8eec95af9962460800000000000000
+      internalID: 7216624753435404530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim sheet_13
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 482
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b2975e64f7128b0800000000000000
+      internalID: -5178718154024997988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim sheet_14
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 467
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 509b3000f36b7e8c0800000000000000
+      internalID: -3970004164804364027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim sheet_15
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 275
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef305c694b620c020800000000000000
+      internalID: 2359928761807602686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim sheet_16
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 275
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6df94848423da8b80800000000000000
+      internalID: -8391662801855930410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim sheet_17
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 265
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 604bb4a251e5e13c0800000000000000
+      internalID: -4386965542015355898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim sheet_18
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 232
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 553f155c383581cc0800000000000000
+      internalID: -3740147665114893483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim sheet_19
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 12
+        width: 170
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecd475bf8dd9d6510800000000000000
+      internalID: 1544063802513247694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim sheet_20
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 18
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d92e6d1ae952380800000000000000
+      internalID: -8996610262670598841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim sheet_21
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 0
+        width: 273
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f65907bafc574160800000000000000
+      internalID: 7009673576907888368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      anim sheet_0: 7799087395572056744
+      anim sheet_1: 6521626711203379911
+      anim sheet_10: -8314767251713808977
+      anim sheet_11: -4715546950345107436
+      anim sheet_12: 7216624753435404530
+      anim sheet_13: -5178718154024997988
+      anim sheet_14: -3970004164804364027
+      anim sheet_15: 2359928761807602686
+      anim sheet_16: -8391662801855930410
+      anim sheet_17: -4386965542015355898
+      anim sheet_18: -3740147665114893483
+      anim sheet_19: 1544063802513247694
+      anim sheet_2: 6038867153755457047
+      anim sheet_20: -8996610262670598841
+      anim sheet_21: 7009673576907888368
+      anim sheet_3: -7851103370392115156
+      anim sheet_4: 2661768442271334365
+      anim sheet_5: -3580459982210550347
+      anim sheet_6: -7394256714357606047
+      anim sheet_7: 3427545276395713120
+      anim sheet_8: 7316305417446412995
+      anim sheet_9: 251323824190779371
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

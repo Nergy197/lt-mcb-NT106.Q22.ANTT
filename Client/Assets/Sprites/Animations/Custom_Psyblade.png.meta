@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 293b264579c5e4e45b0c4b48061b4fa5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2347052720641762642
+    second: Custom_Psyblade_0
+  - first:
+      213: -1123837443095437892
+    second: Custom_Psyblade_1
+  - first:
+      213: -2537635802475663761
+    second: Custom_Psyblade_2
+  - first:
+      213: -4916920477132571296
+    second: Custom_Psyblade_3
+  - first:
+      213: -9100901112767088828
+    second: Custom_Psyblade_4
+  - first:
+      213: -4960670545164096105
+    second: Custom_Psyblade_5
+  - first:
+      213: -2665986521738202583
+    second: Custom_Psyblade_6
+  - first:
+      213: 4959547967870128490
+    second: Custom_Psyblade_7
+  - first:
+      213: -1834066520083899252
+    second: Custom_Psyblade_8
+  - first:
+      213: 3770639459203488455
+    second: Custom_Psyblade_9
+  - first:
+      213: -7841331602759095414
+    second: Custom_Psyblade_10
+  - first:
+      213: 513569563049628963
+    second: Custom_Psyblade_11
+  - first:
+      213: -4327115500949930101
+    second: Custom_Psyblade_12
+  - first:
+      213: -8653547329347925546
+    second: Custom_Psyblade_13
+  - first:
+      213: -8607076368018657341
+    second: Custom_Psyblade_14
+  - first:
+      213: 2434408931183026481
+    second: Custom_Psyblade_15
+  - first:
+      213: -8980443370107769884
+    second: Custom_Psyblade_16
+  - first:
+      213: 2313302423860992745
+    second: Custom_Psyblade_17
+  - first:
+      213: -8355189099941652087
+    second: Custom_Psyblade_18
+  - first:
+      213: -651827181089218132
+    second: Custom_Psyblade_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Custom_Psyblade_0
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 183
+        width: 36
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25567f2a308629020800000000000000
+      internalID: 2347052720641762642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Psyblade_1
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 310
+        width: 54
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd5303ccc35760f0800000000000000
+      internalID: -1123837443095437892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Psyblade_2
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 288
+        width: 101
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6eef10cea188ccd0800000000000000
+      internalID: -2537635802475663761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Psyblade_3
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 183
+        width: 68
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d3ba380e693cbb0800000000000000
+      internalID: -4916920477132571296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Psyblade_4
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 183
+        width: 60
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4477f8518aa13b180800000000000000
+      internalID: -9100901112767088828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Psyblade_5
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 299
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79d20c30c68282bb0800000000000000
+      internalID: -4960670545164096105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Psyblade_6
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 292
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 922b0db2263800bd0800000000000000
+      internalID: -2665986521738202583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Psyblade_7
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 42
+        width: 126
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a61d867999ad3d440800000000000000
+      internalID: 4959547967870128490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Psyblade_8
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 183
+        width: 31
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c56ff97361c86e0800000000000000
+      internalID: -1834066520083899252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Psyblade_9
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 93
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ca15e54c90045430800000000000000
+      internalID: 3770639459203488455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Psyblade_10
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 107
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8bef73d37efd2390800000000000000
+      internalID: -7841331602759095414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Psyblade_11
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 107
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 325960debc0902700800000000000000
+      internalID: 513569563049628963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Psyblade_12
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 107
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8ffacfb06ff2f3c0800000000000000
+      internalID: -4327115500949930101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Psyblade_13
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 107
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d9cf2b6d8c68e780800000000000000
+      internalID: -8653547329347925546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Psyblade_14
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 51
+        width: 77
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cfa69145a58d8880800000000000000
+      internalID: -8607076368018657341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Psyblade_15
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 64
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 131e33d5602c8c120800000000000000
+      internalID: 2434408931183026481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Psyblade_16
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 42
+        width: 126
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ebe637d55e0f5380800000000000000
+      internalID: -8980443370107769884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Psyblade_17
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 42
+        width: 124
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ead8405c408a1020800000000000000
+      internalID: 2313302423860992745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Psyblade_18
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 43
+        width: 56
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98913c208c76c0c80800000000000000
+      internalID: -8355189099941652087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Custom_Psyblade_19
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 57
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca1ab30e1ae34f6f0800000000000000
+      internalID: -651827181089218132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Custom_Psyblade_0: 2347052720641762642
+      Custom_Psyblade_1: -1123837443095437892
+      Custom_Psyblade_10: -7841331602759095414
+      Custom_Psyblade_11: 513569563049628963
+      Custom_Psyblade_12: -4327115500949930101
+      Custom_Psyblade_13: -8653547329347925546
+      Custom_Psyblade_14: -8607076368018657341
+      Custom_Psyblade_15: 2434408931183026481
+      Custom_Psyblade_16: -8980443370107769884
+      Custom_Psyblade_17: 2313302423860992745
+      Custom_Psyblade_18: -8355189099941652087
+      Custom_Psyblade_19: -651827181089218132
+      Custom_Psyblade_2: -2537635802475663761
+      Custom_Psyblade_3: -4916920477132571296
+      Custom_Psyblade_4: -9100901112767088828
+      Custom_Psyblade_5: -4960670545164096105
+      Custom_Psyblade_6: -2665986521738202583
+      Custom_Psyblade_7: 4959547967870128490
+      Custom_Psyblade_8: -1834066520083899252
+      Custom_Psyblade_9: 3770639459203488455
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

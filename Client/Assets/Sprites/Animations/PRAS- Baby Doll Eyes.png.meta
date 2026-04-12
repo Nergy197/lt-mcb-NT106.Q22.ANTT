@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: 06716872700984195a0ee3fdd1c19e30
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2624544510299228068
+    second: PRAS- Baby Doll Eyes_0
+  - first:
+      213: -8297740137096792444
+    second: PRAS- Baby Doll Eyes_1
+  - first:
+      213: 8952393390997045277
+    second: PRAS- Baby Doll Eyes_2
+  - first:
+      213: -9052570273303857585
+    second: PRAS- Baby Doll Eyes_3
+  - first:
+      213: -2125539226693919657
+    second: PRAS- Baby Doll Eyes_4
+  - first:
+      213: -247703873391005089
+    second: PRAS- Baby Doll Eyes_5
+  - first:
+      213: -59043364239096746
+    second: PRAS- Baby Doll Eyes_6
+  - first:
+      213: 2715582891797383554
+    second: PRAS- Baby Doll Eyes_7
+  - first:
+      213: 7323198518579400275
+    second: PRAS- Baby Doll Eyes_8
+  - first:
+      213: 4247786782739676442
+    second: PRAS- Baby Doll Eyes_9
+  - first:
+      213: 7279569636516309013
+    second: PRAS- Baby Doll Eyes_10
+  - first:
+      213: -1571688921761136070
+    second: PRAS- Baby Doll Eyes_11
+  - first:
+      213: -217513661602062863
+    second: PRAS- Baby Doll Eyes_12
+  - first:
+      213: 2603700058863902250
+    second: PRAS- Baby Doll Eyes_13
+  - first:
+      213: 8598923217741382947
+    second: PRAS- Baby Doll Eyes_14
+  - first:
+      213: 1124035920421108861
+    second: PRAS- Baby Doll Eyes_15
+  - first:
+      213: -7472890922308612406
+    second: PRAS- Baby Doll Eyes_16
+  - first:
+      213: 5198068852157489586
+    second: PRAS- Baby Doll Eyes_17
+  - first:
+      213: -735792566813414718
+    second: PRAS- Baby Doll Eyes_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Baby Doll Eyes_0
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 627
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a74691a3514c6420800000000000000
+      internalID: 2624544510299228068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Baby Doll Eyes_1
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 639
+        width: 86
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48638d10f4188dc80800000000000000
+      internalID: -8297740137096792444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Baby Doll Eyes_2
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 655
+        width: 86
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d100fe77b5a4d3c70800000000000000
+      internalID: 8952393390997045277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Baby Doll Eyes_3
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 663
+        width: 82
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f46767b8c4fce5280800000000000000
+      internalID: -9052570273303857585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Baby Doll Eyes_4
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 669
+        width: 82
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75c10ccb5519082e0800000000000000
+      internalID: -2125539226693919657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Baby Doll Eyes_5
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 477
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f527a09b3aaff8cf0800000000000000
+      internalID: -247703873391005089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Baby Doll Eyes_6
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 477
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6544f208f5c3e2ff0800000000000000
+      internalID: -59043364239096746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Baby Doll Eyes_7
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 475
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28906b79040bfa520800000000000000
+      internalID: 2715582891797383554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Baby Doll Eyes_8
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 475
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e879fa04a31a560800000000000000
+      internalID: 7323198518579400275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Baby Doll Eyes_9
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 473
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1d3ccab29b23fa30800000000000000
+      internalID: 4247786782739676442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Baby Doll Eyes_10
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 281
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 518264ef30a360560800000000000000
+      internalID: 7279569636516309013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Baby Doll Eyes_11
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 271
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a32c209b04d303ae0800000000000000
+      internalID: -1571688921761136070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Baby Doll Eyes_12
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 277
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fd1a6a2a7c3bfcf0800000000000000
+      internalID: -217513661602062863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Baby Doll Eyes_13
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 279
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2e1f369863322420800000000000000
+      internalID: 2603700058863902250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Baby Doll Eyes_14
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 283
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32585548b13855770800000000000000
+      internalID: 8598923217741382947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Baby Doll Eyes_15
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 51
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7cba77d6b0699f00800000000000000
+      internalID: 1124035920421108861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Baby Doll Eyes_16
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 63
+        width: 86
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acecd8a9c45fa4890800000000000000
+      internalID: -7472890922308612406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Baby Doll Eyes_17
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 79
+        width: 86
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b1aeda9410432840800000000000000
+      internalID: 5198068852157489586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Baby Doll Eyes_18
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 87
+        width: 82
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2caa6b21f80f9c5f0800000000000000
+      internalID: -735792566813414718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Baby Doll Eyes_0: 2624544510299228068
+      PRAS- Baby Doll Eyes_1: -8297740137096792444
+      PRAS- Baby Doll Eyes_10: 7279569636516309013
+      PRAS- Baby Doll Eyes_11: -1571688921761136070
+      PRAS- Baby Doll Eyes_12: -217513661602062863
+      PRAS- Baby Doll Eyes_13: 2603700058863902250
+      PRAS- Baby Doll Eyes_14: 8598923217741382947
+      PRAS- Baby Doll Eyes_15: 1124035920421108861
+      PRAS- Baby Doll Eyes_16: -7472890922308612406
+      PRAS- Baby Doll Eyes_17: 5198068852157489586
+      PRAS- Baby Doll Eyes_18: -735792566813414718
+      PRAS- Baby Doll Eyes_2: 8952393390997045277
+      PRAS- Baby Doll Eyes_3: -9052570273303857585
+      PRAS- Baby Doll Eyes_4: -2125539226693919657
+      PRAS- Baby Doll Eyes_5: -247703873391005089
+      PRAS- Baby Doll Eyes_6: -59043364239096746
+      PRAS- Baby Doll Eyes_7: 2715582891797383554
+      PRAS- Baby Doll Eyes_8: 7323198518579400275
+      PRAS- Baby Doll Eyes_9: 4247786782739676442
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

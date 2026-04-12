@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: d20a4f70ac9934b3694e0be33657e303
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3271729259066085073
+    second: PRAS- Freeze Shock_0
+  - first:
+      213: -2901882456145936962
+    second: PRAS- Freeze Shock_1
+  - first:
+      213: 2803257881341079357
+    second: PRAS- Freeze Shock_2
+  - first:
+      213: -3297846190402868225
+    second: PRAS- Freeze Shock_3
+  - first:
+      213: -4018876223422497603
+    second: PRAS- Freeze Shock_4
+  - first:
+      213: 3509937528653306825
+    second: PRAS- Freeze Shock_5
+  - first:
+      213: 2792827468259645709
+    second: PRAS- Freeze Shock_6
+  - first:
+      213: -8379815876193693094
+    second: PRAS- Freeze Shock_7
+  - first:
+      213: -4018993607649941277
+    second: PRAS- Freeze Shock_8
+  - first:
+      213: -3703700299624639302
+    second: PRAS- Freeze Shock_9
+  - first:
+      213: 6065234006590548713
+    second: PRAS- Freeze Shock_10
+  - first:
+      213: 6877537411074445856
+    second: PRAS- Freeze Shock_11
+  - first:
+      213: 6058040963697213061
+    second: PRAS- Freeze Shock_12
+  - first:
+      213: -1087333405851766089
+    second: PRAS- Freeze Shock_13
+  - first:
+      213: 8268448814486496037
+    second: PRAS- Freeze Shock_14
+  - first:
+      213: -5903262473180759056
+    second: PRAS- Freeze Shock_15
+  - first:
+      213: -6963205064628426711
+    second: PRAS- Freeze Shock_16
+  - first:
+      213: -7759373408240242199
+    second: PRAS- Freeze Shock_17
+  - first:
+      213: -1331359822981345999
+    second: PRAS- Freeze Shock_18
+  - first:
+      213: 9018234691470024738
+    second: PRAS- Freeze Shock_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Freeze Shock_0
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 105
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dec2ef3d64876d20800000000000000
+      internalID: 3271729259066085073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Freeze Shock_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 87
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebdbb7de7417ab7d0800000000000000
+      internalID: -2901882456145936962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Freeze Shock_2
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 95
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3f2627d03c27e620800000000000000
+      internalID: 2803257881341079357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Freeze Shock_3
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 95
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb6921dc52bb32d0800000000000000
+      internalID: -3297846190402868225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Freeze Shock_4
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 103
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbc73a22e551a38c0800000000000000
+      internalID: -4018876223422497603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Freeze Shock_5
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 91
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cb513bf59dc5b030800000000000000
+      internalID: 3509937528653306825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Freeze Shock_6
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 93
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d09d19c09cd12c620800000000000000
+      internalID: 2792827468259645709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Freeze Shock_7
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 107
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a52db48dbd9e4bb80800000000000000
+      internalID: -8379815876193693094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Freeze Shock_8
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 91
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e8a57d7b9aa938c0800000000000000
+      internalID: -4018993607649941277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Freeze Shock_9
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 107
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab49d565330d99cc0800000000000000
+      internalID: -3703700299624639302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Freeze Shock_10
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 63
+        width: 28
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eae27aa13a0c2450800000000000000
+      internalID: 6065234006590548713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Freeze Shock_11
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 87
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0225d8c26dbe17f50800000000000000
+      internalID: 6877537411074445856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Freeze Shock_12
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 95
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58effebd82c721450800000000000000
+      internalID: 6058040963697213061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Freeze Shock_13
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 69
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b23acf370409e0f0800000000000000
+      internalID: -1087333405851766089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Freeze Shock_14
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 85
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 523a7fe736e6fb270800000000000000
+      internalID: 8268448814486496037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Freeze Shock_15
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 73
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fbba26be06631ea0800000000000000
+      internalID: -5903262473180759056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Freeze Shock_16
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 85
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9282f98e2e9bd5f90800000000000000
+      internalID: -6963205064628426711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Freeze Shock_17
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 73
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e17a320ffa215490800000000000000
+      internalID: -7759373408240242199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Freeze Shock_18
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 69
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d48fa7b4f068de0800000000000000
+      internalID: -1331359822981345999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Freeze Shock_19
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 69
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 220ec26dba4372d70800000000000000
+      internalID: 9018234691470024738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Freeze Shock_0: 3271729259066085073
+      PRAS- Freeze Shock_1: -2901882456145936962
+      PRAS- Freeze Shock_10: 6065234006590548713
+      PRAS- Freeze Shock_11: 6877537411074445856
+      PRAS- Freeze Shock_12: 6058040963697213061
+      PRAS- Freeze Shock_13: -1087333405851766089
+      PRAS- Freeze Shock_14: 8268448814486496037
+      PRAS- Freeze Shock_15: -5903262473180759056
+      PRAS- Freeze Shock_16: -6963205064628426711
+      PRAS- Freeze Shock_17: -7759373408240242199
+      PRAS- Freeze Shock_18: -1331359822981345999
+      PRAS- Freeze Shock_19: 9018234691470024738
+      PRAS- Freeze Shock_2: 2803257881341079357
+      PRAS- Freeze Shock_3: -3297846190402868225
+      PRAS- Freeze Shock_4: -4018876223422497603
+      PRAS- Freeze Shock_5: 3509937528653306825
+      PRAS- Freeze Shock_6: 2792827468259645709
+      PRAS- Freeze Shock_7: -8379815876193693094
+      PRAS- Freeze Shock_8: -4018993607649941277
+      PRAS- Freeze Shock_9: -3703700299624639302
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

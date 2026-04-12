@@ -1,0 +1,676 @@
+fileFormatVersion: 2
+guid: 9120a9a28229b4716bfadc56f7e2b9b0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3958121559526861792
+    second: Pokemon-Follow_0
+  - first:
+      213: -2445676298874140986
+    second: Pokemon-Follow_1
+  - first:
+      213: -4843677353827354838
+    second: Pokemon-Follow_2
+  - first:
+      213: 3591539277275048760
+    second: Pokemon-Follow_3
+  - first:
+      213: 7534092226478404686
+    second: Pokemon-Follow_4
+  - first:
+      213: -4328966162602718211
+    second: Pokemon-Follow_5
+  - first:
+      213: 8297986674052407324
+    second: Pokemon-Follow_6
+  - first:
+      213: 5034614335281854303
+    second: Pokemon-Follow_7
+  - first:
+      213: 6680970256005420631
+    second: Pokemon-Follow_8
+  - first:
+      213: 2882358530070973633
+    second: Pokemon-Follow_9
+  - first:
+      213: 2148056068217222306
+    second: Pokemon-Follow_10
+  - first:
+      213: 817830490747801511
+    second: Pokemon-Follow_11
+  - first:
+      213: 5366947064898155065
+    second: Pokemon-Follow_12
+  - first:
+      213: -2480671537655244870
+    second: Pokemon-Follow_13
+  - first:
+      213: 7363822931400875821
+    second: Pokemon-Follow_14
+  - first:
+      213: -2148667980906361747
+    second: Pokemon-Follow_15
+  - first:
+      213: 4577761633137066890
+    second: Pokemon-Follow_16
+  - first:
+      213: -2285489319912489945
+    second: Pokemon-Follow_17
+  - first:
+      213: -4959895614251484134
+    second: Pokemon-Follow_18
+  - first:
+      213: 4692499115888668191
+    second: Pokemon-Follow_19
+  - first:
+      213: 7107612430856355347
+    second: Pokemon-Follow_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pokemon-Follow_0
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 308
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0241692a96de119c0800000000000000
+      internalID: -3958121559526861792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon-Follow_1
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 303
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c6c30a2d563f0ed0800000000000000
+      internalID: -2445676298874140986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon-Follow_2
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 317
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27348e0c1dc7ccb0800000000000000
+      internalID: -4843677353827354838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon-Follow_3
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 303
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83ba7d2a1f5b7d130800000000000000
+      internalID: 3591539277275048760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon-Follow_4
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 277
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e44f64076f87e8860800000000000000
+      internalID: 7534092226478404686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon-Follow_5
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 263
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfb0161063c6ce3c0800000000000000
+      internalID: -4328966162602718211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon-Follow_6
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 298
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c10a1d95aee582370800000000000000
+      internalID: 8297986674052407324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon-Follow_7
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 298
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f57709b301b8ed540800000000000000
+      internalID: 5034614335281854303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon-Follow_8
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 280
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7565720fc0397bc50800000000000000
+      internalID: 6680970256005420631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon-Follow_9
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 280
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cc823ccfc1300820800000000000000
+      internalID: 2882358530070973633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon-Follow_10
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 279
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a4b5b7fc9d6fcd10800000000000000
+      internalID: 2148056068217222306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon-Follow_11
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 281
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7af818f8f74895b00800000000000000
+      internalID: 817830490747801511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon-Follow_12
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 262
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93274939be93b7a40800000000000000
+      internalID: 5366947064898155065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon-Follow_13
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 254
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab713a13162e29dd0800000000000000
+      internalID: -2480671537655244870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon-Follow_14
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 262
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2f560fd0fd813660800000000000000
+      internalID: 7363822931400875821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon-Follow_15
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 257
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c02d10bd56e22e0800000000000000
+      internalID: -2148667980906361747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon-Follow_16
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 257
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a830c8983f9778f30800000000000000
+      internalID: 4577761633137066890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon-Follow_17
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 245
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72cbaa4929f4840e0800000000000000
+      internalID: -2285489319912489945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon-Follow_18
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 85
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1cb58da739ea2bb0800000000000000
+      internalID: -4959895614251484134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon-Follow_19
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 85
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1ee06f751b1f1140800000000000000
+      internalID: 4692499115888668191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon-Follow_20
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 85
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31ef75e19df43a260800000000000000
+      internalID: 7107612430856355347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pokemon-Follow_0: -3958121559526861792
+      Pokemon-Follow_1: -2445676298874140986
+      Pokemon-Follow_10: 2148056068217222306
+      Pokemon-Follow_11: 817830490747801511
+      Pokemon-Follow_12: 5366947064898155065
+      Pokemon-Follow_13: -2480671537655244870
+      Pokemon-Follow_14: 7363822931400875821
+      Pokemon-Follow_15: -2148667980906361747
+      Pokemon-Follow_16: 4577761633137066890
+      Pokemon-Follow_17: -2285489319912489945
+      Pokemon-Follow_18: -4959895614251484134
+      Pokemon-Follow_19: 4692499115888668191
+      Pokemon-Follow_2: -4843677353827354838
+      Pokemon-Follow_20: 7107612430856355347
+      Pokemon-Follow_3: 3591539277275048760
+      Pokemon-Follow_4: 7534092226478404686
+      Pokemon-Follow_5: -4328966162602718211
+      Pokemon-Follow_6: 8297986674052407324
+      Pokemon-Follow_7: 5034614335281854303
+      Pokemon-Follow_8: 6680970256005420631
+      Pokemon-Follow_9: 2882358530070973633
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

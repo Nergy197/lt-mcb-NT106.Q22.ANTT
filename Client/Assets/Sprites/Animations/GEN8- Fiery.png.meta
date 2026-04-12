@@ -1,0 +1,1586 @@
+fileFormatVersion: 2
+guid: cef6afd927e3c4eddb259b747a9f1bf6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4520759298570317760
+    second: GEN8- Fiery_0
+  - first:
+      213: 7548500587040034270
+    second: GEN8- Fiery_1
+  - first:
+      213: -7945094090549839806
+    second: GEN8- Fiery_2
+  - first:
+      213: 8141854455715654779
+    second: GEN8- Fiery_3
+  - first:
+      213: -4191562082449908314
+    second: GEN8- Fiery_4
+  - first:
+      213: -5322690025363238637
+    second: GEN8- Fiery_5
+  - first:
+      213: -8212782689147318403
+    second: GEN8- Fiery_6
+  - first:
+      213: -5505070211208173514
+    second: GEN8- Fiery_7
+  - first:
+      213: -2106264126582117447
+    second: GEN8- Fiery_8
+  - first:
+      213: 9091480120232957852
+    second: GEN8- Fiery_9
+  - first:
+      213: 6293669737791135336
+    second: GEN8- Fiery_10
+  - first:
+      213: 2465462833005151002
+    second: GEN8- Fiery_11
+  - first:
+      213: 1436177854743850709
+    second: GEN8- Fiery_12
+  - first:
+      213: -1845768092537381513
+    second: GEN8- Fiery_13
+  - first:
+      213: 6051452453789744621
+    second: GEN8- Fiery_14
+  - first:
+      213: -772762590078970390
+    second: GEN8- Fiery_15
+  - first:
+      213: 7192821382886545170
+    second: GEN8- Fiery_16
+  - first:
+      213: -5834131622090193165
+    second: GEN8- Fiery_17
+  - first:
+      213: -1744347348889728207
+    second: GEN8- Fiery_18
+  - first:
+      213: 5767934710480969733
+    second: GEN8- Fiery_19
+  - first:
+      213: 6729825933216142804
+    second: GEN8- Fiery_20
+  - first:
+      213: 7699706775993953285
+    second: GEN8- Fiery_21
+  - first:
+      213: 8379316834053190137
+    second: GEN8- Fiery_22
+  - first:
+      213: 5962044640147197785
+    second: GEN8- Fiery_23
+  - first:
+      213: -8829720455755309279
+    second: GEN8- Fiery_24
+  - first:
+      213: 6951485426367028353
+    second: GEN8- Fiery_25
+  - first:
+      213: -1478151064714367489
+    second: GEN8- Fiery_26
+  - first:
+      213: 7270721579540283005
+    second: GEN8- Fiery_27
+  - first:
+      213: -5669957150479272386
+    second: GEN8- Fiery_28
+  - first:
+      213: -3455288270052016489
+    second: GEN8- Fiery_29
+  - first:
+      213: -3488409584167702929
+    second: GEN8- Fiery_30
+  - first:
+      213: 3036203264301455486
+    second: GEN8- Fiery_31
+  - first:
+      213: -905893567676966021
+    second: GEN8- Fiery_32
+  - first:
+      213: 663708125293828545
+    second: GEN8- Fiery_33
+  - first:
+      213: -6799111667399641567
+    second: GEN8- Fiery_34
+  - first:
+      213: -4182668431182073581
+    second: GEN8- Fiery_35
+  - first:
+      213: 819470400684633485
+    second: GEN8- Fiery_36
+  - first:
+      213: -6229467986713137695
+    second: GEN8- Fiery_37
+  - first:
+      213: 3395298819053346649
+    second: GEN8- Fiery_38
+  - first:
+      213: -5243836190443700564
+    second: GEN8- Fiery_39
+  - first:
+      213: -6525336329187418338
+    second: GEN8- Fiery_40
+  - first:
+      213: 2113981741063571695
+    second: GEN8- Fiery_41
+  - first:
+      213: 5812114111863881318
+    second: GEN8- Fiery_42
+  - first:
+      213: 5207530503878443071
+    second: GEN8- Fiery_43
+  - first:
+      213: -7814067511857888208
+    second: GEN8- Fiery_44
+  - first:
+      213: -898099565710644732
+    second: GEN8- Fiery_45
+  - first:
+      213: 1634539858010254732
+    second: GEN8- Fiery_46
+  - first:
+      213: -4615087027633490848
+    second: GEN8- Fiery_47
+  - first:
+      213: 1528459222384751401
+    second: GEN8- Fiery_48
+  - first:
+      213: -2571192636002138520
+    second: GEN8- Fiery_49
+  - first:
+      213: -3384333501942150559
+    second: GEN8- Fiery_50
+  - first:
+      213: -1299606882687507073
+    second: GEN8- Fiery_51
+  - first:
+      213: -1688883326530375104
+    second: GEN8- Fiery_52
+  - first:
+      213: 8034830462683258479
+    second: GEN8- Fiery_53
+  - first:
+      213: 7782006742138446075
+    second: GEN8- Fiery_54
+  - first:
+      213: 7341118839708397905
+    second: GEN8- Fiery_55
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GEN8- Fiery_0
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 1965
+        width: 17
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cfe35a41a6fcbe30800000000000000
+      internalID: 4520759298570317760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1771
+        width: 165
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edd495d4a49a1c860800000000000000
+      internalID: 7548500587040034270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_2
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 1771
+        width: 174
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 248b8b1050b5db190800000000000000
+      internalID: -7945094090549839806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_3
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1771
+        width: 181
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7cecd57d7dadf070800000000000000
+      internalID: 8141854455715654779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_4
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1771
+        width: 186
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ad939d6e7494d5c0800000000000000
+      internalID: -4191562082449908314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_5
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 1809
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31195bc6f910226b0800000000000000
+      internalID: -5322690025363238637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_6
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 1771
+        width: 183
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7f85eb48a5560e80800000000000000
+      internalID: -8212782689147318403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_7
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1616
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6382a5d5fcf0a93b0800000000000000
+      internalID: -5505070211208173514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1579
+        width: 186
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bbace3bfeb05c2e0800000000000000
+      internalID: -2106264126582117447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_9
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 1615
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c97d209200d6b2e70800000000000000
+      internalID: 9091480120232957852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_10
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 1579
+        width: 187
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86e9aaef74b975750800000000000000
+      internalID: 6293669737791135336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_11
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1579
+        width: 188
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1343305265173220800000000000000
+      internalID: 2465462833005151002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_12
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1399
+        width: 194
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5de2a4256245ee310800000000000000
+      internalID: 1436177854743850709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_13
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1591
+        width: 188
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d1f8af2b38266e0800000000000000
+      internalID: -1845768092537381513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_14
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1399
+        width: 191
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dedbd4bd1f31bf350800000000000000
+      internalID: 6051452453789744621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_15
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1399
+        width: 189
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae5d1a2c4889645f0800000000000000
+      internalID: -772762590078970390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_16
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1399
+        width: 186
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21759c340f802d360800000000000000
+      internalID: 7192821382886545170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_17
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 1399
+        width: 187
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f6c0744330090fa0800000000000000
+      internalID: -5834131622090193165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_18
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 1185
+        width: 133
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b88800455dac7e0800000000000000
+      internalID: -1744347348889728207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_19
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1184
+        width: 137
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5002dd13f02db0050800000000000000
+      internalID: 5767934710480969733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_20
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1313
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d55f85b705256d50800000000000000
+      internalID: 6729825933216142804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_21
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 1307
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50ca9c9948adada60800000000000000
+      internalID: 7699706775993953285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_22
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 1183
+        width: 145
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f1f03ad340594470800000000000000
+      internalID: 8379316834053190137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_23
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 1192
+        width: 122
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95fcefe03007db250800000000000000
+      internalID: 5962044640147197785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_24
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 1191
+        width: 130
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12f54b00708867580800000000000000
+      internalID: -8829720455755309279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_25
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 992
+        width: 156
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18c59eb2a23a87060800000000000000
+      internalID: 6951485426367028353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_26
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 992
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffda55f207d8c7be0800000000000000
+      internalID: -1478151064714367489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_27
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 1145
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7ef34131cac6e460800000000000000
+      internalID: 7270721579540283005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_28
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 993
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e363ff923044051b0800000000000000
+      internalID: -5669957150479272386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_29
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 993
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79eb9f210a95c00d0800000000000000
+      internalID: -3455288270052016489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_30
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 993
+        width: 152
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6ead9037fda69fc0800000000000000
+      internalID: -3488409584167702929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_31
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 802
+        width: 168
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e78d19a48c2c22a20800000000000000
+      internalID: 3036203264301455486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_32
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 972
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7b9d4e899e9d63f0800000000000000
+      internalID: -905893567676966021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_33
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 802
+        width: 171
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c9dda20607f53900800000000000000
+      internalID: 663708125293828545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_34
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 976
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1263e6436f3b4a1a0800000000000000
+      internalID: -6799111667399641567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_35
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 979
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 311f62af83d24f5c0800000000000000
+      internalID: -4182668431182073581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_36
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 803
+        width: 172
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8d21c8dcf75f5b00800000000000000
+      internalID: 819470400684633485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_37
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 979
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1edab480fdb7c89a0800000000000000
+      internalID: -6229467986713137695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_38
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 803
+        width: 170
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95f5aff69468e1f20800000000000000
+      internalID: 3395298819053346649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_39
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 801
+        width: 171
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caef34094c62a37b0800000000000000
+      internalID: -5243836190443700564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_40
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 608
+        width: 168
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f15da6e295175a0800000000000000
+      internalID: -6525336329187418338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_41
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 608
+        width: 168
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe881c1713f565d10800000000000000
+      internalID: 2113981741063571695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_42
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 790
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66e7ea7adf6c8a050800000000000000
+      internalID: 5812114111863881318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_43
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 608
+        width: 167
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f308fa0176dd44840800000000000000
+      internalID: 5207530503878443071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_44
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 782
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0344ac8affade8390800000000000000
+      internalID: -7814067511857888208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_45
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 790
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a62ec043f4983f0800000000000000
+      internalID: -898099565710644732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_46
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 608
+        width: 164
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d2be7375d0fa610800000000000000
+      internalID: 1634539858010254732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_47
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 609
+        width: 163
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0647466dccae3ffb0800000000000000
+      internalID: -4615087027633490848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_48
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 791
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 923b9eb809d263510800000000000000
+      internalID: 1528459222384751401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_49
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 433
+        width: 165
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8660ef99be9415cd0800000000000000
+      internalID: -2571192636002138520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_50
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 433
+        width: 166
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ac8476c9e6801d0800000000000000
+      internalID: -3384333501942150559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_51
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 433
+        width: 169
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7522c10d6ed6fde0800000000000000
+      internalID: -1299606882687507073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_52
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 599
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 042b3170091ef88e0800000000000000
+      internalID: -1688883326530375104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_53
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 596
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6e19b64cb3718f60800000000000000
+      internalID: 8034830462683258479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_54
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 433
+        width: 172
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf06bd0b6ed3ffb60800000000000000
+      internalID: 7782006742138446075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GEN8- Fiery_55
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 433
+        width: 171
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1513fb690b4e0e560800000000000000
+      internalID: 7341118839708397905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GEN8- Fiery_0: 4520759298570317760
+      GEN8- Fiery_1: 7548500587040034270
+      GEN8- Fiery_10: 6293669737791135336
+      GEN8- Fiery_11: 2465462833005151002
+      GEN8- Fiery_12: 1436177854743850709
+      GEN8- Fiery_13: -1845768092537381513
+      GEN8- Fiery_14: 6051452453789744621
+      GEN8- Fiery_15: -772762590078970390
+      GEN8- Fiery_16: 7192821382886545170
+      GEN8- Fiery_17: -5834131622090193165
+      GEN8- Fiery_18: -1744347348889728207
+      GEN8- Fiery_19: 5767934710480969733
+      GEN8- Fiery_2: -7945094090549839806
+      GEN8- Fiery_20: 6729825933216142804
+      GEN8- Fiery_21: 7699706775993953285
+      GEN8- Fiery_22: 8379316834053190137
+      GEN8- Fiery_23: 5962044640147197785
+      GEN8- Fiery_24: -8829720455755309279
+      GEN8- Fiery_25: 6951485426367028353
+      GEN8- Fiery_26: -1478151064714367489
+      GEN8- Fiery_27: 7270721579540283005
+      GEN8- Fiery_28: -5669957150479272386
+      GEN8- Fiery_29: -3455288270052016489
+      GEN8- Fiery_3: 8141854455715654779
+      GEN8- Fiery_30: -3488409584167702929
+      GEN8- Fiery_31: 3036203264301455486
+      GEN8- Fiery_32: -905893567676966021
+      GEN8- Fiery_33: 663708125293828545
+      GEN8- Fiery_34: -6799111667399641567
+      GEN8- Fiery_35: -4182668431182073581
+      GEN8- Fiery_36: 819470400684633485
+      GEN8- Fiery_37: -6229467986713137695
+      GEN8- Fiery_38: 3395298819053346649
+      GEN8- Fiery_39: -5243836190443700564
+      GEN8- Fiery_4: -4191562082449908314
+      GEN8- Fiery_40: -6525336329187418338
+      GEN8- Fiery_41: 2113981741063571695
+      GEN8- Fiery_42: 5812114111863881318
+      GEN8- Fiery_43: 5207530503878443071
+      GEN8- Fiery_44: -7814067511857888208
+      GEN8- Fiery_45: -898099565710644732
+      GEN8- Fiery_46: 1634539858010254732
+      GEN8- Fiery_47: -4615087027633490848
+      GEN8- Fiery_48: 1528459222384751401
+      GEN8- Fiery_49: -2571192636002138520
+      GEN8- Fiery_5: -5322690025363238637
+      GEN8- Fiery_50: -3384333501942150559
+      GEN8- Fiery_51: -1299606882687507073
+      GEN8- Fiery_52: -1688883326530375104
+      GEN8- Fiery_53: 8034830462683258479
+      GEN8- Fiery_54: 7782006742138446075
+      GEN8- Fiery_55: 7341118839708397905
+      GEN8- Fiery_6: -8212782689147318403
+      GEN8- Fiery_7: -5505070211208173514
+      GEN8- Fiery_8: -2106264126582117447
+      GEN8- Fiery_9: 9091480120232957852
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

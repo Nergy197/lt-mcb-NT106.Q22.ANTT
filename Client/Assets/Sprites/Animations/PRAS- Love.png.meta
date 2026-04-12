@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: c09f24a0b82734582bce4364431109c2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4638319847302071073
+    second: PRAS- Love_0
+  - first:
+      213: 833175090260084371
+    second: PRAS- Love_1
+  - first:
+      213: -5505932997997372964
+    second: PRAS- Love_2
+  - first:
+      213: 4582597476763542996
+    second: PRAS- Love_3
+  - first:
+      213: 103134879290984210
+    second: PRAS- Love_4
+  - first:
+      213: 8530294505023980588
+    second: PRAS- Love_5
+  - first:
+      213: 7601982821278632555
+    second: PRAS- Love_6
+  - first:
+      213: 2756589762550977885
+    second: PRAS- Love_7
+  - first:
+      213: 6111673614877933658
+    second: PRAS- Love_8
+  - first:
+      213: 8307096526553320197
+    second: PRAS- Love_9
+  - first:
+      213: -4808994176653263745
+    second: PRAS- Love_10
+  - first:
+      213: -1377828264848322906
+    second: PRAS- Love_11
+  - first:
+      213: 3521435166576480182
+    second: PRAS- Love_12
+  - first:
+      213: 6569399877302409729
+    second: PRAS- Love_13
+  - first:
+      213: 3142702781606640861
+    second: PRAS- Love_14
+  - first:
+      213: -2034150930187556982
+    second: PRAS- Love_15
+  - first:
+      213: 2355947613353953779
+    second: PRAS- Love_16
+  - first:
+      213: -458548584510137557
+    second: PRAS- Love_17
+  - first:
+      213: -352584410029372201
+    second: PRAS- Love_18
+  - first:
+      213: -8592986719151048056
+    second: PRAS- Love_19
+  - first:
+      213: -6036182019651884241
+    second: PRAS- Love_20
+  - first:
+      213: 7289669693519941828
+    second: PRAS- Love_21
+  - first:
+      213: 222058626908206973
+    second: PRAS- Love_22
+  - first:
+      213: -9220256650773621074
+    second: PRAS- Love_23
+  - first:
+      213: 5221502348011434028
+    second: PRAS- Love_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Love_0
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 457
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc7aea7ca061afb0800000000000000
+      internalID: -4638319847302071073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Love_1
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 473
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39608aa8458009b00800000000000000
+      internalID: 833175090260084371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Love_2
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 473
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd9d3492c1ff693b0800000000000000
+      internalID: -5505932997997372964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Love_3
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 467
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d5a71f1028a89f30800000000000000
+      internalID: 4582597476763542996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Love_4
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 461
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 217871450a86e6100800000000000000
+      internalID: 103134879290984210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Love_5
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 255
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c24cb6928a1b16670800000000000000
+      internalID: 8530294505023980588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Love_6
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 309
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6a4fe2591baf7960800000000000000
+      internalID: 7601982821278632555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Love_7
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 305
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d555454b8cf514620800000000000000
+      internalID: 2756589762550977885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Love_8
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 267
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a504ded85c601d450800000000000000
+      internalID: 6111673614877933658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Love_9
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 273
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50b871c274cb84370800000000000000
+      internalID: 8307096526553320197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Love_10
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 285
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7cf8a58645034db0800000000000000
+      internalID: -4808994176653263745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Love_11
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 293
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ae09304e78f0ece0800000000000000
+      internalID: -1377828264848322906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Love_12
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 293
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bf0c5b60a6aed030800000000000000
+      internalID: 3521435166576480182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Love_13
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 299
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ada1ad1623b2b50800000000000000
+      internalID: 6569399877302409729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Love_14
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 289
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddcbb44778f1d9b20800000000000000
+      internalID: 3142702781606640861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Love_15
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 267
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a87e3a2a18e35c3e0800000000000000
+      internalID: -2034150930187556982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Love_16
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 281
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9446b3fd102b020800000000000000
+      internalID: 2355947613353953779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Love_17
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 275
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2bd30ced78e2a9f0800000000000000
+      internalID: -458548584510137557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Love_18
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 279
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dccbded85e5b1bf0800000000000000
+      internalID: -352584410029372201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Love_19
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 267
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88a3a554b149fb880800000000000000
+      internalID: -8592986719151048056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Love_20
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 271
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2bac072f6c2b3ca0800000000000000
+      internalID: -6036182019651884241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Love_21
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 263
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c0df24c6fb1a2560800000000000000
+      internalID: 7289669693519941828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Love_22
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 65
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d77bc280529e41300800000000000000
+      internalID: 222058626908206973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Love_23
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 65
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea694b85d611b0080800000000000000
+      internalID: -9220256650773621074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Love_24
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 95
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c20f61788b0867840800000000000000
+      internalID: 5221502348011434028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Love_0: -4638319847302071073
+      PRAS- Love_1: 833175090260084371
+      PRAS- Love_10: -4808994176653263745
+      PRAS- Love_11: -1377828264848322906
+      PRAS- Love_12: 3521435166576480182
+      PRAS- Love_13: 6569399877302409729
+      PRAS- Love_14: 3142702781606640861
+      PRAS- Love_15: -2034150930187556982
+      PRAS- Love_16: 2355947613353953779
+      PRAS- Love_17: -458548584510137557
+      PRAS- Love_18: -352584410029372201
+      PRAS- Love_19: -8592986719151048056
+      PRAS- Love_2: -5505932997997372964
+      PRAS- Love_20: -6036182019651884241
+      PRAS- Love_21: 7289669693519941828
+      PRAS- Love_22: 222058626908206973
+      PRAS- Love_23: -9220256650773621074
+      PRAS- Love_24: 5221502348011434028
+      PRAS- Love_3: 4582597476763542996
+      PRAS- Love_4: 103134879290984210
+      PRAS- Love_5: 8530294505023980588
+      PRAS- Love_6: 7601982821278632555
+      PRAS- Love_7: 2756589762550977885
+      PRAS- Love_8: 6111673614877933658
+      PRAS- Love_9: 8307096526553320197
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

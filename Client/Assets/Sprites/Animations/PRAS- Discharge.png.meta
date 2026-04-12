@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: a65162657ece34fe78c8fb96b048fd2b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5109014439583650685
+    second: PRAS- Discharge_0
+  - first:
+      213: 7174901884258942728
+    second: PRAS- Discharge_1
+  - first:
+      213: 5667829587409878295
+    second: PRAS- Discharge_2
+  - first:
+      213: -1370858394629903654
+    second: PRAS- Discharge_3
+  - first:
+      213: -7998193785846278166
+    second: PRAS- Discharge_4
+  - first:
+      213: 6872576897154852154
+    second: PRAS- Discharge_5
+  - first:
+      213: 1333897734447379488
+    second: PRAS- Discharge_6
+  - first:
+      213: 6651408294021318777
+    second: PRAS- Discharge_7
+  - first:
+      213: -9091549016941711925
+    second: PRAS- Discharge_8
+  - first:
+      213: 1328482561646568759
+    second: PRAS- Discharge_9
+  - first:
+      213: -5001122698501300077
+    second: PRAS- Discharge_10
+  - first:
+      213: -2259244030461622943
+    second: PRAS- Discharge_11
+  - first:
+      213: 7631191138735852239
+    second: PRAS- Discharge_12
+  - first:
+      213: 8068305660717188260
+    second: PRAS- Discharge_13
+  - first:
+      213: 8437776165625976975
+    second: PRAS- Discharge_14
+  - first:
+      213: 2238972220105510697
+    second: PRAS- Discharge_15
+  - first:
+      213: 7559260792036750293
+    second: PRAS- Discharge_16
+  - first:
+      213: -8095078706749740881
+    second: PRAS- Discharge_17
+  - first:
+      213: 814732365152318747
+    second: PRAS- Discharge_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRAS- Discharge_0
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 291
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7399b7609dd6e640800000000000000
+      internalID: 5109014439583650685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Discharge_1
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 283
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80ff88ddf3f529360800000000000000
+      internalID: 7174901884258942728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Discharge_2
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 293
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71db305fafc28ae40800000000000000
+      internalID: 5667829587409878295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Discharge_3
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 293
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adae8be9d8bb9fce0800000000000000
+      internalID: -1370858394629903654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Discharge_4
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 281
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae755e5c025b00190800000000000000
+      internalID: -7998193785846278166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Discharge_5
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 295
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a35a876864c406f50800000000000000
+      internalID: 6872576897154852154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Discharge_6
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 273
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0243f641ce4f28210800000000000000
+      internalID: 1333897734447379488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Discharge_7
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 257
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9784a3d4a9c8e4c50800000000000000
+      internalID: 6651408294021318777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Discharge_8
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 225
+        width: 126
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcd2323965454d180800000000000000
+      internalID: -9091549016941711925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Discharge_9
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 261
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735ae39e9d7bf6210800000000000000
+      internalID: 1328482561646568759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Discharge_10
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 259
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 390efad1761789ab0800000000000000
+      internalID: -5001122698501300077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Discharge_11
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 285
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 165c967368d85a0e0800000000000000
+      internalID: -2259244030461622943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Discharge_12
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 245
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fca857da8ef67e960800000000000000
+      internalID: 7631191138735852239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Discharge_13
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 283
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a4425e204168ff60800000000000000
+      internalID: 8068305660717188260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Discharge_14
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 233
+        width: 20
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f88d466a7b0091570800000000000000
+      internalID: 8437776165625976975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Discharge_15
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 97
+        width: 66
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f4b512f5d621f10800000000000000
+      internalID: 2238972220105510697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Discharge_16
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 79
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d373e1c3a3e7e860800000000000000
+      internalID: 7559260792036750293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Discharge_17
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 79
+        width: 10
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa86a574ec088af80800000000000000
+      internalID: -8095078706749740881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PRAS- Discharge_18
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 79
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b15faebf4c28e4b00800000000000000
+      internalID: 814732365152318747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PRAS- Discharge_0: 5109014439583650685
+      PRAS- Discharge_1: 7174901884258942728
+      PRAS- Discharge_10: -5001122698501300077
+      PRAS- Discharge_11: -2259244030461622943
+      PRAS- Discharge_12: 7631191138735852239
+      PRAS- Discharge_13: 8068305660717188260
+      PRAS- Discharge_14: 8437776165625976975
+      PRAS- Discharge_15: 2238972220105510697
+      PRAS- Discharge_16: 7559260792036750293
+      PRAS- Discharge_17: -8095078706749740881
+      PRAS- Discharge_18: 814732365152318747
+      PRAS- Discharge_2: 5667829587409878295
+      PRAS- Discharge_3: -1370858394629903654
+      PRAS- Discharge_4: -7998193785846278166
+      PRAS- Discharge_5: 6872576897154852154
+      PRAS- Discharge_6: 1333897734447379488
+      PRAS- Discharge_7: 6651408294021318777
+      PRAS- Discharge_8: -9091549016941711925
+      PRAS- Discharge_9: 1328482561646568759
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
