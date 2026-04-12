@@ -199,13 +199,13 @@ namespace PokemonMMO.UI
                     var data = JsonUtility.FromJson<AuthResponseDto>(json);
                     Dispatch(() =>
                     {
-                        PlayerPrefs.SetString(TokenKey,      data.Token);
-                        PlayerPrefs.SetString("username",    data.Username);
-                        PlayerPrefs.SetString("account_id",  data.AccountId);
+                        PlayerPrefs.SetString(TokenKey,      data.token);
+                        PlayerPrefs.SetString("username",    data.username);
+                        PlayerPrefs.SetString("account_id",  data.accountId);
                         PlayerPrefs.Save();
                         SetInteractable(true);
-                        SetFeedback(loginFeedback, $"Chào mừng, {data.Username}! Đang vào game...", isError: false);
-                        Debug.Log($"[Auth] Login OK – AccountId: {data.AccountId}");
+                        SetFeedback(loginFeedback, $"Chào mừng, {data.username}! Đang vào game...", isError: false);
+                        Debug.Log($"[Auth] Login OK – AccountId: {data.accountId}");
                         if (!string.IsNullOrEmpty(gameSceneName))
                             SceneManager.LoadScene(gameSceneName);
                     });
@@ -276,11 +276,12 @@ namespace PokemonMMO.UI
                     {
                         SetInteractable(true);
                         // Server trả token thẳng (môi trường dev). Copy token vào ô reset.
-                        if (resetTokenInput != null)
-                            resetTokenInput.text = data.ResetToken ?? "";
-
+                        if (data != null)
+                        {
+                            resetTokenInput.text = data.resetToken ?? "";
+                        }
                         SetFeedback(forgotFeedback, "Đã nhận token! Đang chuyển sang đặt lại mật khẩu...", isError: false);
-                        Debug.Log($"[Auth] ForgotPassword OK – token: {data.ResetToken?[..8]}…");
+                        Debug.Log($"[Auth] ForgotPassword OK – token: {data.resetToken?[..8]}…");
                         await Task.Delay(1200);
                         Dispatch(ShowResetPasswordView);
                     });
@@ -381,8 +382,8 @@ namespace PokemonMMO.UI
         [Serializable] private class RegisterRequestDto        { public string Username; public string Email; public string Password; }
         [Serializable] private class ForgotPasswordDto         { public string Email; }
         [Serializable] private class ResetPasswordDto          { public string Token; public string NewPassword; }
-        [Serializable] private class AuthResponseDto           { public string Token; public string Username; public string AccountId; }
-        [Serializable] private class ForgotPasswordResponseDto { public string message; public string ResetToken; }
+        [Serializable] private class AuthResponseDto           { public string token; public string username; public string accountId; }
+        [Serializable] private class ForgotPasswordResponseDto { public string message; public string resetToken; }
         [Serializable] private class ErrorDto                  { public string message; }
     }
 }
