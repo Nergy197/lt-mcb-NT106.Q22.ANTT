@@ -96,20 +96,23 @@ public class BattleHub : Hub
     private async Task CheckAndResolveTurn(string battleId)
     {
         var result = await _battleService.ResolveTurnIfReadyAsync(battleId);
-        if (result != null)
-        {
-            var group = GetBattleGroupName(battleId);
-            await Clients.Group(group).SendAsync("TurnResolved", result);
+        if (result == null)
+            return;
 
-            if (result.State == BattleState.Ended)
+        var group = GetBattleGroupName(battleId);
+
+        // TurnResolved carries the full result including TypedEvents for rich client rendering
+        await Clients.Group(group).SendAsync("TurnResolved", result);
+
+        if (result.State == BattleState.Ended)
+        {
+            await Clients.Group(group).SendAsync("BattleEnded", new BattleEndedEventDto
             {
-                await Clients.Group(group).SendAsync("BattleEnded", new BattleEndedEventDto
-                {
-                    BattleId = battleId,
-                    WinnerPlayerId = result.WinnerPlayerId,
-                    Events = result.Events
-                });
-            }
+                BattleId = battleId,
+                WinnerPlayerId = result.WinnerPlayerId,
+                Events = result.Events,
+                TypedEvents = result.TypedEvents
+            });
         }
     }
 

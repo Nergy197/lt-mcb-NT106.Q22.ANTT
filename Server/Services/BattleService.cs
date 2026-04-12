@@ -213,7 +213,7 @@ public class BattleService
             if (battle.State != BattleState.Running)
                 return null;
 
-            var timeoutEvents = new List<string>();
+            var timeoutEvents = new List<BattleEvent>();
             ApplyTurnTimeoutIfNeeded(battle, timeoutEvents);
 
             battle.PendingActions.TryGetValue(battle.Player1Id, out var player1Action);
@@ -229,7 +229,7 @@ public class BattleService
                 BattleId = battle.BattleId,
                 ResolvedTurnNumber = resolvedTurnNumber
             };
-            result.Events.AddRange(timeoutEvents);
+            result.TypedEvents.AddRange(timeoutEvents);
 
             if (battle.State == BattleState.Running)
             {
@@ -239,9 +239,14 @@ public class BattleService
                     if (battle.State != BattleState.Running)
                         break;
 
-                    await ApplyActionAsync(battle, ordered.Action, result.Events);
-                    UpdateBattleEndState(battle, result.Events);
+                    await ApplyActionAsync(battle, ordered.Action, result.TypedEvents);
+                    UpdateBattleEndState(battle, result.TypedEvents);
                 }
+
+                if (battle.State == BattleState.Running)
+                    await ApplyEndOfTurnEffectsAsync(battle, result.TypedEvents);
+
+                UpdateBattleEndState(battle, result.TypedEvents);
             }
 
             battle.PendingActions.Clear();
@@ -254,15 +259,16 @@ public class BattleService
             {
                 try
                 {
-                    await PersistBattleOutcomeAsync(battle, result.Events);
+                    await PersistBattleOutcomeAsync(battle, result.TypedEvents);
                 }
                 catch (Exception ex)
                 {
-                    result.Events.Add($"Failed to persist battle result: {ex.Message}");
+                    result.TypedEvents.Add(new MessageEvent { Message = $"Failed to persist battle result: {ex.Message}" });
                 }
             }
 
             result.NextTurnNumber = battle.TurnNumber;
+            result.Events = TypedEventsToStrings(result.TypedEvents);
             PopulateResultSnapshot(result, battle);
             await WriteBattleLogAsync(battle, result, "turn_resolve");
 
@@ -309,18 +315,19 @@ public class BattleService
                 WinnerPlayerId = battle.WinnerPlayerId
             };
 
-            result.Events.Add($"Player {playerId} forfeited: {reason}");
-            result.Events.Add($"Battle ended. Winner: {battle.WinnerPlayerId}");
+            result.TypedEvents.Add(new MessageEvent { Message = $"Player {playerId} forfeited: {reason}" });
+            result.TypedEvents.Add(new BattleEndEvent { WinnerPlayerId = battle.WinnerPlayerId, Reason = "forfeit" });
 
             try
             {
-                await PersistBattleOutcomeAsync(battle, result.Events);
+                await PersistBattleOutcomeAsync(battle, result.TypedEvents);
             }
             catch (Exception ex)
             {
-                result.Events.Add($"Failed to persist battle result: {ex.Message}");
+                result.TypedEvents.Add(new MessageEvent { Message = $"Failed to persist battle result: {ex.Message}" });
             }
 
+            result.Events = TypedEventsToStrings(result.TypedEvents);
             PopulateResultSnapshot(result, battle);
             await WriteBattleLogAsync(battle, result, "forfeit");
             _battles.TryRemove(battle.BattleId, out _);
@@ -348,22 +355,41 @@ public class BattleService
 
     private static List<BattlePokemonSnapshot> ToSnapshots(List<PokemonInstance> team)
     {
-        return team.Select(p => new BattlePokemonSnapshot
+        return team.Select(p =>
         {
-            InstanceId = p.Id,
-            SpeciesId = p.SpeciesId,
-            Nickname = p.Nickname,
-            Level = p.Level,
-            CurrentHp = p.CurrentHp,
-            MaxHp = p.MaxHp,
-            StatusCondition = p.StatusCondition,
-            Moves = p.Moves.Select(m => new PokemonMove
+            var snap = new BattlePokemonSnapshot
             {
-                MoveId = m.MoveId,
-                CurrentPp = m.CurrentPp
-            }).ToList()
+                InstanceId = p.Id,
+                SpeciesId = p.SpeciesId,
+                Nickname = p.Nickname,
+                Level = p.Level,
+                CurrentHp = p.CurrentHp,
+                MaxHp = p.MaxHp,
+                NonVolatileStatus = ParseLegacyStatus(p.StatusCondition),
+                Moves = p.Moves.Select(m => new PokemonMove
+                {
+                    MoveId = m.MoveId,
+                    CurrentPp = m.CurrentPp
+                }).ToList()
+            };
+            // Restore toxic counter if the legacy string encoded it
+            if (snap.NonVolatileStatus == PokemonStatusCondition.Toxic)
+                snap.ToxicCounter = 1;
+            return snap;
         }).ToList();
     }
+
+    private static PokemonStatusCondition ParseLegacyStatus(string? raw) =>
+        (raw ?? "").ToUpperInvariant() switch
+        {
+            "BRN" or "BURN"       => PokemonStatusCondition.Burn,
+            "PAR" or "PARALYSIS"  => PokemonStatusCondition.Paralysis,
+            "PSN" or "POISON"     => PokemonStatusCondition.Poison,
+            "TOX" or "TOXIC"      => PokemonStatusCondition.Toxic,
+            "SLP" or "SLEEP"      => PokemonStatusCondition.Sleep,
+            "FRZ" or "FREEZE"     => PokemonStatusCondition.Freeze,
+            _                     => PokemonStatusCondition.None
+        };
 
     private async Task<List<OrderedAction>> BuildOrderedActionsAsync(
         BattleSession battle,
@@ -420,7 +446,7 @@ public class BattleService
         return CalculateBattleStat(baseSpeed, active.Level);
     }
 
-    private async Task ApplyActionAsync(BattleSession battle, BattleAction action, List<string> events)
+    private async Task ApplyActionAsync(BattleSession battle, BattleAction action, List<BattleEvent> events)
     {
         if (action.Type == BattleActionType.Switch)
         {
@@ -431,11 +457,12 @@ public class BattleService
         await ApplyMoveActionAsync(battle, action, events);
     }
 
-    private static void ApplySwitchAction(BattleSession battle, BattleAction action, List<string> events)
+    private static void ApplySwitchAction(BattleSession battle, BattleAction action, List<BattleEvent> events,
+        bool isAutoSwitch = false)
     {
         if (action.SwitchIndex is null)
         {
-            events.Add($"[{action.PlayerId}] switch failed: missing target index.");
+            events.Add(new MessageEvent { Message = $"[{action.PlayerId}] switch failed: missing target index." });
             return;
         }
 
@@ -445,58 +472,70 @@ public class BattleService
 
         if (targetIndex < 0 || targetIndex >= team.Count)
         {
-            events.Add($"[{action.PlayerId}] switch failed: index out of range.");
+            events.Add(new MessageEvent { Message = $"[{action.PlayerId}] switch failed: index out of range." });
             return;
         }
 
         if (currentIndex == targetIndex)
         {
-            events.Add($"[{action.PlayerId}] switch ignored: pokemon already active.");
+            events.Add(new MessageEvent { Message = $"[{action.PlayerId}] switch ignored: pokemon already active." });
             return;
         }
 
         if (team[targetIndex].IsFainted)
         {
-            events.Add($"[{action.PlayerId}] switch failed: selected pokemon is fainted.");
+            events.Add(new MessageEvent { Message = $"[{action.PlayerId}] switch failed: selected pokemon is fainted." });
             return;
         }
 
+        var withdrawn = currentIndex >= 0 && currentIndex < team.Count ? team[currentIndex] : null;
         SetActiveIndex(battle, action.PlayerId, targetIndex);
-        events.Add($"[{action.PlayerId}] switched to {GetDisplayName(team[targetIndex])}.");
+        events.Add(new SwitchEvent
+        {
+            PlayerId = action.PlayerId,
+            WithdrawnPokemonName = withdrawn != null ? GetDisplayName(withdrawn) : "",
+            SentOutPokemonName = GetDisplayName(team[targetIndex]),
+            NewActiveIndex = targetIndex,
+            IsAutoSwitch = isAutoSwitch
+        });
     }
 
-    private async Task ApplyMoveActionAsync(BattleSession battle, BattleAction action, List<string> events)
+    private async Task ApplyMoveActionAsync(BattleSession battle, BattleAction action, List<BattleEvent> events)
     {
         var attacker = GetActivePokemon(battle, action.PlayerId);
         if (attacker == null)
         {
-            events.Add($"[{action.PlayerId}] move failed: no active pokemon.");
+            events.Add(new MessageEvent { Message = $"[{action.PlayerId}] move failed: no active pokemon." });
             return;
         }
 
         if (attacker.IsFainted)
         {
-            events.Add($"[{action.PlayerId}] move failed: active pokemon is fainted.");
+            events.Add(new MessageEvent { Message = $"[{action.PlayerId}] move failed: active pokemon is fainted." });
             return;
         }
 
         if (action.MoveSlot is null)
         {
-            events.Add($"[{action.PlayerId}] move failed: missing move slot.");
+            events.Add(new MessageEvent { Message = $"[{action.PlayerId}] move failed: missing move slot." });
             return;
         }
 
         var slot = action.MoveSlot.Value;
         if (slot < 0 || slot >= attacker.Moves.Count)
         {
-            events.Add($"[{action.PlayerId}] move failed: move slot out of range.");
+            events.Add(new MessageEvent { Message = $"[{action.PlayerId}] move failed: move slot out of range." });
             return;
         }
+
+        // ── Pre-move status checks (pbs-unity: non-volatile status prevents acting) ──
+        if (!CheckCanAct(attacker, events))
+            return;
 
         var selectedMove = attacker.Moves[slot];
         if (selectedMove.CurrentPp <= 0)
         {
-            events.Add($"[{GetDisplayName(attacker)}] cannot act: no PP left.");
+            events.Add(new MessageEvent { Message = $"[{GetDisplayName(attacker)}] cannot act: no PP left." });
             return;
         }
 
@@ -515,12 +554,25 @@ public class BattleService
             };
 
         var moveName = move.Name;
+        events.Add(new MoveUsedEvent
+        {
+            UserId = action.PlayerId,
+            PokemonName = GetDisplayName(attacker),
+            MoveName = moveName,
+            MoveId = selectedMove.MoveId.ToString(System.Globalization.CultureInfo.InvariantCulture)
+        });
+
         var accuracy = Math.Clamp(move.Accuracy ?? 100, 1, 100);
         var roll = _rng.Next(1, 101);
 
         if (roll > accuracy)
         {
-            events.Add($"[{GetDisplayName(attacker)}] used {moveName} but missed.");
+            events.Add(new MoveMissedEvent
+            {
+                UserId = action.PlayerId,
+                PokemonName = GetDisplayName(attacker),
+                MoveName = moveName
+            });
             return;
         }
 
@@ -528,43 +580,245 @@ public class BattleService
         var defender = GetActivePokemon(battle, defenderPlayerId);
         if (defender == null || defender.IsFainted)
         {
-            events.Add($"[{GetDisplayName(attacker)}] used {moveName}, but target is unavailable.");
+            events.Add(new MessageEvent { Message = $"[{GetDisplayName(attacker)}] used {moveName}, but target is unavailable." });
             return;
         }
 
         var category = NormalizeCategory(move.Category);
         var power = Math.Max(0, move.Power ?? 0);
+
+        // ── Status moves ──────────────────────────────────────────────────────
         if (category == "status" || power == 0)
         {
-            events.Add($"[{GetDisplayName(attacker)}] used {moveName}. (No direct damage)");
+            ApplyStatusMove(attacker, defender, defenderPlayerId, move, battle, events);
             return;
         }
 
-        var damageOutcome = await CalculateDamageAsync(attacker, defender, move);
+        // ── Damage moves ──────────────────────────────────────────────────────
+        var damageOutcome = await CalculateDamageAsync(attacker, defender, move, battle);
         var damage = damageOutcome.Damage;
+
+        if (damageOutcome.TypeMultiplier <= 0)
+        {
+            events.Add(new MoveNoEffectEvent { TargetName = GetDisplayName(defender) });
+            return;
+        }
+
+        var hpBefore = defender.CurrentHp;
         defender.CurrentHp = Math.Max(0, defender.CurrentHp - damage);
 
-        events.Add(
-            $"[{GetDisplayName(attacker)}] used {moveName} on [{GetDisplayName(defender)}] for {damage} damage.");
+        events.Add(new PokemonDamageEvent
+        {
+            PlayerId = defenderPlayerId,
+            PokemonName = GetDisplayName(defender),
+            Damage = damage,
+            HpBefore = hpBefore,
+            HpAfter = defender.CurrentHp,
+            MaxHp = defender.MaxHp,
+            TypeMultiplier = damageOutcome.TypeMultiplier
+        });
 
-        if (damageOutcome.TypeMultiplier == 0)
-            events.Add("It had no effect.");
-        else if (damageOutcome.TypeMultiplier >= 2)
-            events.Add("It's super effective!");
-        else if (damageOutcome.TypeMultiplier > 0 && damageOutcome.TypeMultiplier < 1)
-            events.Add("It's not very effective...");
+        if (damageOutcome.TypeMultiplier >= 2)
+            events.Add(new SuperEffectiveEvent { Multiplier = damageOutcome.TypeMultiplier });
+        else if (damageOutcome.TypeMultiplier < 1)
+            events.Add(new NotVeryEffectiveEvent { Multiplier = damageOutcome.TypeMultiplier });
 
-        if (!defender.IsFainted)
-            return;
-
-        events.Add($"[{GetDisplayName(defender)}] fainted.");
-        TryAutoSwitch(battle, defenderPlayerId, events);
+        if (defender.IsFainted)
+        {
+            events.Add(new PokemonFaintEvent { PlayerId = defenderPlayerId, PokemonName = GetDisplayName(defender) });
+            TryAutoSwitch(battle, defenderPlayerId, events);
+        }
     }
+
+    /// <summary>
+    /// Pre-move check: paralysis/sleep/freeze.
+    /// Returns false if pokemon cannot act this turn.
+    /// Inspired by pbs-unity BattleProperties pre-move checks.
+    /// </summary>
+    private bool CheckCanAct(BattlePokemonSnapshot pokemon, List<BattleEvent> events)
+    {
+        switch (pokemon.NonVolatileStatus)
+        {
+            case PokemonStatusCondition.Sleep:
+                if (pokemon.SleepTurnsLeft > 0)
+                {
+                    pokemon.SleepTurnsLeft--;
+                    events.Add(new SleepSkipEvent
+                    {
+                        PokemonName = GetDisplayName(pokemon),
+                        TurnsLeft = pokemon.SleepTurnsLeft
+                    });
+                    if (pokemon.SleepTurnsLeft == 0)
+                    {
+                        pokemon.NonVolatileStatus = PokemonStatusCondition.None;
+                        events.Add(new StatusHealedEvent
+                        {
+                            PokemonName = GetDisplayName(pokemon),
+                            Status = PokemonStatusCondition.Sleep
+                        });
+                    }
+                    return false;
+                }
+                pokemon.NonVolatileStatus = PokemonStatusCondition.None;
+                break;
+
+            case PokemonStatusCondition.Freeze:
+                var thawRoll = _rng.Next(1, 101);
+                if (thawRoll > 20) // 20% thaw chance per turn
+                {
+                    events.Add(new SleepSkipEvent { PokemonName = GetDisplayName(pokemon), TurnsLeft = -1 });
+                    return false;
+                }
+                pokemon.NonVolatileStatus = PokemonStatusCondition.None;
+                events.Add(new FreezeThawEvent { PokemonName = GetDisplayName(pokemon) });
+                break;
+
+            case PokemonStatusCondition.Paralysis:
+                var paraRoll = _rng.Next(1, 101);
+                if (paraRoll <= 25) // 25% fully paralyzed
+                {
+                    events.Add(new ParalysisStuckEvent { PokemonName = GetDisplayName(pokemon) });
+                    return false;
+                }
+                break;
+        }
+        return true;
+    }
+
+    /// <summary>
+    /// Handles status-category moves (inflict conditions, stat changes).
+    /// Inspired by pbs-unity Databases.Effects.Moves handling.
+    /// </summary>
+    private void ApplyStatusMove(
+        BattlePokemonSnapshot attacker,
+        BattlePokemonSnapshot defender,
+        string defenderPlayerId,
+        MoveEntry move,
+        BattleSession battle,
+        List<BattleEvent> events)
+    {
+        var effect = (move.Effect ?? "").ToLowerInvariant();
+
+        // Status infliction effects
+        var statusToInflict = effect switch
+        {
+            "burn" or "will-o-wisp"      => PokemonStatusCondition.Burn,
+            "thunder-wave" or "paralyze" or "paralysis" => PokemonStatusCondition.Paralysis,
+            "toxic" or "badly-poison"    => PokemonStatusCondition.Toxic,
+            "poison" or "poison-powder"  => PokemonStatusCondition.Poison,
+            "sleep" or "spore" or "sing" or "hypnosis" => PokemonStatusCondition.Sleep,
+            "freeze"                     => PokemonStatusCondition.Freeze,
+            _ => PokemonStatusCondition.None
+        };
+
+        if (statusToInflict != PokemonStatusCondition.None)
+        {
+            TryInflictStatus(defender, defenderPlayerId, statusToInflict, events);
+            return;
+        }
+
+        // Stat change effects (e.g. growl = -1 ATK, tail whip = -1 DEF, etc.)
+        var statChange = ParseStatChangeEffect(effect);
+        if (statChange is not null)
+        {
+            var target = statChange.TargetSelf ? attacker : defender;
+            var targetPlayerId = statChange.TargetSelf
+                ? GetOpponentPlayerId(battle, defenderPlayerId)
+                : defenderPlayerId;
+            ApplyStatStageChange(target, targetPlayerId, statChange.Stat, statChange.Stages, events);
+            return;
+        }
+
+        events.Add(new MessageEvent { Message = $"[{GetDisplayName(attacker)}] used a status move. (Effect: {effect})" });
+    }
+
+    private void TryInflictStatus(BattlePokemonSnapshot target, string targetPlayerId,
+        PokemonStatusCondition status, List<BattleEvent> events)
+    {
+        if (target.NonVolatileStatus != PokemonStatusCondition.None)
+        {
+            events.Add(new StatusBlockedEvent
+            {
+                PokemonName = GetDisplayName(target),
+                Reason = "already has a status condition"
+            });
+            return;
+        }
+
+        target.NonVolatileStatus = status;
+        if (status == PokemonStatusCondition.Sleep)
+            target.SleepTurnsLeft = _rng.Next(1, 4); // 1–3 turns
+        if (status == PokemonStatusCondition.Toxic)
+            target.ToxicCounter = 1;
+
+        events.Add(new StatusInflictedEvent
+        {
+            PlayerId = targetPlayerId,
+            PokemonName = GetDisplayName(target),
+            Status = status
+        });
+    }
+
+    private static void ApplyStatStageChange(BattlePokemonSnapshot target, string targetPlayerId,
+        StatIndex stat, int stages, List<BattleEvent> events)
+    {
+        var current = target.GetStage(stat);
+        var clamped = Math.Clamp(current + stages, -6, 6);
+        var actual = clamped - current;
+
+        if (actual == 0)
+        {
+            events.Add(new StatChangeBlockedEvent
+            {
+                PokemonName = GetDisplayName(target),
+                Stat = stat,
+                Reason = stages > 0 ? "already at maximum" : "already at minimum"
+            });
+            return;
+        }
+
+        target.StatStages[(int)stat] = clamped;
+        events.Add(new StatChangeEvent
+        {
+            PlayerId = targetPlayerId,
+            PokemonName = GetDisplayName(target),
+            Stat = stat,
+            Stages = actual,
+            NewStage = clamped
+        });
+    }
+
+    private record StatChangeInfo(StatIndex Stat, int Stages, bool TargetSelf);
+
+    private static StatChangeInfo? ParseStatChangeEffect(string effect) => effect switch
+    {
+        "growl"           => new StatChangeInfo(StatIndex.ATK, -1, false),
+        "tail-whip"       => new StatChangeInfo(StatIndex.DEF, -1, false),
+        "leer"            => new StatChangeInfo(StatIndex.DEF, -1, false),
+        "screech"         => new StatChangeInfo(StatIndex.DEF, -2, false),
+        "charm"           => new StatChangeInfo(StatIndex.ATK, -2, false),
+        "growl-sharp"     => new StatChangeInfo(StatIndex.SPA, -1, false),
+        "swords-dance"    => new StatChangeInfo(StatIndex.ATK, +2, true),
+        "nasty-plot"      => new StatChangeInfo(StatIndex.SPA, +2, true),
+        "calm-mind"       => new StatChangeInfo(StatIndex.SPA, +1, true),
+        "bulk-up"         => new StatChangeInfo(StatIndex.ATK, +1, true),
+        "agility"         => new StatChangeInfo(StatIndex.SPE, +2, true),
+        "harden"          => new StatChangeInfo(StatIndex.DEF, +1, true),
+        "withdraw"        => new StatChangeInfo(StatIndex.DEF, +1, true),
+        "defense-curl"    => new StatChangeInfo(StatIndex.DEF, +1, true),
+        "amnesia"         => new StatChangeInfo(StatIndex.SPD, +2, true),
+        "barrier"         => new StatChangeInfo(StatIndex.DEF, +2, true),
+        "acid-armor"      => new StatChangeInfo(StatIndex.DEF, +2, true),
+        "minimize"        => new StatChangeInfo(StatIndex.EVA, +2, true),
+        "double-team"     => new StatChangeInfo(StatIndex.EVA, +1, true),
+        _                 => (StatChangeInfo?)null
+    };
 
     private async Task<DamageOutcome> CalculateDamageAsync(
         BattlePokemonSnapshot attacker,
         BattlePokemonSnapshot defender,
-        MoveEntry move)
+        MoveEntry move,
+        BattleSession battle)
     {
         var attackerEntry = await _db.Pokedex.Find(p => p.Id == attacker.SpeciesId).FirstOrDefaultAsync();
         var defenderEntry = await _db.Pokedex.Find(p => p.Id == defender.SpeciesId).FirstOrDefaultAsync();
@@ -587,23 +841,48 @@ public class BattleService
             ? GetBaseStat(defenderEntry, "spdef", "special-defense", "special_defense")
             : GetBaseStat(defenderEntry, "def", "defense");
 
-        var attackStat = CalculateBattleStat(attackBaseStat, attacker.Level);
-        var defenseStat = CalculateBattleStat(defenseBaseStat, defender.Level);
+        var attackStatBase = CalculateBattleStat(attackBaseStat, attacker.Level);
+        var defenseStatBase = CalculateBattleStat(defenseBaseStat, defender.Level);
+
+        // ── Apply stat stages (pbs-unity GetStageMultiplier logic) ───────────
+        var attackStageIdx = category == "special" ? StatIndex.SPA : StatIndex.ATK;
+        var defenseStageIdx = category == "special" ? StatIndex.SPD : StatIndex.DEF;
+        var attackStat = (int)(attackStatBase * attacker.GetStageMultiplier(attackStageIdx));
+        var defenseStat = (int)(defenseStatBase * defender.GetStageMultiplier(defenseStageIdx));
+
+        // ── Burn: -50% physical ATK (pbs-unity Burn effect) ─────────────────
+        if (attacker.NonVolatileStatus == PokemonStatusCondition.Burn && category == "physical")
+            attackStat = (int)(attackStat * 0.5);
+
         var level = Math.Max(1, attacker.Level);
         var power = Math.Max(1, move.Power ?? 1);
 
         var baseDamage = (((2d * level / 5d) + 2d) * power * attackStat / Math.Max(1, defenseStat)) / 50d + 2d;
         var hasStab = attackerTypes.Any(t => NormalizeType(t) == moveType);
         var stab = hasStab ? 1.5 : 1.0;
+
+        // ── Weather modifier (pbs-unity weather damage scaling) ──────────────
+        var weatherMod = GetWeatherDamageModifier(battle.Weather, moveType);
+
         var randomFactor = _battleOptions.DamageRandomMin
             + (_rng.NextDouble() * (_battleOptions.DamageRandomMax - _battleOptions.DamageRandomMin));
 
-        var modifier = stab * typeMultiplier * randomFactor;
+        var modifier = stab * typeMultiplier * weatherMod * randomFactor;
         var damage = Math.Max(1, (int)Math.Floor(baseDamage * modifier));
         return new DamageOutcome(damage, attackStat, defenseStat, typeMultiplier);
     }
 
-    private static void TryAutoSwitch(BattleSession battle, string playerId, List<string> events)
+    private static double GetWeatherDamageModifier(WeatherCondition weather, string moveType) =>
+        weather switch
+        {
+            WeatherCondition.Sun  when moveType == "fire"  => 1.5,
+            WeatherCondition.Sun  when moveType == "water" => 0.5,
+            WeatherCondition.Rain when moveType == "water" => 1.5,
+            WeatherCondition.Rain when moveType == "fire"  => 0.5,
+            _ => 1.0
+        };
+
+    private static void TryAutoSwitch(BattleSession battle, string playerId, List<BattleEvent> events)
     {
         var team = GetTeam(battle, playerId);
         var currentIndex = GetActiveIndex(battle, playerId);
@@ -615,11 +894,19 @@ public class BattleService
         if (next < 0)
             return;
 
+        var withdrawn = currentIndex >= 0 && currentIndex < team.Count ? team[currentIndex] : null;
         SetActiveIndex(battle, playerId, next);
-        events.Add($"[{playerId}] auto-switched to {GetDisplayName(team[next])}.");
+        events.Add(new SwitchEvent
+        {
+            PlayerId = playerId,
+            WithdrawnPokemonName = withdrawn != null ? GetDisplayName(withdrawn) : "",
+            SentOutPokemonName = GetDisplayName(team[next]),
+            NewActiveIndex = next,
+            IsAutoSwitch = true
+        });
     }
 
-    private static void UpdateBattleEndState(BattleSession battle, List<string> events)
+    private static void UpdateBattleEndState(BattleSession battle, List<BattleEvent> events)
     {
         var player1Defeated = battle.Team1.All(p => p.IsFainted);
         var player2Defeated = battle.Team2.All(p => p.IsFainted);
@@ -627,20 +914,23 @@ public class BattleService
         if (!player1Defeated && !player2Defeated)
             return;
 
+        if (battle.State == BattleState.Ended)
+            return;
+
         battle.State = BattleState.Ended;
 
         if (player1Defeated && player2Defeated)
         {
             battle.WinnerPlayerId = null;
-            events.Add("Battle ended in a draw.");
+            events.Add(new BattleEndEvent { WinnerPlayerId = null, Reason = "draw" });
             return;
         }
 
         battle.WinnerPlayerId = player2Defeated ? battle.Player1Id : battle.Player2Id;
-        events.Add($"Battle ended. Winner: {battle.WinnerPlayerId}");
+        events.Add(new BattleEndEvent { WinnerPlayerId = battle.WinnerPlayerId, Reason = "all_fainted" });
     }
 
-    private async Task PersistBattleOutcomeAsync(BattleSession battle, List<string> events)
+    private async Task PersistBattleOutcomeAsync(BattleSession battle, List<BattleEvent> events)
     {
         var player1Filter = Builders<Player>.Filter.Eq(p => p.Id, battle.Player1Id);
         var player2Filter = Builders<Player>.Filter.Eq(p => p.Id, battle.Player2Id);
@@ -650,7 +940,7 @@ public class BattleService
             var drawUpdate = Builders<Player>.Update.Inc(p => p.RankedMatches, 1);
             await _db.Players.UpdateOneAsync(player1Filter, drawUpdate);
             await _db.Players.UpdateOneAsync(player2Filter, drawUpdate);
-            events.Add("Ranked result persisted (draw).");
+            events.Add(new MessageEvent { Message = "Ranked result persisted (draw)." });
             return;
         }
 
@@ -672,7 +962,7 @@ public class BattleService
 
         await _db.Players.UpdateOneAsync(winnerFilter, winnerUpdate);
         await _db.Players.UpdateOneAsync(loserFilter, loserUpdate);
-        events.Add($"Ranked result persisted (winner +{_battleOptions.WinnerMmrGain} MMR, loser -{_battleOptions.LoserMmrLoss} MMR).");
+        events.Add(new MessageEvent { Message = $"Ranked result persisted (winner +{_battleOptions.WinnerMmrGain} MMR, loser -{_battleOptions.LoserMmrLoss} MMR)." });
     }
 
     private async Task WriteBattleLogAsync(BattleSession battle, BattleTurnResult result, string source)
@@ -702,6 +992,8 @@ public class BattleService
         result.ActiveIndex2 = battle.ActiveIndex2;
         result.ActiveHp1 = GetActivePokemonHp(battle.Team1, battle.ActiveIndex1);
         result.ActiveHp2 = GetActivePokemonHp(battle.Team2, battle.ActiveIndex2);
+        result.Weather = battle.Weather;
+        result.WeatherTurnsLeft = battle.WeatherTurnsLeft;
     }
 
     private static int GetActivePokemonHp(List<BattlePokemonSnapshot> team, int index)
@@ -810,7 +1102,7 @@ public class BattleService
         return multiplier;
     }
 
-    private static void ApplyTurnTimeoutIfNeeded(BattleSession battle, List<string> events)
+    private static void ApplyTurnTimeoutIfNeeded(BattleSession battle, List<BattleEvent> events)
     {
         if (battle.State != BattleState.Running)
             return;
@@ -828,16 +1120,16 @@ public class BattleService
         {
             battle.State = BattleState.Ended;
             battle.WinnerPlayerId = null;
-            events.Add($"Turn {battle.TurnNumber} timeout: both players inactive.");
-            events.Add("Battle ended in a draw.");
+            events.Add(new MessageEvent { Message = $"Turn {battle.TurnNumber} timeout: both players inactive." });
+            events.Add(new BattleEndEvent { WinnerPlayerId = null, Reason = "timeout_draw" });
             return;
         }
 
         var loserId = hasP1Action ? battle.Player2Id : battle.Player1Id;
         battle.State = BattleState.Ended;
         battle.WinnerPlayerId = GetOpponentPlayerId(battle, loserId);
-        events.Add($"Turn {battle.TurnNumber} timeout: {loserId} did not submit action.");
-        events.Add($"Battle ended. Winner: {battle.WinnerPlayerId}");
+        events.Add(new MessageEvent { Message = $"Turn {battle.TurnNumber} timeout: {loserId} did not submit action." });
+        events.Add(new BattleEndEvent { WinnerPlayerId = battle.WinnerPlayerId, Reason = "timeout" });
     }
 
     private static bool HasBothActions(BattleSession battle)
@@ -904,6 +1196,176 @@ public class BattleService
             throw new Exception("Unsupported action type.");
         }
     }
+
+    /// <summary>
+    /// End-of-turn effects: burn, toxic, poison, weather damage.
+    /// Mirrors pbs-unity end-of-turn status damage sequence.
+    /// </summary>
+    private async Task ApplyEndOfTurnEffectsAsync(BattleSession battle, List<BattleEvent> events)
+    {
+        // Weather tick
+        if (battle.Weather != WeatherCondition.None && battle.WeatherTurnsLeft > 0)
+        {
+            battle.WeatherTurnsLeft--;
+            if (battle.WeatherTurnsLeft == 0)
+            {
+                events.Add(new WeatherEndedEvent { EndedWeather = battle.Weather });
+                battle.Weather = WeatherCondition.None;
+            }
+        }
+
+        // Apply end-of-turn status/weather damage for each active pokemon
+        foreach (var (playerId, team, activeIndex) in new[]
+        {
+            (battle.Player1Id, battle.Team1, battle.ActiveIndex1),
+            (battle.Player2Id, battle.Team2, battle.ActiveIndex2)
+        })
+        {
+            if (activeIndex < 0 || activeIndex >= team.Count)
+                continue;
+
+            var pokemon = team[activeIndex];
+            if (pokemon.IsFainted)
+                continue;
+
+            // Non-volatile status end-of-turn damage
+            ApplyStatusEndOfTurnDamage(pokemon, playerId, events);
+
+            // Weather damage (sandstorm/hail)
+            await ApplyWeatherEndOfTurnDamageAsync(pokemon, playerId, battle, events);
+
+            // Faint check after end-of-turn
+            if (pokemon.IsFainted)
+            {
+                events.Add(new PokemonFaintEvent { PlayerId = playerId, PokemonName = GetDisplayName(pokemon) });
+                TryAutoSwitch(battle, playerId, events);
+            }
+        }
+    }
+
+    private static void ApplyStatusEndOfTurnDamage(BattlePokemonSnapshot pokemon, string playerId,
+        List<BattleEvent> events)
+    {
+        int dmg;
+        switch (pokemon.NonVolatileStatus)
+        {
+            case PokemonStatusCondition.Burn:
+                dmg = Math.Max(1, pokemon.MaxHp / 16);
+                pokemon.CurrentHp = Math.Max(0, pokemon.CurrentHp - dmg);
+                events.Add(new PokemonDamageEvent
+                {
+                    PlayerId = playerId,
+                    PokemonName = GetDisplayName(pokemon),
+                    Damage = dmg,
+                    HpBefore = pokemon.CurrentHp + dmg,
+                    HpAfter = pokemon.CurrentHp,
+                    MaxHp = pokemon.MaxHp,
+                    IsEndOfTurn = true
+                });
+                break;
+
+            case PokemonStatusCondition.Poison:
+                dmg = Math.Max(1, pokemon.MaxHp / 8);
+                pokemon.CurrentHp = Math.Max(0, pokemon.CurrentHp - dmg);
+                events.Add(new PokemonDamageEvent
+                {
+                    PlayerId = playerId,
+                    PokemonName = GetDisplayName(pokemon),
+                    Damage = dmg,
+                    HpBefore = pokemon.CurrentHp + dmg,
+                    HpAfter = pokemon.CurrentHp,
+                    MaxHp = pokemon.MaxHp,
+                    IsEndOfTurn = true
+                });
+                break;
+
+            case PokemonStatusCondition.Toxic:
+                // Escalating: 1/16, 2/16, 3/16... capped at 15/16
+                var counter = Math.Clamp(pokemon.ToxicCounter, 1, 15);
+                dmg = Math.Max(1, pokemon.MaxHp * counter / 16);
+                pokemon.CurrentHp = Math.Max(0, pokemon.CurrentHp - dmg);
+                pokemon.ToxicCounter = Math.Min(15, pokemon.ToxicCounter + 1);
+                events.Add(new PokemonDamageEvent
+                {
+                    PlayerId = playerId,
+                    PokemonName = GetDisplayName(pokemon),
+                    Damage = dmg,
+                    HpBefore = pokemon.CurrentHp + dmg,
+                    HpAfter = pokemon.CurrentHp,
+                    MaxHp = pokemon.MaxHp,
+                    IsEndOfTurn = true
+                });
+                break;
+        }
+    }
+
+    private async Task ApplyWeatherEndOfTurnDamageAsync(BattlePokemonSnapshot pokemon, string playerId,
+        BattleSession battle, List<BattleEvent> events)
+    {
+        if (battle.Weather != WeatherCondition.Sandstorm && battle.Weather != WeatherCondition.Hail)
+            return;
+
+        var entry = await _db.Pokedex.Find(p => p.Id == pokemon.SpeciesId).FirstOrDefaultAsync();
+        var types = entry?.Types?.Select(NormalizeType).ToList() ?? new List<string>();
+
+        // Sandstorm: Rock, Steel, Ground are immune
+        if (battle.Weather == WeatherCondition.Sandstorm
+            && (types.Contains("rock") || types.Contains("steel") || types.Contains("ground")))
+            return;
+
+        // Hail: Ice is immune
+        if (battle.Weather == WeatherCondition.Hail && types.Contains("ice"))
+            return;
+
+        var dmg = Math.Max(1, pokemon.MaxHp / 16);
+        pokemon.CurrentHp = Math.Max(0, pokemon.CurrentHp - dmg);
+        events.Add(new WeatherDamageEvent
+        {
+            PlayerId = playerId,
+            PokemonName = GetDisplayName(pokemon),
+            Damage = dmg,
+            Weather = battle.Weather
+        });
+    }
+
+    /// <summary>
+    /// Converts typed events to legacy string list for log persistence and backward compat.
+    /// </summary>
+    private static List<string> TypedEventsToStrings(List<BattleEvent> typedEvents) =>
+        typedEvents.Select(e => e switch
+        {
+            MoveUsedEvent m         => $"[{m.PokemonName}] used {m.MoveName}.",
+            MoveMissedEvent m       => $"[{m.PokemonName}] used {m.MoveName} but missed.",
+            MoveNoEffectEvent m     => $"It had no effect on [{m.TargetName}].",
+            PokemonDamageEvent d    => d.IsEndOfTurn
+                                        ? $"[{d.PokemonName}] took {d.Damage} end-of-turn damage. ({d.HpAfter}/{d.MaxHp} HP)"
+                                        : $"[{d.PokemonName}] took {d.Damage} damage. ({d.HpAfter}/{d.MaxHp} HP)",
+            PokemonFaintEvent f     => $"[{f.PokemonName}] fainted.",
+            PokemonHealEvent h      => $"[{h.PokemonName}] restored {h.HealAmount} HP.",
+            SuperEffectiveEvent _   => "It's super effective!",
+            NotVeryEffectiveEvent _ => "It's not very effective...",
+            SwitchEvent s           => s.IsAutoSwitch
+                                        ? $"[{s.PlayerId}] auto-switched to {s.SentOutPokemonName}."
+                                        : $"[{s.PlayerId}] withdrew {s.WithdrawnPokemonName} and sent out {s.SentOutPokemonName}.",
+            StatusInflictedEvent s  => $"[{s.PokemonName}] was inflicted with {s.Status}.",
+            StatusHealedEvent s     => $"[{s.PokemonName}] was cured of {s.Status}.",
+            StatusBlockedEvent s    => $"[{s.PokemonName}] status blocked: {s.Reason}.",
+            ParalysisStuckEvent p   => $"[{p.PokemonName}] is fully paralyzed and cannot move!",
+            SleepSkipEvent s        => $"[{s.PokemonName}] is fast asleep.",
+            FreezeThawEvent f       => $"[{f.PokemonName}] thawed out!",
+            StatChangeEvent s       => s.Stages > 0
+                                        ? $"[{s.PokemonName}]'s {s.Stat} rose{(s.Stages >= 2 ? " sharply" : "")}!"
+                                        : $"[{s.PokemonName}]'s {s.Stat} fell{(s.Stages <= -2 ? " harshly" : "")}!",
+            StatChangeBlockedEvent s=> $"[{s.PokemonName}]'s {s.Stat} {s.Reason}.",
+            WeatherChangedEvent w   => $"The weather changed to {w.NewWeather}.",
+            WeatherEndedEvent w     => $"The {w.EndedWeather} subsided.",
+            WeatherDamageEvent w    => $"[{w.PokemonName}] is buffeted by the {w.Weather} for {w.Damage} damage.",
+            BattleEndEvent b        => b.WinnerPlayerId != null
+                                        ? $"Battle ended. Winner: {b.WinnerPlayerId}"
+                                        : "Battle ended in a draw.",
+            MessageEvent m          => m.Message,
+            _                       => e.EventType
+        }).ToList();
 
     private record OrderedAction(BattleAction Action, int Priority, int Speed, int Tiebreaker);
     private record DamageOutcome(int Damage, int AttackStat, int DefenseStat, double TypeMultiplier);

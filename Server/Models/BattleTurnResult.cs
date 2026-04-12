@@ -13,5 +13,19 @@ public class BattleTurnResult
     public int ActiveHp1 { get; set; }
     public int ActiveHp2 { get; set; }
 
+    // Field state snapshot sent to client
+    public WeatherCondition Weather { get; set; } = WeatherCondition.None;
+    public int WeatherTurnsLeft { get; set; } = 0;
+
+    /// <summary>
+    /// Typed event list — primary source of truth for client rendering.
+    /// Inspired by pbs-unity Battle.View.Events hierarchy.
+    /// </summary>
+    public List<BattleEvent> TypedEvents { get; set; } = new();
+
+    /// <summary>
+    /// Legacy string events kept for battle log persistence and backward compat.
+    /// Generated from TypedEvents automatically.
+    /// </summary>
     public List<string> Events { get; set; } = new();
 }

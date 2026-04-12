@@ -2,6 +2,8 @@ using System.Collections.Concurrent;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.SignalR;
+using Microsoft.IdentityModel.JsonWebTokens;
+using Microsoft.IdentityModel.Tokens;
 using PokemonMMO.Data;
 using PokemonMMO.Models;
 using PokemonMMO.Models.DTOs;
@@ -154,7 +156,7 @@ public class MatchmakingHub : Hub
     private async Task<Player?> GetAuthenticatedPlayer()
     {
         var accountId = Context.User?.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value
-            ?? Context.User?.FindFirst(JwtSecurityTokenHandler.DefaultInboundClaimTypeMap[JwtRegisteredClaimNames.Sub])?.Value
+            ?? Context.User?.FindFirst(JwtRegisteredClaimNames.Sub)?.Value
             ?? Context.User?.FindFirst("sub")?.Value;
 
         if (string.IsNullOrWhiteSpace(accountId)) return null;

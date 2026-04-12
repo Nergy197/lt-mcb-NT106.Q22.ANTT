@@ -97,8 +97,15 @@ builder.Services.AddScoped<PokedexService>();
 // ---------------------------------------------------------------------------
 // MVC Controllers + SignalR
 // ---------------------------------------------------------------------------
-builder.Services.AddControllers();
-builder.Services.AddSignalR();
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.PropertyNamingPolicy = null;
+});
+
+builder.Services.AddSignalR().AddJsonProtocol(options =>
+{
+    options.PayloadSerializerOptions.PropertyNamingPolicy = null;
+});
 
 // ---------------------------------------------------------------------------
 // CORS (allow Unity client)
