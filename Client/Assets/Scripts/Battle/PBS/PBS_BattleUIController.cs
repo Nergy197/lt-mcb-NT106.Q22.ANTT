@@ -106,7 +106,7 @@ namespace PokemonMMO.UI.Battle
         private void HandleBattleSync(BattleSession session)
         {
             _uiState    = BattleUIState.Idle;
-            _myPlayerId = PlayerPrefs.GetString("account_id");
+            _myPlayerId = PlayerPrefs.GetString("player_id");
 
             bool isPlayer1  = session.Player1Id == _myPlayerId;
             var  myTeam     = isPlayer1 ? session.Team1 : session.Team2;
