@@ -127,13 +127,19 @@ app.MapGet("/", () => Results.Ok(new { status = "ok", service = "Pokemon MMO Ser
 app.MapControllers();
 
 // SignalR hub
-app.MapHub<GameHub>("/game");
+// SignalR hubs
+app.MapHub<MatchmakingHub>("/hubs/matchmaking");
+app.MapHub<BattleHub>("/hubs/battle");
+
+// Compatibility mapping (optional, but good if Unity client still uses /game)
+app.MapHub<BattleHub>("/game");
 
 // ---------------------------------------------------------------------------
 // Start
 // ---------------------------------------------------------------------------
 Console.WriteLine($"✅ Pokémon MMO Server listening on http://0.0.0.0:{port}");
-Console.WriteLine($"📡 SignalR Hub: ws://localhost:{port}/game");
+Console.WriteLine($"📡 Matchmaking Hub: ws://localhost:{port}/hubs/matchmaking");
+Console.WriteLine($"⚔️  Battle Hub:      ws://localhost:{port}/hubs/battle");
 Console.WriteLine($"🗄️  MongoDB: {mongoUri}/{mongoDb}");
 Console.WriteLine($"🔐 Auth API:  http://localhost:{port}/api/auth");
 
