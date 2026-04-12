@@ -23,4 +23,15 @@ public class BattleSession
     public DateTime TurnDeadlineUtc { get; set; } = DateTime.UtcNow;
     public string? WinnerPlayerId { get; set; }
     public DateTime CreatedAtUtc { get; set; } = DateTime.UtcNow;
+
+    // ── Field conditions (inspired by pbs-unity Battle.Model) ────────────────
+
+    /// <summary>Current weather affecting the field.</summary>
+    public WeatherCondition Weather { get; set; } = WeatherCondition.None;
+
+    /// <summary>
+    /// Turns remaining for the current weather (-1 = permanent, 0 = none).
+    /// Standard weather lasts 5 turns; extended by items to 8 (not implemented yet).
+    /// </summary>
+    public int WeatherTurnsLeft { get; set; } = 0;
 }

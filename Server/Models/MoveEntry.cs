@@ -38,4 +38,12 @@ public class MoveEntry
     [BsonElement("pp")]
     [JsonPropertyName("pp")]
     public int PP { get; set; }
+
+    /// <summary>
+    /// Effect identifier for status moves (e.g. "burn", "paralysis", "sleep", "toxic").
+    /// Used by BattleService to determine status infliction / stat changes.
+    /// </summary>
+    [BsonElement("effect")]
+    [JsonPropertyName("effect")]
+    public string? Effect { get; set; }
 }
