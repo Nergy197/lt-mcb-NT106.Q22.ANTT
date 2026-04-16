@@ -263,7 +263,12 @@ public class BattleService
             if (battle.PendingActions.Count < required)
                 return null;
 
-            var turnEvents = new List<BattleEvent>();
+            var result = new BattleTurnResult
+            {
+                BattleId = battleId,
+                ResolvedTurnNumber = battle.TurnNumber,
+                State = battle.State
+            };
             
             // Xếp hàng các hành động
             var actions = battle.PendingActions.Values.ToList();
@@ -303,18 +308,8 @@ public class BattleService
                 
                 if (action.Type == BattleActionType.Move)
                 {
-                    var target = GetActivePokemon(battle, opponentId, action.TargetSlot);
-                    // Chống đánh vào xác chết: Nếu target fainted, đánh con còn lại
-                    if (target == null || target.IsFainted)
-                    {
-                        target = GetActivePokemon(battle, opponentId, 1 - action.TargetSlot);
-                    }
-
-                    if (target != null && !target.IsFainted)
-                    {
-                        await ResolveMoveAsync(battle, action.PlayerId, attacker, opponentId, target, action.MoveSlot ?? 0, result.TypedEvents);
-                        UpdateBattleEndState(battle, result.TypedEvents);
-                    }
+                    await ApplyMoveActionAsync(battle, action, result.TypedEvents);
+                    UpdateBattleEndState(battle, result.TypedEvents);
                 }
                 else if (action.Type == BattleActionType.Switch)
                 {
@@ -1485,8 +1480,6 @@ public class BattleService
             MessageEvent m          => m.Message,
             _                       => e.EventType
         }).ToList();
-    private static int GetActiveIndex(BattleSession battle, string playerId)
-        => playerId == battle.Player1Id ? battle.ActiveIndex1 : battle.ActiveIndex2;
 
     private static int GetActiveIndexB(BattleSession battle, string playerId)
         => playerId == battle.Player1Id ? battle.ActiveIndex1b : battle.ActiveIndex2b;
@@ -1527,11 +1520,7 @@ public class BattleService
         return -1;
     }
 
-    private static List<BattlePokemonSnapshot> GetTeam(BattleSession battle, string playerId)
-        => playerId == battle.Player1Id ? battle.Team1 : battle.Team2;
 
-    private static string GetOpponentPlayerId(BattleSession battle, string playerId)
-        => playerId == battle.Player1Id ? battle.Player2Id : battle.Player1Id;
 
     private static int GetOpponentActiveIndex(BattleSession battle, string playerId)
         => playerId == battle.Player1Id ? battle.ActiveIndex2 : battle.ActiveIndex1;

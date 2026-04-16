@@ -1,6 +1,7 @@
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using PokemonMMO.Data;
 using PokemonMMO.Hubs;
 using PokemonMMO.Options;
@@ -61,7 +62,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
                 var accessToken = ctx.Request.Query["access_token"];
                 var path = ctx.HttpContext.Request.Path;
-                if (!string.IsNullOrEmpty(accessToken) && path.StartsWithSegments("/game"))
+                if (!string.IsNullOrEmpty(accessToken) && (
+                    path.StartsWithSegments("/hubs/matchmaking") ||
+                    path.StartsWithSegments("/hubs/battle") ||
+                    path.StartsWithSegments("/game")))
                     ctx.Token = accessToken;
 
                 return Task.CompletedTask;
@@ -92,8 +96,10 @@ builder.Services.AddSingleton<PokemonDataService>();
 builder.Services.AddScoped<GameService>();
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddSingleton<BattleService>();
-// ── New services for Pokedex and Moves ─────────────────────────────────────
+// ── New services for Pokedex, Moves and Email ──────────────────────────────
 builder.Services.AddScoped<PokedexService>();
+builder.Services.AddScoped<EmailService>();
+
 // ---------------------------------------------------------------------------
 // MVC Controllers + SignalR
 // ---------------------------------------------------------------------------
@@ -105,6 +111,42 @@ builder.Services.AddControllers().AddJsonOptions(options =>
 builder.Services.AddSignalR().AddJsonProtocol(options =>
 {
     options.PayloadSerializerOptions.PropertyNamingPolicy = null;
+});
+
+// ---------------------------------------------------------------------------
+// Swagger (với hỗ trợ JWT Authorization)
+// ---------------------------------------------------------------------------
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "PokemonMMO API", Version = "v1" });
+
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Description = "JWT Authorization header using the Bearer scheme. Example: \"Bearer {token}\"",
+        Name        = "Authorization",
+        In          = ParameterLocation.Header,
+        Type        = SecuritySchemeType.ApiKey,
+        Scheme      = "Bearer"
+    });
+
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement()
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id   = "Bearer"
+                },
+                Scheme = "oauth2",
+                Name   = "Bearer",
+                In     = ParameterLocation.Header,
+            },
+            new List<string>()
+        }
+    });
 });
 
 // ---------------------------------------------------------------------------
@@ -120,6 +162,10 @@ builder.Services.AddCors(opt =>
 
 var app = builder.Build();
 
+// Swagger UI
+app.UseSwagger();
+app.UseSwaggerUI();
+
 // ---------------------------------------------------------------------------
 // Middleware pipeline
 // ---------------------------------------------------------------------------
@@ -133,12 +179,11 @@ app.MapGet("/", () => Results.Ok(new { status = "ok", service = "Pokemon MMO Ser
 // REST API controllers (auth, etc.)
 app.MapControllers();
 
-// SignalR hub
 // SignalR hubs
 app.MapHub<MatchmakingHub>("/hubs/matchmaking");
 app.MapHub<BattleHub>("/hubs/battle");
 
-// Compatibility mapping (optional, but good if Unity client still uses /game)
+// Compatibility mapping (Unity client cũ dùng /game)
 app.MapHub<BattleHub>("/game");
 
 // ---------------------------------------------------------------------------
@@ -158,5 +203,6 @@ Console.WriteLine($"📡 Matchmaking Hub: ws://localhost:{port}/hubs/matchmaking
 Console.WriteLine($"⚔️  Battle Hub:      ws://localhost:{port}/hubs/battle");
 Console.WriteLine($"🗄️  MongoDB: {mongoUri}/{mongoDb}");
 Console.WriteLine($"🔐 Auth API:  http://localhost:{port}/api/auth");
+Console.WriteLine($"📖 Swagger:   http://localhost:{port}/swagger");
 
 app.Run();

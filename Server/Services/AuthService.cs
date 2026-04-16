@@ -14,17 +14,19 @@ public class AuthService
 {
     private readonly MongoDbContext _db;
     private readonly ILogger<AuthService> _log;
+    private readonly EmailService _emailService;
+    private readonly GameService _gameService;
     private readonly string _jwtSecret;
     private readonly string _jwtIssuer;
     private readonly string _jwtAudience;
     private readonly int _jwtExpiryHours;
-    private readonly GameService _gameService;
 
-    public AuthService(MongoDbContext db, IConfiguration config, ILogger<AuthService> log, GameService gameService)
+    public AuthService(MongoDbContext db, IConfiguration config, ILogger<AuthService> log, EmailService emailService, GameService gameService)
     {
-        _db  = db;
-        _log = log;
-        _gameService = gameService;
+        _db           = db;
+        _log          = log;
+        _emailService = emailService;
+        _gameService  = gameService;
         _jwtSecret   = config["Jwt:Secret"]   ?? throw new InvalidOperationException("Jwt:Secret is not configured.");
         _jwtIssuer   = config["Jwt:Issuer"]   ?? "PokemonMMO";
         _jwtAudience = config["Jwt:Audience"] ?? "PokemonMMO";
@@ -165,8 +167,7 @@ public class AuthService
     // ── Forgot Password ───────────────────────────────────────────────────────
 
     /// <summary>
-    /// Tạo reset token lưu vào DB. Trong production sẽ gửi email; ở đây trả
-    /// token về để test qua CLI.
+    /// Tạo reset token OTP 6 số lưu vào DB và gửi email cho người dùng.
     /// </summary>
     public async Task<(string? ResetToken, string? Error)> ForgotPasswordAsync(ForgotPasswordRequest req)
     {
@@ -182,7 +183,8 @@ public class AuthService
             return (null, "Không tìm thấy tài khoản với email này.");
         }
 
-        var resetToken = Convert.ToHexString(RandomNumberGenerator.GetBytes(32));
+        // Sinh mã OTP 6 số ngẫu nhiên
+        var resetToken = RandomNumberGenerator.GetInt32(100000, 999999).ToString();
 
         var update = Builders<Account>.Update
             .Set(a => a.PasswordResetToken,  resetToken)
@@ -190,7 +192,10 @@ public class AuthService
 
         await _db.Accounts.UpdateOneAsync(a => a.Id == account.Id, update);
 
-        _log.LogInformation("[ForgotPassword] Reset token issued — AccountId: {Id}, Username: {Username}", account.Id, account.Username);
+        // Gửi email chứa token cho người dùng
+        await _emailService.SendResetTokenAsync(account.Email, resetToken);
+
+        _log.LogInformation("[ForgotPassword] Reset token issued and email sent — AccountId: {Id}, Username: {Username}", account.Id, account.Username);
         return (resetToken, null);
     }
 
@@ -198,7 +203,8 @@ public class AuthService
 
     public async Task<(bool Success, string? Error)> ResetPasswordAsync(ResetPasswordRequest req)
     {
-        _log.LogInformation("[ResetPassword] Attempt with token: {Token}", req.Token[..8] + "…");
+        var safeLogToken = req.Token.Length > 4 ? req.Token[..4] + "…" : req.Token;
+        _log.LogInformation("[ResetPassword] Attempt with token: {Token}", safeLogToken);
 
         if (string.IsNullOrWhiteSpace(req.NewPassword) || req.NewPassword.Length < 6)
             return (false, "Password mới phải có ít nhất 6 ký tự.");
