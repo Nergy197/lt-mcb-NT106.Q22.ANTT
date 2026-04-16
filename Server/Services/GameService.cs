@@ -29,6 +29,60 @@ public class GameService
         _pokeData = pokeData;
     }
 
+    /// <summary>
+    /// Nạp 6 Pokemon khởi đầu cho người chơi mới.
+    /// </summary>
+    public async Task SeedInitialPokemonAsync(string playerId)
+    {
+        var starters = new[]
+        {
+            new { Id = 3,   Name = "Venusaur",  Moves = new[] { 188, 79, 202, 161 } }, // Giga Drain, Razor Leaf, Giga Drain, Solar Beam
+            new { Id = 6,   Name = "Charizard", Moves = new[] { 53, 403, 406, 76 } },  // Flamethrower, Air Slash, Dragon Pulse, Solar Beam
+            new { Id = 9,   Name = "Blastoise", Moves = new[] { 58, 401, 352, 110 } }, // Ice Beam, Aqua Tail, Water Pulse, Hydro Pump
+            new { Id = 25,  Name = "Pikachu",   Moves = new[] { 85, 86, 231, 98 } },   // Thunderbolt, Thunder Wave, Iron Tail, Quick Attack
+            new { Id = 448, Name = "Lucario",   Moves = new[] { 370, 412, 395, 245 } },// Close Combat, Aura Sphere, Vacuum Wave, Extreme Speed
+            new { Id = 445, Name = "Garchomp",  Moves = new[] { 89, 414, 337, 242 } }  // Earthquake, Earth Power, Dragon Claw, Crunch
+        };
+
+        var instances = new List<PokemonInstance>();
+        int slot = 0;
+
+        foreach (var s in starters)
+        {
+            var pData = await _pokeData.GetPokemonData(s.Id);
+            var ivs = new StatBlock { Hp = 31, Atk = 31, Def = 31, SpAtk = 31, SpDef = 31, Spd = 31 };
+            var evs = new StatBlock { Hp = 0, Atk = 0, Def = 0, SpAtk = 0, SpDef = 0, Spd = 0 };
+
+            var maxHp = CalculateHp(pData.BaseHp, ivs.Hp, evs.Hp, 50);
+
+            var instance = new PokemonInstance
+            {
+                OwnerId = playerId,
+                SpeciesId = s.Id,
+                Nickname = s.Name,
+                Level = 50,
+                Exp = 0,
+                Nature = Natures[_rng.Next(Natures.Length)],
+                CurrentHp = maxHp,
+                MaxHp = maxHp,
+                StatusCondition = "NONE",
+                IsInParty = true,
+                PartySlot = slot++,
+                Ivs = ivs,
+                Evs = evs,
+                Moves = s.Moves.Select(mId => new PokemonMove { MoveId = mId, CurrentPp = 15 }).ToList()
+            };
+            instances.Add(instance);
+        }
+
+        await _db.PokemonInstances.InsertManyAsync(instances);
+    }
+
+    private int CalculateHp(int baseStat, int iv, int ev, int level)
+    {
+        return (int)Math.Floor((2.0 * baseStat + iv + Math.Floor(ev / 4.0)) * level / 100.0) + level + 10;
+    }
+
     // ─────────────────────────────────────────────────────────────────────
     // 1. Heal at Safe Zone (Hub)
     // ─────────────────────────────────────────────────────────────────────

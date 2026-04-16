@@ -26,9 +26,33 @@ public class PokedexService
         return await _context.Moves.Find(m => m.Id == id).FirstOrDefaultAsync();
     }
 
+    /// <summary>
+    /// Cleanup test data — Xoá Pokemon cũ và reset thông số để test luồng mới.
+    /// </summary>
+    public async Task CleanupAndResetDatabaseAsync()
+    {
+        Console.WriteLine("[Cleanup] Đang dọn dẹp dữ liệu cũ để bạn test...");
+        
+        // 1. Xoá toàn bộ Pokemon cũ của mọi người chơi
+        await _context.PokemonInstances.DeleteManyAsync(_ => true);
+        
+        // 2. Reset MMR và VP cho mọi Player về mặc định
+        var update = Builders<Player>.Update
+            .Set(p => p.MMR, 1000)
+            .Set(p => p.VP, 0)
+            .Set(p => p.RankedWins, 0)
+            .Set(p => p.RankedMatches, 0);
+        await _context.Players.UpdateManyAsync(_ => true, update);
+
+        Console.WriteLine("[Cleanup] Đã dọn dẹp xong! Giờ bạn chỉ cần Login lại để nhận 6 Pokemon mới.");
+    }
+
     // Hàm seed tự động JSON vào MongoDB
     public async Task SeedDatabaseAsync()
     {
+        // Dọn dẹp trước khi Seed (Bạn có thể comment dòng này sau khi test xong)
+        await CleanupAndResetDatabaseAsync();
+
         var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
 
         // 1. Seed Pokedex

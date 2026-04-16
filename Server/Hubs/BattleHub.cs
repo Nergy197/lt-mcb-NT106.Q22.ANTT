@@ -45,7 +45,7 @@ public class BattleHub : Hub
         }
     }
 
-    public async Task ChooseMove(string battleId, int moveSlot)
+    public async Task ChooseMove(string battleId, int moveSlot, int sourceIndex = 0, int targetSlot = 0)
     {
         if (!ActiveBattlers.TryGetValue(Context.ConnectionId, out var playerId)) return;
 
@@ -55,11 +55,13 @@ public class BattleHub : Hub
             {
                 PlayerId = playerId,
                 Type = BattleActionType.Move,
-                MoveSlot = moveSlot
+                MoveSlot = moveSlot,
+                SourceIndex = sourceIndex,
+                TargetSlot = targetSlot
             };
 
             await _battleService.SubmitActionAsync(battleId, action);
-            await Clients.Caller.SendAsync("ActionAccepted", new { Action = "Move", Slot = moveSlot });
+            await Clients.Caller.SendAsync("ActionAccepted", new { Action = "Move", Slot = moveSlot, Source = sourceIndex, Target = targetSlot });
 
             await CheckAndResolveTurn(battleId);
         }

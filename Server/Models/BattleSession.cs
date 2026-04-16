@@ -14,8 +14,12 @@ public class BattleSession
     public List<BattlePokemonSnapshot> Team1 { get; set; } = new();
     public List<BattlePokemonSnapshot> Team2 { get; set; } = new();
 
-    public int ActiveIndex1 { get; set; } = 0;
-    public int ActiveIndex2 { get; set; } = 0;
+    // Trong đấu đôi, ta có 2 Pokemon đứng sân cùng lúc
+    public int ActiveIndex1 { get; set; } = 0; // Slot A phe 1
+    public int ActiveIndex1b { get; set; } = 1; // Slot B phe 1
+
+    public int ActiveIndex2 { get; set; } = 0; // Slot A phe 2
+    public int ActiveIndex2b { get; set; } = 1; // Slot B phe 2
 
     // Key = playerId
     public ConcurrentDictionary<string, BattleAction> PendingActions { get; set; } = new();

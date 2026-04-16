@@ -142,6 +142,15 @@ app.MapHub<BattleHub>("/hubs/battle");
 app.MapHub<BattleHub>("/game");
 
 // ---------------------------------------------------------------------------
+// Seed Database & Cleanup
+// ---------------------------------------------------------------------------
+using (var scope = app.Services.CreateScope())
+{
+    var pokedex = scope.ServiceProvider.GetRequiredService<PokedexService>();
+    await pokedex.SeedDatabaseAsync();
+}
+
+// ---------------------------------------------------------------------------
 // Start
 // ---------------------------------------------------------------------------
 Console.WriteLine($"✅ Pokémon MMO Server listening on http://0.0.0.0:{port}");

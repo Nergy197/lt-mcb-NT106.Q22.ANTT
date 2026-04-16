@@ -24,8 +24,13 @@ public class MatchmakingHub : Hub
     private readonly GameService _gameService;
 
     // In-memory player tracking (sessionId → playerId)
-    // Dùng chung một Dictionary tĩnh để theo dõi tất cả người chơi online
     public static readonly ConcurrentDictionary<string, string> ConnectedPlayers = new();
+
+    // Hàng chờ tìm trận (PlayerId -> ConnectionId)
+    private static readonly ConcurrentDictionary<string, string> MatchmakingQueue = new();
+    
+    // Lưu trữ các Task timeout để hủy nếu tìm thấy trận sớm
+    private static readonly ConcurrentDictionary<string, CancellationTokenSource> MatchmakingTasks = new();
 
     public MatchmakingHub(MongoDbContext db, BattleService battleService, GameService gameService)
     {
@@ -117,28 +122,93 @@ public class MatchmakingHub : Hub
 
         try
         {
-            var battle = await _battleService.CreateBattle(myPlayerId, opponentPlayerId);
-            
-            // Thông báo cho cả 2 người chơi rằng trận đấu đã bắt đầu
-            // Client sẽ dựa vào event này để chuyển hướng sang BattleScene và kết nối tới BattleHub
-            var startDto = new BattleStartedEventDto
-            {
-                BattleId = battle.BattleId,
-                Player1Id = battle.Player1Id,
-                Player2Id = battle.Player2Id,
-                TurnNumber = battle.TurnNumber,
-                TurnTimeoutSeconds = _battleService.TurnTimeoutSeconds,
-                TurnDeadlineUtc = battle.TurnDeadlineUtc,
-                State = battle.State.ToString()
-            };
-
-            await Clients.Client(Context.ConnectionId).SendAsync("MatchFound", startDto);
-            await Clients.Client(opponentConnectionId).SendAsync("MatchFound", startDto);
+            await CreateAndNotifyBattle(myPlayerId, opponentPlayerId, Context.ConnectionId, opponentConnectionId);
         }
         catch (Exception ex)
         {
             await Clients.Caller.SendAsync("Error", $"Failed to start match: {ex.Message}");
         }
+    }
+
+    public async Task FindMatch()
+    {
+        if (!ConnectedPlayers.TryGetValue(Context.ConnectionId, out var myPlayerId))
+        {
+            await Clients.Caller.SendAsync("Error", "You must join lobby first.");
+            return;
+        }
+
+        // 1. Kiểm tra xem có ai đang đợi không
+        var opponent = MatchmakingQueue.FirstOrDefault(kv => kv.Key != myPlayerId);
+        if (opponent.Key != null)
+        {
+            // Tìm thấy đối thủ người thật!
+            if (MatchmakingQueue.TryRemove(opponent.Key, out var opponentConnId))
+            {
+                if (MatchmakingTasks.TryRemove(opponent.Key, out var cts)) cts.Cancel();
+                
+                await CreateAndNotifyBattle(myPlayerId, opponent.Key, Context.ConnectionId, opponentConnId);
+                return;
+            }
+        }
+
+        // 2. Không có ai, vào hàng chờ
+        MatchmakingQueue[myPlayerId] = Context.ConnectionId;
+        await Clients.Caller.SendAsync("SearchStarted", "Đang tìm đối thủ... (Hệ thống sẽ nạp Bot sau 30s)");
+
+        var myCts = new CancellationTokenSource();
+        MatchmakingTasks[myPlayerId] = myCts;
+
+        try
+        {
+            // Chờ 30 giây
+            await Task.Delay(30000, myCts.Token);
+
+            // Nếu sau 30s vẫn còn trong hàng chờ -> Đấu với BOT
+            if (MatchmakingQueue.TryRemove(myPlayerId, out _))
+            {
+                MatchmakingTasks.TryRemove(myPlayerId, out _);
+                await CreateAndNotifyBattle(myPlayerId, "BOT_PLAYER", Context.ConnectionId, null);
+            }
+        }
+        catch (TaskCanceledException)
+        {
+            // Trận đấu đã được tìm thấy bởi người khác hoặc bị hủy
+        }
+    }
+
+    public async Task CancelMatchmaking()
+    {
+        if (ConnectedPlayers.TryGetValue(Context.ConnectionId, out var myPlayerId))
+        {
+            MatchmakingQueue.TryRemove(myPlayerId, out _);
+            if (MatchmakingTasks.TryRemove(myPlayerId, out var cts)) 
+            {
+                cts.Cancel();
+                await Clients.Caller.SendAsync("SearchCancelled", "Đã hủy tìm trận.");
+            }
+        }
+    }
+
+    private async Task CreateAndNotifyBattle(string p1, string p2, string conn1, string? conn2)
+    {
+        var battle = await _battleService.CreateBattle(p1, p2);
+        var startDto = new BattleStartedEventDto
+        {
+            BattleId = battle.BattleId,
+            Player1Id = battle.Player1Id,
+            Player2Id = battle.Player2Id,
+            TurnNumber = battle.TurnNumber,
+            TurnTimeoutSeconds = _battleService.TurnTimeoutSeconds,
+            TurnDeadlineUtc = battle.TurnDeadlineUtc,
+            State = battle.State.ToString()
+        };
+
+        if (!string.IsNullOrEmpty(conn1))
+            await Clients.Client(conn1).SendAsync("MatchFound", startDto);
+        
+        if (!string.IsNullOrEmpty(conn2))
+            await Clients.Client(conn2).SendAsync("MatchFound", startDto);
     }
 
     public override async Task OnDisconnectedAsync(Exception? exception)

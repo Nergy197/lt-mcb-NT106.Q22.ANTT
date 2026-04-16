@@ -18,11 +18,13 @@ public class AuthService
     private readonly string _jwtIssuer;
     private readonly string _jwtAudience;
     private readonly int _jwtExpiryHours;
+    private readonly GameService _gameService;
 
-    public AuthService(MongoDbContext db, IConfiguration config, ILogger<AuthService> log)
+    public AuthService(MongoDbContext db, IConfiguration config, ILogger<AuthService> log, GameService gameService)
     {
         _db  = db;
         _log = log;
+        _gameService = gameService;
         _jwtSecret   = config["Jwt:Secret"]   ?? throw new InvalidOperationException("Jwt:Secret is not configured.");
         _jwtIssuer   = config["Jwt:Issuer"]   ?? "PokemonMMO";
         _jwtAudience = config["Jwt:Audience"] ?? "PokemonMMO";
@@ -92,6 +94,9 @@ public class AuthService
         };
         await _db.Players.InsertOneAsync(player);
 
+        // Nạp 6 Pokemon mặc định cho Player
+        await _gameService.SeedInitialPokemonAsync(player.Id);
+
         _log.LogInformation("[Register] Success — AccountId: {Id}, Username: {Username}, PlayerId: {PlayerId}", account.Id, account.Username, player.Id);
         return (true, null);
     }
@@ -122,7 +127,14 @@ public class AuthService
             return (null, "Lỗi kết cấu: Tài khoản này chưa có hồ sơ người chơi (Player).");
         }
 
-        var token = GenerateJwt(account);
+        // Tự động nạp Pokemon cho tài khoản cũ nếu chưa có
+        var hasPokemon = await _db.PokemonInstances.Find(p => p.OwnerId == player.Id).AnyAsync();
+        if (!hasPokemon)
+        {
+            await _gameService.SeedInitialPokemonAsync(player.Id);
+        }
+
+        var token = GenerateJwt(account, player.Id);
         _log.LogInformation("[Login] Success — AccountId: {Id}, Username: {Username}", account.Id, account.Username);
         return (new AuthResponse(token, account.Username, account.Id, player.Id), null);
     }
@@ -219,7 +231,7 @@ public class AuthService
 
     // ── JWT helper ────────────────────────────────────────────────────────────
 
-    private string GenerateJwt(Account account)
+    private string GenerateJwt(Account account, string playerId)
     {
         var key   = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSecret));
         var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
@@ -227,6 +239,7 @@ public class AuthService
         var claims = new[]
         {
             new Claim(JwtRegisteredClaimNames.Sub, account.Id),
+            new Claim("player_id", playerId), // Quan trọng: Dùng cho BattleHub
             new Claim(JwtRegisteredClaimNames.UniqueName, account.Username),
             new Claim(JwtRegisteredClaimNames.Email, account.Email),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
