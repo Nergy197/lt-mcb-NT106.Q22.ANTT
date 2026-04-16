@@ -282,7 +282,7 @@ namespace PokemonMMO.UI
                             resetTokenInput.text = data.resetToken ?? "";
                         }
                         SetFeedback(forgotFeedback, "Đã nhận token! Đang chuyển sang đặt lại mật khẩu...", isError: false);
-                        Debug.Log($"[Auth] ForgotPassword OK – token: {data.resetToken?[..8]}…");
+                        Debug.Log($"[Auth] ForgotPassword OK – token: {data.resetToken}");
                         await Task.Delay(1200);
                         Dispatch(ShowResetPasswordView);
                     });
