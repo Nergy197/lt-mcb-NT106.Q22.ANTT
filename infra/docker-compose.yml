@@ -60,24 +60,18 @@ services:
       start_period: 15s
 
   # ---------------------------------------------------------------------------
-  # GAME SERVER — .NET 8 SDK (C# / ASP.NET Core + SignalR)
-  # Source code is bind-mounted from ../Server (no Dockerfile, no COPY)
-  # NuGet packages cached in named volume to avoid re-downloading
-  # `dotnet watch` enables hot-reload during development
+  # GAME SERVER 
+  # Sử dụng Dockerfile (nguyên lý Multi-stage Build) để đảm bảo máy nào up lên
+  # cũng không bị đụng độ file bin/obj
   # ---------------------------------------------------------------------------
   server:
-    image: mcr.microsoft.com/dotnet/sdk:9.0
+    build:
+      context: ../Server
+      dockerfile: Dockerfile
     container_name: nt106-server
     restart: unless-stopped
-    working_dir: /app
-    volumes:
-      - ../Server:/app                    # bind-mount source code
-      - nuget_cache:/root/.nuget          # cache NuGet packages across restarts
     environment:
-      DOTNET_WATCH_RESTART_ON_RUDE_EDIT: "true"
-      DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: "true"
       ASPNETCORE_ENVIRONMENT: Development
-      ASPNETCORE_URLS: http://+:2567
       PORT: ${SERVER_PORT:-2567}
       MONGO_URI: mongodb://mongodb:${MONGO_PORT:-27017}
       MONGO_DATABASE: ${MONGO_DATABASE:-pokemon_mmo}
@@ -88,4 +82,3 @@ services:
     depends_on:
       mongodb:
         condition: service_healthy
-    command: dotnet run --no-launch-profile
