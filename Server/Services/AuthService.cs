@@ -16,17 +16,19 @@ public class AuthService
     private readonly ILogger<AuthService> _log;
     private readonly EmailService _emailService;
     private readonly GameService _gameService;
+    private readonly ChatService _chatService;
     private readonly string _jwtSecret;
     private readonly string _jwtIssuer;
     private readonly string _jwtAudience;
     private readonly int _jwtExpiryHours;
 
-    public AuthService(MongoDbContext db, IConfiguration config, ILogger<AuthService> log, EmailService emailService, GameService gameService)
+    public AuthService(MongoDbContext db, IConfiguration config, ILogger<AuthService> log, EmailService emailService, GameService gameService, ChatService chatService)
     {
         _db           = db;
         _log          = log;
         _emailService = emailService;
         _gameService  = gameService;
+        _chatService  = chatService;
         _jwtSecret   = config["Jwt:Secret"]   ?? throw new InvalidOperationException("Jwt:Secret is not configured.");
         _jwtIssuer   = config["Jwt:Issuer"]   ?? "PokemonMMO";
         _jwtAudience = config["Jwt:Audience"] ?? "PokemonMMO";
@@ -152,6 +154,21 @@ public class AuthService
 
         var revoked = new RevokedToken { Token = rawToken, Expiry = expiry };
         await _db.RevokedTokens.InsertOneAsync(revoked);
+
+        // Reset DM chat history on logout
+        var accountId = jwt.Claims.FirstOrDefault(c => c.Type == JwtRegisteredClaimNames.Sub)?.Value;
+        if (!string.IsNullOrEmpty(accountId))
+        {
+            var player = await _db.Players
+                .Find(p => p.AccountId == accountId)
+                .FirstOrDefaultAsync();
+
+            if (player != null)
+            {
+                await _chatService.DeleteDirectMessagesAsync(player.Id);
+                _log.LogInformation("[Logout] DM history cleared for player: {PlayerId}", player.Id);
+            }
+        }
 
         _log.LogInformation("[Logout] Username: {Username}, token expires: {Expiry:u}", username, expiry);
     }

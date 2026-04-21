@@ -38,14 +38,14 @@ public class EmailService
 
             var mailMessage = new MailMessage
             {
-                From = new MailAddress(username, "Pokemon MMO System"),
+                From = new MailAddress(username, "Pokemon Arena System"),
                 Subject = "Mã Khôi Phục Mật Khẩu (Reset Token)",
                 Body = $@"
 <div style=""font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; padding: 20px; color: #333;"">
     <div style=""max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05);"">
         <!-- Header -->
         <div style=""background: linear-gradient(135deg, #FF416C 0%, #FF4B2B 100%); padding: 30px 20px; text-align: center;"">
-            <h1 style=""color: #ffffff; margin: 0; font-size: 24px; font-weight: 600; letter-spacing: 1px;"">Pokémon MMO</h1>
+            <h1 style=""color: #ffffff; margin: 0; font-size: 24px; font-weight: 600; letter-spacing: 1px;"">Pokémon Arena</h1>
         </div>
         
         <!-- Content -->
@@ -72,7 +72,7 @@ public class EmailService
         <!-- Footer -->
         <div style=""background-color: #f8f9fa; padding: 20px; text-align: center; border-top: 1px solid #eeeeee;"">
             <p style=""font-size: 12px; color: #888; margin: 0;"">
-                © {DateTime.Now.Year} Pokémon MMO Server. All rights reserved.
+                © {DateTime.Now.Year} Pokémon Arena Server. All rights reserved.
             </p>
         </div>
     </div>

@@ -31,4 +31,7 @@ public class Player
 
     [BsonElement("ranked_matches")]
     public int RankedMatches { get; set; } = 0;
+
+    [BsonElement("last_seen_at")]
+    public DateTime? LastSeenAt { get; set; }
 }

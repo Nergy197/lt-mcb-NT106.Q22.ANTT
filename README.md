@@ -101,3 +101,10 @@ docker compose logs -f server
 1. **MongoDB Connection String (Internal):** `mongodb://localhost:27017`
 2. **SignalR WebSocket / Hub:** `ws://localhost:2567/game`
 3. **Health Check API REST:** `http://localhost:2567/`
+
+---
+
+## 📅 Timeline
+
+Xem lịch trình phát triển chi tiết theo từng tính năng tại:
+https://docs.google.com/spreadsheets/d/1neLj9pceesFciiDh8-OdUF3q_bDFpGCxsNKpflVLiVo/edit?usp=sharing

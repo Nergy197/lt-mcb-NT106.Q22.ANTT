@@ -60,6 +60,8 @@ public class PokedexService
         {
             var pokedexPath = Path.Combine(AppContext.BaseDirectory, "Data", "pokedex_final.json");
             if (!File.Exists(pokedexPath))
+                pokedexPath = Path.Combine(Directory.GetCurrentDirectory(), "Data", "pokedex_final.json");
+            if (!File.Exists(pokedexPath))
                 pokedexPath = Path.Combine(Directory.GetCurrentDirectory(), "Server", "Data", "pokedex_final.json");
 
             if (File.Exists(pokedexPath))
@@ -82,6 +84,8 @@ public class PokedexService
         if (!await _context.Moves.Find(_ => true).AnyAsync())
         {
             var movesPath = Path.Combine(AppContext.BaseDirectory, "Data", "moves_final.json");
+            if (!File.Exists(movesPath))
+                movesPath = Path.Combine(Directory.GetCurrentDirectory(), "Data", "moves_final.json");
             if (!File.Exists(movesPath))
                 movesPath = Path.Combine(Directory.GetCurrentDirectory(), "Server", "Data", "moves_final.json");
 

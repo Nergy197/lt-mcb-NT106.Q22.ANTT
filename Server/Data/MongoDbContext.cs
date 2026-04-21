@@ -41,6 +41,12 @@ public class MongoDbContext
     public IMongoCollection<BattleLogEntry> BattleLogs
         => _database.GetCollection<BattleLogEntry>("battle_logs");
 
+    public IMongoCollection<ChatMessage> ChatMessages
+        => _database.GetCollection<ChatMessage>("chat_messages");
+
+    public IMongoCollection<Friendship> Friendships
+        => _database.GetCollection<Friendship>("friendships");
+
     // ── Indexes ──────────────────────────────────────────────────────────
     private void CreateIndexes()
     {
@@ -87,5 +93,29 @@ public class MongoDbContext
             Builders<BattleLogEntry>.IndexKeys
                 .Ascending(b => b.BattleId)
                 .Descending(b => b.CreatedAtUtc)));
+
+        // ChatMessages: index by channel + timestamp for history queries
+        ChatMessages.Indexes.CreateOne(new CreateIndexModel<ChatMessage>(
+            Builders<ChatMessage>.IndexKeys
+                .Ascending(m => m.Channel)
+                .Descending(m => m.CreatedAt)));
+
+        // ChatMessages: compound index for DM history between two players
+        ChatMessages.Indexes.CreateOne(new CreateIndexModel<ChatMessage>(
+            Builders<ChatMessage>.IndexKeys
+                .Ascending(m => m.SenderId)
+                .Ascending(m => m.ReceiverId)
+                .Descending(m => m.CreatedAt)));
+
+        // Friendships: index for looking up requests by requester or receiver
+        Friendships.Indexes.CreateOne(new CreateIndexModel<Friendship>(
+            Builders<Friendship>.IndexKeys
+                .Ascending(f => f.RequesterId)
+                .Ascending(f => f.ReceiverId)));
+
+        Friendships.Indexes.CreateOne(new CreateIndexModel<Friendship>(
+            Builders<Friendship>.IndexKeys
+                .Ascending(f => f.ReceiverId)
+                .Ascending(f => f.Status)));
     }
 }

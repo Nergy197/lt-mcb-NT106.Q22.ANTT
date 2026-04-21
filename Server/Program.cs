@@ -99,6 +99,9 @@ builder.Services.AddSingleton<BattleService>();
 // ── New services for Pokedex, Moves and Email ──────────────────────────────
 builder.Services.AddScoped<PokedexService>();
 builder.Services.AddScoped<EmailService>();
+// ── Chat & Friend services ─────────────────────────────────────────────────
+builder.Services.AddScoped<ChatService>();
+builder.Services.AddScoped<FriendService>();
 
 // ---------------------------------------------------------------------------
 // MVC Controllers + SignalR
@@ -186,6 +189,9 @@ app.MapHub<BattleHub>("/hubs/battle");
 // Compatibility mapping (Unity client cũ dùng /game)
 app.MapHub<BattleHub>("/game");
 
+// Chat hub
+app.MapHub<ChatHub>("/hubs/chat");
+
 // ---------------------------------------------------------------------------
 // Seed Database & Cleanup
 // ---------------------------------------------------------------------------
@@ -203,6 +209,8 @@ Console.WriteLine($"📡 Matchmaking Hub: ws://localhost:{port}/hubs/matchmaking
 Console.WriteLine($"⚔️  Battle Hub:      ws://localhost:{port}/hubs/battle");
 Console.WriteLine($"🗄️  MongoDB: {mongoUri}/{mongoDb}");
 Console.WriteLine($"🔐 Auth API:  http://localhost:{port}/api/auth");
+Console.WriteLine($"👥 Friends:   http://localhost:{port}/api/friends");
+Console.WriteLine($"💬 Chat Hub:  ws://localhost:{port}/hubs/chat");
 Console.WriteLine($"📖 Swagger:   http://localhost:{port}/swagger");
 
 app.Run();
