@@ -42,19 +42,11 @@ namespace Game.Battle.Logic
 
         private void Start()
         {
-            // [DEMOKIT MẠNG SERVER] Giả lập Server đổ data vào, nạp đúng 4 con y như ảnh chụp của bạn!
-            BattleSpriteLoader loader = gameObject.AddComponent<BattleSpriteLoader>();
-            loader.LoadSpriteForSlot("Player_Lead_Slot", "Player1_HUD", "delphox", true);  
-            loader.LoadSpriteForSlot("Player_Sub2_Slot", "Player2_HUD", "victreebel", true);   
-            loader.LoadSpriteForSlot("Enemy_Lead_Slot", "Enemy1_HUD", "steelix", false);  
-            loader.LoadSpriteForSlot("Enemy_Sub2_Slot", "Enemy2_HUD", "drampa", false);
-
-            // Lắp Tên và Máu vào UI (Sau này cái này cũng do Server bắn JSON qua để điền vào)
-            if (playerHUD) playerHUD.SetupEntity("Player", "Charizard", playerHp, playerMaxHp);
-            if (enemyHUD) enemyHUD.SetupEntity("Enemy", "Mewtwo Hoang Dã", enemyHp, enemyMaxHp);
-
-            // Chạy luồng trò chơi
-            StartCoroutine(BattleLoop());
+            // BattleTestController da bi vo hieu hoa.
+            // Toan bo logic tran dau duoc xu ly boi BattleNetworkController.
+            Debug.Log("[BattleTest] Disabled - using BattleNetworkController for real battles.");
+            this.enabled = false;
+            return;
         }
 
         // Hàm tiện ích: In Text và chờ cho đến khi gõ xong mới chạy code tiếp theo

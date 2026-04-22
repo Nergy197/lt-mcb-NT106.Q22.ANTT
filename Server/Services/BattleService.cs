@@ -209,13 +209,39 @@ public class BattleService
     {
         if (!_battles.TryGetValue(battleId, out var battle)) return;
         
+        var attacker = GetActivePokemon(battle, "BOT_PLAYER", sourceIndex);
+        if (attacker == null || attacker.IsFainted) return;
+
+        // Pick a valid move
+        int moveSlot = 0;
+        if (attacker.Moves.Count > 0)
+        {
+            moveSlot = _rng.Next(0, attacker.Moves.Count);
+        }
+
+        // Pick a valid target (0 or 1)
+        var opponentId = GetOpponentPlayerId(battle, "BOT_PLAYER");
+        var oppTeam = GetTeam(battle, opponentId);
+        int targetSlot = 0;
+        
+        // Prefer a target that isn't fainted
+        var p1 = GetActivePokemon(battle, opponentId, 0);
+        var p2 = GetActivePokemon(battle, opponentId, 1);
+        
+        if (p1 != null && !p1.IsFainted && p2 != null && !p2.IsFainted)
+            targetSlot = _rng.Next(0, 2);
+        else if (p2 != null && !p2.IsFainted)
+            targetSlot = 1;
+        else
+            targetSlot = 0;
+
         var botAction = new BattleAction
         {
             PlayerId = "BOT_PLAYER",
             Type = BattleActionType.Move,
             SourceIndex = sourceIndex,
-            MoveSlot = _rng.Next(0, 4),
-            TargetSlot = _rng.Next(0, 2) // Bot đánh ngẫu nhiên slot 0 hoặc 1
+            MoveSlot = moveSlot,
+            TargetSlot = targetSlot
         };
 
         battle.PendingActions.TryAdd($"BOT_PLAYER_{sourceIndex}", botAction);
@@ -287,7 +313,7 @@ public class BattleService
                     priority = moveEntry?.Priority ?? 0;
                 }
 
-                orderedActions.Add(new OrderedAction(action, priority, attacker.Level, _rng.Next(0, 1000)));
+                orderedActions.Add(new OrderedAction(action, priority, attacker.Spd, _rng.Next(0, 1000)));
             }
 
             orderedActions = orderedActions
@@ -618,7 +644,7 @@ public class BattleService
 
     private async Task ApplyMoveActionAsync(BattleSession battle, BattleAction action, List<BattleEvent> events)
     {
-        var attacker = GetActivePokemon(battle, action.PlayerId);
+        var attacker = GetActivePokemon(battle, action.PlayerId, action.SourceIndex);
         if (attacker == null)
         {
             events.Add(new MessageEvent { Message = $"[{action.PlayerId}] move failed: no active pokemon." });
@@ -693,7 +719,7 @@ public class BattleService
         }
 
         var defenderPlayerId = GetOpponentPlayerId(battle, action.PlayerId);
-        var defender = GetActivePokemon(battle, defenderPlayerId);
+        var defender = GetActivePokemon(battle, defenderPlayerId, action.TargetSlot);
         if (defender == null || defender.IsFainted)
         {
             events.Add(new MessageEvent { Message = $"[{GetDisplayName(attacker)}] used {moveName}, but target is unavailable." });
@@ -1245,7 +1271,7 @@ public class BattleService
         return multiplier;
     }
 
-    private static void ApplyTurnTimeoutIfNeeded(BattleSession battle, List<BattleEvent> events)
+    private void ApplyTurnTimeoutIfNeeded(BattleSession battle, List<BattleEvent> events)
     {
         if (battle.State != BattleState.Running)
             return;
@@ -1253,11 +1279,11 @@ public class BattleService
         if (DateTime.UtcNow < battle.TurnDeadlineUtc)
             return;
 
-        if (HasBothActions(battle))
+        if (IsTurnReady(battle.BattleId))
             return;
 
-        var hasP1Action = battle.PendingActions.ContainsKey(battle.Player1Id);
-        var hasP2Action = battle.PendingActions.ContainsKey(battle.Player2Id);
+        var hasP1Action = battle.PendingActions.Keys.Any(k => k.StartsWith($"{battle.Player1Id}_"));
+        var hasP2Action = battle.PendingActions.Keys.Any(k => k.StartsWith($"{battle.Player2Id}_"));
 
         if (!hasP1Action && !hasP2Action)
         {
@@ -1275,9 +1301,8 @@ public class BattleService
         events.Add(new BattleEndEvent { WinnerPlayerId = battle.WinnerPlayerId, Reason = "timeout" });
     }
 
-    private static bool HasBothActions(BattleSession battle)
-        => battle.PendingActions.ContainsKey(battle.Player1Id)
-           && battle.PendingActions.ContainsKey(battle.Player2Id);
+    private bool HasAnyAction(BattleSession battle, string playerId)
+        => battle.PendingActions.Keys.Any(k => k.StartsWith($"{playerId}_"));
 
     private static void ValidateActionForBattleState(BattleSession battle, BattleAction action)
     {
@@ -1288,7 +1313,7 @@ public class BattleService
         if (team.Count == 0)
             throw new Exception("Player has no team in this battle.");
 
-        var active = GetActivePokemon(battle, action.PlayerId);
+        var active = GetActivePokemon(battle, action.PlayerId, action.SourceIndex);
         if (active == null)
             throw new Exception("No active pokemon.");
 
@@ -1361,7 +1386,9 @@ public class BattleService
         foreach (var (playerId, team, activeIndex) in new[]
         {
             (battle.Player1Id, battle.Team1, battle.ActiveIndex1),
-            (battle.Player2Id, battle.Team2, battle.ActiveIndex2)
+            (battle.Player1Id, battle.Team1, battle.ActiveIndex1b),
+            (battle.Player2Id, battle.Team2, battle.ActiveIndex2),
+            (battle.Player2Id, battle.Team2, battle.ActiveIndex2b)
         })
         {
             if (activeIndex < 0 || activeIndex >= team.Count)

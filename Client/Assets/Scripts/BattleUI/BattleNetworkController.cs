@@ -5,16 +5,17 @@ using UnityEngine;
 using Microsoft.AspNetCore.SignalR.Client;
 using Game.Battle.UI;
 using Game.Network;
+using System.Linq;
 
 namespace Game.Battle.Logic
 {
     public class BattleNetworkController : MonoBehaviour
     {
-        [Header("Liên kết UI - Phe Ta")]
+        [Header("Lien ket UI - Phe Ta")]
         public EntityHUD playerHUD1;
         public EntityHUD playerHUD2;
 
-        [Header("Liên kết UI - Phe Địch")]
+        [Header("Lien ket UI - Phe Dich")]
         public EntityHUD enemyHUD1;
         public EntityHUD enemyHUD2;
 
@@ -24,8 +25,15 @@ namespace Game.Battle.Logic
         private string _myPlayerId;
         private BattleSessionDto _currentBattle;
 
-        // Quản lý việc chọn chiêu cho con nào
-        private int _currentSourceIndexToChoose = 0; 
+        // Quan ly trang thai chon
+        private int _currentSourceIndexToChoose = 0; // 0: con Lead, 1: con Sub
+        private int _selectedMoveSlot = -1;
+        private bool _isSelectingTarget = false;
+        private bool _isWaitingForTurn = false;
+
+        // Thread-safe queue
+        private readonly Queue<Action> _mainThreadActions = new Queue<Action>();
+        private readonly object _lockObj = new object();
 
         private void OnEnable()
         {
@@ -42,23 +50,38 @@ namespace Game.Battle.Logic
             }
         }
 
+        private void Update()
+        {
+            lock (_lockObj)
+            {
+                while (_mainThreadActions.Count > 0)
+                {
+                    var action = _mainThreadActions.Dequeue();
+                    action?.Invoke();
+                }
+            }
+        }
+
+        private void EnqueueMainThread(Action action)
+        {
+            lock (_lockObj)
+            {
+                _mainThreadActions.Enqueue(action);
+            }
+        }
+
         private async void Start()
         {
             _battleId = MatchmakingManager.CurrentBattleId;
             _myPlayerId = PlayerPrefs.GetString("player_id", "");
 
-            if (string.IsNullOrEmpty(_battleId))
-            {
-                Debug.LogWarning("[Battle] Không có BattleID, vui lòng chạy từ Menu để có dữ liệu thật.");
-                return;
-            }
+            if (string.IsNullOrEmpty(_battleId)) return;
 
             await InitializeBattle();
         }
 
         private async System.Threading.Tasks.Task InitializeBattle()
         {
-            // Đợi kết nối SignalR sẵn sàng
             while (SignalRClient.Instance == null || SignalRClient.Instance.Battle.State != HubConnectionState.Connected)
             {
                 await System.Threading.Tasks.Task.Yield();
@@ -71,103 +94,168 @@ namespace Game.Battle.Logic
             try
             {
                 await battleHub.InvokeAsync("JoinBattle", _battleId);
-                Debug.Log($"[Battle] Đã tham gia trận đấu 2v2: {_battleId}");
             }
             catch (Exception ex)
             {
-                Debug.LogError($"[Battle] Lỗi khi JoinBattle: {ex.Message}");
+                Debug.LogError($"[Battle] JoinBattle error: {ex.Message}");
             }
         }
 
         private void OnBattleSync(BattleSessionDto battle)
         {
+            if (battle == null) return;
             _currentBattle = battle;
-            UpdateUIFromBattle(battle);
-        }
-
-        private void UpdateUIFromBattle(BattleSessionDto battle)
-        {
-            bool isP1 = battle.Player1Id == _myPlayerId;
-            var myTeam = isP1 ? battle.Team1 : battle.Team2;
-            var oppTeam = isP1 ? battle.Team2 : battle.Team1;
-
-            // Slot A Phe Ta
-            int myIdxA = isP1 ? battle.ActiveIndex1 : battle.ActiveIndex2;
-            UpdateEntitySlot(myTeam, myIdxA, playerHUD1, "Player_Lead_Slot", "Player1_HUD", true);
-
-            // Slot B Phe Ta
-            int myIdxB = isP1 ? battle.ActiveIndex1b : battle.ActiveIndex2b;
-            UpdateEntitySlot(myTeam, myIdxB, playerHUD2, "Player_Sub2_Slot", "Player2_HUD", true);
-
-            // Slot A Phe Địch
-            int oppIdxA = isP1 ? battle.ActiveIndex2 : battle.ActiveIndex1;
-            UpdateEntitySlot(oppTeam, oppIdxA, enemyHUD1, "Enemy1_Slot", "Enemy1_HUD", false);
-
-            // Slot B Phe Địch
-            int oppIdxB = isP1 ? battle.ActiveIndex2b : battle.ActiveIndex1b;
-            UpdateEntitySlot(oppTeam, oppIdxB, enemyHUD2, "Enemy2_Slot", "Enemy2_HUD", false);
-
-            // Tự động cập nhật Moveset cho con đang chọn chiêu
-            UpdateSkillPanel(myTeam, _currentSourceIndexToChoose == 0 ? myIdxA : myIdxB);
-        }
-
-        private void UpdateEntitySlot(List<PokemonSnapshotDto> team, int idx, EntityHUD hud, string slotName, string spriteHudName, bool isPlayer)
-        {
-            if (idx >= 0 && idx < team.Count)
+            EnqueueMainThread(() =>
             {
-                var p = team[idx];
-                if (hud != null)
+                UpdateUIFromBattle(battle);
+                StartCoroutine(BattleIntro());
+            });
+        }
+
+        private void OnTurnResolved(TurnResultDto result)
+        {
+            EnqueueMainThread(() =>
+            {
+                _currentSourceIndexToChoose = 0;
+                _isWaitingForTurn = false;
+                _isSelectingTarget = false;
+                StartCoroutine(HandleTurnResolution(result));
+            });
+        }
+
+        private IEnumerator BattleIntro()
+        {
+            yield return new WaitForSeconds(0.5f);
+            if (_currentBattle == null) yield break;
+
+            bool isP1 = _currentBattle.Player1Id == _myPlayerId;
+            string oppName = _currentBattle.Player2Id == "BOT_PLAYER" ? "Champion Bot" : "Doi thu";
+            BattleEvents.OnPrintDialog?.Invoke($"{oppName} muon thach dau!", true);
+            yield return new WaitForSeconds(1.5f);
+
+            StartPlayerTurnSequence();
+        }
+
+        private void StartPlayerTurnSequence()
+        {
+            _currentSourceIndexToChoose = 0;
+            StartPlayerTurnPhase();
+        }
+
+        private void StartPlayerTurnPhase()
+        {
+            if (_currentBattle == null) return;
+            _isSelectingTarget = false;
+            _selectedMoveSlot = -1;
+
+            bool isP1 = _currentBattle.Player1Id == _myPlayerId;
+            var myTeam = isP1 ? _currentBattle.Team1 : _currentBattle.Team2;
+            int activeIdx = _currentSourceIndexToChoose == 0 ? 
+                (isP1 ? _currentBattle.ActiveIndex1 : _currentBattle.ActiveIndex2) :
+                (isP1 ? _currentBattle.ActiveIndex1b : _currentBattle.ActiveIndex2b);
+
+            if (myTeam != null && activeIdx >= 0 && activeIdx < myTeam.Count)
+            {
+                var p = myTeam[activeIdx];
+                if (p.CurrentHp <= 0)
                 {
-                    hud.gameObject.SetActive(true);
-                    hud.SetupEntity(isPlayer ? "Player" : "Enemy", p.Nickname, p.CurrentHp, p.MaxHp);
+                    if (_currentSourceIndexToChoose == 0)
+                    {
+                        _currentSourceIndexToChoose = 1;
+                        StartPlayerTurnPhase();
+                    }
+                    else
+                    {
+                        FinishTurnSelection();
+                    }
+                    return;
                 }
-                LoadSprite(p.SpeciesName, slotName, spriteHudName, isPlayer);
+
+                BattleEvents.OnPrintDialog?.Invoke($">> Den luot {p.Nickname}! <<", true);
+                UpdateSkillPanel(myTeam, activeIdx);
+                BattleEvents.OnPlayerTurnStart?.Invoke();
             }
-            else if (hud != null)
+            else if (_currentSourceIndexToChoose == 0)
             {
-                hud.gameObject.SetActive(false);
+                _currentSourceIndexToChoose = 1;
+                StartPlayerTurnPhase();
             }
-        }
-
-        private void UpdateSkillPanel(List<PokemonSnapshotDto> myTeam, int activeIdx)
-        {
-            if (activeIdx < 0 || activeIdx >= myTeam.Count || skillPanel == null) return;
-            var p = myTeam[activeIdx];
-            if (p.Moves == null) return;
-
-            for (int i = 0; i < p.Moves.Count && i < skillPanel.skillButtons.Length; i++)
+            else
             {
-                var btnText = skillPanel.skillButtons[i].GetComponentInChildren<TMPro.TextMeshProUGUI>();
-                if (btnText != null) btnText.text = p.Moves[i].MoveName;
+                FinishTurnSelection();
             }
-        }
-
-        private void LoadSprite(string speciesName, string slotName, string hudName, bool isPlayer)
-        {
-            BattleSpriteLoader loader = GetComponent<BattleSpriteLoader>();
-            if (loader == null) loader = gameObject.AddComponent<BattleSpriteLoader>();
-            loader.LoadSpriteForSlot(slotName, hudName, speciesName, isPlayer);
         }
 
         private void OnSkillSelectedFromUI(int moveSlot)
         {
-            // Trong đấu đôi, tạm thời mình cho mặc định đánh vào Slot 0 của đối thủ 
-            // Bạn có thể mở rộng UI để cho phép chọn mục tiêu sau
-            SubmitAction(moveSlot, _currentSourceIndexToChoose, 0);
+            if (_isWaitingForTurn || _currentBattle == null) return;
 
-            // Sau khi con 0 chọn xong, nếu con 1 còn sống thì cho con 1 chọn
-            if (_currentSourceIndexToChoose == 0)
+            if (!_isSelectingTarget)
             {
-                _currentSourceIndexToChoose = 1;
-                UpdateUIFromBattle(_currentBattle);
-                BattleEvents.OnPlayerTurnStart?.Invoke(); // Mở lại bảng chiêu cho con thứ 2
+                // Chon chieu xong -> Chuyen sang chon muc tieu
+                _selectedMoveSlot = moveSlot;
+                _isSelectingTarget = true;
+                
+                bool isP1 = _currentBattle.Player1Id == _myPlayerId;
+                var myTeam = isP1 ? _currentBattle.Team1 : _currentBattle.Team2;
+                int activeIdx = _currentSourceIndexToChoose == 0 ? 
+                    (isP1 ? _currentBattle.ActiveIndex1 : _currentBattle.ActiveIndex2) :
+                    (isP1 ? _currentBattle.ActiveIndex1b : _currentBattle.ActiveIndex2b);
+                
+                string moveName = myTeam[activeIdx].Moves[moveSlot].MoveName;
+                BattleEvents.OnPrintDialog?.Invoke($"{moveName}! Danh vao ai?", true);
+
+                UpdateTargetSelectionButtons();
+                BattleEvents.OnPlayerTurnStart?.Invoke(); // Mo lai de bam nut Target
             }
             else
             {
-                // Cả 2 đã chọn xong
-                _currentSourceIndexToChoose = 0;
-                BattleEvents.OnPrintDialog?.Invoke("Đang chờ đối phương...", false);
+                // moveSlot gio la Target Slot (0 hoặc 1)
+                SubmitAction(_selectedMoveSlot, _currentSourceIndexToChoose, moveSlot);
+                
+                if (_currentSourceIndexToChoose == 0)
+                {
+                    _currentSourceIndexToChoose = 1;
+                    StartPlayerTurnPhase();
+                }
+                else
+                {
+                    FinishTurnSelection();
+                }
             }
+        }
+
+        private void UpdateTargetSelectionButtons()
+        {
+            if (skillPanel == null || _currentBattle == null) return;
+            bool isP1 = _currentBattle.Player1Id == _myPlayerId;
+            var oppTeam = isP1 ? _currentBattle.Team2 : _currentBattle.Team1;
+            int oppIdxA = isP1 ? _currentBattle.ActiveIndex2 : _currentBattle.ActiveIndex1;
+            int oppIdxB = isP1 ? _currentBattle.ActiveIndex2b : _currentBattle.ActiveIndex1b;
+
+            foreach (var btn in skillPanel.skillButtons)
+            {
+                var t = btn.GetComponentInChildren<TMPro.TextMeshProUGUI>();
+                if (t != null) t.text = "";
+            }
+
+            if (oppTeam != null && oppIdxA >= 0 && oppIdxA < oppTeam.Count)
+            {
+                var t = skillPanel.skillButtons[0].GetComponentInChildren<TMPro.TextMeshProUGUI>();
+                if (t != null) t.text = $"[1] {oppTeam[oppIdxA].Nickname}";
+            }
+            if (oppTeam != null && oppIdxB >= 0 && oppIdxB < oppTeam.Count && oppTeam[oppIdxB].CurrentHp > 0)
+            {
+                var t = skillPanel.skillButtons[1].GetComponentInChildren<TMPro.TextMeshProUGUI>();
+                if (t != null) t.text = $"[2] {oppTeam[oppIdxB].Nickname}";
+            }
+        }
+
+        private void FinishTurnSelection()
+        {
+            _isWaitingForTurn = true;
+            _currentSourceIndexToChoose = 0;
+            BattleEvents.OnPrintDialog?.Invoke("Dang cho doi phuong...", false);
         }
 
         private async void SubmitAction(int moveSlot, int sourceIndex, int targetSlot)
@@ -178,69 +266,109 @@ namespace Game.Battle.Logic
             }
         }
 
-        private void OnTurnResolved(TurnResultDto result)
-        {
-            _currentSourceIndexToChoose = 0; // Reset lượt chọn
-            StartCoroutine(HandleTurnResolution(result));
-        }
-
         private IEnumerator HandleTurnResolution(TurnResultDto result)
         {
-            foreach (var msg in result.Log)
+            if (result.Events != null)
             {
+                foreach (var msg in result.Events)
+                {
+                    BattleEvents.OnPrintDialog?.Invoke(msg, true);
+                    yield return new WaitForSeconds(1.5f);
+                }
+            }
+
+            if (_currentBattle != null)
+            {
+                _currentBattle.ActiveIndex1 = result.ActiveIndex1;
+                _currentBattle.ActiveIndex2 = result.ActiveIndex2;
+                _currentBattle.TurnNumber = result.NextTurnNumber;
+                // De don gian, BattleSync sau luot se tu cap nhat tiep
+            }
+
+            yield return new WaitForSeconds(0.5f);
+
+            if (result.State == "Ended" || result.State == "2")
+            {
+                string msg = result.WinnerPlayerId == _myPlayerId ? "Ban thang!" : "Ban thua...";
                 BattleEvents.OnPrintDialog?.Invoke(msg, true);
-                yield return new WaitForSeconds(2.0f);
+                yield return new WaitForSeconds(3f);
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Menu scene");
             }
-
-            if (result.UpdatedBattle != null)
+            else
             {
-                _currentBattle = result.UpdatedBattle;
-                UpdateUIFromBattle(_currentBattle);
+                StartPlayerTurnSequence();
             }
+        }
 
-            BattleEvents.OnPlayerTurnStart?.Invoke();
+        private void UpdateUIFromBattle(BattleSessionDto battle)
+        {
+            if (battle == null) return;
+            bool isP1 = battle.Player1Id == _myPlayerId;
+            var myTeam = isP1 ? battle.Team1 : battle.Team2;
+            var oppTeam = isP1 ? battle.Team2 : battle.Team1;
+
+            UpdateSlot(myTeam, isP1 ? battle.ActiveIndex1 : battle.ActiveIndex2, playerHUD1, "Player_Lead_Slot", true);
+            UpdateSlot(myTeam, isP1 ? battle.ActiveIndex1b : battle.ActiveIndex2b, playerHUD2, "Player_Sub2_Slot", true);
+            UpdateSlot(oppTeam, isP1 ? battle.ActiveIndex2 : battle.ActiveIndex1, enemyHUD1, "Enemy_Lead_Slot", false);
+            UpdateSlot(oppTeam, isP1 ? battle.ActiveIndex2b : battle.ActiveIndex1b, enemyHUD2, "Enemy_Sub2_Slot", false);
+        }
+
+        private void UpdateSlot(List<PokemonSnapshotDto> team, int idx, EntityHUD hud, string slot, bool p)
+        {
+            if (team != null && idx >= 0 && idx < team.Count)
+            {
+                var pkm = team[idx];
+                if (hud != null)
+                {
+                    hud.gameObject.SetActive(true);
+                    hud.SetupEntity(p ? "Player" : "Enemy", pkm.Nickname, pkm.CurrentHp, pkm.MaxHp);
+                }
+                var loader = GetComponent<BattleSpriteLoader>() ?? gameObject.AddComponent<BattleSpriteLoader>();
+                loader.LoadSpriteForSlot(slot, "", pkm.SpeciesName, p);
+            }
+            else if (hud != null) hud.gameObject.SetActive(false);
+        }
+
+        private void UpdateSkillPanel(List<PokemonSnapshotDto> team, int idx)
+        {
+            if (team == null || idx < 0 || idx >= team.Count || skillPanel == null) return;
+            var pkm = team[idx];
+            for (int i = 0; i < pkm.Moves.Count && i < skillPanel.skillButtons.Length; i++)
+            {
+                var t = skillPanel.skillButtons[i].GetComponentInChildren<TMPro.TextMeshProUGUI>();
+                if (t != null) t.text = pkm.Moves[i].MoveName;
+            }
         }
     }
 
-    // --- DTOs ---
-    [Serializable]
-    public class BattleSessionDto
-    {
-        public string BattleId;
-        public string Player1Id;
-        public string Player2Id;
-        public List<PokemonSnapshotDto> Team1;
-        public List<PokemonSnapshotDto> Team2;
-        public int ActiveIndex1;
-        public int ActiveIndex1b;
-        public int ActiveIndex2;
-        public int ActiveIndex2b;
-        public int TurnNumber;
+    [Serializable] public class BattleSessionDto {
+        public string BattleId { get; set; }
+        public string Player1Id { get; set; }
+        public string Player2Id { get; set; }
+        public List<PokemonSnapshotDto> Team1 { get; set; }
+        public List<PokemonSnapshotDto> Team2 { get; set; }
+        public int ActiveIndex1 { get; set; }
+        public int ActiveIndex1b { get; set; }
+        public int ActiveIndex2 { get; set; }
+        public int ActiveIndex2b { get; set; }
+        public int TurnNumber { get; set; }
     }
-
-    [Serializable]
-    public class PokemonSnapshotDto
-    {
-        public string InstanceId;
-        public int SpeciesId;
-        public string SpeciesName;
-        public string Nickname;
-        public int CurrentHp;
-        public int MaxHp;
-        public List<MoveDto> Moves;
+    [Serializable] public class PokemonSnapshotDto {
+        public string SpeciesName { get; set; }
+        public string Nickname { get; set; }
+        public int CurrentHp { get; set; }
+        public int MaxHp { get; set; }
+        public List<MoveDto> Moves { get; set; }
     }
-
-    [Serializable]
-    public class MoveDto
-    {
-        public int MoveId;
-        public string MoveName;
+    [Serializable] public class MoveDto {
+        public string MoveName { get; set; }
     }
-
-    [Serializable]
-    public class TurnResultDto
-    {
-        public List<string> Log;
-        public BattleSessionDto UpdatedBattle;
+    [Serializable] public class TurnResultDto {
+        public string State { get; set; }
+        public string WinnerPlayerId { get; set; }
+        public int ActiveIndex1 { get; set; }
+        public int ActiveIndex2 { get; set; }
+        public int NextTurnNumber { get; set; }
+        public List<string> Events { get; set; }
     }
 }

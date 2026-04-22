@@ -8,6 +8,7 @@ namespace Game.Network
     public class MatchmakingManager : MonoBehaviour
     {
         public static string CurrentBattleId { get; private set; }
+        private bool _shouldLoadBattle = false;
 
         private async void Start()
         {
@@ -41,23 +42,32 @@ namespace Game.Network
             }
         }
 
+        private void Update()
+        {
+            if (_shouldLoadBattle)
+            {
+                _shouldLoadBattle = false;
+                SceneManager.LoadScene("Battle scene");
+            }
+        }
+
         private void OnMatchFound(BattleStartedDto data)
         {
-            Debug.Log($"[Matchmaking] Tìm thấy trận! BattleId: {data.BattleId}");
+            Debug.Log($"[Matchmaking] Tim thay tran! BattleId: {data.BattleId}");
             CurrentBattleId = data.BattleId;
             
-            // Chuyển scene sang Battle scene
-            SceneManager.LoadScene("Battle scene");
+            // Đánh dấu cờ để Update() chuyển Scene trên Main Thread, tránh lỗi background thread của SignalR.
+            _shouldLoadBattle = true;
         }
     }
 
     [Serializable]
     public class BattleStartedDto
     {
-        public string BattleId;
-        public string Player1Id;
-        public string Player2Id;
-        public int TurnNumber;
-        public string State;
+        public string BattleId { get; set; }
+        public string Player1Id { get; set; }
+        public string Player2Id { get; set; }
+        public int TurnNumber { get; set; }
+        public string State { get; set; }
     }
 }
