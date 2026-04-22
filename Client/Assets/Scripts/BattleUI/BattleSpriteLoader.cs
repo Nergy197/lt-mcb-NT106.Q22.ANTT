@@ -8,17 +8,19 @@ namespace Game.Battle.Logic
     public class BattleSpriteLoader : MonoBehaviour
     {
         // Nhận thêm tham số "hudName" để biết gắn ảnh icon mini vào thanh máu nào
-        public void LoadSpriteForSlot(string slotName, string hudName, int dexNumber, bool isBackSprite)
+        public void LoadSpriteForSlot(string slotName, string hudName, string pokemonName, bool isBackSprite)
         {
-            StartCoroutine(DownloadSpriteCoroutine(slotName, hudName, dexNumber, isBackSprite));
+            StartCoroutine(DownloadSpriteCoroutine(slotName, hudName, pokemonName, isBackSprite));
         }
 
-        private IEnumerator DownloadSpriteCoroutine(string slotName, string hudName, int dexNumber, bool isBackSprite)
+        private IEnumerator DownloadSpriteCoroutine(string slotName, string hudName, string pokemonName, bool isBackSprite)
         {
             // ================== BƯỚC 1: TẢI SPRITE 3D ĐỨNG TRÊN CHUỒNG ĐẤU ==================
+            // [ UPDATE ] Tải từ server local thay vì PokeAPI (Dùng tên Pokemon)
+            string serverBase = "http://127.0.0.1:2567/data/pokemon";
             string mainUrl = isBackSprite ? 
-                $"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/{dexNumber}.png" :
-                $"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{dexNumber}.png";
+                $"{serverBase}/back/{pokemonName}.png" :
+                $"{serverBase}/front/{pokemonName}.png";
 
             using (UnityWebRequest uwr = UnityWebRequest.Get(mainUrl))
             {
@@ -47,7 +49,8 @@ namespace Game.Battle.Logic
             }
 
             // ================== BƯỚC 2: TẢI ICON MINI THẾ HỆ 8 CHUYÊN ĐỂ GẮN VÀO THANH MÁU ==================
-            string iconUrl = $"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-viii/icons/{dexNumber}.png";
+            // [ UPDATE ] Tải icon từ server local (Dùng tên Pokemon)
+            string iconUrl = $"http://127.0.0.1:2567/data/pokemon/icons/{pokemonName}.png";
             using (UnityWebRequest uwrIcon = UnityWebRequest.Get(iconUrl))
             {
                 yield return uwrIcon.SendWebRequest();

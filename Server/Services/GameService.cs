@@ -36,12 +36,12 @@ public class GameService
     {
         var starters = new[]
         {
-            new { Id = 3,   Name = "Venusaur",  Moves = new[] { 188, 79, 202, 161 } }, // Giga Drain, Razor Leaf, Giga Drain, Solar Beam
-            new { Id = 6,   Name = "Charizard", Moves = new[] { 53, 403, 406, 76 } },  // Flamethrower, Air Slash, Dragon Pulse, Solar Beam
-            new { Id = 9,   Name = "Blastoise", Moves = new[] { 58, 401, 352, 110 } }, // Ice Beam, Aqua Tail, Water Pulse, Hydro Pump
-            new { Id = 25,  Name = "Pikachu",   Moves = new[] { 85, 86, 231, 98 } },   // Thunderbolt, Thunder Wave, Iron Tail, Quick Attack
-            new { Id = 448, Name = "Lucario",   Moves = new[] { 370, 412, 395, 245 } },// Close Combat, Aura Sphere, Vacuum Wave, Extreme Speed
-            new { Id = 445, Name = "Garchomp",  Moves = new[] { 89, 414, 337, 242 } }  // Earthquake, Earth Power, Dragon Claw, Crunch
+            new { Id = 3,   Name = "Venusaur" }, 
+            new { Id = 6,   Name = "Charizard" },
+            new { Id = 9,   Name = "Blastoise" },
+            new { Id = 25,  Name = "Pikachu" },
+            new { Id = 448, Name = "Lucario" },
+            new { Id = 445, Name = "Garchomp" }
         };
 
         var instances = new List<PokemonInstance>();
@@ -50,6 +50,10 @@ public class GameService
         foreach (var s in starters)
         {
             var pData = await _pokeData.GetPokemonData(s.Id);
+            // Lấy moveset thực tế từ Database (đã được seed từ PokeAPI)
+            var speciesEntry = await _db.Pokedex.Find(x => x.Id == s.Id).FirstOrDefaultAsync();
+            var moveset = speciesEntry?.DefaultMoves ?? new List<int> { 1, 45 }; // Fallback Pound, Growl
+
             var ivs = new StatBlock { Hp = 31, Atk = 31, Def = 31, SpAtk = 31, SpDef = 31, Spd = 31 };
             var evs = new StatBlock { Hp = 0, Atk = 0, Def = 0, SpAtk = 0, SpDef = 0, Spd = 0 };
 
@@ -70,7 +74,7 @@ public class GameService
                 PartySlot = slot++,
                 Ivs = ivs,
                 Evs = evs,
-                Moves = s.Moves.Select(mId => new PokemonMove { MoveId = mId, CurrentPp = 15 }).ToList()
+                Moves = moveset.Select(mId => new PokemonMove { MoveId = mId, CurrentPp = 15 }).ToList()
             };
             instances.Add(instance);
         }

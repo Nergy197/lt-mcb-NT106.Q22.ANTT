@@ -4,11 +4,19 @@ public class BattlePokemonSnapshot
 {
     public string InstanceId { get; set; } = null!;
     public int SpeciesId { get; set; }
+    public string SpeciesName { get; set; } = "";
     public string Nickname { get; set; } = "";
 
     public int Level { get; set; }
     public int CurrentHp { get; set; }
     public int MaxHp { get; set; }
+    
+    // Core Calculated Stats (IV + EV + Base + Nature)
+    public int Atk { get; set; }
+    public int Def { get; set; }
+    public int SpAtk { get; set; }
+    public int SpDef { get; set; }
+    public int Spd { get; set; }
 
     // ── Status ────────────────────────────────────────────────────────────────
     /// <summary>Non-volatile status. Replaces the old string field.</summary>

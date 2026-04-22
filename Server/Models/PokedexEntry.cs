@@ -35,4 +35,7 @@ public class PokedexEntry
 
     [BsonElement("weight")]
     public int Weight { get; set; }
+
+    [BsonElement("default_moves")]
+    public List<int> DefaultMoves { get; set; } = new();
 }

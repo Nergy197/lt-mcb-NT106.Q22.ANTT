@@ -90,6 +90,9 @@ public class PokemonMove
     [BsonElement("move_id")]
     public int MoveId { get; set; }
 
+    [BsonElement("move_name")]
+    public string MoveName { get; set; } = "Unknown";
+
     [BsonElement("current_pp")]
     public int CurrentPp { get; set; }
 }

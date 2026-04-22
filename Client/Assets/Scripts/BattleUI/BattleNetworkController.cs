@@ -121,7 +121,7 @@ namespace Game.Battle.Logic
                     hud.gameObject.SetActive(true);
                     hud.SetupEntity(isPlayer ? "Player" : "Enemy", p.Nickname, p.CurrentHp, p.MaxHp);
                 }
-                LoadSprite(p.SpeciesId, slotName, spriteHudName, isPlayer);
+                LoadSprite(p.SpeciesName, slotName, spriteHudName, isPlayer);
             }
             else if (hud != null)
             {
@@ -142,11 +142,11 @@ namespace Game.Battle.Logic
             }
         }
 
-        private void LoadSprite(int speciesId, string slotName, string hudName, bool isPlayer)
+        private void LoadSprite(string speciesName, string slotName, string hudName, bool isPlayer)
         {
             BattleSpriteLoader loader = GetComponent<BattleSpriteLoader>();
             if (loader == null) loader = gameObject.AddComponent<BattleSpriteLoader>();
-            loader.LoadSpriteForSlot(slotName, hudName, speciesId, isPlayer);
+            loader.LoadSpriteForSlot(slotName, hudName, speciesName, isPlayer);
         }
 
         private void OnSkillSelectedFromUI(int moveSlot)
@@ -223,6 +223,7 @@ namespace Game.Battle.Logic
     {
         public string InstanceId;
         public int SpeciesId;
+        public string SpeciesName;
         public string Nickname;
         public int CurrentHp;
         public int MaxHp;

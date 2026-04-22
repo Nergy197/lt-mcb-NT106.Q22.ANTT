@@ -131,8 +131,8 @@ public class BattleService
         if (team1.Count == 0 || team2.Count == 0)
             throw new Exception("Both players must have at least 1 Pokemon in party.");
 
-        var snapshots1 = ToSnapshots(team1);
-        var snapshots2 = ToSnapshots(team2);
+        var snapshots1 = await ToSnapshotsAsync(team1);
+        var snapshots2 = await ToSnapshotsAsync(team2);
         var session = new BattleSession
         {
             BattleId = Guid.NewGuid().ToString("N"),
@@ -416,7 +416,7 @@ public class BattleService
 
     private async Task<List<PokemonInstance>> LoadParty(string playerId)
     {
-        if (playerId == "BOT_PLAYER") return GetBotTeam();
+        if (playerId == "BOT_PLAYER") return await GetBotTeamAsync();
 
         var filter = Builders<PokemonInstance>.Filter.And(
             Builders<PokemonInstance>.Filter.Eq(p => p.OwnerId, playerId),
@@ -429,56 +429,74 @@ public class BattleService
             .ToListAsync();
     }
 
-    private List<PokemonInstance> GetBotTeam()
+    private async Task<List<PokemonInstance>> GetBotTeamAsync()
     {
         var botTeam = new List<PokemonInstance>();
         var species = new[] { 149, 130, 94, 143, 65, 150 }; // Dragonite, Gyarados, Gengar, Snorlax, Alakazam, Mewtwo
         for (int i = 0; i < species.Length; i++)
         {
+            var speciesEntry = await _db.Pokedex.Find(x => x.Id == species[i]).FirstOrDefaultAsync();
+            var moveset = speciesEntry?.DefaultMoves ?? new List<int> { 1, 45 };
+
             botTeam.Add(new PokemonInstance
             {
                 Id = $"BOT_PKM_{i}",
                 OwnerId = "BOT_PLAYER",
                 SpeciesId = species[i],
-                Nickname = "Champion Bot",
+                Nickname = speciesEntry?.Name ?? "Champion Bot",
                 Level = 50,
-                CurrentHp = 200, MaxHp = 200,
-                IsInParty = true, PartySlot = i,
-                Moves = new List<PokemonMove> { 
-                    new() { MoveId = 1, CurrentPp = 10 },
-                    new() { MoveId = 2, CurrentPp = 10 },
-                    new() { MoveId = 3, CurrentPp = 10 },
-                    new() { MoveId = 4, CurrentPp = 10 }
-                }
+                CurrentHp = 500, MaxHp = 500, // Thêm chút máu cho boss
+                IsInParty = true, 
+                PartySlot = i,
+                Moves = moveset.Select(mId => new PokemonMove { MoveId = mId, CurrentPp = 15 }).ToList()
             });
         }
         return botTeam;
     }
 
-    private static List<BattlePokemonSnapshot> ToSnapshots(List<PokemonInstance> team)
+    private async Task<List<BattlePokemonSnapshot>> ToSnapshotsAsync(List<PokemonInstance> team)
     {
-        return team.Select(p =>
+        var snaps = new List<BattlePokemonSnapshot>();
+        foreach (var p in team)
         {
+            var species = await _db.Pokedex.Find(x => x.Id == p.SpeciesId).FirstOrDefaultAsync();
+            var speciesName = species?.Name ?? "unknown";
+
+            var moves = new List<PokemonMove>();
+            foreach (var m in p.Moves)
+            {
+                var moveEntry = await _db.Moves.Find(me => me.Id == m.MoveId).FirstOrDefaultAsync();
+                moves.Add(new PokemonMove
+                {
+                    MoveId = m.MoveId,
+                    MoveName = moveEntry?.Name ?? $"Move#{m.MoveId}",
+                    CurrentPp = m.CurrentPp
+                });
+            }
+
+            var natureMult = GetNatureMultiplier(p.Nature);
             var snap = new BattlePokemonSnapshot
             {
                 InstanceId = p.Id,
                 SpeciesId = p.SpeciesId,
+                SpeciesName = speciesName.ToLower(),
                 Nickname = p.Nickname,
                 Level = p.Level,
                 CurrentHp = p.CurrentHp,
                 MaxHp = p.MaxHp,
+                Atk = CalculateOtherStat(GetBaseStat(species, "attack", "atk"), p.Ivs?.Atk ?? 31, p.Evs?.Atk ?? 0, p.Level, natureMult.atk),
+                Def = CalculateOtherStat(GetBaseStat(species, "defense", "def"), p.Ivs?.Def ?? 31, p.Evs?.Def ?? 0, p.Level, natureMult.def),
+                SpAtk = CalculateOtherStat(GetBaseStat(species, "special_attack", "spatk", "special-attack"), p.Ivs?.SpAtk ?? 31, p.Evs?.SpAtk ?? 0, p.Level, natureMult.spa),
+                SpDef = CalculateOtherStat(GetBaseStat(species, "special_defense", "spdef", "special-defense"), p.Ivs?.SpDef ?? 31, p.Evs?.SpDef ?? 0, p.Level, natureMult.spd),
+                Spd = CalculateOtherStat(GetBaseStat(species, "speed", "spd"), p.Ivs?.Spd ?? 31, p.Evs?.Spd ?? 0, p.Level, natureMult.spe),
                 NonVolatileStatus = ParseLegacyStatus(p.StatusCondition),
-                Moves = p.Moves.Select(m => new PokemonMove
-                {
-                    MoveId = m.MoveId,
-                    CurrentPp = m.CurrentPp
-                }).ToList()
+                Moves = moves
             };
-            // Restore toxic counter if the legacy string encoded it
             if (snap.NonVolatileStatus == PokemonStatusCondition.Toxic)
                 snap.ToxicCounter = 1;
-            return snap;
-        }).ToList();
+            snaps.Add(snap);
+        }
+        return snaps;
     }
 
     private static PokemonStatusCondition ParseLegacyStatus(string? raw) =>
@@ -540,12 +558,8 @@ public class BattleService
     private async Task<int> GetActionSpeedAsync(BattleSession battle, BattleAction action)
     {
         var active = GetActivePokemon(battle, action.PlayerId);
-        if (active == null)
-            return 0;
-
-        var entry = await _db.Pokedex.Find(p => p.Id == active.SpeciesId).FirstOrDefaultAsync();
-        var baseSpeed = GetBaseStat(entry, "spd", "speed");
-        return CalculateBattleStat(baseSpeed, active.Level);
+        if (active == null) return 0;
+        return active.Spd;
     }
 
     private async Task ApplyActionAsync(BattleSession battle, BattleAction action, List<BattleEvent> events)
@@ -935,16 +949,8 @@ public class BattleService
 
         var category = NormalizeCategory(move.Category);
 
-        var attackBaseStat = category == "special"
-            ? GetBaseStat(attackerEntry, "spatk", "special-attack", "special_attack")
-            : GetBaseStat(attackerEntry, "atk", "attack");
-
-        var defenseBaseStat = category == "special"
-            ? GetBaseStat(defenderEntry, "spdef", "special-defense", "special_defense")
-            : GetBaseStat(defenderEntry, "def", "defense");
-
-        var attackStatBase = CalculateBattleStat(attackBaseStat, attacker.Level);
-        var defenseStatBase = CalculateBattleStat(defenseBaseStat, defender.Level);
+        var attackStatBase = category == "special" ? attacker.SpAtk : attacker.Atk;
+        var defenseStatBase = category == "special" ? defender.SpDef : defender.Def;
 
         // ── Apply stat stages (pbs-unity GetStageMultiplier logic) ───────────
         var attackStageIdx = category == "special" ? StatIndex.SPA : StatIndex.ATK;
@@ -1169,6 +1175,41 @@ public class BattleService
 
     private static int CalculateBattleStat(int baseStat, int level)
         => Math.Max(1, ((2 * Math.Max(1, baseStat) * Math.Max(1, level)) / 100) + 5);
+
+    private static int CalculateOtherStat(int baseStat, int iv, int ev, int level, double natureExt)
+    {
+        int stat = (int)Math.Floor((2.0 * baseStat + iv + Math.Floor(ev / 4.0)) * level / 100.0) + 5;
+        return (int)Math.Floor(stat * natureExt);
+    }
+
+    private static (double atk, double def, double spa, double spd, double spe) GetNatureMultiplier(string? nature)
+    {
+        if (string.IsNullOrWhiteSpace(nature)) return (1.0, 1.0, 1.0, 1.0, 1.0);
+        return nature.ToLower() switch
+        {
+            "lonely" => (1.1, 0.9, 1.0, 1.0, 1.0),
+            "brave" => (1.1, 1.0, 1.0, 1.0, 0.9),
+            "adamant" => (1.1, 1.0, 0.9, 1.0, 1.0),
+            "naughty" => (1.1, 1.0, 1.0, 0.9, 1.0),
+            "bold" => (0.9, 1.1, 1.0, 1.0, 1.0),
+            "relaxed" => (1.0, 1.1, 1.0, 1.0, 0.9),
+            "impish" => (1.0, 1.1, 0.9, 1.0, 1.0),
+            "lax" => (1.0, 1.1, 1.0, 0.9, 1.0),
+            "timid" => (0.9, 1.0, 1.0, 1.0, 1.1),
+            "hasty" => (1.0, 0.9, 1.0, 1.0, 1.1),
+            "jolly" => (1.0, 1.0, 0.9, 1.0, 1.1),
+            "naive" => (1.0, 1.0, 1.0, 0.9, 1.1),
+            "modest" => (0.9, 1.0, 1.1, 1.0, 1.0),
+            "mild" => (1.0, 0.9, 1.1, 1.0, 1.0),
+            "quiet" => (1.0, 1.0, 1.1, 1.0, 0.9),
+            "rash" => (1.0, 1.0, 1.1, 0.9, 1.0),
+            "calm" => (0.9, 1.0, 1.0, 1.1, 1.0),
+            "gentle" => (1.0, 0.9, 1.0, 1.1, 1.0),
+            "sassy" => (1.0, 1.0, 1.0, 1.1, 0.9),
+            "careful" => (1.0, 1.0, 0.9, 1.1, 1.0),
+            _ => (1.0, 1.0, 1.0, 1.0, 1.0)
+        };
+    }
 
     private static string NormalizeType(string? type)
         => string.IsNullOrWhiteSpace(type) ? "normal" : type.Trim().ToLowerInvariant();
