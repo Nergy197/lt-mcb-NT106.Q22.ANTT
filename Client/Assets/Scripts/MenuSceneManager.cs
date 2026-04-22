@@ -11,8 +11,17 @@ namespace PokemonMMO.UI
 
         public void LoadBattleScene()
         {
-            Debug.Log($"[Menu] Loading battle scene: {battleSceneName}");
-            SceneManager.LoadScene(battleSceneName);
+            var matchmaking = FindFirstObjectByType<Game.Network.MatchmakingManager>();
+            if (matchmaking != null)
+            {
+                Debug.Log("[Menu] Bắt đầu tìm trận qua MatchmakingManager...");
+                matchmaking.StartSearching();
+            }
+            else
+            {
+                Debug.LogWarning("[Menu] Không tìm thấy MatchmakingManager. Load offline test.");
+                SceneManager.LoadScene(battleSceneName);
+            }
         }
 
         public void LoadStartMenu()

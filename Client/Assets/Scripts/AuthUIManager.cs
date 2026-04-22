@@ -116,7 +116,7 @@ namespace PokemonMMO.UI
         public void OnLoginSubmit()
         {
             string username = loginUsernameInput?.text?.Trim() ?? "";
-            string password = loginPasswordInput?.text ?? "";
+            string password = loginPasswordInput?.text?.Trim('\r', '\n', '\u200B') ?? "";
 
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
@@ -133,7 +133,7 @@ namespace PokemonMMO.UI
         {
             string username = signUpUsernameInput?.text?.Trim() ?? "";
             string email    = signUpEmailInput?.text?.Trim()    ?? "";
-            string password = signUpPasswordInput?.text         ?? "";
+            string password = signUpPasswordInput?.text?.Trim('\r', '\n', '\u200B') ?? "";
 
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
             {

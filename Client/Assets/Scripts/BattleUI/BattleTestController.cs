@@ -44,10 +44,10 @@ namespace Game.Battle.Logic
         {
             // [DEMOKIT MẠNG SERVER] Giả lập Server đổ data vào, nạp đúng 4 con y như ảnh chụp của bạn!
             BattleSpriteLoader loader = gameObject.AddComponent<BattleSpriteLoader>();
-            loader.LoadSpriteForSlot("Player_Lead_Slot", "Player1_HUD", 655, true);  
-            loader.LoadSpriteForSlot("Player_Sub2_Slot", "Player2_HUD", 71, true);   
-            loader.LoadSpriteForSlot("Enemy_Lead_Slot", "Enemy1_HUD", 208, false);  
-            loader.LoadSpriteForSlot("Enemy_Sub2_Slot", "Enemy2_HUD", 780, false);  
+            loader.LoadSpriteForSlot("Player_Lead_Slot", "Player1_HUD", "delphox", true);  
+            loader.LoadSpriteForSlot("Player_Sub2_Slot", "Player2_HUD", "victreebel", true);   
+            loader.LoadSpriteForSlot("Enemy_Lead_Slot", "Enemy1_HUD", "steelix", false);  
+            loader.LoadSpriteForSlot("Enemy_Sub2_Slot", "Enemy2_HUD", "drampa", false);
 
             // Lắp Tên và Máu vào UI (Sau này cái này cũng do Server bắn JSON qua để điền vào)
             if (playerHUD) playerHUD.SetupEntity("Player", "Charizard", playerHp, playerMaxHp);
