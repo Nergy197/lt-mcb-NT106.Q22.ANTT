@@ -7,19 +7,15 @@ using System;
 
 public enum ChatType { World, Private }
 
-// Định nghĩa cấu trúc tin nhắn linh hoạt để khớp với mọi kiểu đặt tên từ Server (PascalCase/camelCase)
 [Serializable]
 public class ChatMessageDto
 {
     public string SenderId;
     public string senderId;
-    
     public string SenderName;
     public string senderName;
-    
     public string Content;
     public string content;
-    
     public string Channel;
     public string ReceiverId;
 
@@ -48,18 +44,21 @@ public class ChatManager : MonoBehaviour
     {
         if (SignalRClient.Instance != null)
         {
-            Debug.Log("[Chat] Đang khởi động kết nối SignalR...");
+            Debug.Log("<color=cyan>[Chat System]</color> Đang khởi động kết nối SignalR...");
             await SignalRClient.Instance.ConnectAsync();
+            
+            if (SignalRClient.Instance.Chat.State == HubConnectionState.Connected)
+                Debug.Log("<color=green>[Chat System] KẾT NỐI THÀNH CÔNG!</color> Sẵn sàng gửi/nhận tin nhắn.");
+            else
+                Debug.LogWarning($"<color=yellow>[Chat System] Cảnh báo:</color> Kết nối không ở trạng thái Connected (Hiện tại: {SignalRClient.Instance.Chat.State})");
         }
 
         if (SignalRClient.Instance != null && SignalRClient.Instance.Chat != null)
         {
-            Debug.Log("[Chat] Đã đăng ký lắng nghe sự kiện WorldMessage và DirectMessage");
-
             SignalRClient.Instance.Chat.On<ChatMessageDto>("WorldMessage", (dto) => {
                 string msg = dto.GetContent();
                 string name = dto.GetSenderName();
-                Debug.Log($"[Chat] Nhận tin nhắn World từ {name}: {msg}");
+                Debug.Log($"<color=white>[NHẬN - THẾ GIỚI]</color> <b>{name}</b>: {msg}");
                 
                 if (currentChatType == ChatType.World)
                     ReceiveMessage(msg, name, false);
@@ -69,8 +68,7 @@ public class ChatManager : MonoBehaviour
                 string msg = dto.GetContent();
                 string name = dto.GetSenderName();
                 string sId = dto.GetSenderId();
-                
-                Debug.Log($"[Chat] Nhận tin nhắn DM từ {name}: {msg}");
+                Debug.Log($"<color=magenta>[NHẬN - CHAT RIÊNG]</color> Từ <b>{name}</b>: {msg}");
                 
                 string myId = PlayerPrefs.GetString("player_id", "");
                 bool isMe = sId == myId;
@@ -83,7 +81,7 @@ public class ChatManager : MonoBehaviour
         }
         else
         {
-            Debug.LogError("[Chat] Không tìm thấy SignalRClient hoặc Chat Hub!");
+            Debug.LogError("<color=red>[Chat System] LỖI:</color> Không tìm thấy SignalRClient hoặc Chat Hub trong Scene!");
         }
     }
 
@@ -94,46 +92,46 @@ public class ChatManager : MonoBehaviour
 
         if (SignalRClient.Instance == null || SignalRClient.Instance.Chat.State != HubConnectionState.Connected)
         {
-            Debug.LogError("Chưa kết nối Chat Server!");
+            Debug.LogError("<color=red>[Chat System] LỖI:</color> Chưa kết nối Server, không thể gửi tin!");
             return;
         }
+
+        Debug.Log($"<color=blue>[GỬI TIN]</color> Đang gửi: {messageText} (Kênh: {currentChatType})");
 
         try {
             if (currentChatType == ChatType.World)
             {
                 await SignalRClient.Instance.Chat.InvokeAsync("SendWorldMessage", messageText);
+                Debug.Log("<color=green>[GỬI TIN] Thành công -> Thế giới</color>");
             }
             else
             {
-                if (string.IsNullOrEmpty(currentReceiverId)) return;
+                if (string.IsNullOrEmpty(currentReceiverId)) {
+                    Debug.LogWarning("<color=orange>[GỬI TIN] Thất bại:</color> Chưa chọn người nhận (ReceiverId trống)");
+                    return;
+                }
                 await SignalRClient.Instance.Chat.InvokeAsync("SendDirectMessage", currentReceiverId, messageText);
+                Debug.Log($"<color=green>[GỬI TIN] Thành công -> Friend ID: {currentReceiverId}</color>");
             }
             
             inputField.text = "";
             inputField.ActivateInputField();
         }
         catch (Exception ex) {
-            Debug.LogError("Lỗi gửi tin nhắn: " + ex.Message);
+            Debug.LogError($"<color=red>[GỬI TIN LỖI]</color> {ex.Message}");
         }
     }
 
     public void ReceiveMessage(string messageText, string senderName, bool isMe)
     {
         UnityMainThreadDispatcher.Instance().Enqueue(() => {
-            if (contentContainer == null) {
-                Debug.LogError("Chưa kéo Content Container vào ChatManager!");
-                return;
-            }
+            if (contentContainer == null) return;
 
             GameObject prefab = isMe ? myMessagePrefab : friendMessagePrefab;
-            if (prefab == null) {
-                Debug.LogError("Chưa kéo Message Prefab vào ChatManager!");
-                return;
-            }
+            if (prefab == null) return;
 
             GameObject newMsg = Instantiate(prefab, contentContainer);
-            Debug.Log($"[Chat] Đã khởi tạo tin nhắn: {messageText}");
-
+            
             TMP_Text textComponent = newMsg.GetComponentInChildren<TMP_Text>();
             if (textComponent != null) textComponent.text = messageText;
 
@@ -149,6 +147,8 @@ public class ChatManager : MonoBehaviour
             Canvas.ForceUpdateCanvases();
             LayoutRebuilder.ForceRebuildLayoutImmediate(contentContainer.GetComponent<RectTransform>());
             scrollRect.verticalNormalizedPosition = 0f;
+            
+            Debug.Log($"<color=cyan>[GIAO DIỆN]</color> Đã hiển thị tin nhắn của {senderName} lên màn hình.");
         });
     }
 
@@ -157,7 +157,7 @@ public class ChatManager : MonoBehaviour
         currentChatType = ChatType.Private;
         currentReceiverId = playerId;
         currentFriendAvatar = avatar;
-        Debug.Log($"Bắt đầu chat riêng với: {playerName}");
+        Debug.Log($"<color=orange>[CHUYỂN TAB]</color> Bắt đầu chat riêng với: <b>{playerName}</b> (ID: {playerId})");
         
         foreach (Transform child in contentContainer) Destroy(child.gameObject);
         SignalRClient.Instance.Chat.InvokeAsync("LoadDirectHistory", playerId);
