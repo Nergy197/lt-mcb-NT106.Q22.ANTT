@@ -11,8 +11,16 @@ public class FriendItemUI : MonoBehaviour
     // Chấm tròn hiển thị trạng thái Online/Offline (kéo UI Image vào đây)
     public Image statusDot;
 
-    public void SetData(string name, Sprite avatar, bool isOnline)
+    private string myPlayerId;
+    private string myPlayerName;
+    private Sprite myAvatar;
+
+    public void SetData(string id, string name, Sprite avatar, bool isOnline)
     {
+        myPlayerId = id;
+        myPlayerName = name;
+        myAvatar = avatar;
+        
         nameText.text = name;
         pokemonIcon.sprite = avatar;
 
@@ -20,6 +28,19 @@ public class FriendItemUI : MonoBehaviour
         {
             // Xanh lá = Online, Xám = Offline
             statusDot.color = isOnline ? Color.green : Color.gray;
+        }
+    }
+
+    // Gắn hàm này vào Button của FriendPrefab
+    public void OnClickFriend()
+    {
+        ChatManager chat = FindFirstObjectByType<ChatManager>();
+        if (chat != null)
+        {
+            chat.SetActiveChatFriend(myPlayerId, myPlayerName, myAvatar);
+            
+            // Mở bảng chat lên nếu nó đang ẩn (tùy cấu hình UI của bạn)
+            // Ví dụ: chat.gameObject.SetActive(true);
         }
     }
 }

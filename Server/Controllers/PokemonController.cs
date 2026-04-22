@@ -3,6 +3,7 @@ using MongoDB.Driver;
 using PokemonMMO.Data;
 using PokemonMMO.Models;
 using System.Security.Claims;
+using PokemonMMO.Services;
 
 namespace PokemonMMO.Controllers;
 
@@ -130,7 +131,7 @@ public class PokemonController : ControllerBase
         {
             MoveId = req.NewMoveId,
             MoveName = moveData.Name,
-            CurrentPp = moveData.Pp ?? 15 // Set max PP
+            CurrentPp = moveData.PP // Set max PP
         };
 
         if (req.MoveSlotIndex < p.Moves.Count)

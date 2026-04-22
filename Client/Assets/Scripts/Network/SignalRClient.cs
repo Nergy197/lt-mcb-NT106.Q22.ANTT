@@ -14,9 +14,11 @@ namespace Game.Network
 
         private HubConnection _matchmakingHub;
         private HubConnection _battleHub;
+        private HubConnection _chatHub;
 
         public HubConnection Matchmaking => _matchmakingHub;
         public HubConnection Battle => _battleHub;
+        public HubConnection Chat => _chatHub;
 
         private string _token;
 
@@ -38,6 +40,7 @@ namespace Game.Network
         {
             _matchmakingHub = CreateConnection("/hubs/matchmaking");
             _battleHub = CreateConnection("/hubs/battle");
+            _chatHub = CreateConnection("/hubs/chat");
         }
 
         public async Task ConnectAsync()
@@ -59,6 +62,9 @@ namespace Game.Network
                 
                 if (_battleHub.State == HubConnectionState.Disconnected)
                     await _battleHub.StartAsync();
+
+                if (_chatHub.State == HubConnectionState.Disconnected)
+                    await _chatHub.StartAsync();
 
                 Debug.Log("[Network] Đã kết nối SignalR thành công.");
             }
@@ -83,6 +89,7 @@ namespace Game.Network
         {
             if (_matchmakingHub != null) await _matchmakingHub.StopAsync();
             if (_battleHub != null) await _battleHub.StopAsync();
+            if (_chatHub != null) await _chatHub.StopAsync();
         }
     }
 }

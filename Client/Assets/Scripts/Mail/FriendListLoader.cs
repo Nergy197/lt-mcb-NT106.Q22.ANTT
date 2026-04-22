@@ -87,8 +87,8 @@ public class FriendListLoader : MonoBehaviour
                 // Bốc đại 1 tấm ảnh Pokemon cho sinh động
                 int randomIndex = Random.Range(0, pokemonAvatarPool.Length);
 
-                // Đổ tên từ Backend (data.playerName) và trạng thái online vào ô UI
-                itemUI.SetData(data.playerName, pokemonAvatarPool[randomIndex], data.isOnline);
+                // Đổ ID, tên từ Backend và trạng thái online vào ô UI
+                itemUI.SetData(data.playerId, data.playerName, pokemonAvatarPool[randomIndex], data.isOnline);
             }
         }
     }
