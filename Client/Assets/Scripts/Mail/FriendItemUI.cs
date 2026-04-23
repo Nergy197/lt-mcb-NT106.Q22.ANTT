@@ -4,11 +4,8 @@ using TMPro;
 
 public class FriendItemUI : MonoBehaviour
 {
-    // Anh kéo cái Image Avatar và Text Name vào 2 ô này trong Inspector của Prefab
     public Image pokemonIcon;
     public TextMeshProUGUI nameText;
-
-    // Chấm tròn hiển thị trạng thái Online/Offline (kéo UI Image vào đây)
     public Image statusDot;
 
     private string myPlayerId;
@@ -26,21 +23,24 @@ public class FriendItemUI : MonoBehaviour
 
         if (statusDot != null)
         {
-            // Xanh lá = Online, Xám = Offline
             statusDot.color = isOnline ? Color.green : Color.gray;
         }
     }
 
-    // Gắn hàm này vào Button của FriendPrefab
     public void OnClickFriend()
     {
-        ChatManager chat = FindFirstObjectByType<ChatManager>();
+        Debug.Log($"<color=red>======= [CLICK] =======</color> Đã nhấn: {myPlayerName}");
+
+        // Cách tìm ChatManager chắc chắn nhất: Tìm trong toàn bộ scene kể cả bị ẩn
+        ChatManager chat = FindFirstObjectByType<ChatManager>(FindObjectsInactive.Include);
+        
         if (chat != null)
         {
             chat.SetActiveChatFriend(myPlayerId, myPlayerName, myAvatar);
-            
-            // Mở bảng chat lên nếu nó đang ẩn (tùy cấu hình UI của bạn)
-            // Ví dụ: chat.gameObject.SetActive(true);
+        }
+        else
+        {
+            Debug.LogError("KHÔNG TÌM THẤY ChatManager TRONG SCENE! Hãy kiểm tra xem bạn đã kéo script ChatManager vào Object nào chưa.");
         }
     }
 }

@@ -1552,7 +1552,7 @@ public class BattleService
     private static int GetActiveIndexB(BattleSession battle, string playerId)
         => playerId == battle.Player1Id ? battle.ActiveIndex1b : battle.ActiveIndex2b;
 
-    private void SetActiveIndex(BattleSession battle, string playerId, int index, bool slotB = false)
+    private static void SetActiveIndex(BattleSession battle, string playerId, int index, bool slotB = false)
     {
         if (playerId == battle.Player1Id)
         {
@@ -1566,7 +1566,7 @@ public class BattleService
         }
     }
 
-    private BattlePokemonSnapshot GetActivePokemon(BattleSession battle, string playerId, int slot)
+    private static BattlePokemonSnapshot? GetActivePokemon(BattleSession battle, string playerId, int slot)
     {
         var team = GetTeam(battle, playerId);
         var idx = slot == 0 ? GetActiveIndex(battle, playerId) : GetActiveIndexB(battle, playerId);
