@@ -1,25 +1,37 @@
+using Game.Chat;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class FriendItemUI : MonoBehaviour
 {
-    // Anh kéo cái Image Avatar và Text Name vào 2 ô này trong Inspector của Prefab
     public Image pokemonIcon;
     public TextMeshProUGUI nameText;
-
-    // Chấm tròn hiển thị trạng thái Online/Offline (kéo UI Image vào đây)
     public Image statusDot;
 
-    public void SetData(string name, Sprite avatar, bool isOnline)
+    private string _playerId;
+    private string _playerName;
+
+    public void SetData(string playerId, string name, Sprite avatar, bool isOnline)
     {
-        nameText.text = name;
+        _playerId   = playerId;
+        _playerName = name;
+        nameText.text      = name;
         pokemonIcon.sprite = avatar;
 
         if (statusDot != null)
-        {
-            // Xanh lá = Online, Xám = Offline
             statusDot.color = isOnline ? Color.green : Color.gray;
+
+        var btn = GetComponent<Button>();
+        if (btn != null)
+        {
+            btn.onClick.RemoveAllListeners();
+            btn.onClick.AddListener(OnClick);
         }
+    }
+
+    private void OnClick()
+    {
+        DMChatPanel.Instance?.OpenChat(_playerId, _playerName);
     }
 }
