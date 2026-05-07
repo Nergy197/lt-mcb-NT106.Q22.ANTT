@@ -19,4 +19,4 @@ COPY --from=build /app/publish .
 ENV PORT=2567
 ENV ASPNETCORE_URLS=http://+:2567
 
-ENTRYPOINT ["dotnet", "PokemonMMO.dll"]
+ENTRYPOINT ["dotnet", "Server.dll"]
