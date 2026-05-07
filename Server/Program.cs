@@ -65,6 +65,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 if (!string.IsNullOrEmpty(accessToken) && (
                     path.StartsWithSegments("/hubs/matchmaking") ||
                     path.StartsWithSegments("/hubs/battle") ||
+                    path.StartsWithSegments("/hubs/chat") ||
                     path.StartsWithSegments("/game")))
                     ctx.Token = accessToken;
 

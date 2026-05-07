@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f30071834010f498a9ecb04b303418d2
+guid: 13e42a090f826784196517ffd1bdba8b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9153060556367457908
-    second: Login menu asset(2)(1)(2)_0
+      213: -4238914537891743045
+    second: Messenger_creation_6sF308CC1-80A3-41F3-A245-D43029209156 2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Login menu asset(2)(1)(2)_0
+      name: Messenger_creation_6sF308CC1-80A3-41F3-A245-D43029209156 2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 298
-        height: 43
+        y: 1
+        width: 69
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 47eebedb414360f70800000000000000
-      internalID: 9153060556367457908
+      spriteID: bba39bfbfa95c25c0800000000000000
+      internalID: -4238914537891743045
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Login menu asset(2)(1)(2)_0: 9153060556367457908
+      Messenger_creation_6sF308CC1-80A3-41F3-A245-D43029209156 2_0: -4238914537891743045
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

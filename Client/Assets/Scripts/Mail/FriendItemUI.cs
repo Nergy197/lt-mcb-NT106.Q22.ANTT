@@ -1,4 +1,3 @@
-using Game.Chat;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,29 +8,32 @@ public class FriendItemUI : MonoBehaviour
     public TextMeshProUGUI nameText;
     public Image statusDot;
 
-    private string _playerId;
-    private string _playerName;
+    private string myPlayerId;
+    private string myPlayerName;
+    private Sprite myAvatar;
 
-    public void SetData(string playerId, string name, Sprite avatar, bool isOnline)
+    public void SetData(string id, string name, Sprite avatar, bool isOnline)
     {
-        _playerId   = playerId;
-        _playerName = name;
+        myPlayerId   = id;
+        myPlayerName = name;
+        myAvatar     = avatar;
+
         nameText.text      = name;
         pokemonIcon.sprite = avatar;
 
         if (statusDot != null)
             statusDot.color = isOnline ? Color.green : Color.gray;
-
-        var btn = GetComponent<Button>();
-        if (btn != null)
-        {
-            btn.onClick.RemoveAllListeners();
-            btn.onClick.AddListener(OnClick);
-        }
     }
 
-    private void OnClick()
+    public void OnClickFriend()
     {
-        DMChatPanel.Instance?.OpenChat(_playerId, _playerName);
+        Debug.Log($"<color=red>======= [CLICK] =======</color> Đã nhấn: {myPlayerName}");
+
+        ChatManager chat = FindFirstObjectByType<ChatManager>(FindObjectsInactive.Include);
+
+        if (chat != null)
+            chat.SetActiveChatFriend(myPlayerId, myPlayerName, myAvatar);
+        else
+            Debug.LogError("KHÔNG TÌM THẤY ChatManager TRONG SCENE!");
     }
 }
