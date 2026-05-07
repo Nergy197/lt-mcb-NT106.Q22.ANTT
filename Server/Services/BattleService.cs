@@ -494,8 +494,11 @@ public class BattleService
                 var moveEntry = await _db.Moves.Find(me => me.Id == m.MoveId).FirstOrDefaultAsync();
                 moves.Add(new PokemonMove
                 {
-                    MoveId = m.MoveId,
-                    MoveName = moveEntry?.Name ?? $"Move#{m.MoveId}",
+                    MoveId    = m.MoveId,
+                    MoveName  = moveEntry?.Name ?? $"Move#{m.MoveId}",
+                    MoveType  = moveEntry?.Type ?? "normal",
+                    Category  = moveEntry?.Category ?? "Physical",
+                    MaxPp     = moveEntry?.PP > 0 ? moveEntry.PP : m.MaxPp > 0 ? m.MaxPp : 10,
                     CurrentPp = m.CurrentPp
                 });
             }

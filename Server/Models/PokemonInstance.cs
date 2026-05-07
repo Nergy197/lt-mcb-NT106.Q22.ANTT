@@ -93,6 +93,15 @@ public class PokemonMove
     [BsonElement("move_name")]
     public string MoveName { get; set; } = "Unknown";
 
+    [BsonElement("move_type")]
+    public string MoveType { get; set; } = "normal";
+
+    [BsonElement("category")]
+    public string Category { get; set; } = "Physical";
+
+    [BsonElement("max_pp")]
+    public int MaxPp { get; set; }
+
     [BsonElement("current_pp")]
     public int CurrentPp { get; set; }
 }

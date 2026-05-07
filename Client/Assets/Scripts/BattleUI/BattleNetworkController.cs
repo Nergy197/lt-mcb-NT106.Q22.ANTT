@@ -233,22 +233,14 @@ namespace Game.Battle.Logic
             int oppIdxA = isP1 ? _currentBattle.ActiveIndex2 : _currentBattle.ActiveIndex1;
             int oppIdxB = isP1 ? _currentBattle.ActiveIndex2b : _currentBattle.ActiveIndex1b;
 
-            foreach (var btn in skillPanel.skillButtons)
-            {
-                var t = btn.GetComponentInChildren<TMPro.TextMeshProUGUI>();
-                if (t != null) t.text = "";
-            }
+            for (int i = 0; i < skillPanel.skillButtons.Length; i++)
+                skillPanel.SetTargetLabel(i, "---");
 
             if (oppTeam != null && oppIdxA >= 0 && oppIdxA < oppTeam.Count)
-            {
-                var t = skillPanel.skillButtons[0].GetComponentInChildren<TMPro.TextMeshProUGUI>();
-                if (t != null) t.text = $"[1] {oppTeam[oppIdxA].Nickname}";
-            }
+                skillPanel.SetTargetLabel(0, $"▶  {oppTeam[oppIdxA].Nickname}");
+
             if (oppTeam != null && oppIdxB >= 0 && oppIdxB < oppTeam.Count && oppTeam[oppIdxB].CurrentHp > 0)
-            {
-                var t = skillPanel.skillButtons[1].GetComponentInChildren<TMPro.TextMeshProUGUI>();
-                if (t != null) t.text = $"[2] {oppTeam[oppIdxB].Nickname}";
-            }
+                skillPanel.SetTargetLabel(1, $"▶  {oppTeam[oppIdxB].Nickname}");
         }
 
         private void FinishTurnSelection()
@@ -322,6 +314,7 @@ namespace Game.Battle.Logic
                 {
                     hud.gameObject.SetActive(true);
                     hud.SetupEntity(p ? "Player" : "Enemy", pkm.Nickname, pkm.CurrentHp, pkm.MaxHp);
+                    if (pkm.Level > 0) hud.SetLevel(pkm.Level);
                 }
                 var loader = GetComponent<BattleSpriteLoader>() ?? gameObject.AddComponent<BattleSpriteLoader>();
                 loader.LoadSpriteForSlot(slot, "", pkm.SpeciesName, p);
@@ -335,8 +328,11 @@ namespace Game.Battle.Logic
             var pkm = team[idx];
             for (int i = 0; i < pkm.Moves.Count && i < skillPanel.skillButtons.Length; i++)
             {
-                var t = skillPanel.skillButtons[i].GetComponentInChildren<TMPro.TextMeshProUGUI>();
-                if (t != null) t.text = pkm.Moves[i].MoveName;
+                var move = pkm.Moves[i];
+                skillPanel.SetMove(i, move.MoveName,
+                    move.MoveType ?? "normal",
+                    move.Category ?? "Special",
+                    move.CurrentPp, move.MaxPp);
             }
         }
     }
@@ -356,12 +352,17 @@ namespace Game.Battle.Logic
     [Serializable] public class PokemonSnapshotDto {
         public string SpeciesName { get; set; }
         public string Nickname { get; set; }
+        public int Level { get; set; }
         public int CurrentHp { get; set; }
         public int MaxHp { get; set; }
         public List<MoveDto> Moves { get; set; }
     }
     [Serializable] public class MoveDto {
-        public string MoveName { get; set; }
+        public string MoveName  { get; set; }
+        public string MoveType  { get; set; }  // "fire", "water", v.v.
+        public string Category  { get; set; }  // "Physical", "Special", "Status"
+        public int    CurrentPp { get; set; }
+        public int    MaxPp     { get; set; }
     }
     [Serializable] public class TurnResultDto {
         public string State { get; set; }
