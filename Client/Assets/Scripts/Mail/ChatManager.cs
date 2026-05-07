@@ -1,5 +1,5 @@
 using UnityEngine;
-using TMPro; 
+using TMPro;
 using UnityEngine.UI;
 using Game.Network;
 using Microsoft.AspNetCore.SignalR.Client;
@@ -27,6 +27,15 @@ public class ChatMessageDto
     public string GetSenderName() => !string.IsNullOrEmpty(SenderName) ? SenderName : senderName;
     public string GetSenderId() => !string.IsNullOrEmpty(SenderId) ? SenderId : senderId;
     public string GetReceiverId() => !string.IsNullOrEmpty(ReceiverId) ? ReceiverId : receiverId;
+}
+
+// Khớp với payload server gửi qua event "ChatHistory"
+[Serializable]
+public class ChatHistoryPayload
+{
+    public string Channel { get; set; }
+    public string OtherPlayerId { get; set; }
+    public List<ChatMessageDto> Messages { get; set; }
 }
 
 public class ChatManager : MonoBehaviour
@@ -73,7 +82,7 @@ public class ChatManager : MonoBehaviour
         var chat = SignalRClient.Instance.Chat;
         chat.Remove("WorldMessage");
         chat.Remove("DirectMessage");
-        chat.Remove("ReceiveHistoryMessage");
+        chat.Remove("ChatHistory");
 
         chat.On<ChatMessageDto>("WorldMessage", (dto) => {
             if (currentChatType == ChatType.World && dto.GetSenderId() != MyPlayerId)
@@ -86,8 +95,15 @@ public class ChatManager : MonoBehaviour
                 ReceiveMessage(dto.GetContent(), dto.GetSenderName(), sId == MyPlayerId);
         });
 
-        chat.On<ChatMessageDto>("ReceiveHistoryMessage", (dto) => {
-            ReceiveMessage(dto.GetContent(), dto.GetSenderName(), dto.GetSenderId() == MyPlayerId);
+        // Server gửi toàn bộ lịch sử qua 1 event "ChatHistory" dạng { Channel, Messages: [...] }
+        chat.On<ChatHistoryPayload>("ChatHistory", (payload) => {
+            bool isWorldHistory   = payload.Channel == "world" && currentChatType == ChatType.World;
+            bool isPrivateHistory = payload.Channel == "dm"    && currentChatType == ChatType.Private
+                                    && payload.OtherPlayerId == currentReceiverId;
+            if (!isWorldHistory && !isPrivateHistory) return;
+
+            foreach (var dto in payload.Messages ?? new List<ChatMessageDto>())
+                ReceiveMessage(dto.GetContent(), dto.GetSenderName(), dto.GetSenderId() == MyPlayerId);
         });
 
         isListening = true;
