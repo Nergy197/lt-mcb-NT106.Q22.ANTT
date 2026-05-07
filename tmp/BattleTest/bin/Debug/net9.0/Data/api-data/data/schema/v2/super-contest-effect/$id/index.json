@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "properties": {
+        "appeal": {
+            "type": "integer"
+        },
+        "flavor_text_entries": {
+            "items": {
+                "$ref": "/schema/v2/flavor_text.json"
+            },
+            "type": "array"
+        },
+        "id": {
+            "type": "integer"
+        },
+        "moves": {
+            "items": {
+                "$ref": "/schema/v2/named_api_resource.json"
+            },
+            "type": "array"
+        }
+    },
+    "required": [
+        "appeal",
+        "flavor_text_entries",
+        "id",
+        "moves"
+    ],
+    "type": "object"
+}

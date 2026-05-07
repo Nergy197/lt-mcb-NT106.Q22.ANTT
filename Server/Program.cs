@@ -110,11 +110,15 @@ builder.Services.AddScoped<FriendService>();
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
     options.JsonSerializerOptions.PropertyNamingPolicy = null;
+    // Serialize enum dưới dạng string ("Running", "TeamPreview"...) thay vì số nguyên
+    options.JsonSerializerOptions.Converters.Add(new System.Text.Json.Serialization.JsonStringEnumConverter());
 });
 
 builder.Services.AddSignalR().AddJsonProtocol(options =>
 {
     options.PayloadSerializerOptions.PropertyNamingPolicy = null;
+    // Bắt buộc đồng bộ với AddControllers ở trên
+    options.PayloadSerializerOptions.Converters.Add(new System.Text.Json.Serialization.JsonStringEnumConverter());
 });
 
 // ---------------------------------------------------------------------------

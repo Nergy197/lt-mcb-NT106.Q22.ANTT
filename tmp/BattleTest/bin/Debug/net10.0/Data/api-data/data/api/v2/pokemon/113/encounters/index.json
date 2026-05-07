@@ -1,0 +1,3291 @@
+[
+    {
+        "location_area": {
+            "name": "sinnoh-route-209-area",
+            "url": "/api/v2/location-area/151/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-none",
+                                "url": "/api/v2/encounter-condition-value/8/"
+                            }
+                        ],
+                        "max_level": 16,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 16
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-ruby",
+                                "url": "/api/v2/encounter-condition-value/9/"
+                            }
+                        ],
+                        "max_level": 16,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 16
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-sapphire",
+                                "url": "/api/v2/encounter-condition-value/10/"
+                            }
+                        ],
+                        "max_level": 16,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 16
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-emerald",
+                                "url": "/api/v2/encounter-condition-value/11/"
+                            }
+                        ],
+                        "max_level": 16,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 16
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-firered",
+                                "url": "/api/v2/encounter-condition-value/12/"
+                            }
+                        ],
+                        "max_level": 16,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 16
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "radar-off",
+                                "url": "/api/v2/encounter-condition-value/7/"
+                            }
+                        ],
+                        "max_level": 16,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 16
+                    }
+                ],
+                "max_chance": 21,
+                "version": {
+                    "name": "diamond",
+                    "url": "/api/v2/version/12/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-none",
+                                "url": "/api/v2/encounter-condition-value/8/"
+                            }
+                        ],
+                        "max_level": 16,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 16
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-ruby",
+                                "url": "/api/v2/encounter-condition-value/9/"
+                            }
+                        ],
+                        "max_level": 16,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 16
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-sapphire",
+                                "url": "/api/v2/encounter-condition-value/10/"
+                            }
+                        ],
+                        "max_level": 16,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 16
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-emerald",
+                                "url": "/api/v2/encounter-condition-value/11/"
+                            }
+                        ],
+                        "max_level": 16,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 16
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-firered",
+                                "url": "/api/v2/encounter-condition-value/12/"
+                            }
+                        ],
+                        "max_level": 16,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 16
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "radar-off",
+                                "url": "/api/v2/encounter-condition-value/7/"
+                            }
+                        ],
+                        "max_level": 16,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 16
+                    }
+                ],
+                "max_chance": 21,
+                "version": {
+                    "name": "pearl",
+                    "url": "/api/v2/version/13/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-none",
+                                "url": "/api/v2/encounter-condition-value/8/"
+                            }
+                        ],
+                        "max_level": 17,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 17
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-ruby",
+                                "url": "/api/v2/encounter-condition-value/9/"
+                            }
+                        ],
+                        "max_level": 17,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 17
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-sapphire",
+                                "url": "/api/v2/encounter-condition-value/10/"
+                            }
+                        ],
+                        "max_level": 17,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 17
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-emerald",
+                                "url": "/api/v2/encounter-condition-value/11/"
+                            }
+                        ],
+                        "max_level": 17,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 17
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-firered",
+                                "url": "/api/v2/encounter-condition-value/12/"
+                            }
+                        ],
+                        "max_level": 17,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 17
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "radar-off",
+                                "url": "/api/v2/encounter-condition-value/7/"
+                            }
+                        ],
+                        "max_level": 19,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 19
+                    }
+                ],
+                "max_chance": 21,
+                "version": {
+                    "name": "platinum",
+                    "url": "/api/v2/version/14/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "sinnoh-route-210-south-towards-solaceon-town",
+            "url": "/api/v2/location-area/157/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-none",
+                                "url": "/api/v2/encounter-condition-value/8/"
+                            }
+                        ],
+                        "max_level": 18,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 18
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-sapphire",
+                                "url": "/api/v2/encounter-condition-value/10/"
+                            }
+                        ],
+                        "max_level": 18,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 18
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-firered",
+                                "url": "/api/v2/encounter-condition-value/12/"
+                            }
+                        ],
+                        "max_level": 18,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 18
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-leafgreen",
+                                "url": "/api/v2/encounter-condition-value/13/"
+                            }
+                        ],
+                        "max_level": 18,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 18
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "radar-off",
+                                "url": "/api/v2/encounter-condition-value/7/"
+                            }
+                        ],
+                        "max_level": 20,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 20
+                    }
+                ],
+                "max_chance": 17,
+                "version": {
+                    "name": "diamond",
+                    "url": "/api/v2/version/12/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-none",
+                                "url": "/api/v2/encounter-condition-value/8/"
+                            }
+                        ],
+                        "max_level": 18,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 18
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-sapphire",
+                                "url": "/api/v2/encounter-condition-value/10/"
+                            }
+                        ],
+                        "max_level": 18,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 18
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-firered",
+                                "url": "/api/v2/encounter-condition-value/12/"
+                            }
+                        ],
+                        "max_level": 18,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 18
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-leafgreen",
+                                "url": "/api/v2/encounter-condition-value/13/"
+                            }
+                        ],
+                        "max_level": 18,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 18
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "radar-off",
+                                "url": "/api/v2/encounter-condition-value/7/"
+                            }
+                        ],
+                        "max_level": 20,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 20
+                    }
+                ],
+                "max_chance": 17,
+                "version": {
+                    "name": "pearl",
+                    "url": "/api/v2/version/13/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-none",
+                                "url": "/api/v2/encounter-condition-value/8/"
+                            }
+                        ],
+                        "max_level": 19,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 19
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-sapphire",
+                                "url": "/api/v2/encounter-condition-value/10/"
+                            }
+                        ],
+                        "max_level": 19,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 19
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-firered",
+                                "url": "/api/v2/encounter-condition-value/12/"
+                            }
+                        ],
+                        "max_level": 19,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 19
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "slot2-leafgreen",
+                                "url": "/api/v2/encounter-condition-value/13/"
+                            }
+                        ],
+                        "max_level": 19,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 19
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "radar-off",
+                                "url": "/api/v2/encounter-condition-value/7/"
+                            }
+                        ],
+                        "max_level": 21,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 21
+                    }
+                ],
+                "max_chance": 17,
+                "version": {
+                    "name": "platinum",
+                    "url": "/api/v2/version/14/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "kanto-route-12-area",
+            "url": "/api/v2/location-area/276/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 36,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 31
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 36,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 31
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "mt-moon-1f",
+            "url": "/api/v2/location-area/290/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 10,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 5
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 10,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 5
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "kanto-victory-road-1-1f",
+            "url": "/api/v2/location-area/294/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 46,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 41
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 46,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 41
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "kanto-route-5-area",
+            "url": "/api/v2/location-area/299/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 16,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 11
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 16,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 11
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "kanto-route-6-area",
+            "url": "/api/v2/location-area/300/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 16,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 11
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 16,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 11
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "kanto-route-8-area",
+            "url": "/api/v2/location-area/302/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 27,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 22
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 27,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 22
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "kanto-route-9-area",
+            "url": "/api/v2/location-area/303/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 22,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 17
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 22,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 17
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "kanto-route-10-area",
+            "url": "/api/v2/location-area/304/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 23,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 18
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 23,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 18
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "kanto-route-11-area",
+            "url": "/api/v2/location-area/305/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 18,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 13
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 18,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 13
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "kanto-route-13-area",
+            "url": "/api/v2/location-area/306/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "time-day",
+                                "url": "/api/v2/encounter-condition-value/4/"
+                            }
+                        ],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "time-morning",
+                                "url": "/api/v2/encounter-condition-value/3/"
+                            }
+                        ],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "time-night",
+                                "url": "/api/v2/encounter-condition-value/5/"
+                            }
+                        ],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    }
+                ],
+                "max_chance": 3,
+                "version": {
+                    "name": "gold",
+                    "url": "/api/v2/version/4/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "time-day",
+                                "url": "/api/v2/encounter-condition-value/4/"
+                            }
+                        ],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "time-morning",
+                                "url": "/api/v2/encounter-condition-value/3/"
+                            }
+                        ],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "time-night",
+                                "url": "/api/v2/encounter-condition-value/5/"
+                            }
+                        ],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    }
+                ],
+                "max_chance": 3,
+                "version": {
+                    "name": "silver",
+                    "url": "/api/v2/version/5/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 1,
+                        "condition_values": [],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    }
+                ],
+                "max_chance": 3,
+                "version": {
+                    "name": "crystal",
+                    "url": "/api/v2/version/6/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 20,
+                        "condition_values": [
+                            {
+                                "name": "swarm-yes",
+                                "url": "/api/v2/encounter-condition-value/1/"
+                            }
+                        ],
+                        "max_level": 23,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 23
+                    },
+                    {
+                        "chance": 20,
+                        "condition_values": [
+                            {
+                                "name": "swarm-yes",
+                                "url": "/api/v2/encounter-condition-value/1/"
+                            }
+                        ],
+                        "max_level": 23,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 23
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    }
+                ],
+                "max_chance": 41,
+                "version": {
+                    "name": "heartgold",
+                    "url": "/api/v2/version/15/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 20,
+                        "condition_values": [
+                            {
+                                "name": "swarm-yes",
+                                "url": "/api/v2/encounter-condition-value/1/"
+                            }
+                        ],
+                        "max_level": 23,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 23
+                    },
+                    {
+                        "chance": 20,
+                        "condition_values": [
+                            {
+                                "name": "swarm-yes",
+                                "url": "/api/v2/encounter-condition-value/1/"
+                            }
+                        ],
+                        "max_level": 23,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 23
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    }
+                ],
+                "max_chance": 41,
+                "version": {
+                    "name": "soulsilver",
+                    "url": "/api/v2/version/16/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 38,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 33
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 38,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 33
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "kanto-route-14-area",
+            "url": "/api/v2/location-area/307/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "time-day",
+                                "url": "/api/v2/encounter-condition-value/4/"
+                            }
+                        ],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "time-morning",
+                                "url": "/api/v2/encounter-condition-value/3/"
+                            }
+                        ],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "time-night",
+                                "url": "/api/v2/encounter-condition-value/5/"
+                            }
+                        ],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    }
+                ],
+                "max_chance": 3,
+                "version": {
+                    "name": "gold",
+                    "url": "/api/v2/version/4/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "time-day",
+                                "url": "/api/v2/encounter-condition-value/4/"
+                            }
+                        ],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "time-morning",
+                                "url": "/api/v2/encounter-condition-value/3/"
+                            }
+                        ],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "time-night",
+                                "url": "/api/v2/encounter-condition-value/5/"
+                            }
+                        ],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    }
+                ],
+                "max_chance": 3,
+                "version": {
+                    "name": "silver",
+                    "url": "/api/v2/version/5/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "time-day",
+                                "url": "/api/v2/encounter-condition-value/4/"
+                            }
+                        ],
+                        "max_level": 28,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 28
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "time-morning",
+                                "url": "/api/v2/encounter-condition-value/3/"
+                            }
+                        ],
+                        "max_level": 28,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 28
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "time-night",
+                                "url": "/api/v2/encounter-condition-value/5/"
+                            }
+                        ],
+                        "max_level": 28,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 28
+                    }
+                ],
+                "max_chance": 3,
+                "version": {
+                    "name": "crystal",
+                    "url": "/api/v2/version/6/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 1,
+                        "condition_values": [],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    }
+                ],
+                "max_chance": 1,
+                "version": {
+                    "name": "heartgold",
+                    "url": "/api/v2/version/15/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 1,
+                        "condition_values": [],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    }
+                ],
+                "max_chance": 1,
+                "version": {
+                    "name": "soulsilver",
+                    "url": "/api/v2/version/16/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 38,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 33
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 38,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 33
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "kanto-route-15-area",
+            "url": "/api/v2/location-area/308/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "time-day",
+                                "url": "/api/v2/encounter-condition-value/4/"
+                            }
+                        ],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "time-morning",
+                                "url": "/api/v2/encounter-condition-value/3/"
+                            }
+                        ],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "time-night",
+                                "url": "/api/v2/encounter-condition-value/5/"
+                            }
+                        ],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    }
+                ],
+                "max_chance": 3,
+                "version": {
+                    "name": "gold",
+                    "url": "/api/v2/version/4/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "time-day",
+                                "url": "/api/v2/encounter-condition-value/4/"
+                            }
+                        ],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "time-morning",
+                                "url": "/api/v2/encounter-condition-value/3/"
+                            }
+                        ],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "time-night",
+                                "url": "/api/v2/encounter-condition-value/5/"
+                            }
+                        ],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    }
+                ],
+                "max_chance": 3,
+                "version": {
+                    "name": "silver",
+                    "url": "/api/v2/version/5/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "time-day",
+                                "url": "/api/v2/encounter-condition-value/4/"
+                            }
+                        ],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "time-morning",
+                                "url": "/api/v2/encounter-condition-value/3/"
+                            }
+                        ],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "time-night",
+                                "url": "/api/v2/encounter-condition-value/5/"
+                            }
+                        ],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    }
+                ],
+                "max_chance": 3,
+                "version": {
+                    "name": "crystal",
+                    "url": "/api/v2/version/6/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 1,
+                        "condition_values": [],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    }
+                ],
+                "max_chance": 1,
+                "version": {
+                    "name": "heartgold",
+                    "url": "/api/v2/version/15/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 1,
+                        "condition_values": [],
+                        "max_level": 25,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 25
+                    }
+                ],
+                "max_chance": 1,
+                "version": {
+                    "name": "soulsilver",
+                    "url": "/api/v2/version/16/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 38,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 33
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 38,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 33
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "kanto-route-16-area",
+            "url": "/api/v2/location-area/309/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 36,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 31
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 36,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 31
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "kanto-route-17-area",
+            "url": "/api/v2/location-area/310/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 38,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 33
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 38,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 33
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "kanto-route-18-area",
+            "url": "/api/v2/location-area/311/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 38,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 33
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 38,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 33
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "kanto-sea-route-21-area",
+            "url": "/api/v2/location-area/312/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 42,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 37
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 42,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 37
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "digletts-cave-area",
+            "url": "/api/v2/location-area/317/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 18,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 13
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 18,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 13
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "cerulean-cave-2f",
+            "url": "/api/v2/location-area/324/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 5,
+                        "condition_values": [],
+                        "max_level": 56,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 56
+                    }
+                ],
+                "max_chance": 5,
+                "version": {
+                    "name": "red",
+                    "url": "/api/v2/version/1/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 5,
+                        "condition_values": [],
+                        "max_level": 56,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 56
+                    }
+                ],
+                "max_chance": 5,
+                "version": {
+                    "name": "blue",
+                    "url": "/api/v2/version/2/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 56,
+                        "method": {
+                            "name": "overworld",
+                            "url": "/api/v2/encounter-method/38/"
+                        },
+                        "min_level": 51
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 56,
+                        "method": {
+                            "name": "overworld",
+                            "url": "/api/v2/encounter-method/38/"
+                        },
+                        "min_level": 51
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 5,
+                        "condition_values": [],
+                        "max_level": 56,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 56
+                    }
+                ],
+                "max_chance": 5,
+                "version": {
+                    "name": "red-japan",
+                    "url": "/api/v2/version/44/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 5,
+                        "condition_values": [],
+                        "max_level": 56,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 56
+                    }
+                ],
+                "max_chance": 5,
+                "version": {
+                    "name": "green-japan",
+                    "url": "/api/v2/version/45/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "cerulean-cave-b1f",
+            "url": "/api/v2/location-area/325/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 10,
+                        "condition_values": [],
+                        "max_level": 64,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 64
+                    }
+                ],
+                "max_chance": 10,
+                "version": {
+                    "name": "red",
+                    "url": "/api/v2/version/1/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 10,
+                        "condition_values": [],
+                        "max_level": 64,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 64
+                    }
+                ],
+                "max_chance": 10,
+                "version": {
+                    "name": "blue",
+                    "url": "/api/v2/version/2/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 5,
+                        "condition_values": [],
+                        "max_level": 56,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 56
+                    }
+                ],
+                "max_chance": 5,
+                "version": {
+                    "name": "yellow",
+                    "url": "/api/v2/version/3/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 10,
+                        "condition_values": [],
+                        "max_level": 64,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 64
+                    }
+                ],
+                "max_chance": 10,
+                "version": {
+                    "name": "red-japan",
+                    "url": "/api/v2/version/44/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 10,
+                        "condition_values": [],
+                        "max_level": 64,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 64
+                    }
+                ],
+                "max_chance": 10,
+                "version": {
+                    "name": "green-japan",
+                    "url": "/api/v2/version/45/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "mt-moon-b1f",
+            "url": "/api/v2/location-area/326/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 10,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 5
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 10,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 5
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "mt-moon-b2f",
+            "url": "/api/v2/location-area/327/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 10,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 5
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 10,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 5
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "kanto-route-23-area",
+            "url": "/api/v2/location-area/329/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 46,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 41
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 46,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 41
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "power-plant-area",
+            "url": "/api/v2/location-area/330/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 42,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 37
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 42,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 37
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "pokemon-tower-3f",
+            "url": "/api/v2/location-area/336/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 32,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 27
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 32,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 27
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "pokemon-tower-4f",
+            "url": "/api/v2/location-area/337/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 32,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 27
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 32,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 27
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "pokemon-tower-5f",
+            "url": "/api/v2/location-area/338/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 32,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 27
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 32,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 27
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "pokemon-tower-6f",
+            "url": "/api/v2/location-area/339/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 32,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 27
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 32,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 27
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "pokemon-mansion-1f",
+            "url": "/api/v2/location-area/341/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 44,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 39
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 44,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 39
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "pokemon-mansion-2f",
+            "url": "/api/v2/location-area/342/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 44,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 39
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 44,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 39
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "pokemon-mansion-3f",
+            "url": "/api/v2/location-area/343/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 44,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 39
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 44,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 39
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "pokemon-mansion-b1f",
+            "url": "/api/v2/location-area/344/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 44,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 39
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-pikachu",
+                    "url": "/api/v2/version/31/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 44,
+                        "method": {
+                            "name": "overworld-special",
+                            "url": "/api/v2/encounter-method/41/"
+                        },
+                        "min_level": 39
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "lets-go-eevee",
+                    "url": "/api/v2/version/32/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "kanto-safari-zone-middle",
+            "url": "/api/v2/location-area/345/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 1,
+                        "condition_values": [],
+                        "max_level": 23,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 23
+                    }
+                ],
+                "max_chance": 1,
+                "version": {
+                    "name": "red",
+                    "url": "/api/v2/version/1/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 1,
+                        "condition_values": [],
+                        "max_level": 23,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 23
+                    }
+                ],
+                "max_chance": 1,
+                "version": {
+                    "name": "blue",
+                    "url": "/api/v2/version/2/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 1,
+                        "condition_values": [],
+                        "max_level": 7,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 7
+                    }
+                ],
+                "max_chance": 1,
+                "version": {
+                    "name": "yellow",
+                    "url": "/api/v2/version/3/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 1,
+                        "condition_values": [],
+                        "max_level": 23,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 23
+                    }
+                ],
+                "max_chance": 1,
+                "version": {
+                    "name": "firered",
+                    "url": "/api/v2/version/10/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 1,
+                        "condition_values": [],
+                        "max_level": 23,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 23
+                    }
+                ],
+                "max_chance": 1,
+                "version": {
+                    "name": "leafgreen",
+                    "url": "/api/v2/version/11/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 1,
+                        "condition_values": [],
+                        "max_level": 23,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 23
+                    }
+                ],
+                "max_chance": 1,
+                "version": {
+                    "name": "red-japan",
+                    "url": "/api/v2/version/44/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 1,
+                        "condition_values": [],
+                        "max_level": 23,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 23
+                    }
+                ],
+                "max_chance": 1,
+                "version": {
+                    "name": "green-japan",
+                    "url": "/api/v2/version/45/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "kanto-safari-zone-area-1-east",
+            "url": "/api/v2/location-area/346/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 4,
+                        "condition_values": [],
+                        "max_level": 21,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 21
+                    }
+                ],
+                "max_chance": 4,
+                "version": {
+                    "name": "yellow",
+                    "url": "/api/v2/version/3/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "kanto-safari-zone-area-2-north",
+            "url": "/api/v2/location-area/347/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 4,
+                        "condition_values": [],
+                        "max_level": 26,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 26
+                    }
+                ],
+                "max_chance": 4,
+                "version": {
+                    "name": "red",
+                    "url": "/api/v2/version/1/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 4,
+                        "condition_values": [],
+                        "max_level": 26,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 26
+                    }
+                ],
+                "max_chance": 4,
+                "version": {
+                    "name": "blue",
+                    "url": "/api/v2/version/2/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 4,
+                        "condition_values": [],
+                        "max_level": 26,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 26
+                    }
+                ],
+                "max_chance": 4,
+                "version": {
+                    "name": "firered",
+                    "url": "/api/v2/version/10/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 4,
+                        "condition_values": [],
+                        "max_level": 26,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 26
+                    }
+                ],
+                "max_chance": 4,
+                "version": {
+                    "name": "leafgreen",
+                    "url": "/api/v2/version/11/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 4,
+                        "condition_values": [],
+                        "max_level": 26,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 26
+                    }
+                ],
+                "max_chance": 4,
+                "version": {
+                    "name": "red-japan",
+                    "url": "/api/v2/version/44/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 4,
+                        "condition_values": [],
+                        "max_level": 26,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 26
+                    }
+                ],
+                "max_chance": 4,
+                "version": {
+                    "name": "green-japan",
+                    "url": "/api/v2/version/45/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "alola-route-12-area",
+            "url": "/api/v2/location-area/1057/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 15,
+                        "condition_values": [],
+                        "max_level": 29,
+                        "method": {
+                            "name": "sos-encounter",
+                            "url": "/api/v2/encounter-method/33/"
+                        },
+                        "min_level": 26
+                    }
+                ],
+                "max_chance": 15,
+                "version": {
+                    "name": "sun",
+                    "url": "/api/v2/version/27/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 15,
+                        "condition_values": [],
+                        "max_level": 29,
+                        "method": {
+                            "name": "sos-encounter",
+                            "url": "/api/v2/encounter-method/33/"
+                        },
+                        "min_level": 26
+                    }
+                ],
+                "max_chance": 15,
+                "version": {
+                    "name": "moon",
+                    "url": "/api/v2/version/28/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "blush-mountain-area",
+            "url": "/api/v2/location-area/1073/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 15,
+                        "condition_values": [],
+                        "max_level": 29,
+                        "method": {
+                            "name": "sos-encounter",
+                            "url": "/api/v2/encounter-method/33/"
+                        },
+                        "min_level": 26
+                    }
+                ],
+                "max_chance": 15,
+                "version": {
+                    "name": "sun",
+                    "url": "/api/v2/version/27/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 15,
+                        "condition_values": [],
+                        "max_level": 29,
+                        "method": {
+                            "name": "sos-encounter",
+                            "url": "/api/v2/encounter-method/33/"
+                        },
+                        "min_level": 26
+                    }
+                ],
+                "max_chance": 15,
+                "version": {
+                    "name": "moon",
+                    "url": "/api/v2/version/28/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "mount-hokulani-main",
+            "url": "/api/v2/location-area/1105/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 15,
+                        "condition_values": [],
+                        "max_level": 28,
+                        "method": {
+                            "name": "sos-encounter",
+                            "url": "/api/v2/encounter-method/33/"
+                        },
+                        "min_level": 25
+                    }
+                ],
+                "max_chance": 15,
+                "version": {
+                    "name": "sun",
+                    "url": "/api/v2/version/27/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 15,
+                        "condition_values": [],
+                        "max_level": 28,
+                        "method": {
+                            "name": "sos-encounter",
+                            "url": "/api/v2/encounter-method/33/"
+                        },
+                        "min_level": 25
+                    }
+                ],
+                "max_chance": 15,
+                "version": {
+                    "name": "moon",
+                    "url": "/api/v2/version/28/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "poni-grove-area",
+            "url": "/api/v2/location-area/1116/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 15,
+                        "condition_values": [],
+                        "max_level": 55,
+                        "method": {
+                            "name": "sos-encounter",
+                            "url": "/api/v2/encounter-method/33/"
+                        },
+                        "min_level": 52
+                    }
+                ],
+                "max_chance": 15,
+                "version": {
+                    "name": "sun",
+                    "url": "/api/v2/version/27/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 15,
+                        "condition_values": [],
+                        "max_level": 55,
+                        "method": {
+                            "name": "sos-encounter",
+                            "url": "/api/v2/encounter-method/33/"
+                        },
+                        "min_level": 52
+                    }
+                ],
+                "max_chance": 15,
+                "version": {
+                    "name": "moon",
+                    "url": "/api/v2/version/28/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "poni-plains-center",
+            "url": "/api/v2/location-area/1118/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 20,
+                        "condition_values": [],
+                        "max_level": 57,
+                        "method": {
+                            "name": "bubbling-spots",
+                            "url": "/api/v2/encounter-method/34/"
+                        },
+                        "min_level": 54
+                    }
+                ],
+                "max_chance": 20,
+                "version": {
+                    "name": "ultra-sun",
+                    "url": "/api/v2/version/29/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 20,
+                        "condition_values": [],
+                        "max_level": 57,
+                        "method": {
+                            "name": "bubbling-spots",
+                            "url": "/api/v2/encounter-method/34/"
+                        },
+                        "min_level": 54
+                    }
+                ],
+                "max_chance": 20,
+                "version": {
+                    "name": "ultra-moon",
+                    "url": "/api/v2/version/30/"
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,38 @@
+{
+    "areas": [
+        {
+            "name": "terra-cave-area",
+            "url": "/api/v2/location-area/802/"
+        }
+    ],
+    "game_indices": [],
+    "id": 803,
+    "name": "terra-cave",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Grotte Terra"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Terrah\u00f6hle"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Terra Cave"
+        }
+    ],
+    "region": {
+        "name": "hoenn",
+        "url": "/api/v2/region/3/"
+    }
+}

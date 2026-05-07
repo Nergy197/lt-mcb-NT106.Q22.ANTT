@@ -1,0 +1,122 @@
+[
+    {
+        "location_area": {
+            "name": "unova-route-12-area",
+            "url": "/api/v2/location-area/646/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 4,
+                        "condition_values": [],
+                        "max_level": 50,
+                        "method": {
+                            "name": "grass-spots",
+                            "url": "/api/v2/encounter-method/9/"
+                        },
+                        "min_level": 50
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [],
+                        "max_level": 50,
+                        "method": {
+                            "name": "grass-spots",
+                            "url": "/api/v2/encounter-method/9/"
+                        },
+                        "min_level": 50
+                    }
+                ],
+                "max_chance": 5,
+                "version": {
+                    "name": "black",
+                    "url": "/api/v2/version/17/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 4,
+                        "condition_values": [],
+                        "max_level": 50,
+                        "method": {
+                            "name": "grass-spots",
+                            "url": "/api/v2/encounter-method/9/"
+                        },
+                        "min_level": 50
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [],
+                        "max_level": 50,
+                        "method": {
+                            "name": "grass-spots",
+                            "url": "/api/v2/encounter-method/9/"
+                        },
+                        "min_level": 50
+                    }
+                ],
+                "max_chance": 5,
+                "version": {
+                    "name": "white",
+                    "url": "/api/v2/version/18/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "snagem-hideout-1f",
+            "url": "/api/v2/location-area/1234/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 45,
+                        "method": {
+                            "name": "snag-rematch",
+                            "url": "/api/v2/encounter-method/52/"
+                        },
+                        "min_level": 45
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "colosseum",
+                    "url": "/api/v2/version/19/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "realgam-tower-area",
+            "url": "/api/v2/location-area/1248/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 100,
+                        "condition_values": [],
+                        "max_level": 45,
+                        "method": {
+                            "name": "snag",
+                            "url": "/api/v2/encounter-method/51/"
+                        },
+                        "min_level": 45
+                    }
+                ],
+                "max_chance": 100,
+                "version": {
+                    "name": "colosseum",
+                    "url": "/api/v2/version/19/"
+                }
+            }
+        ]
+    }
+]

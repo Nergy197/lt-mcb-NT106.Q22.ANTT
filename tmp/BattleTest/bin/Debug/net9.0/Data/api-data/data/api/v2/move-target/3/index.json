@@ -1,0 +1,64 @@
+{
+    "descriptions": [
+        {
+            "description": "L\u2019alli\u00e9 du lanceur (s\u2019il en a).",
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            }
+        },
+        {
+            "description": "Die Partner des Anwenders (wenn vorhanden).",
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            }
+        },
+        {
+            "description": "The user\u2019s ally (if any).",
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            }
+        }
+    ],
+    "id": 3,
+    "moves": [
+        {
+            "name": "helping-hand",
+            "url": "/api/v2/move/270/"
+        },
+        {
+            "name": "aromatic-mist",
+            "url": "/api/v2/move/597/"
+        },
+        {
+            "name": "hold-hands",
+            "url": "/api/v2/move/607/"
+        }
+    ],
+    "name": "ally",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Alli\u00e9"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Partner"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Ally"
+        }
+    ]
+}

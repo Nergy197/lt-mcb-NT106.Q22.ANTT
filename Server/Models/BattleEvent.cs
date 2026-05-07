@@ -186,3 +186,32 @@ public class MessageEvent : BattleEvent
 {
     public string Message { get; init; } = "";
 }
+
+// ─── Terrain events (Gen 6+) ─────────────────────────────────────────────────
+
+public class TerrainChangedEvent : BattleEvent
+{
+    public TerrainCondition NewTerrain { get; init; }
+    public int TurnsLeft { get; init; }
+}
+
+public class TerrainEndedEvent : BattleEvent
+{
+    public TerrainCondition EndedTerrain { get; init; }
+}
+
+public class TerrainHealEvent : BattleEvent
+{
+    public string PlayerId   { get; init; } = "";
+    public string PokemonName { get; init; } = "";
+    public int HealAmount    { get; init; }
+}
+
+// ─── Terastallization events (Gen 9) ─────────────────────────────────────────
+
+public class TerastallizationEvent : BattleEvent
+{
+    public string PlayerId   { get; init; } = "";
+    public string PokemonName { get; init; } = "";
+    public string TerType    { get; init; } = "";
+}

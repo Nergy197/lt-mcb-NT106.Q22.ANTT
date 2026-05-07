@@ -11,7 +11,16 @@
       "Bash(git merge *)",
       "Bash(git checkout *)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(git -C /Users/nergy/lt-mcb-NT106.Q22.ANTT log --oneline -5)",
+      "Bash(git -C /Users/nergy/lt-mcb-NT106.Q22.ANTT show --stat HEAD)",
+      "Bash(git -C /Users/nergy/lt-mcb-NT106.Q22.ANTT log --format='%H %s')",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d.get\\('name'\\), [p['pokemon']['name'] for p in d.get\\('pokemon', []\\)[:5]]\\)\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d.get\\('name'\\), d.get\\('id'\\)\\)\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d.get\\('name'\\), d.get\\('id'\\), d.get\\('type',{}\\).get\\('name'\\)\\)\")",
+      "Bash(mongosh --quiet --eval ' *)",
+      "Bash(dotnet run *)"
     ]
   }
 }

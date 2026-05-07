@@ -1,0 +1,1859 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Battle Scene — Pokémon Champions</title>
+<meta name="viewport" content="width=1920" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=JetBrains+Mono:wght@500;700&family=Inter:wght@500;700;800;900&display=swap" />
+<style>
+  :root {
+    --bg-0: #07091a;
+    --bg-1: #0d1230;
+    --bg-2: #1a1247;
+    --line: #2a2f5c;
+    --ink: #e8ecff;
+    --ink-dim: #8a92c7;
+
+    --ally: oklch(0.72 0.15 200);
+    --ally-deep: oklch(0.45 0.13 200);
+    --enemy: oklch(0.66 0.20 350);
+    --enemy-deep: oklch(0.40 0.16 350);
+
+    --hp-hi: oklch(0.78 0.18 145);
+    --hp-mid: oklch(0.82 0.17 90);
+    --hp-lo: oklch(0.65 0.22 25);
+
+    --fight: oklch(0.85 0.16 95);
+    --fight-deep: oklch(0.62 0.16 60);
+    --pkm: oklch(0.62 0.18 280);
+    --pkm-deep: oklch(0.40 0.16 280);
+
+    --t-normal:   oklch(0.70 0.04 80);
+    --t-fire:     oklch(0.66 0.18 35);
+    --t-water:    oklch(0.65 0.15 235);
+    --t-electric: oklch(0.82 0.16 95);
+    --t-grass:    oklch(0.72 0.18 145);
+    --t-ice:      oklch(0.82 0.10 200);
+    --t-fighting: oklch(0.55 0.18 25);
+    --t-poison:   oklch(0.55 0.18 320);
+    --t-ground:   oklch(0.70 0.13 70);
+    --t-flying:   oklch(0.72 0.13 270);
+    --t-psychic:  oklch(0.65 0.20 0);
+    --t-bug:      oklch(0.72 0.16 130);
+    --t-rock:     oklch(0.55 0.08 70);
+    --t-ghost:    oklch(0.50 0.15 300);
+    --t-dragon:   oklch(0.55 0.20 280);
+    --t-dark:     oklch(0.40 0.05 60);
+    --t-steel:    oklch(0.72 0.04 240);
+    --t-fairy:    oklch(0.80 0.10 350);
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #000; color: var(--ink); font-family: 'Inter', system-ui, sans-serif; overflow: hidden; }
+
+  /* Stage = letterbox 1920x1080 */
+  #stage {
+    position: fixed; inset: 0;
+    display: grid; place-items: center;
+    background: #000;
+  }
+  #scene {
+    position: relative;
+    width: 1920px; height: 1080px;
+    transform-origin: center center;
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse 90% 60% at 50% 100%, rgba(35,55,140,.55), transparent 70%),
+      radial-gradient(ellipse 80% 70% at 30% 30%, rgba(160,40,140,.18), transparent 60%),
+      radial-gradient(ellipse 80% 70% at 70% 30%, rgba(40,180,200,.20), transparent 60%),
+      linear-gradient(180deg, var(--bg-0), var(--bg-1) 55%, var(--bg-2));
+  }
+
+  /* === STADIUM BACKDROP === */
+  .crowd {
+    position: absolute; inset: 0 0 50% 0;
+    background:
+      /* horizon glow line */
+      linear-gradient(180deg, transparent 0%, transparent 78%, rgba(120,170,255,.35) 79%, rgba(120,170,255,.35) 80%, transparent 81%),
+      /* crowd dots */
+      radial-gradient(circle at 12% 60%, rgba(255,90,180,.12), transparent 25%),
+      radial-gradient(circle at 88% 65%, rgba(90,200,255,.12), transparent 25%);
+  }
+  .crowd::before {
+    /* pixel-stippled audience strip */
+    content: '';
+    position: absolute; left: 0; right: 0; top: 55%; height: 18%;
+    background-image:
+      radial-gradient(circle, rgba(220,225,255,.7) 1.2px, transparent 1.6px),
+      radial-gradient(circle, rgba(180,190,240,.4) 1.2px, transparent 1.6px);
+    background-size: 8px 8px, 14px 14px;
+    background-position: 0 0, 4px 4px;
+    -webkit-mask-image: linear-gradient(180deg, transparent, #000 40%, #000 70%, transparent);
+            mask-image: linear-gradient(180deg, transparent, #000 40%, #000 70%, transparent);
+    opacity: .55;
+  }
+  .billboard {
+    position: absolute;
+    background: linear-gradient(180deg, #1a2050, #0c1030);
+    border-top: 2px solid rgba(120,170,255,.4);
+    border-bottom: 2px solid rgba(120,170,255,.2);
+    box-shadow: 0 0 40px rgba(80,140,255,.15);
+    overflow: hidden;
+    image-rendering: pixelated;
+  }
+  .billboard.left  { left: 0; top: 18%; width: 22%; height: 10%; transform: skewY(8deg); }
+  .billboard.right { right: 0; top: 18%; width: 22%; height: 10%; transform: skewY(-8deg); }
+  .billboard.top   { left: 28%; right: 28%; top: 8%; height: 7%; }
+  .billboard::before {
+    content: ''; position: absolute; inset: 0;
+    background:
+      repeating-linear-gradient(90deg, rgba(255,80,160,.55) 0 18px, transparent 18px 36px),
+      repeating-linear-gradient(0deg, rgba(0,0,0,.25) 0 4px, transparent 4px 8px);
+    -webkit-mask-image: linear-gradient(180deg, #000, transparent);
+            mask-image: linear-gradient(180deg, #000, transparent);
+  }
+  .billboard .logo-text {
+    position: absolute; inset: 0; display: grid; place-items: center;
+    font-family: 'Press Start 2P', monospace; font-size: 14px; color: #fff;
+    letter-spacing: 2px; mix-blend-mode: screen; text-shadow: 0 0 8px rgba(255,120,200,.8);
+  }
+
+  /* Battle field */
+  .field {
+    position: absolute; left: 0; right: 0; bottom: 0; height: 50%;
+    background:
+      radial-gradient(ellipse 60% 80% at 50% 0%, rgba(255,120,80,.35), transparent 55%),
+      linear-gradient(180deg, #0a1230 0%, #050818 100%);
+    overflow: hidden;
+  }
+  .field::before {
+    /* perspective grid (pixel-floor) */
+    content: '';
+    position: absolute; inset: -10% -20% -10% -20%;
+    background:
+      repeating-linear-gradient(0deg, rgba(120,170,255,.18) 0 1px, transparent 1px 38px),
+      repeating-linear-gradient(90deg, rgba(120,170,255,.10) 0 1px, transparent 1px 38px);
+    transform: perspective(700px) rotateX(62deg);
+    transform-origin: center top;
+    -webkit-mask-image: radial-gradient(ellipse 80% 90% at 50% 0%, #000, transparent 75%);
+            mask-image: radial-gradient(ellipse 80% 90% at 50% 0%, #000, transparent 75%);
+  }
+  .field::after {
+    /* horizon flare */
+    content: '';
+    position: absolute; left: 0; right: 0; top: -1px; height: 4px;
+    background: linear-gradient(90deg, transparent, rgba(255,180,120,.9), transparent);
+    box-shadow: 0 0 20px rgba(255,160,90,.6);
+  }
+  .flame {
+    position: absolute; bottom: 35%; width: 44%; height: 60%;
+    background: radial-gradient(ellipse 60% 70% at 50% 100%, rgba(255,140,40,.55), rgba(255,80,80,.25) 40%, transparent 70%);
+    filter: blur(4px);
+    pointer-events: none;
+  }
+  .flame.l { left: -8%; }
+  .flame.r { right: -8%; }
+
+  /* === POKEMON HOLDERS === */
+  .mon {
+    position: absolute;
+    display: flex; flex-direction: column; align-items: center;
+  }
+  .mon .holder {
+    position: relative;
+    background:
+      linear-gradient(135deg, rgba(255,255,255,.04), rgba(255,255,255,0)),
+      repeating-linear-gradient(45deg, rgba(255,255,255,.025) 0 6px, rgba(255,255,255,.05) 6px 12px);
+    border: 2px dashed rgba(220,230,255,.35);
+    border-radius: 12px;
+    display: grid; place-items: center;
+    color: rgba(220,230,255,.55);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; letter-spacing: 1px;
+    overflow: hidden;
+    image-rendering: pixelated;
+  }
+  .mon .holder img {
+    width: 100%; height: 100%; object-fit: contain;
+    image-rendering: pixelated;
+  }
+  .mon .holder.ph::after {
+    content: attr(data-label);
+    position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%);
+    background: rgba(0,0,0,.5);
+    padding: 3px 8px; border-radius: 999px;
+    font-size: 10px;
+  }
+  .mon .holder.ph::before {
+    content: '◇';
+    font-size: 38px;
+    color: rgba(220,230,255,.25);
+  }
+  .mon .shadow {
+    margin-top: -16px;
+    width: 70%; height: 22px;
+    background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(0,0,0,.8), transparent 70%);
+    filter: blur(2px);
+  }
+
+  /* enemy back-row, smaller and higher */
+  .mon.enemy-1 { top: 28%; right: 24%; }
+  .mon.enemy-2 { top: 24%; right: 38%; }
+  .mon.enemy-1 .holder, .mon.enemy-2 .holder { width: 240px; height: 240px; }
+
+  /* ally front-row, bigger and lower */
+  .mon.ally-1 { bottom: 14%; left: 8%; }
+  .mon.ally-2 { bottom: 8%; left: 24%; }
+  .mon.ally-1 .holder, .mon.ally-2 .holder { width: 340px; height: 340px; }
+
+  /* trainer holders */
+  .trainer {
+    position: absolute;
+    width: 110px; height: 180px;
+    border: 2px dashed rgba(220,230,255,.3);
+    border-radius: 10px;
+    background: repeating-linear-gradient(45deg, rgba(255,255,255,.02) 0 5px, rgba(255,255,255,.05) 5px 10px);
+    display: grid; place-items: center;
+    color: rgba(220,230,255,.5);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    overflow: hidden;
+  }
+  .trainer.ally    { left: 3%; bottom: 16%; transform: scale(1.15); }
+  .trainer.enemy   { right: 12%; top: 32%; transform: scale(0.85); opacity: .9; }
+  .trainer img { width: 100%; height: 100%; object-fit: contain; image-rendering: pixelated; }
+  .trainer::after {
+    content: attr(data-label);
+    position: absolute; bottom: 6px; left: 50%; transform: translateX(-50%);
+    background: rgba(0,0,0,.5); padding: 2px 6px; border-radius: 4px;
+    font-size: 9px;
+  }
+
+  /* === HUD CARDS === */
+  .hud {
+    position: absolute;
+    width: 360px;
+    background: linear-gradient(180deg, rgba(15,18,45,.92), rgba(8,10,28,.92));
+    border: 2px solid;
+    border-radius: 14px;
+    padding: 10px 14px 12px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 30px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.06);
+    font-family: 'Inter', sans-serif;
+  }
+  .hud.enemy-hud { border-color: var(--enemy); box-shadow: 0 4px 30px rgba(0,0,0,.55), 0 0 18px color-mix(in oklab, var(--enemy) 35%, transparent), inset 0 1px 0 rgba(255,255,255,.06); }
+  .hud.ally-hud  { border-color: var(--ally);  box-shadow: 0 4px 30px rgba(0,0,0,.55), 0 0 18px color-mix(in oklab, var(--ally) 35%, transparent),  inset 0 1px 0 rgba(255,255,255,.06); }
+
+  .hud .row {
+    display: grid; grid-template-columns: 56px 1fr auto; gap: 12px; align-items: center;
+  }
+  .hud .icon {
+    width: 56px; height: 56px;
+    border: 1.5px dashed rgba(220,230,255,.35);
+    border-radius: 10px;
+    display: grid; place-items: center;
+    background: rgba(255,255,255,.03);
+    overflow: hidden;
+    image-rendering: pixelated;
+  }
+  .hud .icon img { width: 100%; height: 100%; object-fit: contain; image-rendering: pixelated; }
+  .hud .icon::before {
+    content: '◇';
+    position: absolute;
+    color: rgba(220,230,255,.22);
+    font-size: 22px;
+  }
+  .hud .icon { position: relative; }
+  .hud .name {
+    font-weight: 800; font-size: 22px; letter-spacing: .5px;
+    color: #fff; text-transform: uppercase;
+    font-family: 'Press Start 2P', monospace; font-size: 14px;
+    line-height: 1.3;
+  }
+  .hud .lvl {
+    margin-top: 2px;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    color: var(--ink-dim); letter-spacing: 1px;
+  }
+  .hud .gender {
+    padding: 2px 6px; border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 700;
+  }
+  .hud .gender.m { color: #6cb8ff; background: rgba(80,160,255,.15); border: 1px solid rgba(80,160,255,.4); }
+  .hud .gender.f { color: #ff7ec1; background: rgba(255,120,200,.15); border: 1px solid rgba(255,120,200,.4); }
+
+  .hud .hpwrap {
+    margin-top: 8px;
+    display: grid; grid-template-columns: 36px 1fr auto; gap: 8px; align-items: center;
+  }
+  .hud .hp-label {
+    font-family: 'Press Start 2P', monospace; font-size: 10px;
+    color: var(--ink); letter-spacing: 1px;
+  }
+  .hud .hpbar {
+    position: relative; height: 14px;
+    background: #0a0d22;
+    border: 1.5px solid rgba(255,255,255,.15);
+    border-radius: 7px;
+    overflow: hidden;
+  }
+  .hud .hpbar::before {
+    content: ''; position: absolute; inset: 0;
+    background-image: repeating-linear-gradient(90deg, rgba(255,255,255,.04) 0 6px, transparent 6px 12px);
+    pointer-events: none;
+  }
+  .hud .hpfill {
+    height: 100%;
+    background: linear-gradient(180deg, color-mix(in oklab, var(--hp-hi) 100%, white 20%), var(--hp-hi));
+    box-shadow: 0 0 10px color-mix(in oklab, var(--hp-hi) 60%, transparent);
+    transition: width .4s ease;
+  }
+  .hud .hpfill.mid { background: linear-gradient(180deg, color-mix(in oklab, var(--hp-mid) 100%, white 15%), var(--hp-mid)); box-shadow: 0 0 10px color-mix(in oklab, var(--hp-mid) 60%, transparent); }
+  .hud .hpfill.lo  { background: linear-gradient(180deg, color-mix(in oklab, var(--hp-lo) 100%, white 15%), var(--hp-lo));  box-shadow: 0 0 10px color-mix(in oklab, var(--hp-lo) 60%, transparent); }
+  .hud .hpnum {
+    font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 13px;
+    color: var(--ink); white-space: nowrap;
+  }
+  .hud .types {
+    display: flex; gap: 4px; margin-top: 8px;
+  }
+  .pill {
+    font-family: 'Press Start 2P', monospace; font-size: 8px;
+    padding: 4px 7px; border-radius: 4px;
+    text-transform: uppercase; letter-spacing: 1px;
+    color: #0c0c1a;
+    text-shadow: 0 1px 0 rgba(255,255,255,.25);
+    box-shadow: inset 0 -2px 0 rgba(0,0,0,.2);
+  }
+  .pill.t-fire     { background: var(--t-fire); }
+  .pill.t-water    { background: var(--t-water); color: #fff; text-shadow: 0 1px 0 rgba(0,0,0,.3); }
+  .pill.t-grass    { background: var(--t-grass); }
+  .pill.t-electric { background: var(--t-electric); }
+  .pill.t-poison   { background: var(--t-poison); color: #fff; text-shadow: 0 1px 0 rgba(0,0,0,.3); }
+  .pill.t-steel    { background: var(--t-steel); }
+  .pill.t-ground   { background: var(--t-ground); }
+  .pill.t-fairy    { background: var(--t-fairy); }
+  .pill.t-dragon   { background: var(--t-dragon); color: #fff; text-shadow: 0 1px 0 rgba(0,0,0,.3); }
+  .pill.t-psychic  { background: var(--t-psychic); }
+  .pill.t-flying   { background: var(--t-flying); }
+  .pill.t-bug      { background: var(--t-bug); }
+  .pill.t-ice      { background: var(--t-ice); }
+  .pill.t-rock     { background: var(--t-rock); }
+  .pill.t-ghost    { background: var(--t-ghost); color: #fff; text-shadow: 0 1px 0 rgba(0,0,0,.3); }
+  .pill.t-dark     { background: var(--t-dark); color: #fff; text-shadow: 0 1px 0 rgba(0,0,0,.3); }
+  .pill.t-fighting { background: var(--t-fighting); color: #fff; text-shadow: 0 1px 0 rgba(0,0,0,.3); }
+  .pill.t-normal   { background: var(--t-normal); }
+
+  .status-badge {
+    display: inline-block;
+    margin-left: 6px;
+    font-family: 'Press Start 2P', monospace; font-size: 8px;
+    padding: 3px 6px; border-radius: 3px;
+    background: oklch(0.65 0.20 30); color: #fff;
+    text-shadow: 0 1px 0 rgba(0,0,0,.3);
+  }
+
+  /* HUD positions */
+  .hud.enemy-hud.e1 { top: 28px; right: 410px; }
+  .hud.enemy-hud.e2 { top: 28px; right: 28px; }
+  .hud.ally-hud.a1  { bottom: 28px; left: 28px; }
+  .hud.ally-hud.a2  { bottom: 28px; left: 410px; }
+
+  /* === TIMER + INFO === */
+  .timer {
+    position: absolute; top: 200px; right: 28px;
+    width: 200px;
+    background: linear-gradient(180deg, rgba(15,18,45,.92), rgba(8,10,28,.92));
+    border: 2px solid var(--line);
+    border-radius: 12px;
+    padding: 10px 14px;
+    text-align: center;
+  }
+  .timer .lbl {
+    font-family: 'Press Start 2P', monospace; font-size: 8px;
+    color: var(--ink-dim); letter-spacing: 1.5px;
+  }
+  .timer .val {
+    font-family: 'JetBrains Mono', monospace; font-weight: 700;
+    font-size: 32px; color: #fff;
+    text-shadow: 0 0 14px rgba(120,200,255,.5);
+    letter-spacing: 2px;
+  }
+  .timer.move-time {
+    top: 280px;
+    border-color: var(--ally);
+  }
+  .timer.move-time .val { color: var(--ally); text-shadow: 0 0 14px color-mix(in oklab, var(--ally) 60%, transparent); }
+
+  .pp-pips { display: flex; gap: 4px; justify-content: center; margin-top: 6px; }
+  .pip {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: var(--ally);
+    box-shadow: 0 0 6px color-mix(in oklab, var(--ally) 80%, transparent);
+  }
+  .pip.off { background: rgba(255,255,255,.15); box-shadow: none; }
+
+  .battle-info {
+    position: absolute; top: 380px; right: 28px;
+    width: 200px;
+    background: linear-gradient(180deg, rgba(15,18,45,.85), rgba(8,10,28,.85));
+    border: 1.5px solid var(--line);
+    border-radius: 10px;
+    padding: 10px 12px;
+    display: flex; align-items: center; gap: 10px;
+    cursor: pointer;
+    transition: border-color .15s;
+  }
+  .battle-info:hover { border-color: var(--ally); }
+  .battle-info .x-key {
+    width: 22px; height: 22px; border-radius: 50%;
+    background: #fff; color: #000;
+    font-family: 'Press Start 2P', monospace; font-size: 10px;
+    display: grid; place-items: center;
+  }
+  .battle-info span {
+    font-family: 'Inter', sans-serif; font-weight: 700; font-size: 13px;
+    color: var(--ink);
+  }
+
+  /* === ACTION WHEEL (FIGHT / POKEMON) === */
+  .actions {
+    position: absolute; right: 60px; bottom: 90px;
+    display: flex; flex-direction: column; gap: 18px; align-items: flex-end;
+  }
+  .action {
+    display: flex; align-items: center; gap: 14px;
+    cursor: pointer;
+    transition: transform .15s;
+  }
+  .action:hover { transform: translateX(-6px); }
+  .action .arrow {
+    font-family: 'Press Start 2P', monospace; font-size: 22px;
+    color: var(--fight); opacity: 0;
+    transition: opacity .15s;
+  }
+  .action.selected .arrow { opacity: 1; }
+  .action .btn {
+    width: 130px; height: 130px; border-radius: 50%;
+    display: grid; place-items: center;
+    position: relative;
+    border: 4px solid;
+    background: radial-gradient(circle at 30% 25%, rgba(255,255,255,.35), transparent 50%), var(--bg-color, #fff);
+    box-shadow: 0 8px 0 rgba(0,0,0,.4), 0 0 30px var(--glow, transparent);
+    transition: transform .1s;
+  }
+  .action:active .btn { transform: translateY(2px); box-shadow: 0 6px 0 rgba(0,0,0,.4), 0 0 30px var(--glow); }
+  .action.fight .btn   { --bg-color: var(--fight);   --glow: color-mix(in oklab, var(--fight) 60%, transparent); border-color: var(--fight-deep); }
+  .action.pkm .btn     { --bg-color: var(--pkm);     --glow: color-mix(in oklab, var(--pkm) 60%, transparent);   border-color: var(--pkm-deep); }
+  .action .btn-glyph {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 36px; color: rgba(0,0,0,.7);
+    text-shadow: 0 2px 0 rgba(255,255,255,.35);
+    line-height: 1;
+  }
+  .action .btn-label {
+    position: absolute; bottom: -18px; left: 50%; transform: translateX(-50%);
+    font-family: 'Press Start 2P', monospace; font-size: 11px;
+    background: var(--bg-color);
+    padding: 4px 10px; border-radius: 4px;
+    color: rgba(0,0,0,.85);
+    border: 2px solid var(--bg-color);
+    filter: brightness(1.1);
+    white-space: nowrap;
+    box-shadow: 0 2px 0 rgba(0,0,0,.4);
+  }
+
+  /* === CORNER UI: ESC + MENU === */
+  .corner-ui {
+    position: absolute; top: 28px; left: 28px;
+    display: flex; gap: 10px;
+  }
+  .corner-btn {
+    height: 44px;
+    padding: 0 14px;
+    background: linear-gradient(180deg, rgba(20,24,55,.85), rgba(10,12,30,.85));
+    border: 1.5px solid var(--line);
+    border-radius: 22px;
+    display: flex; align-items: center; gap: 8px;
+    cursor: pointer;
+    transition: border-color .15s;
+  }
+  .corner-btn:hover { border-color: var(--ally); }
+  .corner-btn .glyph {
+    font-family: 'Press Start 2P', monospace; font-size: 14px;
+    color: var(--ink);
+  }
+  .corner-btn .ttip {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    color: var(--ink-dim);
+  }
+
+  /* === FIGHT MENU OVERLAY === */
+  .fight-menu, .party-menu {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .2s;
+  }
+  .fight-menu.open, .party-menu.open {
+    pointer-events: auto;
+    opacity: 1;
+  }
+  .fight-menu::before {
+    content: ''; position: absolute; inset: 0;
+    background: rgba(5,6,18,.55);
+    backdrop-filter: blur(4px);
+  }
+  .fight-card {
+    position: absolute;
+    right: 28px; bottom: 28px;
+    width: 940px;
+    background: linear-gradient(180deg, rgba(15,18,45,.96), rgba(8,10,28,.96));
+    border: 2px solid var(--ally);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 0 50px color-mix(in oklab, var(--ally) 35%, transparent);
+  }
+  .fight-card h3 {
+    margin: 0 0 14px;
+    font-family: 'Press Start 2P', monospace; font-size: 12px;
+    color: var(--ally); letter-spacing: 2px;
+  }
+  .moves-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+  }
+  .move {
+    background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(0,0,0,.2));
+    border: 2px solid var(--type-color, var(--line));
+    border-radius: 10px;
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: transform .1s, box-shadow .15s;
+    position: relative;
+    overflow: hidden;
+  }
+  .move::before {
+    content: '';
+    position: absolute; left: 0; top: 0; bottom: 0; width: 6px;
+    background: var(--type-color, var(--line));
+  }
+  .move:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px color-mix(in oklab, var(--type-color, var(--line)) 35%, transparent);
+  }
+  .move .move-name {
+    font-family: 'Press Start 2P', monospace; font-size: 12px;
+    color: #fff; letter-spacing: 1px;
+  }
+  .move .move-meta {
+    margin-top: 8px;
+    display: flex; gap: 8px; align-items: center;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    color: var(--ink-dim);
+  }
+  .move .pp { color: var(--ink); font-weight: 700; }
+  .move .cat {
+    padding: 2px 6px; border-radius: 3px;
+    background: rgba(255,255,255,.1);
+    text-transform: uppercase; font-size: 9px; letter-spacing: 1px;
+  }
+  .fight-info-row {
+    margin-top: 14px;
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: 'JetBrains Mono', monospace; font-size: 12px;
+    color: var(--ink-dim);
+    padding-top: 12px;
+    border-top: 1px dashed rgba(255,255,255,.1);
+  }
+  .fight-info-row .key {
+    display: inline-block;
+    background: rgba(255,255,255,.1); padding: 2px 8px; border-radius: 4px;
+    color: var(--ink); margin-right: 6px;
+  }
+
+  /* === PARTY MENU === */
+  .party-menu::before {
+    content: ''; position: absolute; inset: 0;
+    background: rgba(5,6,18,.65);
+    backdrop-filter: blur(6px);
+  }
+  .party-card {
+    position: absolute;
+    right: 60px; top: 60px; bottom: 60px;
+    width: 760px;
+    background: linear-gradient(180deg, rgba(15,18,45,.96), rgba(8,10,28,.96));
+    border: 2px solid var(--pkm);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 0 50px color-mix(in oklab, var(--pkm) 35%, transparent);
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .party-card h3 {
+    margin: 0 0 8px;
+    font-family: 'Press Start 2P', monospace; font-size: 14px;
+    color: var(--pkm); letter-spacing: 2px;
+  }
+  .party-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+    flex: 1;
+  }
+  .party-mon {
+    display: grid; grid-template-columns: 80px 1fr; gap: 14px; align-items: center;
+    background: rgba(255,255,255,.03);
+    border: 1.5px solid var(--line);
+    border-radius: 10px;
+    padding: 12px 14px;
+    cursor: pointer;
+    transition: border-color .15s, transform .1s;
+    position: relative;
+  }
+  .party-mon:hover { border-color: var(--pkm); transform: translateY(-2px); }
+  .party-mon.active { border-color: var(--ally); }
+  .party-mon.active::after {
+    content: 'IN BATTLE';
+    position: absolute; top: 6px; right: 8px;
+    font-family: 'Press Start 2P', monospace; font-size: 7px;
+    color: var(--ally); letter-spacing: 1px;
+  }
+  .party-mon.fainted { opacity: .45; }
+  .party-mon.fainted::after {
+    content: 'FNT';
+    position: absolute; top: 6px; right: 8px;
+    font-family: 'Press Start 2P', monospace; font-size: 8px;
+    color: var(--hp-lo); letter-spacing: 1px;
+  }
+  .party-mon .picon {
+    width: 80px; height: 80px;
+    border: 1.5px dashed rgba(220,230,255,.3);
+    border-radius: 8px;
+    display: grid; place-items: center;
+    background: rgba(255,255,255,.03);
+    overflow: hidden; image-rendering: pixelated;
+    position: relative;
+  }
+  .party-mon .picon::before {
+    content: '◇';
+    color: rgba(220,230,255,.25); font-size: 28px;
+  }
+  .party-mon .pname {
+    font-family: 'Press Start 2P', monospace; font-size: 11px;
+    color: #fff; letter-spacing: 1px;
+  }
+  .party-mon .plvl {
+    margin-top: 4px;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    color: var(--ink-dim);
+  }
+  .party-mon .phpwrap {
+    margin-top: 6px;
+    display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: center;
+  }
+  .party-mon .hpbar {
+    height: 8px; background: #0a0d22;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 4px; overflow: hidden;
+  }
+  .party-mon .hpfill {
+    height: 100%; background: var(--hp-hi);
+    box-shadow: 0 0 6px color-mix(in oklab, var(--hp-hi) 70%, transparent);
+  }
+  .party-mon .hpfill.mid { background: var(--hp-mid); }
+  .party-mon .hpfill.lo  { background: var(--hp-lo);  }
+  .party-mon .phpnum {
+    font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700;
+    color: var(--ink);
+  }
+  .party-footer {
+    display: flex; justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace; font-size: 12px;
+    color: var(--ink-dim);
+    padding-top: 8px; border-top: 1px dashed rgba(255,255,255,.1);
+  }
+  .party-footer .key {
+    background: rgba(255,255,255,.1); padding: 2px 8px; border-radius: 4px;
+    color: var(--ink); margin-right: 4px;
+  }
+
+  /* === PROMPT BANNER (idle state) === */
+  .prompt {
+    position: absolute;
+    bottom: 24px; left: 50%; transform: translateX(-50%);
+    padding: 10px 22px;
+    background: rgba(8,10,28,.85);
+    border: 1.5px solid var(--ally);
+    border-radius: 8px;
+    font-family: 'Press Start 2P', monospace; font-size: 11px;
+    color: var(--ink); letter-spacing: 2px;
+    box-shadow: 0 0 20px color-mix(in oklab, var(--ally) 30%, transparent);
+    z-index: 20;
+  }
+  .prompt .blink { animation: blink 1.2s infinite; color: var(--fight); }
+  @keyframes blink { 0%, 50% { opacity: 1; } 51%, 100% { opacity: 0; } }
+
+  /* === SCANLINES OVERLAY (subtle CRT feel) === */
+  .scanlines {
+    position: absolute; inset: 0; pointer-events: none;
+    background: repeating-linear-gradient(0deg, rgba(0,0,0,.10) 0 1px, transparent 1px 3px);
+    mix-blend-mode: multiply;
+    opacity: .35;
+    z-index: 30;
+  }
+
+  /* === STATUS / WEATHER (hidden by default) === */
+  .weather-hud {
+    position: absolute; top: 460px; right: 28px;
+    width: 200px;
+    background: linear-gradient(180deg, rgba(15,18,45,.92), rgba(8,10,28,.92));
+    border: 2px solid oklch(0.70 0.15 230);
+    border-radius: 12px;
+    padding: 10px 14px;
+    display: none;
+  }
+  .weather-hud.show { display: flex; align-items: center; gap: 10px; }
+  .weather-hud .wicon {
+    width: 36px; height: 36px; border-radius: 8px;
+    display: grid; place-items: center;
+    background: oklch(0.70 0.15 230); color: #0a0d22;
+    font-family: 'Press Start 2P', monospace; font-size: 18px;
+  }
+  .weather-hud .wname {
+    font-family: 'Press Start 2P', monospace; font-size: 10px; color: #fff;
+  }
+  .weather-hud .wturns {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-dim);
+    margin-top: 2px;
+  }
+
+  /* === DIALOG BOX (hidden by default) === */
+  .dialog-box {
+    position: absolute;
+    left: 28px; right: 320px; bottom: 28px;
+    padding: 18px 24px;
+    background: linear-gradient(180deg, rgba(15,18,45,.96), rgba(8,10,28,.96));
+    border: 2px solid var(--ally);
+    border-radius: 14px;
+    font-family: 'Press Start 2P', monospace; font-size: 14px;
+    color: #fff; letter-spacing: 1px;
+    line-height: 1.6;
+    display: none;
+    box-shadow: 0 0 30px color-mix(in oklab, var(--ally) 30%, transparent);
+  }
+  .dialog-box.show { display: block; }
+  .dialog-box .caret { animation: blink 1s infinite; color: var(--fight); }
+
+  /* === TARGET SELECT === */
+  .target-menu {
+    position: absolute; inset: 0;
+    pointer-events: none; opacity: 0;
+    transition: opacity .2s;
+    z-index: 25;
+  }
+  .target-menu::before {
+    content: ''; position: absolute; inset: 0;
+    background: rgba(5,6,18,.55);
+    backdrop-filter: blur(3px);
+  }
+  .target-card {
+    position: absolute;
+    left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 1100px;
+    background: linear-gradient(180deg, rgba(15,18,45,.96), rgba(8,10,28,.96));
+    border: 2px solid var(--ally);
+    border-radius: 18px;
+    padding: 22px 28px 26px;
+    box-shadow: 0 0 60px color-mix(in oklab, var(--ally) 35%, transparent);
+  }
+  .target-trainer {
+    display: flex; align-items: center; gap: 10px;
+    font-family: 'Press Start 2P', monospace; font-size: 13px;
+    color: #fff; letter-spacing: 1.5px;
+    margin-bottom: 14px;
+  }
+  .target-trainer.opp    { color: var(--enemy); }
+  .target-trainer.player { justify-content: center; margin-top: 14px; margin-bottom: 0; color: var(--ally); }
+  .target-trainer .tav {
+    width: 36px; height: 36px; border-radius: 50%;
+    border: 1.5px dashed rgba(220,230,255,.4);
+    display: grid; place-items: center;
+    background: rgba(255,255,255,.04);
+    font-family: 'JetBrains Mono', monospace; font-size: 10px;
+    color: var(--ink-dim);
+  }
+  .target-row {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+  }
+  .target-row.opp .tcard    { border-color: var(--enemy); }
+  .target-row.player .tcard { border-color: var(--ally); }
+  .tcard {
+    position: relative;
+    background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(0,0,0,.25));
+    border: 2px solid var(--line);
+    border-radius: 14px;
+    padding: 14px 18px;
+    display: grid; grid-template-columns: 100px 1fr; gap: 16px; align-items: center;
+    cursor: pointer;
+    transition: transform .12s, box-shadow .15s;
+  }
+  .tcard:hover { transform: translateY(-3px); }
+  .tcard.selected {
+    border-color: var(--fight) !important;
+    background: linear-gradient(180deg, color-mix(in oklab, var(--fight) 35%, transparent), color-mix(in oklab, var(--fight) 10%, transparent));
+    box-shadow: 0 0 30px color-mix(in oklab, var(--fight) 50%, transparent), inset 0 0 0 2px rgba(255,255,255,.4);
+  }
+  .tcard.selected::before {
+    content: '▶';
+    position: absolute; left: -34px; top: 50%; transform: translateY(-50%);
+    font-family: 'Press Start 2P', monospace; font-size: 24px;
+    color: var(--fight);
+    text-shadow: 0 0 14px color-mix(in oklab, var(--fight) 70%, transparent);
+  }
+  .tcard.empty {
+    cursor: default; opacity: .4;
+    background: repeating-linear-gradient(45deg, rgba(255,255,255,.03) 0 8px, rgba(255,255,255,.06) 8px 16px);
+    border-style: dashed;
+  }
+  .tcard.empty::after {
+    content: '— EMPTY —';
+    position: absolute; inset: 0; display: grid; place-items: center;
+    font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--ink-dim);
+    letter-spacing: 2px;
+  }
+  .tcard .tcard-pic {
+    width: 100px; height: 100px;
+    border: 1.5px dashed rgba(220,230,255,.3);
+    border-radius: 10px;
+    background: rgba(255,255,255,.04);
+    display: grid; place-items: center;
+    overflow: hidden; image-rendering: pixelated;
+    position: relative;
+  }
+  .tcard .tcard-pic::before { content: '◇'; color: rgba(220,230,255,.25); font-size: 32px; }
+  .tcard .tcard-name {
+    font-family: 'Press Start 2P', monospace; font-size: 13px;
+    color: #fff; letter-spacing: 1px;
+  }
+  .tcard .tcard-eff {
+    display: inline-block; margin-bottom: 8px;
+    font-family: 'Press Start 2P', monospace; font-size: 9px;
+    padding: 4px 8px; border-radius: 4px;
+    letter-spacing: 1.5px;
+  }
+  .tcard .tcard-eff.super { background: var(--hp-hi); color: #0c0c1a; }
+  .tcard .tcard-eff.eff   { background: var(--ally); color: #0c0c1a; }
+  .tcard .tcard-eff.weak  { background: rgba(255,255,255,.1); color: var(--ink-dim); }
+  .tcard .tcard-eff.immune{ background: var(--t-dark); color: #fff; }
+  .tcard .tcard-hpwrap {
+    margin-top: 8px;
+    display: grid; grid-template-columns: 1fr auto auto; gap: 8px; align-items: center;
+  }
+  .tcard .hpbar { height: 10px; background: #0a0d22; border: 1px solid rgba(255,255,255,.15); border-radius: 5px; overflow: hidden; }
+  .tcard .hpfill { height: 100%; background: var(--hp-hi); }
+  .tcard .hpfill.mid { background: var(--hp-mid); }
+  .tcard .hpfill.lo  { background: var(--hp-lo); }
+  .tcard .tcard-hp {
+    font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 12px;
+    color: var(--ink);
+  }
+  .target-move-tab {
+    position: absolute;
+    top: -22px; left: 50%; transform: translateX(-50%);
+    display: flex; align-items: center; gap: 8px;
+    padding: 6px 14px;
+    background: linear-gradient(180deg, var(--t-fire), color-mix(in oklab, var(--t-fire) 70%, black));
+    border: 2px solid color-mix(in oklab, var(--t-fire) 60%, black);
+    border-radius: 8px;
+    font-family: 'Press Start 2P', monospace; font-size: 11px;
+    color: #0c0c1a; text-shadow: 0 1px 0 rgba(255,255,255,.3);
+    letter-spacing: 1px;
+    box-shadow: 0 4px 0 rgba(0,0,0,.4);
+  }
+  .target-move-tab .glyph {
+    width: 22px; height: 22px; border-radius: 50%;
+    background: rgba(255,255,255,.5);
+    display: grid; place-items: center;
+    font-size: 12px;
+  }
+  .target-footer {
+    margin-top: 14px;
+    display: flex; justify-content: space-between; align-items: center;
+    padding-top: 10px; border-top: 1px dashed rgba(255,255,255,.1);
+    font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink-dim);
+  }
+  .target-footer .key {
+    background: rgba(255,255,255,.1); padding: 2px 8px; border-radius: 4px;
+    color: var(--ink); margin-right: 4px;
+  }
+
+  /* === TEAM BUILDER === */
+  .team-builder {
+    position: absolute; inset: 0;
+    pointer-events: none; opacity: 0;
+    transition: opacity .2s;
+    z-index: 40;
+    background: linear-gradient(180deg, #07091a, #0d1230 60%, #1a1247);
+  }
+  .team-builder.open { pointer-events: auto; opacity: 1; }
+  .tb-header {
+    position: absolute; top: 28px; left: 50%; transform: translateX(-50%);
+    display: flex; gap: 18px; align-items: center;
+  }
+  .tb-tab {
+    font-family: 'Press Start 2P', monospace; font-size: 14px;
+    color: var(--ink-dim); letter-spacing: 2px;
+    padding: 10px 20px; border-radius: 22px;
+    border: 1.5px solid transparent;
+  }
+  .tb-tab.active {
+    color: var(--fight);
+    border-color: var(--fight);
+    background: color-mix(in oklab, var(--fight) 15%, transparent);
+    box-shadow: 0 0 18px color-mix(in oklab, var(--fight) 35%, transparent);
+  }
+  .tb-instruction {
+    position: absolute; left: 50%; top: 130px; transform: translateX(-50%);
+    text-align: center;
+    font-family: 'Press Start 2P', monospace; font-size: 18px;
+    color: #fff; letter-spacing: 1.5px; line-height: 1.6;
+    text-shadow: 0 0 14px rgba(120,200,255,.4);
+  }
+  .tb-instruction .accent { color: var(--fight); }
+  .tb-timer {
+    position: absolute; top: 32px; left: 32px;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--ink); font-size: 18px;
+    background: rgba(8,10,28,.7);
+    padding: 8px 16px; border-radius: 22px;
+    border: 1.5px solid var(--line);
+    display: flex; gap: 8px; align-items: center;
+  }
+  .tb-trainer {
+    position: absolute; top: 32px; right: 32px;
+    background: linear-gradient(180deg, rgba(220,80,140,.85), rgba(160,40,100,.85));
+    color: #fff;
+    font-family: 'Press Start 2P', monospace; font-size: 11px;
+    padding: 10px 18px; border-radius: 22px;
+    letter-spacing: 1.5px;
+    border: 1.5px solid rgba(255,255,255,.15);
+  }
+  .tb-grid {
+    position: absolute;
+    left: 60px; top: 240px;
+    width: 540px;
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .tb-row {
+    display: grid; grid-template-columns: 60px 1fr 90px;
+    gap: 12px; align-items: center;
+    background: linear-gradient(135deg, var(--row-bg, rgba(120,100,200,.55)), rgba(70,55,140,.55));
+    border: 2px solid rgba(255,255,255,.15);
+    border-radius: 14px;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: transform .12s;
+    box-shadow: 0 4px 0 rgba(0,0,0,.35);
+  }
+  .tb-row:hover { transform: translateX(4px); }
+  .tb-row.picked {
+    background: linear-gradient(135deg, var(--fight), color-mix(in oklab, var(--fight) 60%, black));
+    border-color: color-mix(in oklab, var(--fight) 70%, black);
+  }
+  .tb-row.picked .tb-mon-name,
+  .tb-row.picked .tb-mon-item { color: #0c0c1a; text-shadow: 0 1px 0 rgba(255,255,255,.3); }
+  .tb-row .tb-num {
+    width: 50px; height: 50px; border-radius: 50%;
+    background: rgba(255,255,255,.15);
+    border: 2px solid rgba(255,255,255,.3);
+    display: grid; place-items: center;
+    font-family: 'Press Start 2P', monospace; font-size: 18px;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0,0,0,.4);
+  }
+  .tb-row.picked .tb-num {
+    background: rgba(255,255,255,.6); color: #0c0c1a;
+    text-shadow: none;
+  }
+  .tb-row .tb-mon-name {
+    font-family: 'Press Start 2P', monospace; font-size: 13px;
+    color: #fff; letter-spacing: 1px;
+  }
+  .tb-row .tb-mon-item {
+    margin-top: 4px;
+    font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600;
+    color: rgba(255,255,255,.8);
+    display: flex; align-items: center; gap: 6px;
+  }
+  .tb-row .tb-mon-item::before {
+    content: '◆'; color: var(--fight); font-size: 12px;
+  }
+  .tb-row.picked .tb-mon-item::before { color: rgba(0,0,0,.5); }
+  .tb-row .tb-mon-pic {
+    width: 90px; height: 80px;
+    border: 1.5px dashed rgba(255,255,255,.3);
+    border-radius: 8px;
+    background: rgba(255,255,255,.08);
+    display: grid; place-items: center;
+    image-rendering: pixelated;
+    position: relative;
+  }
+  .tb-row .tb-mon-pic::before {
+    content: '◇'; color: rgba(255,255,255,.35); font-size: 26px;
+  }
+  .tb-row .tb-gender { color: rgba(255,255,255,.85); margin-left: 4px; font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+  .tb-counter {
+    margin-top: 6px;
+    background: linear-gradient(135deg, rgba(120,100,200,.55), rgba(70,55,140,.55));
+    border: 2px solid rgba(255,255,255,.15);
+    border-radius: 14px;
+    padding: 12px 18px;
+    display: flex; align-items: center; justify-content: space-between;
+    font-family: 'Press Start 2P', monospace; font-size: 13px;
+    color: #fff;
+    box-shadow: 0 4px 0 rgba(0,0,0,.35);
+  }
+  .tb-counter .count {
+    color: var(--fight);
+  }
+  .tb-counter button {
+    background: var(--fight);
+    border: 2px solid color-mix(in oklab, var(--fight) 60%, black);
+    border-radius: 8px;
+    padding: 6px 16px;
+    font-family: 'Press Start 2P', monospace; font-size: 11px;
+    color: #0c0c1a;
+    cursor: pointer;
+    box-shadow: 0 3px 0 rgba(0,0,0,.4);
+    letter-spacing: 1px;
+  }
+  .tb-counter button:disabled { opacity: .35; cursor: not-allowed; }
+
+  .tb-opponent {
+    position: absolute;
+    right: 60px; top: 200px; width: 220px;
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .tb-opp-row {
+    background: linear-gradient(135deg, rgba(220,80,140,.55), rgba(160,40,100,.55));
+    border: 2px solid rgba(255,255,255,.15);
+    border-radius: 12px;
+    padding: 8px 12px;
+    display: grid; grid-template-columns: 1fr 60px; gap: 10px; align-items: center;
+    box-shadow: 0 3px 0 rgba(0,0,0,.35);
+  }
+  .tb-opp-pic {
+    width: 56px; height: 56px;
+    border: 1.5px dashed rgba(255,255,255,.3);
+    border-radius: 8px;
+    background: rgba(255,255,255,.08);
+    display: grid; place-items: center;
+    image-rendering: pixelated;
+    position: relative;
+  }
+  .tb-opp-pic::before { content: '◇'; color: rgba(255,255,255,.4); font-size: 20px; }
+  .tb-opp-meta {
+    display: flex; flex-direction: column; gap: 4px;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    color: rgba(255,255,255,.85);
+  }
+  .tb-opp-meta .types { display: flex; gap: 4px; }
+  .tb-opp-meta .ttype {
+    width: 22px; height: 22px; border-radius: 5px;
+    display: grid; place-items: center;
+    font-family: 'Press Start 2P', monospace; font-size: 10px;
+    color: #0c0c1a;
+  }
+  .tb-opp-meta .gender { color: rgba(255,255,255,.7); }
+  .tb-opp-status {
+    text-align: right;
+    margin-top: 14px;
+    font-family: 'Press Start 2P', monospace; font-size: 11px;
+    color: rgba(220,80,140,1);
+    background: rgba(8,10,28,.7);
+    padding: 8px 14px; border-radius: 18px;
+    border: 1.5px solid rgba(220,80,140,.5);
+    letter-spacing: 1.5px;
+  }
+  .tb-arena-bg {
+    position: absolute; inset: 30% 25% 0 30%;
+    background:
+      radial-gradient(ellipse 70% 55% at 50% 80%, rgba(60,200,210,.25), transparent 70%),
+      radial-gradient(ellipse 80% 60% at 50% 100%, rgba(80,140,255,.18), transparent 70%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 80%, #000, transparent 75%);
+            mask-image: radial-gradient(ellipse 80% 60% at 50% 80%, #000, transparent 75%);
+    pointer-events: none;
+  }
+  .tb-arena-bg::before {
+    content: '';
+    position: absolute; inset: 50% 0 0 0;
+    background:
+      repeating-linear-gradient(0deg, rgba(120,170,255,.18) 0 1px, transparent 1px 30px),
+      repeating-linear-gradient(90deg, rgba(120,170,255,.10) 0 1px, transparent 1px 30px);
+    transform: perspective(700px) rotateX(60deg);
+    transform-origin: center top;
+  }
+  .tb-footer-help {
+    position: absolute; left: 0; right: 0; bottom: 30px;
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace; font-size: 12px;
+    color: var(--ink-dim);
+  }
+  .tb-footer-help .key {
+    background: rgba(255,255,255,.1); padding: 3px 10px; border-radius: 4px;
+    color: var(--ink); margin: 0 4px;
+  }
+
+  /* === STATE TWEAKS: which screen is shown === */
+  body[data-state="fight"]  .fight-menu  { pointer-events: auto; opacity: 1; }
+  body[data-state="party"]  .party-menu  { pointer-events: auto; opacity: 1; }
+  body[data-state="target"] .target-menu { pointer-events: auto; opacity: 1; }
+  body[data-state="team"]   .team-builder{ pointer-events: auto; opacity: 1; }
+  body[data-state="dialog"] .dialog-box { display: block; }
+  body[data-state="dialog"] .actions,
+  body[data-state="dialog"] .prompt { opacity: .25; pointer-events: none; }
+</style>
+</head>
+<body data-state="idle">
+
+<div id="stage">
+  <div id="scene">
+
+    <!-- Stadium back -->
+    <div class="crowd"></div>
+    <div class="billboard top"><div class="logo-text">CHAMPIONS LEAGUE</div></div>
+    <div class="billboard left"></div>
+    <div class="billboard right"></div>
+
+    <!-- Field -->
+    <div class="field">
+      <div class="flame l"></div>
+      <div class="flame r"></div>
+    </div>
+
+    <!-- Trainer holders -->
+    <div class="trainer enemy" data-holder="trainer-enemy" data-label="OPP TRAINER"></div>
+    <div class="trainer ally"  data-holder="trainer-ally"  data-label="YOUR TRAINER"></div>
+
+    <!-- Pokémon holders (2v2) -->
+    <div class="mon enemy-2">
+      <div class="holder ph" data-holder="mon-e2" data-label="ENEMY 2"></div>
+      <div class="shadow"></div>
+    </div>
+    <div class="mon enemy-1">
+      <div class="holder ph" data-holder="mon-e1" data-label="ENEMY 1"></div>
+      <div class="shadow"></div>
+    </div>
+    <div class="mon ally-1">
+      <div class="holder ph" data-holder="mon-a1" data-label="ALLY 1"></div>
+      <div class="shadow"></div>
+    </div>
+    <div class="mon ally-2">
+      <div class="holder ph" data-holder="mon-a2" data-label="ALLY 2"></div>
+      <div class="shadow"></div>
+    </div>
+
+    <!-- Enemy HUDs -->
+    <div class="hud enemy-hud e1">
+      <div class="row">
+        <div class="icon" data-holder="icon-e1"></div>
+        <div>
+          <div class="name">Steelix</div>
+          <div class="lvl">LV 68 · ♀</div>
+        </div>
+        <div class="gender f">♀</div>
+      </div>
+      <div class="hpwrap">
+        <div class="hp-label">HP</div>
+        <div class="hpbar"><div class="hpfill" style="width:100%"></div></div>
+        <div class="hpnum">100%</div>
+      </div>
+      <div class="types">
+        <span class="pill t-steel">Steel</span>
+        <span class="pill t-ground">Ground</span>
+      </div>
+    </div>
+
+    <div class="hud enemy-hud e2">
+      <div class="row">
+        <div class="icon" data-holder="icon-e2"></div>
+        <div>
+          <div class="name">Drampa</div>
+          <div class="lvl">LV 70 · ♂</div>
+        </div>
+        <div class="gender m">♂</div>
+      </div>
+      <div class="hpwrap">
+        <div class="hp-label">HP</div>
+        <div class="hpbar"><div class="hpfill" style="width:100%"></div></div>
+        <div class="hpnum">100%</div>
+      </div>
+      <div class="types">
+        <span class="pill t-normal">Normal</span>
+        <span class="pill t-dragon">Dragon</span>
+      </div>
+    </div>
+
+    <!-- Ally HUDs -->
+    <div class="hud ally-hud a1">
+      <div class="row">
+        <div class="icon" data-holder="icon-a1"></div>
+        <div>
+          <div class="name">Delphox</div>
+          <div class="lvl">LV 70 · ♂</div>
+        </div>
+        <div class="gender m">♂</div>
+      </div>
+      <div class="hpwrap">
+        <div class="hp-label">HP</div>
+        <div class="hpbar"><div class="hpfill" style="width:100%"></div></div>
+        <div class="hpnum">152 / 152</div>
+      </div>
+      <div class="types">
+        <span class="pill t-fire">Fire</span>
+        <span class="pill t-psychic">Psychic</span>
+      </div>
+    </div>
+
+    <div class="hud ally-hud a2">
+      <div class="row">
+        <div class="icon" data-holder="icon-a2"></div>
+        <div>
+          <div class="name">Victreebel</div>
+          <div class="lvl">LV 68 · ♀</div>
+        </div>
+        <div class="gender f">♀</div>
+      </div>
+      <div class="hpwrap">
+        <div class="hp-label">HP</div>
+        <div class="hpbar"><div class="hpfill" style="width:100%"></div></div>
+        <div class="hpnum">187 / 187</div>
+      </div>
+      <div class="types">
+        <span class="pill t-grass">Grass</span>
+        <span class="pill t-poison">Poison</span>
+      </div>
+    </div>
+
+    <!-- Top corner UI -->
+    <div class="corner-ui">
+      <div class="corner-btn"><span class="glyph">↩</span><span class="ttip">RUN</span></div>
+      <div class="corner-btn"><span class="glyph">⚙</span></div>
+    </div>
+
+    <!-- Match timer + move time + pp pips -->
+    <div class="timer">
+      <div class="lbl">⏱  MATCH</div>
+      <div class="val">07:00</div>
+      <div class="pp-pips">
+        <span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span>
+      </div>
+    </div>
+
+    <div class="timer move-time">
+      <div class="lbl">MOVE TIME</div>
+      <div class="val">43</div>
+    </div>
+
+    <div class="battle-info">
+      <div class="x-key">X</div>
+      <span>Battle Info</span>
+    </div>
+
+    <!-- Action wheel -->
+    <div class="actions">
+      <div class="action fight selected">
+        <span class="arrow">▶</span>
+        <div class="btn">
+          <div class="btn-glyph">⚔</div>
+          <div class="btn-label">FIGHT</div>
+        </div>
+      </div>
+      <div class="action pkm">
+        <span class="arrow">▶</span>
+        <div class="btn">
+          <div class="btn-glyph">◉</div>
+          <div class="btn-label">POKÉMON</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Match timer pips: ally-side -->
+    <div style="position:absolute; bottom:200px; left:28px; display:flex; align-items:center; gap:10px;">
+      <div class="pp-pips" style="margin:0;">
+        <span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span>
+      </div>
+      <span style="font-family:'JetBrains Mono', monospace; font-size:14px; color:var(--ink-dim);">⏱ 06:58</span>
+    </div>
+
+    <!-- Idle prompt -->
+    <div class="prompt">
+      <span class="blink">▶</span> CHOOSE AN ACTION FOR <span style="color:var(--ally)">DELPHOX</span>
+    </div>
+
+    <!-- WEATHER (hidden) -->
+    <div class="weather-hud">
+      <div class="wicon">☀</div>
+      <div>
+        <div class="wname">HARSH SUN</div>
+        <div class="wturns">5 TURNS LEFT</div>
+      </div>
+    </div>
+
+    <!-- FIGHT MENU OVERLAY -->
+    <div class="fight-menu">
+      <div class="fight-card">
+        <h3>▸ DELPHOX &nbsp;·&nbsp; SELECT A MOVE</h3>
+        <div class="moves-grid">
+          <div class="move" style="--type-color: var(--t-fire);">
+            <div class="move-name">Mystical Fire</div>
+            <div class="move-meta">
+              <span class="pill t-fire">Fire</span>
+              <span class="cat">Special</span>
+              <span class="pp">PP 10/10</span>
+            </div>
+          </div>
+          <div class="move" style="--type-color: var(--t-psychic);">
+            <div class="move-name">Psyshock</div>
+            <div class="move-meta">
+              <span class="pill t-psychic">Psychic</span>
+              <span class="cat">Special</span>
+              <span class="pp">PP 10/10</span>
+            </div>
+          </div>
+          <div class="move" style="--type-color: var(--t-fire);">
+            <div class="move-name">Flamethrower</div>
+            <div class="move-meta">
+              <span class="pill t-fire">Fire</span>
+              <span class="cat">Special</span>
+              <span class="pp">PP 15/15</span>
+            </div>
+          </div>
+          <div class="move" style="--type-color: var(--t-normal);">
+            <div class="move-name">Calm Mind</div>
+            <div class="move-meta">
+              <span class="pill t-psychic">Psychic</span>
+              <span class="cat">Status</span>
+              <span class="pp">PP 20/20</span>
+            </div>
+          </div>
+        </div>
+        <div class="fight-info-row">
+          <div>
+            <span class="key">↑↓←→</span> NAVIGATE
+            &nbsp;&nbsp;
+            <span class="key">A</span> CONFIRM
+            &nbsp;&nbsp;
+            <span class="key">B</span> BACK
+          </div>
+          <div>FIRE · 90 BP · 100% ACC</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PARTY MENU OVERLAY -->
+    <div class="party-menu">
+      <div class="party-card">
+        <h3>▸ YOUR TEAM</h3>
+        <div class="party-grid">
+          <div class="party-mon active">
+            <div class="picon" data-holder="party-1"></div>
+            <div>
+              <div class="pname">Delphox</div>
+              <div class="plvl">LV 70 · ♂</div>
+              <div class="phpwrap">
+                <div class="hpbar"><div class="hpfill" style="width:100%"></div></div>
+                <div class="phpnum">152/152</div>
+              </div>
+            </div>
+          </div>
+          <div class="party-mon active">
+            <div class="picon" data-holder="party-2"></div>
+            <div>
+              <div class="pname">Victreebel</div>
+              <div class="plvl">LV 68 · ♀</div>
+              <div class="phpwrap">
+                <div class="hpbar"><div class="hpfill" style="width:100%"></div></div>
+                <div class="phpnum">187/187</div>
+              </div>
+            </div>
+          </div>
+          <div class="party-mon">
+            <div class="picon" data-holder="party-3"></div>
+            <div>
+              <div class="pname">Garchomp</div>
+              <div class="plvl">LV 72 · ♂</div>
+              <div class="phpwrap">
+                <div class="hpbar"><div class="hpfill mid" style="width:48%"></div></div>
+                <div class="phpnum">102/214</div>
+              </div>
+            </div>
+          </div>
+          <div class="party-mon">
+            <div class="picon" data-holder="party-4"></div>
+            <div>
+              <div class="pname">Lapras</div>
+              <div class="plvl">LV 70 · ♀</div>
+              <div class="phpwrap">
+                <div class="hpbar"><div class="hpfill" style="width:88%"></div></div>
+                <div class="phpnum">220/250</div>
+              </div>
+            </div>
+          </div>
+          <div class="party-mon">
+            <div class="picon" data-holder="party-5"></div>
+            <div>
+              <div class="pname">Gengar</div>
+              <div class="plvl">LV 68 · ♂</div>
+              <div class="phpwrap">
+                <div class="hpbar"><div class="hpfill lo" style="width:18%"></div></div>
+                <div class="phpnum">28/164</div>
+              </div>
+            </div>
+          </div>
+          <div class="party-mon fainted">
+            <div class="picon" data-holder="party-6"></div>
+            <div>
+              <div class="pname">Lucario</div>
+              <div class="plvl">LV 70 · ♂</div>
+              <div class="phpwrap">
+                <div class="hpbar"><div class="hpfill lo" style="width:0%"></div></div>
+                <div class="phpnum">0/178</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="party-footer">
+          <div><span class="key">A</span> SWITCH IN &nbsp; <span class="key">B</span> BACK</div>
+          <div>5 ACTIVE · 1 FAINTED</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIALOG BOX -->
+    <div class="dialog-box">
+      DELPHOX USED MYSTICAL FIRE!<br>
+      IT'S SUPER EFFECTIVE ON STEELIX!<span class="caret">▼</span>
+    </div>
+
+    <!-- TARGET SELECT OVERLAY -->
+    <div class="target-menu">
+      <div class="target-card">
+        <div class="target-trainer opp">
+          <div class="tav" data-holder="opp-avatar">OPP</div>
+          <span>HUGEJEAN</span>
+        </div>
+        <div class="target-row opp">
+          <div class="tcard selected" data-target="e1">
+            <div class="tcard-pic" data-holder="target-e1"></div>
+            <div>
+              <span class="tcard-eff super">SUPER EFF.</span>
+              <div class="tcard-name">Steelix <span style="color:var(--enemy)">♀</span></div>
+              <div class="tcard-hpwrap">
+                <div class="hpbar"><div class="hpfill mid" style="width:49%"></div></div>
+                <div class="tcard-hp">49%</div>
+              </div>
+            </div>
+          </div>
+          <div class="tcard empty" data-target="e2-empty"></div>
+        </div>
+
+        <div class="target-move-tab">
+          <div class="glyph">🔥</div>
+          <span>MYSTICAL FIRE</span>
+        </div>
+
+        <div class="target-row player" style="margin-top: 18px;">
+          <div class="tcard" data-target="a1">
+            <div class="tcard-pic" data-holder="target-a1"></div>
+            <div>
+              <span class="tcard-eff weak">NOT V. EFF.</span>
+              <div class="tcard-name">Delphox <span style="color:var(--ally)">♂</span></div>
+              <div class="tcard-hpwrap">
+                <div class="hpbar"><div class="hpfill" style="width:100%"></div></div>
+                <div class="tcard-hp">152/152</div>
+              </div>
+            </div>
+          </div>
+          <div class="tcard" data-target="a2">
+            <div class="tcard-pic" data-holder="target-a2"></div>
+            <div>
+              <span class="tcard-eff eff">EFFECTIVE</span>
+              <div class="tcard-name">Victreebel <span style="color:var(--enemy)">♀</span></div>
+              <div class="tcard-hpwrap">
+                <div class="hpbar"><div class="hpfill" style="width:100%"></div></div>
+                <div class="tcard-hp">187/187</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="target-trainer player" style="margin-top: 14px;">
+          <div class="tav" data-holder="player-avatar">YOU</div>
+          <span>PROFRPG</span>
+        </div>
+
+        <div class="target-footer">
+          <div><span class="key">←→</span> CHOOSE TARGET &nbsp; <span class="key">A</span> CONFIRM &nbsp; <span class="key">B</span> CANCEL</div>
+          <div>05:50</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TEAM BUILDER (PRE-BATTLE) -->
+    <div class="team-builder">
+      <div class="tb-arena-bg"></div>
+      <div class="tb-timer">⏱ 00:42</div>
+      <div class="tb-trainer">RIVAL · 르드장르</div>
+      <div class="tb-header">
+        <div class="tb-tab">CASUAL BATTLES</div>
+        <div class="tb-tab active">DOUBLE BATTLE</div>
+      </div>
+      <div class="tb-instruction">
+        SELECT <span class="accent">4 POKÉMON</span><br>
+        TO SEND INTO BATTLE.
+      </div>
+
+      <div class="tb-grid">
+        <div class="tb-row picked" data-pick="2" data-idx="0">
+          <div class="tb-num" data-pick="2">2</div>
+          <div>
+            <div class="tb-mon-name">Meganium <span class="tb-gender">♂</span></div>
+            <div class="tb-mon-item">Meganiumite</div>
+          </div>
+          <div class="tb-mon-pic" data-holder="tb-mon-1"></div>
+        </div>
+
+        <div class="tb-row picked" data-pick="1" data-idx="1">
+          <div class="tb-num" data-pick="1">1</div>
+          <div>
+            <div class="tb-mon-name">Pelipper <span class="tb-gender">♂</span></div>
+            <div class="tb-mon-item">Leftovers</div>
+          </div>
+          <div class="tb-mon-pic" data-holder="tb-mon-2"></div>
+        </div>
+
+        <div class="tb-row" data-idx="2">
+          <div class="tb-num">·</div>
+          <div>
+            <div class="tb-mon-name">Farigiraf <span class="tb-gender">♂</span></div>
+            <div class="tb-mon-item">Sitrus Berry</div>
+          </div>
+          <div class="tb-mon-pic" data-holder="tb-mon-3"></div>
+        </div>
+
+        <div class="tb-row" data-idx="3">
+          <div class="tb-num">·</div>
+          <div>
+            <div class="tb-mon-name">Kingambit <span class="tb-gender">♂</span></div>
+            <div class="tb-mon-item">Metal Coat</div>
+          </div>
+          <div class="tb-mon-pic" data-holder="tb-mon-4"></div>
+        </div>
+
+        <div class="tb-row picked" data-pick="3" data-idx="4">
+          <div class="tb-num" data-pick="3">3</div>
+          <div>
+            <div class="tb-mon-name">Garchomp <span class="tb-gender">♂</span></div>
+            <div class="tb-mon-item">Choice Scarf</div>
+          </div>
+          <div class="tb-mon-pic" data-holder="tb-mon-5"></div>
+        </div>
+
+        <div class="tb-row" data-idx="5">
+          <div class="tb-num">·</div>
+          <div>
+            <div class="tb-mon-name">Whimsicott <span class="tb-gender">♂</span></div>
+            <div class="tb-mon-item">Focus Sash</div>
+          </div>
+          <div class="tb-mon-pic" data-holder="tb-mon-6"></div>
+        </div>
+
+        <div class="tb-counter">
+          <div>SELECTED <span class="count">3 / 4</span></div>
+          <button disabled>DONE</button>
+        </div>
+      </div>
+
+      <div class="tb-opponent">
+        <div class="tb-opp-row">
+          <div class="tb-opp-meta">
+            <div class="tb-opp-pic" data-holder="tb-opp-1"></div>
+            <div>SNEASEL <span class="gender">♀</span></div>
+          </div>
+          <div class="tb-opp-meta">
+            <div class="types"><span class="ttype" style="background: var(--t-ghost)">G</span></div>
+          </div>
+        </div>
+        <div class="tb-opp-row">
+          <div class="tb-opp-meta">
+            <div class="tb-opp-pic" data-holder="tb-opp-2"></div>
+            <div>UMBREON <span class="gender">♂</span></div>
+          </div>
+          <div class="tb-opp-meta">
+            <div class="types"><span class="ttype" style="background: var(--t-dark); color:#fff">D</span></div>
+          </div>
+        </div>
+        <div class="tb-opp-row">
+          <div class="tb-opp-meta">
+            <div class="tb-opp-pic" data-holder="tb-opp-3"></div>
+            <div>MEOWSCAR <span class="gender">♂</span></div>
+          </div>
+          <div class="tb-opp-meta">
+            <div class="types"><span class="ttype" style="background: var(--t-fairy)">F</span></div>
+          </div>
+        </div>
+        <div class="tb-opp-row">
+          <div class="tb-opp-meta">
+            <div class="tb-opp-pic" data-holder="tb-opp-4"></div>
+            <div>SABLEYE <span class="gender">♂</span></div>
+          </div>
+          <div class="tb-opp-meta">
+            <div class="types"><span class="ttype" style="background: var(--t-dark); color:#fff">D</span><span class="ttype" style="background: var(--t-ghost); color:#fff">G</span></div>
+          </div>
+        </div>
+        <div class="tb-opp-row">
+          <div class="tb-opp-meta">
+            <div class="tb-opp-pic" data-holder="tb-opp-5"></div>
+            <div>YAMPER <span class="gender">♀</span></div>
+          </div>
+          <div class="tb-opp-meta">
+            <div class="types"><span class="ttype" style="background: var(--t-electric)">E</span><span class="ttype" style="background: var(--t-flying)">F</span></div>
+          </div>
+        </div>
+        <div class="tb-opp-row">
+          <div class="tb-opp-meta">
+            <div class="tb-opp-pic" data-holder="tb-opp-6"></div>
+            <div>WORMADAM <span class="gender">♀</span></div>
+          </div>
+          <div class="tb-opp-meta">
+            <div class="types"><span class="ttype" style="background: var(--t-bug)">B</span><span class="ttype" style="background: var(--t-flying)">F</span></div>
+          </div>
+        </div>
+        <div class="tb-opp-status">STANDING BY...</div>
+      </div>
+
+      <div class="tb-footer-help">
+        <span class="key">↑↓</span> NAVIGATE &nbsp;
+        <span class="key">A</span> SELECT / DESELECT &nbsp;
+        <span class="key">Y</span> SHOW SUMMARY &nbsp;
+        <span class="key">B</span> BACK
+      </div>
+    </div>
+
+    <!-- CRT scanlines -->
+    <div class="scanlines"></div>
+  </div>
+</div>
+
+<!-- React + Babel for Tweaks panel -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+
+<script>
+  /* ============ STAGE SCALING ============ */
+  function fitStage() {
+    const scene = document.getElementById('scene');
+    const sw = window.innerWidth, sh = window.innerHeight;
+    const scale = Math.min(sw / 1920, sh / 1080);
+    scene.style.transform = `scale(${scale})`;
+  }
+  window.addEventListener('resize', fitStage);
+  fitStage();
+
+  /* ============ HOVER & CLICK ============ */
+  document.querySelectorAll('.action').forEach(a => {
+    a.addEventListener('mouseenter', () => {
+      document.querySelectorAll('.action').forEach(x => x.classList.remove('selected'));
+      a.classList.add('selected');
+    });
+    a.addEventListener('click', () => {
+      if (a.classList.contains('fight')) setState('fight');
+      else if (a.classList.contains('pkm')) setState('party');
+    });
+  });
+
+  document.querySelectorAll('.fight-menu, .party-menu, .target-menu').forEach(o => {
+    o.addEventListener('click', (e) => {
+      if (e.target === o || e.target.classList.contains('fight-menu') || e.target.classList.contains('party-menu') || e.target.classList.contains('target-menu')) {
+        setState('idle');
+      }
+    });
+  });
+  document.querySelectorAll('.move').forEach(m => {
+    m.addEventListener('click', (e) => { e.stopPropagation(); setState('target'); });
+  });
+  document.querySelectorAll('.target-card .tcard').forEach(c => {
+    c.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (c.classList.contains('empty')) return;
+      document.querySelectorAll('.target-card .tcard').forEach(x => x.classList.remove('selected'));
+      c.classList.add('selected');
+      setTimeout(() => setState('dialog'), 250);
+    });
+  });
+  document.querySelector('.dialog-box').addEventListener('click', () => setState('idle'));
+
+  // Team builder picking
+  document.querySelectorAll('.tb-row').forEach(r => {
+    r.addEventListener('click', () => {
+      if (r.classList.contains('picked')) {
+        r.classList.remove('picked');
+        const num = r.querySelector('.tb-num');
+        num.textContent = '·';
+        delete num.dataset.pick;
+        delete r.dataset.pick;
+      } else {
+        const picked = document.querySelectorAll('.tb-row.picked').length;
+        if (picked >= 4) return;
+        r.classList.add('picked');
+        const slot = picked + 1;
+        const num = r.querySelector('.tb-num');
+        num.textContent = String(slot);
+        num.dataset.pick = String(slot);
+        r.dataset.pick = String(slot);
+      }
+      // Re-number after deselect to keep order tidy
+      let n = 1;
+      document.querySelectorAll('.tb-row').forEach(row => {
+        if (row.classList.contains('picked')) {
+          const numEl = row.querySelector('.tb-num');
+          numEl.textContent = String(n);
+          numEl.dataset.pick = String(n);
+          row.dataset.pick = String(n);
+          n++;
+        }
+      });
+      const cnt = document.querySelectorAll('.tb-row.picked').length;
+      const counter = document.querySelector('.tb-counter .count');
+      const btn = document.querySelector('.tb-counter button');
+      counter.textContent = `${cnt} / 4`;
+      btn.disabled = cnt !== 4;
+    });
+  });
+  document.querySelector('.tb-counter button').addEventListener('click', () => {
+    if (document.querySelectorAll('.tb-row.picked').length === 4) setState('idle');
+  });
+
+  function setState(s) {
+    document.body.dataset.state = s;
+    if (window.__onStateChange) window.__onStateChange(s);
+  }
+
+  /* ============ TWEAKS ============ */
+  const e = React.createElement;
+
+  const DEFAULTS = /*EDITMODE-BEGIN*/{
+    "state": "dialog",
+    "weather": true,
+    "lowHp": true,
+    "accent": "teal"
+  }/*EDITMODE-END*/;
+
+  function App() {
+    const [t, setTweak] = window.useTweaks(DEFAULTS);
+
+    React.useEffect(() => {
+      setState(t.state);
+    }, [t.state]);
+
+    React.useEffect(() => {
+      document.querySelector('.weather-hud').classList.toggle('show', t.weather);
+    }, [t.weather]);
+
+    React.useEffect(() => {
+      // Toggle low HP on enemy 1 (Steelix)
+      const e1 = document.querySelector('.hud.enemy-hud.e1');
+      if (!e1) return;
+      const fill = e1.querySelector('.hpfill');
+      const num  = e1.querySelector('.hpnum');
+      if (t.lowHp) {
+        fill.style.width = '18%';
+        fill.classList.remove('mid'); fill.classList.add('lo');
+        num.textContent = '18%';
+        // status badge
+        if (!e1.querySelector('.status-badge')) {
+          const sb = document.createElement('span');
+          sb.className = 'status-badge';
+          sb.textContent = 'BRN';
+          e1.querySelector('.name').appendChild(sb);
+        }
+      } else {
+        fill.style.width = '100%';
+        fill.classList.remove('lo','mid');
+        num.textContent = '100%';
+        const sb = e1.querySelector('.status-badge');
+        if (sb) sb.remove();
+      }
+    }, [t.lowHp]);
+
+    React.useEffect(() => {
+      const map = {
+        teal:    { ally: 'oklch(0.72 0.15 200)', deep: 'oklch(0.45 0.13 200)' },
+        magenta: { ally: 'oklch(0.66 0.20 350)', deep: 'oklch(0.40 0.16 350)' },
+        amber:   { ally: 'oklch(0.78 0.16 75)',  deep: 'oklch(0.55 0.14 70)'  },
+        lime:    { ally: 'oklch(0.82 0.18 130)', deep: 'oklch(0.55 0.16 130)' }
+      };
+      const c = map[t.accent] || map.teal;
+      document.documentElement.style.setProperty('--ally', c.ally);
+      document.documentElement.style.setProperty('--ally-deep', c.deep);
+    }, [t.accent]);
+
+    // Listen to scene changes from clicks → push back to tweaks
+    React.useEffect(() => {
+      window.__onStateChange = (s) => {
+        if (s !== t.state) setTweak('state', s);
+      };
+      return () => { window.__onStateChange = null; };
+    }, [t.state]);
+
+    return e(window.TweaksPanel, { title: 'Battle Scene Tweaks' },
+      e(window.TweakSection, { title: 'Screen / State' },
+        e(window.TweakRadio, {
+          label: 'Active state',
+          value: t.state,
+          onChange: v => setTweak('state', v),
+          options: [
+            { value: 'idle',   label: 'Idle' },
+            { value: 'fight',  label: 'Fight' },
+            { value: 'target', label: 'Target' },
+            { value: 'party',  label: 'Party' },
+            { value: 'team',   label: 'Team Builder' },
+            { value: 'dialog', label: 'Dialog' }
+          ]
+        })
+      ),
+      e(window.TweakSection, { title: 'Battle conditions' },
+        e(window.TweakToggle, { label: 'Show weather (Harsh Sun)', value: t.weather, onChange: v => setTweak('weather', v) }),
+        e(window.TweakToggle, { label: 'Enemy 1 low HP + burn',     value: t.lowHp,   onChange: v => setTweak('lowHp', v) })
+      ),
+      e(window.TweakSection, { title: 'Theme' },
+        e(window.TweakColor, {
+          label: 'Ally accent',
+          value: t.accent,
+          onChange: v => setTweak('accent', v),
+          options: [
+            { value: 'teal',    color: '#3ec8d4' },
+            { value: 'magenta', color: '#e163b0' },
+            { value: 'amber',   color: '#f5b557' },
+            { value: 'lime',    color: '#a6e85b' }
+          ]
+        })
+      )
+    );
+  }
+
+  // Wait for tweaks-panel to load
+  function mountTweaks() {
+    if (!window.TweaksPanel) { setTimeout(mountTweaks, 50); return; }
+    const root = document.createElement('div');
+    document.body.appendChild(root);
+    ReactDOM.createRoot(root).render(e(App));
+  }
+  mountTweaks();
+</script>
+
+</body>
+</html>

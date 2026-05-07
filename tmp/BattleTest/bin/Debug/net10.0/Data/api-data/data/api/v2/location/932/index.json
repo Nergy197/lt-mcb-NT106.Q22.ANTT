@@ -1,0 +1,38 @@
+{
+    "areas": [
+        {
+            "name": "soothing-wetlands-area",
+            "url": "/api/v2/location-area/921/"
+        }
+    ],
+    "game_indices": [],
+    "id": 932,
+    "name": "soothing-wetlands",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Lande Boldair"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Balsamsumpf"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Soothing Wetlands"
+        }
+    ],
+    "region": {
+        "name": "galar",
+        "url": "/api/v2/region/8/"
+    }
+}

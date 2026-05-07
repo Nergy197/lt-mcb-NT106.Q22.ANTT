@@ -1,0 +1,38 @@
+{
+    "areas": [
+        {
+            "name": "galar-mine-no-2-area",
+            "url": "/api/v2/location-area/883/"
+        }
+    ],
+    "game_indices": [],
+    "id": 899,
+    "name": "galar-mine-no-2",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Mine de Galar n\u00b0 2"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Galar-Mine 2"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Galar Mine No. 2"
+        }
+    ],
+    "region": {
+        "name": "galar",
+        "url": "/api/v2/region/8/"
+    }
+}

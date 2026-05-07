@@ -1,0 +1,924 @@
+[
+    {
+        "location_area": {
+            "name": "twist-mountain-b1f-3f",
+            "url": "/api/v2/location-area/593/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 20,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 28,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 28
+                    },
+                    {
+                        "chance": 10,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 29,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 29
+                    },
+                    {
+                        "chance": 10,
+                        "condition_values": [
+                            {
+                                "name": "season-spring",
+                                "url": "/api/v2/encounter-condition-value/17/"
+                            }
+                        ],
+                        "max_level": 28,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 28
+                    },
+                    {
+                        "chance": 10,
+                        "condition_values": [
+                            {
+                                "name": "season-autumn",
+                                "url": "/api/v2/encounter-condition-value/19/"
+                            }
+                        ],
+                        "max_level": 28,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 28
+                    },
+                    {
+                        "chance": 10,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 30,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 30
+                    },
+                    {
+                        "chance": 5,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 31,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 31
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "season-summer",
+                                "url": "/api/v2/encounter-condition-value/18/"
+                            }
+                        ],
+                        "max_level": 28,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 28
+                    }
+                ],
+                "max_chance": 69,
+                "version": {
+                    "name": "black",
+                    "url": "/api/v2/version/17/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 20,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 28,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 28
+                    },
+                    {
+                        "chance": 10,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 29,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 29
+                    },
+                    {
+                        "chance": 10,
+                        "condition_values": [
+                            {
+                                "name": "season-spring",
+                                "url": "/api/v2/encounter-condition-value/17/"
+                            }
+                        ],
+                        "max_level": 28,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 28
+                    },
+                    {
+                        "chance": 10,
+                        "condition_values": [
+                            {
+                                "name": "season-autumn",
+                                "url": "/api/v2/encounter-condition-value/19/"
+                            }
+                        ],
+                        "max_level": 28,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 28
+                    },
+                    {
+                        "chance": 10,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 30,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 30
+                    },
+                    {
+                        "chance": 5,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 31,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 31
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "season-summer",
+                                "url": "/api/v2/encounter-condition-value/18/"
+                            }
+                        ],
+                        "max_level": 28,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 28
+                    }
+                ],
+                "max_chance": 69,
+                "version": {
+                    "name": "white",
+                    "url": "/api/v2/version/18/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "dragonspiral-tower-entrance",
+            "url": "/api/v2/location-area/594/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 10,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 33,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 33
+                    }
+                ],
+                "max_chance": 10,
+                "version": {
+                    "name": "black",
+                    "url": "/api/v2/version/17/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 10,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 33,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 33
+                    }
+                ],
+                "max_chance": 10,
+                "version": {
+                    "name": "white",
+                    "url": "/api/v2/version/18/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "dragonspiral-tower-outside",
+            "url": "/api/v2/location-area/595/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 10,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 33,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 33
+                    }
+                ],
+                "max_chance": 10,
+                "version": {
+                    "name": "black",
+                    "url": "/api/v2/version/17/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 10,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 33,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 33
+                    }
+                ],
+                "max_chance": 10,
+                "version": {
+                    "name": "white",
+                    "url": "/api/v2/version/18/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "unova-route-7-area",
+            "url": "/api/v2/location-area/632/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 20,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 26,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 26
+                    },
+                    {
+                        "chance": 10,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 28,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 28
+                    },
+                    {
+                        "chance": 20,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 30,
+                        "method": {
+                            "name": "dark-grass",
+                            "url": "/api/v2/encounter-method/8/"
+                        },
+                        "min_level": 30
+                    },
+                    {
+                        "chance": 10,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 32,
+                        "method": {
+                            "name": "dark-grass",
+                            "url": "/api/v2/encounter-method/8/"
+                        },
+                        "min_level": 32
+                    }
+                ],
+                "max_chance": 60,
+                "version": {
+                    "name": "black",
+                    "url": "/api/v2/version/17/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 20,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 26,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 26
+                    },
+                    {
+                        "chance": 10,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 28,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 28
+                    },
+                    {
+                        "chance": 20,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 30,
+                        "method": {
+                            "name": "dark-grass",
+                            "url": "/api/v2/encounter-method/8/"
+                        },
+                        "min_level": 30
+                    },
+                    {
+                        "chance": 10,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 32,
+                        "method": {
+                            "name": "dark-grass",
+                            "url": "/api/v2/encounter-method/8/"
+                        },
+                        "min_level": 32
+                    }
+                ],
+                "max_chance": 60,
+                "version": {
+                    "name": "white",
+                    "url": "/api/v2/version/18/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 20,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 33,
+                        "method": {
+                            "name": "dark-grass",
+                            "url": "/api/v2/encounter-method/8/"
+                        },
+                        "min_level": 33
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 36,
+                        "method": {
+                            "name": "dark-grass",
+                            "url": "/api/v2/encounter-method/8/"
+                        },
+                        "min_level": 36
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 36,
+                        "method": {
+                            "name": "dark-grass",
+                            "url": "/api/v2/encounter-method/8/"
+                        },
+                        "min_level": 36
+                    },
+                    {
+                        "chance": 20,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 30,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 30
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 33,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 33
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 33,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 33
+                    }
+                ],
+                "max_chance": 50,
+                "version": {
+                    "name": "black-2",
+                    "url": "/api/v2/version/21/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 20,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 33,
+                        "method": {
+                            "name": "dark-grass",
+                            "url": "/api/v2/encounter-method/8/"
+                        },
+                        "min_level": 33
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 36,
+                        "method": {
+                            "name": "dark-grass",
+                            "url": "/api/v2/encounter-method/8/"
+                        },
+                        "min_level": 36
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 36,
+                        "method": {
+                            "name": "dark-grass",
+                            "url": "/api/v2/encounter-method/8/"
+                        },
+                        "min_level": 36
+                    },
+                    {
+                        "chance": 20,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 30,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 30
+                    },
+                    {
+                        "chance": 4,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 33,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 33
+                    },
+                    {
+                        "chance": 1,
+                        "condition_values": [
+                            {
+                                "name": "season-winter",
+                                "url": "/api/v2/encounter-condition-value/20/"
+                            }
+                        ],
+                        "max_level": 33,
+                        "method": {
+                            "name": "walk",
+                            "url": "/api/v2/encounter-method/1/"
+                        },
+                        "min_level": 33
+                    }
+                ],
+                "max_chance": 50,
+                "version": {
+                    "name": "white-2",
+                    "url": "/api/v2/version/22/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "frost-cavern-unknown-area-313",
+            "url": "/api/v2/location-area/742/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 35,
+                        "condition_values": [],
+                        "max_level": 20,
+                        "method": {
+                            "name": "horde",
+                            "url": "/api/v2/encounter-method/44/"
+                        },
+                        "min_level": 20
+                    }
+                ],
+                "max_chance": 35,
+                "version": {
+                    "name": "x",
+                    "url": "/api/v2/version/23/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 35,
+                        "condition_values": [],
+                        "max_level": 20,
+                        "method": {
+                            "name": "horde",
+                            "url": "/api/v2/encounter-method/44/"
+                        },
+                        "min_level": 20
+                    }
+                ],
+                "max_chance": 35,
+                "version": {
+                    "name": "y",
+                    "url": "/api/v2/version/24/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "frost-cavern-unknown-area-314",
+            "url": "/api/v2/location-area/743/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 35,
+                        "condition_values": [],
+                        "max_level": 20,
+                        "method": {
+                            "name": "horde",
+                            "url": "/api/v2/encounter-method/44/"
+                        },
+                        "min_level": 20
+                    }
+                ],
+                "max_chance": 35,
+                "version": {
+                    "name": "x",
+                    "url": "/api/v2/version/23/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 35,
+                        "condition_values": [],
+                        "max_level": 20,
+                        "method": {
+                            "name": "horde",
+                            "url": "/api/v2/encounter-method/44/"
+                        },
+                        "min_level": 20
+                    }
+                ],
+                "max_chance": 35,
+                "version": {
+                    "name": "y",
+                    "url": "/api/v2/version/24/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "frost-cavern-unknown-area-315",
+            "url": "/api/v2/location-area/744/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 35,
+                        "condition_values": [],
+                        "max_level": 20,
+                        "method": {
+                            "name": "horde",
+                            "url": "/api/v2/encounter-method/44/"
+                        },
+                        "min_level": 20
+                    }
+                ],
+                "max_chance": 35,
+                "version": {
+                    "name": "x",
+                    "url": "/api/v2/version/23/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 35,
+                        "condition_values": [],
+                        "max_level": 20,
+                        "method": {
+                            "name": "horde",
+                            "url": "/api/v2/encounter-method/44/"
+                        },
+                        "min_level": 20
+                    }
+                ],
+                "max_chance": 35,
+                "version": {
+                    "name": "y",
+                    "url": "/api/v2/version/24/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "frost-cavern-unknown-area-316",
+            "url": "/api/v2/location-area/745/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 35,
+                        "condition_values": [],
+                        "max_level": 20,
+                        "method": {
+                            "name": "horde",
+                            "url": "/api/v2/encounter-method/44/"
+                        },
+                        "min_level": 20
+                    }
+                ],
+                "max_chance": 35,
+                "version": {
+                    "name": "x",
+                    "url": "/api/v2/version/23/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 35,
+                        "condition_values": [],
+                        "max_level": 20,
+                        "method": {
+                            "name": "horde",
+                            "url": "/api/v2/encounter-method/44/"
+                        },
+                        "min_level": 20
+                    }
+                ],
+                "max_chance": 35,
+                "version": {
+                    "name": "y",
+                    "url": "/api/v2/version/24/"
+                }
+            }
+        ]
+    },
+    {
+        "location_area": {
+            "name": "frost-cavern-unknown-area-317",
+            "url": "/api/v2/location-area/746/"
+        },
+        "version_details": [
+            {
+                "encounter_details": [
+                    {
+                        "chance": 35,
+                        "condition_values": [],
+                        "max_level": 20,
+                        "method": {
+                            "name": "horde",
+                            "url": "/api/v2/encounter-method/44/"
+                        },
+                        "min_level": 20
+                    }
+                ],
+                "max_chance": 35,
+                "version": {
+                    "name": "x",
+                    "url": "/api/v2/version/23/"
+                }
+            },
+            {
+                "encounter_details": [
+                    {
+                        "chance": 35,
+                        "condition_values": [],
+                        "max_level": 20,
+                        "method": {
+                            "name": "horde",
+                            "url": "/api/v2/encounter-method/44/"
+                        },
+                        "min_level": 20
+                    }
+                ],
+                "max_chance": 35,
+                "version": {
+                    "name": "y",
+                    "url": "/api/v2/version/24/"
+                }
+            }
+        ]
+    }
+]

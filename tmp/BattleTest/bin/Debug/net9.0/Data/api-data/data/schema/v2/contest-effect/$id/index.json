@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "properties": {
+        "appeal": {
+            "type": "integer"
+        },
+        "effect_entries": {
+            "items": {
+                "$ref": "/schema/v2/effect.json"
+            },
+            "type": "array"
+        },
+        "flavor_text_entries": {
+            "items": {
+                "$ref": "/schema/v2/flavor_text.json"
+            },
+            "type": "array"
+        },
+        "id": {
+            "type": "integer"
+        },
+        "jam": {
+            "type": "integer"
+        }
+    },
+    "required": [
+        "appeal",
+        "effect_entries",
+        "flavor_text_entries",
+        "id",
+        "jam"
+    ],
+    "type": "object"
+}

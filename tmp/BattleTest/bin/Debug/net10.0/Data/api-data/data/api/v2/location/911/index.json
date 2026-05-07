@@ -1,0 +1,38 @@
+{
+    "areas": [
+        {
+            "name": "insular-sea-area",
+            "url": "/api/v2/location-area/898/"
+        }
+    ],
+    "game_indices": [],
+    "id": 911,
+    "name": "insular-sea",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Mer Isol'\u00celots"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Fernarchipel"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Insular Sea"
+        }
+    ],
+    "region": {
+        "name": "galar",
+        "url": "/api/v2/region/8/"
+    }
+}

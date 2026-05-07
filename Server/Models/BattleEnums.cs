@@ -3,7 +3,9 @@ namespace PokemonMMO.Models;
 public enum BattleState
 {
     Waiting,
-    Running,
+    TeamPreview,   // Cả 2 người đang chọn 4/6 Pokemon để mang đi
+    Running,       // Đang trong lượt đánh
+    ForcedSwitch,  // Chờ người chơi thay thế Pokemon vừa bị hạ
     Ended
 }
 
@@ -29,15 +31,28 @@ public enum PokemonStatusCondition
 }
 
 /// <summary>
-/// Field weather conditions. Inspired by pbs-unity BattleCondition weather.
+/// Field weather conditions. Gen 9: Hail replaced by Snow (no EOT damage).
 /// </summary>
 public enum WeatherCondition
 {
     None,
-    Sun,        // Boosts Fire moves x1.5, weakens Water x0.5
-    Rain,       // Boosts Water moves x1.5, weakens Fire x0.5
-    Sandstorm,  // Rock/Steel/Ground immune; others lose 1/16 HP/turn
-    Hail        // Ice immune; others lose 1/16 HP/turn
+    Sun,        // Fire x1.5, Water x0.5
+    Rain,       // Water x1.5, Fire x0.5
+    Sandstorm,  // Rock/Steel/Ground immune; others -1/16 HP/turn
+    Hail,       // Legacy (pre-Gen 9) — treated as Snow
+    Snow,       // Gen 9: no EOT damage; Ice Sp.Def +50%; Blizzard 100% acc
+}
+
+/// <summary>
+/// Field terrain conditions (Gen 6+). Duration 5 turns.
+/// </summary>
+public enum TerrainCondition
+{
+    None,
+    Grassy,    // Grass x1.3; Earthquake x0.5; grounded heal 1/16 EOT
+    Electric,  // Electric x1.3; grounded cannot be put to sleep
+    Psychic,   // Psychic x1.3; priority moves blocked vs grounded opponents
+    Misty,     // Dragon x0.5 vs grounded; status conditions blocked on grounded
 }
 
 /// <summary>

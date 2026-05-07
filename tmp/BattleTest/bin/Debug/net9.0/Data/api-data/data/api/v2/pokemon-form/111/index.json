@@ -1,0 +1,60 @@
+{
+    "form_name": "",
+    "form_names": [],
+    "form_order": 1,
+    "id": 111,
+    "is_battle_only": false,
+    "is_default": true,
+    "is_mega": false,
+    "name": "rhyhorn",
+    "names": [],
+    "order": 181,
+    "pokemon": {
+        "name": "rhyhorn",
+        "url": "/api/v2/pokemon/111/"
+    },
+    "sprites": {
+        "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/111.png",
+        "back_female": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/female/111.png",
+        "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/111.png",
+        "back_shiny_female": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/female/111.png",
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png",
+        "front_female": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/female/111.png",
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/111.png",
+        "front_shiny_female": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/female/111.png",
+        "versions": {
+            "generation-ix": {
+                "scarlet-violet": {
+                    "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ix/scarlet-violet/111.png",
+                    "front_female": null
+                }
+            },
+            "generation-viii": {
+                "brilliant-diamond-shining-pearl": {
+                    "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-viii/brilliant-diamond-shining-pearl/111.png",
+                    "front_female": null
+                }
+            }
+        }
+    },
+    "types": [
+        {
+            "slot": 1,
+            "type": {
+                "name": "ground",
+                "url": "/api/v2/type/5/"
+            }
+        },
+        {
+            "slot": 2,
+            "type": {
+                "name": "rock",
+                "url": "/api/v2/type/6/"
+            }
+        }
+    ],
+    "version_group": {
+        "name": "red-green-japan",
+        "url": "/api/v2/version-group/28/"
+    }
+}

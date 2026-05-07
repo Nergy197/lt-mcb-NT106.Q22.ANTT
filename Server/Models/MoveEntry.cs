@@ -46,4 +46,8 @@ public class MoveEntry
     [BsonElement("effect")]
     [JsonPropertyName("effect")]
     public string? Effect { get; set; }
+
+    [BsonElement("targetType")]
+    [JsonPropertyName("targetType")]
+    public MoveTargetType TargetType { get; set; } = MoveTargetType.SingleOpponent;
 }

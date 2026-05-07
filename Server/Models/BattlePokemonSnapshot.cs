@@ -10,7 +10,22 @@ public class BattlePokemonSnapshot
     public int Level { get; set; }
     public int CurrentHp { get; set; }
     public int MaxHp { get; set; }
-    
+
+    // Current types (updated when Terastallized)
+    public string Type1 { get; set; } = "normal";
+    public string? Type2 { get; set; }
+
+    // Original types (preserved for Tera STAB 2× check)
+    public string OrigType1 { get; set; } = "normal";
+    public string? OrigType2 { get; set; }
+
+    // ── Terastallization (Gen 9) ──────────────────────────────────────────
+    /// <summary>The Pokemon's Tera Type (assigned during team building).</summary>
+    public string TerType { get; set; } = "normal";
+
+    /// <summary>Whether this Pokemon has Terastallized this battle.</summary>
+    public bool IsTerastallized { get; set; } = false;
+
     // Core Calculated Stats (IV + EV + Base + Nature)
     public int Atk { get; set; }
     public int Def { get; set; }

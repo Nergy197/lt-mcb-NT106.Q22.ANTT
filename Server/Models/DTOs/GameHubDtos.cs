@@ -1,3 +1,5 @@
+using PokemonMMO.Models;
+
 namespace PokemonMMO.Models.DTOs;
 
 public class PlayerJoinedEventDto
@@ -68,4 +70,82 @@ public class BattleEndedEventDto
     public string? WinnerPlayerId { get; set; }
     public List<string> Events { get; set; } = new();
     public List<BattleEvent> TypedEvents { get; set; } = new();
+}
+
+// ─── VGC Team Preview ───────────────────────────────────────────────────────
+
+public class TeamPreviewDto
+{
+    public string BattleId         { get; set; } = null!;
+    public string YourPlayerId     { get; set; } = null!;
+    public string OpponentPlayerId { get; set; } = null!;
+    public List<TeamPreviewPokemonDto> YourTeam     { get; set; } = new();
+    public List<TeamPreviewPokemonDto> OpponentTeam { get; set; } = new();
+}
+
+public class TeamPreviewPokemonDto
+{
+    public int     SpeciesId   { get; set; }
+    public string  SpeciesName { get; set; } = "";
+    public string  Nickname    { get; set; } = "";
+    public string  Type1       { get; set; } = "normal";
+    public string? Type2       { get; set; }
+    public int     Level       { get; set; }
+    public int     MaxHp       { get; set; }
+}
+
+// ─── VGC Battle Running State ────────────────────────────────────────────────
+
+public class BattleRunningDto
+{
+    public string   BattleId         { get; set; } = null!;
+    public int      TurnNumber       { get; set; }
+    public DateTime TurnDeadlineUtc  { get; set; }
+    public WeatherCondition Weather  { get; set; }
+    public int      WeatherTurnsLeft { get; set; }
+    public TerrainCondition Terrain  { get; set; }
+    public int      TerrainTurnsLeft { get; set; }
+
+    // Active field (2 yours + 2 opponent)
+    public FieldPokemonDto? YourSlotA { get; set; }
+    public FieldPokemonDto? YourSlotB { get; set; }
+    public FieldPokemonDto? OppSlotA  { get; set; }
+    public FieldPokemonDto? OppSlotB  { get; set; }
+
+    // Team panel (all 4 brought Pokemon)
+    public List<int> YourTeamHp    { get; set; } = new();
+    public List<int> YourTeamMaxHp { get; set; } = new();
+}
+
+public class FieldPokemonDto
+{
+    public int     SpeciesId        { get; set; }
+    public string  SpeciesName      { get; set; } = "";
+    public string  Nickname         { get; set; } = "";
+    // Current types (may differ when Terastallized)
+    public string  Type1            { get; set; } = "normal";
+    public string? Type2            { get; set; }
+    // Original types
+    public string  OrigType1        { get; set; } = "normal";
+    public string? OrigType2        { get; set; }
+    // Gen 9 Tera
+    public string  TerType          { get; set; } = "normal";
+    public bool    IsTerastallized  { get; set; }
+    public int     CurrentHp        { get; set; }
+    public int     MaxHp            { get; set; }
+    public bool    IsFainted        { get; set; }
+    public PokemonStatusCondition Status { get; set; }
+    public int[]   StatStages       { get; set; } = new int[7];
+    // Moves only sent for the player's own Pokemon
+    public List<MoveSummaryDto> Moves { get; set; } = new();
+}
+
+public class MoveSummaryDto
+{
+    public int    MoveId    { get; set; }
+    public string Name      { get; set; } = "";
+    public string Type      { get; set; } = "";
+    public string Category  { get; set; } = "";
+    public int    CurrentPp { get; set; }
+    public int    MaxPp     { get; set; }
 }

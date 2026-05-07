@@ -1,0 +1,38 @@
+{
+    "areas": [
+        {
+            "name": "brawlers-cave-area",
+            "url": "/api/v2/location-area/862/"
+        }
+    ],
+    "game_indices": [],
+    "id": 882,
+    "name": "brawlers-cave",
+    "names": [
+        {
+            "language": {
+                "name": "fr",
+                "url": "/api/v2/language/5/"
+            },
+            "name": "Grotte du Pugilat"
+        },
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "K\u00e4mpfergrotte"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Brawlers' Cave"
+        }
+    ],
+    "region": {
+        "name": "galar",
+        "url": "/api/v2/region/8/"
+    }
+}
