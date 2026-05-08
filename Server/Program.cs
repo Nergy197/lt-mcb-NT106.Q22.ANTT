@@ -104,6 +104,8 @@ builder.Services.AddScoped<EmailService>();
 // ── Chat & Friend services ─────────────────────────────────────────────────
 builder.Services.AddScoped<ChatService>();
 builder.Services.AddScoped<FriendService>();
+// ── Recruit (Gacha) service ────────────────────────────────────────────────
+builder.Services.AddScoped<RecruitService>();
 
 // ---------------------------------------------------------------------------
 // MVC Controllers + SignalR
@@ -217,6 +219,7 @@ Console.WriteLine($"⚔️  Battle Hub:      ws://localhost:{port}/hubs/battle")
 Console.WriteLine($"🗄️  MongoDB: {mongoUri}/{mongoDb}");
 Console.WriteLine($"🔐 Auth API:  http://localhost:{port}/api/auth");
 Console.WriteLine($"👥 Friends:   http://localhost:{port}/api/friends");
+Console.WriteLine($"🎰 Recruit:   http://localhost:{port}/api/recruit/roll");
 Console.WriteLine($"💬 Chat Hub:  ws://localhost:{port}/hubs/chat");
 Console.WriteLine($"📖 Swagger:   http://localhost:{port}/swagger");
 
