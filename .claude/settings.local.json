@@ -20,7 +20,8 @@
       "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d.get\\('name'\\), d.get\\('id'\\)\\)\")",
       "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d.get\\('name'\\), d.get\\('id'\\), d.get\\('type',{}\\).get\\('name'\\)\\)\")",
       "Bash(mongosh --quiet --eval ' *)",
-      "Bash(dotnet run *)"
+      "Bash(dotnet run *)",
+      "Bash(python3 -c \"import uuid; print\\(uuid.uuid4\\(\\).hex\\); print\\(uuid.uuid4\\(\\).hex\\); print\\(uuid.uuid4\\(\\).hex\\)\")"
     ]
   }
 }

@@ -50,4 +50,9 @@ public class MoveEntry
     [BsonElement("targetType")]
     [JsonPropertyName("targetType")]
     public MoveTargetType TargetType { get; set; } = MoveTargetType.SingleOpponent;
+
+    /// <summary>Chance (0–100) that a secondary effect triggers on a damaging move. 0 = use default 10%.</summary>
+    [BsonElement("effect_chance")]
+    [JsonPropertyName("effect_chance")]
+    public int EffectChance { get; set; } = 0;
 }

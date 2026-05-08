@@ -3,54 +3,67 @@ using UnityEngine.UI;
 
 namespace Game.Battle.UI
 {
+    /// <summary>
+    /// Panel 4 nút chính trong lượt: Fight, Pokemon, Info, Forfeit.
+    /// Nút Pokemon giờ mở Party Panel để đổi Pokemon thực sự.
+    /// </summary>
     public class BattleCommandPanel : BasePanel
     {
-        [Header("eSports Action Menu")]
+        [Header("Buttons")]
         public Button fightButton;
         public Button pokemonButton;
         public Button infoButton;
         public Button forfeitButton;
 
-        private BattleUIManager uiManager;
+        // Slot hiện tại đang chọn hành động (0 = Slot A, 1 = Slot B)
+        // Được NetworkController cập nhật qua SetCurrentSlot()
+        public int CurrentSrcSlot { get; set; }
+
+        private BattleUIManager _uiManager;
 
         private void Awake()
         {
-            uiManager = GetComponentInParent<BattleUIManager>();
+            _uiManager = GetComponentInParent<BattleUIManager>();
+            if (_uiManager == null) _uiManager = FindObjectOfType<BattleUIManager>();
 
-            if (fightButton == null) fightButton = transform.Find("FightBtn")?.GetComponent<Button>();
-            if (pokemonButton == null) pokemonButton = transform.Find("PokemonBtn")?.GetComponent<Button>();
-            if (infoButton == null) infoButton = transform.Find("InfoBtn")?.GetComponent<Button>();
-            
-            // Tìm kiếm ForfeitBtn ở phạm vi toàn Scene vì nó được bóc ra ngoài để luôn được nhìn thấy 
-            if (forfeitButton == null) 
+            // Tìm đệ quy (hỗ trợ button nằm trong Grid hoặc container con)
+            if (fightButton   == null) fightButton   = FindBtn("FightBtn");
+            if (pokemonButton == null) pokemonButton = FindBtn("PokemonBtn");
+            if (infoButton    == null) infoButton    = FindBtn("InfoBtn");
+
+            // ForfeitBtn thường bóc ra ngoài Panel để luôn hiển thị
+            if (forfeitButton == null)
             {
-                var fBtn = GameObject.Find("ForfeitBtn");
-                if (fBtn != null) forfeitButton = fBtn.GetComponent<Button>();
+                var obj = GameObject.Find("ForfeitBtn");
+                if (obj != null) forfeitButton = obj.GetComponent<Button>();
             }
 
-            fightButton?.onClick.AddListener(() => uiManager.SwitchPanel(BattlePanelType.Skill));
-            
-            pokemonButton?.onClick.AddListener(() => {
-                uiManager.SwitchPanel(BattlePanelType.None); 
-                BattleEvents.OnPrintDialog?.Invoke("[VGC] Menu Switch Pokemon...", true);
-                Invoke(nameof(ReopenMenu), 2f);
-            });
+            fightButton?.onClick.AddListener(() =>
+                _uiManager?.SwitchPanel(BattlePanelType.Skill));
 
-            infoButton?.onClick.AddListener(() => {
-                uiManager.SwitchPanel(BattlePanelType.None); 
-                BattleEvents.OnPrintDialog?.Invoke("[BATTLE INFO] Không có hiệu ứng Sân bãi nào hoạt động.", true);
-                Invoke(nameof(ReopenMenu), 3f);
-            });
+            pokemonButton?.onClick.AddListener(OnPokemonClicked);
 
-            forfeitButton?.onClick.AddListener(() => {
-                uiManager.SwitchPanel(BattlePanelType.None); 
-                BattleEvents.OnPrintDialog?.Invoke("Đầu hàng ván đấu thành công!", true);
+            infoButton?.onClick.AddListener(() =>
+                BattleEvents.OnPrintDialog?.Invoke("Đang kiểm tra tình trạng sân...", true));
+
+            forfeitButton?.onClick.AddListener(() =>
+            {
+                _uiManager?.SwitchPanel(BattlePanelType.Dialog);
+                BattleEvents.OnPrintDialog?.Invoke("Đầu hàng!", false);
             });
         }
 
-        private void ReopenMenu()
+        private void OnPokemonClicked()
         {
-            uiManager.SwitchPanel(BattlePanelType.Command);
+            // Yêu cầu NetworkController mở Party Panel để chọn switch tự nguyện
+            BattleEvents.OnVoluntarySwitchRequested?.Invoke(CurrentSrcSlot);
+        }
+
+        Button FindBtn(string btnName)
+        {
+            foreach (var b in GetComponentsInChildren<Button>(true))
+                if (b.gameObject.name == btnName) return b;
+            return null;
         }
     }
 }

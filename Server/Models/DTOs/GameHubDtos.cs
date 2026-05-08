@@ -99,6 +99,7 @@ public class TeamPreviewPokemonDto
 public class BattleRunningDto
 {
     public string   BattleId         { get; set; } = null!;
+    public string?  OpponentId       { get; set; } // ID của đối thủ (BOT_PLAYER hoặc playerId thật)
     public int      TurnNumber       { get; set; }
     public DateTime TurnDeadlineUtc  { get; set; }
     public WeatherCondition Weather  { get; set; }

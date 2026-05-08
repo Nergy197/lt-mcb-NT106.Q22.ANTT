@@ -1104,6 +1104,77 @@
     color: var(--ink); margin: 0 4px;
   }
 
+  /* === NETWORK OVERLAY === */
+  #net-overlay {
+    position: fixed; inset: 0; z-index: 9999;
+    background: rgba(5,6,18,.92);
+    backdrop-filter: blur(10px);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .net-panel {
+    width: 480px;
+    background: linear-gradient(180deg, rgba(15,18,45,.98), rgba(8,10,28,.98));
+    border: 2px solid var(--ally);
+    border-radius: 18px;
+    padding: 36px 40px;
+    box-shadow: 0 0 60px color-mix(in oklab, var(--ally) 40%, transparent);
+    display: flex; flex-direction: column; gap: 14px;
+  }
+  .net-panel h2 {
+    margin: 0 0 8px;
+    font-family: 'Press Start 2P', monospace; font-size: 15px;
+    color: var(--ally); letter-spacing: 2px; text-align: center;
+    text-shadow: 0 0 16px color-mix(in oklab, var(--ally) 70%, transparent);
+  }
+  .net-lbl {
+    font-family: 'Press Start 2P', monospace; font-size: 8px;
+    color: var(--ink-dim); letter-spacing: 2px; margin-bottom: 4px;
+  }
+  .net-inp {
+    width: 100%; padding: 10px 14px;
+    background: rgba(0,0,0,.4);
+    border: 1.5px solid var(--line);
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace; font-size: 14px;
+    color: var(--ink);
+    outline: none;
+    transition: border-color .15s;
+  }
+  .net-inp:focus { border-color: var(--ally); }
+  .net-btn {
+    width: 100%; padding: 14px;
+    background: var(--ally);
+    border: 2px solid color-mix(in oklab, var(--ally) 60%, black);
+    border-radius: 10px;
+    font-family: 'Press Start 2P', monospace; font-size: 12px;
+    color: #0c0c1a; letter-spacing: 1.5px;
+    cursor: pointer;
+    box-shadow: 0 4px 0 rgba(0,0,0,.4);
+    transition: transform .1s;
+    margin-top: 6px;
+  }
+  .net-btn:hover { transform: translateY(-2px); }
+  .net-btn:active { transform: translateY(1px); }
+  .net-btn:disabled { opacity: .35; cursor: not-allowed; transform: none; }
+  .net-btn.secondary {
+    background: transparent;
+    border-color: var(--line);
+    color: var(--ink-dim);
+    box-shadow: none;
+  }
+  .net-err {
+    font-family: 'JetBrains Mono', monospace; font-size: 12px;
+    color: var(--hp-lo); min-height: 18px; text-align: center;
+  }
+  .net-status {
+    font-family: 'JetBrains Mono', monospace; font-size: 13px;
+    color: var(--ink-dim); text-align: center; padding: 8px 0;
+  }
+  .net-divider {
+    border: none; border-top: 1px dashed rgba(255,255,255,.1);
+    margin: 4px 0;
+  }
+
   /* === STATE TWEAKS: which screen is shown === */
   body[data-state="fight"]  .fight-menu  { pointer-events: auto; opacity: 1; }
   body[data-state="party"]  .party-menu  { pointer-events: auto; opacity: 1; }
@@ -1646,6 +1717,34 @@
   </div>
 </div>
 
+<!-- ══ NETWORK OVERLAY ══════════════════════════════════════════ -->
+<div id="net-overlay">
+
+  <!-- LOGIN -->
+  <div id="net-login" class="net-panel">
+    <h2>⚔ POKEMON CHAMPIONS</h2>
+    <div class="net-lbl">SERVER URL</div>
+    <input id="net-server" class="net-inp" value="http://localhost:2567" />
+    <hr class="net-divider" />
+    <div class="net-lbl">USERNAME</div>
+    <input id="net-email" class="net-inp" type="text" placeholder="your_username" />
+    <div class="net-lbl">PASSWORD</div>
+    <input id="net-pass" class="net-inp" type="password" placeholder="••••••••" />
+    <div id="net-err" class="net-err"></div>
+    <button class="net-btn" onclick="BattleNet.doLogin()">LOGIN</button>
+  </div>
+
+  <!-- LOBBY -->
+  <div id="net-lobby" class="net-panel" style="display:none">
+    <h2>⚔ LOBBY</h2>
+    <div id="net-lobby-status" class="net-status">Connected · Ready</div>
+    <hr class="net-divider" />
+    <button id="net-find"   class="net-btn"           onclick="BattleNet.findMatch()">▶ FIND MATCH</button>
+    <button id="net-cancel" class="net-btn secondary" onclick="BattleNet.cancelMatch()" style="display:none">✕ CANCEL SEARCH</button>
+  </div>
+
+</div>
+
 <!-- React + Babel for Tweaks panel -->
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
@@ -1853,6 +1952,563 @@
     ReactDOM.createRoot(root).render(e(App));
   }
   mountTweaks();
+</script>
+
+<!-- SignalR client -->
+<script src="https://cdn.jsdelivr.net/npm/@microsoft/signalr@8.0.0/dist/browser/signalr.min.js"></script>
+
+<script>
+// ================================================================
+// BATTLE NETWORK CLIENT — SignalR bridge from HTML to ASP.NET server
+// ================================================================
+const BattleNet = (() => {
+  'use strict';
+
+  const DEFAULT_SERVER = 'http://localhost:2567';
+  let cfg = { server: DEFAULT_SERVER };
+  let token = null, myPlayerId = null;
+  let battleId = null;
+  let mHub = null, bHub = null;
+  let dto = null;          // current BattleRunningDto
+  let turnSlot = 0;        // 0=SlotA, 1=SlotB currently picking
+  let submittedSlots = new Set();
+  let selMoveSlot = null;
+
+  // ── DOM helpers ──────────────────────────────────────────────
+  const $  = id  => document.getElementById(id);
+  const $q = sel => document.querySelector(sel);
+  const $$ = sel => document.querySelectorAll(sel);
+
+  // ── AUTH ─────────────────────────────────────────────────────
+  async function doLogin() {
+    cfg.server = ($('net-server').value || DEFAULT_SERVER).replace(/\/$/, '');
+    const email = $('net-email').value.trim();
+    const pass  = $('net-pass').value.trim();
+    $('net-err').textContent = '';
+    try {
+      const r = await fetch(`${cfg.server}/api/auth/login`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username: email, password: pass })
+      });
+      const d = await r.json();
+      if (!r.ok) throw new Error(d?.message || d?.title || r.statusText);
+      token = d.token || d.Token;
+      myPlayerId = d.PlayerId || d.playerId || parseJwtSub(token);
+      $('net-login').style.display = 'none';
+      $('net-lobby').style.display = '';
+      await connectMatchmaking();
+    } catch (e) {
+      $('net-err').textContent = '✗ ' + e.message;
+    }
+  }
+
+  function parseJwtSub(jwt) {
+    try { return JSON.parse(atob(jwt.split('.')[1])).sub; } catch { return null; }
+  }
+
+  // ── MATCHMAKING HUB ──────────────────────────────────────────
+  async function connectMatchmaking() {
+    mHub = new signalR.HubConnectionBuilder()
+      .withUrl(`${cfg.server}/hubs/matchmaking`, { accessTokenFactory: () => token })
+      .withAutomaticReconnect()
+      .build();
+
+    mHub.on('MatchFound',     onMatchFound);
+    mHub.on('PartyUpdated',   onPartyUpdated);
+    mHub.on('SearchStarted',  m => setLobbyStatus(m));
+    mHub.on('SearchCancelled',_ => { setLobbyStatus('Ready'); resetFindBtn(); });
+    mHub.on('Error',          m => setLobbyStatus('⚠ ' + m));
+
+    await mHub.start();
+    await mHub.invoke('JoinLobby');
+    setLobbyStatus('Connected · Ready to battle');
+  }
+
+  async function findMatch() {
+    $('net-find').disabled = true;
+    $('net-cancel').style.display = '';
+    setLobbyStatus('Searching for opponent...');
+    await mHub.invoke('FindMatch');
+  }
+
+  async function cancelMatch() {
+    await mHub.invoke('CancelMatchmaking');
+    resetFindBtn();
+  }
+
+  function resetFindBtn() {
+    $('net-find').disabled = false;
+    $('net-cancel').style.display = 'none';
+  }
+
+  function setLobbyStatus(msg) { const el = $('net-lobby-status'); if (el) el.textContent = msg; }
+
+  // ── MATCH FOUND ───────────────────────────────────────────────
+  async function onMatchFound(startDto) {
+    battleId = startDto.BattleId;
+    $('net-overlay').style.display = 'none'; // hide overlay, show battle
+
+    bHub = new signalR.HubConnectionBuilder()
+      .withUrl(`${cfg.server}/hubs/battle`, { accessTokenFactory: () => token })
+      .build();
+
+    setupBattleHandlers();
+    await bHub.start();
+    await bHub.invoke('JoinBattle', battleId);
+  }
+
+  // ── BATTLE HUB HANDLERS ───────────────────────────────────────
+  function setupBattleHandlers() {
+    bHub.on('BattleRunning',        onBattleRunning);
+    bHub.on('TurnReady',            onBattleRunning);   // same handler
+    bHub.on('TeamPreviewReady',     onTeamPreview);
+    bHub.on('TurnResolved',         onTurnResolved);
+    bHub.on('ActionAccepted',       onActionAccepted);
+    bHub.on('ForcedSwitchRequired', onForcedSwitch);
+    bHub.on('ForcedSwitchAccepted', () => setState('idle'));
+    bHub.on('BattleEnded',          onBattleEnded);
+    bHub.on('Error',                msg => showDialog('⚠ ' + msg, false));
+  }
+
+  // ── TEAM PREVIEW ──────────────────────────────────────────────
+  function onTeamPreview(previewDto) {
+    setState('team');
+    // Wire up DONE button to submit team order
+    const doneBtn = $q('.tb-counter button');
+    if (doneBtn) {
+      doneBtn.onclick = async () => {
+        const picks = [];
+        $$('.tb-row.picked').forEach(r => picks.push(parseInt(r.dataset.idx)));
+        await bHub.invoke('SubmitTeamOrder', battleId, picks);
+        doneBtn.disabled = true;
+        doneBtn.textContent = 'WAITING...';
+      };
+    }
+  }
+
+  // ── BATTLE RUNNING ────────────────────────────────────────────
+  function onBattleRunning(runDto) {
+    dto = runDto;
+    submittedSlots.clear();
+    syncFieldUI();
+    startTurnInput();
+  }
+
+  function syncFieldUI() {
+    if (!dto) return;
+    updateHud('.hud.ally-hud.a1',  dto.YourSlotA, false);
+    updateHud('.hud.ally-hud.a2',  dto.YourSlotB, false);
+    updateHud('.hud.enemy-hud.e1', dto.OppSlotA,  true);
+    updateHud('.hud.enemy-hud.e2', dto.OppSlotB,  true);
+    updateWeatherUI(dto.Weather, dto.WeatherTurnsLeft);
+    if (dto.YourTeamHp) updateTeamPips(dto.YourTeamHp, dto.YourTeamMaxHp);
+  }
+
+  function updateHud(sel, pkmn, isEnemy) {
+    const hud = $q(sel);
+    if (!hud || !pkmn) return;
+
+    // Name
+    hud.querySelector('.name').childNodes[0].textContent = pkmn.SpeciesName.toUpperCase();
+
+    // Level
+    const lvl = hud.querySelector('.lvl');
+    if (lvl) lvl.textContent = `LV 50 ·`;
+
+    // HP bar
+    const pct = pkmn.MaxHp > 0 ? pkmn.CurrentHp / pkmn.MaxHp * 100 : 0;
+    const fill = hud.querySelector('.hpfill');
+    if (fill) {
+      fill.style.width = pct + '%';
+      fill.className = 'hpfill' + (pct < 25 ? ' lo' : pct < 50 ? ' mid' : '');
+    }
+    const num = hud.querySelector('.hpnum');
+    if (num) num.textContent = isEnemy ? `${Math.round(pct)}%` : `${pkmn.CurrentHp} / ${pkmn.MaxHp}`;
+
+    // Types
+    const typesEl = hud.querySelector('.types');
+    if (typesEl) {
+      typesEl.innerHTML = [pkmn.Type1, pkmn.Type2].filter(Boolean)
+        .map(t => `<span class="pill t-${t.toLowerCase()}">${t.toUpperCase()}</span>`).join('');
+    }
+
+    // Status badge
+    const nameEl = hud.querySelector('.name');
+    nameEl.querySelectorAll('.status-badge').forEach(b => b.remove());
+    if (pkmn.Status && pkmn.Status !== 'None') {
+      const b = document.createElement('span');
+      b.className = 'status-badge';
+      b.textContent = statusAbbr(pkmn.Status);
+      nameEl.appendChild(b);
+    }
+    // Tera badge
+    if (pkmn.IsTerastallized) {
+      const tb = document.createElement('span');
+      tb.className = 'status-badge';
+      tb.style.cssText = 'background:oklch(0.75 0.22 300)';
+      tb.textContent = '◆' + pkmn.TerType.substring(0, 3).toUpperCase();
+      nameEl.appendChild(tb);
+    }
+
+    // Sprite from PokeAPI
+    const icon = hud.querySelector('.icon');
+    if (icon && pkmn.SpeciesId) {
+      let img = icon.querySelector('img');
+      if (!img) { img = document.createElement('img'); img.style.cssText='position:absolute;inset:0;width:100%;height:100%;object-fit:contain;image-rendering:pixelated'; icon.appendChild(img); }
+      img.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pkmn.SpeciesId}.png`;
+    }
+  }
+
+  function statusAbbr(s) {
+    return { Burn:'BRN', Paralysis:'PAR', Poison:'PSN', Toxic:'TOX', Sleep:'SLP', Freeze:'FRZ', None:'' }[s] || s.substring(0,3).toUpperCase();
+  }
+
+  function updateWeatherUI(weather, turns) {
+    const el = $q('.weather-hud');
+    if (!el) return;
+    if (!weather || weather === 'None') { el.classList.remove('show'); return; }
+    el.classList.add('show');
+    const icons = { Sun:'☀', Rain:'🌧', Sandstorm:'🌪', Snow:'❄', Hail:'❄' };
+    el.querySelector('.wicon').textContent = icons[weather] || '?';
+    el.querySelector('.wname').textContent = weather.toUpperCase();
+    el.querySelector('.wturns').textContent = `${turns} TURNS LEFT`;
+  }
+
+  function updateTeamPips(hpArr, maxArr) {
+    const pips = $$('.pp-pips .pip');
+    if (!pips.length || !hpArr) return;
+    pips.forEach((pip, i) => pip.classList.toggle('off', i >= hpArr.length || hpArr[i] <= 0));
+  }
+
+  // ── PARTY SYNC ────────────────────────────────────────────────
+  function onPartyUpdated(party) {
+    const mons = $$('.party-grid .party-mon');
+    party.forEach((p, i) => {
+      const mon = mons[i]; if (!mon) return;
+      const pct = p.MaxHp > 0 ? p.Hp / p.MaxHp * 100 : 0;
+      const f = mon.querySelector('.hpfill');
+      if (f) { f.style.width = pct + '%'; f.className = 'hpfill' + (pct < 25 ? ' lo' : pct < 50 ? ' mid' : ''); }
+      const n = mon.querySelector('.phpnum');
+      if (n) n.textContent = `${p.Hp}/${p.MaxHp}`;
+    });
+  }
+
+  // ── TURN INPUT ────────────────────────────────────────────────
+  function startTurnInput() {
+    turnSlot = 0;
+    const slotA = dto?.YourSlotA;
+    if (!slotA || slotA.IsFainted) turnSlot = 1;
+    promptForSlot(turnSlot);
+  }
+
+  function promptForSlot(slot) {
+    const pkmn = slot === 0 ? dto?.YourSlotA : dto?.YourSlotB;
+    if (!pkmn || pkmn.IsFainted) { setPrompt('⏳ WAITING FOR OPPONENT...'); return; }
+    turnSlot = slot;
+    setPrompt(`▶ CHOOSE ACTION FOR <span style="color:var(--ally)">${pkmn.SpeciesName.toUpperCase()}</span>`);
+    setState('idle');
+  }
+
+  function onActionAccepted({ Slot }) {
+    submittedSlots.add(Slot);
+    const slotB = dto?.YourSlotB;
+    if (!submittedSlots.has(1) && slotB && !slotB.IsFainted) {
+      promptForSlot(1);
+    } else {
+      setPrompt('⏳ WAITING FOR OPPONENT...');
+    }
+  }
+
+  function setPrompt(html) {
+    const p = $q('.prompt');
+    if (p) p.innerHTML = html;
+  }
+
+  // ── FIGHT MENU ────────────────────────────────────────────────
+  function openFight() {
+    const pkmn = turnSlot === 0 ? dto?.YourSlotA : dto?.YourSlotB;
+    if (!pkmn) return;
+
+    const h3 = $q('.fight-card h3');
+    if (h3) h3.textContent = `⚔ ${pkmn.SpeciesName.toUpperCase()} · SELECT A MOVE`;
+
+    const grid = $q('.moves-grid');
+    grid.innerHTML = '';
+    (pkmn.Moves || []).forEach((mv, idx) => {
+      const tc = `t-${(mv.Type || 'normal').toLowerCase()}`;
+      const el = document.createElement('div');
+      el.className = 'move';
+      el.style.cssText = `--type-color: var(--${tc})`;
+      el.innerHTML = `
+        <div class="move-name">${mv.Name.replace(/-/g,' ').toUpperCase()}</div>
+        <div class="move-meta">
+          <span class="pill ${tc}">${(mv.Type || 'Normal').toUpperCase()}</span>
+          <span class="cat">${mv.Category}</span>
+          <span class="pp">PP ${mv.CurrentPp}/${mv.MaxPp}</span>
+        </div>`;
+      el.addEventListener('click', e => { e.stopPropagation(); pickMove(idx, mv); });
+      grid.appendChild(el);
+    });
+
+    // Info row
+    const infoRow = $q('.fight-info-row');
+    if (infoRow) {
+      const right = infoRow.querySelector('div:last-child');
+      if (right) right.textContent = '';
+    }
+    setState('fight');
+  }
+
+  // ── TARGET SELECT ─────────────────────────────────────────────
+  function pickMove(idx, mv) {
+    selMoveSlot = idx;
+    // Self-targeting or spread: skip target UI
+    if (mv.TargetType === 3 /* Self */) { doSendMove(idx, turnSlot === 0 ? 2 : 3); return; }
+    if (mv.TargetType === 1 /* SpreadOpponents */) { doSendMove(idx, 0); return; }
+    openTargetSelect(mv);
+  }
+
+  function openTargetSelect(mv) {
+    // Update move tab
+    const tab = $q('.target-move-tab');
+    if (tab) {
+      const tc = `t-${(mv.Type || 'normal').toLowerCase()}`;
+      tab.style.background = `var(--${tc})`;
+      tab.style.borderColor = `color-mix(in oklab, var(--${tc}) 60%, black)`;
+      tab.querySelector('span').textContent = mv.Name.replace(/-/g,' ').toUpperCase();
+    }
+
+    // Fill target cards
+    const [oppA, oppB] = $$('.target-row.opp .tcard');
+    const [plyA, plyB] = $$('.target-row.player .tcard');
+    fillTCard(oppA, dto?.OppSlotA,  0, mv);
+    fillTCard(oppB, dto?.OppSlotB,  1, mv);
+    fillTCard(plyA, dto?.YourSlotA, 2, mv);
+    fillTCard(plyB, dto?.YourSlotB, 3, mv);
+
+    setState('target');
+  }
+
+  function fillTCard(card, pkmn, targetSlot, mv) {
+    if (!card) return;
+    if (!pkmn || pkmn.IsFainted) { card.className = 'tcard empty'; card.onclick = null; return; }
+
+    card.className = 'tcard';
+
+    const nameEl = card.querySelector('.tcard-name');
+    if (nameEl) nameEl.innerHTML = `${pkmn.SpeciesName}`;
+
+    // HP
+    const pct = pkmn.MaxHp > 0 ? pkmn.CurrentHp / pkmn.MaxHp * 100 : 0;
+    const fill = card.querySelector('.hpfill');
+    if (fill) { fill.style.width = pct + '%'; fill.className = 'hpfill' + (pct < 25 ? ' lo' : pct < 50 ? ' mid' : ''); }
+    const hpEl = card.querySelector('.tcard-hp');
+    if (hpEl) hpEl.textContent = targetSlot <= 1 ? `${Math.round(pct)}%` : `${pkmn.CurrentHp}/${pkmn.MaxHp}`;
+
+    // Type effectiveness (client-side preview)
+    const mult = calcEff(mv.Type, pkmn.Type1, pkmn.Type2);
+    const eff = card.querySelector('.tcard-eff');
+    if (eff) {
+      if (mult === 0) { eff.className = 'tcard-eff immune'; eff.textContent = 'NO EFFECT'; }
+      else if (mult >= 2) { eff.className = 'tcard-eff super'; eff.textContent = 'SUPER EFF.'; }
+      else if (mult < 1)  { eff.className = 'tcard-eff weak';  eff.textContent = 'NOT V. EFF'; }
+      else                { eff.className = 'tcard-eff eff';   eff.textContent = 'EFFECTIVE'; }
+    }
+
+    // Sprite
+    const pic = card.querySelector('.tcard-pic');
+    if (pic && pkmn.SpeciesId) {
+      let img = pic.querySelector('img');
+      if (!img) { img = document.createElement('img'); img.style.cssText='width:100%;height:100%;object-fit:contain;image-rendering:pixelated'; pic.appendChild(img); }
+      img.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pkmn.SpeciesId}.png`;
+    }
+
+    card.onclick = e => { e.stopPropagation(); doSendMove(selMoveSlot, targetSlot); };
+  }
+
+  // Type chart (client-side for effectiveness preview)
+  const TC = {
+    normal:{rock:.5,ghost:0,steel:.5},fire:{fire:.5,water:.5,rock:.5,dragon:.5,grass:2,ice:2,bug:2,steel:2},
+    water:{water:.5,grass:.5,dragon:.5,fire:2,ground:2,rock:2},electric:{electric:.5,grass:.5,dragon:.5,ground:0,flying:2,water:2},
+    grass:{fire:.5,grass:.5,poison:.5,flying:.5,bug:.5,dragon:.5,steel:.5,water:2,ground:2,rock:2},
+    ice:{water:.5,ice:.5,steel:.5,fire:.5,dragon:2,flying:2,grass:2,ground:2},
+    fighting:{poison:.5,bug:.5,psychic:.5,flying:.5,fairy:.5,ghost:0,normal:2,ice:2,rock:2,dark:2,steel:2},
+    poison:{poison:.5,ground:.5,rock:.5,ghost:.5,steel:0,grass:2,fairy:2},
+    ground:{grass:.5,bug:.5,flying:0,fire:2,electric:2,poison:2,rock:2,steel:2},
+    flying:{electric:.5,rock:.5,steel:.5,grass:2,fighting:2,bug:2},
+    psychic:{psychic:.5,steel:.5,dark:0,fighting:2,poison:2},
+    bug:{fire:.5,fighting:.5,flying:.5,ghost:.5,steel:.5,fairy:.5,poison:.5,grass:2,psychic:2,dark:2},
+    rock:{fighting:.5,ground:.5,steel:.5,fire:2,ice:2,flying:2,bug:2},
+    ghost:{normal:0,dark:.5,ghost:2,psychic:2},dragon:{steel:.5,fairy:0,dragon:2},
+    dark:{fighting:.5,dark:.5,fairy:.5,ghost:2,psychic:2},steel:{fire:.5,water:.5,electric:.5,steel:.5,ice:2,rock:2,fairy:2},
+    fairy:{fire:.5,poison:.5,steel:.5,fighting:2,dragon:2,dark:2},
+  };
+  function calcEff(atkT, t1, t2) {
+    const c = TC[(atkT||'normal').toLowerCase()] || {};
+    let m = c[(t1||'').toLowerCase()] ?? 1;
+    if (t2) m *= c[t2.toLowerCase()] ?? 1;
+    return m;
+  }
+
+  // ── SEND ACTIONS ──────────────────────────────────────────────
+  async function doSendMove(moveSlot, targetSlot, useTera = false) {
+    setState('idle');
+    setPrompt('⏳ Submitting...');
+    try {
+      await bHub.invoke('SubmitBattleAction', battleId, turnSlot, 'Move', moveSlot, null, targetSlot, useTera);
+    } catch(e) { showDialog('⚠ ' + e.message, false); }
+  }
+
+  async function doSendSwitch(partyIdx) {
+    setState('idle');
+    try {
+      await bHub.invoke('SubmitBattleAction', battleId, turnSlot, 'Switch', null, partyIdx, 0, false);
+    } catch(e) { showDialog('⚠ ' + e.message, false); }
+  }
+
+  // ── TURN RESOLVED ─────────────────────────────────────────────
+  function onTurnResolved(result) {
+    const evs = (result.TypedEvents || []).filter(ev => !!fmtEvent(ev));
+    if (!evs.length) { syncHPFromResult(result); return; }
+
+    setState('dialog');
+    const box = $q('.dialog-box');
+    let i = 0;
+
+    function next() {
+      if (i >= evs.length) { syncHPFromResult(result); return; }
+      const ev = evs[i++];
+      box.innerHTML = fmtEvent(ev) + '<span class="caret">▼</span>';
+      const t = setTimeout(next, 1100);
+      box.onclick = () => { clearTimeout(t); next(); };
+    }
+    next();
+  }
+
+  function fmtEvent(ev) {
+    const map = {
+      MoveUsedEvent:       e => `${e.PokemonName} used <b>${e.MoveName}</b>!`,
+      PokemonDamageEvent:  e => `${e.PokemonName} took <b>${e.Damage}</b> damage!${e.IsCritical?' <b>Critical hit!</b>':''}`,
+      PokemonFaintEvent:   e => `<b>${e.PokemonName}</b> fainted!`,
+      SuperEffectiveEvent: _  => `It's super effective!`,
+      NotVeryEffectiveEvent:_ => `It's not very effective...`,
+      MoveNoEffectEvent:   e => `It had no effect on ${e.TargetName}!`,
+      MoveMissedEvent:     e => `${e.PokemonName}'s attack missed!`,
+      StatusInflictedEvent:e => `${e.PokemonName} became <b>${e.Status.toLowerCase()}</b>!`,
+      ParalysisStuckEvent: e => `${e.PokemonName} is paralyzed! It can't move!`,
+      SleepSkipEvent:      e => `${e.PokemonName} is fast asleep...`,
+      WeatherChangedEvent: e => `The weather changed to <b>${e.NewWeather}</b>!`,
+      WeatherEndedEvent:   e => `The ${e.EndedWeather} cleared up!`,
+      WeatherDamageEvent:  e => `${e.PokemonName} is buffeted by the ${e.Weather}!`,
+      TerastallizationEvent: e => `${e.PokemonName} <b>Terastallized</b> into the ${e.TerType} type! ◆`,
+      SwitchEvent:         e => `${e.WithdrawnPokemonName} was withdrawn!<br>Go, <b>${e.SentOutPokemonName}</b>!`,
+      StatChangeEvent:     e => `${e.PokemonName}'s ${e.Stat} ${e.Stages>0?'rose':'fell'}${Math.abs(e.Stages)>1?' sharply':''}!`,
+      TerrainChangedEvent: e => `${e.NewTerrain} Terrain spread across the field!`,
+      MessageEvent:        e => e.Message,
+    };
+    const fn = map[ev.EventType];
+    return fn ? fn(ev) : null;
+  }
+
+  function syncHPFromResult(result) {
+    if (!result || !dto) return;
+    // Update active HP bars using result HP values + dto max HP
+    const pairs = [
+      ['.hud.ally-hud.a1',  result.ActiveHp1,  dto.YourSlotA],
+      ['.hud.ally-hud.a2',  result.ActiveHp1b, dto.YourSlotB],
+      ['.hud.enemy-hud.e1', result.ActiveHp2,  dto.OppSlotA],
+      ['.hud.enemy-hud.e2', result.ActiveHp2b, dto.OppSlotB],
+    ];
+    pairs.forEach(([sel, hp, src]) => {
+      if (!src) return;
+      const maxHp = src.MaxHp;
+      const pct = maxHp > 0 ? hp / maxHp * 100 : 0;
+      const hud = $q(sel); if (!hud) return;
+      const fill = hud.querySelector('.hpfill');
+      if (fill) { fill.style.width = pct + '%'; fill.className = 'hpfill' + (pct < 25 ? ' lo' : pct < 50 ? ' mid' : ''); }
+      const num = hud.querySelector('.hpnum');
+      if (num) num.textContent = sel.includes('ally') ? `${hp} / ${maxHp}` : `${Math.round(pct)}%`;
+    });
+  }
+
+  // ── FORCED SWITCH ─────────────────────────────────────────────
+  function onForcedSwitch({ BattleId, Slot, AvailableIndices }) {
+    setState('party');
+    setPrompt(`⚑ Send out replacement for Slot ${Slot === 0 ? 'A' : 'B'}!`);
+    const grid = $q('.party-grid');
+    if (!grid) return;
+    $$('.party-grid .party-mon').forEach((mon, i) => {
+      const avail = AvailableIndices.includes(i);
+      mon.style.opacity = avail ? '1' : '.3';
+      mon.style.pointerEvents = avail ? '' : 'none';
+      if (avail) {
+        mon.onclick = async () => {
+          await bHub.invoke('SubmitForcedSwitch', BattleId, Slot, i);
+          setState('idle');
+          $$('.party-grid .party-mon').forEach(m => { m.style.opacity=''; m.style.pointerEvents=''; });
+        };
+      }
+    });
+  }
+
+  // ── BATTLE ENDED ─────────────────────────────────────────────
+  function onBattleEnded(endDto) {
+    const won = endDto.WinnerPlayerId === myPlayerId;
+    setState('dialog');
+    const box = $q('.dialog-box');
+    box.innerHTML = won
+      ? `<b>🏆 YOU WIN!</b><br>Congratulations, champion!`
+      : `<b>☠ YOU LOSE...</b><br>Better luck next time.`;
+    box.onclick = () => {
+      setState('idle');
+      $('net-overlay').style.display = 'flex';
+      $('net-lobby').style.display   = '';
+      $('net-login').style.display   = 'none';
+      resetFindBtn();
+      setLobbyStatus('Play again?');
+      dto = null; battleId = null;
+    };
+  }
+
+  function showDialog(msg, autoClear = true) {
+    setState('dialog');
+    $q('.dialog-box').innerHTML = msg;
+    if (autoClear) setTimeout(() => setState('idle'), 2500);
+  }
+
+  // ── WIRE EXISTING BUTTONS ─────────────────────────────────────
+  function wireButtons() {
+    // FIGHT button: open fight menu for current turn slot (capture phase)
+    $q('.action.fight')?.addEventListener('click', e => {
+      if (!dto) return;
+      e.stopImmediatePropagation();
+      openFight();
+    }, true);
+
+    // POKÉMON button: open party for switch
+    $q('.action.pkm')?.addEventListener('click', e => {
+      if (!dto) return;
+      e.stopImmediatePropagation();
+      const pkmn = turnSlot === 0 ? dto.YourSlotA : dto.YourSlotB;
+      if (pkmn) setPrompt(`Switch out <span style="color:var(--ally)">${pkmn.SpeciesName.toUpperCase()}</span> — pick replacement:`);
+      // Enable clickable party members (not active, not fainted)
+      $$('.party-grid .party-mon').forEach((mon, i) => {
+        const isActive  = mon.classList.contains('active');
+        const isFainted = mon.classList.contains('fainted');
+        mon.style.opacity       = (isActive || isFainted) ? '.35' : '1';
+        mon.style.pointerEvents = (isActive || isFainted) ? 'none' : '';
+        if (!isActive && !isFainted) mon.onclick = () => { doSendSwitch(i); setState('idle'); };
+      });
+      setState('party');
+    }, true);
+  }
+
+  return { doLogin, findMatch, cancelMatch, wireButtons };
+})();
+
+// Boot
+document.addEventListener('DOMContentLoaded', () => BattleNet.wireButtons());
 </script>
 
 </body>

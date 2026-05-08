@@ -59,7 +59,7 @@ namespace Game.Battle.EditorTools
         };
 
         // ─────────────────────────────────────────────────────────────────────
-        [MenuItem("Tools/Battle UI/🏆 Thiết Kế Lại Battle Scene (Champions Style)")]
+        [MenuItem("Pokemon/3. Setup Battle Scene (Old Style)")]
         public static void GenerateBattleScene()
         {
             if (Camera.main != null)
@@ -102,14 +102,14 @@ namespace Game.Battle.EditorTools
             }
 
             // ── BattleSystemRoot ─────────────────────────────────────────
-            GameObject root = new GameObject("🎮 BattleSystemRoot");
+            GameObject root = new GameObject("BattleSystemRoot", typeof(RectTransform));
             root.transform.SetParent(canvas.transform, false);
             SetStretch(root);
             BattleUIManager uiManager = root.AddComponent<BattleUIManager>();
             uiManager.panels = new System.Collections.Generic.List<BasePanel>();
 
             // GlobalHUDs root
-            GameObject globalHud = new GameObject("GlobalHUDs_Root (Nhóm Quản Lý Tắt Bật Nhanh)");
+            GameObject globalHud = new GameObject("GlobalHUDs_Root", typeof(RectTransform));
             globalHud.transform.SetParent(root.transform, false);
             SetStretch(globalHud);
             uiManager.globalHudRoot = globalHud;
@@ -144,7 +144,7 @@ namespace Game.Battle.EditorTools
                 AllyColor, new Vector2(1, 1), new Vector2(-28, -285), new Vector2(200, 85));
 
             // ── Top-left corner buttons (Forfeit / Info) ─────────────────
-            GameObject cornerGroup = new GameObject("CornerUI");
+            GameObject cornerGroup = new GameObject("CornerUI", typeof(RectTransform));
             cornerGroup.transform.SetParent(globalHud.transform, false);
             SetRect(cornerGroup, new Vector2(0, 1), new Vector2(0, 1), new Vector2(0, 1),
                 new Vector2(28, -28), new Vector2(260, 44));
@@ -155,7 +155,7 @@ namespace Game.Battle.EditorTools
                 bg9, LineColor, new Vector2(0, 0), new Vector2(0, 0), new Vector2(130, 0), new Vector2(44, 44));
 
             // ── Action buttons (bottom-right) ─────────────────────────────
-            GameObject actionsRoot = new GameObject("ActionMenuPanel (Nút bóng tròn)");
+            GameObject actionsRoot = new GameObject("ActionMenuPanel (Nút bóng tròn)", typeof(RectTransform));
             actionsRoot.transform.SetParent(root.transform, false);
             SetStretch(actionsRoot);
             BattleCommandPanel cmdPanel = actionsRoot.AddComponent<BattleCommandPanel>();
@@ -178,7 +178,7 @@ namespace Game.Battle.EditorTools
             uiManager.panels.Add(cmdPanel);
 
             // ── Dialog box (bottom, stays always visible) ─────────────────
-            GameObject dialogObj = new GameObject("DialogPanel");
+            GameObject dialogObj = new GameObject("DialogPanel", typeof(RectTransform));
             dialogObj.transform.SetParent(root.transform, false);
             var dialogRt = dialogObj.AddComponent<RectTransform>();
             dialogRt.anchorMin = new Vector2(0, 0);
@@ -197,7 +197,7 @@ namespace Game.Battle.EditorTools
             BattleDialogPanel dialogPanel = dialogObj.AddComponent<BattleDialogPanel>();
             dialogPanel.PanelType = BattlePanelType.Dialog;
 
-            GameObject dTextObj = new GameObject("Text");
+            GameObject dTextObj = new GameObject("Text", typeof(RectTransform));
             dTextObj.transform.SetParent(dialogObj.transform, false);
             SetRect(dTextObj, Vector2.zero, Vector2.one, new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(-40, -30));
             TextMeshProUGUI dTmp = dTextObj.AddComponent<TextMeshProUGUI>();
@@ -208,7 +208,7 @@ namespace Game.Battle.EditorTools
             uiManager.panels.Add(dialogPanel);
 
             // ── Fight / Skill panel (2×2 move grid, bottom-right overlay) ─
-            GameObject skillObj = new GameObject("SkillMenuPanel");
+            GameObject skillObj = new GameObject("SkillMenuPanel", typeof(RectTransform));
             skillObj.transform.SetParent(root.transform, false);
             SetRect(skillObj, new Vector2(1, 0), new Vector2(1, 0), new Vector2(1, 0),
                 new Vector2(-28, 28), new Vector2(940, 220));
@@ -220,7 +220,7 @@ namespace Game.Battle.EditorTools
             skillOutline.effectColor = AllyColor; skillOutline.effectDistance = new Vector2(2, -2);
 
             // Header label
-            GameObject skillHeader = new GameObject("Header");
+            GameObject skillHeader = new GameObject("Header", typeof(RectTransform));
             skillHeader.transform.SetParent(skillObj.transform, false);
             SetRect(skillHeader, new Vector2(0, 1), new Vector2(1, 1), new Vector2(0.5f, 1),
                 new Vector2(0, -4), new Vector2(-20, 28));
@@ -231,7 +231,7 @@ namespace Game.Battle.EditorTools
             headerTmp.alignment = TextAlignmentOptions.Center;
 
             // 2×2 grid container
-            GameObject gridObj = new GameObject("MovesGrid");
+            GameObject gridObj = new GameObject("MovesGrid", typeof(RectTransform));
             gridObj.transform.SetParent(skillObj.transform, false);
             SetRect(gridObj, new Vector2(0, 0), new Vector2(1, 1), new Vector2(0.5f, 0.5f),
                 new Vector2(0, -14), new Vector2(-20, -36));
@@ -305,7 +305,7 @@ namespace Game.Battle.EditorTools
 
             // ── Row 1: Icon | Name+Level | Gender ──────────────────────────
             // Icon frame (56×56, top-left)
-            GameObject iconFrame = new GameObject("Avatar_Box");
+            GameObject iconFrame = new GameObject("Avatar_Box", typeof(RectTransform));
             iconFrame.transform.SetParent(card.transform, false);
             SetRect(iconFrame, new Vector2(0, 1), new Vector2(0, 1), new Vector2(0, 1),
                 new Vector2(10, -10), new Vector2(56, 56));
@@ -317,14 +317,14 @@ namespace Game.Battle.EditorTools
             iconOutline.effectColor = new Color(accentColor.r, accentColor.g, accentColor.b, 0.35f);
             iconOutline.effectDistance = new Vector2(1, -1);
 
-            GameObject iconImg = new GameObject("Icon");
+            GameObject iconImg = new GameObject("Icon", typeof(RectTransform));
             iconImg.transform.SetParent(iconFrame.transform, false);
             SetStretch(iconImg);
             Image iconImage = iconImg.AddComponent<Image>();
             iconImage.color = Transparent; // filled by loader
 
             // Name text
-            GameObject nameObj = new GameObject("Name");
+            GameObject nameObj = new GameObject("Name", typeof(RectTransform));
             nameObj.transform.SetParent(card.transform, false);
             SetRect(nameObj, new Vector2(0, 1), new Vector2(1, 1), new Vector2(0, 1),
                 new Vector2(76, -10), new Vector2(-50, 26));
@@ -335,7 +335,7 @@ namespace Game.Battle.EditorTools
             nameTmp.alignment = TextAlignmentOptions.TopLeft;
 
             // Level text
-            GameObject lvlObj = new GameObject("Level");
+            GameObject lvlObj = new GameObject("Level", typeof(RectTransform));
             lvlObj.transform.SetParent(card.transform, false);
             SetRect(lvlObj, new Vector2(0, 1), new Vector2(1, 1), new Vector2(0, 1),
                 new Vector2(76, -32), new Vector2(-50, 18));
@@ -344,7 +344,7 @@ namespace Game.Battle.EditorTools
             lvlTmp.alignment = TextAlignmentOptions.TopLeft;
 
             // Gender text (top-right of card)
-            GameObject genderObj = new GameObject("Gender");
+            GameObject genderObj = new GameObject("Gender", typeof(RectTransform));
             genderObj.transform.SetParent(card.transform, false);
             SetRect(genderObj, new Vector2(1, 1), new Vector2(1, 1), new Vector2(1, 1),
                 new Vector2(-10, -10), new Vector2(28, 22));
@@ -354,7 +354,7 @@ namespace Game.Battle.EditorTools
 
             // ── Row 2: HP bar ──────────────────────────────────────────────
             // "HP" label
-            GameObject hpLabel = new GameObject("HP_Label");
+            GameObject hpLabel = new GameObject("HP_Label", typeof(RectTransform));
             hpLabel.transform.SetParent(card.transform, false);
             SetRect(hpLabel, new Vector2(0, 0), new Vector2(0, 0), new Vector2(0, 0),
                 new Vector2(10, 40), new Vector2(30, 18));
@@ -364,7 +364,7 @@ namespace Game.Battle.EditorTools
             hpLblTmp.alignment = TextAlignmentOptions.Left;
 
             // HP bar background
-            GameObject hpBarBg = new GameObject("HP_Fill_BG");
+            GameObject hpBarBg = new GameObject("HP_Fill_BG", typeof(RectTransform));
             hpBarBg.transform.SetParent(card.transform, false);
             SetRect(hpBarBg, new Vector2(0, 0), new Vector2(1, 0), new Vector2(0, 0),
                 new Vector2(46, 40), new Vector2(-100, 16));
@@ -372,7 +372,7 @@ namespace Game.Battle.EditorTools
             hpBarBgImg.color = new Color(0.039f, 0.051f, 0.133f, 0.9f);
 
             // HP fill image
-            GameObject hpFill = new GameObject("HP_Fill_Image");
+            GameObject hpFill = new GameObject("HP_Fill_Image", typeof(RectTransform));
             hpFill.transform.SetParent(hpBarBg.transform, false);
             SetStretch(hpFill);
             Image hpFillImg = hpFill.AddComponent<Image>();
@@ -384,7 +384,7 @@ namespace Game.Battle.EditorTools
             hpFillImg.fillAmount = 1f;
 
             // HP shine line (decorative, not interactive)
-            GameObject hpShine = new GameObject("HP_Shine");
+            GameObject hpShine = new GameObject("HP_Shine", typeof(RectTransform));
             hpShine.transform.SetParent(hpBarBg.transform, false);
             SetRect(hpShine, new Vector2(0, 0.6f), new Vector2(1, 1), new Vector2(0.5f, 0.5f),
                 Vector2.zero, Vector2.zero);
@@ -392,7 +392,7 @@ namespace Game.Battle.EditorTools
             shineImg.color = new Color(1, 1, 1, 0.06f);
 
             // HP number (right side)
-            GameObject hpNum = new GameObject("HP_Value");
+            GameObject hpNum = new GameObject("HP_Value", typeof(RectTransform));
             hpNum.transform.SetParent(card.transform, false);
             SetRect(hpNum, new Vector2(1, 0), new Vector2(1, 0), new Vector2(1, 0),
                 new Vector2(-8, 38), new Vector2(90, 20));
@@ -448,7 +448,7 @@ namespace Game.Battle.EditorTools
             badgeImg.sprite = bg9; badgeImg.type = Image.Type.Sliced;
             badgeImg.color = TypeColor(typeName);
 
-            GameObject txtObj = new GameObject("Text");
+            GameObject txtObj = new GameObject("Text", typeof(RectTransform));
             txtObj.transform.SetParent(badge.transform, false);
             SetStretch(txtObj);
             TextMeshProUGUI txtTmp = txtObj.AddComponent<TextMeshProUGUI>();
@@ -479,7 +479,7 @@ namespace Game.Battle.EditorTools
             button.colors = cb;
 
             // Left type accent bar (6px wide)
-            GameObject accent = new GameObject("TypeAccent");
+            GameObject accent = new GameObject("TypeAccent", typeof(RectTransform));
             accent.transform.SetParent(btn.transform, false);
             SetRect(accent, Vector2.zero, new Vector2(0, 1), new Vector2(0, 0.5f),
                 Vector2.zero, new Vector2(6, 0));
@@ -487,7 +487,7 @@ namespace Game.Battle.EditorTools
             accentImg.color = TypeColor(typeName);
 
             // Move name
-            GameObject nameObj = new GameObject("MoveName");
+            GameObject nameObj = new GameObject("MoveName", typeof(RectTransform));
             nameObj.transform.SetParent(btn.transform, false);
             SetRect(nameObj, new Vector2(0, 1), new Vector2(1, 1), new Vector2(0, 1),
                 new Vector2(12, -8), new Vector2(-12, 28));
@@ -497,7 +497,7 @@ namespace Game.Battle.EditorTools
             nameTmp.alignment = TextAlignmentOptions.TopLeft;
 
             // Meta row: type badge + category + PP
-            GameObject metaRow = new GameObject("MetaRow");
+            GameObject metaRow = new GameObject("MetaRow", typeof(RectTransform));
             metaRow.transform.SetParent(btn.transform, false);
             SetRect(metaRow, new Vector2(0, 0), new Vector2(1, 0), new Vector2(0, 0),
                 new Vector2(12, 8), new Vector2(-12, 22));
@@ -510,14 +510,14 @@ namespace Game.Battle.EditorTools
             var (_, _typeTxt) = BuildTypeBadge(metaRow.transform, typeName, bg9);
 
             // Category label
-            GameObject catObj = new GameObject("Category");
+            GameObject catObj = new GameObject("Category", typeof(RectTransform));
             catObj.transform.SetParent(metaRow.transform, false);
             LayoutElement catLE = catObj.AddComponent<LayoutElement>();
             catLE.preferredWidth = 60; catLE.preferredHeight = 18;
             Image catBg = catObj.AddComponent<Image>();
             catBg.sprite = bg9; catBg.type = Image.Type.Sliced;
             catBg.color = new Color(1, 1, 1, 0.1f);
-            GameObject catTxtObj = new GameObject("Text"); catTxtObj.transform.SetParent(catObj.transform, false);
+            GameObject catTxtObj = new GameObject("Text", typeof(RectTransform)); catTxtObj.transform.SetParent(catObj.transform, false);
             SetStretch(catTxtObj);
             TextMeshProUGUI catTmp = catTxtObj.AddComponent<TextMeshProUGUI>();
             catTmp.text = category.ToUpper(); catTmp.color = InkDim;
@@ -525,7 +525,7 @@ namespace Game.Battle.EditorTools
             catTmp.alignment = TextAlignmentOptions.Center;
 
             // PP label
-            GameObject ppObj = new GameObject("PP");
+            GameObject ppObj = new GameObject("PP", typeof(RectTransform));
             ppObj.transform.SetParent(metaRow.transform, false);
             LayoutElement ppLE = ppObj.AddComponent<LayoutElement>();
             ppLE.preferredWidth = 70; ppLE.preferredHeight = 18;
@@ -565,7 +565,7 @@ namespace Game.Battle.EditorTools
             button.colors = cb;
 
             // Glyph text
-            GameObject glyphObj = new GameObject("Glyph");
+            GameObject glyphObj = new GameObject("Glyph", typeof(RectTransform));
             glyphObj.transform.SetParent(btn.transform, false);
             SetRect(glyphObj, Vector2.zero, Vector2.one, new Vector2(0.5f, 0.5f), new Vector2(0, 10), Vector2.zero);
             TextMeshProUGUI glyphTmp = glyphObj.AddComponent<TextMeshProUGUI>();
@@ -574,14 +574,14 @@ namespace Game.Battle.EditorTools
             glyphTmp.alignment = TextAlignmentOptions.Center;
 
             // Label below button
-            GameObject labelObj = new GameObject("Label");
+            GameObject labelObj = new GameObject("Label", typeof(RectTransform));
             labelObj.transform.SetParent(btn.transform, false);
             SetRect(labelObj, new Vector2(0, 0), new Vector2(1, 0), new Vector2(0.5f, 1),
                 new Vector2(0, -18), new Vector2(0, 22));
             Image labelBg = labelObj.AddComponent<Image>();
             labelBg.sprite = knob; // reuse knob as rounded label bg
             labelBg.color = deepColor;
-            GameObject labelTxtObj = new GameObject("Text");
+            GameObject labelTxtObj = new GameObject("Text", typeof(RectTransform));
             labelTxtObj.transform.SetParent(labelObj.transform, false);
             SetStretch(labelTxtObj);
             TextMeshProUGUI labelTmp = labelTxtObj.AddComponent<TextMeshProUGUI>();
@@ -608,7 +608,7 @@ namespace Game.Battle.EditorTools
             Outline border = panel.AddComponent<Outline>();
             border.effectColor = borderColor; border.effectDistance = new Vector2(1, -1);
 
-            GameObject lblObj = new GameObject("Label");
+            GameObject lblObj = new GameObject("Label", typeof(RectTransform));
             lblObj.transform.SetParent(panel.transform, false);
             SetRect(lblObj, new Vector2(0, 1), new Vector2(1, 1), new Vector2(0.5f, 1),
                 new Vector2(0, -6), new Vector2(-10, 18));
@@ -616,7 +616,7 @@ namespace Game.Battle.EditorTools
             lblTmp.text = label; lblTmp.color = InkDim; lblTmp.fontSize = 8;
             lblTmp.fontStyle = FontStyles.Bold; lblTmp.alignment = TextAlignmentOptions.Center;
 
-            GameObject valObj = new GameObject("Value");
+            GameObject valObj = new GameObject("Value", typeof(RectTransform));
             valObj.transform.SetParent(panel.transform, false);
             SetRect(valObj, Vector2.zero, Vector2.one, new Vector2(0.5f, 0.5f),
                 new Vector2(0, 4), new Vector2(-10, -18));
@@ -643,7 +643,7 @@ namespace Game.Battle.EditorTools
             border.effectColor = borderColor; border.effectDistance = new Vector2(1, -1);
             btn.AddComponent<Button>();
 
-            GameObject txtObj = new GameObject("Text"); txtObj.transform.SetParent(btn.transform, false);
+            GameObject txtObj = new GameObject("Text", typeof(RectTransform)); txtObj.transform.SetParent(btn.transform, false);
             SetStretch(txtObj);
             TextMeshProUGUI tmp = txtObj.AddComponent<TextMeshProUGUI>();
             tmp.text = label; tmp.color = InkColor; tmp.fontSize = 14;
@@ -665,7 +665,7 @@ namespace Game.Battle.EditorTools
             img.sprite = bg9; img.type = Image.Type.Sliced; img.color = bgColor;
             Button button = btn.AddComponent<Button>();
 
-            GameObject txtObj = new GameObject("Text"); txtObj.transform.SetParent(btn.transform, false);
+            GameObject txtObj = new GameObject("Text", typeof(RectTransform)); txtObj.transform.SetParent(btn.transform, false);
             SetStretch(txtObj);
             TextMeshProUGUI tmp = txtObj.AddComponent<TextMeshProUGUI>();
             tmp.text = label; tmp.color = textColor; tmp.fontSize = fontSize;
@@ -691,7 +691,7 @@ namespace Game.Battle.EditorTools
             sr.sortingOrder = pos.y > 0 ? -1 : 1;
 
             // Shadow ellipse
-            GameObject shadow = new GameObject("Ground_Shadow");
+            GameObject shadow = new GameObject("Ground_Shadow", typeof(RectTransform));
             shadow.transform.SetParent(slot.transform);
             shadow.transform.localPosition = new Vector3(0, -0.6f, 0);
             shadow.transform.localScale = new Vector3(1f, 0.3f, 1f);
@@ -700,7 +700,7 @@ namespace Game.Battle.EditorTools
             shadowSr.color = new Color(0, 0, 0, 0.4f);
 
             // World-space label
-            GameObject lbl = new GameObject("Label_Slot");
+            GameObject lbl = new GameObject("Label_Slot", typeof(RectTransform));
             lbl.transform.SetParent(slot.transform);
             lbl.transform.localPosition = new Vector3(0, 0.8f, 0);
             lbl.transform.localScale = new Vector3(0.04f, 0.04f, 1f);
@@ -722,10 +722,21 @@ namespace Game.Battle.EditorTools
 
         static void SetStretch(GameObject go)
         {
-            RectTransform rt = go.GetComponent<RectTransform>() ?? go.AddComponent<RectTransform>();
+            // Unity 6: GetComponent sau khi SetParent canvas, hoặc đã có từ constructor
+            RectTransform rt = go.GetComponent<RectTransform>();
+            if (rt == null) rt = go.AddComponent<RectTransform>();
+            if (rt == null) { Debug.LogWarning($"[Setup] No RectTransform on {go.name}"); return; }
             rt.anchorMin = Vector2.zero; rt.anchorMax = Vector2.one;
             rt.offsetMin = Vector2.zero; rt.offsetMax = Vector2.zero;
-            rt.pivot = new Vector2(0.5f, 0.5f);
+            rt.pivot     = new Vector2(0.5f, 0.5f);
+        }
+
+        // Tạo GameObject UI với RectTransform sẵn (Unity 6 cần typeof trong constructor)
+        static GameObject UIObj(string name, Transform parent)
+        {
+            var go = new GameObject(name, typeof(RectTransform));
+            go.transform.SetParent(parent, false);
+            return go;
         }
     }
 }

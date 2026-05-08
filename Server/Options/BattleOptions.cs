@@ -17,4 +17,5 @@ public class BattleOptions
     public int WinnerMmrGain { get; set; } = 25;
     public int LoserMmrLoss { get; set; } = 20;
     public int WinnerVpGain { get; set; } = 10;
+    public int BotFallbackSeconds { get; set; } = 20;
 }

@@ -107,6 +107,88 @@ public class BattleService
     public BattleSession? GetSession(string battleId)
         => _sessions.TryGetValue(battleId, out var s) ? s : null;
 
+    /// <summary>Returns sessions in Running state where the turn deadline has expired.</summary>
+    public IEnumerable<BattleSession> GetExpiredSessions()
+        => _sessions.Values.Where(s =>
+            s.State == BattleState.Running &&
+            s.TurnDeadlineUtc < DateTime.UtcNow &&
+            !AllActionsSubmitted(s));
+
+    /// <summary>
+    /// Auto-fills missing actions with a default move, then resolves the turn.
+    /// Returns null if the session state changed before this could act.
+    /// </summary>
+    public async Task<BattleTurnResult?> TryAutoResolveExpiredTurn(BattleSession session)
+    {
+        if (session.State != BattleState.Running) return null;
+        if (AllActionsSubmitted(session)) return null;
+
+        AutoFillMissingPlayerActions(session);
+        BotFillActions(session);
+
+        if (!AllActionsSubmitted(session)) return null;
+
+        var result = await ResolveTurn(session);
+        BotResolveForcedSwitches(session);
+
+        if (session.State == BattleState.ForcedSwitch && session.PendingForcedSwitches.Count == 0)
+        {
+            session.State = BattleState.Running;
+            session.TurnNumber++;
+            session.TurnDeadlineUtc = DateTime.UtcNow.AddSeconds(_opts.TurnTimeoutSeconds);
+            result.State = session.State;
+        }
+        return result;
+    }
+
+    private void AutoFillMissingPlayerActions(BattleSession session)
+    {
+        foreach (var (playerId, slot) in AllActiveSlots(session))
+        {
+            string key = $"{playerId}:{slot}";
+            if (session.PendingActions.ContainsKey(key)) continue;
+
+            var pokemon = GetActiveSlot(session, playerId, slot);
+            if (pokemon == null || pokemon.IsFainted) continue;
+
+            // First move with PP, else slot 0 (Struggle fallback)
+            int moveSlot = 0;
+            for (int i = 0; i < pokemon.Moves.Count; i++)
+                if (pokemon.Moves[i].CurrentPp > 0) { moveSlot = i; break; }
+
+            var oppId     = GetOpponentId(session, playerId);
+            var tA        = GetActiveSlot(session, oppId, 0);
+            int targetSlot = tA != null && !tA.IsFainted ? 0 : 1;
+
+            session.PendingActions[key] = new BattleAction
+            {
+                PlayerId    = playerId,
+                Type        = BattleActionType.Move,
+                SourceIndex = slot,
+                MoveSlot    = moveSlot,
+                TargetSlot  = targetSlot,
+            };
+        }
+    }
+
+    /// <summary>Returns available bench indices a player can send in for a forced switch.</summary>
+    public List<int> GetAvailableReplacements(BattleSession session, string playerId, int faintedSlot)
+    {
+        var team    = playerId == session.Player1Id ? session.Team1 : session.Team2;
+        int activeA = GetActiveIndex(session, playerId, 0);
+        int activeB = GetActiveIndex(session, playerId, 1);
+        return team
+            .Select((p, i) => (p, i))
+            .Where(x => !x.p.IsFainted && x.i != activeA && x.i != activeB)
+            .Select(x => x.i)
+            .ToList();
+    }
+
+    public const string BotPlayerId = "BOT_PLAYER";
+
+    // Species IDs dùng cho bot team (6 Pokemon, bring 4)
+    private static readonly int[] BotSpeciesIds = { 6, 9, 150, 445, 282, 248 };
+
     public async Task<BattleSession> CreateBattle(string player1Id, string player2Id)
     {
         var session = new BattleSession
@@ -117,13 +199,97 @@ public class BattleService
         };
 
         session.Team1 = await LoadTeamSnapshots(player1Id);
-        session.Team2 = await LoadTeamSnapshots(player2Id);
 
-        // Pre-load move data for all party Pokemon
+        // Bot không có Pokemon trong DB → tự generate team
+        if (player2Id == BotPlayerId)
+        {
+            session.Team2 = await GenerateBotTeam();
+        }
+        else
+        {
+            session.Team2 = await LoadTeamSnapshots(player2Id);
+        }
+
+        // Pre-load move data
         await PreloadMoveData(session.Team1.Concat(session.Team2));
+
+        // Nếu có Bot -> tự động submit phần của Bot, người chơi vẫn phải tự chọn TeamPreview
+        if (player1Id == BotPlayerId)
+        {
+            var t1Count = Math.Min(BringCount, session.Team1.Count);
+            session.TeamOrder1 = Enumerable.Range(0, t1Count).ToList();
+        }
+        if (player2Id == BotPlayerId)
+        {
+            var t2Count = Math.Min(BringCount, session.Team2.Count);
+            session.TeamOrder2 = Enumerable.Range(0, t2Count).ToList();
+        }
 
         _sessions[session.BattleId] = session;
         return session;
+    }
+
+    /// <summary>Generate một team 6 Pokemon từ Pokedex cho Bot.</summary>
+    private async Task<List<BattlePokemonSnapshot>> GenerateBotTeam()
+    {
+        var snapshots = new List<BattlePokemonSnapshot>();
+        var allMoveIds = new List<int>();
+
+        foreach (var speciesId in BotSpeciesIds)
+        {
+            var dex = await _db.Pokedex.Find(d => d.Id == speciesId).FirstOrDefaultAsync();
+            if (dex == null) continue;
+
+            int baseHp  = dex.BaseStats.GetValueOrDefault("hp", 80);
+            int baseAtk = dex.BaseStats.GetValueOrDefault("attack", 80);
+            int baseDef = dex.BaseStats.GetValueOrDefault("defense", 80);
+            int baseSpa = dex.BaseStats.GetValueOrDefault("special-attack", 80);
+            int baseSpd = dex.BaseStats.GetValueOrDefault("special-defense", 80);
+            int baseSpe = dex.BaseStats.GetValueOrDefault("speed", 80);
+
+            int hp = ComputeHp(baseHp, 31, 0);
+
+            // Lấy 4 moves từ DefaultMoves hoặc 4 moves đầu trong DB
+            var moveset = dex.DefaultMoves?.Take(4).ToList() ?? new List<int>();
+            if (moveset.Count < 4)
+            {
+                var dbMoves = await _db.Moves.Find(_ => true).Limit(4).ToListAsync();
+                moveset = dbMoves.Select(m => m.Id).ToList();
+            }
+            allMoveIds.AddRange(moveset);
+
+            string t1 = dex.Types.Count > 0 ? dex.Types[0] : "normal";
+            string? t2 = dex.Types.Count > 1 ? dex.Types[1] : null;
+            string botName = !string.IsNullOrEmpty(dex.Name) ? dex.Name : $"Pokemon#{speciesId}";
+
+            snapshots.Add(new BattlePokemonSnapshot
+            {
+                InstanceId  = $"bot_{speciesId}",
+                SpeciesId   = speciesId,
+                SpeciesName = botName,
+                Nickname    = botName,
+                Level       = BattleLevel,
+                MaxHp       = hp, CurrentHp = hp,
+                Type1 = t1, Type2 = t2, OrigType1 = t1, OrigType2 = t2,
+                TerType = t1,
+                Atk   = ComputeStat(baseAtk, 31, 0, 1.0),
+                Def   = ComputeStat(baseDef, 31, 0, 1.0),
+                SpAtk = ComputeStat(baseSpa, 31, 0, 1.0),
+                SpDef = ComputeStat(baseSpd, 31, 0, 1.0),
+                Spd   = ComputeStat(baseSpe, 31, 0, 1.0),
+                Moves = moveset.Select(id => new PokemonMove { MoveId = id, CurrentPp = 15, MaxPp = 15 }).ToList(),
+            });
+        }
+
+        // Preload moves for bot team
+        var missing = allMoveIds.Distinct().Where(id => !_moveCache.ContainsKey(id)).ToList();
+        if (missing.Any())
+        {
+            var entries = await _db.Moves.Find(m => missing.Contains(m.Id)).ToListAsync();
+            foreach (var e in entries) _moveCache[e.Id] = e;
+        }
+
+        return snapshots;
     }
 
     /// <summary>
@@ -207,9 +373,22 @@ public class BattleService
         string key = $"{playerId}:{action.SourceIndex}";
         session.PendingActions[key] = action;
 
+        // Bot battle: auto-fill bot actions immediately after human submits
+        BotFillActions(session);
+
         if (AllActionsSubmitted(session))
         {
             var result = await ResolveTurn(session);
+            // After turn: auto-resolve bot forced switches
+            BotResolveForcedSwitches(session);
+            // If bot resolved ALL forced switches, transition back to Running immediately
+            if (session.State == BattleState.ForcedSwitch && session.PendingForcedSwitches.Count == 0)
+            {
+                session.State = BattleState.Running;
+                session.TurnNumber++;
+                session.TurnDeadlineUtc = DateTime.UtcNow.AddSeconds(_opts.TurnTimeoutSeconds);
+                result.State = session.State;
+            }
             return (session, result);
         }
 
@@ -226,6 +405,9 @@ public class BattleService
         var session = GetSessionOrThrow(battleId);
         if (session.State != BattleState.ForcedSwitch)
             throw new InvalidOperationException("Battle is not in ForcedSwitch phase.");
+
+        // Bot battles: auto-resolve bot's forced switches first
+        BotResolveForcedSwitches(session);
 
         string key = $"{playerId}:{slot}";
         if (!session.PendingForcedSwitches.Contains(key))
@@ -248,6 +430,9 @@ public class BattleService
         SetActiveIndex(session, playerId, slot, partyIndex);
         session.PendingForcedSwitches.Remove(key);
 
+        // Auto-resolve remaining bot forced switches
+        BotResolveForcedSwitches(session);
+
         if (session.PendingForcedSwitches.Count == 0)
         {
             session.State = BattleState.Running;
@@ -257,6 +442,110 @@ public class BattleService
         }
 
         return (session, false);
+    }
+
+    // ═══════════════════════════════════════════════════════════════════════
+    // Bot AI
+    // ═══════════════════════════════════════════════════════════════════════
+
+    private bool IsBotBattle(BattleSession s) =>
+        s.Player1Id == BotPlayerId || s.Player2Id == BotPlayerId;
+
+    private string BotId(BattleSession s) =>
+        s.Player1Id == BotPlayerId ? s.Player1Id : s.Player2Id;
+
+    private string HumanId(BattleSession s) =>
+        s.Player1Id == BotPlayerId ? s.Player2Id : s.Player1Id;
+
+    /// <summary>Bot tự điền actions cho mọi slot chưa có action.</summary>
+    private void BotFillActions(BattleSession session)
+    {
+        if (!IsBotBattle(session)) return;
+
+        string botId   = BotId(session);
+        string humanId = HumanId(session);
+
+        for (int slot = 0; slot <= 1; slot++)
+        {
+            string key = $"{botId}:{slot}";
+            if (session.PendingActions.ContainsKey(key)) continue;
+
+            var botPkm = GetActiveSlot(session, botId, slot);
+            if (botPkm == null || botPkm.IsFainted) continue;
+
+            // Chọn move có PP còn lại, ưu tiên move có power cao nhất
+            int moveSlot = 0;
+            if (botPkm.Moves.Count > 0)
+            {
+                int best = -1; int bestPow = -1;
+                for (int i = 0; i < botPkm.Moves.Count; i++)
+                {
+                    var m = botPkm.Moves[i];
+                    if (m.CurrentPp <= 0) continue;
+                    int pow = _moveCache.TryGetValue(m.MoveId, out var entry) ? (entry.Power ?? 0) : 0;
+                    if (pow > bestPow) { bestPow = pow; best = i; }
+                }
+                moveSlot = best >= 0 ? best : 0;
+            }
+
+            // Chọn target: ưu tiên human slot có HP thấp hơn
+            int targetSlot = 0;
+            var tA = GetActiveSlot(session, humanId, 0);
+            var tB = GetActiveSlot(session, humanId, 1);
+            bool aAlive = tA != null && !tA.IsFainted;
+            bool bAlive = tB != null && !tB.IsFainted;
+
+            if (!aAlive && bAlive)       targetSlot = 1;
+            else if (aAlive && !bAlive)  targetSlot = 0;
+            else if (aAlive && bAlive)
+            {
+                // target Pokemon có HP thấp hơn (dễ KO hơn)
+                float pctA = (float)tA!.CurrentHp / tA.MaxHp;
+                float pctB = (float)tB!.CurrentHp / tB.MaxHp;
+                targetSlot = pctA <= pctB ? 0 : 1;
+            }
+
+            session.PendingActions[key] = new BattleAction
+            {
+                PlayerId    = botId,
+                Type        = BattleActionType.Move,
+                SourceIndex = slot,
+                MoveSlot    = moveSlot,
+                TargetSlot  = targetSlot,
+            };
+        }
+    }
+
+    /// <summary>Tự động thay Pokemon cho bot khi bị hạ gục.</summary>
+    private void BotResolveForcedSwitches(BattleSession session)
+    {
+        if (!IsBotBattle(session)) return;
+
+        string botId = BotId(session);
+        var botKeys  = session.PendingForcedSwitches
+            .Where(k => k.StartsWith($"{botId}:"))
+            .ToList();
+
+        foreach (var fsKey in botKeys)
+        {
+            int slot     = int.Parse(fsKey.Split(':')[1]);
+            var team     = botId == session.Player1Id ? session.Team1 : session.Team2;
+            int activeA  = GetActiveIndex(session, botId, 0);
+            int activeB  = GetActiveIndex(session, botId, 1);
+
+            // Chọn Pokemon có HP cao nhất trong bench
+            var replacement = team
+                .Select((p, i) => (p, i))
+                .Where(x => !x.p.IsFainted && x.i != activeA && x.i != activeB)
+                .OrderByDescending(x => (float)x.p.CurrentHp / x.p.MaxHp)
+                .FirstOrDefault();
+
+            if (replacement.p != null)
+            {
+                SetActiveIndex(session, botId, slot, replacement.i);
+                session.PendingForcedSwitches.Remove(fsKey);
+            }
+        }
     }
 
     // ═══════════════════════════════════════════════════════════════════════
@@ -472,42 +761,50 @@ public class BattleService
             if (targets.Count == 0) return;
         }
 
-        // Accuracy check (moves with null/0 accuracy always hit)
-        if (move.Accuracy.HasValue && move.Accuracy.Value > 0)
-        {
-            double hitChance = move.Accuracy.Value / 100.0
-                * attacker.GetStageMultiplier(StatIndex.ACC)
-                / (targets.FirstOrDefault() is { } t0
-                    ? GetActiveSlot(session, t0.OwnerId, t0.Slot)?.GetStageMultiplier(StatIndex.EVA) ?? 1.0
-                    : 1.0);
-
-            if (_rng.NextDouble() > hitChance)
-            {
-                events.Add(new MoveMissedEvent
-                {
-                    UserId      = action.PlayerId,
-                    PokemonName = attacker.SpeciesName,
-                    MoveName    = move.Name,
-                });
-                return;
-            }
-        }
-
         bool isSpread = targets.Count > 1 && move.TargetType == MoveTargetType.SpreadOpponents;
 
         if (moveCategory.Equals("Status", StringComparison.OrdinalIgnoreCase))
         {
+            // Single accuracy check for status moves (vs first target's evasion)
+            if (move.Accuracy.HasValue && move.Accuracy.Value > 0)
+            {
+                var t0 = targets.FirstOrDefault();
+                var firstDef = t0 != null ? GetActiveSlot(session, t0.OwnerId, t0.Slot) : null;
+                double hitChance = move.Accuracy.Value / 100.0
+                    * attacker.GetStageMultiplier(StatIndex.ACC)
+                    / (firstDef?.GetStageMultiplier(StatIndex.EVA) ?? 1.0);
+                if (_rng.NextDouble() > hitChance)
+                {
+                    events.Add(new MoveMissedEvent { UserId = action.PlayerId, PokemonName = attacker.SpeciesName, MoveName = move.Name });
+                    return;
+                }
+            }
             ApplyStatusMoveEffect(session, action.PlayerId, attacker, targets, move, events);
         }
         else
         {
+            // Secondary effect chance: use move data if available, else default 10%
+            double effectChance = move.EffectChance > 0 ? move.EffectChance / 100.0 : 0.10;
+
             foreach (var tRef in targets)
             {
                 var defender = GetActiveSlot(session, tRef.OwnerId, tRef.Slot);
                 if (defender == null || defender.IsFainted) continue;
 
-                double typeEff = GetTypeEffectiveness(moveType, defender);
+                // Per-target accuracy check for damaging moves
+                if (move.Accuracy.HasValue && move.Accuracy.Value > 0)
+                {
+                    double hitChance = move.Accuracy.Value / 100.0
+                        * attacker.GetStageMultiplier(StatIndex.ACC)
+                        / defender.GetStageMultiplier(StatIndex.EVA);
+                    if (_rng.NextDouble() > hitChance)
+                    {
+                        events.Add(new MoveMissedEvent { UserId = action.PlayerId, PokemonName = attacker.SpeciesName, MoveName = move.Name });
+                        continue;
+                    }
+                }
 
+                double typeEff = GetTypeEffectiveness(moveType, defender);
                 if (typeEff == 0)
                 {
                     events.Add(new MoveNoEffectEvent { TargetName = defender.SpeciesName });
@@ -522,8 +819,7 @@ public class BattleService
 
                 ApplyDamage(session, tRef.OwnerId, defender, damage, events, isCrit, typeEff);
 
-                // Secondary effect on damaging move (10% chance)
-                if (!string.IsNullOrEmpty(move.Effect) && _rng.NextDouble() < 0.10)
+                if (!string.IsNullOrEmpty(move.Effect) && _rng.NextDouble() < effectChance)
                     TryInflictStatus(session, tRef.OwnerId, defender, move.Effect, events);
             }
         }
@@ -601,11 +897,21 @@ public class BattleService
                 new(opp, 0), new(opp, 1),
                 new(self, action.SourceIndex == 0 ? 1 : 0),
             ],
-            MoveTargetType.RandomOpponent => _rng.NextDouble() < 0.5
-                ? [new(opp, 0)]
-                : [new(opp, 1)],
+            MoveTargetType.RandomOpponent => PickRandomOpponentTarget(session, opp),
             _ => [new(opp, 0)],
         };
+    }
+
+    private List<TargetRef> PickRandomOpponentTarget(BattleSession session, string oppId)
+    {
+        var slotA = GetActiveSlot(session, oppId, 0);
+        var slotB = GetActiveSlot(session, oppId, 1);
+        bool aAlive = slotA != null && !slotA.IsFainted;
+        bool bAlive = slotB != null && !slotB.IsFainted;
+        if (aAlive && bAlive) return [_rng.NextDouble() < 0.5 ? new(oppId, 0) : new(oppId, 1)];
+        if (aAlive) return [new(oppId, 0)];
+        if (bAlive) return [new(oppId, 1)];
+        return [];
     }
 
     // ── Damage calculation ───────────────────────────────────────────────────
@@ -866,6 +1172,15 @@ public class BattleService
             return;
         }
 
+        // Gen 9: Ice types cannot be frozen
+        if (status == PokemonStatusCondition.Freeze &&
+            (pokemon.Type1.Equals("ice", StringComparison.OrdinalIgnoreCase) ||
+             pokemon.Type2?.Equals("ice", StringComparison.OrdinalIgnoreCase) == true))
+        {
+            events.Add(new StatusBlockedEvent { PokemonName = pokemon.SpeciesName, Reason = "immune" });
+            return;
+        }
+
         pokemon.NonVolatileStatus = status.Value;
 
         if (status == PokemonStatusCondition.Sleep)
@@ -1106,12 +1421,17 @@ public class BattleService
             string type1 = dex.Types.Count > 0 ? dex.Types[0] : "normal";
             string? type2 = dex.Types.Count > 1 ? dex.Types[1] : null;
 
+            // Ưu tiên: dex.Name → Nickname → "Pokemon#ID"
+            string speciesName = !string.IsNullOrEmpty(dex.Name)    ? dex.Name
+                               : !string.IsNullOrEmpty(inst.Nickname) ? inst.Nickname
+                               : $"Pokemon#{inst.SpeciesId}";
+
             var snap = new BattlePokemonSnapshot
             {
                 InstanceId  = inst.Id,
                 SpeciesId   = inst.SpeciesId,
-                SpeciesName = dex.Name,
-                Nickname    = inst.Nickname,
+                SpeciesName = speciesName,
+                Nickname    = !string.IsNullOrEmpty(inst.Nickname) ? inst.Nickname : speciesName,
                 Level       = BattleLevel,
                 MaxHp       = hp,
                 CurrentHp   = currentHp,
@@ -1339,19 +1659,19 @@ public class BattleService
 
     private static double GetStab(BattlePokemonSnapshot attacker, string moveType)
     {
+        bool isOrigType = attacker.OrigType1.Equals(moveType, StringComparison.OrdinalIgnoreCase)
+                       || (attacker.OrigType2 != null && attacker.OrigType2.Equals(moveType, StringComparison.OrdinalIgnoreCase));
+
         if (attacker.IsTerastallized)
         {
-            // Tera STAB: only Tera type gives STAB
-            if (!attacker.TerType.Equals(moveType, StringComparison.OrdinalIgnoreCase)) return 1.0;
-            // 2× if Tera type was also an original type (type overlap bonus)
-            bool overlap = attacker.OrigType1.Equals(moveType, StringComparison.OrdinalIgnoreCase)
-                        || (attacker.OrigType2 != null && attacker.OrigType2.Equals(moveType, StringComparison.OrdinalIgnoreCase));
-            return overlap ? 2.0 : 1.5;
+            bool isTerType = attacker.TerType.Equals(moveType, StringComparison.OrdinalIgnoreCase);
+            if (isTerType && isOrigType) return 2.0; // Tera overlap bonus
+            if (isTerType)              return 1.5; // Tera STAB
+            if (isOrigType)             return 1.5; // Original type STAB preserved post-Tera
+            return 1.0;
         }
 
-        if (attacker.Type1.Equals(moveType, StringComparison.OrdinalIgnoreCase)) return 1.5;
-        if (attacker.Type2 != null && attacker.Type2.Equals(moveType, StringComparison.OrdinalIgnoreCase)) return 1.5;
-        return 1.0;
+        return isOrigType ? 1.5 : 1.0;
     }
 
     private static double GetWeatherModifier(BattleSession session, string moveType)

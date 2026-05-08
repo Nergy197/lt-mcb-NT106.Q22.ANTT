@@ -72,8 +72,9 @@ public class BattlePokemonSnapshot
     public double GetStageMultiplier(StatIndex stat)
     {
         var stage = Math.Clamp(StatStages[(int)stat], -6, 6);
-        return stage >= 0
-            ? (2.0 + stage) / 2.0
-            : 2.0 / (2.0 - stage);
+        // Accuracy/Evasion use a 3-step table instead of the standard 2-step table
+        if (stat == StatIndex.ACC || stat == StatIndex.EVA)
+            return stage >= 0 ? (3.0 + stage) / 3.0 : 3.0 / (3.0 - stage);
+        return stage >= 0 ? (2.0 + stage) / 2.0 : 2.0 / (2.0 - stage);
     }
 }

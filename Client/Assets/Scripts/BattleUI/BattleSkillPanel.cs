@@ -1,25 +1,45 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
 namespace Game.Battle.UI
 {
+    /// <summary>
+    /// Panel 4 chiêu + nút Terastallize (Gen 9).
+    /// Layout yêu cầu:
+    ///   - 4 Button con với: "MoveName" (TMP), "TypeAccent" (Image), "MetaRow/PP" (TMP)
+    ///   - Button "BackBtn"
+    ///   - Button "TeraBtn" với child "TeraLabel" (TMP) — ẩn nếu không có trong scene
+    /// </summary>
     public class BattleSkillPanel : BasePanel
     {
-        [Header("Các nút chiêu (4 ô)")]
+        [Header("Move Buttons (4 ô)")]
         public Button[] skillButtons;
 
-        [Header("PP text tương ứng (tuỳ chọn)")]
+        [Header("PP text (tuỳ chọn, tìm trong hierarchy nếu null)")]
         public TextMeshProUGUI[] ppTexts;
 
-        [Header("Nút Back")]
+        [Header("Back")]
         public Button backButton;
 
-        private BattleUIManager uiManager;
+        [Header("Tera Button (Gen 9)")]
+        public Button          teraButton;
+        public TextMeshProUGUI teraLabel;
+        public Image           teraButtonImage;
 
-        // Type color map (giống EntityHUD)
-        static readonly System.Collections.Generic.Dictionary<string, Color> TypeColors
-            = new System.Collections.Generic.Dictionary<string, Color>(System.StringComparer.OrdinalIgnoreCase)
+        // ── Tera state ──────────────────────────────────────────────────────
+        // IsTeraActive: BattleNetworkController đọc khi submit move
+        public bool IsTeraActive { get; private set; }
+
+        private bool _teraAvailable;
+
+        private static readonly Color TeraOnColor  = new(0.85f, 0.25f, 0.85f);
+        private static readonly Color TeraOffColor = new(0.30f, 0.30f, 0.40f);
+
+        // ── Type colors ─────────────────────────────────────────────────────
+        static readonly Dictionary<string, Color> TypeColors
+            = new(System.StringComparer.OrdinalIgnoreCase)
         {
             { "fire",     new Color(0.863f, 0.447f, 0.220f) },
             { "water",    new Color(0.282f, 0.580f, 0.863f) },
@@ -41,86 +61,162 @@ namespace Game.Battle.UI
             { "normal",   new Color(0.698f, 0.678f, 0.620f) },
         };
 
+        private BattleUIManager _uiManager;
+
+        // ── Unity Lifecycle ─────────────────────────────────────────────────
+
         private void Awake()
         {
-            uiManager = GetComponentInParent<BattleUIManager>();
+            _uiManager = GetComponentInParent<BattleUIManager>();
+            if (_uiManager == null) _uiManager = FindObjectOfType<BattleUIManager>();
 
+            // Auto-discover BackBtn và TeraBtn trước để loại trừ khi tìm move buttons
+            if (backButton == null) backButton = FindBtn("BackBtn");
+            if (teraButton == null) teraButton = FindBtn("TeraBtn");
+
+            // Auto-discover 4 move buttons (đệ quy, loại trừ Back/Tera)
             if (skillButtons == null || skillButtons.Length == 0 || skillButtons[0] == null)
             {
                 skillButtons = new Button[4];
-                for (int i = 0; i < 4 && i < transform.childCount; i++)
-                    skillButtons[i] = transform.GetChild(i).GetComponent<Button>();
+                int found = 0;
+                foreach (var btn in GetComponentsInChildren<Button>(true))
+                {
+                    if (found >= 4) break;
+                    if (btn == backButton || btn == teraButton) continue;
+                    skillButtons[found++] = btn;
+                }
             }
-
-            if (backButton == null && transform.childCount > 4)
-                backButton = transform.GetChild(4).GetComponent<Button>();
+            if (teraLabel == null && teraButton != null)
+                teraLabel = teraButton.transform.Find("TeraLabel")?.GetComponent<TextMeshProUGUI>()
+                         ?? teraButton.GetComponentInChildren<TextMeshProUGUI>();
+            if (teraButtonImage == null && teraButton != null)
+                teraButtonImage = teraButton.GetComponent<Image>();
 
             backButton?.onClick.AddListener(OnBackClicked);
+            teraButton?.onClick.AddListener(OnTeraClicked);
 
             for (int i = 0; i < skillButtons.Length; i++)
             {
+                if (skillButtons[i] == null) continue;
                 int idx = i;
-                skillButtons[i]?.onClick.AddListener(() => OnSkillClicked(idx));
+                skillButtons[i].onClick.AddListener(() => OnSkillClicked(idx));
             }
         }
 
-        // ── Public API: BattleNetworkController gọi để nạp dữ liệu chiêu ──
+        private void OnEnable()  => BattleEvents.OnTeraAvailabilityChanged += SetTeraAvailable;
+        private void OnDisable() => BattleEvents.OnTeraAvailabilityChanged -= SetTeraAvailable;
+
+        // ── Public API ──────────────────────────────────────────────────────
+
         public void SetMove(int slot, string moveName, string typeName = "normal",
             string category = "Special", int pp = 0, int maxPp = 0)
         {
             if (slot < 0 || slot >= skillButtons.Length || skillButtons[slot] == null) return;
 
-            // Cập nhật tên chiêu
-            var nameTmp = skillButtons[slot].transform.Find("MoveName")?.GetComponent<TextMeshProUGUI>();
+            // Tên chiêu — fallback lấy TMP đầu tiên trong button nếu không tìm thấy "MoveName"
+            var nameTmp = skillButtons[slot].transform.Find("MoveName")
+                          ?.GetComponent<TextMeshProUGUI>()
+                       ?? skillButtons[slot].GetComponentInChildren<TextMeshProUGUI>();
             if (nameTmp != null) nameTmp.text = moveName;
 
-            // Cập nhật màu accent bar theo type
+            // Màu accent bar theo type
             var accent = skillButtons[slot].transform.Find("TypeAccent")?.GetComponent<Image>();
             if (accent != null && TypeColors.TryGetValue(typeName, out Color tc))
                 accent.color = tc;
 
-            // Cập nhật type badge text trong MetaRow
-            var typeBadgeTxt = skillButtons[slot].transform.Find("MetaRow/TypeBadge_" + typeName + "/Text")
-                               ?.GetComponent<TextMeshProUGUI>();
-            if (typeBadgeTxt == null)
-            {
-                // Fallback: tìm badge đầu tiên trong MetaRow
-                var metaRow = skillButtons[slot].transform.Find("MetaRow");
-                if (metaRow != null && metaRow.childCount > 0)
-                    typeBadgeTxt = metaRow.GetChild(0).Find("Text")?.GetComponent<TextMeshProUGUI>();
-            }
+            // Type badge text
+            var typeBadgeTxt = FindTypeBadgeText(slot);
             if (typeBadgeTxt != null) typeBadgeTxt.text = typeName.ToUpper();
 
-            // Cập nhật PP
-            if (ppTexts != null && slot < ppTexts.Length && ppTexts[slot] != null)
-            {
-                ppTexts[slot].text = maxPp > 0 ? $"PP {pp}/{maxPp}" : moveName; // fallback plain name
-            }
-            else
-            {
-                // Tìm trong hierarchy
-                var ppTmp = skillButtons[slot].transform.Find("MetaRow/PP")?.GetComponent<TextMeshProUGUI>();
-                if (ppTmp != null) ppTmp.text = maxPp > 0 ? $"PP {pp}/{maxPp}" : "";
-            }
+            // PP
+            UpdatePP(slot, moveName, pp, maxPp);
         }
 
-        // Được gọi từ NetworkController khi vào phase chọn mục tiêu (reuse slot 0–1 làm nút target)
         public void SetTargetLabel(int slot, string label)
         {
             if (slot < 0 || slot >= skillButtons.Length || skillButtons[slot] == null) return;
-            var nameTmp = skillButtons[slot].transform.Find("MoveName")?.GetComponent<TextMeshProUGUI>();
+            var nameTmp = skillButtons[slot].transform.Find("MoveName")
+                          ?.GetComponent<TextMeshProUGUI>()
+                       ?? skillButtons[slot].GetComponentInChildren<TextMeshProUGUI>();
             if (nameTmp != null) nameTmp.text = label;
+        }
+
+        /// Được gọi bởi NetworkController sau mỗi lần dùng Tera để disable nút.
+        public void SetTeraAvailable(bool available)
+        {
+            _teraAvailable = available;
+            if (!available) IsTeraActive = false;
+
+            if (teraButton != null) teraButton.gameObject.SetActive(available);
+            RefreshTeraVisual();
+        }
+
+        /// Reset về inactive (gọi sau khi submit move có Tera).
+        public void ResetTeraToggle()
+        {
+            IsTeraActive = false;
+            RefreshTeraVisual();
+        }
+
+        // ── Button callbacks ─────────────────────────────────────────────────
+
+        private void OnSkillClicked(int skillIndex)
+        {
+            _uiManager?.SwitchPanel(BattlePanelType.None);
+            BattleEvents.OnPlayerUseSkill?.Invoke(skillIndex);
         }
 
         private void OnBackClicked()
         {
-            uiManager.SwitchPanel(BattlePanelType.Command);
+            _uiManager?.SwitchPanel(BattlePanelType.Command);
         }
 
-        private void OnSkillClicked(int skillIndex)
+        private void OnTeraClicked()
         {
-            uiManager.SwitchPanel(BattlePanelType.None);
-            BattleEvents.OnPlayerUseSkill?.Invoke(skillIndex);
+            if (!_teraAvailable) return;
+            IsTeraActive = !IsTeraActive;
+            RefreshTeraVisual();
+        }
+
+        // ── Helpers ──────────────────────────────────────────────────────────
+
+        private void RefreshTeraVisual()
+        {
+            if (teraButtonImage != null)
+                teraButtonImage.color = IsTeraActive ? TeraOnColor : TeraOffColor;
+            if (teraLabel != null)
+                teraLabel.text = IsTeraActive ? "✦ TERA ON" : "◇ TERA";
+        }
+
+        private TextMeshProUGUI FindTypeBadgeText(int slot)
+        {
+            var metaRow = skillButtons[slot].transform.Find("MetaRow");
+            if (metaRow == null) return null;
+            if (metaRow.childCount > 0)
+                return metaRow.GetChild(0).Find("Text")?.GetComponent<TextMeshProUGUI>();
+            return null;
+        }
+
+        private void UpdatePP(int slot, string moveName, int pp, int maxPp)
+        {
+            string ppStr = maxPp > 0 ? $"PP {pp}/{maxPp}" : "";
+
+            if (ppTexts != null && slot < ppTexts.Length && ppTexts[slot] != null)
+            {
+                ppTexts[slot].text = maxPp > 0 ? ppStr : moveName;
+                return;
+            }
+
+            var ppTmp = skillButtons[slot].transform.Find("MetaRow/PP")
+                        ?.GetComponent<TextMeshProUGUI>();
+            if (ppTmp != null) ppTmp.text = ppStr;
+        }
+
+        Button FindBtn(string btnName)
+        {
+            foreach (var b in GetComponentsInChildren<Button>(true))
+                if (b.gameObject.name == btnName) return b;
+            return null;
         }
     }
 }

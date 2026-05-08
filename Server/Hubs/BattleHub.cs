@@ -25,8 +25,8 @@ public class BattleHub : Hub
     public static readonly ConcurrentDictionary<string, string> ConnectedPlayers =
         MatchmakingHub.ConnectedPlayers;
 
-    // playerId → connectionId for battle routing
-    private static readonly ConcurrentDictionary<string, string> PlayerConnections = new();
+    // playerId → connectionId for battle routing (public so TurnTimeoutService can use it)
+    public static readonly ConcurrentDictionary<string, string> PlayerConnections = new();
 
     // battleId → (player1ConnId, player2ConnId)
     private static readonly ConcurrentDictionary<string, (string conn1, string conn2)> BattleConnections = new();
@@ -47,7 +47,9 @@ public class BattleHub : Hub
     /// </summary>
     public async Task JoinBattle(string battleId)
     {
-        var playerId = GetPlayerId();
+        var playerId = await ResolvePlayerId();
+        await Clients.Caller.SendAsync("Debug", $"[Server] JoinBattle: {battleId}, Player: {playerId}");
+
         if (playerId == null)
         {
             await Clients.Caller.SendAsync("Error", "Not authenticated.");
@@ -61,9 +63,11 @@ public class BattleHub : Hub
             return;
         }
 
+        await Clients.Caller.SendAsync("Debug", $"[Server] Session state: {session.State}");
+
         if (playerId != session.Player1Id && playerId != session.Player2Id)
         {
-            await Clients.Caller.SendAsync("Error", "You are not a participant in this battle.");
+            await Clients.Caller.SendAsync("Error", $"You ({playerId}) are not a participant in this battle (P1:{session.Player1Id}, P2:{session.Player2Id}).");
             return;
         }
 
@@ -91,7 +95,8 @@ public class BattleHub : Hub
     /// </summary>
     public async Task SubmitTeamOrder(string battleId, List<int> orderedIndices)
     {
-        var playerId = GetPlayerId();
+        var playerId = await ResolvePlayerId();
+        await Clients.Caller.SendAsync("Debug", $"[Server] SubmitTeamOrder: {battleId}, Player: {playerId}, Count: {orderedIndices.Count}");
         if (playerId == null) { await Error("Not authenticated."); return; }
 
         try
@@ -102,6 +107,7 @@ public class BattleHub : Hub
 
             if (started)
             {
+                await Clients.Group(battleId).SendAsync("Debug", "[Server] Both teams confirmed! Starting battle...");
                 // Both players have picked — broadcast battle start to both
                 var p1Dto = BuildBattleRunningDto(session, session.Player1Id);
                 var p2Dto = BuildBattleRunningDto(session, session.Player2Id);
@@ -132,7 +138,7 @@ public class BattleHub : Hub
         int targetSlot,
         bool useTera = false)
     {
-        var playerId = GetPlayerId();
+        var playerId = await ResolvePlayerId();
         if (playerId == null) { await Error("Not authenticated."); return; }
 
         try
@@ -164,13 +170,31 @@ public class BattleHub : Hub
     }
 
     /// <summary>
+    /// Client calls this after finishing turn animations to receive the fresh
+    /// field snapshot needed to start the next turn's action selection.
+    /// Server responds with "BattleRunning" (same payload as turn start).
+    /// </summary>
+    public async Task RequestCurrentState(string battleId)
+    {
+        var playerId = await ResolvePlayerId();
+        if (playerId == null) return;
+
+        var session = _battleService.GetSession(battleId);
+        if (session == null) return;
+
+        if (playerId != session.Player1Id && playerId != session.Player2Id) return;
+
+        await SendBattleStateToPlayer(session, playerId);
+    }
+
+    /// <summary>
     /// After a Pokemon faints, player sends in a replacement.
     /// slot: 0 = Slot A, 1 = Slot B.
     /// partyIndex: index in the player's 4-member battle team.
     /// </summary>
     public async Task SubmitForcedSwitch(string battleId, int slot, int partyIndex)
     {
-        var playerId = GetPlayerId();
+        var playerId = await ResolvePlayerId();
         if (playerId == null) { await Error("Not authenticated."); return; }
 
         try
@@ -202,21 +226,18 @@ public class BattleHub : Hub
 
     private async Task BroadcastTurnResult(BattleSession session, BattleTurnResult result)
     {
-        // Build personalised views (each player sees own moves, opponent limited)
-        var p1Result = result; // Same typed-event list for both
-        var p2Result = result;
-
-        await SendToPlayer(session.Player1Id, "TurnResolved", p1Result);
-        await SendToPlayer(session.Player2Id, "TurnResolved", p2Result);
+        // Player 2 nhận bản HP hoán đổi để "Hp1" = phe mình, "Hp2" = đối thủ
+        await SendToPlayer(session.Player1Id, "TurnResolved", result);
+        await SendToPlayer(session.Player2Id, "TurnResolved", result.ForPlayer2Perspective());
 
         // Notify players who need to send in a replacement
         foreach (var fs in result.ForcedSwitches)
         {
             await SendToPlayer(fs.PlayerId, "ForcedSwitchRequired", new
             {
-                BattleId = session.BattleId,
-                Slot     = fs.Slot,
-                AvailableIndices = GetAvailableReplacements(session, fs.PlayerId, fs.Slot),
+                BattleId         = session.BattleId,
+                Slot             = fs.Slot,
+                AvailableIndices = _battleService.GetAvailableReplacements(session, fs.PlayerId, fs.Slot),
             });
         }
 
@@ -224,10 +245,10 @@ public class BattleHub : Hub
         {
             await Clients.Group(session.BattleId).SendAsync("BattleEnded", new BattleEndedEventDto
             {
-                BattleId      = session.BattleId,
+                BattleId       = session.BattleId,
                 WinnerPlayerId = result.WinnerPlayerId,
-                TypedEvents   = result.TypedEvents,
-                Events        = result.Events,
+                TypedEvents    = result.TypedEvents,
+                Events         = result.Events,
             });
         }
     }
@@ -254,7 +275,7 @@ public class BattleHub : Hub
                     {
                         BattleId         = session.BattleId,
                         Slot             = slot,
-                        AvailableIndices = GetAvailableReplacements(session, playerId, slot),
+                        AvailableIndices = _battleService.GetAvailableReplacements(session, playerId, slot),
                     });
                 }
             }
@@ -317,6 +338,7 @@ public class BattleHub : Hub
         return new BattleRunningDto
         {
             BattleId        = session.BattleId,
+            OpponentId      = oppId,
             TurnNumber      = session.TurnNumber,
             TurnDeadlineUtc = session.TurnDeadlineUtc,
             Weather          = session.Weather,
@@ -362,20 +384,6 @@ public class BattleHub : Hub
                 : [],
         };
 
-    private static List<int> GetAvailableReplacements(BattleSession session, string playerId, int faintedSlot)
-    {
-        var team    = playerId == session.Player1Id ? session.Team1 : session.Team2;
-        bool isP1   = playerId == session.Player1Id;
-        int activeA = isP1 ? session.ActiveIndex1  : session.ActiveIndex2;
-        int activeB = isP1 ? session.ActiveIndex1b : session.ActiveIndex2b;
-
-        return team
-            .Select((p, i) => (p, i))
-            .Where(x => !x.p.IsFainted && x.i != activeA && x.i != activeB)
-            .Select(x => x.i)
-            .ToList();
-    }
-
     // ── Send to specific player ───────────────────────────────────────────────
 
     private async Task SendToPlayer(string playerId, string method, object payload)
@@ -389,16 +397,37 @@ public class BattleHub : Hub
 
     // ── Auth helper ──────────────────────────────────────────────────────────
 
-    private string? GetPlayerId()
+    private async Task<string?> ResolvePlayerId()
     {
         if (ConnectedPlayers.TryGetValue(Context.ConnectionId, out var id)) return id;
 
-        // Fall back to JWT sub claim (player may not have joined lobby first)
-        var sub = Context.User?.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value
-               ?? Context.User?.FindFirst(JwtRegisteredClaimNames.Sub)?.Value
-               ?? Context.User?.FindFirst("sub")?.Value;
+        // Fall back to JWT sub claim
+        var accountId = Context.User?.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value
+                ?? Context.User?.FindFirst(JwtRegisteredClaimNames.Sub)?.Value
+                ?? Context.User?.FindFirst("sub")?.Value;
 
-        return sub;
+        if (string.IsNullOrWhiteSpace(accountId)) return null;
+
+        var player = await _db.Players
+            .Find(Builders<Player>.Filter.Eq(p => p.AccountId, accountId))
+            .FirstOrDefaultAsync();
+
+        if (player == null)
+        {
+            // Auto-create player profile if missing (dev fallback)
+            var username = Context.User?.FindFirst("username")?.Value ?? "Player_" + accountId[..5];
+            player = new Player
+            {
+                AccountId = accountId,
+                Name = username,
+                MMR = 1000,
+                VP = 0
+            };
+            await _db.Players.InsertOneAsync(player);
+        }
+        
+        ConnectedPlayers[Context.ConnectionId] = player.Id;
+        return player.Id;
     }
 
     public override async Task OnDisconnectedAsync(Exception? exception)

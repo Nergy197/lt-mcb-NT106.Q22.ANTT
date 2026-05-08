@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -13,27 +14,35 @@ namespace Game.Battle.UI
         [Header("Core UI (tự tìm nếu bỏ trống)")]
         public TextMeshProUGUI nameText;
         public TextMeshProUGUI hpText;
-        public Image hpFillImage;
+        public Image           hpFillImage;
 
-        [Header("Extended UI (Champions Style)")]
+        [Header("Extended UI")]
         public TextMeshProUGUI levelText;
-        public Image iconImage;
-        public Image type1BadgeImage;
-        public Image type2BadgeImage;
+        public Image           iconImage;
+        public Image           type1BadgeImage;
+        public Image           type2BadgeImage;
         public TextMeshProUGUI type1BadgeText;
         public TextMeshProUGUI type2BadgeText;
+
+        [Header("Status Badge (BRN / PSN / PAR / SLP / FRZ / TOX)")]
+        public TextMeshProUGUI statusBadgeText;
+        public Image           statusBadgeImage;
+
+        [Header("Tera Badge (hiện khi đã Terastallize)")]
+        public TextMeshProUGUI teraBadgeText;
+        public Image           teraBadgeImage;
 
         [Header("Hiển thị HP")]
         public bool showExactHp = true;
 
         [Header("Màu HP theo %")]
-        public Color highHpColor   = new Color(0.463f, 0.839f, 0.471f);
-        public Color mediumHpColor = new Color(0.957f, 0.773f, 0.263f);
-        public Color lowHpColor    = new Color(0.902f, 0.322f, 0.165f);
+        public Color highHpColor   = new(0.463f, 0.839f, 0.471f);
+        public Color mediumHpColor = new(0.957f, 0.773f, 0.263f);
+        public Color lowHpColor    = new(0.902f, 0.322f, 0.165f);
 
-        // Type colors dictionary (mirror của BattleSceneSetupTool)
-        static readonly System.Collections.Generic.Dictionary<string, Color> TypeColors
-            = new System.Collections.Generic.Dictionary<string, Color>(System.StringComparer.OrdinalIgnoreCase)
+        // ── Type color dictionary ────────────────────────────────────────────
+        static readonly Dictionary<string, Color> TypeColors
+            = new(System.StringComparer.OrdinalIgnoreCase)
         {
             { "fire",     new Color(0.863f, 0.447f, 0.220f) },
             { "water",    new Color(0.282f, 0.580f, 0.863f) },
@@ -55,6 +64,20 @@ namespace Game.Battle.UI
             { "normal",   new Color(0.698f, 0.678f, 0.620f) },
         };
 
+        // ── Status colors ────────────────────────────────────────────────────
+        static readonly Dictionary<string, Color> StatusColors
+            = new(System.StringComparer.OrdinalIgnoreCase)
+        {
+            { "BRN", new Color(0.90f, 0.40f, 0.10f) },
+            { "PSN", new Color(0.60f, 0.20f, 0.80f) },
+            { "TOX", new Color(0.45f, 0.10f, 0.60f) },
+            { "PAR", new Color(0.90f, 0.80f, 0.10f) },
+            { "SLP", new Color(0.30f, 0.45f, 0.70f) },
+            { "FRZ", new Color(0.55f, 0.85f, 0.95f) },
+        };
+
+        // ── Awake ────────────────────────────────────────────────────────────
+
         private void Awake()
         {
             if (nameText    == null) nameText    = transform.Find("Name")?.GetComponent<TextMeshProUGUI>();
@@ -62,18 +85,21 @@ namespace Game.Battle.UI
             if (hpFillImage == null) hpFillImage = transform.Find("HP_Fill_BG/HP_Fill_Image")?.GetComponent<Image>();
             if (levelText   == null) levelText   = transform.Find("Level")?.GetComponent<TextMeshProUGUI>();
             if (iconImage   == null) iconImage   = transform.Find("Avatar_Box/Icon")?.GetComponent<Image>();
+
+            if (statusBadgeText  == null) statusBadgeText  = transform.Find("StatusBadge")?.GetComponent<TextMeshProUGUI>();
+            if (statusBadgeImage == null) statusBadgeImage = transform.Find("StatusBadge")?.GetComponent<Image>();
+            if (teraBadgeText    == null) teraBadgeText    = transform.Find("TeraBadge")?.GetComponent<TextMeshProUGUI>();
+            if (teraBadgeImage   == null) teraBadgeImage   = transform.Find("TeraBadge")?.GetComponent<Image>();
         }
 
-        private void OnEnable()
-        {
-            BattleEvents.OnHealthChanged += HandleHealthChanged;
-        }
-
+        private void OnEnable()  => BattleEvents.OnHealthChanged += HandleHealthChanged;
         private void OnDisable()
         {
             BattleEvents.OnHealthChanged -= HandleHealthChanged;
             StopAllCoroutines();
         }
+
+        // ── Public API ───────────────────────────────────────────────────────
 
         public void SetupEntity(string newId, string eName, int currentHp, int maxHp)
         {
@@ -84,37 +110,68 @@ namespace Game.Battle.UI
 
         public void SetLevel(int level)
         {
-            if (levelText != null) levelText.text = $"LV {level}";
+            if (levelText != null) levelText.text = $"Lv{level}";
         }
 
         public void SetIcon(Sprite sprite)
         {
             if (iconImage == null) return;
             iconImage.sprite = sprite;
-            iconImage.color = Color.white;
+            iconImage.color  = Color.white;
         }
 
         public void SetTypes(string type1, string type2 = null)
         {
             ApplyType(type1BadgeImage, type1BadgeText, type1);
-            if (!string.IsNullOrEmpty(type2))
+            bool hasT2 = !string.IsNullOrEmpty(type2);
+            if (type2BadgeImage != null) type2BadgeImage.gameObject.SetActive(hasT2);
+            if (hasT2) ApplyType(type2BadgeImage, type2BadgeText, type2);
+        }
+
+        /// Hiển thị status condition: "burn", "paralysis", "sleep", "freeze", "poison", "toxic" hoặc null để xoá.
+        public void SetStatus(string statusRaw)
+        {
+            string abbr = AbbrevStatus(statusRaw);
+            bool   has  = !string.IsNullOrEmpty(abbr);
+
+            if (statusBadgeText != null)
             {
-                ApplyType(type2BadgeImage, type2BadgeText, type2);
-                if (type2BadgeImage != null) type2BadgeImage.gameObject.SetActive(true);
+                statusBadgeText.gameObject.SetActive(has);
+                if (has)
+                {
+                    statusBadgeText.text = abbr;
+                    if (StatusColors.TryGetValue(abbr, out var sc)) statusBadgeText.color = sc;
+                }
             }
-            else
+            if (statusBadgeImage != null)
             {
-                if (type2BadgeImage != null) type2BadgeImage.gameObject.SetActive(false);
+                statusBadgeImage.gameObject.SetActive(has);
+                if (has && StatusColors.TryGetValue(abbr, out var sc))
+                    statusBadgeImage.color = sc;
             }
         }
 
-        void ApplyType(Image badge, TextMeshProUGUI label, string typeName)
+        /// Hiển thị Tera type badge khi Pokemon đã Terastallize.
+        public void SetTeraType(string teraType, bool isTerastallized)
         {
-            if (badge == null || label == null || string.IsNullOrEmpty(typeName)) return;
-            badge.gameObject.SetActive(true);
-            if (TypeColors.TryGetValue(typeName, out Color c)) badge.color = c;
-            label.text = typeName.ToUpper();
+            bool has = isTerastallized && !string.IsNullOrEmpty(teraType);
+            if (teraBadgeText != null)
+            {
+                teraBadgeText.gameObject.SetActive(has);
+                if (has)
+                {
+                    teraBadgeText.text = $"TERA/{teraType.ToUpper()}";
+                    if (TypeColors.TryGetValue(teraType, out var tc)) teraBadgeText.color = tc;
+                }
+            }
+            if (teraBadgeImage != null)
+            {
+                teraBadgeImage.gameObject.SetActive(has);
+                if (has && TypeColors.TryGetValue(teraType, out var tc)) teraBadgeImage.color = tc;
+            }
         }
+
+        // ── HP event listener ─────────────────────────────────────────────────
 
         private void HandleHealthChanged(string id, int currentHp, int maxHp)
         {
@@ -122,11 +179,13 @@ namespace Game.Battle.UI
                 StartCoroutine(SmoothHealthChange(currentHp, maxHp));
         }
 
+        // ── HP rendering ──────────────────────────────────────────────────────
+
         private void UpdateHealthUIInstant(int currentHp, int maxHp)
         {
             float pct = (float)currentHp / Mathf.Max(1, maxHp);
             if (hpText != null)
-                hpText.text = showExactHp ? $"{currentHp} / {maxHp}" : $"{Mathf.RoundToInt(pct * 100)}%";
+                hpText.text = showExactHp ? $"{currentHp}/{maxHp}" : $"{Mathf.RoundToInt(pct * 100)}%";
             if (hpFillImage != null)
             {
                 hpFillImage.fillAmount = pct;
@@ -138,21 +197,21 @@ namespace Game.Battle.UI
         {
             if (hpFillImage == null || hpText == null) yield break;
 
-            float startFill = hpFillImage.fillAmount;
+            float startFill  = hpFillImage.fillAmount;
             float targetFill = (float)targetHp / Mathf.Max(1, maxHp);
-            float duration = 0.8f, elapsed = 0f;
+            float elapsed    = 0f;
+            const float dur  = 0.8f;
 
-            while (elapsed < duration)
+            while (elapsed < dur)
             {
                 elapsed += Time.deltaTime;
-                float t = elapsed / duration;
-                // ease-out
-                t = 1 - (1 - t) * (1 - t);
+                float t    = elapsed / dur;
+                t          = 1 - (1 - t) * (1 - t); // ease-out
                 float fill = Mathf.Lerp(startFill, targetFill, t);
                 hpFillImage.fillAmount = fill;
-                int displayHp = Mathf.RoundToInt(fill * maxHp);
-                if (hpText != null)
-                    hpText.text = showExactHp ? $"{displayHp} / {maxHp}" : $"{Mathf.RoundToInt(fill * 100)}%";
+
+                int display = Mathf.RoundToInt(fill * maxHp);
+                hpText.text = showExactHp ? $"{display}/{maxHp}" : $"{Mathf.RoundToInt(fill * 100)}%";
                 UpdateHpColor(fill);
                 yield return null;
             }
@@ -163,9 +222,31 @@ namespace Game.Battle.UI
         private void UpdateHpColor(float pct)
         {
             if (hpFillImage == null) return;
-            if (pct >= 0.5f)      hpFillImage.color = highHpColor;
-            else if (pct >= 0.2f) hpFillImage.color = mediumHpColor;
-            else                  hpFillImage.color = lowHpColor;
+            hpFillImage.color = pct >= 0.5f ? highHpColor
+                              : pct >= 0.2f ? mediumHpColor
+                              :               lowHpColor;
         }
+
+        // ── Helpers ───────────────────────────────────────────────────────────
+
+        void ApplyType(Image badge, TextMeshProUGUI label, string typeName)
+        {
+            if (badge == null || label == null || string.IsNullOrEmpty(typeName)) return;
+            badge.gameObject.SetActive(true);
+            if (TypeColors.TryGetValue(typeName, out Color c)) badge.color = c;
+            label.text = typeName.ToUpper();
+        }
+
+        private static string AbbrevStatus(string s) => s?.ToUpperInvariant() switch
+        {
+            "BURN"               => "BRN",
+            "POISON"             => "PSN",
+            "TOXIC"              => "TOX",
+            "PARALYSIS" or "PAR" => "PAR",
+            "SLEEP"              => "SLP",
+            "FREEZE"             => "FRZ",
+            null or ""           => "",
+            var v => v.Length > 3 ? v[..3] : v,
+        };
     }
 }

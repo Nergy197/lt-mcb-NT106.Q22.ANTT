@@ -49,32 +49,55 @@ public class GameService
 
         foreach (var s in starters)
         {
-            var pData = await _pokeData.GetPokemonData(s.Id);
-            // Lấy moveset thực tế từ Database (đã được seed từ PokeAPI)
-            var speciesEntry = await _db.Pokedex.Find(x => x.Id == s.Id).FirstOrDefaultAsync();
-            var moveset = speciesEntry?.DefaultMoves ?? new List<int> { 1, 45 }; // Fallback Pound, Growl
+            // Ưu tiên lấy stats từ Pokedex DB (đã seed), fallback sang PokeAPI nếu thiếu
+            var dex = await _db.Pokedex.Find(x => x.Id == s.Id).FirstOrDefaultAsync();
+
+            int baseHp;
+            if (dex != null && dex.BaseStats.ContainsKey("hp"))
+            {
+                baseHp = dex.BaseStats.GetValueOrDefault("hp", 45);
+            }
+            else
+            {
+                var pData = await _pokeData.GetPokemonData(s.Id);
+                baseHp = pData.BaseHp;
+            }
+
+            // Moves: lấy từ DefaultMoves trong Pokedex, fallback sang 4 moves ID nhỏ nhất trong DB
+            List<int> moveset;
+            if (dex?.DefaultMoves?.Count > 0)
+            {
+                moveset = dex.DefaultMoves.Take(4).ToList();
+            }
+            else
+            {
+                // Lấy 4 move đầu tiên có trong DB
+                var dbMoves = await _db.Moves.Find(_ => true).Limit(4).ToListAsync();
+                moveset = dbMoves.Count > 0
+                    ? dbMoves.Select(m => m.Id).ToList()
+                    : new List<int> { 1, 2, 3, 4 };
+            }
 
             var ivs = new StatBlock { Hp = 31, Atk = 31, Def = 31, SpAtk = 31, SpDef = 31, Spd = 31 };
-            var evs = new StatBlock { Hp = 0, Atk = 0, Def = 0, SpAtk = 0, SpDef = 0, Spd = 0 };
-
-            var maxHp = CalculateHp(pData.BaseHp, ivs.Hp, evs.Hp, 50);
+            var evs = new StatBlock { Hp = 0,  Atk = 0,  Def = 0,  SpAtk = 0,  SpDef = 0,  Spd = 0  };
+            var maxHp = CalculateHp(baseHp, ivs.Hp, evs.Hp, 50);
 
             var instance = new PokemonInstance
             {
-                OwnerId = playerId,
-                SpeciesId = s.Id,
-                Nickname = s.Name,
-                Level = 50,
-                Exp = 0,
-                Nature = Natures[_rng.Next(Natures.Length)],
-                CurrentHp = maxHp,
-                MaxHp = maxHp,
+                OwnerId        = playerId,
+                SpeciesId      = s.Id,
+                Nickname       = s.Name,
+                Level          = 50,
+                Exp            = 0,
+                Nature         = Natures[_rng.Next(Natures.Length)],
+                CurrentHp      = maxHp,
+                MaxHp          = maxHp,
                 StatusCondition = "NONE",
-                IsInParty = true,
-                PartySlot = slot++,
-                Ivs = ivs,
-                Evs = evs,
-                Moves = moveset.Select(mId => new PokemonMove { MoveId = mId, CurrentPp = 15 }).ToList()
+                IsInParty      = true,
+                PartySlot      = slot++,
+                Ivs            = ivs,
+                Evs            = evs,
+                Moves          = moveset.Select(mId => new PokemonMove { MoveId = mId, CurrentPp = 15 }).ToList()
             };
             instances.Add(instance);
         }

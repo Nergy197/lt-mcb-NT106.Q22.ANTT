@@ -46,3 +46,36 @@ public class ForcedSwitchSlot
     public string PlayerId { get; set; } = "";
     public int Slot { get; set; } // 0 = Slot A, 1 = Slot B
 }
+
+public static class BattleTurnResultExtensions
+{
+    /// <summary>
+    /// Trả về bản copy với HP/Index của Player1 và Player2 được hoán đổi,
+    /// dùng để Player 2 thấy HP của mình là "Hp1" và đối thủ là "Hp2".
+    /// </summary>
+    public static BattleTurnResult ForPlayer2Perspective(this BattleTurnResult r) => new()
+    {
+        BattleId           = r.BattleId,
+        ResolvedTurnNumber = r.ResolvedTurnNumber,
+        NextTurnNumber     = r.NextTurnNumber,
+        State              = r.State,
+        WinnerPlayerId     = r.WinnerPlayerId,
+        ActiveIndex1       = r.ActiveIndex2,
+        ActiveIndex1b      = r.ActiveIndex2b,
+        ActiveHp1          = r.ActiveHp2,
+        ActiveHp1b         = r.ActiveHp2b,
+        ActiveIndex2       = r.ActiveIndex1,
+        ActiveIndex2b      = r.ActiveIndex1b,
+        ActiveHp2          = r.ActiveHp1,
+        ActiveHp2b         = r.ActiveHp1b,
+        Weather            = r.Weather,
+        WeatherTurnsLeft   = r.WeatherTurnsLeft,
+        Terrain            = r.Terrain,
+        TerrainTurnsLeft   = r.TerrainTurnsLeft,
+        Team1Hp            = r.Team2Hp,
+        Team2Hp            = r.Team1Hp,
+        ForcedSwitches     = r.ForcedSwitches,
+        TypedEvents        = r.TypedEvents,
+        Events             = r.Events,
+    };
+}

@@ -3,23 +3,33 @@ using UnityEngine;
 
 namespace Game.Battle.UI
 {
+    /// <summary>
+    /// Quản lý hiển thị panel: mỗi thời điểm chỉ 1 panel active.
+    /// Lắng nghe BattleEvents để tự động chuyển panel đúng lúc.
+    /// BattleFieldPanel (HUD luôn hiển thị) không được quản lý ở đây —
+    /// gắn thẳng vào scene và tự bật tắt theo event.
+    /// </summary>
     public class BattleUIManager : MonoBehaviour
     {
         public List<BasePanel> panels;
-        public GameObject globalHudRoot; 
-        private BasePanel currentPanel;
+
+        [Tooltip("Root chứa EntityHUD 4 Pokemon — ẩn khi hiện Dialog")]
+        public GameObject globalHudRoot;
+
+        private BasePanel _currentPanel;
+
+        // ── Awake ────────────────────────────────────────────────────────────
 
         private void Awake()
         {
             if (globalHudRoot == null)
             {
-                Transform t = transform.Find("GlobalHUDs_Root (Nhóm Quản Lý Tắt Bật Nhanh)");
+                var t = transform.Find("GlobalHUDs_Root (Nhóm Quản Lý Tắt Bật Nhanh)");
                 if (t != null) globalHudRoot = t.gameObject;
             }
+
             if (panels == null || panels.Count == 0)
-            {
                 panels = new List<BasePanel>(GetComponentsInChildren<BasePanel>(true));
-            }
         }
 
         private void Start()
@@ -27,21 +37,48 @@ namespace Game.Battle.UI
             SwitchPanel(BattlePanelType.None);
         }
 
-        public void SwitchPanel(BattlePanelType newPanelType)
+        // ── Event subscriptions ───────────────────────────────────────────────
+
+        private void OnEnable()
         {
+            BattleEvents.OnPlayerTurnStart  += HandleTurnStart;
+            BattleEvents.OnPrintDialog      += HandlePrintDialog;
+            BattleEvents.OnTeamPreviewStart += HandleTeamPreviewStart;
+            BattleEvents.OnPartyPanelOpen   += HandlePartyPanelOpen;
+            BattleEvents.OnBattleResult     += HandleBattleResult;
+        }
+
+        private void OnDisable()
+        {
+            BattleEvents.OnPlayerTurnStart  -= HandleTurnStart;
+            BattleEvents.OnPrintDialog      -= HandlePrintDialog;
+            BattleEvents.OnTeamPreviewStart -= HandleTeamPreviewStart;
+            BattleEvents.OnPartyPanelOpen   -= HandlePartyPanelOpen;
+            BattleEvents.OnBattleResult     -= HandleBattleResult;
+        }
+
+        private void HandleTeamPreviewStart(PreviewTeamData _) => SwitchPanel(BattlePanelType.TeamPreview);
+        private void HandlePartyPanelOpen(PartyPanelData _)    => SwitchPanel(BattlePanelType.Party);
+        private void HandleBattleResult(bool _, string _2)      => SwitchPanel(BattlePanelType.Result);
+
+        // ── Public API ────────────────────────────────────────────────────────
+
+        public void SwitchPanel(BattlePanelType newType)
+        {
+            // HUD luôn hiển thị trừ khi đang hiện Dialog hoặc TeamPreview toàn màn hình
             if (globalHudRoot != null)
-            {
-                globalHudRoot.SetActive(newPanelType != BattlePanelType.Dialog);
-            }
+                globalHudRoot.SetActive(
+                    newType != BattlePanelType.Dialog &&
+                    newType != BattlePanelType.TeamPreview &&
+                    newType != BattlePanelType.Result);
 
-            currentPanel = null;
+            _currentPanel = null;
 
-            // Xóa sổ tất cả Panel đang chồng chéo lên nhau, chỉ giữ Panel được gọi
             foreach (var panel in panels)
             {
-                if (panel.PanelType == newPanelType)
+                if (panel.PanelType == newType)
                 {
-                    currentPanel = panel;
+                    _currentPanel = panel;
                     panel.Show();
                 }
                 else
@@ -49,34 +86,25 @@ namespace Game.Battle.UI
                     panel.Hide();
                 }
             }
+
+            BattleEvents.OnPanelChanged?.Invoke(newType);
         }
 
-        private void OnEnable()
-        {
-            BattleEvents.OnPlayerTurnStart += HandlePlayerTurnStart;
-            BattleEvents.OnPrintDialog += HandlePrintDialogRequest;
-        }
+        // ── Private handlers ──────────────────────────────────────────────────
 
-        private void OnDisable()
-        {
-            BattleEvents.OnPlayerTurnStart -= HandlePlayerTurnStart;
-            BattleEvents.OnPrintDialog -= HandlePrintDialogRequest;
-        }
-
-        private void HandlePlayerTurnStart()
+        private void HandleTurnStart()
         {
             SwitchPanel(BattlePanelType.Command);
         }
 
-        private void HandlePrintDialogRequest(string text, bool autoClose)
+        private void HandlePrintDialog(string text, bool autoClose)
         {
-            SwitchPanel(BattlePanelType.Dialog);
-            
-            // Giám đốc chuyển thẳng data Log thoại vào Dialog thay vì đợi nó tự chụp Event
-            if (currentPanel != null && currentPanel is BattleDialogPanel dialog)
-            {
+            // Chi switch panel neu chua la Dialog - tranh Hide/Show lai lam mat queue
+            if (_currentPanel == null || _currentPanel.PanelType != BattlePanelType.Dialog)
+                SwitchPanel(BattlePanelType.Dialog);
+
+            if (_currentPanel is BattleDialogPanel dialog)
                 dialog.EnqueueMessage(text, autoClose);
-            }
         }
     }
 }

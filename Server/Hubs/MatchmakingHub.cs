@@ -9,6 +9,8 @@ using PokemonMMO.Models;
 using PokemonMMO.Models.DTOs;
 using PokemonMMO.Services;
 using MongoDB.Driver;
+using Microsoft.Extensions.Options;
+using PokemonMMO.Options;
 
 namespace PokemonMMO.Hubs;
 
@@ -22,6 +24,7 @@ public class MatchmakingHub : Hub
     private readonly MongoDbContext _db;
     private readonly BattleService _battleService;
     private readonly GameService _gameService;
+    private readonly BattleOptions _opts;
 
     // In-memory player tracking (sessionId → playerId)
     public static readonly ConcurrentDictionary<string, string> ConnectedPlayers = new();
@@ -32,11 +35,12 @@ public class MatchmakingHub : Hub
     // Lưu trữ các Task timeout để hủy nếu tìm thấy trận sớm
     private static readonly ConcurrentDictionary<string, CancellationTokenSource> MatchmakingTasks = new();
 
-    public MatchmakingHub(MongoDbContext db, BattleService battleService, GameService gameService)
+    public MatchmakingHub(MongoDbContext db, BattleService battleService, GameService gameService, IOptions<BattleOptions> opts)
     {
         _db = db;
         _battleService = battleService;
         _gameService = gameService;
+        _opts = opts.Value;
     }
 
     public async Task JoinLobby()
@@ -62,6 +66,18 @@ public class MatchmakingHub : Hub
             Id = player.Id,
             Name = player.Name
         });
+
+        // Nạp Pokemon khởi đầu nếu người chơi chưa có con nào trong Party
+        var partyCount = await _db.PokemonInstances
+            .CountDocumentsAsync(p => p.OwnerId == player.Id && p.IsInParty);
+        
+        await Clients.Caller.SendAsync("Debug", $"[Server] Player: {player.Name} ({player.Id}), PartyCount: {partyCount}");
+
+        if (partyCount == 0)
+        {
+            await Clients.Caller.SendAsync("Debug", "[Server] Seeding initial Pokemon...");
+            await _gameService.SeedInitialPokemonAsync(player.Id);
+        }
 
         // Đồng bộ Party khi vừa vào Lobby
         await SyncPartyToClient(player.Id);
@@ -90,6 +106,8 @@ public class MatchmakingHub : Hub
                 Builders<PokemonInstance>.Filter.Eq(p => p.OwnerId, playerId),
                 Builders<PokemonInstance>.Filter.Eq(p => p.IsInParty, true)))
             .ToListAsync();
+
+        await Clients.Caller.SendAsync("Debug", $"[Server] Syncing party for {playerId}, count: {party.Count}");
 
         var partyData = party.Select(p => new PartyPokemonDto
         {
@@ -130,6 +148,23 @@ public class MatchmakingHub : Hub
         }
     }
 
+    /// <summary>
+    /// Tạo bot battle ngay lập tức, không cần đợi 30s. Dùng cho demo / testing.
+    /// </summary>
+    public async Task FightBot()
+    {
+        // Ưu tiên ConnectedPlayers (nếu đã JoinLobby), fallback sang DB qua JWT
+        if (!ConnectedPlayers.TryGetValue(Context.ConnectionId, out var playerId))
+        {
+            var player = await GetAuthenticatedPlayer();
+            if (player == null) { await Clients.Caller.SendAsync("Error", "Not authenticated."); return; }
+            playerId = player.Id;
+            ConnectedPlayers[Context.ConnectionId] = playerId;
+        }
+
+        await CreateAndNotifyBattle(playerId, BattleService.BotPlayerId, Context.ConnectionId, null);
+    }
+
     public async Task FindMatch()
     {
         if (!ConnectedPlayers.TryGetValue(Context.ConnectionId, out var myPlayerId))
@@ -154,21 +189,27 @@ public class MatchmakingHub : Hub
 
         // 2. Không có ai, vào hàng chờ
         MatchmakingQueue[myPlayerId] = Context.ConnectionId;
-        await Clients.Caller.SendAsync("SearchStarted", "Đang tìm đối thủ... (Hệ thống sẽ nạp Bot sau 30s)");
+        
+        int countdown = _opts.BotFallbackSeconds;
+        await Clients.Caller.SendAsync("SearchStarted", new { CountdownSeconds = countdown });
 
         var myCts = new CancellationTokenSource();
         MatchmakingTasks[myPlayerId] = myCts;
 
         try
         {
-            // Chờ 30 giây
-            await Task.Delay(30000, myCts.Token);
+            // Gửi tick mỗi giây
+            for (int i = countdown; i > 0; i--)
+            {
+                await Task.Delay(1000, myCts.Token);
+                await Clients.Caller.SendAsync("SearchTick", new { SecondsLeft = i - 1 });
+            }
 
-            // Nếu sau 30s vẫn còn trong hàng chờ -> Đấu với BOT
+            // Hết giờ → ghép Bot
             if (MatchmakingQueue.TryRemove(myPlayerId, out _))
             {
                 MatchmakingTasks.TryRemove(myPlayerId, out _);
-                await CreateAndNotifyBattle(myPlayerId, "BOT_PLAYER", Context.ConnectionId, null);
+                await CreateAndNotifyBattle(myPlayerId, BattleService.BotPlayerId, Context.ConnectionId, null);
             }
         }
         catch (TaskCanceledException)
@@ -231,8 +272,24 @@ public class MatchmakingHub : Hub
 
         if (string.IsNullOrWhiteSpace(accountId)) return null;
 
-        return await _db.Players
+        var player = await _db.Players
             .Find(Builders<Player>.Filter.Eq(p => p.AccountId, accountId))
             .FirstOrDefaultAsync();
+        
+        if (player == null)
+        {
+            // Auto-create player profile if missing (dev fallback)
+            var username = Context.User?.FindFirst("username")?.Value ?? "Player_" + accountId[..5];
+            player = new Player
+            {
+                AccountId = accountId,
+                Name = username,
+                MMR = 1000,
+                VP = 0
+            };
+            await _db.Players.InsertOneAsync(player);
+        }
+
+        return player;
     }
 }

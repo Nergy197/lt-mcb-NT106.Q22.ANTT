@@ -9,11 +9,13 @@ namespace Game.Battle.UI
     {
         [Header("UI Components")]
         public TextMeshProUGUI dialogText;
-        public float charsPerSecond = 50f;
+        public float charsPerSecond = 35f; // Chậm lại cho dễ đọc
 
-        private Queue<string> messageQueue = new Queue<string>();
+        private Queue<(string message, bool autoClose)> messageQueue = new Queue<(string, bool)>();
         private bool isTyping = false;
         private Coroutine typeRoutine;
+
+        public bool IsBusy => isTyping || messageQueue.Count > 0;
 
         private void OnEnable()
         {
@@ -36,26 +38,29 @@ namespace Game.Battle.UI
         // Đc gọi trực tiếp từ UIManager
         public void EnqueueMessage(string message, bool autoClose)
         {
-            messageQueue.Enqueue(message);
+            messageQueue.Enqueue((message, autoClose));
             if (!isTyping)
             {
-                typeRoutine = StartCoroutine(ProcessMessageQueue(autoClose));
+                typeRoutine = StartCoroutine(ProcessMessageQueue());
             }
         }
 
-        private IEnumerator ProcessMessageQueue(bool autoCloseLast)
+        private IEnumerator ProcessMessageQueue()
         {
             isTyping = true;
+            bool lastAutoClose = true;
             while (messageQueue.Count > 0)
             {
-                string msg = messageQueue.Dequeue();
+                var (msg, autoClose) = messageQueue.Dequeue();
+                lastAutoClose = autoClose;
                 yield return StartCoroutine(TypeMessageCoroutine(msg));
-                yield return new WaitForSeconds(1.5f);
+                // Doi ngan giua cac message de nguoi choi doc
+                yield return new WaitForSeconds(0.6f);
             }
             
             isTyping = false;
 
-            if(autoCloseLast)
+            if(lastAutoClose)
             {
                 BattleUIManager uiManager = GetComponentInParent<BattleUIManager>();
                 if (uiManager != null) uiManager.SwitchPanel(BattlePanelType.None);
