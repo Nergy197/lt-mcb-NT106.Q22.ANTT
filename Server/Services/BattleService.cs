@@ -707,7 +707,7 @@ public class BattleService
         if (!_moveCache.TryGetValue(pokemonMove.MoveId, out var move)) return;
 
         // Status condition prevents acting?
-        if (!CanAct(attacker, events)) return;
+        if (!CanAct(session, attacker, events)) return;
 
         // Confusion self-hit
         if (attacker.IsConfused)
@@ -856,7 +856,7 @@ public class BattleService
 
     // ── Status condition gate ────────────────────────────────────────────────
 
-    private bool CanAct(BattlePokemonSnapshot pokemon, List<BattleEvent> events)
+    private bool CanAct(BattleSession session, BattlePokemonSnapshot pokemon, List<BattleEvent> events)
     {
         switch (pokemon.NonVolatileStatus)
         {
