@@ -23,46 +23,63 @@ namespace Game.Chat
         [Header("Giới hạn tin nhắn hiển thị")]
         public int maxMessages = 100;
 
-        private string _myPlayerId;
+        private string MyPlayerId => PlayerPrefs.GetString("player_id", "");
+        private bool _subscribed = false;
 
         private void Start()
         {
-            _myPlayerId = PlayerPrefs.GetString("player_id", "");
-
             if (sendButton != null)
                 sendButton.onClick.AddListener(OnSendClick);
-
-            if (ChatHubClient.Instance != null)
-            {
-                ChatHubClient.Instance.OnChatHistory  += HandleChatHistory;
-                ChatHubClient.Instance.OnWorldMessage += HandleWorldMessage;
-            }
         }
 
         private void OnEnable()
         {
-            StartCoroutine(LoadHistoryWhenReady());
+            StartCoroutine(SubscribeAndLoadHistory());
         }
 
-        private IEnumerator LoadHistoryWhenReady()
+        private void OnDisable()
         {
+            Unsubscribe();
+        }
+
+        private void OnDestroy()
+        {
+            Unsubscribe();
+        }
+
+        // ── Subscription ─────────────────────────────────────────────────────
+
+        private IEnumerator SubscribeAndLoadHistory()
+        {
+            // Chờ tối đa 6s cho ChatHubClient sẵn sàng
             float elapsed = 0f;
             while ((ChatHubClient.Instance == null || !ChatHubClient.Instance.IsReady) && elapsed < 6f)
             {
                 elapsed += 0.5f;
                 yield return new WaitForSeconds(0.5f);
             }
-            ChatHubClient.Instance?.LoadWorldHistory();
+
+            if (ChatHubClient.Instance == null) yield break;
+
+            if (!_subscribed)
+            {
+                ChatHubClient.Instance.OnChatHistory  += HandleChatHistory;
+                ChatHubClient.Instance.OnWorldMessage += HandleWorldMessage;
+                _subscribed = true;
+            }
+
+            ChatHubClient.Instance.LoadWorldHistory();
         }
 
-        private void OnDestroy()
+        private void Unsubscribe()
         {
-            if (ChatHubClient.Instance != null)
-            {
-                ChatHubClient.Instance.OnChatHistory  -= HandleChatHistory;
-                ChatHubClient.Instance.OnWorldMessage -= HandleWorldMessage;
-            }
+            if (!_subscribed || ChatHubClient.Instance == null) return;
+            ChatHubClient.Instance.OnChatHistory  -= HandleChatHistory;
+            ChatHubClient.Instance.OnWorldMessage -= HandleWorldMessage;
+            _subscribed = false;
         }
+
+        // ── Handlers ─────────────────────────────────────────────────────────
 
         private void HandleChatHistory(ChatHistoryPayload payload)
         {
@@ -82,6 +99,8 @@ namespace Game.Chat
             StartCoroutine(ScrollToBottomNextFrame());
         }
 
+        // ── Gửi tin ──────────────────────────────────────────────────────────
+
         private void OnSendClick()
         {
             string text = inputField?.text?.Trim();
@@ -92,10 +111,12 @@ namespace Game.Chat
             inputField.ActivateInputField();
         }
 
+        // ── Render ───────────────────────────────────────────────────────────
+
         private void AppendMessage(ChatMessageData msg)
         {
             if (messageContainer == null) return;
-            bool isMe = msg.SenderId == _myPlayerId;
+            bool isMe = msg.SenderId == MyPlayerId;
             GameObject prefab = isMe ? myMessagePrefab : friendMessagePrefab;
             if (prefab == null) return;
 
@@ -105,22 +126,18 @@ namespace Game.Chat
             var ui = obj.GetComponent<MessageItemUI>();
             if (ui != null) { ui.SetData(msg.SenderName, msg.Content, msg.CreatedAt, isMe); return; }
 
-            // --- Layout thủ công: MessageBubble + SenderName_Text + Avatar ---
-
-            // Nội dung tin nhắn — ưu tiên TMP_Text bên trong MessageBubble
+            // Layout thủ công: MessageBubble + SenderName_Text + Avatar
             var bubble = obj.transform.Find("MessageBubble");
             var contentText = bubble != null
                 ? bubble.GetComponentInChildren<TMPro.TMP_Text>()
                 : obj.GetComponentInChildren<TMPro.TMP_Text>();
             if (contentText != null) contentText.text = msg.Content ?? "";
 
-            if (isMe) return; // Tin nhắn của mình không cần tên/avatar
+            if (isMe) return;
 
-            // Tên người gửi
             var nameLabel = obj.transform.Find("SenderName_Text")?.GetComponent<TMPro.TMP_Text>();
             if (nameLabel != null) nameLabel.text = msg.SenderName ?? "";
 
-            // Avatar — lấy từ cache session của FriendListLoader
             var avatarImg = obj.transform.Find("Avatar")?.GetComponent<Image>();
             if (avatarImg != null)
             {
