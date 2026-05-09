@@ -1,6 +1,5 @@
 # =============================================================================
 # NT106.Q22.ANTT — Pokémon MMO Server · Local Dev Infrastructure
-# No Dockerfile needed — 100% prebuilt images from Docker Hub
 #
 # Usage:
 #   cp .env.example .env          # copy & edit secrets
@@ -31,7 +30,6 @@ networks:
 # ─────────────────────────────────────────────────────────────────────────────
 volumes:
   mongo_data:
-  nuget_cache:
 
 services:
 
@@ -60,9 +58,9 @@ services:
       start_period: 15s
 
   # ---------------------------------------------------------------------------
-  # GAME SERVER 
-  # Sử dụng Dockerfile (nguyên lý Multi-stage Build) để đảm bảo máy nào up lên
-  # cũng không bị đụng độ file bin/obj
+  # GAME SERVER
+  # Multi-stage build — loại bỏ bin/obj local (quan trọng trên Windows)
+  # Yêu cầu Docker Desktop 20.10+ (BuildKit enabled by default)
   # ---------------------------------------------------------------------------
   server:
     build:
