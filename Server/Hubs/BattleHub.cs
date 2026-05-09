@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Collections.Concurrent;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -56,6 +57,12 @@ public class BattleHub : Hub
             return;
         }
 
+        if (string.IsNullOrEmpty(battleId))
+        {
+            await Clients.Caller.SendAsync("Error", "BattleId is null or empty.");
+            return;
+        }
+
         var session = _battleService.GetSession(battleId);
         if (session == null)
         {
@@ -63,30 +70,42 @@ public class BattleHub : Hub
             return;
         }
 
-        await Clients.Caller.SendAsync("Debug", $"[Server] Session state: {session.State}");
-
-        if (playerId != session.Player1Id && playerId != session.Player2Id)
-        {
-            await Clients.Caller.SendAsync("Error", $"You ({playerId}) are not a participant in this battle (P1:{session.Player1Id}, P2:{session.Player2Id}).");
-            return;
-        }
-
         await Groups.AddToGroupAsync(Context.ConnectionId, battleId);
         PlayerConnections[playerId] = Context.ConnectionId;
 
-        // Track connection per battle
-        BattleConnections.AddOrUpdate(
-            battleId,
-            _ => playerId == session.Player1Id
-                ? (Context.ConnectionId, "")
-                : ("", Context.ConnectionId),
-            (_, old) => playerId == session.Player1Id
-                ? (Context.ConnectionId, old.conn2)
-                : (old.conn1, Context.ConnectionId)
-        );
+        if (session.State == BattleState.TeamPreview)
+        {
+            var myTeam = playerId == session.Player1Id ? session.Team1 : session.Team2;
+            var oppTeam = playerId == session.Player1Id ? session.Team2 : session.Team1;
 
-        // Send current state to the joining player
-        await SendBattleStateToPlayer(session, playerId);
+            await Clients.Caller.SendAsync("TeamPreviewReady", new TeamPreviewDto
+            {
+                BattleId = session.BattleId,
+                YourPlayerId = playerId,
+                OpponentPlayerId = playerId == session.Player1Id ? session.Player2Id : session.Player1Id,
+                YourTeam = myTeam.Select(p => MapToPreview(p)).ToList(),
+                OpponentTeam = oppTeam.Select(p => MapToPreview(p)).ToList()
+            });
+        }
+        else
+        {
+            var fieldDto = BuildBattleRunningDto(session, playerId);
+            await Clients.Caller.SendAsync("BattleRunning", fieldDto);
+        }
+    }
+
+    private TeamPreviewPokemonDto MapToPreview(BattlePokemonSnapshot p)
+    {
+        return new TeamPreviewPokemonDto
+        {
+            SpeciesId = p.SpeciesId,
+            SpeciesName = p.SpeciesName,
+            Nickname = p.Nickname,
+            Type1 = p.Type1,
+            Type2 = p.Type2,
+            Level = p.Level,
+            MaxHp = p.MaxHp
+        };
     }
 
     /// <summary>
@@ -178,6 +197,12 @@ public class BattleHub : Hub
     {
         var playerId = await ResolvePlayerId();
         if (playerId == null) return;
+
+        if (string.IsNullOrEmpty(battleId))
+        {
+            await Clients.Caller.SendAsync("Error", "BattleId is null or empty.");
+            return;
+        }
 
         var session = _battleService.GetSession(battleId);
         if (session == null) return;
@@ -366,9 +391,10 @@ public class BattleHub : Hub
             OrigType2       = p.OrigType2,
             TerType         = p.TerType,
             IsTerastallized = p.IsTerastallized,
+            Level           = p.Level,
             CurrentHp       = p.CurrentHp,
             MaxHp           = p.MaxHp,
-            Status          = p.NonVolatileStatus,
+            Status          = p.NonVolatileStatus == PokemonStatusCondition.None ? null : p.NonVolatileStatus.ToString().ToLower(),
             StatStages      = p.StatStages,
             IsFainted       = p.IsFainted,
             Moves           = showMoves
@@ -432,7 +458,7 @@ public class BattleHub : Hub
 
     public override async Task OnDisconnectedAsync(Exception? exception)
     {
-        if (ConnectedPlayers.TryGetValue(Context.ConnectionId, out var playerId))
+        if (ConnectedPlayers.TryRemove(Context.ConnectionId, out var playerId))
             PlayerConnections.TryRemove(playerId, out _);
 
         await base.OnDisconnectedAsync(exception);

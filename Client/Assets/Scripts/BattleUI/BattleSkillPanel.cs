@@ -111,6 +111,7 @@ namespace Game.Battle.UI
         public void SetMove(int slot, string moveName, string typeName = "normal",
             string category = "Special", int pp = 0, int maxPp = 0)
         {
+            _isSelectingTarget = false;
             if (slot < 0 || slot >= skillButtons.Length || skillButtons[slot] == null) return;
 
             // Tên chiêu — fallback lấy TMP đầu tiên trong button nếu không tìm thấy "MoveName"
@@ -130,6 +131,9 @@ namespace Game.Battle.UI
 
             // PP
             UpdatePP(slot, moveName, pp, maxPp);
+            
+            // Đảm bảo nút interactable (vừa reset từ target selection)
+            if (skillButtons[slot] != null) skillButtons[slot].interactable = true;
         }
 
         public void SetTargetLabel(int slot, string label)
@@ -139,6 +143,18 @@ namespace Game.Battle.UI
                           ?.GetComponent<TextMeshProUGUI>()
                        ?? skillButtons[slot].GetComponentInChildren<TextMeshProUGUI>();
             if (nameTmp != null) nameTmp.text = label;
+        }
+
+        public void SetTargetLabels(string oppA, string oppB, string yourA, string yourB)
+        {
+            _isSelectingTarget = true;
+            string[] labels = { oppA, oppB, yourA, yourB };
+            for (int i = 0; i < 4 && i < skillButtons.Length; i++)
+            {
+                SetTargetLabel(i, labels[i]);
+                if (skillButtons[i] != null)
+                    skillButtons[i].interactable = (labels[i] != "---");
+            }
         }
 
         /// Được gọi bởi NetworkController sau mỗi lần dùng Tera để disable nút.
@@ -160,10 +176,21 @@ namespace Game.Battle.UI
 
         // ── Button callbacks ─────────────────────────────────────────────────
 
+        private bool _isSelectingTarget;
+
         private void OnSkillClicked(int skillIndex)
         {
-            _uiManager?.SwitchPanel(BattlePanelType.None);
-            BattleEvents.OnPlayerUseSkill?.Invoke(skillIndex);
+            if (_isSelectingTarget)
+            {
+                _isSelectingTarget = false;
+                _uiManager?.SwitchPanel(BattlePanelType.None);
+                BattleEvents.OnTargetSelected?.Invoke(skillIndex);
+            }
+            else
+            {
+                _uiManager?.SwitchPanel(BattlePanelType.None);
+                BattleEvents.OnPlayerUseSkill?.Invoke(skillIndex);
+            }
         }
 
         private void OnBackClicked()

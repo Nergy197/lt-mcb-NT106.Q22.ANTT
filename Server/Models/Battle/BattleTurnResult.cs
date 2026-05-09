@@ -21,10 +21,10 @@ public class BattleTurnResult
     public int ActiveHp2b { get; set; }
 
     // Field state snapshot sent to client
-    public WeatherCondition Weather { get; set; } = WeatherCondition.None;
+    public string Weather { get; set; } = "none";
     public int WeatherTurnsLeft { get; set; } = 0;
 
-    public TerrainCondition Terrain { get; set; } = TerrainCondition.None;
+    public string Terrain { get; set; } = "none";
     public int TerrainTurnsLeft { get; set; } = 0;
 
     // Full HP của cả đội (4 Pokemon được mang đi)

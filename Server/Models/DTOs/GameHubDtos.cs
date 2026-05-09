@@ -132,10 +132,11 @@ public class FieldPokemonDto
     // Gen 9 Tera
     public string  TerType          { get; set; } = "normal";
     public bool    IsTerastallized  { get; set; }
+    public int     Level            { get; set; }
     public int     CurrentHp        { get; set; }
     public int     MaxHp            { get; set; }
     public bool    IsFainted        { get; set; }
-    public PokemonStatusCondition Status { get; set; }
+    public string? Status           { get; set; }
     public int[]   StatStages       { get; set; } = new int[7];
     // Moves only sent for the player's own Pokemon
     public List<MoveSummaryDto> Moves { get; set; } = new();

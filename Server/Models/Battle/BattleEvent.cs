@@ -7,6 +7,7 @@ namespace PokemonMMO.Models;
 public abstract class BattleEvent
 {
     public string EventType => GetType().Name;
+    public string Message { get; set; } = "";
 }
 
 // ─── Battle lifecycle ────────────────────────────────────────────────────────
@@ -184,7 +185,6 @@ public class NotVeryEffectiveEvent : BattleEvent
 /// <summary>Mirrors pbs-unity Message event — fallback for edge cases.</summary>
 public class MessageEvent : BattleEvent
 {
-    public string Message { get; init; } = "";
 }
 
 // ─── Terrain events (Gen 6+) ─────────────────────────────────────────────────

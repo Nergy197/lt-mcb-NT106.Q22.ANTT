@@ -1,13 +1,13 @@
 using MongoDB.Driver;
 using PokemonMMO.Data;
 using PokemonMMO.Models;
+using System.Collections.Generic;
+using System.Linq;
+using System;
+using System.Threading.Tasks;
 
 namespace PokemonMMO.Services;
 
-/// <summary>
-/// Core game logic — heal, catch, trade, boss gating.
-/// All methods ported 1:1 from the TypeScript GameService.
-/// </summary>
 public class GameService
 {
     private readonly MongoDbContext _db;
@@ -29,19 +29,16 @@ public class GameService
         _pokeData = pokeData;
     }
 
-    /// <summary>
-    /// Nạp 6 Pokemon khởi đầu cho người chơi mới.
-    /// </summary>
     public async Task SeedInitialPokemonAsync(string playerId)
     {
         var starters = new[]
         {
-            new { Id = 3,   Name = "Venusaur" }, 
-            new { Id = 6,   Name = "Charizard" },
-            new { Id = 9,   Name = "Blastoise" },
-            new { Id = 25,  Name = "Pikachu" },
-            new { Id = 448, Name = "Lucario" },
-            new { Id = 445, Name = "Garchomp" }
+            new { Id = 3,   Name = "Venusaur",  Moves = new[] { "sludge-bomb", "solar-beam", "giga-drain", "sleep-powder" } }, 
+            new { Id = 6,   Name = "Charizard", Moves = new[] { "flamethrower", "dragon-pulse", "air-slash", "overheat" } },
+            new { Id = 9,   Name = "Blastoise", Moves = new[] { "hydro-pump", "ice-beam", "flash-cannon", "surf" } },
+            new { Id = 25,  Name = "Pikachu",   Moves = new[] { "thunderbolt", "quick-attack", "iron-tail", "volt-tackle" } },
+            new { Id = 448, Name = "Lucario",   Moves = new[] { "aura-sphere", "dragon-pulse", "close-combat", "extreme-speed" } },
+            new { Id = 445, Name = "Garchomp",  Moves = new[] { "dragon-claw", "earthquake", "rock-slide", "swords-dance" } }
         };
 
         var instances = new List<PokemonInstance>();
@@ -49,33 +46,27 @@ public class GameService
 
         foreach (var s in starters)
         {
-            // Ưu tiên lấy stats từ Pokedex DB (đã seed), fallback sang PokeAPI nếu thiếu
             var dex = await _db.Pokedex.Find(x => x.Id == s.Id).FirstOrDefaultAsync();
+            int baseHp = (dex != null && dex.BaseStats.ContainsKey("hp")) ? dex.BaseStats["hp"] : 60;
 
-            int baseHp;
-            if (dex != null && dex.BaseStats.ContainsKey("hp"))
-            {
-                baseHp = dex.BaseStats.GetValueOrDefault("hp", 45);
-            }
-            else
-            {
-                var pData = await _pokeData.GetPokemonData(s.Id);
-                baseHp = pData.BaseHp;
+            var pokemonMoves = new List<PokemonMove>();
+            foreach(var moveName in s.Moves) {
+                var moveEntry = await _db.Moves.Find(mv => mv.Name == moveName).FirstOrDefaultAsync();
+                if (moveEntry != null) {
+                    pokemonMoves.Add(new PokemonMove { 
+                        MoveId = moveEntry.Id, 
+                        MoveName = moveEntry.Name, 
+                        MoveType = moveEntry.Type, 
+                        Category = moveEntry.Category, 
+                        MaxPp = moveEntry.PP, 
+                        CurrentPp = moveEntry.PP 
+                    });
+                }
             }
 
-            // Moves: lấy từ DefaultMoves trong Pokedex, fallback sang 4 moves ID nhỏ nhất trong DB
-            List<int> moveset;
-            if (dex?.DefaultMoves?.Count > 0)
-            {
-                moveset = dex.DefaultMoves.Take(4).ToList();
-            }
-            else
-            {
-                // Lấy 4 move đầu tiên có trong DB
-                var dbMoves = await _db.Moves.Find(_ => true).Limit(4).ToListAsync();
-                moveset = dbMoves.Count > 0
-                    ? dbMoves.Select(m => m.Id).ToList()
-                    : new List<int> { 1, 2, 3, 4 };
+            // Fallback nếu không có chiêu trong DB
+            if (pokemonMoves.Count == 0) {
+                pokemonMoves.Add(new PokemonMove { MoveId = 1, MoveName = "Pound", MoveType = "normal", Category = "Physical", MaxPp = 35, CurrentPp = 35 });
             }
 
             var ivs = new StatBlock { Hp = 31, Atk = 31, Def = 31, SpAtk = 31, SpDef = 31, Spd = 31 };
@@ -97,7 +88,7 @@ public class GameService
                 PartySlot      = slot++,
                 Ivs            = ivs,
                 Evs            = evs,
-                Moves          = moveset.Select(mId => new PokemonMove { MoveId = mId, CurrentPp = 15 }).ToList()
+                Moves          = pokemonMoves
             };
             instances.Add(instance);
         }
@@ -110,9 +101,6 @@ public class GameService
         return (int)Math.Floor((2.0 * baseStat + iv + Math.Floor(ev / 4.0)) * level / 100.0) + level + 10;
     }
 
-    // ─────────────────────────────────────────────────────────────────────
-    // 1. Heal at Safe Zone (Hub)
-    // ─────────────────────────────────────────────────────────────────────
     public async Task<bool> HealPlayerParty(string playerId)
     {
         var filter = Builders<PokemonInstance>.Filter.And(
@@ -134,64 +122,22 @@ public class GameService
         return true;
     }
 
-
-    // ─────────────────────────────────────────────────────────────────────
-    // 3. Secure Trading (Hub) — atomic owner swap
-    // ─────────────────────────────────────────────────────────────────────
-    public async Task<bool> ExecuteTrade(
-        string player1Id, string player2Id,
-        string pokemonId1, string pokemonId2)
+    public async Task<bool> ExecuteTrade(string player1Id, string player2Id, string pokemonId1, string pokemonId2)
     {
-        // Verify ownership
-        var p1Poke = await _db.PokemonInstances.Find(
-            Builders<PokemonInstance>.Filter.And(
-                Builders<PokemonInstance>.Filter.Eq(p => p.Id, pokemonId1),
-                Builders<PokemonInstance>.Filter.Eq(p => p.OwnerId, player1Id))
-        ).FirstOrDefaultAsync();
+        var p1Poke = await _db.PokemonInstances.Find(Builders<PokemonInstance>.Filter.And(Builders<PokemonInstance>.Filter.Eq(p => p.Id, pokemonId1), Builders<PokemonInstance>.Filter.Eq(p => p.OwnerId, player1Id))).FirstOrDefaultAsync();
+        var p2Poke = await _db.PokemonInstances.Find(Builders<PokemonInstance>.Filter.And(Builders<PokemonInstance>.Filter.Eq(p => p.Id, pokemonId2), Builders<PokemonInstance>.Filter.Eq(p => p.OwnerId, player2Id))).FirstOrDefaultAsync();
 
-        var p2Poke = await _db.PokemonInstances.Find(
-            Builders<PokemonInstance>.Filter.And(
-                Builders<PokemonInstance>.Filter.Eq(p => p.Id, pokemonId2),
-                Builders<PokemonInstance>.Filter.Eq(p => p.OwnerId, player2Id))
-        ).FirstOrDefaultAsync();
+        if (p1Poke == null || p2Poke == null) return false;
 
-        if (p1Poke == null) throw new Exception("Player 1 does not own the specified Pokemon.");
-        if (p2Poke == null) throw new Exception("Player 2 does not own the specified Pokemon.");
+        var update1 = Builders<PokemonInstance>.Update.Set(p => p.OwnerId, player2Id).Set(p => p.IsInParty, false).Unset(p => p.PartySlot);
+        var update2 = Builders<PokemonInstance>.Update.Set(p => p.OwnerId, player1Id).Set(p => p.IsInParty, false).Unset(p => p.PartySlot);
 
-        // Swap owners & remove from party
-        var update1 = Builders<PokemonInstance>.Update
-            .Set(p => p.OwnerId, player2Id)
-            .Set(p => p.IsInParty, false)
-            .Unset(p => p.PartySlot);
-
-        var update2 = Builders<PokemonInstance>.Update
-            .Set(p => p.OwnerId, player1Id)
-            .Set(p => p.IsInParty, false)
-            .Unset(p => p.PartySlot);
-
-        await _db.PokemonInstances.UpdateOneAsync(
-            Builders<PokemonInstance>.Filter.Eq(p => p.Id, pokemonId1), update1);
-        await _db.PokemonInstances.UpdateOneAsync(
-            Builders<PokemonInstance>.Filter.Eq(p => p.Id, pokemonId2), update2);
+        await _db.PokemonInstances.UpdateOneAsync(Builders<PokemonInstance>.Filter.Eq(p => p.Id, pokemonId1), update1);
+        await _db.PokemonInstances.UpdateOneAsync(Builders<PokemonInstance>.Filter.Eq(p => p.Id, pokemonId2), update2);
 
         return true;
     }
 
-    // ─────────────────────────────────────────────────────────────────────
-    // 4. Boss Gating System (Wilderness) - OBSOLETE
-    // ─────────────────────────────────────────────────────────────────────
-    public Task<bool> CheckCanEnterZone(string playerId, string requiredBossId)
-    {
-        // Obsolete logic since BeatenBosses is removed in PvP pivot.
-        return Task.FromResult(true);
-    }
-
-    // ─────────────────────────────────────────────────────────────────────
-    // 5. Defeat Boss — record victory - OBSOLETE
-    // ─────────────────────────────────────────────────────────────────────
-    public Task OnBossDefeated(string playerId, string bossId)
-    {
-        // Obsolete logic since BeatenBosses is removed in PvP pivot.
-        return Task.CompletedTask;
-    }
+    public Task<bool> CheckCanEnterZone(string playerId, string requiredBossId) => Task.FromResult(true);
+    public Task OnBossDefeated(string playerId, string bossId) => Task.CompletedTask;
 }

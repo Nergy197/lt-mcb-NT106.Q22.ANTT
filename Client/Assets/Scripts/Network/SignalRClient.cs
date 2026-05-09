@@ -20,53 +20,45 @@ namespace Game.Network
         public HubConnection Battle => _battleHub;
         public HubConnection Chat => _chatHub;
 
-        private string _token;
-
         private void Awake()
         {
             if (Instance == null)
             {
                 Instance = this;
-                DontDestroyOnLoad(gameObject);
-                InitHubs(); // Khởi tạo Hub ngay lập tức
+                if (transform.parent == null) DontDestroyOnLoad(gameObject);
+                
+                // KHÔNG khởi tạo Hub ở đây nữa, đợi đến khi ConnectAsync mới khởi tạo để có Token
             }
-            else
+            else if (Instance != this)
             {
-                Destroy(gameObject);
+                Destroy(this);
             }
-        }
-
-        private void InitHubs()
-        {
-            _matchmakingHub = CreateConnection("/hubs/matchmaking");
-            _battleHub = CreateConnection("/hubs/battle");
-            _chatHub = CreateConnection("/hubs/chat");
         }
 
         public async Task ConnectAsync()
         {
-            _token = PlayerPrefs.GetString("jwt_token", "");
-            if (string.IsNullOrEmpty(_token))
+            // Luôn lấy token mới nhất từ PlayerPrefs
+            string token = PlayerPrefs.GetString("jwt_token", "");
+            if (string.IsNullOrEmpty(token))
             {
-                Debug.LogError("[Network] Không tìm thấy JWT Token. Vui lòng login lại.");
-                return;
+                Debug.LogWarning("[Network] Không tìm thấy JWT Token. Đang chạy ở chế độ Guest.");
             }
 
-            // Cập nhật lại Connection với Token mới (vì Token thay đổi sau mỗi lần login)
-            InitHubs();
+            // Khởi tạo Hub với Token hiện tại
+            _matchmakingHub = CreateConnection("/hubs/matchmaking", token);
+            _battleHub = CreateConnection("/hubs/battle", token);
+            _chatHub = CreateConnection("/hubs/chat", token);
 
             try
             {
-                if (_matchmakingHub.State == HubConnectionState.Disconnected)
-                    await _matchmakingHub.StartAsync();
-                
-                if (_battleHub.State == HubConnectionState.Disconnected)
-                    await _battleHub.StartAsync();
+                // Dùng Task.WhenAll để kết nối nhanh hơn
+                await Task.WhenAll(
+                    _matchmakingHub.StartAsync(),
+                    _battleHub.StartAsync(),
+                    _chatHub.StartAsync()
+                );
 
-                if (_chatHub.State == HubConnectionState.Disconnected)
-                    await _chatHub.StartAsync();
-
-                Debug.Log("[Network] Đã kết nối SignalR thành công.");
+                Debug.Log("[Network] Đã kết nối SignalR thành công với Token: " + (string.IsNullOrEmpty(token) ? "NULL" : "OK"));
             }
             catch (Exception ex)
             {
@@ -74,12 +66,13 @@ namespace Game.Network
             }
         }
 
-        private HubConnection CreateConnection(string hubPath)
+        private HubConnection CreateConnection(string hubPath, string token)
         {
             return new HubConnectionBuilder()
                 .WithUrl(serverUrl + hubPath, options =>
                 {
-                    options.AccessTokenProvider = () => Task.FromResult(_token);
+                    // Quan trọng: Gán token vào Header cho mỗi lần kết nối
+                    options.AccessTokenProvider = () => Task.FromResult(token);
                 })
                 .WithAutomaticReconnect()
                 .Build();

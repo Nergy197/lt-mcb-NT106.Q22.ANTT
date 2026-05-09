@@ -151,18 +151,18 @@ public class MatchmakingHub : Hub
     /// <summary>
     /// Tạo bot battle ngay lập tức, không cần đợi 30s. Dùng cho demo / testing.
     /// </summary>
-    public async Task FightBot()
+    public async Task<string> FightBot()
     {
         // Ưu tiên ConnectedPlayers (nếu đã JoinLobby), fallback sang DB qua JWT
         if (!ConnectedPlayers.TryGetValue(Context.ConnectionId, out var playerId))
         {
             var player = await GetAuthenticatedPlayer();
-            if (player == null) { await Clients.Caller.SendAsync("Error", "Not authenticated."); return; }
+            if (player == null) { await Clients.Caller.SendAsync("Error", "Not authenticated."); return ""; }
             playerId = player.Id;
             ConnectedPlayers[Context.ConnectionId] = playerId;
         }
 
-        await CreateAndNotifyBattle(playerId, BattleService.BotPlayerId, Context.ConnectionId, null);
+        return await CreateAndNotifyBattle(playerId, BattleService.BotPlayerId, Context.ConnectionId, null);
     }
 
     public async Task FindMatch()
@@ -198,14 +198,13 @@ public class MatchmakingHub : Hub
 
         try
         {
-            // Gửi tick mỗi giây
             for (int i = countdown; i > 0; i--)
             {
+                await Clients.Caller.SendAsync("SearchTick", new { SecondsLeft = i });
                 await Task.Delay(1000, myCts.Token);
-                await Clients.Caller.SendAsync("SearchTick", new { SecondsLeft = i - 1 });
             }
+            await Clients.Caller.SendAsync("SearchTick", new { SecondsLeft = 0 });
 
-            // Hết giờ → ghép Bot
             if (MatchmakingQueue.TryRemove(myPlayerId, out _))
             {
                 MatchmakingTasks.TryRemove(myPlayerId, out _);
@@ -231,7 +230,7 @@ public class MatchmakingHub : Hub
         }
     }
 
-    private async Task CreateAndNotifyBattle(string p1, string p2, string conn1, string? conn2)
+    private async Task<string> CreateAndNotifyBattle(string p1, string p2, string conn1, string? conn2)
     {
         var battle = await _battleService.CreateBattle(p1, p2);
         var startDto = new BattleStartedEventDto
@@ -247,9 +246,11 @@ public class MatchmakingHub : Hub
 
         if (!string.IsNullOrEmpty(conn1))
             await Clients.Client(conn1).SendAsync("MatchFound", startDto);
-        
+
         if (!string.IsNullOrEmpty(conn2))
             await Clients.Client(conn2).SendAsync("MatchFound", startDto);
+
+        return battle.BattleId;
     }
 
     public override async Task OnDisconnectedAsync(Exception? exception)
@@ -266,28 +267,37 @@ public class MatchmakingHub : Hub
 
     private async Task<Player?> GetAuthenticatedPlayer()
     {
-        var accountId = Context.User?.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value
-            ?? Context.User?.FindFirst(JwtRegisteredClaimNames.Sub)?.Value
-            ?? Context.User?.FindFirst("sub")?.Value;
+        if (Context.User == null) {
+            Console.WriteLine("[Matchmaking] FAIL: Context.User is NULL");
+            return null;
+        }
 
-        if (string.IsNullOrWhiteSpace(accountId)) return null;
+        // Log tất cả các claims để debug
+        foreach (var claim in Context.User.Claims) {
+            Console.WriteLine($"[Matchmaking] Claim: {claim.Type} = {claim.Value}");
+        }
+
+        var accountId = Context.User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value
+            ?? Context.User.FindFirst("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier")?.Value
+            ?? Context.User.FindFirst(JwtRegisteredClaimNames.Sub)?.Value
+            ?? Context.User.FindFirst("sub")?.Value;
+
+        if (string.IsNullOrWhiteSpace(accountId)) {
+            Console.WriteLine("[Matchmaking] FAIL: AccountId not found in claims");
+            return null;
+        }
 
         var player = await _db.Players
             .Find(Builders<Player>.Filter.Eq(p => p.AccountId, accountId))
             .FirstOrDefaultAsync();
-        
-        if (player == null)
-        {
-            // Auto-create player profile if missing (dev fallback)
-            var username = Context.User?.FindFirst("username")?.Value ?? "Player_" + accountId[..5];
-            player = new Player
-            {
-                AccountId = accountId,
-                Name = username,
-                MMR = 1000,
-                VP = 0
-            };
+
+        if (player == null) {
+            Console.WriteLine($"[Matchmaking] FAIL: Player profile not found for AccountId: {accountId}");
+            // Fallback: Tạo profile nếu thiếu
+            var username = Context.User.Identity?.Name ?? "Guest_" + accountId[..5];
+            player = new Player { AccountId = accountId, Name = username, MMR = 1000 };
             await _db.Players.InsertOneAsync(player);
+            Console.WriteLine($"[Matchmaking] FIXED: Created missing player profile for {username}");
         }
 
         return player;

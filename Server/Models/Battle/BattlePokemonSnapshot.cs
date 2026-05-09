@@ -49,6 +49,7 @@ public class BattlePokemonSnapshot
     // ── Volatile status ───────────────────────────────────────────────────────
     public bool IsConfused { get; set; } = false;
     public int ConfusionTurnsLeft { get; set; } = 0;
+    public bool IsFlinched { get; set; } = false;
 
     // ── Stat stages (-6 to +6) ─────────────────────────────────────────────
     /// <summary>

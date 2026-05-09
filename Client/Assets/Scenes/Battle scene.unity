@@ -2324,8 +2324,8 @@ GameObject:
   m_Component:
   - component: {fileID: 316566208}
   - component: {fileID: 316566210}
-  - component: {fileID: 316566209}
   - component: {fileID: 316566211}
+  - component: {fileID: 316566212}
   m_Layer: 0
   m_Name: BattleSystem_Logic
   m_TagString: Untagged
@@ -2348,29 +2348,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 172073375}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &316566209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 316566207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d63f63090e0954826985856b42e7efb9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Game.Battle.Logic.BattleNetworkController
-  demoAutoMatch: 1
-  playerHUD1: {fileID: 1794258508}
-  playerHUD2: {fileID: 1766088404}
-  enemyHUD1: {fileID: 1135993406}
-  enemyHUD2: {fileID: 195020765}
-  skillPanel: {fileID: 310040862}
-  commandPanel: {fileID: 1877053958}
-  dialogPanel: {fileID: 1348503102}
-  teamPreviewPanel: {fileID: 125321457}
-  partyPanel: {fileID: 184083301}
-  fieldPanel: {fileID: 0}
 --- !u!114 &316566210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2400,6 +2377,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Network.SignalRClient
   serverUrl: http://127.0.0.1:2567
+--- !u!114 &316566212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316566207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d63f63090e0954826985856b42e7efb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Battle.Logic.BattleNetworkController
+  demoAutoMatch: 1
+  playerHUD1: {fileID: 0}
+  playerHUD2: {fileID: 0}
+  enemyHUD1: {fileID: 0}
+  enemyHUD2: {fileID: 0}
+  uiManager: {fileID: 0}
+  skillPanel: {fileID: 0}
+  commandPanel: {fileID: 0}
+  dialogPanel: {fileID: 0}
+  teamPreviewPanel: {fileID: 0}
+  partyPanel: {fileID: 0}
 --- !u!1 &319078301
 GameObject:
   m_ObjectHideFlags: 0
@@ -10002,6 +10002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42ee285de91804b828f3c439b82a8b84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Battle.Demo.BattleDemoSimulator
+  activateSimulator: 0
   skillPanel: {fileID: 0}
   commandPanel: {fileID: 0}
   skipTeamPreview: 0

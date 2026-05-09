@@ -200,7 +200,7 @@ namespace Game.Battle.UI
             float startFill  = hpFillImage.fillAmount;
             float targetFill = (float)targetHp / Mathf.Max(1, maxHp);
             float elapsed    = 0f;
-            const float dur  = 0.8f;
+            const float dur  = 0.5f; // Tăng tốc độ trừ máu
 
             while (elapsed < dur)
             {

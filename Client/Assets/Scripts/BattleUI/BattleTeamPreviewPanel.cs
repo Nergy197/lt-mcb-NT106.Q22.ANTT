@@ -39,7 +39,7 @@ namespace Game.Battle.UI
             BattleEvents.OnTeamPreviewStart -= OpenPreview;
         }
 
-        private bool _previewActive = false; // Guard: chặn Hide khi đang chọn team
+        private bool _previewActive = false;
 
         public override void Show()
         {
@@ -51,32 +51,21 @@ namespace Game.Battle.UI
 
         public override void Hide()
         {
-            if (_previewActive)
-            {
-                Debug.LogWarning($"[TeamPreview] BLOCKED Hide() — preview is active! Caller:\n{System.Environment.StackTrace}");
-                return; // CHẶN: không cho tắt khi đang chọn team
-            }
+            if (_previewActive) return;
             base.Hide();
         }
 
         public void OpenPreview(PreviewTeamData data)
         {
-            Debug.Log($"[TeamPreview] OpenPreview called. MyTeam={data?.MyTeam?.Length}, OppTeam={data?.OppTeam?.Length}");
+            Debug.Log($"[TeamPreview] OpenPreview called. My={data?.MyTeam?.Length}, Opp={data?.OppTeam?.Length}");
             _data = data;
-            if (_data.MyTeam == null || _data.MyTeam.Length == 0)
-            {
-                Debug.LogError("[TeamPreview] YOUR TEAM IS EMPTY! Check database or seeding logic.");
-            }
             _selectedIndices.Clear();
             for (int i = 0; i < 6; i++) _orderOf[i] = -1;
-            _previewActive = true; // Bật guard: chặn Hide
+            _previewActive = true;
 
             gameObject.SetActive(true);
-            
-            // Force lên trên cùng trong hierarchy để render và nhận click trước các panel khác
             transform.SetAsLastSibling();
             
-            // Yêu cầu UIManager ẩn hết panel khác (Command, Skill, Dialog...)
             var uiMgr = FindObjectOfType<BattleUIManager>();
             if (uiMgr != null) uiMgr.SwitchPanel(BattlePanelType.TeamPreview);
 
@@ -88,7 +77,6 @@ namespace Game.Battle.UI
         private void AutoDiscoverSlots()
         {
             Transform pGrid = transform.Find("PokemonGrid");
-            Debug.Log($"[TeamPreview] AutoDiscover: PokemonGrid found={pGrid != null}");
             if (pGrid != null)
             {
                 for (int i = 0; i < 6 && i < pGrid.childCount; i++)
@@ -98,7 +86,6 @@ namespace Game.Battle.UI
                     slotIcons[i] = child.Find("Icon")?.GetComponent<Image>();
                     if (slotButtons[i] != null) slotButtons[i].interactable = true;
                 }
-                Debug.Log($"[TeamPreview] Found {pGrid.childCount} player slots");
             }
 
             Transform eGrid = transform.Find("EnemyGrid");
@@ -115,17 +102,13 @@ namespace Game.Battle.UI
 
         private void SetupSlotListeners()
         {
-            int count = 0;
             for (int i = 0; i < 6; i++)
             {
                 if (slotButtons[i] == null) continue;
-                count++;
                 slotButtons[i].onClick.RemoveAllListeners();
                 int captured = i;
                 slotButtons[i].onClick.AddListener(() => OnSlotClicked(captured));
             }
-            Debug.Log($"[TeamPreview] SetupListeners: {count} buttons wired");
-
             if (confirmButton != null)
             {
                 confirmButton.onClick.RemoveAllListeners();
@@ -135,25 +118,11 @@ namespace Game.Battle.UI
 
         private void OnSlotClicked(int index)
         {
-            Debug.Log($"[TeamPreview] Slot {index} clicked! Selected so far: {_selectedIndices.Count}");
-            if (_orderOf[index] >= 0)
-            {
-                // Bỏ chọn
-                _selectedIndices.Remove(index);
-            }
-            else
-            {
-                // Chọn (tối đa 4)
-                if (_selectedIndices.Count >= 4) return;
-                _selectedIndices.Add(index);
-            }
+            if (_orderOf[index] >= 0) _selectedIndices.Remove(index);
+            else { if (_selectedIndices.Count >= 4) return; _selectedIndices.Add(index); }
 
-            // Cập nhật lại mảng order
             for (int i = 0; i < 6; i++) _orderOf[i] = -1;
-            for (int i = 0; i < _selectedIndices.Count; i++)
-            {
-                _orderOf[_selectedIndices[i]] = i;
-            }
+            for (int i = 0; i < _selectedIndices.Count; i++) _orderOf[_selectedIndices[i]] = i;
 
             RefreshAllSlots();
             UpdateConfirmButton();
@@ -175,11 +144,9 @@ namespace Game.Battle.UI
                 var nameTxt = slotButtons[i].transform.Find("PokemonName")?.GetComponent<TextMeshProUGUI>();
                 if (nameTxt != null) nameTxt.text = pkmn.Name.ToUpper();
 
-                // Load Icon
                 if (slotIcons[i] != null)
-                    loader?.LoadSpriteForSlot("", slotButtons[i].name, pkmn.Name.ToLower(), false);
+                    loader?.LoadIconDirect(pkmn.Name, slotIcons[i]);
 
-                // UI phản hồi chọn
                 int order = _orderOf[i];
                 var bg = slotButtons[i].GetComponent<Image>();
                 if (bg != null) bg.color = (order >= 0) ? ColorSelected : ColorUnselected;
@@ -206,7 +173,7 @@ namespace Game.Battle.UI
                 if (nameTxt != null) nameTxt.text = pkmn.Name.ToUpper();
 
                 if (enemyIcons[i] != null)
-                    loader?.LoadSpriteForSlot("", enemySlots[i].name, pkmn.Name.ToLower(), false);
+                    loader?.LoadIconDirect(pkmn.Name, enemyIcons[i]);
             }
         }
 
@@ -215,14 +182,13 @@ namespace Game.Battle.UI
             if (confirmButton == null) return;
             bool ready = _selectedIndices.Count == 4;
             confirmButton.interactable = ready;
-            if (confirmLabel != null)
-                confirmLabel.text = ready ? "CONFIRM TEAM" : $"PICK {4 - _selectedIndices.Count} MORE";
+            if (confirmLabel != null) confirmLabel.text = ready ? "CONFIRM" : $"PICK {4 - _selectedIndices.Count}";
         }
 
         private void OnConfirmClicked()
         {
             if (_selectedIndices.Count != 4) return;
-            _previewActive = false; // Tắt guard: cho phép Hide
+            _previewActive = false;
             BattleEvents.OnTeamOrderConfirmed?.Invoke(_selectedIndices.ToArray());
             Hide();
         }

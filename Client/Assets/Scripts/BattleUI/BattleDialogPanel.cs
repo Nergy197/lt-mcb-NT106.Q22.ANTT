@@ -9,7 +9,13 @@ namespace Game.Battle.UI
     {
         [Header("UI Components")]
         public TextMeshProUGUI dialogText;
-        public float charsPerSecond = 35f; // Chậm lại cho dễ đọc
+        public float charsPerSecond = 45f;
+        private BattleUIManager _uiManager;
+
+        private void Awake()
+        {
+            _uiManager = GetComponentInParent<BattleUIManager>();
+        }
 
         private Queue<(string message, bool autoClose)> messageQueue = new Queue<(string, bool)>();
         private bool isTyping = false;
@@ -20,7 +26,6 @@ namespace Game.Battle.UI
         private void OnEnable()
         {
             if (dialogText != null) dialogText.text = "";
-            // CHÚ Ý: Đã cấm tự lắng nghe sự kiện OnPrintDialog ở đây để chống treo Game
         }
 
         private void OnDisable()
@@ -60,10 +65,9 @@ namespace Game.Battle.UI
             
             isTyping = false;
 
-            if(lastAutoClose)
+            if (lastAutoClose)
             {
-                BattleUIManager uiManager = GetComponentInParent<BattleUIManager>();
-                if (uiManager != null) uiManager.SwitchPanel(BattlePanelType.None);
+                if (_uiManager != null) _uiManager.SwitchPanel(BattlePanelType.None);
                 else this.Hide();
             }
         }

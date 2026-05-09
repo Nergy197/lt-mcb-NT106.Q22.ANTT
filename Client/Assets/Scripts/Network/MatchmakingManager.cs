@@ -2,22 +2,21 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Microsoft.AspNetCore.SignalR.Client;
 using System;
+using System.Threading.Tasks;
 
 namespace Game.Network
 {
     public class MatchmakingManager : MonoBehaviour
     {
-        public static string CurrentBattleId { get; private set; }
+        public static string CurrentBattleId { get; set; }
         private bool _shouldLoadBattle = false;
 
         public static event Action<int> OnCountdownTick;
 
-        /// <summary>Xoá battle ID cũ — gọi trước khi tạo trận mới để tránh BNC đọc nhầm.</summary>
         public static void ResetBattleId() => CurrentBattleId = null;
 
         private async void Start()
         {
-            // Tự động kết nối nếu chưa kết nối
             if (SignalRClient.Instance != null)
             {
                 await SignalRClient.Instance.ConnectAsync();
@@ -27,22 +26,20 @@ namespace Game.Network
             {
                 var hub = SignalRClient.Instance.Matchmaking;
                 
-                // Tránh đăng ký trùng lặp nếu quay lại scene cũ
                 hub.Remove("MatchFound");
                 hub.Remove("SearchStarted");
                 hub.Remove("SearchTick");
 
+                // Đăng ký nhận gói tin từ Server
                 hub.On<BattleStartedDto>("MatchFound", OnMatchFound);
                 hub.On<SearchStartedDto>("SearchStarted", OnSearchStarted);
                 hub.On<SearchTickDto>("SearchTick", dto => {
-                    Debug.Log($"[Matchmaking] Tick: {dto.SecondsLeft}s left");
                     OnCountdownTick?.Invoke(dto.SecondsLeft);
                 });
                 
-                hub.On<string>("Debug", msg => Debug.Log(msg));
-                hub.On<string>("Error", msg => Debug.LogError(msg));
+                hub.On<string>("Debug", msg => Debug.Log("[Server Debug] " + msg));
+                hub.On<string>("Error", msg => Debug.LogError("[Server Error] " + msg));
                 
-                // Tự động Join Lobby ngay khi vào Menu
                 await hub.InvokeAsync("JoinLobby");
             }
         }
@@ -53,14 +50,24 @@ namespace Game.Network
                 await SignalRClient.Instance.Matchmaking.InvokeAsync("FindMatch");
         }
 
-        /// <summary>
-        /// Tạo bot battle ngay lập tức (không chờ 30s).
-        /// Gọi từ nút "Demo / Fight Bot" trên UI menu.
-        /// </summary>
         public async void FightBotNow()
         {
             if (SignalRClient.Instance != null)
-                await SignalRClient.Instance.Matchmaking.InvokeAsync("FightBot");
+            {
+                try {
+                    Debug.Log("[Matchmaking] Requesting FightBot...");
+                    // Server trả về BattleId trực tiếp khi gọi FightBot
+                    string battleId = await SignalRClient.Instance.Matchmaking.InvokeAsync<string>("FightBot");
+                    if (!string.IsNullOrEmpty(battleId))
+                    {
+                        Debug.Log("[Matchmaking] FightBot Created: " + battleId);
+                        CurrentBattleId = battleId;
+                        _shouldLoadBattle = true;
+                    }
+                } catch (Exception ex) {
+                    Debug.LogError("[Matchmaking] FightBot Error: " + ex.Message);
+                }
+            }
         }
 
         private void Update()
@@ -68,22 +75,21 @@ namespace Game.Network
             if (_shouldLoadBattle)
             {
                 _shouldLoadBattle = false;
+                Debug.Log("[Matchmaking] LOADING BATTLE SCENE...");
                 SceneManager.LoadScene("Battle scene");
             }
         }
 
         private void OnMatchFound(BattleStartedDto data)
         {
-            Debug.Log($"[Matchmaking] Tim thay tran! BattleId: {data.BattleId}");
+            Debug.Log($"[Matchmaking] MATCH FOUND! ID: {data.BattleId}");
             CurrentBattleId = data.BattleId;
-            
-            // Đánh dấu cờ để Update() chuyển Scene trên Main Thread, tránh lỗi background thread của SignalR.
             _shouldLoadBattle = true;
         }
 
         private void OnSearchStarted(SearchStartedDto dto)
         {
-            Debug.Log($"[Matchmaking] Tim tran... Bot fallback sau {dto.CountdownSeconds}s");
+            Debug.Log($"[Matchmaking] Search Started. Bot in {dto.CountdownSeconds}s");
             OnCountdownTick?.Invoke(dto.CountdownSeconds);
         }
     }
@@ -97,10 +103,8 @@ namespace Game.Network
     [Serializable]
     public class BattleStartedDto
     {
-        public string BattleId { get; set; }
-        public string Player1Id { get; set; }
-        public string Player2Id { get; set; }
-        public int TurnNumber { get; set; }
-        public string State { get; set; }
+        public string BattleId;
+        public string Player1Id;
+        public string Player2Id;
     }
 }

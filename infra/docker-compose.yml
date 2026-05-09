@@ -1,82 +1,25 @@
-# =============================================================================
-# NT106.Q22.ANTT — Pokémon MMO Server · Local Dev Infrastructure
-#
-# Usage:
-#   cp .env.example .env          # copy & edit secrets
-#   docker compose up -d          # start all services
-#   docker compose logs -f server # tail server logs
-#
-# Services:
-#   Game Server:  http://localhost:2567  (ASP.NET Core + SignalR WebSocket)
-#   MongoDB:      localhost:27017       (pokemon_mmo database)
-# =============================================================================
-
-name: nt106-pokemon-mmo
-
-# ─────────────────────────────────────────────────────────────────────────────
-# NETWORKS
-# Single internal bridge — all containers communicate privately
-# ─────────────────────────────────────────────────────────────────────────────
-networks:
-  backend:
-    driver: bridge
-    ipam:
-      config:
-        - subnet: 172.30.0.0/24
-
-# ─────────────────────────────────────────────────────────────────────────────
-# VOLUMES
-# Named volumes persist data across restarts; `docker compose down -v` to wipe
-# ─────────────────────────────────────────────────────────────────────────────
-volumes:
-  mongo_data:
-
 services:
-
-  # ---------------------------------------------------------------------------
-  # DATABASE — MongoDB 7
-  # Stores: Accounts, Players, PokemonInstances, PokemonStats, PokemonMoves
-  # Data persists in named volume `mongo_data`
-  # ---------------------------------------------------------------------------
   mongodb:
-    image: mongo:7-jammy
-    container_name: nt106-mongodb
-    restart: unless-stopped
-    environment:
-      MONGO_INITDB_DATABASE: ${MONGO_DATABASE:-pokemon_mmo}
-    volumes:
-      - mongo_data:/data/db
-    networks:
-      - backend
+    image: mongo:6.0
+    container_name: pokemon-mongo
     ports:
-      - "${MONGO_PORT:-27017}:27017"
-    healthcheck:
-      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-      start_period: 15s
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
 
-  # ---------------------------------------------------------------------------
-  # GAME SERVER
-  # Multi-stage build — loại bỏ bin/obj local (quan trọng trên Windows)
-  # Yêu cầu Docker Desktop 20.10+ (BuildKit enabled by default)
-  # ---------------------------------------------------------------------------
   server:
     build:
       context: ../Server
       dockerfile: Dockerfile
-    container_name: nt106-server
-    restart: unless-stopped
-    environment:
-      ASPNETCORE_ENVIRONMENT: Development
-      PORT: ${SERVER_PORT:-2567}
-      MONGO_URI: mongodb://mongodb:${MONGO_PORT:-27017}
-      MONGO_DATABASE: ${MONGO_DATABASE:-pokemon_mmo}
-    networks:
-      - backend
+    container_name: pokemon-server
     ports:
-      - "${SERVER_PORT:-2567}:2567"
+      - "2567:2567"
     depends_on:
-      mongodb:
-        condition: service_healthy
+      - mongodb
+    environment:
+      - MongoDb__ConnectionString=mongodb://mongodb:27017
+      - MongoDb__DatabaseName=pokemon_mmo
+      - ASPNETCORE_ENVIRONMENT=Development
+
+volumes:
+  mongo-data:

@@ -123,6 +123,8 @@ public class BattleService
         if (session.State != BattleState.Running) return null;
         if (AllActionsSubmitted(session)) return null;
 
+        Console.WriteLine($"[TurnTimeout] Auto-resolving battle {session.BattleId} (Deadline: {session.TurnDeadlineUtc}, Now: {DateTime.UtcNow})");
+
         AutoFillMissingPlayerActions(session);
         BotFillActions(session);
 
@@ -199,8 +201,8 @@ public class BattleService
         };
 
         session.Team1 = await LoadTeamSnapshots(player1Id);
+        if (session.Team1.Count == 0) session.Team1 = await GenerateBotTeam();
 
-        // Bot không có Pokemon trong DB → tự generate team
         if (player2Id == BotPlayerId)
         {
             session.Team2 = await GenerateBotTeam();
@@ -210,10 +212,8 @@ public class BattleService
             session.Team2 = await LoadTeamSnapshots(player2Id);
         }
 
-        // Pre-load move data
         await PreloadMoveData(session.Team1.Concat(session.Team2));
 
-        // Nếu có Bot -> tự động submit phần của Bot, người chơi vẫn phải tự chọn TeamPreview
         if (player1Id == BotPlayerId)
         {
             var t1Count = Math.Min(BringCount, session.Team1.Count);
@@ -341,7 +341,7 @@ public class BattleService
             session.ActiveIndex2b = 1;
 
             session.State = BattleState.Running;
-            session.TurnDeadlineUtc = DateTime.UtcNow.AddSeconds(_opts.TurnTimeoutSeconds);
+            session.TurnDeadlineUtc = DateTime.UtcNow.AddSeconds(999);
             return (session, true);
         }
 
@@ -371,6 +371,7 @@ public class BattleService
         }
 
         string key = $"{playerId}:{action.SourceIndex}";
+        Console.WriteLine($"[Battle] Player {playerId} submitted action for slot {action.SourceIndex}: {action.Type} (MoveSlot: {action.MoveSlot}, TargetSlot: {action.TargetSlot})");
         session.PendingActions[key] = action;
 
         // Bot battle: auto-fill bot actions immediately after human submits
@@ -386,7 +387,7 @@ public class BattleService
             {
                 session.State = BattleState.Running;
                 session.TurnNumber++;
-                session.TurnDeadlineUtc = DateTime.UtcNow.AddSeconds(_opts.TurnTimeoutSeconds);
+                session.TurnDeadlineUtc = DateTime.UtcNow.AddSeconds(999);
                 result.State = session.State;
             }
             return (session, result);
@@ -437,7 +438,7 @@ public class BattleService
         {
             session.State = BattleState.Running;
             session.TurnNumber++;
-            session.TurnDeadlineUtc = DateTime.UtcNow.AddSeconds(_opts.TurnTimeoutSeconds);
+            session.TurnDeadlineUtc = DateTime.UtcNow.AddSeconds(999);
             return (session, true);
         }
 
@@ -577,6 +578,7 @@ public class BattleService
 
         // End-of-turn effects
         ResolveEndOfTurn(session, events);
+        ResetVolatileStatuses(session);
 
         // Check win
         var winner = CheckWinCondition(session);
@@ -598,11 +600,24 @@ public class BattleService
         else
         {
             session.TurnNumber++;
-            session.TurnDeadlineUtc = DateTime.UtcNow.AddSeconds(_opts.TurnTimeoutSeconds);
+            session.TurnDeadlineUtc = DateTime.UtcNow.AddSeconds(999);
         }
 
         result.State = session.State;
         return result;
+    }
+
+    private void ResetVolatileStatuses(BattleSession session)
+    {
+        foreach (var (playerId, slot) in AllActiveSlots(session))
+        {
+            var p = GetActiveSlot(session, playerId, slot);
+            if (p != null)
+            {
+                p.IsFlinched = false;
+                // Add more resets here if needed (Protect, etc.)
+            }
+        }
     }
 
     // ── Action ordering ──────────────────────────────────────────────────────
@@ -666,6 +681,7 @@ public class BattleService
             SentOutPokemonName   = incoming.SpeciesName,
             NewActiveIndex       = newIdx,
             IsAutoSwitch         = false,
+            Message              = $"{action.PlayerId} withdrew {outgoing?.SpeciesName ?? "Pokemon"} and sent out {incoming.SpeciesName}!"
         });
     }
 
@@ -735,6 +751,7 @@ public class BattleService
             PokemonName = attacker.SpeciesName,
             MoveName    = move.Name,
             MoveId      = pokemonMove.MoveId.ToString(),
+            Message     = $"{attacker.SpeciesName} used {move.Name}!"
         });
 
         // Consume 1 PP
@@ -775,16 +792,17 @@ public class BattleService
                     / (firstDef?.GetStageMultiplier(StatIndex.EVA) ?? 1.0);
                 if (_rng.NextDouble() > hitChance)
                 {
-                    events.Add(new MoveMissedEvent { UserId = action.PlayerId, PokemonName = attacker.SpeciesName, MoveName = move.Name });
+                    events.Add(new MoveMissedEvent { UserId = action.PlayerId, PokemonName = attacker.SpeciesName, MoveName = move.Name, Message = $"{attacker.SpeciesName}'s attack missed!" });
                     return;
                 }
             }
-            ApplyStatusMoveEffect(session, action.PlayerId, attacker, targets, move, events);
+            ApplyStatusMoveEffect(session, action.PlayerId, action.SourceIndex, attacker, targets, move, events);
         }
         else
         {
             // Secondary effect chance: use move data if available, else default 10%
-            double effectChance = move.EffectChance > 0 ? move.EffectChance / 100.0 : 0.10;
+            var (effectiveEffect, effectiveChance) = GetEffectiveMoveEffect(move);
+            double effectChance = effectiveChance / 100.0;
 
             foreach (var tRef in targets)
             {
@@ -799,7 +817,7 @@ public class BattleService
                         / defender.GetStageMultiplier(StatIndex.EVA);
                     if (_rng.NextDouble() > hitChance)
                     {
-                        events.Add(new MoveMissedEvent { UserId = action.PlayerId, PokemonName = attacker.SpeciesName, MoveName = move.Name });
+                        events.Add(new MoveMissedEvent { UserId = action.PlayerId, PokemonName = attacker.SpeciesName, MoveName = move.Name, Message = $"{attacker.SpeciesName}'s attack missed!" });
                         continue;
                     }
                 }
@@ -819,8 +837,19 @@ public class BattleService
 
                 ApplyDamage(session, tRef.OwnerId, defender, damage, events, isCrit, typeEff);
 
-                if (!string.IsNullOrEmpty(move.Effect) && _rng.NextDouble() < effectChance)
-                    TryInflictStatus(session, tRef.OwnerId, defender, move.Effect, events);
+                // ── Secondary Effect ────────────────────────────────────────
+                if (!string.IsNullOrEmpty(effectiveEffect) && _rng.NextDouble() < effectChance)
+                {
+                    if (effectiveEffect == "flinch")
+                    {
+                        // Flinch only works if target hasn't moved yet (handled by ResetVolatileStatuses + ExecuteMove order)
+                        defender.IsFlinched = true;
+                    }
+                    else
+                    {
+                        TryInflictStatus(session, tRef.OwnerId, defender, effectiveEffect, events);
+                    }
+                }
             }
         }
     }
@@ -869,7 +898,45 @@ public class BattleService
                 }
                 break;
         }
+
+        if (pokemon.IsFlinched)
+        {
+            events.Add(new MessageEvent { Message = $"{pokemon.SpeciesName} flinched and couldn't move!" });
+            return false;
+        }
+
+        if (pokemon.IsConfused)
+        {
+            if (pokemon.ConfusionTurnsLeft <= 0)
+            {
+                pokemon.IsConfused = false;
+                events.Add(new MessageEvent { Message = $"{pokemon.SpeciesName} snapped out of its confusion!" });
+            }
+            else
+            {
+                pokemon.ConfusionTurnsLeft--;
+                events.Add(new MessageEvent { Message = $"{pokemon.SpeciesName} is confused!" });
+                if (_rng.NextDouble() < 0.33) // Gen 7+ 33% self-hit chance
+                {
+                    // Confusion damage calculation (40 power, Physical, typeless)
+                    int confDamage = CalculateConfusionDamage(pokemon);
+                    events.Add(new MessageEvent { Message = "It hurt itself in its confusion!" });
+                    ApplyDamage(session, "none", pokemon, confDamage, events, false, 1.0);
+                    return false;
+                }
+            }
+        }
+
         return true;
+    }
+
+    private int CalculateConfusionDamage(BattlePokemonSnapshot p)
+    {
+        // Simple formula: ((2*Level/5 + 2) * 40 * Atk/Def) / 50 + 2
+        double atk = GetEffectiveStat(p, StatIndex.ATK);
+        double def = GetEffectiveStat(p, StatIndex.DEF);
+        double dmg = ((2.0 * p.Level / 5.0 + 2.0) * 40.0 * atk / def) / 50.0 + 2.0;
+        return (int)dmg;
     }
 
     // ── Target resolution ────────────────────────────────────────────────────
@@ -966,7 +1033,7 @@ public class BattleService
         // Snow: Ice-type Sp.Def boosted ×1.5 (applied as defender buff — lower incoming sp dmg)
         double snowSpDef = (!isPhysical
             && (session.Weather == WeatherCondition.Snow || session.Weather == WeatherCondition.Hail)
-            && SnowImmune.Contains(defender.Type1)) ? (1.0 / 1.5) : 1.0;
+            && (SnowImmune.Contains(defender.Type1) || (defender.Type2 != null && SnowImmune.Contains(defender.Type2)))) ? (1.0 / 1.5) : 1.0;
         double burn     = isPhysical && attacker.NonVolatileStatus == PokemonStatusCondition.Burn ? 0.5 : 1.0;
 
         if (typeEff == 0) return 0;
@@ -980,7 +1047,8 @@ public class BattleService
         int atk = GetEffectiveStat(pokemon, StatIndex.ATK);
         int def = GetEffectiveStat(pokemon, StatIndex.DEF);
         if (def <= 0) def = 1;
-        return Math.Max(1, (int)Math.Floor((double)((int)Math.Floor(22.0 * 40 * atk / def / 50.0)) + 2));
+        // Confusion damage follows standard move formula with Power 40
+        return (int)Math.Floor((double)((int)Math.Floor(22.0 * 40 * atk / def / 50.0)) + 2);
     }
 
     // ── Apply damage ─────────────────────────────────────────────────────────
@@ -1002,6 +1070,8 @@ public class BattleService
             MaxHp          = pokemon.MaxHp,
             TypeMultiplier = typeEff,
             IsCritical     = isCrit,
+            Message        = (isCrit ? "A critical hit! " : "") + 
+                             (typeEff > 1.0 ? "It's super effective!" : typeEff < 1.0 && typeEff > 0 ? "It's not very effective..." : "")
         });
 
         if (pokemon.IsFainted)
@@ -1010,6 +1080,7 @@ public class BattleService
             {
                 PlayerId    = ownerId,
                 PokemonName = pokemon.SpeciesName,
+                Message     = $"{pokemon.SpeciesName} fainted!"
             });
         }
     }
@@ -1017,7 +1088,7 @@ public class BattleService
     // ── Status move effects ──────────────────────────────────────────────────
 
     private void ApplyStatusMoveEffect(
-        BattleSession session, string actingPlayerId,
+        BattleSession session, string actingPlayerId, int sourceSlot,
         BattlePokemonSnapshot attacker, List<TargetRef> targets,
         MoveEntry move, List<BattleEvent> events)
     {
@@ -1039,7 +1110,7 @@ public class BattleService
             };
             session.Weather          = newWeather;
             session.WeatherTurnsLeft = 5;
-            events.Add(new WeatherChangedEvent { NewWeather = newWeather, TurnsLeft = 5 });
+            events.Add(new WeatherChangedEvent { NewWeather = newWeather, TurnsLeft = 5, Message = $"The weather changed to {newWeather}!" });
             return;
         }
 
@@ -1068,9 +1139,9 @@ public class BattleService
             string stat  = effect[..sepIdx];
             int stages   = int.Parse(effect[(sepIdx + 1)..]) * (raise ? 1 : -1);
 
-            // Determine if targeting self or opponents
+            // Determine if targeting self or opponents (BUG-06 fix)
             var statTargets = effect.StartsWith("self")
-                ? new List<TargetRef> { new(actingPlayerId, targets.FirstOrDefault()?.Slot ?? 0) }
+                ? new List<TargetRef> { new(actingPlayerId, sourceSlot) }
                 : targets;
 
             foreach (var tRef in statTargets)
@@ -1223,6 +1294,37 @@ public class BattleService
         });
     }
 
+    private (string? effect, int chance) GetEffectiveMoveEffect(MoveEntry move)
+    {
+        // 1. Database-defined effect
+        if (!string.IsNullOrEmpty(move.Effect))
+        {
+            return (move.Effect, move.EffectChance > 0 ? move.EffectChance : 100);
+        }
+
+        // 2. Hardcoded logic for iconic moves (fallback if DB incomplete)
+        string name = move.Name.ToLower();
+        
+        // Flinch moves
+        if (name.Contains("iron-head") || name.Contains("rock-slide") || name.Contains("air-slash") || name.Contains("bite") || name.Contains("fake-out"))
+            return ("flinch", name.Contains("fake-out") ? 100 : 30);
+
+        // Status infliction
+        if (name.Contains("flamethrower") || name.Contains("fire-blast") || name.Contains("heat-wave") || name.Contains("ember"))
+            return ("burn", 10);
+        if (name.Contains("thunderbolt") || name.Contains("thunder") || name.Contains("discharge") || name.Contains("thundershock"))
+            return ("paralysis", 10);
+        if (name.Contains("ice-beam") || name.Contains("blizzard") || name.Contains("powder-snow"))
+            return ("freeze", 10);
+        if (name.Contains("sludge-bomb") || name.Contains("poison-jab") || name.Contains("sludge-wave"))
+            return ("poison", 30);
+        
+        // Guaranteed status (Status category usually handled in ApplyStatusMoveEffect, but can be secondary here)
+        if (name.Contains("nuzzle")) return ("paralysis", 100);
+        
+        return (null, 0);
+    }
+
     // ── End-of-turn effects ──────────────────────────────────────────────────
 
     private void ResolveEndOfTurn(BattleSession session, List<BattleEvent> events)
@@ -1366,9 +1468,9 @@ public class BattleService
             ActiveHp1b         = GetActiveHp(session, session.Player1Id, 1),
             ActiveHp2          = GetActiveHp(session, session.Player2Id, 0),
             ActiveHp2b         = GetActiveHp(session, session.Player2Id, 1),
-            Weather            = session.Weather,
+            Weather            = session.Weather.ToString().ToLower(),
             WeatherTurnsLeft   = session.WeatherTurnsLeft,
-            Terrain            = session.Terrain,
+            Terrain            = session.Terrain.ToString().ToLower(),
             TerrainTurnsLeft   = session.TerrainTurnsLeft,
             Team1Hp            = session.Team1.Select(p => p.CurrentHp).ToList(),
             Team2Hp            = session.Team2.Select(p => p.CurrentHp).ToList(),
