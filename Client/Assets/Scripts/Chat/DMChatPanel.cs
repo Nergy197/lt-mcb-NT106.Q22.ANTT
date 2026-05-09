@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -120,15 +121,20 @@ namespace Game.Chat
         private void ClearMessages()
         {
             if (messageContainer == null) return;
-            foreach (Transform child in messageContainer)
-                Destroy(child.gameObject);
+            while (messageContainer.childCount > 0)
+                DestroyImmediate(messageContainer.GetChild(0).gameObject);
         }
 
-        private void ScrollToBottom()
+        private void ScrollToBottom() => StartCoroutine(ScrollToBottomNextFrame());
+
+        private IEnumerator ScrollToBottomNextFrame()
         {
-            if (chatScroll == null) return;
+            yield return null;
             Canvas.ForceUpdateCanvases();
-            chatScroll.verticalNormalizedPosition = 0f;
+            if (messageContainer != null)
+                LayoutRebuilder.ForceRebuildLayoutImmediate(messageContainer.GetComponent<RectTransform>());
+            if (chatScroll != null)
+                chatScroll.verticalNormalizedPosition = 0f;
         }
     }
 }

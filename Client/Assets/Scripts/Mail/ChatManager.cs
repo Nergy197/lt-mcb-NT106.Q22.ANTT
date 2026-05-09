@@ -1,183 +1,203 @@
-using UnityEngine;
-using TMPro;
-using UnityEngine.UI;
-using Game.Network;
-using Microsoft.AspNetCore.SignalR.Client;
 using System;
+using System.Collections;
 using System.Collections.Generic;
-using System.Threading.Tasks;
+using System.Linq;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+using Game.Chat;
 
 public enum ChatType { World, Private }
-
-[Serializable]
-public class ChatMessageDto
-{
-    public string Id { get; set; }
-    public string SenderId { get; set; }
-    public string senderId { get; set; }
-    public string SenderName { get; set; }
-    public string senderName { get; set; }
-    public string Content { get; set; }
-    public string content { get; set; }
-    public string ReceiverId { get; set; }
-    public string receiverId { get; set; }
-    public string Channel { get; set; }
-
-    public string GetContent() => !string.IsNullOrEmpty(Content) ? Content : content;
-    public string GetSenderName() => !string.IsNullOrEmpty(SenderName) ? SenderName : senderName;
-    public string GetSenderId() => !string.IsNullOrEmpty(SenderId) ? SenderId : senderId;
-    public string GetReceiverId() => !string.IsNullOrEmpty(ReceiverId) ? ReceiverId : receiverId;
-}
-
-// Khớp với payload server gửi qua event "ChatHistory"
-[Serializable]
-public class ChatHistoryPayload
-{
-    public string Channel { get; set; }
-    public string OtherPlayerId { get; set; }
-    public List<ChatMessageDto> Messages { get; set; }
-}
 
 public class ChatManager : MonoBehaviour
 {
     [Header("Cấu hình Prefabs")]
-    public GameObject myMessagePrefab;    
-    public GameObject friendMessagePrefab; 
-    public Transform contentContainer;    
+    public GameObject myMessagePrefab;
+    public GameObject friendMessagePrefab;
+    public Transform contentContainer;
 
     [Header("Cấu hình Input")]
-    public TMP_InputField inputField;     
-    public ScrollRect scrollRect;         
+    public TMP_InputField inputField;
+    public ScrollRect scrollRect;
 
     [Header("Trạng thái Chat")]
     public ChatType currentChatType = ChatType.World;
-    public string currentReceiverId;      
-    public Sprite currentFriendAvatar;    
+    public string currentReceiverId;
+    public Sprite currentFriendAvatar;
 
     private string MyPlayerId => PlayerPrefs.GetString("player_id", "");
-    private bool isListening = false;
+    private bool _subscribed = false;
 
-    void Start()
+    void OnEnable()  => Subscribe();
+    void OnDisable() => Unsubscribe();
+    void Start()     { if (!_subscribed) Subscribe(); }
+
+    private void Subscribe()
     {
-        Debug.Log("<color=green>[ChatManager]</color> Script đã Start.");
-        StartCoroutine(KeepCheckingConnection());
+        if (_subscribed) return;
+        if (ChatHubClient.Instance == null) { StartCoroutine(SubscribeWhenReady()); return; }
+
+        ChatHubClient.Instance.OnWorldMessage  += HandleWorldMsg;
+        ChatHubClient.Instance.OnDirectMessage += HandleDirectMsg;
+        ChatHubClient.Instance.OnChatHistory   += HandleChatHistory;
+        _subscribed = true;
+        Debug.Log("[ChatManager] Đã subscribe ChatHubClient events.");
     }
 
-    System.Collections.IEnumerator KeepCheckingConnection()
+    private void Unsubscribe()
     {
-        while (true)
+        if (!_subscribed || ChatHubClient.Instance == null) return;
+        ChatHubClient.Instance.OnWorldMessage  -= HandleWorldMsg;
+        ChatHubClient.Instance.OnDirectMessage -= HandleDirectMsg;
+        ChatHubClient.Instance.OnChatHistory   -= HandleChatHistory;
+        _subscribed = false;
+    }
+
+    IEnumerator SubscribeWhenReady()
+    {
+        while (ChatHubClient.Instance == null)
+            yield return new WaitForSeconds(0.5f);
+        Subscribe();
+    }
+
+    // ── Handlers ────────────────────────────────────────────────────────
+
+    private void HandleWorldMsg(ChatMessageData msg)
+    {
+        if (currentChatType == ChatType.World && msg.SenderId != MyPlayerId)
+            ReceiveMessage(msg.Content ?? "", msg.SenderName ?? "", false);
+    }
+
+    private void HandleDirectMsg(ChatMessageData msg)
+    {
+        string sId = msg.SenderId ?? "";
+        if (sId == MyPlayerId) return;
+
+        if (currentChatType == ChatType.Private && sId == currentReceiverId)
         {
-            if (SignalRClient.Instance?.Chat != null && !isListening)
-            {
-                SetupHandlers();
-            }
-            yield return new WaitForSeconds(2f);
+            ReceiveMessage(msg.Content ?? "", msg.SenderName ?? "", false);
+        }
+        else if (string.IsNullOrEmpty(currentReceiverId))
+        {
+            UnityMainThreadDispatcher.Instance().Enqueue(() => {
+                currentChatType     = ChatType.Private;
+                currentReceiverId   = sId;
+                currentFriendAvatar = null;
+                while (contentContainer.childCount > 0)
+                    UnityEngine.Object.DestroyImmediate(contentContainer.GetChild(0).gameObject);
+                ChatHubClient.Instance?.LoadDirectHistory(sId);
+            });
         }
     }
 
-    private void SetupHandlers()
+    private void HandleChatHistory(ChatHistoryPayload payload)
     {
-        if (SignalRClient.Instance?.Chat == null) return;
+        string ch      = payload?.Channel      ?? "";
+        string otherId = payload?.OtherPlayerId ?? "";
+        var rawMsgs    = payload?.Messages      ?? new List<ChatMessageData>();
 
-        var chat = SignalRClient.Instance.Chat;
-        chat.Remove("WorldMessage");
-        chat.Remove("DirectMessage");
-        chat.Remove("ChatHistory");
+        Debug.Log($"<color=yellow>[ChatHistory]</color> channel='{ch}' otherId='{otherId}' msgCount={rawMsgs.Count} | currentType={currentChatType} currentReceiverId='{currentReceiverId}'");
 
-        chat.On<ChatMessageDto>("WorldMessage", (dto) => {
-            if (currentChatType == ChatType.World && dto.GetSenderId() != MyPlayerId)
-                ReceiveMessage(dto.GetContent(), dto.GetSenderName(), false);
-        });
+        bool isWorldHistory   = ch == "world" && currentChatType == ChatType.World;
+        bool isPrivateHistory = ch == "dm"    && currentChatType == ChatType.Private
+                                && otherId == currentReceiverId;
 
-        chat.On<ChatMessageDto>("DirectMessage", (dto) => {
-            string sId = dto.GetSenderId();
-            if (currentChatType == ChatType.Private && (sId == currentReceiverId || dto.GetReceiverId() == currentReceiverId))
-                ReceiveMessage(dto.GetContent(), dto.GetSenderName(), sId == MyPlayerId);
-        });
-
-        // Server gửi toàn bộ lịch sử qua 1 event "ChatHistory" dạng { Channel, Messages: [...] }
-        chat.On<ChatHistoryPayload>("ChatHistory", (payload) => {
-            bool isWorldHistory   = payload.Channel == "world" && currentChatType == ChatType.World;
-            bool isPrivateHistory = payload.Channel == "dm"    && currentChatType == ChatType.Private
-                                    && payload.OtherPlayerId == currentReceiverId;
-            if (!isWorldHistory && !isPrivateHistory) return;
-
-            foreach (var dto in payload.Messages ?? new List<ChatMessageDto>())
-                ReceiveMessage(dto.GetContent(), dto.GetSenderName(), dto.GetSenderId() == MyPlayerId);
-        });
-
-        isListening = true;
-        Debug.Log("<color=cyan>[ChatManager]</color> Đã kết nối bộ lắng nghe tin nhắn.");
-    }
-
-    public async void SendMessageFromInput()
-    {
-        string text = inputField.text;
-        if (string.IsNullOrWhiteSpace(text)) return;
-
-        ReceiveMessage(text, "Tôi", true);
-        
-        try {
-            if (SignalRClient.Instance?.Chat?.State == HubConnectionState.Connected)
-            {
-                if (currentChatType == ChatType.World)
-                    await SignalRClient.Instance.Chat.InvokeAsync("SendWorldMessage", text);
-                else
-                    await SignalRClient.Instance.Chat.InvokeAsync("SendDirectMessage", currentReceiverId, text);
-            }
-        } catch (Exception ex) {
-            Debug.LogError("Lỗi gửi tin: " + ex.Message);
+        if (!isWorldHistory && !isPrivateHistory)
+        {
+            Debug.Log($"<color=red>[ChatHistory]</color> Bỏ qua: isWorld={isWorldHistory} isPrivate={isPrivateHistory}");
+            return;
         }
 
-        inputField.text = "";
-        inputField.ActivateInputField();
-    }
-
-    public void ReceiveMessage(string message, string sender, bool isMe)
-    {
+        var msgs = rawMsgs.ToList();
         UnityMainThreadDispatcher.Instance().Enqueue(() => {
             if (contentContainer == null) return;
-            GameObject prefab = isMe ? myMessagePrefab : friendMessagePrefab;
-            if (prefab == null) return;
-
-            GameObject msgObj = Instantiate(prefab, contentContainer);
-            msgObj.GetComponentInChildren<TMP_Text>().text = message;
-
-            if (!isMe && currentFriendAvatar != null)
-            {
-                Image img = msgObj.transform.Find("Avatar")?.GetComponent<Image>() ?? msgObj.GetComponentInChildren<Image>();
-                if (img != null) img.sprite = currentFriendAvatar;
-            }
-
+            while (contentContainer.childCount > 0)
+                UnityEngine.Object.DestroyImmediate(contentContainer.GetChild(0).gameObject);
+            foreach (var dto in msgs)
+                RenderMessage(dto.Content ?? "", dto.SenderName ?? "", dto.SenderId == MyPlayerId);
+            Debug.Log($"<color=cyan>[ChatHistory]</color> Đã render {msgs.Count} tin nhắn.");
             Canvas.ForceUpdateCanvases();
             LayoutRebuilder.ForceRebuildLayoutImmediate(contentContainer.GetComponent<RectTransform>());
             if (scrollRect != null) scrollRect.verticalNormalizedPosition = 0f;
         });
     }
 
+    // ── Gửi tin ─────────────────────────────────────────────────────────
+
+    public void SendMessageFromInput()
+    {
+        string text = inputField.text;
+        if (string.IsNullOrWhiteSpace(text)) return;
+
+        ReceiveMessage(text, "Tôi", true);
+
+        if (currentChatType == ChatType.World)
+            ChatHubClient.Instance?.SendWorldMessage(text);
+        else
+            ChatHubClient.Instance?.SendDirectMessage(currentReceiverId, text);
+
+        inputField.text = "";
+        inputField.ActivateInputField();
+    }
+
+    // ── Render ───────────────────────────────────────────────────────────
+
+    public void ReceiveMessage(string message, string sender, bool isMe)
+    {
+        UnityMainThreadDispatcher.Instance().Enqueue(() => {
+            RenderMessage(message, sender, isMe);
+            StartCoroutine(ScrollToBottomNextFrame());
+        });
+    }
+
+    private IEnumerator ScrollToBottomNextFrame()
+    {
+        yield return null;
+        Canvas.ForceUpdateCanvases();
+        LayoutRebuilder.ForceRebuildLayoutImmediate(contentContainer.GetComponent<RectTransform>());
+        if (scrollRect != null) scrollRect.verticalNormalizedPosition = 0f;
+    }
+
+    private void RenderMessage(string message, string sender, bool isMe)
+    {
+        if (contentContainer == null) return;
+        GameObject prefab = isMe ? myMessagePrefab : friendMessagePrefab;
+        if (prefab == null) return;
+
+        GameObject msgObj = Instantiate(prefab, contentContainer);
+        msgObj.GetComponentInChildren<TMP_Text>().text = message;
+
+        if (!isMe && currentFriendAvatar != null)
+        {
+            Image img = msgObj.transform.Find("Avatar")?.GetComponent<Image>()
+                        ?? msgObj.GetComponentInChildren<Image>();
+            if (img != null) img.sprite = currentFriendAvatar;
+        }
+    }
+
+    // ── Điều hướng tab ───────────────────────────────────────────────────
+
     public void SetActiveChatFriend(string playerId, string playerName, Sprite avatar)
     {
-        Debug.Log($"<color=orange>[UI-SWITCH]</color> Chat với: {playerName}");
-        
-        currentChatType = ChatType.Private;
-        currentReceiverId = playerId;
+        currentChatType     = ChatType.Private;
+        currentReceiverId   = playerId;
         currentFriendAvatar = avatar;
 
-        foreach (Transform child in contentContainer) Destroy(child.gameObject);
-        
-        if (SignalRClient.Instance?.Chat?.State == HubConnectionState.Connected)
-        {
-            SignalRClient.Instance.Chat.InvokeAsync("LoadDirectHistory", playerId);
-        }
+        while (contentContainer.childCount > 0)
+            UnityEngine.Object.DestroyImmediate(contentContainer.GetChild(0).gameObject);
+
+        Debug.Log($"<color=orange>[UI-SWITCH]</color> → '{playerName}' | isListening={_subscribed}");
+        Debug.Log($"<color=orange>[UI-SWITCH]</color> Gọi LoadDirectHistory({playerId})");
+        ChatHubClient.Instance?.LoadDirectHistory(playerId);
     }
 
     public void SetWorldChat()
     {
-        currentChatType = ChatType.World;
+        currentChatType   = ChatType.World;
         currentReceiverId = "";
-        foreach (Transform child in contentContainer) Destroy(child.gameObject);
-        
-        if (SignalRClient.Instance?.Chat?.State == HubConnectionState.Connected)
-            SignalRClient.Instance.Chat.InvokeAsync("LoadWorldHistory");
+        while (contentContainer.childCount > 0)
+            UnityEngine.Object.DestroyImmediate(contentContainer.GetChild(0).gameObject);
+
+        ChatHubClient.Instance?.LoadWorldHistory();
     }
 }

@@ -55,8 +55,7 @@ public class ChatHub : Hub
 
     private async Task<Player?> ResolveCurrentPlayer()
     {
-        var httpContext = Context.GetHttpContext();
-        var playerId = httpContext?.Request.Query["playerId"].ToString();
+        var playerId = Context.User?.FindFirst("player_id")?.Value;
         if (string.IsNullOrEmpty(playerId)) return null;
 
         return await _db.Players
@@ -75,6 +74,7 @@ public class ChatHub : Hub
         {
             var dto = await _chatService.SaveWorldMessageAsync(player.Id, player.Name, content);
             await Clients.Group("WorldChat").SendAsync("WorldMessage", dto);
+            _ = _chatService.TrimWorldHistoryAsync();
         }
         catch (ArgumentException ex)
         {
@@ -85,11 +85,13 @@ public class ChatHub : Hub
     public async Task LoadWorldHistory()
     {
         var history = await _chatService.GetWorldHistoryAsync();
-        foreach (var msg in history)
+        await Clients.Caller.SendAsync("ChatHistory", new
         {
-            await Clients.Caller.SendAsync("ReceiveHistoryMessage", msg);
-        }
-        Console.WriteLine($"[ChatHub] Đã stream {history.Count} tin nhắn lịch sử Thế giới.");
+            Channel = "world",
+            OtherPlayerId = (string?)null,
+            Messages = history
+        });
+        Console.WriteLine($"[ChatHub] Đã gửi {history.Count} tin nhắn lịch sử Thế giới.");
     }
 
     // ── Direct Messages ──────────────────────────────────────────────────
@@ -126,13 +128,15 @@ public class ChatHub : Hub
     {
         var player = await ResolveCurrentPlayer();
         if (player == null) return;
- 
+
         var history = await _chatService.GetDirectHistoryAsync(player.Id, otherPlayerId);
-        foreach (var msg in history)
+        await Clients.Caller.SendAsync("ChatHistory", new
         {
-            await Clients.Caller.SendAsync("ReceiveHistoryMessage", msg);
-        }
-        Console.WriteLine($"[ChatHub] Đã stream {history.Count} tin nhắn lịch sử DM.");
+            Channel = "dm",
+            OtherPlayerId = otherPlayerId,
+            Messages = history
+        });
+        Console.WriteLine($"[ChatHub] Đã gửi {history.Count} tin nhắn lịch sử DM.");
     }
 
     public async Task StartTyping(string receiverPlayerId)

@@ -37,7 +37,11 @@ namespace PokemonMMO.UI
         public void QuitGame()
         {
             Debug.Log("[Menu] Quitting game...");
-            Application.Quit();
+            var logout = FindFirstObjectByType<LogoutManager>();
+            if (logout != null)
+                logout.OnQuitClicked();
+            else
+                Application.Quit();
         }
     }
 }

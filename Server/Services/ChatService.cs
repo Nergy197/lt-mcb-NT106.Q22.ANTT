@@ -17,7 +17,7 @@ public class ChatService
     private const int MaxMessageLength = 500;
 
     /// <summary>Default number of historical messages returned.</summary>
-    private const int DefaultHistoryLimit = 50;
+    private const int DefaultHistoryLimit = 100;
 
     public ChatService(MongoDbContext db)
     {
@@ -110,6 +110,36 @@ public class ChatService
 
         messages.Reverse();
         return messages.Select(ToDto).ToList();
+    }
+
+    // ── World history trim ────────────────────────────────────────────
+
+    /// <summary>
+    /// Deletes the oldest world messages so at most <paramref name="maxMessages"/> remain.
+    /// Called after each world message is saved.
+    /// </summary>
+    public async Task TrimWorldHistoryAsync(int maxMessages = 100)
+    {
+        var count = await _db.ChatMessages
+            .CountDocumentsAsync(m => m.Channel == "world");
+
+        if (count <= maxMessages) return;
+
+        int toDelete = (int)(count - maxMessages);
+
+        var oldestIds = await _db.ChatMessages
+            .Find(m => m.Channel == "world")
+            .SortBy(m => m.CreatedAt)
+            .Limit(toDelete)
+            .Project(m => m.Id)
+            .ToListAsync();
+
+        if (oldestIds.Count > 0)
+        {
+            var filter = Builders<ChatMessage>.Filter.In(m => m.Id, oldestIds);
+            await _db.ChatMessages.DeleteManyAsync(filter);
+            Console.WriteLine($"[Chat] Đã xoá {oldestIds.Count} tin nhắn World cũ (giữ lại {maxMessages}).");
+        }
     }
 
     // ── Cleanup (reset DM on logout) ───────────────────────────────────

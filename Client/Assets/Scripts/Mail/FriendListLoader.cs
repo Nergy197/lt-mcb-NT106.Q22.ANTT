@@ -11,6 +11,14 @@ public class FriendListLoader : MonoBehaviour
     public Transform container;
     public Sprite[] pokemonAvatarPool;
 
+    // Cache avatar theo playerId — tồn tại suốt session, xóa khi logout
+    private static readonly Dictionary<string, int>    _sessionAvatarCache  = new();
+    private static readonly Dictionary<string, Sprite> _sessionSpriteCache  = new();
+
+    /// <summary>Tra cứu Sprite avatar đã cấp phát cho player trong session hiện tại.</summary>
+    public static Sprite GetPlayerAvatar(string playerId) =>
+        _sessionSpriteCache.TryGetValue(playerId, out var s) ? s : null;
+
     [Header("Cấu hình Backend")]
     // Đã sửa lại PORT 2567 và http (không có chữ s) cho khớp với Server
     public string apiUrl = "http://localhost:2567/api/friends";
@@ -72,6 +80,12 @@ public class FriendListLoader : MonoBehaviour
         }
     }
 
+    public static void ClearAvatarCache()
+    {
+        _sessionAvatarCache.Clear();
+        _sessionSpriteCache.Clear();
+    }
+
     void PopulateUI(List<FriendData> friends)
     {
         // Xóa sạch mấy cái đồ cũ
@@ -84,11 +98,17 @@ public class FriendListLoader : MonoBehaviour
 
             if (itemUI != null)
             {
-                // Bốc đại 1 tấm ảnh Pokemon cho sinh động
-                int randomIndex = Random.Range(0, pokemonAvatarPool.Length);
+                // Lần đầu gặp player này trong session → random và lưu cache
+                // Lần sau → dùng lại index đã lưu, avatar không đổi
+                if (!_sessionAvatarCache.TryGetValue(data.playerId, out int avatarIndex))
+                {
+                    avatarIndex = Random.Range(0, pokemonAvatarPool.Length);
+                    _sessionAvatarCache[data.playerId] = avatarIndex;
+                }
 
-                // Đổ ID, tên từ Backend và trạng thái online vào ô UI
-                itemUI.SetData(data.playerId, data.playerName, pokemonAvatarPool[randomIndex], data.isOnline);
+                Sprite avatar = pokemonAvatarPool[avatarIndex];
+                _sessionSpriteCache[data.playerId] = avatar;
+                itemUI.SetData(data.playerId, data.playerName, avatar, data.isOnline);
             }
         }
     }

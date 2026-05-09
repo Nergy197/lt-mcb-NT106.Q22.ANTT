@@ -1,130 +1,116 @@
 using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+using System.Collections;
 using Microsoft.AspNetCore.SignalR.Client;
 using UnityEngine;
 
 namespace Game.Chat
 {
+    /// <summary>
+    /// Bridges SignalRClient.Chat to the Game.Chat event system.
+    /// Does NOT create its own hub connection — reuses the shared chat hub.
+    /// </summary>
     public class ChatHubClient : MonoBehaviour
     {
         public static ChatHubClient Instance { get; private set; }
-
-        [Header("Server")]
-        public string serverUrl = "http://127.0.0.1:2567";
-
-        private HubConnection _hub;
-        private readonly Queue<Action> _mainThread = new();
 
         public event Action<ChatHistoryPayload> OnChatHistory;
         public event Action<ChatMessageData>    OnWorldMessage;
         public event Action<ChatMessageData>    OnDirectMessage;
         public event Action<string>             OnError;
 
+        public bool IsReady => _isListening;
+
+        private bool _isListening = false;
+        private HubConnection _registeredHub = null;
+        private IDisposable _historyToken;
+        private IDisposable _worldToken;
+        private IDisposable _directToken;
+        private IDisposable _errorToken;
+
         private void Awake()
         {
-            if (Instance == null)
-            {
-                Instance = this;
-                DontDestroyOnLoad(gameObject);
-            }
-            else
-            {
-                Destroy(gameObject);
-                return;
-            }
+            if (Instance == null) { Instance = this; DontDestroyOnLoad(gameObject); }
+            else { Destroy(gameObject); }
         }
 
-        private async void Start()
+        private void Start() => StartCoroutine(KeepCheckingConnection());
+
+        private void OnDestroy()
         {
-            await ConnectAsync();
+            _historyToken?.Dispose();
+            _worldToken?.Dispose();
+            _directToken?.Dispose();
+            _errorToken?.Dispose();
         }
 
-        private void Update()
+        IEnumerator KeepCheckingConnection()
         {
-            lock (_mainThread)
-                while (_mainThread.Count > 0)
-                    _mainThread.Dequeue()?.Invoke();
-        }
-
-        public async Task ConnectAsync()
-        {
-            string token = PlayerPrefs.GetString("jwt_token", "");
-            if (string.IsNullOrEmpty(token))
+            while (true)
             {
-                Debug.LogWarning("[ChatHub] Chưa có JWT token, bỏ qua kết nối.");
-                return;
-            }
-
-            _hub = new HubConnectionBuilder()
-                .WithUrl(serverUrl + "/hubs/chat", options =>
+                var chat = Game.Network.SignalRClient.Instance?.Chat;
+                if (chat != null && chat.State == HubConnectionState.Connected
+                    && (chat != _registeredHub || !_isListening))
                 {
-                    options.AccessTokenProvider = () => Task.FromResult(token);
-                })
-                .WithAutomaticReconnect()
-                .Build();
+                    _isListening = false;
+                    SetupHandlers(chat);
+                    _registeredHub = chat;
+                }
+                yield return new WaitForSeconds(2f);
+            }
+        }
 
-            _hub.Remove("ChatHistory");
-            _hub.Remove("WorldMessage");
-            _hub.Remove("DirectMessage");
-            _hub.Remove("Error");
+        private void SetupHandlers(HubConnection chat)
+        {
+            _historyToken?.Dispose();
+            _worldToken?.Dispose();
+            _directToken?.Dispose();
+            _errorToken?.Dispose();
 
-            _hub.On<ChatHistoryPayload>("ChatHistory", payload =>
+            _historyToken = chat.On<ChatHistoryPayload>("ChatHistory", payload =>
                 Dispatch(() => OnChatHistory?.Invoke(payload)));
 
-            _hub.On<ChatMessageData>("WorldMessage", msg =>
+            _worldToken = chat.On<ChatMessageData>("WorldMessage", msg =>
                 Dispatch(() => OnWorldMessage?.Invoke(msg)));
 
-            _hub.On<ChatMessageData>("DirectMessage", msg =>
+            _directToken = chat.On<ChatMessageData>("DirectMessage", msg =>
                 Dispatch(() => OnDirectMessage?.Invoke(msg)));
 
-            _hub.On<string>("Error", err =>
+            _errorToken = chat.On<string>("Error", err =>
                 Dispatch(() => OnError?.Invoke(err)));
 
-            try
-            {
-                await _hub.StartAsync();
-                Debug.Log("[ChatHub] Kết nối thành công.");
-            }
-            catch (Exception ex)
-            {
-                Debug.LogError($"[ChatHub] Lỗi kết nối: {ex.Message}");
-            }
+            _isListening = true;
+            Debug.Log("[ChatHubClient] Handlers đã đăng ký lên SignalRClient.Chat.");
         }
 
-        public async void LoadWorldHistory()
+        public void LoadWorldHistory()
         {
-            if (_hub?.State == HubConnectionState.Connected)
-                await _hub.InvokeAsync("LoadWorldHistory");
+            var chat = Game.Network.SignalRClient.Instance?.Chat;
+            if (chat?.State == HubConnectionState.Connected)
+                _ = chat.InvokeAsync("LoadWorldHistory");
         }
 
-        public async void LoadDirectHistory(string otherPlayerId)
+        public void LoadDirectHistory(string otherPlayerId)
         {
-            if (_hub?.State == HubConnectionState.Connected)
-                await _hub.InvokeAsync("LoadDirectHistory", otherPlayerId);
+            var chat = Game.Network.SignalRClient.Instance?.Chat;
+            if (chat?.State == HubConnectionState.Connected)
+                _ = chat.InvokeAsync("LoadDirectHistory", otherPlayerId);
         }
 
-        public async void SendWorldMessage(string content)
+        public void SendWorldMessage(string content)
         {
-            if (_hub?.State == HubConnectionState.Connected)
-                await _hub.InvokeAsync("SendWorldMessage", content);
+            var chat = Game.Network.SignalRClient.Instance?.Chat;
+            if (chat?.State == HubConnectionState.Connected)
+                _ = chat.InvokeAsync("SendWorldMessage", content);
         }
 
-        public async void SendDirectMessage(string receiverId, string content)
+        public void SendDirectMessage(string receiverId, string content)
         {
-            if (_hub?.State == HubConnectionState.Connected)
-                await _hub.InvokeAsync("SendDirectMessage", receiverId, content);
+            var chat = Game.Network.SignalRClient.Instance?.Chat;
+            if (chat?.State == HubConnectionState.Connected)
+                _ = chat.InvokeAsync("SendDirectMessage", receiverId, content);
         }
 
-        private void Dispatch(Action action)
-        {
-            lock (_mainThread) _mainThread.Enqueue(action);
-        }
-
-        private async void OnDestroy()
-        {
-            if (_hub != null)
-                await _hub.StopAsync();
-        }
+        private void Dispatch(Action action) =>
+            UnityMainThreadDispatcher.Instance()?.Enqueue(action);
     }
 }
