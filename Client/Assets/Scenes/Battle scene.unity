@@ -2389,7 +2389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d63f63090e0954826985856b42e7efb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Battle.Logic.BattleNetworkController
-  demoAutoMatch: 1
+  demoAutoMatch: 0
   playerHUD1: {fileID: 0}
   playerHUD2: {fileID: 0}
   enemyHUD1: {fileID: 0}

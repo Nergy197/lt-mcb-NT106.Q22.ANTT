@@ -66,6 +66,7 @@ namespace Game.Battle.UI
     {
         public int    PartyIndex;
         public string Name, Type1, Type2, Status;
+        public int    Level;
         public int    CurrentHp, MaxHp;
         public bool   IsFainted, IsActive;
     }

@@ -151,3 +151,29 @@ public class MoveSummaryDto
     public int    CurrentPp { get; set; }
     public int    MaxPp     { get; set; }
 }
+
+public class SearchStartedDto
+{
+    public int CountdownSeconds { get; set; }
+}
+
+public class SearchTickDto
+{
+    public int SecondsLeft { get; set; }
+}
+
+public class ForcedSwitchRequiredDto
+{
+    public string BattleId { get; set; } = null!;
+    public string PlayerId { get; set; } = null!;
+    public int Slot { get; set; }
+    public List<int> AvailableIndices { get; set; } = new();
+}
+
+public class ForcedSwitchAcceptedDto
+{
+    public string BattleId { get; set; } = null!;
+    public string PlayerId { get; set; } = null!;
+    public int Slot { get; set; }
+    public int NewPartyIndex { get; set; }
+}

@@ -228,7 +228,13 @@ public class BattleHub : Hub
                 battleId, playerId, slot, partyIndex);
 
             // Tell the caller their switch was accepted
-            await Clients.Caller.SendAsync("ForcedSwitchAccepted", new { BattleId = battleId, Slot = slot });
+            await Clients.Caller.SendAsync("ForcedSwitchAccepted", new ForcedSwitchAcceptedDto
+            {
+                BattleId = battleId,
+                PlayerId = playerId,
+                Slot = slot,
+                NewPartyIndex = partyIndex
+            });
 
             if (allResolved)
             {
@@ -258,9 +264,10 @@ public class BattleHub : Hub
         // Notify players who need to send in a replacement
         foreach (var fs in result.ForcedSwitches)
         {
-            await SendToPlayer(fs.PlayerId, "ForcedSwitchRequired", new
+            await SendToPlayer(fs.PlayerId, "ForcedSwitchRequired", new ForcedSwitchRequiredDto
             {
                 BattleId         = session.BattleId,
+                PlayerId         = fs.PlayerId,
                 Slot             = fs.Slot,
                 AvailableIndices = _battleService.GetAvailableReplacements(session, fs.PlayerId, fs.Slot),
             });
@@ -296,9 +303,10 @@ public class BattleHub : Hub
                 string key = $"{playerId}:{slot}";
                 if (session.PendingForcedSwitches.Contains(key))
                 {
-                    await Clients.Caller.SendAsync("ForcedSwitchRequired", new
+                    await Clients.Caller.SendAsync("ForcedSwitchRequired", new ForcedSwitchRequiredDto
                     {
                         BattleId         = session.BattleId,
+                        PlayerId         = playerId,
                         Slot             = slot,
                         AvailableIndices = _battleService.GetAvailableReplacements(session, playerId, slot),
                     });

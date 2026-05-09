@@ -31,10 +31,10 @@ namespace Game.Network
                 hub.Remove("SearchTick");
 
                 // Đăng ký nhận gói tin từ Server
-                hub.On<BattleStartedDto>("MatchFound", OnMatchFound);
+                hub.On<object>("MatchFound", OnMatchFound);
                 hub.On<SearchStartedDto>("SearchStarted", OnSearchStarted);
                 hub.On<SearchTickDto>("SearchTick", dto => {
-                    OnCountdownTick?.Invoke(dto.SecondsLeft);
+                    OnCountdownTick?.Invoke(dto.secondsLeft);
                 });
                 
                 hub.On<string>("Debug", msg => Debug.Log("[Server Debug] " + msg));
@@ -80,31 +80,55 @@ namespace Game.Network
             }
         }
 
-        private void OnMatchFound(BattleStartedDto data)
+        private void OnMatchFound(object rawData)
         {
-            Debug.Log($"[Matchmaking] MATCH FOUND! ID: {data.BattleId}");
-            CurrentBattleId = data.BattleId;
-            _shouldLoadBattle = true;
+            if (rawData == null)
+            {
+                Debug.LogError("[Matchmaking] Received NULL rawData in OnMatchFound!");
+                return;
+            }
+
+            try {
+                string json = rawData.ToString();
+                Debug.Log("[Matchmaking] !!! RAW MATCH DATA !!!: " + json);
+                
+                // Use Newtonsoft.Json for robust deserialization (case-insensitive by default)
+                var data = Newtonsoft.Json.JsonConvert.DeserializeObject<BattleStartedEventDto>(json);
+
+                if (data == null || string.IsNullOrEmpty(data.battleId))
+                {
+                    Debug.LogError("[Matchmaking] Failed to deserialize MatchFound data or battleId is missing!");
+                    return;
+                }
+
+                Debug.Log($"[Matchmaking] SUCCESS! BattleId: {data.battleId}, P1: {data.player1Id}, P2: {data.player2Id}");
+                CurrentBattleId = data.battleId;
+                _shouldLoadBattle = true;
+            } catch (Exception ex) {
+                Debug.LogError("[Matchmaking] MatchFound Parse Error: " + ex.Message);
+            }
         }
 
         private void OnSearchStarted(SearchStartedDto dto)
         {
-            Debug.Log($"[Matchmaking] Search Started. Bot in {dto.CountdownSeconds}s");
-            OnCountdownTick?.Invoke(dto.CountdownSeconds);
+            Debug.Log($"[Matchmaking] Search Started. Bot in {dto.countdownSeconds}s");
+            OnCountdownTick?.Invoke(dto.countdownSeconds);
         }
     }
 
     [Serializable]
-    public class SearchStartedDto { public int CountdownSeconds; }
+    public class SearchStartedDto { public int countdownSeconds; }
 
     [Serializable]
-    public class SearchTickDto { public int SecondsLeft; }
+    public class SearchTickDto { public int secondsLeft; }
 
     [Serializable]
-    public class BattleStartedDto
+    public class BattleStartedEventDto
     {
-        public string BattleId;
-        public string Player1Id;
-        public string Player2Id;
+        public string battleId;
+        public string player1Id;
+        public string player2Id;
+        public int turnNumber;
+        public int turnTimeoutSeconds;
     }
 }

@@ -1,5 +1,6 @@
 using System;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.SignalR.Client;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ namespace Game.Network
     public class SignalRClient : MonoBehaviour
     {
         public static SignalRClient Instance { get; private set; }
+        public string PlayerId => PlayerPrefs.GetString("player_id", "");
 
         [Header("Cấu hình Server")]
         public string serverUrl = "http://127.0.0.1:2567";
@@ -44,21 +46,27 @@ namespace Game.Network
                 Debug.LogWarning("[Network] Không tìm thấy JWT Token. Đang chạy ở chế độ Guest.");
             }
 
-            // Khởi tạo Hub với Token hiện tại
-            _matchmakingHub = CreateConnection("/hubs/matchmaking", token);
-            _battleHub = CreateConnection("/hubs/battle", token);
-            _chatHub = CreateConnection("/hubs/chat", token);
+            // Chỉ khởi tạo nếu chưa có hoặc đã bị hủy
+            if (_matchmakingHub == null) _matchmakingHub = CreateConnection("/hubs/matchmaking", token);
+            if (_battleHub == null)      _battleHub = CreateConnection("/hubs/battle", token);
+            if (_chatHub == null)        _chatHub = CreateConnection("/hubs/chat", token);
 
             try
             {
-                // Dùng Task.WhenAll để kết nối nhanh hơn
-                await Task.WhenAll(
-                    _matchmakingHub.StartAsync(),
-                    _battleHub.StartAsync(),
-                    _chatHub.StartAsync()
-                );
+                List<Task> connectTasks = new List<Task>();
+                if (_matchmakingHub.State == HubConnectionState.Disconnected) connectTasks.Add(_matchmakingHub.StartAsync());
+                if (_battleHub.State == HubConnectionState.Disconnected)      connectTasks.Add(_battleHub.StartAsync());
+                if (_chatHub.State == HubConnectionState.Disconnected)        connectTasks.Add(_chatHub.StartAsync());
 
-                Debug.Log("[Network] Đã kết nối SignalR thành công với Token: " + (string.IsNullOrEmpty(token) ? "NULL" : "OK"));
+                if (connectTasks.Count > 0)
+                {
+                    await Task.WhenAll(connectTasks);
+                    Debug.Log("[Network] Đã kết nối/tái kết nối SignalR thành công.");
+                }
+                else
+                {
+                    Debug.Log("[Network] SignalR đã ở trạng thái kết nối.");
+                }
             }
             catch (Exception ex)
             {
