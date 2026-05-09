@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
 using PokemonMMO.Data;
@@ -8,19 +9,24 @@ using PokemonMMO.Services;
 namespace PokemonMMO.Controllers;
 
 [ApiController]
+[Authorize]
 [Route("api/[controller]")]
 public class PokemonController : ControllerBase
 {
     private readonly MongoDbContext _db;
     private readonly PokemonDataService _pokeData;
+    private readonly CurrencyService _currency;
 
-    public PokemonController(MongoDbContext db, PokemonDataService pokeData)
+    public PokemonController(MongoDbContext db, PokemonDataService pokeData, CurrencyService currency)
     {
         _db = db;
         _pokeData = pokeData;
+        _currency = currency;
     }
 
-    private string? GetUserId() => User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+    private string? GetAccountId()
+        => User.FindFirst(ClaimTypes.NameIdentifier)?.Value
+            ?? User.FindFirst("sub")?.Value;
 
     public class SwapMoveRequest
     {
@@ -39,11 +45,11 @@ public class PokemonController : ControllerBase
     [HttpPost("update-stats")]
     public async Task<IActionResult> UpdateStats([FromBody] UpdateSpAlignmentRequest req)
     {
-        var userId = GetUserId();
-        if (userId == null) return Unauthorized();
+        var accountId = GetAccountId();
+        if (accountId == null) return Unauthorized();
 
         // VP Validation (Player must afford the respec)
-        var player = await _db.Players.Find(x => x.AccountId == userId).FirstOrDefaultAsync();
+        var player = await _currency.GetPlayerByAccountIdAsync(accountId);
         if (player == null) return Unauthorized();
 
         // Validate Stat Points (Max 66 total, Max 63 per stat to map to 252 EVs)
@@ -56,11 +62,9 @@ public class PokemonController : ControllerBase
 
         // Define cost: 100 VP to rebuild stats/alignment
         int costVp = 100;
-        if (player.VP < costVp)
-            return BadRequest($"Not enough Victory Points (VP). Requires {costVp} VP.");
 
         // Fetch Pokemon
-        var p = await _db.PokemonInstances.Find(x => x.Id == req.InstanceId && x.OwnerId == userId).FirstOrDefaultAsync();
+        var p = await _db.PokemonInstances.Find(x => x.Id == req.InstanceId && x.OwnerId == player.Id).FirstOrDefaultAsync();
         if (p == null) return NotFound("Pokemon not found or you do not own it.");
 
         // Convert SP to standard EVs underneath for accurate Champion battle arithmetic
@@ -81,8 +85,9 @@ public class PokemonController : ControllerBase
 
         int newMaxHp = CalculateHp(baseHp, p.Ivs.Hp, actualEvs.Hp, p.Level);
 
-        // Deduct VP
-        await _db.Players.UpdateOneAsync(x => x.Id == player.Id, Builders<Player>.Update.Inc(x => x.VP, -costVp));
+        var vpRemaining = await _currency.SpendVPAsync(player.Id, costVp);
+        if (vpRemaining == null)
+            return BadRequest($"Not enough Victory Points (VP). Requires {costVp} VP.");
 
         // Update Pokemon
         var update = Builders<PokemonInstance>.Update
@@ -96,7 +101,7 @@ public class PokemonController : ControllerBase
 
         await _db.PokemonInstances.UpdateOneAsync(x => x.Id == req.InstanceId, update);
 
-        return Ok(new { success = true, maxHp = newMaxHp, vpRemaining = player.VP - costVp });
+        return Ok(new { success = true, maxHp = newMaxHp, vpRemaining });
     }
 
     private int CalculateHp(int baseStat, int iv, int ev, int level)
@@ -107,20 +112,18 @@ public class PokemonController : ControllerBase
     [HttpPost("swap-move")]
     public async Task<IActionResult> SwapMove([FromBody] SwapMoveRequest req)
     {
-        var userId = GetUserId();
-        if (userId == null) return Unauthorized();
+        var accountId = GetAccountId();
+        if (accountId == null) return Unauthorized();
 
-        var player = await _db.Players.Find(x => x.AccountId == userId).FirstOrDefaultAsync();
+        var player = await _currency.GetPlayerByAccountIdAsync(accountId);
         if (player == null) return Unauthorized();
 
         int costVp = 50; // Cost to swap a single move is 50 VP
-        if (player.VP < costVp)
-            return BadRequest($"Not enough Victory Points (VP). Requires {costVp} VP.");
 
         if (req.MoveSlotIndex < 0 || req.MoveSlotIndex > 3)
             return BadRequest("MoveSlotIndex must be between 0 and 3.");
 
-        var p = await _db.PokemonInstances.Find(x => x.Id == req.InstanceId && x.OwnerId == userId).FirstOrDefaultAsync();
+        var p = await _db.PokemonInstances.Find(x => x.Id == req.InstanceId && x.OwnerId == player.Id).FirstOrDefaultAsync();
         if (p == null) return NotFound("Pokemon not found.");
 
         // Fetch Move details to get proper PP
@@ -143,12 +146,13 @@ public class PokemonController : ControllerBase
             p.Moves.Add(newMove);
         }
 
-        // Deduct VP
-        await _db.Players.UpdateOneAsync(x => x.Id == player.Id, Builders<Player>.Update.Inc(x => x.VP, -costVp));
+        var vpRemaining = await _currency.SpendVPAsync(player.Id, costVp);
+        if (vpRemaining == null)
+            return BadRequest($"Not enough Victory Points (VP). Requires {costVp} VP.");
 
         // Save Pokemon
         await _db.PokemonInstances.ReplaceOneAsync(x => x.Id == p.Id, p);
 
-        return Ok(new { success = true, moves = p.Moves, vpRemaining = player.VP - costVp });
+        return Ok(new { success = true, moves = p.Moves, vpRemaining });
     }
 }

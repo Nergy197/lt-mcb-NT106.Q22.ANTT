@@ -21,6 +21,7 @@ public class BattleHub : Hub
 {
     private readonly MongoDbContext _db;
     private readonly BattleService _battleService;
+    private readonly CurrencyService _currency;
 
     // connectionId → playerId (shared across hub instances)
     public static readonly ConcurrentDictionary<string, string> ConnectedPlayers =
@@ -32,10 +33,11 @@ public class BattleHub : Hub
     // battleId → (player1ConnId, player2ConnId)
     private static readonly ConcurrentDictionary<string, (string conn1, string conn2)> BattleConnections = new();
 
-    public BattleHub(MongoDbContext db, BattleService battleService)
+    public BattleHub(MongoDbContext db, BattleService battleService, CurrencyService currency)
     {
         _db = db;
         _battleService = battleService;
+        _currency = currency;
     }
 
     // ═══════════════════════════════════════════════════════════════════════
@@ -275,12 +277,46 @@ public class BattleHub : Hub
 
         if (result.State == BattleState.Ended)
         {
+            await AwardBattleVP(session, result);
+
             await Clients.Group(session.BattleId).SendAsync("BattleEnded", new BattleEndedEventDto
             {
                 BattleId       = session.BattleId,
                 WinnerPlayerId = result.WinnerPlayerId,
                 TypedEvents    = result.TypedEvents,
                 Events         = result.Events,
+            });
+        }
+    }
+
+    private async Task AwardBattleVP(BattleSession session, BattleTurnResult result)
+    {
+        if (string.IsNullOrEmpty(result.WinnerPlayerId))
+            return;
+
+        var reward = await _currency.AwardBattleVPAsync(
+            session.Player1Id,
+            session.Player2Id,
+            result.WinnerPlayerId,
+            BattleService.BotPlayerId);
+
+        if (reward.WinnerPlayerId != null && reward.WinnerVP.HasValue)
+        {
+            await SendToPlayer(reward.WinnerPlayerId, "VPChanged", new VPChangedDto
+            {
+                Vp = reward.WinnerVP.Value,
+                Delta = reward.WinnerDelta,
+                Reason = "battle_win"
+            });
+        }
+
+        if (reward.LoserPlayerId != null && reward.LoserVP.HasValue)
+        {
+            await SendToPlayer(reward.LoserPlayerId, "VPChanged", new VPChangedDto
+            {
+                Vp = reward.LoserVP.Value,
+                Delta = reward.LoserDelta,
+                Reason = "battle_lose"
             });
         }
     }

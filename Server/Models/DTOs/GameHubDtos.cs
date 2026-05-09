@@ -72,6 +72,13 @@ public class BattleEndedEventDto
     public List<BattleEvent> TypedEvents { get; set; } = new();
 }
 
+public class VPChangedDto
+{
+    public int Vp { get; set; }
+    public int Delta { get; set; }
+    public string Reason { get; set; } = "";
+}
+
 // ─── VGC Team Preview ───────────────────────────────────────────────────────
 
 public class TeamPreviewDto

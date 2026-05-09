@@ -76,7 +76,7 @@ namespace Game.Network
 
         private HubConnection CreateConnection(string hubPath, string token)
         {
-            return new HubConnectionBuilder()
+            var connection = new HubConnectionBuilder()
                 .WithUrl(serverUrl + hubPath, options =>
                 {
                     // Quan trọng: Gán token vào Header cho mỗi lần kết nối
@@ -84,6 +84,20 @@ namespace Game.Network
                 })
                 .WithAutomaticReconnect()
                 .Build();
+
+            if (hubPath == "/hubs/battle")
+            {
+                connection.On<VPChangedPayload>("VPChanged", payload =>
+                {
+                    UnityMainThreadDispatcher.Instance().Enqueue(() =>
+                    {
+                        global::VPManager.Instance?.ApplyServerBalance(payload.Vp);
+                        Debug.Log($"[VP] Server updated balance: {payload.Vp} ({payload.Delta:+#;-#;0}, {payload.Reason})");
+                    });
+                });
+            }
+
+            return connection;
         }
 
         public async Task DisconnectAsync()
@@ -91,6 +105,14 @@ namespace Game.Network
             if (_matchmakingHub != null) await _matchmakingHub.StopAsync();
             if (_battleHub != null) await _battleHub.StopAsync();
             if (_chatHub != null) await _chatHub.StopAsync();
+        }
+
+        [Serializable]
+        public class VPChangedPayload
+        {
+            public int Vp { get; set; }
+            public int Delta { get; set; }
+            public string Reason { get; set; }
         }
     }
 }

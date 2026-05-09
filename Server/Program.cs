@@ -106,6 +106,7 @@ builder.Services.AddScoped<ChatService>();
 builder.Services.AddScoped<FriendService>();
 // ── Recruit (Gacha) service ────────────────────────────────────────────────
 builder.Services.AddScoped<RecruitService>();
+builder.Services.AddScoped<CurrencyService>();
 
 // ---------------------------------------------------------------------------
 // MVC Controllers + SignalR
