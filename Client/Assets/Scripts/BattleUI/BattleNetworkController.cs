@@ -37,10 +37,13 @@ namespace Game.Battle.Logic
         private List<TeamPreviewPokemonDto> _myFullTeam = new();
         private List<int> _myTeamCurrentHp = new();
         private bool _isMyTurn = false;
+        private int? _voluntarySwitchSrcSlot;
+        private Dictionary<int, int> _pendingSwitches = new();
         private int _currentSrcSlot = 0;     // slot dang chon hanh dong (0=A, 1=B)
         private int _pendingMoveSlot = -1;    // move index dang cho chon muc tieu
         private bool _isForcedSwitchPending = false;
         private int _pendingForcedSlot = 0;
+        private bool _isProcessingTurn = false;
         private readonly Queue<Action> _mainThreadQueue = new Queue<Action>();
 
         private void OnEnable()
@@ -56,6 +59,7 @@ namespace Game.Battle.Logic
             BattleEvents.OnPartySlotChosen += OnPartySlotChosen;
             BattleEvents.OnVoluntarySwitchRequested += OnVoluntarySwitchRequested;
             BattleEvents.OnPartyPanelCancelled += OnPartyBackClicked;
+            BattleEvents.OnSkillPanelCancelled += OnSkillBackClicked;
             BattleEvents.OnPlayerSurrender += OnPlayerSurrender;
 
             if (playerHUD1 == null) {
@@ -76,6 +80,7 @@ namespace Game.Battle.Logic
             BattleEvents.OnPartySlotChosen -= OnPartySlotChosen;
             BattleEvents.OnVoluntarySwitchRequested -= OnVoluntarySwitchRequested;
             BattleEvents.OnPartyPanelCancelled -= OnPartyBackClicked;
+            BattleEvents.OnSkillPanelCancelled -= OnSkillBackClicked;
             BattleEvents.OnPlayerSurrender -= OnPlayerSurrender;
         }
 
@@ -89,6 +94,13 @@ namespace Game.Battle.Logic
             } catch (Exception ex) {
                 Debug.LogError("[Battle] Surrender error: " + ex.Message);
             }
+        }
+
+        private void OnSkillBackClicked()
+        {
+            // Refresh move names and icons
+            PopulateMoves(_currentSrcSlot);
+            uiManager?.SwitchPanel(BattlePanelType.Skill);
         }
 
         private void OnPartyBackClicked()
@@ -199,6 +211,26 @@ namespace Game.Battle.Logic
             }
         }
 
+        private IEnumerator WaitAndShowForcedSwitch(FsRequiredDto dto)
+        {
+            // Đợi cho đến khi các dòng thoại TurnResolved chạy xong
+            while (_isProcessingTurn) yield return null;
+            
+            // Đợi thêm một chút để người chơi kịp định thần
+            yield return new WaitForSeconds(0.5f);
+
+            _isForcedSwitchPending = true;
+            _pendingForcedSlot = dto.Slot;
+
+            var data = new PartyPanelData {
+                Pokemon = GetCurrentPartyData(),
+                AvailableIdxs = dto.AvailableIndices.ToArray(),
+                IsForcedSwitch = true
+            };
+            BattleEvents.OnPartyPanelOpen?.Invoke(data);
+            uiManager?.SwitchPanel(BattlePanelType.Party);
+        }
+
         private IEnumerator HandleBattleCrash(string message)
         {
             Debug.LogError("[Battle] CRASH HANDLER: " + message);
@@ -256,6 +288,8 @@ namespace Game.Battle.Logic
                 _field = FieldSnapshot.From(dto);
                 if (dto.YourTeamHp != null) _myTeamCurrentHp = dto.YourTeamHp;
                 
+                _isMyTurn = false;
+                _pendingSwitches.Clear();
                 uiManager?.SwitchPanel(BattlePanelType.None);
                 BattleEvents.OnFieldUpdated?.Invoke(_field.YourA, _field.YourB, _field.OppA, _field.OppB);
                 UpdateHUDs();
@@ -267,16 +301,7 @@ namespace Game.Battle.Logic
 
             hub.On<object>("ActionAccepted", raw => Enqueue(() => {
                 Debug.Log("[Battle] Action accepted by server");
-                // Slot A xong, tiep tuc Slot B (neu co)
-                if (_currentSrcSlot == 0 && _field.YourB != null && !_field.YourB.IsFainted) {
-                    _currentSrcSlot = 1;
-                    PopulateMoves(1);
-                    ShowCommandPanel(1);
-                } else {
-                    // Da gui du hanh dong, doi server xu ly
-                    uiManager?.SwitchPanel(BattlePanelType.None);
-                    BattleEvents.OnPrintDialog?.Invoke("Waiting for opponent...", true);
-                }
+                // Optimistic transition is already handled in MoveToNextActionSlot
             }));
 
             hub.On<object>("TurnResolved", raw => Enqueue(() => {
@@ -293,19 +318,7 @@ namespace Game.Battle.Logic
             hub.On<object>("ForcedSwitchRequired", raw => Enqueue(() => {
                 Debug.Log("[Battle] Event: ForcedSwitchRequired");
                 var dto = J<FsRequiredDto>(raw);
-                
-                _isForcedSwitchPending = true;
-                _pendingForcedSlot = dto.Slot;
-                
-                // Open party panel in forced switch mode
-                var data = new PartyPanelData {
-                    Pokemon = GetCurrentPartyData(),
-                    AvailableIdxs = dto.AvailableIndices.ToArray(),
-                    IsForcedSwitch = true,
-                    ForcedSlot = dto.Slot
-                };
-                BattleEvents.OnPartyPanelOpen?.Invoke(data);
-                uiManager?.SwitchPanel(BattlePanelType.Party);
+                StartCoroutine(WaitAndShowForcedSwitch(dto));
             }));
 
             hub.On<object>("ForcedSwitchAccepted", raw => Enqueue(() => {
@@ -318,6 +331,7 @@ namespace Game.Battle.Logic
                 Debug.Log("[Battle] Turn Ready (after switch)");
                 var dto = J<FieldDto>(raw);
                 _field = FieldSnapshot.From(dto);
+                _pendingSwitches.Clear();
                 BattleEvents.OnFieldUpdated?.Invoke(_field.YourA, _field.YourB, _field.OppA, _field.OppB);
                 UpdateHUDs();
                 UpdateSprites();
@@ -456,63 +470,123 @@ namespace Game.Battle.Logic
         private void OnMoveSelected(int moveIndex)
         {
             _pendingMoveSlot = moveIndex;
-            Debug.Log($"[Battle] Move {moveIndex} selected");
-
             var pkmn = (_currentSrcSlot == 0) ? _field.YourA : _field.YourB;
             if (pkmn == null || pkmn.Moves == null || moveIndex >= pkmn.Moves.Count) return;
 
             var move = pkmn.Moves[moveIndex];
-            bool needsTarget = move.TargetType == 0 || move.TargetType == 2; // SingleOpponent or SingleAlly
+            Debug.Log($"[Battle] Move {move.Name} (ID: {move.MoveId}, TargetType: {move.TargetType}) selected for slot {_currentSrcSlot}");
 
-            if (needsTarget && skillPanel != null)
+            // 0: SingleOpponent, 2: SingleAlly
+            bool needsManualTarget = move.TargetType == 0 || move.TargetType == 2;
+
+            if (needsManualTarget && skillPanel != null)
             {
                 Debug.Log($"[Battle] Showing targets for move {move.Name}");
+                BattleEvents.OnPrintDialog?.Invoke($"Select target for {move.Name}...", false);
+                
                 string oppA = (_field.OppA != null && !_field.OppA.IsFainted) ? _field.OppA.SpeciesName : "---";
                 string oppB = (_field.OppB != null && !_field.OppB.IsFainted) ? _field.OppB.SpeciesName : "---";
                 string myA  = (_field.YourA != null && !_field.YourA.IsFainted) ? _field.YourA.SpeciesName : "---";
                 string myB  = (_field.YourB != null && !_field.YourB.IsFainted) ? _field.YourB.SpeciesName : "---";
 
-                // Swap labels to match visual layout: Button 0 (Right), Button 1 (Left)
+                // Swap labels to match visual layout: Button 0 (Right/Slot B), Button 1 (Left/Slot A)
                 skillPanel.SetTargetLabels(oppB, oppA, myA, myB);
                 uiManager?.SwitchPanel(BattlePanelType.Skill);
             }
             else
             {
-                // Auto submit with default target 0 for spread/self/all
-                OnTargetSelected(0);
+                Debug.Log($"[Battle] Auto-submitting move {move.Name} with default target.");
+                // For spread/field/self moves, targetSlot doesn't matter much on client,
+                // but we send 0 and ensure OnTargetSelected doesn't swap it if it's an auto-call.
+                OnTargetSelectedInternal(0, isAuto: true);
             }
         }
 
         // Player chon muc tieu -> gui len server
-        private void OnTargetSelected(int targetSlot)
+        private void OnTargetSelected(int targetBtnIndex)
+        {
+            OnTargetSelectedInternal(targetBtnIndex, isAuto: false);
+        }
+
+        private void OnTargetSelectedInternal(int targetBtnIndex, bool isAuto)
         {
             if (_pendingMoveSlot < 0) return;
 
-            // Swap back indices to match server slots: 0 (Left/OppA), 1 (Right/OppB)
-            int finalTarget = targetSlot;
-            if (targetSlot == 0) finalTarget = 1;      // Click Right Button -> Target OppB (1)
-            else if (targetSlot == 1) finalTarget = 0; // Click Left Button -> Target OppA (0)
+            int finalTarget = targetBtnIndex;
+            if (!isAuto)
+            {
+                // Swap back indices to match server slots: 0 (Left/OppA), 1 (Right/OppB)
+                if (targetBtnIndex == 0) finalTarget = 1;      // Click Right Button -> Target OppB (1)
+                else if (targetBtnIndex == 1) finalTarget = 0; // Click Left Button -> Target OppA (0)
+            }
 
-            Debug.Log($"[Battle] Target {finalTarget} selected (via btn {targetSlot}) for move {_pendingMoveSlot}");
+            Debug.Log($"[Battle] Target {finalTarget} selected (isAuto: {isAuto}) for move {_pendingMoveSlot}");
 
             bool useTera = (skillPanel != null && skillPanel.IsTeraActive);
             SubmitAction("Move", _pendingMoveSlot, null, finalTarget, useTera);
             
             _pendingMoveSlot = -1;
-            uiManager?.SwitchPanel(BattlePanelType.None);
             if (skillPanel != null) skillPanel.ResetTeraToggle();
+
+            // Optimistic transition to next slot
+            MoveToNextActionSlot();
+        }
+
+        private void MoveToNextActionSlot()
+        {
+            // If we just finished slot 0 and slot 1 is available, move to slot 1
+            if (_currentSrcSlot == 0 && _field.YourB != null && !_field.YourB.IsFainted)
+            {
+                ShowCommandPanel(1);
+            }
+            else
+            {
+                // No more slots to command
+                uiManager?.SwitchPanel(BattlePanelType.None);
+                BattleEvents.OnPrintDialog?.Invoke("Waiting for opponent...", false);
+            }
         }
 
         private void OnVoluntarySwitchRequested(int srcSlot)
         {
             _currentSrcSlot = srcSlot;
+            _voluntarySwitchSrcSlot = srcSlot;
             var data = new PartyPanelData {
                 Pokemon = GetCurrentPartyData(),
-                AvailableIdxs = new int[] { 0, 1, 2, 3, 4, 5 }, // All non-active non-fainted
+                AvailableIdxs = GetAvailableSwitchIndices(srcSlot),
                 IsForcedSwitch = false
             };
             BattleEvents.OnPartyPanelOpen?.Invoke(data);
             uiManager?.SwitchPanel(BattlePanelType.Party);
+        }
+
+        private int[] GetAvailableSwitchIndices(int srcSlot)
+        {
+            var party = GetCurrentPartyData();
+            var list = new List<int>();
+            HashSet<int> occupied = new HashSet<int>();
+
+            // 1. Nhung con dang tren san
+            if (_field.YourA != null && !_field.YourA.IsFainted) occupied.Add(GetPartyIndexBySpeciesId(_field.YourA.SpeciesId));
+            if (_field.YourB != null && !_field.YourB.IsFainted) occupied.Add(GetPartyIndexBySpeciesId(_field.YourB.SpeciesId));
+
+            // 2. Nhung con da duoc chon de doi vao o slot kia
+            foreach (var kvp in _pendingSwitches)
+            {
+                if (kvp.Key != srcSlot) occupied.Add(kvp.Value);
+            }
+
+            for (int i = 0; i < party.Length; i++)
+            {
+                if (!party[i].IsFainted && !occupied.Contains(i))
+                    list.Add(i);
+            }
+            return list.ToArray();
+        }
+
+        private int GetPartyIndexBySpeciesId(string speciesId)
+        {
+            return _myFullTeam.FindIndex(p => p.SpeciesId == speciesId);
         }
 
         private void OnPartySlotChosen(int partyIndex)
@@ -530,7 +604,11 @@ namespace Game.Battle.Logic
             }
             else
             {
+                _pendingSwitches[_currentSrcSlot] = partyIndex;
                 SubmitAction("Switch", null, partyIndex, 0, false);
+                
+                // Optimistic transition to next slot
+                MoveToNextActionSlot();
             }
         }
 
@@ -595,6 +673,8 @@ namespace Game.Battle.Logic
 
         private IEnumerator ResolveTurn(TurnDto r)
         {
+            _isProcessingTurn = true;
+            _pendingSwitches.Clear();
             uiManager?.SwitchPanel(BattlePanelType.None);
             if (r.TypedEvents != null) {
                 foreach (var ev in r.TypedEvents) {
@@ -670,6 +750,7 @@ namespace Game.Battle.Logic
                 if (hub != null && hub.State == HubConnectionState.Connected)
                     yield return hub.InvokeAsync("RequestCurrentState", _battleId);
             }
+            _isProcessingTurn = false;
         }
 
         private void ProcessEventVisuals(EventDto ev)

@@ -120,7 +120,11 @@ namespace Game.Battle.UI
             var nameTmp = skillButtons[slot].transform.Find("MoveName")
                           ?.GetComponent<TextMeshProUGUI>()
                        ?? skillButtons[slot].GetComponentInChildren<TextMeshProUGUI>();
-            if (nameTmp != null) nameTmp.text = moveName;
+            if (nameTmp != null)
+            {
+                nameTmp.text = moveName;
+                nameTmp.color = Color.white; // Chữ trắng cho chiêu thức
+            }
 
             // Set color based on type
             var accent = skillButtons[slot].transform.Find("TypeAccent")?.GetComponent<Image>();
@@ -136,7 +140,7 @@ namespace Game.Battle.UI
                 if (btnImg != null)
                 {
                     // Lighten the button color slightly but keep it identifiable
-                    btnImg.color = new Color(tc.r, tc.g, tc.b, 0.4f);
+                    btnImg.color = new Color(tc.r, tc.g, tc.b, 0.7f);
                 }
             }
             else
@@ -162,7 +166,11 @@ namespace Game.Battle.UI
             var nameTmp = skillButtons[slot].transform.Find("MoveName")
                           ?.GetComponent<TextMeshProUGUI>()
                        ?? skillButtons[slot].GetComponentInChildren<TextMeshProUGUI>();
-            if (nameTmp != null) nameTmp.text = label;
+            if (nameTmp != null)
+            {
+                nameTmp.text = label.ToUpper();
+                nameTmp.color = Color.black; // Chữ đen trên nền trắng
+            }
         }
 
         public void SetTargetLabels(string oppA, string oppB, string yourA, string yourB)
@@ -173,7 +181,23 @@ namespace Game.Battle.UI
             {
                 SetTargetLabel(i, labels[i]);
                 if (skillButtons[i] != null)
+                {
                     skillButtons[i].interactable = (labels[i] != "---");
+                    
+                    // Reset màu sắc khi chọn mục tiêu
+                    var btnImg = skillButtons[i].GetComponent<Image>();
+                    if (btnImg != null) btnImg.color = Color.white;
+
+                    var accent = skillButtons[i].transform.Find("TypeAccent")?.GetComponent<Image>();
+                    if (accent != null) accent.gameObject.SetActive(false);
+
+                    var badge = FindTypeBadgeText(i);
+                    if (badge != null) badge.text = "";
+
+                    var ppTmp = skillButtons[i].transform.Find("MetaRow/PP")?.GetComponent<TextMeshProUGUI>()
+                             ?? skillButtons[i].transform.Find("PP")?.GetComponent<TextMeshProUGUI>();
+                    if (ppTmp != null) ppTmp.text = "";
+                }
             }
         }
 
@@ -215,7 +239,14 @@ namespace Game.Battle.UI
 
         private void OnBackClicked()
         {
-            _uiManager?.SwitchPanel(BattlePanelType.Command);
+            if (_isSelectingTarget)
+            {
+                BattleEvents.OnSkillPanelCancelled?.Invoke();
+            }
+            else
+            {
+                _uiManager?.SwitchPanel(BattlePanelType.Command);
+            }
         }
 
         private void OnTeraClicked()

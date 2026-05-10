@@ -178,6 +178,9 @@ public class BattleHub : Hub
         var playerId = await ResolvePlayerId();
         if (playerId == null) { await Error("Not authenticated."); return; }
 
+        var session = _battleService.GetSession(battleId);
+        if (session == null) return;
+
         var action = new BattleAction
         {
             PlayerId    = playerId,
@@ -193,15 +196,13 @@ public class BattleHub : Hub
 
         try
         {
-            var (session, result) = await _battleService.SubmitBattleAction(battleId, playerId, action);
+            var (updatedSession, result) = await _battleService.SubmitBattleAction(battleId, playerId, action);
+            
+            await Clients.Caller.SendAsync("ActionAccepted", sourceSlot);
+
             if (result != null)
             {
-                // Broadcast TurnResolved to both
                 await Clients.Group(battleId).SendAsync("TurnResolved", result);
-            }
-            else
-            {
-                await Clients.Caller.SendAsync("ActionAccepted", new { BattleId = battleId, Slot = sourceSlot });
             }
         }
         catch (Exception ex)

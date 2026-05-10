@@ -112,6 +112,7 @@ namespace Game.Battle.Demo
             BattleEvents.OnPartySlotChosen          += OnPartySlotChosen;
             BattleEvents.OnPartyPanelCancelled      += OnPartyPanelCancelled;
             BattleEvents.OnVoluntarySwitchRequested += OnVoluntarySwitchRequested;
+            BattleEvents.OnPlayerSurrender          += OnSurrender;
         }
 
         void OnDisable()
@@ -121,6 +122,12 @@ namespace Game.Battle.Demo
             BattleEvents.OnPartySlotChosen          -= OnPartySlotChosen;
             BattleEvents.OnPartyPanelCancelled      -= OnPartyPanelCancelled;
             BattleEvents.OnVoluntarySwitchRequested -= OnVoluntarySwitchRequested;
+            BattleEvents.OnPlayerSurrender          -= OnSurrender;
+        }
+
+        void OnSurrender()
+        {
+            StartCoroutine(EndBattle(false, "BAN DA DAU HANG!"));
         }
 
         // ── Teams ─────────────────────────────────────────────────────────────
@@ -600,9 +607,16 @@ namespace Game.Battle.Demo
             if (!myDead && !botDead) return false;
 
             bool won = botDead && !myDead;
-            Say(won ? "🏆 BẠN THẮNG!" : "💀 BẠN THUA...", false);
-            BattleEvents.OnBattleResult?.Invoke(won, "Bot");
+            StartCoroutine(EndBattle(won, won ? "BAN DA CHIEN THANG!" : "BAN DA THAT BAI..."));
             return true;
+        }
+
+        IEnumerator EndBattle(bool won, string message)
+        {
+            Say(message, false);
+            BattleEvents.OnBattleResult?.Invoke(won, won ? "Player" : "Bot");
+            yield return new WaitForSeconds(3f);
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Menu scene");
         }
 
         // ── Util ──────────────────────────────────────────────────────────────

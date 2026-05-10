@@ -261,7 +261,6 @@ public class BattleService
                 Nickname    = botName,
                 Level       = BattleLevel,
                 MaxHp       = hp, CurrentHp = hp,
-                IsFainted   = false,
                 Type1 = t1, Type2 = t2, OrigType1 = t1, OrigType2 = t2,
                 TerType = t1,
                 Atk   = ComputeStat(dex?.BaseStats.GetValueOrDefault("attack", 80) ?? 80, 31, 0, 1.0),
@@ -371,8 +370,11 @@ public class BattleService
         Console.WriteLine($"[Battle] Player {playerId} submitted action for slot {action.SourceIndex}: {action.Type} (MoveSlot: {action.MoveSlot}, TargetSlot: {action.TargetSlot})");
         session.PendingActions[key] = action;
 
-        // Bot battle: auto-fill bot actions immediately after human submits
-        BotFillActions(session);
+        // Chỉ sinh lệnh cho Bot khi TẤT CẢ người chơi thực đã gửi lệnh xong
+        if (AllPlayersSubmitted(session))
+        {
+            BotFillActions(session);
+        }
 
         if (AllActionsSubmitted(session))
         {
@@ -391,6 +393,29 @@ public class BattleService
         }
 
         return (session, null);
+    }
+
+    private bool AllPlayersSubmitted(BattleSession session)
+    {
+        // Kiểm tra Player 1
+        if (session.Player1Id != BotPlayerId) {
+            if (!IsSideSubmitted(session, session.Player1Id)) return false;
+        }
+        // Kiểm tra Player 2
+        if (session.Player2Id != BotPlayerId) {
+            if (!IsSideSubmitted(session, session.Player2Id)) return false;
+        }
+        return true;
+    }
+
+    private bool IsSideSubmitted(BattleSession session, string playerId)
+    {
+        for (int s = 0; s < 2; s++) {
+            var p = GetActiveSlot(session, playerId, s);
+            if (p != null && !p.IsFainted && !session.PendingActions.ContainsKey($"{playerId}:{s}"))
+                return false;
+        }
+        return true;
     }
 
     /// <summary>
@@ -789,7 +814,7 @@ public class BattleService
                     / (firstDef?.GetStageMultiplier(StatIndex.EVA) ?? 1.0);
                 if (_rng.NextDouble() > hitChance)
                 {
-                    events.Add(new MoveMissedEvent { UserId = action.PlayerId, PokemonName = attacker.SpeciesName, MoveName = move.Name, Message = $"{attacker.SpeciesName}'s attack missed!" });
+                    events.Add(new MoveMissedEvent { PlayerId = action.PlayerId, PokemonName = attacker.SpeciesName, MoveName = move.Name, Message = $"{attacker.SpeciesName}'s attack missed!" });
                     return;
                 }
             }
@@ -814,7 +839,7 @@ public class BattleService
                         / defender.GetStageMultiplier(StatIndex.EVA);
                     if (_rng.NextDouble() > hitChance)
                     {
-                        events.Add(new MoveMissedEvent { UserId = action.PlayerId, PokemonName = attacker.SpeciesName, MoveName = move.Name, Message = $"{attacker.SpeciesName}'s attack missed!" });
+                        events.Add(new MoveMissedEvent { PlayerId = action.PlayerId, PokemonName = attacker.SpeciesName, MoveName = move.Name, Message = $"{attacker.SpeciesName}'s attack missed!" });
                         continue;
                     }
                 }
@@ -1659,34 +1684,6 @@ public class BattleService
         return team[idx];
     }
 
-    private PokemonSlotDto MapSlot(BattlePokemonSnapshot? p)
-    {
-        if (p == null) return null;
-        return new PokemonSlotDto
-        {
-            SpeciesId = p.SpeciesId,
-            SpeciesName = p.SpeciesName ?? p.Nickname ?? "Unknown",
-            Level = p.Level,
-            MaxHp = p.MaxHp,
-            CurrentHp = p.CurrentHp,
-            Type1 = p.Type1,
-            Type2 = p.Type2,
-            Status = p.NonVolatileStatus.ToString(),
-            TerType = p.TerType,
-            IsTerastallized = p.IsTerastallized,
-            Moves = p.Moves.Select(m => new MoveDto
-            {
-                MoveId = m.MoveId,
-                Name = m.MoveName ?? "Move",
-                Type = m.MoveType ?? "normal",
-                Category = m.Category ?? "Physical",
-                MaxPp = m.MaxPp,
-                CurrentPp = m.CurrentPp,
-                TargetType = 0 // Default for now
-            }).ToList()
-        };
-    }
-
     private int GetActiveHp(BattleSession session, string playerId, int slot)
         => GetActiveSlot(session, playerId, slot)?.CurrentHp ?? 0;
 
@@ -1858,20 +1855,17 @@ public class BattleService
     {
         var session = GetSessionOrThrow(battleId);
         string winnerId = session.Player1Id == playerId ? session.Player2Id : session.Player1Id;
-
+        
         session.State = BattleState.Ended;
         session.WinnerPlayerId = winnerId;
-
+        
         var result = new BattleTurnResult
         {
-            State          = BattleState.Ended,
+            State = BattleState.Ended,
             WinnerPlayerId = winnerId,
-            TypedEvents    = new List<BattleEvent>
-            {
-                new BattleEndEvent { WinnerPlayerId = winnerId, Reason = "Surrender",
-                    Message = $"[TRAINER] surrendered!", PlayerId = playerId }
-            },
-            Events = new List<string> { "BattleEndEvent" },
+            TypedEvents = new List<BattleEvent> {
+                new BattleEndEvent { WinnerPlayerId = winnerId, Reason = "Surrender", Message = $"[TRAINER] surrendered!" }
+            }
         };
         return (session, result);
     }

@@ -23,6 +23,7 @@ namespace Game.Battle.UI
         public static Action<int>            OnPartySlotChosen;
         public static Action<int>            OnVoluntarySwitchRequested;
         public static Action                 OnPartyPanelCancelled;
+        public static Action                 OnSkillPanelCancelled;
         public static Action                 OnPlayerSurrender;
         public static Action<bool>           OnTeraAvailabilityChanged;
     }
