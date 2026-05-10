@@ -340,10 +340,11 @@ namespace Game.Battle.Logic
 
         private IEnumerator HandleBattleEnd(bool iWon, string winnerId)
         {
-            string msg = iWon ? "BAN DA CHIEN THANG!" : "BAN DA THAT BAI...";
-            if (string.IsNullOrEmpty(winnerId)) msg = "TRAN DAU KET THUC HOA.";
-            
+            string msg = string.IsNullOrEmpty(winnerId)
+                ? "TRAN DAU KET THUC HOA!"
+                : (iWon ? "BAN DA CHIEN THANG!" : "BAN DA THAT BAI...");
             BattleEvents.OnPrintDialog?.Invoke(msg, false);
+            BattleEvents.OnBattleResult?.Invoke(iWon, winnerId ?? "");
             yield return new WaitForSeconds(3f);
             ReturnToMenu();
         }
@@ -653,9 +654,15 @@ namespace Game.Battle.Logic
                 }
             }
             if (r.State == "Ended") {
-                bool won = false; // TODO: check WinnerPlayerId
+                string myId = SignalRClient.Instance.PlayerId;
+                bool won = !string.IsNullOrEmpty(r.WinnerPlayerId) &&
+                           r.WinnerPlayerId.Equals(myId, System.StringComparison.OrdinalIgnoreCase);
+                string resultMsg = string.IsNullOrEmpty(r.WinnerPlayerId)
+                    ? "TRAN DAU KET THUC HOA!"
+                    : (won ? "BAN DA CHIEN THANG!" : "BAN DA THAT BAI...");
+                BattleEvents.OnPrintDialog?.Invoke(resultMsg, false);
                 BattleEvents.OnBattleResult?.Invoke(won, r.WinnerPlayerId ?? "");
-                yield return new WaitForSeconds(5f); // Chờ 5 giây để xem kết quả
+                yield return new WaitForSeconds(3f);
                 ReturnToMenu();
             } else {
                 // Yeu cau server gui lai trang thai moi nhat

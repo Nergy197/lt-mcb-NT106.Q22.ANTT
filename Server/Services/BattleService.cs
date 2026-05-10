@@ -1858,17 +1858,20 @@ public class BattleService
     {
         var session = GetSessionOrThrow(battleId);
         string winnerId = session.Player1Id == playerId ? session.Player2Id : session.Player1Id;
-        
+
         session.State = BattleState.Ended;
         session.WinnerPlayerId = winnerId;
-        
+
         var result = new BattleTurnResult
         {
-            State = "Ended",
+            State          = BattleState.Ended,
             WinnerPlayerId = winnerId,
-            Events = new List<BattleEvent> {
-                new BattleEndEvent { WinnerPlayerId = winnerId, Reason = "Surrender", Message = $"[TRAINER] surrendered!" }
-            }
+            TypedEvents    = new List<BattleEvent>
+            {
+                new BattleEndEvent { WinnerPlayerId = winnerId, Reason = "Surrender",
+                    Message = $"[TRAINER] surrendered!", PlayerId = playerId }
+            },
+            Events = new List<string> { "BattleEndEvent" },
         };
         return (session, result);
     }
