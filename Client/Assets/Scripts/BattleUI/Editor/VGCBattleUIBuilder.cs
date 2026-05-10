@@ -11,12 +11,27 @@ namespace Game.Battle.EditorTools {
     public class VGCBattleUIBuilder : EditorWindow {
         [MenuItem("Pokemon/Build VGC Battle Scene (New)")]
         public static void BuildNewScene() {
+            if (Camera.main != null) {
+                Camera.main.orthographic = true;
+                Camera.main.orthographicSize = 5f;
+            }
+
             var root = new GameObject("BATTLE CANVAS", typeof(RectTransform));
             var canvas = root.AddComponent<Canvas>(); canvas.renderMode = RenderMode.ScreenSpaceOverlay;
             root.AddComponent<CanvasScaler>().referenceResolution = new Vector2(1920, 1080);
             root.AddComponent<GraphicRaycaster>();
 
             GameObject arena = new GameObject("BATTLE ARENA");
+            
+            // Đưa Background vào World Space để nằm dưới Pokemon
+            GameObject bgObj = new GameObject("Background_Holder (Kéo BG vào Sprite)");
+            bgObj.transform.SetParent(arena.transform);
+            bgObj.transform.position = new Vector3(0, 0, 10);
+            bgObj.transform.localScale = new Vector3(1f, 1f, 1f); // Reset scale về 1 để ảnh tự nhiên
+            var bgSr = bgObj.AddComponent<SpriteRenderer>();
+            bgSr.sortingOrder = -100; // Đảm bảo luôn nằm dưới cùng
+            bgSr.color = Color.white;
+
             BuildSystemLogic(arena.transform);
 
             var uiManager = root.AddComponent<BattleUIManager>();
@@ -71,8 +86,12 @@ namespace Game.Battle.EditorTools {
             Vector3[] pos = { new(-4, -2, 0), new(-2, -2, 0), new(2, 2, 0), new(4, 2, 0) };
             
             for(int i=0; i<4; i++) {
-                var s = new GameObject(slots[i]); s.transform.SetParent(parent); s.transform.position = pos[i];
-                var sr = s.AddComponent<SpriteRenderer>(); sr.sprite = AssetDatabase.GetBuiltinExtraResource<Sprite>("UI/Skin/Background.psd");
+                var s = new GameObject(slots[i]); s.transform.SetParent(parent); 
+                s.transform.position = pos[i];
+                s.transform.localScale = new Vector3(5f, 5f, 1f); // Tăng scale Pokemon lên giống tool cũ
+                
+                var sr = s.AddComponent<SpriteRenderer>(); 
+                sr.sprite = AssetDatabase.GetBuiltinExtraResource<Sprite>("UI/Skin/Background.psd");
                 sr.color = i < 2 ? new Color(0, 0.5f, 1, 0.5f) : new Color(1, 0, 0, 0.5f);
             }
         }
@@ -113,45 +132,90 @@ namespace Game.Battle.EditorTools {
             iconBox.AddComponent<Image>().color = new Color(1, 1, 1, 0.1f);
             var icon = new GameObject("Icon", typeof(RectTransform)); icon.transform.SetParent(iconBox.transform, false); SetStretch(icon);
             hud.iconImage = icon.AddComponent<Image>();
+
+            // Type Badges
+            var t1Bg = new GameObject("Type1Badge", typeof(RectTransform)); t1Bg.transform.SetParent(go.transform, false);
+            SetRect(t1Bg, new Vector2(0, 0), new Vector2(0, 0), new Vector2(0, 0), new Vector2(20, 20), new Vector2(45, 18));
+            hud.type1BadgeImage = t1Bg.AddComponent<Image>();
+            hud.type1BadgeText = CreateText(t1Bg.transform, "Text", "FIRE", 10, TextAlignmentOptions.Center);
+            SetStretch(hud.type1BadgeText.gameObject);
+
+            var t2Bg = new GameObject("Type2Badge", typeof(RectTransform)); t2Bg.transform.SetParent(go.transform, false);
+            SetRect(t2Bg, new Vector2(0, 0), new Vector2(0, 0), new Vector2(0, 0), new Vector2(70, 20), new Vector2(45, 18));
+            hud.type2BadgeImage = t2Bg.AddComponent<Image>();
+            hud.type2BadgeText = CreateText(t2Bg.transform, "Text", "FLYING", 10, TextAlignmentOptions.Center);
+            SetStretch(hud.type2BadgeText.gameObject);
+
+            // Gender Badge
+            var gBg = new GameObject("GenderBadge", typeof(RectTransform)); gBg.transform.SetParent(go.transform, false);
+            SetRect(gBg, new Vector2(1, 1), new Vector2(1, 1), new Vector2(1, 1), new Vector2(-10, -10), new Vector2(25, 25));
+            hud.genderImage = gBg.AddComponent<Image>();
+            hud.genderText = CreateText(gBg.transform, "GenderText", "♂", 16, TextAlignmentOptions.Center);
+            SetStretch(hud.genderText.gameObject);
+
+            // Status Badge
+            var sBg = new GameObject("StatusBadge", typeof(RectTransform)); sBg.transform.SetParent(go.transform, false);
+            SetRect(sBg, new Vector2(1, 0), new Vector2(1, 0), new Vector2(1, 0), new Vector2(-150, 10), new Vector2(40, 20));
+            hud.statusBadgeImage = sBg.AddComponent<Image>();
+            hud.statusBadgeText = CreateText(sBg.transform, "Text", "BRN", 12, TextAlignmentOptions.Center);
+            SetStretch(hud.statusBadgeText.gameObject);
             
             return hud;
         }
 
         static BattleSkillPanel BuildSkillPanel(Transform parent) {
             GameObject go = new GameObject("SkillPanel", typeof(RectTransform));
-            go.transform.SetParent(parent, false); SetRect(go, new Vector2(0.5f, 0), new Vector2(0.5f, 0), new Vector2(0.5f, 0), new Vector2(0, 150), new Vector2(800, 250));
-            go.AddComponent<Image>().color = new Color(0, 0, 0, 0.8f);
+            go.transform.SetParent(parent, false); 
+            // Bottom-Right Anchor
+            SetRect(go, new Vector2(1, 0), new Vector2(1, 0), new Vector2(1, 0), new Vector2(-28, 28), new Vector2(940, 220));
+            go.AddComponent<Image>().color = new Color(0.05f, 0.05f, 0.1f, 0.95f);
             var panel = go.AddComponent<BattleSkillPanel>();
             panel.PanelType = BattlePanelType.Skill;
             panel.skillButtons = new Button[4];
-            GameObject grid = new GameObject("Grid", typeof(RectTransform)); grid.transform.SetParent(go.transform, false); SetStretch(grid);
-            var glg = grid.AddComponent<GridLayoutGroup>(); glg.cellSize = new Vector2(190, 80); glg.spacing = new Vector2(10, 10);
+            
+            GameObject grid = new GameObject("Grid", typeof(RectTransform)); grid.transform.SetParent(go.transform, false); 
+            SetStretch(grid); 
+            var glg = grid.AddComponent<GridLayoutGroup>(); 
+            glg.cellSize = new Vector2(440, 80); glg.spacing = new Vector2(12, 12);
+            glg.padding = new RectOffset(20, 20, 20, 20);
             for(int i=0; i<4; i++) panel.skillButtons[i] = CreateButton(grid.transform, $"Skill_{i}", "MOVE");
             return panel;
         }
 
         static BattleCommandPanel BuildCommandPanel(Transform parent) {
             GameObject go = new GameObject("CommandPanel", typeof(RectTransform));
-            go.transform.SetParent(parent, false); SetRect(go, new Vector2(0.5f, 0), new Vector2(0.5f, 0), new Vector2(0.5f, 0), new Vector2(0, 150), new Vector2(800, 250));
-            go.AddComponent<Image>().color = new Color(0.1f, 0.1f, 0.2f, 0.9f);
+            go.transform.SetParent(parent, false);
+            // Bottom-Right Anchor
+            SetRect(go, new Vector2(1, 0), new Vector2(1, 0), new Vector2(1, 0), new Vector2(-60, 90), new Vector2(200, 380));
+
             var panel = go.AddComponent<BattleCommandPanel>();
             panel.PanelType = BattlePanelType.Command;
-            panel.fightButton = CreateButton(go.transform, "FightBtn", "FIGHT");
-            panel.pokemonButton = CreateButton(go.transform, "PkmnBtn", "PKMN");
-            panel.infoButton = CreateButton(go.transform, "InfoBtn", "INFO");
-            SetRect(panel.fightButton.gameObject, new Vector2(0, 1), new Vector2(0.5f, 1), new Vector2(0.25f, 0.5f), new Vector2(0, -50), new Vector2(-10, 80));
-            SetRect(panel.pokemonButton.gameObject, new Vector2(0.5f, 1), new Vector2(1, 1), new Vector2(0.75f, 0.5f), new Vector2(0, -50), new Vector2(-10, 80));
+            panel.fightButton   = CreateButton(go.transform, "FightBtn",   "FIGHT");
+            panel.pokemonButton = CreateButton(go.transform, "PkmnBtn",    "PKMN");
+            panel.infoButton    = CreateButton(go.transform, "InfoBtn",    "INFO");
+            panel.forfeitButton = CreateButton(go.transform, "ForfeitBtn", "FORFEIT");
+
+            // Tô màu đỏ để phân biệt nút đầu hàng
+            panel.forfeitButton.GetComponent<Image>().color = new Color(0.6f, 0.1f, 0.1f, 0.85f);
+
+            // Layout theo chiều dọc ở bên phải
+            SetRect(panel.fightButton.gameObject,   new Vector2(1, 1), new Vector2(1, 1), new Vector2(1, 1), new Vector2(0,  -20), new Vector2(140, 60));
+            SetRect(panel.pokemonButton.gameObject,  new Vector2(1, 1), new Vector2(1, 1), new Vector2(1, 1), new Vector2(0, -100), new Vector2(140, 60));
+            SetRect(panel.infoButton.gameObject,     new Vector2(1, 1), new Vector2(1, 1), new Vector2(1, 1), new Vector2(0, -180), new Vector2(140, 60));
+            SetRect(panel.forfeitButton.gameObject,  new Vector2(1, 1), new Vector2(1, 1), new Vector2(1, 1), new Vector2(0, -260), new Vector2(140, 60));
             return panel;
         }
 
         static BattleDialogPanel BuildDialogPanel(Transform parent) {
             GameObject go = new GameObject("DialogPanel", typeof(RectTransform));
-            go.transform.SetParent(parent, false); SetRect(go, new Vector2(0, 0), new Vector2(1, 0), new Vector2(0.5f, 0), new Vector2(0, 100), new Vector2(0, 150));
-            go.AddComponent<Image>().color = Color.black;
+            go.transform.SetParent(parent, false); 
+            // Bottom-Left Anchor
+            SetRect(go, new Vector2(0, 0), new Vector2(0, 0), new Vector2(0, 0), new Vector2(28, 28), new Vector2(1200, 160));
+            go.AddComponent<Image>().color = new Color(0.05f, 0.05f, 0.1f, 0.95f);
             var panel = go.AddComponent<BattleDialogPanel>();
             panel.PanelType = BattlePanelType.Dialog;
-            panel.dialogText = CreateText(go.transform, "Text", "Hello World", 24, TextAlignmentOptions.Left);
-            SetRect(panel.dialogText.gameObject, new Vector2(0, 0), new Vector2(1, 1), new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(-100, -40));
+            panel.dialogText = CreateText(go.transform, "Text", "Waiting for server...", 24, TextAlignmentOptions.TopLeft);
+            SetRect(panel.dialogText.gameObject, new Vector2(0, 0), new Vector2(1, 1), new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(-60, -40));
             return panel;
         }
 

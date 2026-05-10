@@ -143,6 +143,22 @@ public class BattleHub : Hub
         }
     }
 
+    public async Task Surrender(string battleId)
+    {
+        var playerId = await ResolvePlayerId();
+        if (playerId == null) { await Error("Not authenticated."); return; }
+
+        try
+        {
+            var (session, result) = _battleService.Surrender(battleId, playerId);
+            await Clients.Group(battleId).SendAsync("TurnResolved", result);
+        }
+        catch (Exception ex)
+        {
+            await Error($"Surrender failed: {ex.Message}");
+        }
+    }
+
     /// <summary>
     /// Submit an action for one active slot.
     /// sourceSlot: 0 = Slot A, 1 = Slot B.
@@ -162,31 +178,36 @@ public class BattleHub : Hub
         var playerId = await ResolvePlayerId();
         if (playerId == null) { await Error("Not authenticated."); return; }
 
+        var action = new BattleAction
+        {
+            PlayerId    = playerId,
+            Type        = actionType.Equals("Switch", StringComparison.OrdinalIgnoreCase)
+                          ? BattleActionType.Switch
+                          : BattleActionType.Move,
+            SourceIndex = sourceSlot,
+            TargetSlot  = targetSlot,
+            MoveSlot    = moveSlot,
+            SwitchIndex = switchIndex,
+            UseTera     = useTera,
+        };
+
         try
         {
-            var action = new BattleAction
-            {
-                PlayerId    = playerId,
-                Type        = actionType.Equals("Switch", StringComparison.OrdinalIgnoreCase)
-                              ? BattleActionType.Switch
-                              : BattleActionType.Move,
-                SourceIndex = sourceSlot,
-                TargetSlot  = targetSlot,
-                MoveSlot    = moveSlot,
-                SwitchIndex = switchIndex,
-                UseTera     = useTera,
-            };
-
             var (session, result) = await _battleService.SubmitBattleAction(battleId, playerId, action);
-
-            await Clients.Caller.SendAsync("ActionAccepted", new { BattleId = battleId, Slot = sourceSlot });
-
             if (result != null)
-                await BroadcastTurnResult(session, result);
+            {
+                // Broadcast TurnResolved to both
+                await Clients.Group(battleId).SendAsync("TurnResolved", result);
+            }
+            else
+            {
+                await Clients.Caller.SendAsync("ActionAccepted", new { BattleId = battleId, Slot = sourceSlot });
+            }
         }
         catch (Exception ex)
         {
-            await Error(ex.Message);
+            Console.WriteLine($"[BattleHub] SubmitBattleAction Error: {ex}");
+            await Clients.Caller.SendAsync("Error", $"Battle Logic Error: {ex.Message}");
         }
     }
 
@@ -423,7 +444,7 @@ public class BattleHub : Hub
         };
     }
 
-    private static FieldPokemonDto ToFieldPokemon(BattlePokemonSnapshot p, bool showMoves)
+    private FieldPokemonDto ToFieldPokemon(BattlePokemonSnapshot p, bool showMoves)
         => new()
         {
             SpeciesId       = p.SpeciesId,
@@ -442,14 +463,20 @@ public class BattleHub : Hub
             StatStages      = p.StatStages,
             IsFainted       = p.IsFainted,
             Moves           = showMoves
-                ? p.Moves.Select(m => new MoveSummaryDto
-                  {
-                      MoveId    = m.MoveId,
-                      Name      = m.MoveName,
-                      Type      = m.MoveType,
-                      Category  = m.Category,
-                      CurrentPp = m.CurrentPp,
-                      MaxPp     = m.MaxPp,
+                ? p.Moves.Select(m => {
+                    var moveData = _battleService.GetMoveData(m.MoveId);
+                    return new MoveSummaryDto
+                    {
+                        MoveId    = m.MoveId,
+                        Name      = m.MoveName,
+                        Type      = m.MoveType,
+                        Category  = m.Category,
+                        CurrentPp = m.CurrentPp,
+                        MaxPp     = m.MaxPp,
+                        TargetType= moveData != null ? (int)moveData.TargetType : 0,
+                        Effect    = moveData?.Effect,
+                        StatChanges = moveData?.StatChanges?.Select(sc => new MoveStatChangeDto { Stat = sc.Stat, Stages = sc.Stages }).ToList() ?? new List<MoveStatChangeDto>()
+                    };
                   }).ToList()
                 : [],
         };

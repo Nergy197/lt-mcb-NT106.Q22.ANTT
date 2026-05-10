@@ -55,6 +55,8 @@ namespace Game.Battle.Logic
             BattleEvents.OnTargetSelected += OnTargetSelected;
             BattleEvents.OnPartySlotChosen += OnPartySlotChosen;
             BattleEvents.OnVoluntarySwitchRequested += OnVoluntarySwitchRequested;
+            BattleEvents.OnPartyPanelCancelled += OnPartyBackClicked;
+            BattleEvents.OnPlayerSurrender += OnPlayerSurrender;
 
             if (playerHUD1 == null) {
                 foreach (var h in FindObjectsOfType<EntityHUD>()) {
@@ -73,6 +75,25 @@ namespace Game.Battle.Logic
             BattleEvents.OnTargetSelected -= OnTargetSelected;
             BattleEvents.OnPartySlotChosen -= OnPartySlotChosen;
             BattleEvents.OnVoluntarySwitchRequested -= OnVoluntarySwitchRequested;
+            BattleEvents.OnPartyPanelCancelled -= OnPartyBackClicked;
+            BattleEvents.OnPlayerSurrender -= OnPlayerSurrender;
+        }
+
+        private async void OnPlayerSurrender()
+        {
+            try {
+                var hub = SignalRClient.Instance.Battle;
+                if (hub != null && hub.State == HubConnectionState.Connected) {
+                    await hub.InvokeAsync("Surrender", _battleId);
+                }
+            } catch (Exception ex) {
+                Debug.LogError("[Battle] Surrender error: " + ex.Message);
+            }
+        }
+
+        private void OnPartyBackClicked()
+        {
+            uiManager?.SwitchPanel(BattlePanelType.Command);
         }
 
         private void Start()
@@ -181,10 +202,11 @@ namespace Game.Battle.Logic
         private IEnumerator HandleBattleCrash(string message)
         {
             Debug.LogError("[Battle] CRASH HANDLER: " + message);
+            uiManager?.SwitchPanel(BattlePanelType.Dialog); // Hiện hộp thoại để xem lỗi
             if (dialogPanel != null)
             {
                 dialogPanel.EnqueueMessage(message, false);
-                yield return new WaitForSeconds(3f);
+                yield return new WaitForSeconds(5f);
             }
             ReturnToMenu();
         }
@@ -215,7 +237,7 @@ namespace Game.Battle.Logic
             hub.Remove("Error");
 
             hub.On<object>("TeamPreviewReady", raw => Enqueue(() => {
-                Debug.Log("[Battle] Event: TeamPreviewReady");
+                Debug.Log($"[Battle] Event: TeamPreviewReady. Current State: {uiManager?.gameObject.name}");
                 var dto = J<TeamPreviewDto>(raw);
                 _myFullTeam = dto.YourTeam;
                 _myTeamCurrentHp = dto.YourTeam.Select(p => p.MaxHp).ToList(); // Start with full HP
@@ -253,7 +275,7 @@ namespace Game.Battle.Logic
                 } else {
                     // Da gui du hanh dong, doi server xu ly
                     uiManager?.SwitchPanel(BattlePanelType.None);
-                    BattleEvents.OnPrintDialog?.Invoke("Dang cho doi thu...", true);
+                    BattleEvents.OnPrintDialog?.Invoke("Waiting for opponent...", true);
                 }
             }));
 
@@ -362,16 +384,26 @@ namespace Game.Battle.Logic
 
         private void UpdateHUDs()
         {
-            SetupHUD(playerHUD1, _field.YourA);
-            SetupHUD(playerHUD2, _field.YourB);
-            SetupHUD(enemyHUD1,  _field.OppA);
-            SetupHUD(enemyHUD2,  _field.OppB);
+            SetupHUD(playerHUD1, _field.YourA, false);
+            SetupHUD(playerHUD2, _field.YourB, false);
+            SetupHUD(enemyHUD1,  _field.OppA,  true);
+            SetupHUD(enemyHUD2,  _field.OppB,  true);
         }
 
-        private void SetupHUD(EntityHUD hud, PokemonSlot slot)
+        private void SetupHUD(EntityHUD hud, PokemonSlot slot, bool isOpponent)
         {
-            if (hud == null || slot == null) return;
-            hud.SetupEntity(hud.entityId, slot.SpeciesName, slot.CurrentHp, slot.MaxHp);
+            if (hud == null) return;
+            
+            // Hide HUD if pokemon is missing or fainted
+            if (slot == null || slot.IsFainted)
+            {
+                hud.gameObject.SetActive(false);
+                return;
+            }
+
+            hud.gameObject.SetActive(true);
+            string displayName = slot.SpeciesName;
+            hud.SetupEntity(hud.entityId, displayName, slot.CurrentHp, slot.MaxHp);
             hud.SetLevel(slot.Level);
             hud.SetTypes(slot.Type1, slot.Type2);
             hud.SetStatus(slot.Status);
@@ -382,10 +414,18 @@ namespace Game.Battle.Logic
         {
             var loader = FindObjectOfType<BattleSpriteLoader>();
             if (loader == null) return;
-            if (_field.YourA != null) loader.LoadSpriteForSlot("Player_Lead_Slot", "Player1_HUD", _field.YourA.SpeciesName.ToLower(), true);
-            if (_field.YourB != null) loader.LoadSpriteForSlot("Player_Sub2_Slot", "Player2_HUD", _field.YourB.SpeciesName.ToLower(), true);
-            if (_field.OppA  != null) loader.LoadSpriteForSlot("Enemy_Lead_Slot",  "Enemy1_HUD",  _field.OppA.SpeciesName.ToLower(), false);
-            if (_field.OppB  != null) loader.LoadSpriteForSlot("Enemy_Sub2_Slot",  "Enemy2_HUD",  _field.OppB.SpeciesName.ToLower(), false);
+
+            if (_field.YourA != null && !_field.YourA.IsFainted) loader.LoadSpriteForSlot("Player_Lead_Slot", "Player1_HUD", _field.YourA.SpeciesName, true);
+            else loader.ClearBattleSprite("Player_Lead_Slot");
+
+            if (_field.YourB != null && !_field.YourB.IsFainted) loader.LoadSpriteForSlot("Player_Sub2_Slot", "Player2_HUD", _field.YourB.SpeciesName, true);
+            else loader.ClearBattleSprite("Player_Sub2_Slot");
+
+            if (_field.OppA != null && !_field.OppA.IsFainted) loader.LoadSpriteForSlot("Enemy_Sub2_Slot", "Enemy1_HUD", _field.OppA.SpeciesName, false);
+            else loader.ClearBattleSprite("Enemy_Sub2_Slot");
+
+            if (_field.OppB != null && !_field.OppB.IsFainted) loader.LoadSpriteForSlot("Enemy_Lead_Slot", "Enemy2_HUD", _field.OppB.SpeciesName, false);
+            else loader.ClearBattleSprite("Enemy_Lead_Slot");
         }
 
         // ═══════════════════════════════════════════════════════════════════════
@@ -404,9 +444,9 @@ namespace Game.Battle.Logic
             {
                 if (i < pkmn.Moves.Count) {
                     var m = pkmn.Moves[i];
-                    skillPanel.SetMove(i, m.Name ?? "???", m.Type ?? "normal", m.Category ?? "Physical", m.CurrentPp, m.MaxPp);
+                    skillPanel.SetMove(i, m);
                 } else {
-                    skillPanel.SetMove(i, "---", "normal", "Physical", 0, 0);
+                    skillPanel.SetMove(i, null);
                 }
             }
         }
@@ -415,29 +455,50 @@ namespace Game.Battle.Logic
         private void OnMoveSelected(int moveIndex)
         {
             _pendingMoveSlot = moveIndex;
-            Debug.Log($"[Battle] Move {moveIndex} selected, showing targets");
+            Debug.Log($"[Battle] Move {moveIndex} selected");
 
-            // Hien target selection: dung lai SkillPanel voi ten muc tieu
-            if (skillPanel == null) return;
+            var pkmn = (_currentSrcSlot == 0) ? _field.YourA : _field.YourB;
+            if (pkmn == null || pkmn.Moves == null || moveIndex >= pkmn.Moves.Count) return;
 
-            string oppA = (_field.OppA != null && !_field.OppA.IsFainted) ? _field.OppA.SpeciesName : "---";
-            string oppB = (_field.OppB != null && !_field.OppB.IsFainted) ? _field.OppB.SpeciesName : "---";
-            string myA  = (_field.YourA != null && !_field.YourA.IsFainted) ? _field.YourA.SpeciesName : "---";
-            string myB  = (_field.YourB != null && !_field.YourB.IsFainted) ? _field.YourB.SpeciesName : "---";
+            var move = pkmn.Moves[moveIndex];
+            bool needsTarget = move.TargetType == 0 || move.TargetType == 2; // SingleOpponent or SingleAlly
 
-            skillPanel.SetTargetLabels(oppA, oppB, myA, myB);
-            uiManager?.SwitchPanel(BattlePanelType.Skill);
+            if (needsTarget && skillPanel != null)
+            {
+                Debug.Log($"[Battle] Showing targets for move {move.Name}");
+                string oppA = (_field.OppA != null && !_field.OppA.IsFainted) ? _field.OppA.SpeciesName : "---";
+                string oppB = (_field.OppB != null && !_field.OppB.IsFainted) ? _field.OppB.SpeciesName : "---";
+                string myA  = (_field.YourA != null && !_field.YourA.IsFainted) ? _field.YourA.SpeciesName : "---";
+                string myB  = (_field.YourB != null && !_field.YourB.IsFainted) ? _field.YourB.SpeciesName : "---";
+
+                // Swap labels to match visual layout: Button 0 (Right), Button 1 (Left)
+                skillPanel.SetTargetLabels(oppB, oppA, myA, myB);
+                uiManager?.SwitchPanel(BattlePanelType.Skill);
+            }
+            else
+            {
+                // Auto submit with default target 0 for spread/self/all
+                OnTargetSelected(0);
+            }
         }
 
         // Player chon muc tieu -> gui len server
         private void OnTargetSelected(int targetSlot)
         {
             if (_pendingMoveSlot < 0) return;
-            Debug.Log($"[Battle] Target {targetSlot} selected for move {_pendingMoveSlot}");
+
+            // Swap back indices to match server slots: 0 (Left/OppA), 1 (Right/OppB)
+            int finalTarget = targetSlot;
+            if (targetSlot == 0) finalTarget = 1;      // Click Right Button -> Target OppB (1)
+            else if (targetSlot == 1) finalTarget = 0; // Click Left Button -> Target OppA (0)
+
+            Debug.Log($"[Battle] Target {finalTarget} selected (via btn {targetSlot}) for move {_pendingMoveSlot}");
 
             bool useTera = (skillPanel != null && skillPanel.IsTeraActive);
-            SubmitAction("Move", _pendingMoveSlot, null, targetSlot, useTera);
+            SubmitAction("Move", _pendingMoveSlot, null, finalTarget, useTera);
+            
             _pendingMoveSlot = -1;
+            uiManager?.SwitchPanel(BattlePanelType.None);
             if (skillPanel != null) skillPanel.ResetTeraToggle();
         }
 
@@ -511,6 +572,7 @@ namespace Game.Battle.Logic
             _currentSrcSlot = slot;
             if (commandPanel != null) commandPanel.CurrentSrcSlot = slot;
             PopulateMoves(slot);
+            BattleEvents.OnPrintDialog?.Invoke($"What will {p.SpeciesName} do?", false);
             uiManager?.SwitchPanel(BattlePanelType.Command);
         }
 
@@ -538,14 +600,62 @@ namespace Game.Battle.Logic
                     // Trigger Visual Effects
                     ProcessEventVisuals(ev);
 
-                    BattleEvents.OnPrintDialog?.Invoke(ev.Message ?? "...", false);
+                    string msg = ev.Message ?? "...";
+                    string owner = ev.PlayerId;
+                    string myId = SignalRClient.Instance.PlayerId;
+
+                    // If owner is missing, try to guess from PokemonName
+                    if (string.IsNullOrEmpty(owner) && !string.IsNullOrEmpty(ev.PokemonName))
+                    {
+                        string pName = ev.PokemonName.ToLower();
+                        if (_field != null) {
+                            bool isOppA = _field.OppA != null && _field.OppA.SpeciesName.ToLower() == pName;
+                            bool isOppB = _field.OppB != null && _field.OppB.SpeciesName.ToLower() == pName;
+                            if (isOppA || isOppB) owner = "OPPONENT_GUESSED";
+                            else owner = myId;
+                        }
+                    }
+
+                    Debug.Log($"<color=magenta>[Battle] Processing Msg: {msg} | Owner: {owner} | MyID: {myId}</color>");
+
+                    bool isMe = !string.IsNullOrEmpty(owner) && owner.Equals(myId, System.StringComparison.OrdinalIgnoreCase);
+                    bool isOpp = !string.IsNullOrEmpty(owner) && !isMe;
+
+                    // 1. Replace [TRAINER] placeholder or raw IDs
+                    string trainerName = isMe ? "You" : "Opponent";
+                    msg = msg.Replace("[TRAINER]", trainerName);
+                    
+                    if (!string.IsNullOrEmpty(owner) && owner.Length > 10) // Only replace if it looks like a UUID
+                        msg = System.Text.RegularExpressions.Regex.Replace(msg, System.Text.RegularExpressions.Regex.Escape(owner), trainerName, System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+
+                    // 2. Prefix Pokemon names to distinguish ownership
+                    string pfx = isOpp ? "Opponent " : "Your ";
+                    
+                    if (!string.IsNullOrEmpty(ev.PokemonName)) 
+                        msg = System.Text.RegularExpressions.Regex.Replace(msg, @"\b" + System.Text.RegularExpressions.Regex.Escape(ev.PokemonName) + @"\b", pfx + ev.PokemonName, System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+                    
+                    if (!string.IsNullOrEmpty(ev.WithdrawnName)) 
+                        msg = System.Text.RegularExpressions.Regex.Replace(msg, @"\b" + System.Text.RegularExpressions.Regex.Escape(ev.WithdrawnName) + @"\b", pfx + ev.WithdrawnName, System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+                        
+                    if (!string.IsNullOrEmpty(ev.SentOutName)) 
+                        msg = System.Text.RegularExpressions.Regex.Replace(msg, @"\b" + System.Text.RegularExpressions.Regex.Escape(ev.SentOutName) + @"\b", pfx + ev.SentOutName, System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+
+                    if (!string.IsNullOrEmpty(ev.TargetName))
+                    {
+                        string targetPfx = isOpp ? "Your " : "Opponent ";
+                        msg = System.Text.RegularExpressions.Regex.Replace(msg, @"\b" + System.Text.RegularExpressions.Regex.Escape(ev.TargetName) + @"\b", targetPfx + ev.TargetName, System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+                    }
+
+                    Debug.Log($"<color=cyan>[Battle] Final Msg: {msg}</color>");
+
+                    BattleEvents.OnPrintDialog?.Invoke(msg, false);
                     yield return new WaitForSeconds(1.2f);
                 }
             }
             if (r.State == "Ended") {
                 bool won = false; // TODO: check WinnerPlayerId
                 BattleEvents.OnBattleResult?.Invoke(won, r.WinnerPlayerId ?? "");
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(5f); // Chờ 5 giây để xem kết quả
                 ReturnToMenu();
             } else {
                 // Yeu cau server gui lai trang thai moi nhat
@@ -610,6 +720,20 @@ namespace Game.Battle.Logic
                     Color statColor = ev.Stages > 0 ? Color.green : Color.blue;
                     eff.PlayStatusFlash(targetSlot, statColor);
                 }
+            }
+
+            // 5. Fainting
+            if (ev.EventType == "PokemonFaintEvent")
+            {
+                // Sync internal state immediately for UI update
+                string slotName = GetSlotNameByPokemonName(ev.PokemonName);
+                if (slotName == "Player1_HUD" && _field.YourA != null) _field.YourA.IsFainted = true;
+                else if (slotName == "Player2_HUD" && _field.YourB != null) _field.YourB.IsFainted = true;
+                else if (slotName == "Enemy1_HUD" && _field.OppA != null) _field.OppA.IsFainted = true;
+                else if (slotName == "Enemy2_HUD" && _field.OppB != null) _field.OppB.IsFainted = true;
+
+                UpdateHUDs();
+                UpdateSprites();
             }
         }
 

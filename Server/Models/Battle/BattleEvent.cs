@@ -8,6 +8,7 @@ public abstract class BattleEvent
 {
     public string EventType => GetType().Name;
     public string Message { get; set; } = "";
+    public string PlayerId { get; set; } = ""; // Standardize ownership
 }
 
 // ─── Battle lifecycle ────────────────────────────────────────────────────────
@@ -24,7 +25,6 @@ public class BattleEndEvent : BattleEvent
 
 public class MoveUsedEvent : BattleEvent
 {
-    public string UserId { get; init; } = "";
     public string PokemonName { get; init; } = "";
     public string MoveName { get; init; } = "";
     public string MoveId { get; init; } = "";
@@ -32,7 +32,6 @@ public class MoveUsedEvent : BattleEvent
 
 public class MoveMissedEvent : BattleEvent
 {
-    public string UserId { get; init; } = "";
     public string PokemonName { get; init; } = "";
     public string MoveName { get; init; } = "";
 }
@@ -140,7 +139,6 @@ public class StatChangeBlockedEvent : BattleEvent
 /// <summary>Mirrors pbs-unity TrainerWithdraw + TrainerSendOut events.</summary>
 public class SwitchEvent : BattleEvent
 {
-    public string PlayerId { get; init; } = "";
     public string WithdrawnPokemonName { get; init; } = "";
     public string SentOutPokemonName { get; init; } = "";
     public int NewActiveIndex { get; init; }

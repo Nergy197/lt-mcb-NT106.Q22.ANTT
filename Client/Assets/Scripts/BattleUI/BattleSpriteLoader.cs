@@ -53,6 +53,7 @@ namespace Game.Battle.Logic
 
         private IEnumerator DownloadSpriteCoroutine(string slotName, string hudName, string pokemonName, bool isBackSprite)
         {
+            if (string.IsNullOrEmpty(pokemonName)) yield break;
             string species = pokemonName.ToLower().Replace(" ", "-");
 
             // 1. TAI ANH CHIEN DAU
@@ -64,7 +65,7 @@ namespace Game.Battle.Logic
 
                 if (_spriteCache.TryGetValue(cacheKey, out var cached))
                 {
-                    ApplyBattleSprite(slotName, cached);
+                    ApplyBattleSprite(slotName, cached, isBackSprite);
                 }
                 else
                 {
@@ -77,7 +78,7 @@ namespace Game.Battle.Logic
                             if (sp != null)
                             {
                                 _spriteCache[cacheKey] = sp;
-                                ApplyBattleSprite(slotName, sp);
+                                ApplyBattleSprite(slotName, sp, isBackSprite);
                             }
                         }
                         else if (isBackSprite)
@@ -94,7 +95,7 @@ namespace Game.Battle.Logic
                                     if (sp2 != null)
                                     {
                                         _spriteCache[fallbackKey] = sp2;
-                                        ApplyBattleSprite(slotName, sp2);
+                                        ApplyBattleSprite(slotName, sp2, isBackSprite);
                                     }
                                 }
                                 else
@@ -213,13 +214,16 @@ namespace Game.Battle.Logic
             return Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), pivot, 100f);
         }
 
-        private void ApplyBattleSprite(string slotName, Sprite sprite)
+        private void ApplyBattleSprite(string slotName, Sprite sprite, bool isBackSprite)
         {
             GameObject slot = GameObject.Find(slotName);
             if (slot != null && slot.TryGetComponent<SpriteRenderer>(out var sr))
             {
                 sr.sprite = sprite;
                 sr.color = Color.white;
+                // Mac dinh sprite front quay sang trai, sprite back quay sang phai.
+                // Khong can flip neu muon 2 ben nhin nhau.
+                sr.flipX = false; 
                 var txtObj = slot.transform.Find("Label_Slot");
                 if (txtObj) txtObj.gameObject.SetActive(false);
             }

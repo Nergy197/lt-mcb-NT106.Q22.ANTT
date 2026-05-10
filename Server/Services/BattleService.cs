@@ -107,6 +107,9 @@ public class BattleService
     public BattleSession? GetSession(string battleId)
         => _sessions.TryGetValue(battleId, out var s) ? s : null;
 
+    public MoveEntry? GetMoveData(int moveId)
+        => _moveCache.TryGetValue(moveId, out var m) ? m : null;
+
     /// <summary>Returns sessions in Running state where the turn deadline has expired.</summary>
     public IEnumerable<BattleSession> GetExpiredSessions()
         => _sessions.Values.Where(s =>
@@ -238,47 +241,41 @@ public class BattleService
         foreach (var speciesId in BotSpeciesIds)
         {
             var dex = await _db.Pokedex.Find(d => d.Id == speciesId).FirstOrDefaultAsync();
-            if (dex == null) continue;
-
-            int baseHp  = dex.BaseStats.GetValueOrDefault("hp", 80);
-            int baseAtk = dex.BaseStats.GetValueOrDefault("attack", 80);
-            int baseDef = dex.BaseStats.GetValueOrDefault("defense", 80);
-            int baseSpa = dex.BaseStats.GetValueOrDefault("special-attack", 80);
-            int baseSpd = dex.BaseStats.GetValueOrDefault("special-defense", 80);
-            int baseSpe = dex.BaseStats.GetValueOrDefault("speed", 80);
+            
+            // FALLBACK: If DB is empty, create a dummy pokemon so the battle doesn't crash
+            string botName = dex?.Name ?? $"BotPkm#{speciesId}";
+            string t1 = (dex?.Types != null && dex.Types.Count > 0) ? dex.Types[0] : "normal";
+            string? t2 = (dex?.Types != null && dex.Types.Count > 1) ? dex.Types[1] : null;
+            int baseHp = dex?.BaseStats.GetValueOrDefault("hp", 80) ?? 80;
 
             int hp = ComputeHp(baseHp, 31, 0);
-
-            // Lấy 4 moves từ DefaultMoves hoặc 4 moves đầu trong DB
-            var moveset = dex.DefaultMoves?.Take(4).ToList() ?? new List<int>();
-            if (moveset.Count < 4)
-            {
-                var dbMoves = await _db.Moves.Find(_ => true).Limit(4).ToListAsync();
-                moveset = dbMoves.Select(m => m.Id).ToList();
-            }
+            var moveset = dex?.DefaultMoves?.Take(4).ToList() ?? new List<int>();
+            if (moveset.Count == 0) moveset.Add(1); // Force 'Tackle' (ID 1) if empty
             allMoveIds.AddRange(moveset);
-
-            string t1 = dex.Types.Count > 0 ? dex.Types[0] : "normal";
-            string? t2 = dex.Types.Count > 1 ? dex.Types[1] : null;
-            string botName = !string.IsNullOrEmpty(dex.Name) ? dex.Name : $"Pokemon#{speciesId}";
 
             snapshots.Add(new BattlePokemonSnapshot
             {
-                InstanceId  = $"bot_{speciesId}",
+                InstanceId  = $"bot_{speciesId}_{Guid.NewGuid().ToString()[..4]}",
                 SpeciesId   = speciesId,
                 SpeciesName = botName,
                 Nickname    = botName,
                 Level       = BattleLevel,
                 MaxHp       = hp, CurrentHp = hp,
+                IsFainted   = false,
                 Type1 = t1, Type2 = t2, OrigType1 = t1, OrigType2 = t2,
                 TerType = t1,
-                Atk   = ComputeStat(baseAtk, 31, 0, 1.0),
-                Def   = ComputeStat(baseDef, 31, 0, 1.0),
-                SpAtk = ComputeStat(baseSpa, 31, 0, 1.0),
-                SpDef = ComputeStat(baseSpd, 31, 0, 1.0),
-                Spd   = ComputeStat(baseSpe, 31, 0, 1.0),
+                Atk   = ComputeStat(dex?.BaseStats.GetValueOrDefault("attack", 80) ?? 80, 31, 0, 1.0),
+                Def   = ComputeStat(dex?.BaseStats.GetValueOrDefault("defense", 80) ?? 80, 31, 0, 1.0),
+                SpAtk = ComputeStat(dex?.BaseStats.GetValueOrDefault("special-attack", 80) ?? 80, 31, 0, 1.0),
+                SpDef = ComputeStat(dex?.BaseStats.GetValueOrDefault("special-defense", 80) ?? 80, 31, 0, 1.0),
+                Spd   = ComputeStat(dex?.BaseStats.GetValueOrDefault("speed", 80) ?? 80, 31, 0, 1.0),
                 Moves = moveset.Select(id => new PokemonMove { MoveId = id, CurrentPp = 15, MaxPp = 15 }).ToList(),
             });
+        }
+
+        if (snapshots.Count == 0) {
+            // Ultimate fallback if even loop fails
+            snapshots.Add(new BattlePokemonSnapshot { SpeciesName = "MissingNo", MaxHp = 100, CurrentHp = 100, Level = 50, Type1 = "normal" });
         }
 
         // Preload moves for bot team
@@ -669,7 +666,7 @@ public class BattleService
         {
             outgoing.IsConfused = false;
             outgoing.ConfusionTurnsLeft = 0;
-            Array.Clear(outgoing.StatStages);
+            Array.Clear(outgoing.StatStages, 0, outgoing.StatStages.Length);
         }
 
         SetActiveIndex(session, action.PlayerId, action.SourceIndex, newIdx);
@@ -681,7 +678,7 @@ public class BattleService
             SentOutPokemonName   = incoming.SpeciesName,
             NewActiveIndex       = newIdx,
             IsAutoSwitch         = false,
-            Message              = $"{action.PlayerId} withdrew {outgoing?.SpeciesName ?? "Pokemon"} and sent out {incoming.SpeciesName}!"
+            Message              = $"[TRAINER] withdrew {outgoing?.SpeciesName ?? "Pokemon"} and sent out {incoming.SpeciesName}!"
         });
     }
 
@@ -747,7 +744,7 @@ public class BattleService
 
         events.Add(new MoveUsedEvent
         {
-            UserId      = action.PlayerId,
+            PlayerId    = action.PlayerId,
             PokemonName = attacker.SpeciesName,
             MoveName    = move.Name,
             MoveId      = pokemonMove.MoveId.ToString(),
@@ -778,7 +775,7 @@ public class BattleService
             if (targets.Count == 0) return;
         }
 
-        bool isSpread = targets.Count > 1 && move.TargetType == MoveTargetType.SpreadOpponents;
+        bool isSpread = targets.Count > 1 && (move.TargetType == MoveTargetType.SpreadOpponents || move.TargetType == MoveTargetType.AllExceptUser);
 
         if (moveCategory.Equals("Status", StringComparison.OrdinalIgnoreCase))
         {
@@ -1092,9 +1089,43 @@ public class BattleService
         BattlePokemonSnapshot attacker, List<TargetRef> targets,
         MoveEntry move, List<BattleEvent> events)
     {
-        if (string.IsNullOrEmpty(move.Effect)) return;
+        bool hasEffectStr = !string.IsNullOrEmpty(move.Effect);
+        string effect = hasEffectStr ? move.Effect!.ToLowerInvariant() : "";
 
-        string effect = move.Effect.ToLowerInvariant();
+        // 1. Process structured StatChanges
+        if (move.StatChanges != null && move.StatChanges.Count > 0)
+        {
+            var statTargets = effect.StartsWith("self")
+                ? new List<TargetRef> { new(actingPlayerId, sourceSlot) }
+                : targets;
+
+            foreach (var sc in move.StatChanges)
+            {
+                var statIdx = sc.Stat.ToLower() switch
+                {
+                    "atk" => StatIndex.ATK,
+                    "def" => StatIndex.DEF,
+                    "spa" => StatIndex.SPA,
+                    "spd" => StatIndex.SPD,
+                    "spe" => StatIndex.SPE,
+                    "acc" => StatIndex.ACC,
+                    "eva" => StatIndex.EVA,
+                    _     => (StatIndex?)null,
+                };
+                if (statIdx == null) continue;
+
+                foreach (var tRef in statTargets)
+                {
+                    var pokemon = GetActiveSlot(session, tRef.OwnerId, tRef.Slot);
+                    if (pokemon == null || pokemon.IsFainted) continue;
+
+                    ApplyStatChange(tRef.OwnerId, pokemon, statIdx.Value, sc.Stages, events);
+                }
+            }
+            if (!hasEffectStr) return;
+        }
+
+        if (!hasEffectStr) return;
 
         // Weather-setting moves
         if (effect is "sun" or "rain" or "sandstorm" or "hail" or "snow")
@@ -1131,40 +1162,43 @@ public class BattleService
             return;
         }
 
-        // Stat changes (self: "atk+2", "def-1" etc.)
-        if (effect.Length >= 4 && (effect.Contains('+') || effect.Contains('-')))
+        // Stat changes (self: "atk+2", "def-1" etc.) - Fallback for old effect string
+        if (move.StatChanges == null || move.StatChanges.Count == 0)
         {
-            bool raise   = effect.Contains('+');
-            int sepIdx   = effect.IndexOf(raise ? '+' : '-');
-            string stat  = effect[..sepIdx];
-            int stages   = int.Parse(effect[(sepIdx + 1)..]) * (raise ? 1 : -1);
-
-            // Determine if targeting self or opponents (BUG-06 fix)
-            var statTargets = effect.StartsWith("self")
-                ? new List<TargetRef> { new(actingPlayerId, sourceSlot) }
-                : targets;
-
-            foreach (var tRef in statTargets)
+            if (effect.Length >= 4 && (effect.Contains('+') || effect.Contains('-')))
             {
-                var pokemon = GetActiveSlot(session, tRef.OwnerId, tRef.Slot);
-                if (pokemon == null || pokemon.IsFainted) continue;
+                bool raise   = effect.Contains('+');
+                int sepIdx   = effect.IndexOf(raise ? '+' : '-');
+                string stat  = effect[..sepIdx];
+                int stages   = int.Parse(effect[(sepIdx + 1)..]) * (raise ? 1 : -1);
 
-                var statIdx = stat switch
+                // Determine if targeting self or opponents (BUG-06 fix)
+                var statTargets = effect.StartsWith("self")
+                    ? new List<TargetRef> { new(actingPlayerId, sourceSlot) }
+                    : targets;
+
+                foreach (var tRef in statTargets)
                 {
-                    "atk" => StatIndex.ATK,
-                    "def" => StatIndex.DEF,
-                    "spa" => StatIndex.SPA,
-                    "spd" => StatIndex.SPD,
-                    "spe" => StatIndex.SPE,
-                    "acc" => StatIndex.ACC,
-                    "eva" => StatIndex.EVA,
-                    _     => (StatIndex?)null,
-                };
-                if (statIdx == null) continue;
+                    var pokemon = GetActiveSlot(session, tRef.OwnerId, tRef.Slot);
+                    if (pokemon == null || pokemon.IsFainted) continue;
 
-                ApplyStatChange(tRef.OwnerId, pokemon, statIdx.Value, stages, events);
+                    var statIdx = stat switch
+                    {
+                        "atk" => StatIndex.ATK,
+                        "def" => StatIndex.DEF,
+                        "spa" => StatIndex.SPA,
+                        "spd" => StatIndex.SPD,
+                        "spe" => StatIndex.SPE,
+                        "acc" => StatIndex.ACC,
+                        "eva" => StatIndex.EVA,
+                        _     => (StatIndex?)null,
+                    };
+                    if (statIdx == null) continue;
+
+                    ApplyStatChange(tRef.OwnerId, pokemon, statIdx.Value, stages, events);
+                }
+                return;
             }
-            return;
         }
 
         // Status infliction
@@ -1411,8 +1445,14 @@ public class BattleService
 
     private string? CheckWinCondition(BattleSession session)
     {
-        bool p1Lost = session.Team1.All(p => p.IsFainted);
-        bool p2Lost = session.Team2.All(p => p.IsFainted);
+        if (session.Team1.Count == 0 || session.Team2.Count == 0) return null;
+        
+        bool p1Lost = session.Team1.All(p => p.IsFainted || p.CurrentHp <= 0);
+        bool p2Lost = session.Team2.All(p => p.IsFainted || p.CurrentHp <= 0);
+
+        if (p1Lost || p2Lost) {
+            Console.WriteLine($"[Battle] WinCheck: P1Lost={p1Lost} (HP: {string.Join(",", session.Team1.Select(p=>p.CurrentHp))}), P2Lost={p2Lost} (HP: {string.Join(",", session.Team2.Select(p=>p.CurrentHp))})");
+        }
 
         if (p1Lost && p2Lost) return "draw";
         if (p1Lost) return session.Player2Id;
@@ -1619,6 +1659,34 @@ public class BattleService
         return team[idx];
     }
 
+    private PokemonSlotDto MapSlot(BattlePokemonSnapshot? p)
+    {
+        if (p == null) return null;
+        return new PokemonSlotDto
+        {
+            SpeciesId = p.SpeciesId,
+            SpeciesName = p.SpeciesName ?? p.Nickname ?? "Unknown",
+            Level = p.Level,
+            MaxHp = p.MaxHp,
+            CurrentHp = p.CurrentHp,
+            Type1 = p.Type1,
+            Type2 = p.Type2,
+            Status = p.NonVolatileStatus.ToString(),
+            TerType = p.TerType,
+            IsTerastallized = p.IsTerastallized,
+            Moves = p.Moves.Select(m => new MoveDto
+            {
+                MoveId = m.MoveId,
+                Name = m.MoveName ?? "Move",
+                Type = m.MoveType ?? "normal",
+                Category = m.Category ?? "Physical",
+                MaxPp = m.MaxPp,
+                CurrentPp = m.CurrentPp,
+                TargetType = 0 // Default for now
+            }).ToList()
+        };
+    }
+
     private int GetActiveHp(BattleSession session, string playerId, int slot)
         => GetActiveSlot(session, playerId, slot)?.CurrentHp ?? 0;
 
@@ -1785,4 +1853,23 @@ public class BattleService
                                    : moveType.Equals("fire",  StringComparison.OrdinalIgnoreCase) ? 0.5 : 1.0,
             _ => 1.0,
         };
+
+    public (BattleSession session, BattleTurnResult result) Surrender(string battleId, string playerId)
+    {
+        var session = GetSessionOrThrow(battleId);
+        string winnerId = session.Player1Id == playerId ? session.Player2Id : session.Player1Id;
+        
+        session.State = BattleState.Ended;
+        session.WinnerPlayerId = winnerId;
+        
+        var result = new BattleTurnResult
+        {
+            State = "Ended",
+            WinnerPlayerId = winnerId,
+            Events = new List<BattleEvent> {
+                new BattleEndEvent { WinnerPlayerId = winnerId, Reason = "Surrender", Message = $"[TRAINER] surrendered!" }
+            }
+        };
+        return (session, result);
+    }
 }

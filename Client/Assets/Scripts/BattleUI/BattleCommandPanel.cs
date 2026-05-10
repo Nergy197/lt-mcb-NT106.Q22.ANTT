@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 namespace Game.Battle.UI
 {
@@ -31,12 +32,15 @@ namespace Game.Battle.UI
             if (pokemonButton == null) pokemonButton = FindBtn("PokemonBtn");
             if (infoButton    == null) infoButton    = FindBtn("InfoBtn");
 
-            // ForfeitBtn thường bóc ra ngoài Panel để luôn hiển thị
             if (forfeitButton == null)
             {
                 var obj = GameObject.Find("ForfeitBtn");
                 if (obj != null) forfeitButton = obj.GetComponent<Button>();
             }
+
+            // Tự tạo nút nếu vẫn không tìm thấy (scene cũ không có)
+            if (forfeitButton == null)
+                forfeitButton = CreateForfeitButton();
 
             fightButton?.onClick.AddListener(() =>
                 _uiManager?.SwitchPanel(BattlePanelType.Skill));
@@ -48,8 +52,7 @@ namespace Game.Battle.UI
 
             forfeitButton?.onClick.AddListener(() =>
             {
-                _uiManager?.SwitchPanel(BattlePanelType.Dialog);
-                BattleEvents.OnPrintDialog?.Invoke("Đầu hàng!", false);
+                BattleEvents.OnPlayerSurrender?.Invoke();
             });
         }
 
@@ -64,6 +67,41 @@ namespace Game.Battle.UI
             foreach (var b in GetComponentsInChildren<Button>(true))
                 if (b.gameObject.name == btnName) return b;
             return null;
+        }
+
+        Button CreateForfeitButton()
+        {
+            var go = new GameObject("ForfeitBtn", typeof(RectTransform));
+            go.transform.SetParent(transform, false);
+
+            var img = go.AddComponent<Image>();
+            img.color = new Color(0.6f, 0.1f, 0.1f, 0.85f);
+
+            var btn = go.AddComponent<Button>();
+            var cb  = btn.colors;
+            cb.highlightedColor = new Color(0.8f, 0.2f, 0.2f, 1f);
+            btn.colors = cb;
+
+            var label = new GameObject("Text", typeof(RectTransform));
+            label.transform.SetParent(go.transform, false);
+            var rt = label.GetComponent<RectTransform>();
+            rt.anchorMin = Vector2.zero; rt.anchorMax = Vector2.one;
+            rt.offsetMin = Vector2.zero; rt.offsetMax = Vector2.zero;
+            var tmp = label.AddComponent<TextMeshProUGUI>();
+            tmp.text = "FORFEIT";
+            tmp.fontSize = 18;
+            tmp.alignment = TextAlignmentOptions.Center;
+            tmp.color = Color.white;
+
+            // Đặt dưới InfoBtn (offset -260 so với top-right)
+            var btnRt = go.GetComponent<RectTransform>();
+            btnRt.anchorMin = new Vector2(1, 1);
+            btnRt.anchorMax = new Vector2(1, 1);
+            btnRt.pivot     = new Vector2(1, 1);
+            btnRt.anchoredPosition = new Vector2(0, -260);
+            btnRt.sizeDelta = new Vector2(140, 60);
+
+            return btn;
         }
     }
 }

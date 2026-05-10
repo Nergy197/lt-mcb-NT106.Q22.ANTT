@@ -1,263 +1,166 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using Game.Battle.Logic;
 
 namespace Game.Battle.UI
 {
     public static class BattleEvents
     {
-        // ── Core ──────────────────────────────────────────────────────────────
+        public static Action<PokemonSlot, PokemonSlot, PokemonSlot, PokemonSlot> OnFieldUpdated;
         public static Action<string, int, int> OnHealthChanged;
-        public static Action<string, bool>     OnPrintDialog;
-        public static Action                   OnPlayerTurnStart;
-        public static Action                   OnActionCompleted;
-        public static Action<int>              OnPlayerUseSkill;
-        public static Action<int>              OnPlayerSwitch;
-        public static Action<int>              OnTargetSelected;
-
-        // ── Team Preview ──────────────────────────────────────────────────────
-        public static Action<List<TeamPreviewPokemonDto>, List<TeamPreviewPokemonDto>> OnTeamPreviewReady;
+        public static Action<string, bool> OnPrintDialog;
+        public static Action<BattlePanelType> OnPanelChanged;
+        public static Action<FieldConditionData> OnFieldConditionUpdated;
         public static Action<PreviewTeamData> OnTeamPreviewStart;
         public static Action<int[]>           OnTeamOrderConfirmed;
-
-        // ── Party Panel ───────────────────────────────────────────────────────
-        public static Action<PartyPanelData>  OnPartyPanelOpen;
-        public static Action<int>             OnPartySlotChosen;
-        public static Action                  OnPartyPanelCancelled;
-        public static Action<int>             OnVoluntarySwitchRequested; // srcSlot
-
-        // ── Field Conditions ──────────────────────────────────────────────────
-        public static Action<FieldConditionData> OnFieldConditionUpdated;
-        public static Action<PokemonSlot, PokemonSlot, PokemonSlot, PokemonSlot> OnFieldUpdated;
-
-        // ── Tera ─────────────────────────────────────────────────────────────
-        public static Action<bool> OnTeraAvailabilityChanged;
-
-        // ── Battle Result ─────────────────────────────────────────────────────
-        public static Action<bool, string> OnBattleResult;
-
-        // ── UI Panel change ───────────────────────────────────────────────────
-        public static Action<BattlePanelType> OnPanelChanged;
+        public static Action                 OnPlayerTurnStart;
+        public static Action<int>            OnPlayerUseSkill;
+        public static Action<int>            OnTargetSelected;
+        public static Action<bool, string>   OnBattleResult;
+        public static Action                 OnActionCompleted;
+        public static Action<PartyPanelData> OnPartyPanelOpen;
+        public static Action<int>            OnPartySlotChosen;
+        public static Action<int>            OnVoluntarySwitchRequested;
+        public static Action                 OnPartyPanelCancelled;
+        public static Action                 OnPlayerSurrender;
+        public static Action<bool>           OnTeraAvailabilityChanged;
     }
 
-    // ── Data classes ──────────────────────────────────────────────────────────
-
-    public class PreviewTeamData
+    [Serializable]
+    public class PokemonSlot
     {
-        public PreviewPokemon[] MyTeam;
-        public PreviewPokemon[] OppTeam;
+        public string SpeciesId;
+        public string SpeciesName;
+        public int Level;
+        public int MaxHp;
+        public int CurrentHp;
+        public bool IsFainted;
+        public string Type1;
+        public string Type2;
+        public string Status;        // Bổ sung
+        public string TerType;       // Bổ sung
+        public bool IsTerastallized; // Bổ sung
+        public List<MoveSlot> Moves = new();
     }
 
-    public class PreviewPokemon
+    [Serializable]
+    public class MoveSlot
     {
-        public int    SpeciesId;
-        public string Name, Type1, Type2;
-        public int    Level, MaxHp;
+        public int MoveId;
+        public string Name;
+        public string Type;
+        public string Category;
+        public int MaxPp;
+        public int CurrentPp;
+        public int TargetType;
+        public string Effect;
+        public List<StatChangeDto> StatChanges = new(); // Bổ sung
     }
 
-    public class PartyPanelData
-    {
-        public PartyPokemon[] Pokemon;
-        public int[]          AvailableIdxs;
-        public bool           IsForcedSwitch;
-        public int            ForcedSlot;
+    public class StatChangeDto {
+        public string Stat; public int Stages;
     }
-
-    public class PartyPokemon
-    {
-        public int    PartyIndex;
-        public string Name, Type1, Type2, Status;
-        public int    Level;
-        public int    CurrentHp, MaxHp;
-        public bool   IsFainted, IsActive;
-    }
-
-    public class FieldConditionData
-    {
-        public string Weather;
-        public int    WeatherTurns;
-        public string Terrain;
-        public int    TerrainTurns;
-        public int    TurnNumber;
-    }
-
-    // ── DTO Models ────────────────────────────────────────────────────────────
-
-    public class FieldDto
-    {
-        public string BattleId { get; set; }
-        public string OpponentId { get; set; }
-        public string Player2Id { get; set; }
-        public int TurnNumber { get; set; }
-        public string Weather { get; set; }
-        public int WeatherTurnsLeft { get; set; }
-        public string Terrain { get; set; }
-        public int TerrainTurnsLeft { get; set; }
-        public PokemonDto YourSlotA { get; set; }
-        public PokemonDto YourSlotB { get; set; }
-        public PokemonDto OppSlotA { get; set; }
-        public PokemonDto OppSlotB { get; set; }
-        public List<int> YourTeamHp { get; set; }
-        public List<int> YourTeamMaxHp { get; set; }
-    }
-
-    public class PokemonDto
-    {
-        public int SpeciesId { get; set; }
-        public string SpeciesName { get; set; }
-        public string Nickname { get; set; }
-        public string Type1 { get; set; }
-        public string Type2 { get; set; }
-        public string TerType { get; set; }
-        public bool IsTerastallized { get; set; }
-        public int Level { get; set; }
-        public int CurrentHp { get; set; }
-        public int MaxHp { get; set; }
-        public bool IsFainted { get; set; }
-        public string Status { get; set; }
-        public List<MoveDto> Moves { get; set; }
-    }
-
-    public class MoveDto
-    {
-        public string Name { get; set; }
-        public string Type { get; set; }
-        public string Category { get; set; }
-        public int CurrentPp { get; set; }
-        public int MaxPp { get; set; }
-    }
-
-    public class TurnDto
-    {
-        public string State { get; set; }
-        public string WinnerPlayerId { get; set; }
-        public int ActiveHp1 { get; set; }
-        public int ActiveHp1b { get; set; }
-        public int ActiveHp2 { get; set; }
-        public int ActiveHp2b { get; set; }
-        public List<FsInfo> ForcedSwitches { get; set; }
-        public List<EventDto> TypedEvents { get; set; }
-        public string Weather { get; set; }
-        public int WeatherTurnsLeft { get; set; }
-        public string Terrain { get; set; }
-        public int TerrainTurnsLeft { get; set; }
-    }
-
-    public class EventDto
-    {
-        public string EventType { get; set; }
-        public string PokemonName { get; set; }
-        public string MoveName { get; set; }
-        public int Damage { get; set; }
-        public bool IsCritical { get; set; }
-        public string TargetName { get; set; }
-        public string Status { get; set; }
-        public string StatName { get; set; }
-        public int Stages { get; set; }
-        public string NewWeather { get; set; }
-        public string NewTerrain { get; set; }
-        public string TerType { get; set; }
-        public string WithdrawnName { get; set; }
-        public string SentOutName { get; set; }
-        public string Message { get; set; }
-        public int HpAfter { get; set; }
-    }
-
-    public class TeamPreviewDto
-    {
-        public string BattleId { get; set; }
-        public string YourPlayerId { get; set; }
-        public string OpponentPlayerId { get; set; }
-        public List<TeamPreviewPokemonDto> YourTeam { get; set; }
-        public List<TeamPreviewPokemonDto> OpponentTeam { get; set; }
-    }
-
-    public class TeamPreviewPokemonDto
-    {
-        public int SpeciesId { get; set; }
-        public string SpeciesName { get; set; }
-        public string Nickname { get; set; }
-        public string Type1 { get; set; }
-        public string Type2 { get; set; }
-        public int Level { get; set; }
-        public int MaxHp { get; set; }
-    }
-
-    public class FsRequiredDto
-    {
-        public string BattleId { get; set; }
-        public string PlayerId { get; set; }
-        public int Slot { get; set; }
-        public List<int> AvailableIndices { get; set; }
-    }
-
-    public class FsInfo
-    {
-        public string PlayerId { get; set; }
-        public int Slot { get; set; }
-    }
-
-    public class ActionAcceptedDto
-    {
-        public string BattleId { get; set; }
-        public int Slot { get; set; }
-    }
-
-    // ── Snapshots & Helpers ───────────────────────────────────────────────────
 
     public class FieldSnapshot
     {
-        public PokemonSlot YourA, YourB, OppA, OppB;
-        public static FieldSnapshot From(FieldDto d) => new FieldSnapshot
+        public PokemonSlot YourA; public PokemonSlot YourB;
+        public PokemonSlot OppA;  public PokemonSlot OppB;
+
+        public static FieldSnapshot From(FieldDto dto)
         {
-            YourA = PokemonSlot.From(d.YourSlotA),
-            YourB = PokemonSlot.From(d.YourSlotB),
-            OppA = PokemonSlot.From(d.OppSlotA),
-            OppB = PokemonSlot.From(d.OppSlotB)
-        };
-    }
+            return new FieldSnapshot {
+                YourA = ToSlot(dto.YourSlotA), YourB = ToSlot(dto.YourSlotB),
+                OppA  = ToSlot(dto.OppSlotA),  OppB  = ToSlot(dto.OppSlotB)
+            };
+        }
 
-    public class PokemonSlot
-    {
-        public int    SpeciesId;
-        public string SpeciesName, Type1, Type2, TerType, Status;
-        public int    Level, CurrentHp, MaxHp;
-        public bool   IsFainted, IsTerastallized;
-        public List<MoveSlot> Moves;
-
-        public static PokemonSlot From(PokemonDto d)
+        private static PokemonSlot ToSlot(PokemonSlotDto d)
         {
             if (d == null) return null;
-            string name = !string.IsNullOrEmpty(d.SpeciesName) ? d.SpeciesName
-                        : !string.IsNullOrEmpty(d.Nickname)    ? d.Nickname
-                        : $"Pokemon#{d.SpeciesId}";
-            return new PokemonSlot
-            {
-                SpeciesId       = d.SpeciesId,
-                SpeciesName     = name,
-                Type1           = d.Type1 ?? "normal",
-                Type2           = d.Type2,
-                TerType         = d.TerType,
-                IsTerastallized = d.IsTerastallized,
-                Level           = d.Level,
-                CurrentHp       = d.CurrentHp,
-                MaxHp           = d.MaxHp,
-                IsFainted       = d.IsFainted,
-                Status          = d.Status,
-                Moves           = d.Moves?.ConvertAll(m => new MoveSlot
-                {
-                    Name      = m.Name,
-                    Type      = m.Type,
-                    Category  = m.Category,
-                    CurrentPp = m.CurrentPp,
-                    MaxPp     = m.MaxPp,
-                }),
+            return new PokemonSlot {
+                SpeciesId = d.SpeciesId.ToString(), SpeciesName = d.SpeciesName, Level = d.Level,
+                MaxHp = d.MaxHp, CurrentHp = d.CurrentHp, IsFainted = d.CurrentHp <= 0,
+                Type1 = d.Type1, Type2 = d.Type2, Status = d.Status,
+                TerType = d.TerType, IsTerastallized = d.IsTerastallized,
+                Moves = d.Moves?.Select(m => new MoveSlot {
+                    MoveId = m.MoveId, Name = m.Name, Type = m.Type, Category = m.Category,
+                    MaxPp = m.MaxPp, CurrentPp = m.CurrentPp, TargetType = m.TargetType,
+                    StatChanges = m.StatChanges ?? new List<StatChangeDto>()
+                }).ToList() ?? new List<MoveSlot>()
             };
         }
     }
 
-    public class MoveSlot
-    {
-        public string Name, Type, Category;
-        public int    CurrentPp, MaxPp;
+    public class FieldDto {
+        public PokemonSlotDto YourSlotA; public PokemonSlotDto YourSlotB;
+        public PokemonSlotDto OppSlotA;  public PokemonSlotDto OppSlotB;
+        public List<int> YourTeamHp;
+    }
+
+    public class PokemonSlotDto {
+        public int SpeciesId; public string SpeciesName; public int Level;
+        public int MaxHp; public int CurrentHp;
+        public string Type1; public string Type2; public string Status;
+        public string TerType; public bool IsTerastallized;
+        public List<MoveDto> Moves;
+    }
+
+    public class MoveDto {
+        public int MoveId; public string Name; public string Type; public string Category;
+        public int MaxPp; public int CurrentPp; public int TargetType;
+        public List<StatChangeDto> StatChanges;
+    }
+
+    public class TurnDto {
+        public string State; public string WinnerPlayerId;
+        public List<string> Events;
+        public List<EventDto> TypedEvents; // Sửa từ object về EventDto
+    }
+
+    public class EventDto {
+        public string EventType; public string PlayerId; public string PokemonName;
+        public string TargetName; public string MoveName; public int Damage;
+        public int HpAfter; public string Status; public string StatName; public int Stages;
+        public string Message; public string WithdrawnName; public string SentOutName; // Bổ sung
+    }
+
+    public class TeamPreviewDto {
+        public List<TeamPreviewPokemonDto> YourTeam;
+        public List<TeamPreviewPokemonDto> OpponentTeam;
+    }
+
+    public class TeamPreviewPokemonDto {
+        public string SpeciesId; public string SpeciesName; public int Level; public int MaxHp;
+        public string Type1; public string Type2; // Bổ sung
+    }
+
+    public class FsRequiredDto {
+        public int Slot; public List<int> AvailableIndices;
+    }
+
+    public class FieldConditionData {
+        public string Weather; public int WeatherTurns;
+        public string Terrain; public int TerrainTurns; public int TurnNumber;
+    }
+
+    public class PreviewTeamData {
+        public PreviewPokemon[] MyTeam; public PreviewPokemon[] OppTeam;
+    }
+
+    public class PreviewPokemon {
+        public string Name; public int Level; public string SpeciesId;
+        public string Type1; public string Type2; public int MaxHp;
+    }
+
+    public class PartyPanelData {
+        public PartyPokemon[] Pokemon; public int[] AvailableIdxs;
+        public bool IsForcedSwitch; public int ForcedSlot;
+    }
+
+    public class PartyPokemon {
+        public int PartyIndex; public string Name; public int Level;
+        public int CurrentHp; public int MaxHp; public bool IsFainted;
+        public bool IsActive; public string Type1; public string Type2; public string Status;
     }
 }

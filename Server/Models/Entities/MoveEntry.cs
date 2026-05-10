@@ -55,4 +55,19 @@ public class MoveEntry
     [BsonElement("effect_chance")]
     [JsonPropertyName("effect_chance")]
     public int EffectChance { get; set; } = 0;
+
+    [BsonElement("stat_changes")]
+    [JsonPropertyName("stat_changes")]
+    public List<MoveStatChange>? StatChanges { get; set; }
+}
+
+public class MoveStatChange
+{
+    [BsonElement("stat")]
+    [JsonPropertyName("stat")]
+    public string Stat { get; set; } = null!;
+
+    [BsonElement("stages")]
+    [JsonPropertyName("stages")]
+    public int Stages { get; set; }
 }

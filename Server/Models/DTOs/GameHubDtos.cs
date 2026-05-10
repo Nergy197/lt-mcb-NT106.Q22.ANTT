@@ -157,6 +157,15 @@ public class MoveSummaryDto
     public string Category  { get; set; } = "";
     public int    CurrentPp { get; set; }
     public int    MaxPp     { get; set; }
+    public int    TargetType{ get; set; }
+    public string? Effect   { get; set; }
+    public List<MoveStatChangeDto> StatChanges { get; set; } = new();
+}
+
+public class MoveStatChangeDto
+{
+    public string Stat { get; set; } = "";
+    public int Stages { get; set; }
 }
 
 public class SearchStartedDto

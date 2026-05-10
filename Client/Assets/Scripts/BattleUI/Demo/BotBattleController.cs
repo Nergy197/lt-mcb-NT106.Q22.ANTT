@@ -313,8 +313,18 @@ namespace Game.Battle.Demo
 
             if (_skill != null)
                 for (int i = 0; i < 4; i++)
-                    if (i < pkmn.Moves.Length) _skill.SetMove(i, pkmn.Moves[i].Name, pkmn.Moves[i].Type, pkmn.Moves[i].Category, pkmn.Moves[i].Pp, pkmn.Moves[i].MaxPp);
-                    else _skill.SetMove(i, "---");
+                    if (i < pkmn.Moves.Length) {
+                        var bm = pkmn.Moves[i];
+                        _skill.SetMove(i, new MoveSlot {
+                            Name = bm.Name,
+                            Type = bm.Type,
+                            Category = bm.Category,
+                            CurrentPp = bm.Pp,
+                            MaxPp = bm.MaxPp,
+                            Effect = bm.StatusEffect
+                        });
+                    }
+                    else _skill.SetMove(i, null);
 
             BattleEvents.OnTeraAvailabilityChanged?.Invoke(!_teraUsed);
             BattleEvents.OnPlayerTurnStart?.Invoke(); // → UIManager: SwitchPanel(Command)

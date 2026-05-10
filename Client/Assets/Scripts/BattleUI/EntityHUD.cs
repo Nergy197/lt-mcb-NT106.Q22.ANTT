@@ -24,6 +24,10 @@ namespace Game.Battle.UI
         public TextMeshProUGUI type1BadgeText;
         public TextMeshProUGUI type2BadgeText;
 
+        [Header("Gender UI")]
+        public TextMeshProUGUI genderText;
+        public Image           genderImage;
+
         [Header("Status Badge (BRN / PSN / PAR / SLP / FRZ / TOX)")]
         public TextMeshProUGUI statusBadgeText;
         public Image           statusBadgeImage;
@@ -90,6 +94,9 @@ namespace Game.Battle.UI
             if (statusBadgeImage == null) statusBadgeImage = transform.Find("StatusBadge")?.GetComponent<Image>();
             if (teraBadgeText    == null) teraBadgeText    = transform.Find("TeraBadge")?.GetComponent<TextMeshProUGUI>();
             if (teraBadgeImage   == null) teraBadgeImage   = transform.Find("TeraBadge")?.GetComponent<Image>();
+
+            if (genderText       == null) genderText       = transform.Find("GenderBadge/GenderText")?.GetComponent<TextMeshProUGUI>();
+            if (genderImage      == null) genderImage      = transform.Find("GenderBadge")?.GetComponent<Image>();
         }
 
         private void OnEnable()  => BattleEvents.OnHealthChanged += HandleHealthChanged;
@@ -126,6 +133,23 @@ namespace Game.Battle.UI
             bool hasT2 = !string.IsNullOrEmpty(type2);
             if (type2BadgeImage != null) type2BadgeImage.gameObject.SetActive(hasT2);
             if (hasT2) ApplyType(type2BadgeImage, type2BadgeText, type2);
+        }
+
+        public void SetGender(string gender)
+        {
+            if (genderText == null || genderImage == null) return;
+            
+            if (string.IsNullOrEmpty(gender) || gender.ToLower() == "n") {
+                genderImage.gameObject.SetActive(false);
+                return;
+            }
+
+            genderImage.gameObject.SetActive(true);
+            bool isMale = gender.ToLower() == "m" || gender.ToLower() == "male";
+            
+            genderText.text = isMale ? "♂" : "♀";
+            genderText.color = isMale ? new Color(0.42f, 0.72f, 1f) : new Color(1f, 0.49f, 0.75f);
+            genderImage.color = isMale ? new Color(0.31f, 0.63f, 1f, 0.15f) : new Color(1f, 0.47f, 0.78f, 0.15f);
         }
 
         /// Hiển thị status condition: "burn", "paralysis", "sleep", "freeze", "poison", "toxic" hoặc null để xoá.

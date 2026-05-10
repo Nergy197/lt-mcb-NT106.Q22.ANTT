@@ -65,10 +65,9 @@ namespace Game.Battle.UI
 
         public void SwitchPanel(BattlePanelType newType)
         {
-            // HUD luôn hiển thị trừ khi đang hiện Dialog hoặc TeamPreview toàn màn hình
+            // HUD luôn hiển thị trừ khi đang ở TeamPreview hoặc Kết quả toàn màn hình
             if (globalHudRoot != null)
                 globalHudRoot.SetActive(
-                    newType != BattlePanelType.Dialog &&
                     newType != BattlePanelType.TeamPreview &&
                     newType != BattlePanelType.Result);
 
@@ -76,6 +75,16 @@ namespace Game.Battle.UI
 
             foreach (var panel in panels)
             {
+                if (panel == null) continue;
+
+                // Dialog panel bây giờ luôn hiển thị
+                if (panel.PanelType == BattlePanelType.Dialog)
+                {
+                    panel.Show();
+                    if (newType == BattlePanelType.Dialog) _currentPanel = panel;
+                    continue;
+                }
+
                 if (panel.PanelType == newType)
                 {
                     _currentPanel = panel;
@@ -99,11 +108,11 @@ namespace Game.Battle.UI
 
         private void HandlePrintDialog(string text, bool autoClose)
         {
-            // Chi switch panel neu chua la Dialog - tranh Hide/Show lai lam mat queue
-            if (_currentPanel == null || _currentPanel.PanelType != BattlePanelType.Dialog)
-                SwitchPanel(BattlePanelType.Dialog);
+            // Vì Dialog luôn hiện, ta chỉ cần lấy reference và Enqueue
+            BattleDialogPanel dialog = null;
+            foreach (var p in panels) if (p is BattleDialogPanel bdp) { dialog = bdp; break; }
 
-            if (_currentPanel is BattleDialogPanel dialog)
+            if (dialog != null)
                 dialog.EnqueueMessage(text, autoClose);
         }
     }
