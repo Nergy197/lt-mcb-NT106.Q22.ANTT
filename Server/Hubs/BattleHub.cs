@@ -320,7 +320,8 @@ public class BattleHub : Hub
             session.Player1Id,
             session.Player2Id,
             result.WinnerPlayerId,
-            BattleService.BotPlayerId);
+            BattleService.BotPlayerId,
+            session.BattleId);
 
         if (reward.WinnerPlayerId != null && reward.WinnerVP.HasValue)
         {

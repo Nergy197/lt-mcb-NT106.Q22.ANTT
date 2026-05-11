@@ -47,6 +47,9 @@ public class MongoDbContext
     public IMongoCollection<Friendship> Friendships
         => _database.GetCollection<Friendship>("friendships");
 
+    public IMongoCollection<VpTransactionLog> VpTransactions
+        => _database.GetCollection<VpTransactionLog>("vp_transactions");
+
     // ── Indexes ──────────────────────────────────────────────────────────
     private void CreateIndexes()
     {
@@ -117,5 +120,11 @@ public class MongoDbContext
             Builders<Friendship>.IndexKeys
                 .Ascending(f => f.ReceiverId)
                 .Ascending(f => f.Status)));
+
+        // VpTransactions: index by player + timestamp for fast history queries
+        VpTransactions.Indexes.CreateOne(new CreateIndexModel<VpTransactionLog>(
+            Builders<VpTransactionLog>.IndexKeys
+                .Ascending(t => t.PlayerId)
+                .Descending(t => t.CreatedAtUtc)));
     }
 }

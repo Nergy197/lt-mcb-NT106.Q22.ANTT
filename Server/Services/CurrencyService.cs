@@ -7,17 +7,30 @@ namespace PokemonMMO.Services;
 /// <summary>
 /// Server-authoritative VP operations. All balance changes should go through
 /// this service so checks and updates stay atomic in MongoDB.
+/// Every successful change is also persisted to <c>vp_transactions</c>
+/// for audit / purchase-history queries.
 /// </summary>
 public class CurrencyService
 {
     public const int BattleWinReward = 200;
     public const int BattleLoseReward = 80;
 
-    private readonly MongoDbContext _db;
+    // Reason / type identifiers used in vp_transactions.type
+    public const string ReasonBattleWin     = "battle_win";
+    public const string ReasonBattleLose    = "battle_lose";
+    public const string ReasonPurchase      = "purchase_pokemon";
+    public const string ReasonStatRespec    = "stat_respec";
+    public const string ReasonMoveSwap      = "move_swap";
+    public const string ReasonDebugAdd      = "debug_add";
+    public const string ReasonDebugSpend    = "debug_spend";
 
-    public CurrencyService(MongoDbContext db)
+    private readonly MongoDbContext _db;
+    private readonly ILogger<CurrencyService> _logger;
+
+    public CurrencyService(MongoDbContext db, ILogger<CurrencyService> logger)
     {
         _db = db;
+        _logger = logger;
     }
 
     public async Task<Player?> GetPlayerByAccountIdAsync(string accountId)
@@ -33,7 +46,16 @@ public class CurrencyService
         return player?.VP;
     }
 
-    public async Task<int?> AddVPAsync(string playerId, int amount)
+    /// <summary>
+    /// Atomically add VP and (when <paramref name="reason"/> is provided)
+    /// write a row to <c>vp_transactions</c>.
+    /// </summary>
+    public async Task<int?> AddVPAsync(
+        string playerId,
+        int amount,
+        string? reason = null,
+        string? refId = null,
+        Dictionary<string, string>? metadata = null)
     {
         if (amount <= 0) return null;
 
@@ -49,10 +71,25 @@ public class CurrencyService
             update,
             options);
 
-        return updated?.VP;
+        if (updated == null) return null;
+
+        if (reason != null)
+            await LogTransactionAsync(playerId, amount, updated.VP, reason, refId, metadata);
+
+        return updated.VP;
     }
 
-    public async Task<int?> SpendVPAsync(string playerId, int cost)
+    /// <summary>
+    /// Atomically spend VP (only if player has enough) and (when
+    /// <paramref name="reason"/> is provided) write a row to <c>vp_transactions</c>.
+    /// Returns the remaining balance, or <c>null</c> if the spend was rejected.
+    /// </summary>
+    public async Task<int?> SpendVPAsync(
+        string playerId,
+        int cost,
+        string? reason = null,
+        string? refId = null,
+        Dictionary<string, string>? metadata = null)
     {
         if (cost <= 0) return null;
 
@@ -70,14 +107,52 @@ public class CurrencyService
             update,
             options);
 
-        return updated?.VP;
+        if (updated == null) return null;
+
+        if (reason != null)
+            await LogTransactionAsync(playerId, -cost, updated.VP, reason, refId, metadata);
+
+        return updated.VP;
+    }
+
+    /// <summary>
+    /// Persist an immutable VP transaction record. Failure to log must never
+    /// roll back the VP change, so we swallow exceptions but log them.
+    /// </summary>
+    public async Task LogTransactionAsync(
+        string playerId,
+        int delta,
+        int balanceAfter,
+        string type,
+        string? refId = null,
+        Dictionary<string, string>? metadata = null)
+    {
+        try
+        {
+            await _db.VpTransactions.InsertOneAsync(new VpTransactionLog
+            {
+                PlayerId     = playerId,
+                Type         = type,
+                Delta        = delta,
+                BalanceAfter = balanceAfter,
+                RefId        = refId,
+                Metadata     = metadata,
+            });
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex,
+                "Failed to write vp_transactions row (player={PlayerId}, type={Type}, delta={Delta})",
+                playerId, type, delta);
+        }
     }
 
     public async Task<BattleVpRewardResult> AwardBattleVPAsync(
         string player1Id,
         string player2Id,
         string winnerPlayerId,
-        string botPlayerId)
+        string botPlayerId,
+        string? battleId = null)
     {
         if (winnerPlayerId == "draw")
             return new BattleVpRewardResult();
@@ -88,10 +163,18 @@ public class CurrencyService
         int? loserVp = null;
 
         if (winnerPlayerId != botPlayerId)
-            winnerVp = await AddVPAsync(winnerPlayerId, BattleWinReward);
+            winnerVp = await AddVPAsync(
+                winnerPlayerId,
+                BattleWinReward,
+                reason: ReasonBattleWin,
+                refId: battleId);
 
         if (loserPlayerId != botPlayerId)
-            loserVp = await AddVPAsync(loserPlayerId, BattleLoseReward);
+            loserVp = await AddVPAsync(
+                loserPlayerId,
+                BattleLoseReward,
+                reason: ReasonBattleLose,
+                refId: battleId);
 
         return new BattleVpRewardResult
         {

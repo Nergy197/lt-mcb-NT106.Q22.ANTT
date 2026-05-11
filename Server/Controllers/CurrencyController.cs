@@ -45,7 +45,7 @@ public class CurrencyController : ControllerBase
         if (player == null)
             return NotFound(new { Message = "Player not found." });
 
-        var vp = await _currency.AddVPAsync(player.Id, request.Amount);
+        var vp = await _currency.AddVPAsync(player.Id, request.Amount, reason: CurrencyService.ReasonDebugAdd);
         if (vp == null)
             return BadRequest(new { Message = "Amount must be greater than 0." });
 
@@ -65,7 +65,7 @@ public class CurrencyController : ControllerBase
         if (player == null)
             return NotFound(new { Message = "Player not found." });
 
-        var vp = await _currency.SpendVPAsync(player.Id, request.Amount);
+        var vp = await _currency.SpendVPAsync(player.Id, request.Amount, reason: CurrencyService.ReasonDebugSpend);
         if (vp == null)
             return BadRequest(new { Message = "Not enough VP or invalid amount." });
 

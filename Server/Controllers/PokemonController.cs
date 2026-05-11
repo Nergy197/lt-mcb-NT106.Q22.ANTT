@@ -35,6 +35,93 @@ public class PokemonController : ControllerBase
         public int NewMoveId { get; set; }
     }
 
+    public class PurchasePokemonRequest
+    {
+        public string InstanceId { get; set; } = null!;
+    }
+
+    /// <summary>Giá mua đứt một Pokémon dùng thử (VP).</summary>
+    public const int PurchasePriceVp = 500;
+
+    /// <summary>
+    /// Mua đứt một Pokémon đang ở chế độ dùng thử.
+    /// Server-authoritative: trừ VP nguyên tử, gỡ cờ <c>is_trial</c>/<c>trial_expiry</c>,
+    /// và ghi log giao dịch vào <c>vp_transactions</c>.
+    /// </summary>
+    [HttpPost("purchase")]
+    public async Task<IActionResult> PurchaseTrialPokemon([FromBody] PurchasePokemonRequest req)
+    {
+        var accountId = GetAccountId();
+        if (accountId == null) return Unauthorized();
+
+        if (string.IsNullOrWhiteSpace(req?.InstanceId))
+            return BadRequest(new { Message = "InstanceId là bắt buộc." });
+
+        var player = await _currency.GetPlayerByAccountIdAsync(accountId);
+        if (player == null) return Unauthorized();
+
+        var pokemon = await _db.PokemonInstances
+            .Find(x => x.Id == req.InstanceId && x.OwnerId == player.Id)
+            .FirstOrDefaultAsync();
+        if (pokemon == null)
+            return NotFound(new { Message = "Pokemon không tồn tại hoặc bạn không sở hữu." });
+
+        if (!pokemon.IsTrial)
+            return BadRequest(new { Message = "Pokemon này không ở chế độ dùng thử." });
+
+        if (pokemon.TrialExpiry.HasValue && pokemon.TrialExpiry.Value < DateTime.UtcNow)
+            return BadRequest(new { Message = "Bản dùng thử đã hết hạn, không thể mua đứt." });
+
+        // Server-side VP check: SpendVPAsync chỉ trừ thành công khi đủ VP (atomic).
+        var vpRemaining = await _currency.SpendVPAsync(
+            player.Id,
+            PurchasePriceVp,
+            reason: CurrencyService.ReasonPurchase,
+            refId: pokemon.Id,
+            metadata: new Dictionary<string, string>
+            {
+                ["species_id"] = pokemon.SpeciesId.ToString(),
+                ["nickname"]   = pokemon.Nickname ?? string.Empty,
+            });
+
+        if (vpRemaining == null)
+            return BadRequest(new
+            {
+                Message  = $"Không đủ VP. Cần {PurchasePriceVp} VP để mua đứt Pokémon này.",
+                PriceVp  = PurchasePriceVp,
+                CurrentVp = player.VP,
+            });
+
+        // Gỡ cờ dùng thử trong DB.
+        var update = Builders<PokemonInstance>.Update
+            .Set(x => x.IsTrial, false)
+            .Unset(x => x.TrialExpiry);
+
+        var dbResult = await _db.PokemonInstances.UpdateOneAsync(
+            x => x.Id == pokemon.Id && x.OwnerId == player.Id,
+            update);
+
+        if (dbResult.MatchedCount == 0)
+        {
+            // Cực hiếm: Pokémon bị xoá ngay sau khi đã trừ VP — hoàn lại.
+            await _currency.AddVPAsync(
+                player.Id,
+                PurchasePriceVp,
+                reason: CurrencyService.ReasonPurchase + "_refund",
+                refId: pokemon.Id);
+            return Conflict(new { Message = "Pokemon đã bị xoá trong khi giao dịch. VP đã được hoàn." });
+        }
+
+        return Ok(new
+        {
+            success      = true,
+            instanceId   = pokemon.Id,
+            isTrial      = false,
+            priceVp      = PurchasePriceVp,
+            vpRemaining  = vpRemaining.Value,
+        });
+    }
+
     public class UpdateSpAlignmentRequest
     {
         public string InstanceId { get; set; } = null!;
@@ -85,7 +172,11 @@ public class PokemonController : ControllerBase
 
         int newMaxHp = CalculateHp(baseHp, p.Ivs.Hp, actualEvs.Hp, p.Level);
 
-        var vpRemaining = await _currency.SpendVPAsync(player.Id, costVp);
+        var vpRemaining = await _currency.SpendVPAsync(
+            player.Id,
+            costVp,
+            reason: CurrencyService.ReasonStatRespec,
+            refId: req.InstanceId);
         if (vpRemaining == null)
             return BadRequest($"Not enough Victory Points (VP). Requires {costVp} VP.");
 
@@ -146,7 +237,16 @@ public class PokemonController : ControllerBase
             p.Moves.Add(newMove);
         }
 
-        var vpRemaining = await _currency.SpendVPAsync(player.Id, costVp);
+        var vpRemaining = await _currency.SpendVPAsync(
+            player.Id,
+            costVp,
+            reason: CurrencyService.ReasonMoveSwap,
+            refId: req.InstanceId,
+            metadata: new Dictionary<string, string>
+            {
+                ["slot"]     = req.MoveSlotIndex.ToString(),
+                ["move_id"]  = req.NewMoveId.ToString(),
+            });
         if (vpRemaining == null)
             return BadRequest($"Not enough Victory Points (VP). Requires {costVp} VP.");
 
