@@ -510,6 +510,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 88347940}
+  - component: {fileID: 88347941}
   m_Layer: 5
   m_Name: PokedexSystem
   m_TagString: Untagged
@@ -537,6 +538,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 119.0842, y: 120.4472}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &88347941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88347939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d967776640b8f409e26480159abe26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PokemonMMO.UI.MenuSceneManager
+  battleSceneName: Battle scene
+  startMenuSceneName: Start menu
 --- !u!1 &115331794
 GameObject:
   m_ObjectHideFlags: 0
@@ -2566,9 +2581,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1869707711}
-        m_TargetAssemblyTypeName: MailManager, Assembly-CSharp
-        m_MethodName: ToggleMail
+      - m_Target: {fileID: 1299065597}
+        m_TargetAssemblyTypeName: PokemonMMO.UI.MenuSceneManager, Assembly-CSharp
+        m_MethodName: OnRecruitClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4185,6 +4200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1299065596}
+  - component: {fileID: 1299065597}
   m_Layer: 5
   m_Name: RecuitSystem
   m_TagString: Untagged
@@ -4212,6 +4228,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 421.06, y: 116.5929}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1299065597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299065595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d967776640b8f409e26480159abe26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PokemonMMO.UI.MenuSceneManager
+  battleSceneName: Battle scene
+  startMenuSceneName: Start menu
 --- !u!1 &1313608844
 GameObject:
   m_ObjectHideFlags: 0
@@ -4525,6 +4555,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1437409296}
+  - component: {fileID: 1437409297}
   m_Layer: 5
   m_Name: BattleSystem
   m_TagString: Untagged
@@ -4552,6 +4583,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 421.06, y: 230.7}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1437409297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437409295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d967776640b8f409e26480159abe26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PokemonMMO.UI.MenuSceneManager
+  battleSceneName: Battle scene
+  startMenuSceneName: Start menu
 --- !u!1 &1521040691
 GameObject:
   m_ObjectHideFlags: 0
@@ -5050,7 +5095,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1787829851}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 88347941}
+        m_TargetAssemblyTypeName: PokemonMMO.UI.MenuSceneManager, Assembly-CSharp
+        m_MethodName: OnPokedexClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1787829851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5640,21 +5697,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1521040692}
+      - m_Target: {fileID: 1437409297}
         m_TargetAssemblyTypeName: PokemonMMO.UI.MenuSceneManager, Assembly-CSharp
-        m_MethodName: LoadBattleScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1045365886}
-        m_TargetAssemblyTypeName: Game.Network.MatchmakingManager, Assembly-CSharp
-        m_MethodName: StartSearching
+        m_MethodName: OnBattleClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

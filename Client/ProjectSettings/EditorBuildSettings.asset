@@ -12,7 +12,16 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu scene.unity
     guid: 1da258a90f40f4b8285cd143e6c59304
   - enabled: 1
+    path: Assets/Scenes/0_BattleScene.unity
+    guid: 8dcc633c3fa13ba4ea453edc3fc8a2c1
+  - enabled: 1
     path: Assets/Scenes/Battle scene.unity
     guid: f29481ec082a2410fbc7480def4bd5ef
+  - enabled: 1
+    path: Assets/Scenes/PokedexScene.unity
+    guid: e429e5a59a994e64da81663eb2d6e0fe
+  - enabled: 1
+    path: Assets/Scenes/RecuitScene.unity
+    guid: 80a6883b9506009458a6a695bd73f241
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
