@@ -8,6 +8,16 @@ namespace PokemonMMO.UI
         [Header("Scene Names")]
         public string battleSceneName = "Battle scene";
         public string startMenuSceneName = "Start menu";
+        [Header("Optional UI")]
+        [SerializeField] private SettingsUIController settingsUIController;
+
+        private void Awake()
+        {
+            if (settingsUIController == null)
+            {
+                settingsUIController = FindFirstObjectByType<SettingsUIController>();
+            }
+        }
 
         public void LoadBattleScene()
         {
@@ -36,6 +46,27 @@ namespace PokemonMMO.UI
         public void OnBattleClicked()  => SceneManager.LoadScene("0_BattleScene");
         public void OnFriendsClicked() => Debug.Log("[Menu] Friends Clicked");
         public void OnRankClicked()    => Debug.Log("[Menu] Rank Clicked");
+        public void OnSettingsClicked() => OpenSettings();
+
+        public void OpenSettings()
+        {
+            if (settingsUIController == null)
+            {
+                settingsUIController = FindFirstObjectByType<SettingsUIController>();
+            }
+
+            settingsUIController?.OpenSettings();
+        }
+
+        public void CloseSettings()
+        {
+            if (settingsUIController == null)
+            {
+                settingsUIController = FindFirstObjectByType<SettingsUIController>();
+            }
+
+            settingsUIController?.CloseSettings();
+        }
 
         public void QuitGame()
         {
