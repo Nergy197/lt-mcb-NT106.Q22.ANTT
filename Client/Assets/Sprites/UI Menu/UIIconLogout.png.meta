@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2368c30c16cc6494d828dc5e45c32330
+guid: d79c4e670f2364944b1ab5c15353d130
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8210093838350531045
-    second: Login menu asset(2)_0
+      213: -5706856052632177502
+    second: UIIconLogout_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Login menu asset(2)_0
+      name: UIIconLogout_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 345
-        height: 276
+        width: 641
+        height: 360
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b164e782723ef0e80800000000000000
-      internalID: -8210093838350531045
+      spriteID: 2a4329608ac2dc0b0800000000000000
+      internalID: -5706856052632177502
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Login menu asset(2)_0: -8210093838350531045
+      UIIconLogout_0: -5706856052632177502
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

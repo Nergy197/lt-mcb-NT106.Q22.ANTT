@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2368c30c16cc6494d828dc5e45c32330
+guid: 5ec828b303a3e95489c5e993dd4886df
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8210093838350531045
-    second: Login menu asset(2)_0
+      213: 6960328809792276729
+    second: backgroundSetting-removebg-preview_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Login menu asset(2)_0
+      name: backgroundSetting-removebg-preview_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 10
         y: 0
-        width: 345
-        height: 276
+        width: 542
+        height: 431
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b164e782723ef0e80800000000000000
-      internalID: -8210093838350531045
+      spriteID: 9f80693dc2e089060800000000000000
+      internalID: 6960328809792276729
       vertices: []
       indices: 
       edges: []
@@ -138,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Login menu asset(2)_0: -8210093838350531045
+      backgroundSetting-removebg-preview_0: 6960328809792276729
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
