@@ -40,12 +40,13 @@ namespace PokemonMMO.Box
 
         private IEnumerator LoadParty()
         {
-            foreach (var s in slots) s?.SetEmpty();
-
             string token = PlayerPrefs.GetString("jwt_token", "");
             using var req = UnityWebRequest.Get($"{serverBaseUrl}/api/box/party");
             req.SetRequestHeader("Authorization", "Bearer " + token);
             yield return req.SendWebRequest();
+
+            // Clear sau khi có data để tránh flash trắng trong lúc chờ HTTP
+            foreach (var s in slots) s?.SetEmpty();
 
             if (req.result != UnityWebRequest.Result.Success)
             {

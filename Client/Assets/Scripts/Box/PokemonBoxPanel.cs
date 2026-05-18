@@ -95,8 +95,6 @@ namespace PokemonMMO.Box
 
         private IEnumerator LoadBox(int boxIndex, bool forceRefresh = false)
         {
-            foreach (var s in _slots) s.SetEmpty();
-
             BoxInfoData info = null;
 
             if (!forceRefresh && _boxCache.TryGetValue(boxIndex, out var cached))
@@ -105,6 +103,9 @@ namespace PokemonMMO.Box
             }
             else
             {
+                // Chỉ clear ngay khi đổi box khác (không phải refresh cùng box sau deposit/withdraw)
+                if (!forceRefresh) foreach (var s in _slots) s.SetEmpty();
+
                 string token = PlayerPrefs.GetString("jwt_token", "");
                 using var req = UnityWebRequest.Get($"{serverBaseUrl}/api/box/{boxIndex}");
                 req.SetRequestHeader("Authorization", "Bearer " + token);
@@ -120,6 +121,9 @@ namespace PokemonMMO.Box
                     _boxCache[boxIndex] = info;
                 }
             }
+
+            // Clear + repopulate sau khi đã có data — sprites đã cache nên hiện lại tức thì
+            foreach (var s in _slots) s.SetEmpty();
 
             if (info != null)
             {
