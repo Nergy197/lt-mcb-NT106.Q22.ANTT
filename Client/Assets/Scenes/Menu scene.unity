@@ -4748,8 +4748,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2100368324}
-        m_TargetAssemblyTypeName: FriendsController, Assembly-CSharp
-        m_MethodName: ToggleFriendsPopup
+        m_TargetAssemblyTypeName: PokemonMMO.UI.MenuSceneManager, Assembly-CSharp
+        m_MethodName: OnBoxClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9985,13 +9985,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2100368322}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4632e6687270bb44789599a4637f5344, type: 3}
+  m_Script: {fileID: 11500000, guid: a6d967776640b8f409e26480159abe26, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FriendsController
-  friendsPopup: {fileID: 0}
-  backgroundDisplay: {fileID: 0}
-  spriteBanBe: {fileID: 4873679401808004454, guid: 0cda475640c0153459e718e281fbd279, type: 3}
-  spriteThemBan: {fileID: -1383362400111981827, guid: 9c20427d761d4d448b7f9c2336ecc44d, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::PokemonMMO.UI.MenuSceneManager
+  battleSceneName: Battle scene
+  startMenuSceneName: Start menu
 --- !u!1 &2105921620
 GameObject:
   m_ObjectHideFlags: 0

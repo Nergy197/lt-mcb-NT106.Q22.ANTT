@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
 using TMPro;
 
 namespace PokemonArena.UI
@@ -11,7 +10,7 @@ namespace PokemonArena.UI
     /// ModeMenu to deselect siblings).
     /// </summary>
     [RequireComponent(typeof(RectTransform))]
-    public class ModeButton : MonoBehaviour, IPointerEnterHandler, IPointerClickHandler
+    public class ModeButton : MonoBehaviour
     {
         public enum Mode { Ranked, Casual, Private }
 
@@ -54,9 +53,6 @@ namespace PokemonArena.UI
             p.x = Mathf.Lerp(p.x, targetX, Time.unscaledDeltaTime * lerpSpeed);
             rt.anchoredPosition = p;
         }
-
-        public void OnPointerEnter(PointerEventData e)  { if (menu != null) menu.Select(this); }
-        public void OnPointerClick(PointerEventData e)  { if (menu != null) menu.Confirm(this); }
 
         public void SetSelected(bool on)
         {

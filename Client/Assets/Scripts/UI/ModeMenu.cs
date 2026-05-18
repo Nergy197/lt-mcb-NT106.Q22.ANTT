@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace PokemonArena.UI
 {
@@ -14,6 +15,8 @@ namespace PokemonArena.UI
 
         [Tooltip("Selected on Start.")]
         public int defaultIndex = 0;
+
+        public string menuSceneName = "Menu scene";
 
         public System.Action<ModeButton.Mode> OnModeConfirmed;
 
@@ -40,9 +43,13 @@ namespace PokemonArena.UI
                 currentIndex = (currentIndex - 1 + buttons.Count) % buttons.Count;
                 ApplySelection();
             }
-            else if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
+            else if (Input.GetKeyDown(KeyCode.C))
             {
                 Confirm(buttons[currentIndex]);
+            }
+            else if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.Escape))
+            {
+                SceneManager.LoadScene(menuSceneName);
             }
         }
 
