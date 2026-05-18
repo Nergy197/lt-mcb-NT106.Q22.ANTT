@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.SignalR.Client;
@@ -11,7 +11,7 @@ namespace Game.Network
         public static SignalRClient Instance { get; private set; }
         public string PlayerId => PlayerPrefs.GetString("player_id", "");
 
-        [Header("Cáº¥u hÃ¬nh Server")]
+        [Header("Cấu hình Server")]
         public string serverUrl = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app";
 
         private HubConnection _matchmakingHub;
@@ -29,7 +29,7 @@ namespace Game.Network
                 Instance = this;
                 if (transform.parent == null) DontDestroyOnLoad(gameObject);
                 
-                // KHÃ”NG khá»Ÿi táº¡o Hub á»Ÿ Ä‘Ã¢y ná»¯a, Ä‘á»£i Ä‘áº¿n khi ConnectAsync má»›i khá»Ÿi táº¡o Ä‘á»ƒ cÃ³ Token
+                // KHÔNG khởi tạo Hub ở đây nữa, đợi đến khi ConnectAsync mới khởi tạo để có Token
             }
             else if (Instance != this)
             {
@@ -39,14 +39,14 @@ namespace Game.Network
 
         public async Task ConnectAsync()
         {
-            // LuÃ´n láº¥y token má»›i nháº¥t tá»« PlayerPrefs
+            // Luôn lấy token mới nhất từ PlayerPrefs
             string token = PlayerPrefs.GetString("jwt_token", "");
             if (string.IsNullOrEmpty(token))
             {
-                Debug.LogWarning("[Network] KhÃ´ng tÃ¬m tháº¥y JWT Token. Äang cháº¡y á»Ÿ cháº¿ Ä‘á»™ Guest.");
+                Debug.LogWarning("[Network] Không tìm thấy JWT Token. Đang chạy ở chế độ Guest.");
             }
 
-            // Chá»‰ khá»Ÿi táº¡o náº¿u chÆ°a cÃ³ hoáº·c Ä‘Ã£ bá»‹ há»§y
+            // Chỉ khởi tạo nếu chưa có hoặc đã bị hủy
             if (_matchmakingHub == null) _matchmakingHub = CreateConnection("/hubs/matchmaking", token);
             if (_battleHub == null)      _battleHub = CreateConnection("/hubs/battle", token);
             if (_chatHub == null)        _chatHub = CreateConnection("/hubs/chat", token);
@@ -61,16 +61,16 @@ namespace Game.Network
                 if (connectTasks.Count > 0)
                 {
                     await Task.WhenAll(connectTasks);
-                    Debug.Log("[Network] ÄÃ£ káº¿t ná»‘i/tÃ¡i káº¿t ná»‘i SignalR thÃ nh cÃ´ng.");
+                    Debug.Log("[Network] Đã kết nối/tái kết nối SignalR thành công.");
                 }
                 else
                 {
-                    Debug.Log("[Network] SignalR Ä‘Ã£ á»Ÿ tráº¡ng thÃ¡i káº¿t ná»‘i.");
+                    Debug.Log("[Network] SignalR đã ở trạng thái kết nối.");
                 }
             }
             catch (Exception ex)
             {
-                Debug.LogError($"[Network] Lá»—i káº¿t ná»‘i SignalR: {ex.Message}");
+                Debug.LogError($"[Network] Lỗi kết nối SignalR: {ex.Message}");
             }
         }
 
@@ -79,7 +79,7 @@ namespace Game.Network
             var connection = new HubConnectionBuilder()
                 .WithUrl(serverUrl + hubPath, options =>
                 {
-                    // Quan trá»ng: GÃ¡n token vÃ o Header cho má»—i láº§n káº¿t ná»‘i
+                    // Quan trọng: Gán token vào Header cho mỗi lần kết nối
                     options.AccessTokenProvider = () => Task.FromResult(token);
                 })
                 .WithAutomaticReconnect()
@@ -116,4 +116,3 @@ namespace Game.Network
         }
     }
 }
-
