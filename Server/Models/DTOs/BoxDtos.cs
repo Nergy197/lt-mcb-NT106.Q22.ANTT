@@ -41,6 +41,7 @@ public class PartySlotDto
     public int    Level     { get; set; }
     public int    CurrentHp { get; set; }
     public int    MaxHp     { get; set; }
+    public string IconUrl   { get; set; } = "";
 }
 
 public class PartyInfoDto

@@ -58,7 +58,8 @@ namespace PokemonMMO.Box
         private int  _partyCol = 0;
         private int  _partyRow = 0;
 
-        private readonly Dictionary<int, Sprite> _spriteCache = new();
+        private static readonly Dictionary<int, Sprite>      _spriteCache = new();
+        private static readonly Dictionary<int, BoxInfoData> _boxCache    = new();
 
         // ── Lifecycle ─────────────────────────────────────────────────────────
 
@@ -92,23 +93,36 @@ namespace PokemonMMO.Box
 
         // ── Load box ──────────────────────────────────────────────────────────
 
-        private IEnumerator LoadBox(int boxIndex)
+        private IEnumerator LoadBox(int boxIndex, bool forceRefresh = false)
         {
-            string token = PlayerPrefs.GetString("jwt_token", "");
-            using var req = UnityWebRequest.Get($"{serverBaseUrl}/api/box/{boxIndex}");
-            req.SetRequestHeader("Authorization", "Bearer " + token);
-            yield return req.SendWebRequest();
-
             foreach (var s in _slots) s.SetEmpty();
 
             BoxInfoData info = null;
-            if (req.result != UnityWebRequest.Result.Success)
+
+            if (!forceRefresh && _boxCache.TryGetValue(boxIndex, out var cached))
             {
-                Debug.LogWarning($"[Box] Load thất bại: {req.error}");
+                info = cached;
             }
             else
             {
-                info = JsonConvert.DeserializeObject<BoxInfoData>(req.downloadHandler.text);
+                string token = PlayerPrefs.GetString("jwt_token", "");
+                using var req = UnityWebRequest.Get($"{serverBaseUrl}/api/box/{boxIndex}");
+                req.SetRequestHeader("Authorization", "Bearer " + token);
+                yield return req.SendWebRequest();
+
+                if (req.result != UnityWebRequest.Result.Success)
+                {
+                    Debug.LogWarning($"[Box] Load thất bại box{boxIndex}: {req.error} | {req.downloadHandler.text}");
+                }
+                else
+                {
+                    info = JsonConvert.DeserializeObject<BoxInfoData>(req.downloadHandler.text);
+                    _boxCache[boxIndex] = info;
+                }
+            }
+
+            if (info != null)
+            {
                 _totalBoxes = info.TotalBoxes;
                 foreach (var slot in info.Slots)
                 {
@@ -128,13 +142,36 @@ namespace PokemonMMO.Box
             // Ép layout tính xong vị trí slot trước khi đặt cursor
             Canvas.ForceUpdateCanvases();
             UpdateCursor();
+
+            // Prefetch box kề cạnh vào cache để chuyển box mượt
+            int prev = (boxIndex - 1 + _totalBoxes) % _totalBoxes;
+            int next = (boxIndex + 1) % _totalBoxes;
+            if (!_boxCache.ContainsKey(prev)) StartCoroutine(PrefetchBox(prev));
+            if (!_boxCache.ContainsKey(next)) StartCoroutine(PrefetchBox(next));
+        }
+
+        private IEnumerator PrefetchBox(int boxIndex)
+        {
+            string token = PlayerPrefs.GetString("jwt_token", "");
+            using var req = UnityWebRequest.Get($"{serverBaseUrl}/api/box/{boxIndex}");
+            req.SetRequestHeader("Authorization", "Bearer " + token);
+            yield return req.SendWebRequest();
+
+            if (req.result == UnityWebRequest.Result.Success)
+            {
+                var info = JsonConvert.DeserializeObject<BoxInfoData>(req.downloadHandler.text);
+                _boxCache[boxIndex] = info;
+                foreach (var slot in info.Slots)
+                    if (!_spriteCache.ContainsKey(slot.SpeciesId))
+                        StartCoroutine(LoadSlotSprite(-1, slot.SpeciesId, slot.PokemonId, slot.IconUrl ?? ""));
+            }
         }
 
         private IEnumerator LoadSlotSprite(int slotIndex, int speciesId, string pokemonId, string iconUrl = "")
         {
             if (_spriteCache.TryGetValue(speciesId, out var cached))
             {
-                _slots[slotIndex].SetPokemon(speciesId, pokemonId, cached);
+                if (slotIndex >= 0) _slots[slotIndex].SetPokemon(speciesId, pokemonId, cached);
                 yield break;
             }
 
@@ -165,7 +202,7 @@ namespace PokemonMMO.Box
             if (sprite != null)
             {
                 _spriteCache[speciesId] = sprite;
-                _slots[slotIndex].SetPokemon(speciesId, pokemonId, sprite);
+                if (slotIndex >= 0) _slots[slotIndex].SetPokemon(speciesId, pokemonId, sprite);
             }
         }
 
@@ -270,19 +307,29 @@ namespace PokemonMMO.Box
 
         private IEnumerator WithdrawPokemon(string pokemonId)
         {
-            yield return PostAction("withdraw", pokemonId);
-            StartCoroutine(LoadBox(_currentBox));
-            partyPanel?.Refresh();
+            bool ok = false;
+            yield return PostAction("withdraw", pokemonId, r => ok = r);
+            if (ok)
+            {
+                _boxCache.Remove(_currentBox);
+                StartCoroutine(LoadBox(_currentBox, forceRefresh: true));
+                partyPanel?.Refresh();
+            }
         }
 
         private IEnumerator DepositPokemon(string pokemonId)
         {
-            yield return PostAction("deposit", pokemonId);
-            StartCoroutine(LoadBox(_currentBox));
-            partyPanel?.Refresh();
+            bool ok = false;
+            yield return PostAction("deposit", pokemonId, r => ok = r);
+            if (ok)
+            {
+                _boxCache.Remove(_currentBox);
+                StartCoroutine(LoadBox(_currentBox, forceRefresh: true));
+                partyPanel?.Refresh();
+            }
         }
 
-        private IEnumerator PostAction(string action, string pokemonId)
+        private IEnumerator PostAction(string action, string pokemonId, System.Action<bool> onDone)
         {
             string token = PlayerPrefs.GetString("jwt_token", "");
             string body  = JsonConvert.SerializeObject(new { PokemonId = pokemonId });
@@ -296,7 +343,14 @@ namespace PokemonMMO.Box
             yield return req.SendWebRequest();
 
             if (req.result != UnityWebRequest.Result.Success)
+            {
                 Debug.LogWarning($"[Box] {action} thất bại: {req.downloadHandler.text}");
+                onDone(false);
+            }
+            else
+            {
+                onDone(true);
+            }
         }
 
         // ── Box navigation ────────────────────────────────────────────────────

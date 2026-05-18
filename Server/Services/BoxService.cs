@@ -34,7 +34,7 @@ public class BoxService
         lock (_nameLock)
         {
             if (_nameById != null) return _nameById;
-            var path = Path.Combine(_env.WebRootPath, "data", "pokedex_final.json");
+            var path = Path.Combine(_env.ContentRootPath, "Data", "pokedex_final.json");
             var json = File.ReadAllText(path);
             using var doc = JsonDocument.Parse(json);
             var dict = new Dictionary<int, string>();
@@ -96,7 +96,8 @@ public class BoxService
             Nickname  = p.Nickname ?? "",
             Level     = p.Level,
             CurrentHp = p.CurrentHp,
-            MaxHp     = p.MaxHp
+            MaxHp     = p.MaxHp,
+            IconUrl   = ResolveIconUrl(p.SpeciesId)
         }).ToList();
 
         return new PartyInfoDto { Slots = slots };

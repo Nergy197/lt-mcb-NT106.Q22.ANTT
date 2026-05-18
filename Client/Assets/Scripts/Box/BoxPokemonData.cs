@@ -32,6 +32,7 @@ namespace PokemonMMO.Box
         public int    Level;
         public int    CurrentHp;
         public int    MaxHp;
+        public string IconUrl;
     }
 
     [System.Serializable]

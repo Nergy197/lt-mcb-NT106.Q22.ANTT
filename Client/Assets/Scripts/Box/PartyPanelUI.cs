@@ -20,7 +20,7 @@ namespace PokemonMMO.Box
         [Header("Settings")]
         public string serverBaseUrl = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app";
 
-        private readonly Dictionary<int, Sprite> _spriteCache = new();
+        private static readonly Dictionary<int, Sprite> _spriteCache = new();
 
         private void Start()
         {
@@ -59,11 +59,11 @@ namespace PokemonMMO.Box
             foreach (var slot in info.Slots)
             {
                 if (slot.Slot < 0 || slot.Slot >= slots.Length) continue;
-                StartCoroutine(LoadSlotSprite(slot.Slot, slot.SpeciesId, slot.PokemonId));
+                StartCoroutine(LoadSlotSprite(slot.Slot, slot.SpeciesId, slot.PokemonId, slot.IconUrl ?? ""));
             }
         }
 
-        private IEnumerator LoadSlotSprite(int slotIndex, int speciesId, string pokemonId)
+        private IEnumerator LoadSlotSprite(int slotIndex, int speciesId, string pokemonId, string iconUrl = "")
         {
             if (_spriteCache.TryGetValue(speciesId, out var cached))
             {
@@ -71,8 +71,11 @@ namespace PokemonMMO.Box
                 yield break;
             }
 
-            string url = $"{serverBaseUrl}/data/pokemon/front/{speciesId}.png";
-            using var req = UnityWebRequest.Get(url);
+            string primaryUrl = !string.IsNullOrEmpty(iconUrl)
+                ? $"{serverBaseUrl}{iconUrl}"
+                : $"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-viii/icons/{speciesId}.png";
+
+            using var req = UnityWebRequest.Get(primaryUrl);
             yield return req.SendWebRequest();
 
             Sprite sprite = null;
@@ -82,11 +85,14 @@ namespace PokemonMMO.Box
             }
             else
             {
-                string fallback = $"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{speciesId}.png";
-                using var req2 = UnityWebRequest.Get(fallback);
-                yield return req2.SendWebRequest();
-                if (req2.result == UnityWebRequest.Result.Success)
-                    sprite = MakeSprite(req2.downloadHandler.data);
+                string fallback = $"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-viii/icons/{speciesId}.png";
+                if (fallback != primaryUrl)
+                {
+                    using var req2 = UnityWebRequest.Get(fallback);
+                    yield return req2.SendWebRequest();
+                    if (req2.result == UnityWebRequest.Result.Success)
+                        sprite = MakeSprite(req2.downloadHandler.data);
+                }
             }
 
             if (sprite != null)
