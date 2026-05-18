@@ -152,8 +152,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 428.93088, y: -55.976223}
-  m_SizeDelta: {x: 1062.138, y: 916.7159}
+  m_AnchoredPosition: {x: 428.93088, y: -53.488033}
+  m_SizeDelta: {x: 1062.138, y: 869.4395}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &147349095
 GameObject:
@@ -574,7 +574,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.5723, y: -357}
+  m_AnchoredPosition: {x: 4.5723, y: -340}
   m_SizeDelta: {x: 523.1121, y: 118.5853}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &900501028
@@ -1054,8 +1054,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -95.51898, y: 0}
-  m_SizeDelta: {x: -191.04, y: 0.000061035}
+  m_AnchoredPosition: {x: -95.51898, y: -0.000030517578}
+  m_SizeDelta: {x: -191.04, y: -0.000061035}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1253055380
 MonoBehaviour:
@@ -1135,6 +1135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1402582076}
   - component: {fileID: 1402582075}
+  - component: {fileID: 1402582077}
   m_Layer: 0
   m_Name: PokedexManager
   m_TagString: Untagged
@@ -1154,8 +1155,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a382a0dff99d6d64d983981f4f1741f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PokemonMMO.UI.PokedexMenuPanel
-  menuSceneName: Menu scene
-  nationalPokedexPanel: {fileID: 1675086081}
   cursorImage: {fileID: 1877423845}
   menuItem0: {fileID: 581300505}
   menuItem1: {fileID: 2028659602}
@@ -1174,6 +1173,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1402582077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402582074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565baf5b0671b324488f8584028bfa64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PokemonMMO.UI.PokedexSceneController
+  menuPanel: {fileID: 1402582075}
+  menuObjects:
+  - {fileID: 237714205}
+  - {fileID: 561165001}
+  - {fileID: 301825329}
+  - {fileID: 1571117054}
+  nationalPanelGO: {fileID: 1675086081}
+  menuSceneName: Menu scene
 --- !u!1 &1427360548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,8 +1229,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 118.89633, y: -61.6034}
-  m_SizeDelta: {x: 35.0893, y: -121.8443}
+  m_AnchoredPosition: {x: 119.99997, y: -55.352203}
+  m_SizeDelta: {x: 38.0962, y: -112.6626}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1427360550
 MonoBehaviour:
@@ -2056,7 +2075,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -32.0893, y: 0}
+  m_SizeDelta: {x: -35.0962, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1909513402
 MonoBehaviour:
@@ -2264,7 +2283,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -43}
+  m_AnchoredPosition: {x: 0, y: -65}
   m_SizeDelta: {x: 0, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2113827421

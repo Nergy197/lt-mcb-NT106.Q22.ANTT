@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
+using PokemonMMO.UI;
 
 namespace PokemonMMO.Pokedex
 {
@@ -79,9 +80,9 @@ namespace PokemonMMO.Pokedex
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.DownArrow)  || Input.GetKeyDown(KeyCode.S)) Navigate(1);
-            if (Input.GetKeyDown(KeyCode.UpArrow)    || Input.GetKeyDown(KeyCode.W)) Navigate(-1);
-            if (Input.GetKeyDown(KeyCode.Escape)     || Input.GetKeyDown(KeyCode.X)) OnBackClicked();
+            if (Input.GetKeyDown(KeyCode.DownArrow)) Navigate(1);
+            else if (Input.GetKeyDown(KeyCode.UpArrow)) Navigate(-1);
+            else if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.Escape)) OnBackClicked();
         }
 
         private void Navigate(int dir)
@@ -166,9 +167,15 @@ namespace PokemonMMO.Pokedex
 
         public void OnBackClicked()
         {
-            gameObject.SetActive(false);
-            if (pokedexMenuPanel != null)
-                pokedexMenuPanel.SetActive(true);
+            var ctrl = FindFirstObjectByType<PokedexSceneController>();
+            if (ctrl != null)
+                ctrl.CloseNationalPokedex();
+            else
+            {
+                // Fallback nếu chưa dùng controller
+                gameObject.SetActive(false);
+                if (pokedexMenuPanel != null) pokedexMenuPanel.SetActive(true);
+            }
         }
     }
 }
