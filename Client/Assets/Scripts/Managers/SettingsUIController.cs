@@ -32,6 +32,7 @@ namespace PokemonMMO.UI
         [SerializeField] private Button controlsBackButton;
         [SerializeField] private Button cancelButton;
         [SerializeField] private Button confirmButton;
+        [SerializeField] private Button confirmLogoutCloseButton;
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         private static void BootstrapMenuSettingsUI()
@@ -248,6 +249,7 @@ namespace PokemonMMO.UI
 
             cancelButton = ResolveButton(cancelButton, confirmLogoutPanel, "CancelButton");
             confirmButton = ResolveButton(confirmButton, confirmLogoutPanel, "ConfirmButton");
+            confirmLogoutCloseButton = ResolveButton(confirmLogoutCloseButton, confirmLogoutPanel, "CloseButton (3)");
 
             WireButton(soundMenuButton, OpenSoundSettings, "SoundButton");
             WireButton(controlsMenuButton, OpenControlsSettings, "ControlsButton");
@@ -259,6 +261,7 @@ namespace PokemonMMO.UI
 
             WireButton(cancelButton, CloseConfirmLogout, "CancelButton");
             WireButton(confirmButton, ConfirmLogout, "ConfirmButton");
+            WireButton(confirmLogoutCloseButton, CloseConfirmLogout, "ConfirmLogoutCloseButton");
 
             if (volumeSlider != null)
             {
@@ -289,6 +292,7 @@ namespace PokemonMMO.UI
             DisableChildRaycasts(controlsBackButton);
             DisableChildRaycasts(cancelButton);
             DisableChildRaycasts(confirmButton);
+            DisableChildRaycasts(confirmLogoutCloseButton);
         }
 
         private static void DisableChildRaycasts(Button button)
