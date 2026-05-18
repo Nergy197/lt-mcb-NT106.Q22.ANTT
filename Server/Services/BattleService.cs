@@ -1614,15 +1614,17 @@ public class BattleService
                 SpDef      = ComputeStat(baseSpd, inst.Ivs.SpDef, inst.Evs.SpDef, spdMult),
                 Spd        = ComputeStat(baseSpePoke, inst.Ivs.Spd, inst.Evs.Spd, speMult),
                 NonVolatileStatus = PokemonStatusCondition.None,
-                Moves      = inst.Moves.Select(m => new PokemonMove
-                {
-                    MoveId    = m.MoveId,
-                    MoveName  = m.MoveName,
-                    MoveType  = m.MoveType,
-                    Category  = m.Category,
-                    MaxPp     = m.MaxPp > 0 ? m.MaxPp : 15,
-                    CurrentPp = m.CurrentPp > 0 ? m.CurrentPp : (m.MaxPp > 0 ? m.MaxPp : 15),
-                }).ToList(),
+                Moves      = inst.Moves.Count > 0
+                    ? inst.Moves.Select(m => new PokemonMove
+                      {
+                          MoveId    = m.MoveId,
+                          MoveName  = m.MoveName,
+                          MoveType  = m.MoveType,
+                          Category  = m.Category,
+                          MaxPp     = m.MaxPp > 0 ? m.MaxPp : 15,
+                          CurrentPp = m.CurrentPp > 0 ? m.CurrentPp : (m.MaxPp > 0 ? m.MaxPp : 15),
+                      }).ToList()
+                    : new List<PokemonMove> { new() { MoveId = 1, MoveName = "Pound", MoveType = "normal", Category = "Physical", MaxPp = 35, CurrentPp = 35 } },
             };
 
             snapshots.Add(snap);

@@ -98,6 +98,31 @@ public class RecruitService
             partySlot = Enumerable.Range(0, 6).First(i => !takenSlots.Contains(i));
         }
 
+        // Load default moves từ Pokedex
+        var dex = await _db.Pokedex.Find(d => d.Id == req.SpeciesId).FirstOrDefaultAsync();
+        var pokemonMoves = new List<PokemonMove>();
+        if (dex?.DefaultMoves != null && dex.DefaultMoves.Count > 0)
+        {
+            var moveIds = dex.DefaultMoves.Take(4).ToList();
+            var moveEntries = await _db.Moves.Find(m => moveIds.Contains(m.Id)).ToListAsync();
+            foreach (var moveId in moveIds)
+            {
+                var moveEntry = moveEntries.FirstOrDefault(m => m.Id == moveId);
+                if (moveEntry != null)
+                    pokemonMoves.Add(new PokemonMove
+                    {
+                        MoveId    = moveEntry.Id,
+                        MoveName  = moveEntry.Name,
+                        MoveType  = moveEntry.Type,
+                        Category  = moveEntry.Category,
+                        MaxPp     = moveEntry.PP > 0 ? moveEntry.PP : 15,
+                        CurrentPp = moveEntry.PP > 0 ? moveEntry.PP : 15,
+                    });
+            }
+        }
+        if (pokemonMoves.Count == 0)
+            pokemonMoves.Add(new PokemonMove { MoveId = 1, MoveName = "Pound", MoveType = "normal", Category = "Physical", MaxPp = 35, CurrentPp = 35 });
+
         var newPokemon = new PokemonInstance
         {
             OwnerId     = player.Id,
@@ -119,7 +144,8 @@ public class RecruitService
                 SpAtk = _rng.Next(32),
                 SpDef = _rng.Next(32),
                 Spd   = _rng.Next(32)
-            }
+            },
+            Moves = pokemonMoves
         };
 
         await _db.PokemonInstances.InsertOneAsync(newPokemon);
