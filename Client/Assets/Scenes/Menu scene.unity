@@ -1,4 +1,4 @@
-%YAML 1.1
+﻿%YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!29 &1
 OcclusionCullingSettings:
@@ -9703,7 +9703,7 @@ MonoBehaviour:
   - {fileID: -1449841923878591982, guid: e474c67bcc959d9449a6a71b2f6f7c8a, type: 3}
   - {fileID: 5960016159667237180, guid: 1b7de4b6c4d9d7d4eaa59f49b1d37c4b, type: 3}
   - {fileID: -8471956944533903022, guid: 0222bf7407394a744a6c9c959c96708c, type: 3}
-  apiUrl: http://localhost:2567/api/friends
+  apiUrl: https://lt-mcb-nt106q22antt-production-cc69.up.railway.app/api/friends
 --- !u!1 &2090029580
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using TMPro;
@@ -15,7 +15,7 @@ namespace PokemonMMO.Box
         public Image    boxWallpaper;
         public TMP_Text boxNameText;
 
-        [Header("Grid (6 cột × 5 hàng = 30 slot)")]
+        [Header("Grid (6 cá»™t Ã— 5 hÃ ng = 30 slot)")]
         public Transform  gridContainer;
         public GameObject slotPrefab;
 
@@ -35,16 +35,16 @@ namespace PokemonMMO.Box
         public RectTransform exitButtonRect;
 
         [Header("Settings")]
-        public string serverBaseUrl = "http://localhost:2567";
+        public string serverBaseUrl = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app";
         public string menuSceneName = "Menu scene";
 
-        // ── Constants ─────────────────────────────────────────────────────────
+        // â”€â”€ Constants â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         private const int Cols      = 6;
         private const int Rows      = 5;
         private const int PartyCols = 2;
         private const int PartyRows = 3;
 
-        // ── Box state ─────────────────────────────────────────────────────────
+        // â”€â”€ Box state â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         private BoxSlotUI[] _slots;
         private int  _currentBox = 0;
         private int  _totalBoxes = 32;
@@ -52,7 +52,7 @@ namespace PokemonMMO.Box
         private int  _cursorCol  = 0;
         private int  _cursorRow  = 0;
 
-        // ── Party focus state ─────────────────────────────────────────────────
+        // â”€â”€ Party focus state â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         private bool _isFocusOnParty  = false;
         private bool _onExitButton    = false;
         private int  _partyCol = 0;
@@ -60,7 +60,7 @@ namespace PokemonMMO.Box
 
         private readonly Dictionary<int, Sprite> _spriteCache = new();
 
-        // ── Lifecycle ─────────────────────────────────────────────────────────
+        // â”€â”€ Lifecycle â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         private void Awake() => BuildGrid();
 
@@ -75,7 +75,7 @@ namespace PokemonMMO.Box
             StartCoroutine(LoadBox(_currentBox));
         }
 
-        // ── Grid ──────────────────────────────────────────────────────────────
+        // â”€â”€ Grid â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         private void BuildGrid()
         {
@@ -90,7 +90,7 @@ namespace PokemonMMO.Box
             }
         }
 
-        // ── Load box ──────────────────────────────────────────────────────────
+        // â”€â”€ Load box â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         private IEnumerator LoadBox(int boxIndex)
         {
@@ -104,7 +104,7 @@ namespace PokemonMMO.Box
             BoxInfoData info = null;
             if (req.result != UnityWebRequest.Result.Success)
             {
-                Debug.LogWarning($"[Box] Load thất bại: {req.error}");
+                Debug.LogWarning($"[Box] Load tháº¥t báº¡i: {req.error}");
             }
             else
             {
@@ -125,7 +125,7 @@ namespace PokemonMMO.Box
                     ? info.BoxName
                     : $"Box {boxIndex + 1}";
 
-            // Ép layout tính xong vị trí slot trước khi đặt cursor
+            // Ã‰p layout tÃ­nh xong vá»‹ trÃ­ slot trÆ°á»›c khi Ä‘áº·t cursor
             Canvas.ForceUpdateCanvases();
             UpdateCursor();
         }
@@ -138,7 +138,7 @@ namespace PokemonMMO.Box
                 yield break;
             }
 
-            // Ưu tiên icon URL từ server (ảnh icon nhỏ), fallback PokeAPI icon
+            // Æ¯u tiÃªn icon URL tá»« server (áº£nh icon nhá»), fallback PokeAPI icon
             string primaryUrl = !string.IsNullOrEmpty(iconUrl)
                 ? $"{serverBaseUrl}{iconUrl}"
                 : $"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-viii/icons/{speciesId}.png";
@@ -176,7 +176,7 @@ namespace PokemonMMO.Box
             return Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0.5f, 0.5f));
         }
 
-        // ── Input ─────────────────────────────────────────────────────────────
+        // â”€â”€ Input â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         private void Update()
         {
@@ -237,7 +237,7 @@ namespace PokemonMMO.Box
                 SceneManager.LoadScene(menuSceneName);
         }
 
-        // ── Confirm / Menu ────────────────────────────────────────────────────
+        // â”€â”€ Confirm / Menu â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         private void ConfirmBoxSlot()
         {
@@ -246,7 +246,7 @@ namespace PokemonMMO.Box
             if (idx >= _slots.Length || _slots[idx].IsEmpty) return;
 
             string pid = _slots[idx].PokemonId;
-            contextMenu?.Show("Rút ra", "Huỷ", choice =>
+            contextMenu?.Show("RÃºt ra", "Huá»·", choice =>
             {
                 if (choice == 0) StartCoroutine(WithdrawPokemon(pid));
             });
@@ -260,13 +260,13 @@ namespace PokemonMMO.Box
             if (slot == null || slot.IsEmpty) return;
 
             string pid = slot.PokemonId;
-            contextMenu?.Show("Đưa vào", "Huỷ", choice =>
+            contextMenu?.Show("ÄÆ°a vÃ o", "Huá»·", choice =>
             {
                 if (choice == 0) StartCoroutine(DepositPokemon(pid));
             });
         }
 
-        // ── API calls ─────────────────────────────────────────────────────────
+        // â”€â”€ API calls â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         private IEnumerator WithdrawPokemon(string pokemonId)
         {
@@ -296,10 +296,10 @@ namespace PokemonMMO.Box
             yield return req.SendWebRequest();
 
             if (req.result != UnityWebRequest.Result.Success)
-                Debug.LogWarning($"[Box] {action} thất bại: {req.downloadHandler.text}");
+                Debug.LogWarning($"[Box] {action} tháº¥t báº¡i: {req.downloadHandler.text}");
         }
 
-        // ── Box navigation ────────────────────────────────────────────────────
+        // â”€â”€ Box navigation â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         private void MoveUp()
         {
@@ -340,7 +340,7 @@ namespace PokemonMMO.Box
             StartCoroutine(LoadBox(_currentBox));
         }
 
-        // ── Cursor ────────────────────────────────────────────────────────────
+        // â”€â”€ Cursor â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         private void UpdateCursor()
         {
@@ -385,7 +385,7 @@ namespace PokemonMMO.Box
             if (slotIndex < _slots.Length)
             {
                 _slots[slotIndex].GetComponent<RectTransform>().GetWorldCorners(corners);
-                // top-center của slot
+                // top-center cá»§a slot
                 cursorArrow.position = new Vector3(
                     (corners[1].x + corners[2].x) * 0.5f,
                     corners[1].y,

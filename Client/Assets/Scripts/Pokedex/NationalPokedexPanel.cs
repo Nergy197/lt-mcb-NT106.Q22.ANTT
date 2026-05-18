@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
@@ -26,7 +26,7 @@ namespace PokemonMMO.Pokedex
         public GameObject pokedexMenuPanel;
 
         [Header("Settings")]
-        public string serverBaseUrl = "http://localhost:2567";
+        public string serverBaseUrl = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app";
 
         private List<PokedexEntry> _entries  = new();
         private List<PokedexItemUI> _items   = new();
@@ -40,7 +40,7 @@ namespace PokemonMMO.Pokedex
             StartCoroutine(LoadData());
         }
 
-        // ── Load JSON ────────────────────────────────────────────────────────
+        // â”€â”€ Load JSON â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         private IEnumerator LoadData()
         {
@@ -51,14 +51,14 @@ namespace PokemonMMO.Pokedex
             _entries = _entries.FindAll(e => e.id < 10000);
             _entries.Sort((a, b) => a.id.CompareTo(b.id));
 
-            totalCountText.text = $"Tổng số Pokémon: {_entries.Count}";
+            totalCountText.text = $"Tá»•ng sá»‘ PokÃ©mon: {_entries.Count}";
 
             PopulateList();
             _loaded = true;
             SelectItem(0);
         }
 
-        // ── Populate list ────────────────────────────────────────────────────
+        // â”€â”€ Populate list â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         private void PopulateList()
         {
@@ -70,13 +70,13 @@ namespace PokemonMMO.Pokedex
             {
                 var obj = Instantiate(itemPrefab, listContent);
                 var ui  = obj.GetComponent<PokedexItemUI>();
-                if (ui == null) { Debug.LogError("[Pokedex] PokedexItemUI không có trên prefab!"); continue; }
+                if (ui == null) { Debug.LogError("[Pokedex] PokedexItemUI khÃ´ng cÃ³ trÃªn prefab!"); continue; }
                 ui.SetData(entry.id, entry.DisplayName, OnItemClicked);
                 _items.Add(ui);
             }
         }
 
-        // ── Keyboard navigation ──────────────────────────────────────────────
+        // â”€â”€ Keyboard navigation â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         private void Update()
         {
@@ -98,7 +98,7 @@ namespace PokemonMMO.Pokedex
             if (idx >= 0) SelectItem(idx);
         }
 
-        // ── Select ───────────────────────────────────────────────────────────
+        // â”€â”€ Select â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         private void SelectItem(int index)
         {
@@ -117,7 +117,7 @@ namespace PokemonMMO.Pokedex
             _spriteCoroutine = StartCoroutine(LoadSprite(entry));
         }
 
-        // ── Load sprite: thử server trước, fallback sang sprite_url trong JSON ─
+        // â”€â”€ Load sprite: thá»­ server trÆ°á»›c, fallback sang sprite_url trong JSON â”€
 
         private IEnumerator LoadSprite(PokedexEntry entry)
         {
@@ -134,13 +134,13 @@ namespace PokemonMMO.Pokedex
 
         private IEnumerator TryLoadUrl(string url)
         {
-            Debug.Log($"[Pokedex] Load ảnh: {url}");
+            Debug.Log($"[Pokedex] Load áº£nh: {url}");
             using var req = UnityWebRequest.Get(url);
             yield return req.SendWebRequest();
 
             if (req.result == UnityWebRequest.Result.Success)
             {
-                Debug.Log($"[Pokedex] Tải thành công: {url}");
+                Debug.Log($"[Pokedex] Táº£i thÃ nh cÃ´ng: {url}");
                 var tex = new Texture2D(2, 2, TextureFormat.RGBA32, false);
                 tex.LoadImage(req.downloadHandler.data);
                 pokemonSpriteImage.sprite         = Sprite.Create(
@@ -150,11 +150,11 @@ namespace PokemonMMO.Pokedex
             }
             else
             {
-                Debug.LogWarning($"[Pokedex] Tải thất bại: {url} | {req.error}");
+                Debug.LogWarning($"[Pokedex] Táº£i tháº¥t báº¡i: {url} | {req.error}");
             }
         }
 
-        // ── Scroll ───────────────────────────────────────────────────────────
+        // â”€â”€ Scroll â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         private void ScrollToItem(int index)
         {
@@ -163,7 +163,7 @@ namespace PokemonMMO.Pokedex
             scrollRect.verticalNormalizedPosition = 1f - t;
         }
 
-        // ── Back button ──────────────────────────────────────────────────────
+        // â”€â”€ Back button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         public void OnBackClicked()
         {
@@ -172,7 +172,7 @@ namespace PokemonMMO.Pokedex
                 ctrl.CloseNationalPokedex();
             else
             {
-                // Fallback nếu chưa dùng controller
+                // Fallback náº¿u chÆ°a dÃ¹ng controller
                 gameObject.SetActive(false);
                 if (pokedexMenuPanel != null) pokedexMenuPanel.SetActive(true);
             }

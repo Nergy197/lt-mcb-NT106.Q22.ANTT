@@ -1,4 +1,4 @@
-%YAML 1.1
+﻿%YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!29 &1
 OcclusionCullingSettings:
@@ -1607,7 +1607,7 @@ MonoBehaviour:
   itemPrefab: {fileID: 2601313646476853661, guid: 6b12fbf5e6ffa75419d48c1c4fb081a1, type: 3}
   scrollRect: {fileID: 1253055380}
   pokedexMenuPanel: {fileID: 561165001}
-  serverBaseUrl: http://localhost:2567
+  serverBaseUrl: https://lt-mcb-nt106q22antt-production-cc69.up.railway.app
 --- !u!1 &1716302598
 GameObject:
   m_ObjectHideFlags: 0

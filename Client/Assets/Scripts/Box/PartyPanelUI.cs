@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using UnityEngine;
@@ -10,7 +10,7 @@ namespace PokemonMMO.Box
 {
     public class PartyPanelUI : MonoBehaviour
     {
-        [Header("Party Slots (6 ô, đúng thứ tự slot 0-5)")]
+        [Header("Party Slots (6 Ã´, Ä‘Ãºng thá»© tá»± slot 0-5)")]
         public PartySlotUI[] slots = new PartySlotUI[6];
 
         [Header("Exit Button")]
@@ -18,7 +18,7 @@ namespace PokemonMMO.Box
         public string exitSceneName = "PokedexScene";
 
         [Header("Settings")]
-        public string serverBaseUrl = "http://localhost:2567";
+        public string serverBaseUrl = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app";
 
         private readonly Dictionary<int, Sprite> _spriteCache = new();
 
@@ -49,7 +49,7 @@ namespace PokemonMMO.Box
 
             if (req.result != UnityWebRequest.Result.Success)
             {
-                Debug.LogWarning($"[Party] Load thất bại: {req.error}");
+                Debug.LogWarning($"[Party] Load tháº¥t báº¡i: {req.error}");
                 yield break;
             }
 
