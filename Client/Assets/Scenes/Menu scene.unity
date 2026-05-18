@@ -1019,19 +1019,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 233938087}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1140646756}
-        m_TargetAssemblyTypeName: ChatManager, Assembly-CSharp
-        m_MethodName: SendMessageFromInput
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &233938087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2142,6 +2130,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 583758468}
   m_CullTransparentMesh: 1
+--- !u!1 &593455896
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 593455897}
+  - component: {fileID: 593455898}
+  m_Layer: 0
+  m_Name: MailManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &593455897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593455896}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 899.235, y: 474.38583, z: 0}
+  m_LocalScale: {x: 1.2712786, y: 1.2712786, z: 1.2712786}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1248386264}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &593455898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593455896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b741342b6e1d4484a9d8d5f199ec144c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MailManager
+  mailPopup: {fileID: 1140646752}
+  worldPopup: {fileID: 1532259295}
+  mailButtonBottom: {fileID: 779266291}
 --- !u!1 &605113150
 GameObject:
   m_ObjectHideFlags: 0
@@ -6268,13 +6303,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChatManager
   myMessagePrefab: {fileID: 8247339420169385443, guid: 90e7779004ee4e542973e7007722301a, type: 3}
-  friendMessagePrefab: {fileID: 8487285405097264129, guid: 8f0b4f4f3dc0f704fa80eba7a594d5d8, type: 3}
+  friendMessagePrefab: {fileID: 8487285405097264129, guid: d64dcfed6a98d174eb43ec9cd6641100, type: 3}
   contentContainer: {fileID: 115331795}
   inputField: {fileID: 1313608846}
   scrollRect: {fileID: 1760856558}
   currentChatType: 1
   currentReceiverId: 
   currentFriendAvatar: {fileID: 0}
+  keepSubscribed: 0
 --- !u!1 &1150530959
 GameObject:
   m_ObjectHideFlags: 0
@@ -6781,6 +6817,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 593455897}
   - {fileID: 796459654}
   - {fileID: 88347940}
   - {fileID: 1743663292}
@@ -9191,7 +9228,7 @@ MonoBehaviour:
   inputField: {fileID: 1024512520}
   sendButton: {fileID: 233938086}
   myMessagePrefab: {fileID: 8247339420169385443, guid: 90e7779004ee4e542973e7007722301a, type: 3}
-  friendMessagePrefab: {fileID: 8487285405097264129, guid: 053f36a85244f5b478a10390b0111492, type: 3}
+  friendMessagePrefab: {fileID: 8487285405097264129, guid: de2cde306ffd0416b8a361d652d30c02, type: 3}
   maxMessages: 100
 --- !u!1 &1943248148
 GameObject:
