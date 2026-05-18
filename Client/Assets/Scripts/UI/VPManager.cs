@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Text;
 using UnityEngine;
@@ -47,7 +47,7 @@ public class VPManager : MonoBehaviour
         string token = PlayerPrefs.GetString("jwt_token", "");
         if (string.IsNullOrWhiteSpace(token))
         {
-            Debug.LogWarning("[VP] KhÃ´ng tÃ¬m tháº¥y JWT token, chÆ°a thá»ƒ láº¥y VP tá»« server.");
+            Debug.LogWarning("[VP] Không tìm thấy JWT token, chưa thể lấy VP từ server.");
             yield break;
         }
 
@@ -96,7 +96,7 @@ public class VPManager : MonoBehaviour
         string token = PlayerPrefs.GetString("jwt_token", "");
         if (string.IsNullOrWhiteSpace(token))
         {
-            Debug.LogWarning("[VP] KhÃ´ng tÃ¬m tháº¥y JWT token, khÃ´ng thá»ƒ debug thay Ä‘á»•i VP.");
+            Debug.LogWarning("[VP] Không tìm thấy JWT token, không thể debug thay đổi VP.");
             yield break;
         }
 
