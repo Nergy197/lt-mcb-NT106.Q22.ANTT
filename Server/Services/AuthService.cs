@@ -91,15 +91,12 @@ public class AuthService
         {
             AccountId = account.Id,
             Name = account.Username,
-            VP = 0,
+            VP = 15000,
             MMR = 1000,
             RankedWins = 0,
             RankedMatches = 0
         };
         await _db.Players.InsertOneAsync(player);
-
-        // Nạp 6 Pokemon mặc định cho Player
-        await _gameService.SeedInitialPokemonAsync(player.Id);
 
         _log.LogInformation("[Register] Success — AccountId: {Id}, Username: {Username}, PlayerId: {PlayerId}", account.Id, account.Username, player.Id);
         return (true, null);
@@ -129,13 +126,6 @@ public class AuthService
         {
             _log.LogWarning("[Login] Failed — Player profile missing for AccountId: {Id}", account.Id);
             return (null, "Lỗi kết cấu: Tài khoản này chưa có hồ sơ người chơi (Player).");
-        }
-
-        // Tự động nạp Pokemon cho tài khoản cũ nếu chưa có
-        var hasPokemon = await _db.PokemonInstances.Find(p => p.OwnerId == player.Id).AnyAsync();
-        if (!hasPokemon)
-        {
-            await _gameService.SeedInitialPokemonAsync(player.Id);
         }
 
         var token = GenerateJwt(account, player.Id);
