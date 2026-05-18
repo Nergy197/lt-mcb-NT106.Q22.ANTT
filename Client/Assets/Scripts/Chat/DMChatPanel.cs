@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -5,26 +6,23 @@ using UnityEngine.UI;
 
 namespace Game.Chat
 {
-    /// <summary>
-    /// Gắn vào GameObject MailPopup trong scene.
-    /// Kéo các thành phần UI vào Inspector theo hướng dẫn [Header].
-    /// </summary>
     public class DMChatPanel : MonoBehaviour
     {
         public static DMChatPanel Instance { get; private set; }
 
         [Header("UI - kéo từ scene vào")]
-        public ScrollRect   chatScroll;
-        public Transform    messageContainer; // Content của ScrollRect
+        public ScrollRect     chatScroll;
+        public Transform      messageContainer;
         public TMP_InputField inputField;
-        public Button       sendButton;
-        public TextMeshProUGUI headerLabel;   // Hiện tên bạn đang chat
+        public Button         sendButton;
+        public TextMeshProUGUI headerLabel;
 
         [Header("Prefab tin nhắn")]
-        public GameObject messagePrefab; // Prefab có script MessageItemUI
+        public GameObject messagePrefab;
 
         private string _currentFriendId;
         private string _myPlayerId;
+        private bool   _subscribed = false;
 
         private void Awake()
         {
@@ -34,60 +32,85 @@ namespace Game.Chat
         private void Start()
         {
             _myPlayerId = PlayerPrefs.GetString("player_id", "");
-
             if (sendButton != null)
                 sendButton.onClick.AddListener(OnSendClick);
+        }
 
-            if (ChatHubClient.Instance != null)
-            {
-                ChatHubClient.Instance.OnChatHistory   += HandleChatHistory;
-                ChatHubClient.Instance.OnDirectMessage += HandleDirectMessage;
-                ChatHubClient.Instance.OnError         += HandleError;
-            }
+        private void OnEnable()
+        {
+            StartCoroutine(SubscribeWhenReady());
+        }
+
+        private void OnDisable()
+        {
+            Unsubscribe();
         }
 
         private void OnDestroy()
         {
             if (Instance == this) Instance = null;
+            Unsubscribe();
+        }
 
-            if (ChatHubClient.Instance != null)
+        // ── Subscription ─────────────────────────────────────────────────────
+
+        private IEnumerator SubscribeWhenReady()
+        {
+            float elapsed = 0f;
+            while ((ChatHubClient.Instance == null || !ChatHubClient.Instance.IsReady) && elapsed < 10f)
             {
-                ChatHubClient.Instance.OnChatHistory   -= HandleChatHistory;
-                ChatHubClient.Instance.OnDirectMessage -= HandleDirectMessage;
-                ChatHubClient.Instance.OnError         -= HandleError;
+                elapsed += 0.5f;
+                yield return new WaitForSeconds(0.5f);
+            }
+            if (ChatHubClient.Instance == null) yield break;
+
+            if (!_subscribed)
+            {
+                ChatHubClient.Instance.OnChatHistory   += HandleChatHistory;
+                ChatHubClient.Instance.OnDirectMessage += HandleDirectMessage;
+                ChatHubClient.Instance.OnError         += HandleError;
+                _subscribed = true;
             }
         }
 
-        /// <summary>Gọi từ FriendItemUI khi người dùng click vào 1 bạn.</summary>
+        private void Unsubscribe()
+        {
+            if (!_subscribed || ChatHubClient.Instance == null) return;
+            ChatHubClient.Instance.OnChatHistory   -= HandleChatHistory;
+            ChatHubClient.Instance.OnDirectMessage -= HandleDirectMessage;
+            ChatHubClient.Instance.OnError         -= HandleError;
+            _subscribed = false;
+        }
+
+        // ── Public API ───────────────────────────────────────────────────────
+
         public void OpenChat(string friendId, string friendName)
         {
             _currentFriendId = friendId;
-
-            if (headerLabel != null)
-                headerLabel.text = friendName;
-
+            if (headerLabel != null) headerLabel.text = friendName;
             ClearMessages();
             ChatHubClient.Instance?.LoadDirectHistory(friendId);
         }
 
+        // ── Handlers ─────────────────────────────────────────────────────────
+
         private void HandleChatHistory(ChatHistoryPayload payload)
         {
-            if (payload.Channel != "dm") return;
+            if (payload?.Channel != "dm") return;
             if (payload.OtherPlayerId != _currentFriendId) return;
 
             ClearMessages();
             foreach (var msg in payload.Messages)
                 AppendMessage(msg);
-
             ScrollToBottom();
         }
 
         private void HandleDirectMessage(ChatMessageData msg)
         {
-            bool isFromFriend = msg.SenderId == _currentFriendId;
-            bool isToFriend   = msg.ReceiverId == _currentFriendId && msg.SenderId == _myPlayerId;
-
-            if (!isFromFriend && !isToFriend) return;
+            // Bỏ qua tin nhắn của chính mình (đã render local khi send)
+            if (msg.SenderId == _myPlayerId) return;
+            // Chỉ hiện nếu đúng là từ người đang chat
+            if (msg.SenderId != _currentFriendId) return;
 
             AppendMessage(msg);
             ScrollToBottom();
@@ -98,24 +121,52 @@ namespace Game.Chat
             Debug.LogWarning($"[DMChat] Lỗi: {error}");
         }
 
+        // ── Gửi tin ──────────────────────────────────────────────────────────
+
         private void OnSendClick()
         {
             if (string.IsNullOrEmpty(_currentFriendId)) return;
-
             string text = inputField?.text?.Trim();
             if (string.IsNullOrEmpty(text)) return;
 
-            ChatHubClient.Instance?.SendDirectMessage(_currentFriendId, text);
             inputField.text = "";
+            inputField.ActivateInputField();
+
+            // Render local ngay lập tức, không chờ server echo
+            AppendMessage(new ChatMessageData {
+                SenderId   = _myPlayerId,
+                SenderName = "Tôi",
+                Content    = text,
+                CreatedAt  = DateTime.UtcNow
+            });
+            ScrollToBottom();
+
+            ChatHubClient.Instance?.SendDirectMessage(_currentFriendId, text);
         }
+
+        // ── Render ───────────────────────────────────────────────────────────
 
         private void AppendMessage(ChatMessageData msg)
         {
             if (messagePrefab == null || messageContainer == null) return;
+            bool isMe = msg.SenderId == _myPlayerId;
 
             var obj = Instantiate(messagePrefab, messageContainer);
             var ui  = obj.GetComponent<MessageItemUI>();
-            ui?.SetData(msg.SenderName, msg.Content, msg.CreatedAt, msg.SenderId == _myPlayerId);
+            if (ui != null) { ui.SetData(msg.SenderName, msg.Content, msg.CreatedAt, isMe); return; }
+
+            // Fallback nếu prefab không có MessageItemUI
+            var bubble      = obj.transform.Find("MessageBubble");
+            var contentText = bubble != null
+                ? bubble.GetComponentInChildren<TMP_Text>()
+                : obj.GetComponentInChildren<TMP_Text>();
+            if (contentText != null) contentText.text = msg.Content ?? "";
+
+            if (!isMe)
+            {
+                var nameLabel = obj.transform.Find("SenderName_Text")?.GetComponent<TMP_Text>();
+                if (nameLabel != null) nameLabel.text = msg.SenderName ?? "";
+            }
         }
 
         private void ClearMessages()

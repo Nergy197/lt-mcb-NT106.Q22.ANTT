@@ -15,7 +15,6 @@ public class FriendItemUI : MonoBehaviour
     private Image _bg;
     private Color _normalColor;
     private static readonly Color HighlightColor = new Color(0.55f, 0.55f, 0.55f, 1f);
-
     private static FriendItemUI _selected;
 
     private void Awake()
@@ -39,15 +38,17 @@ public class FriendItemUI : MonoBehaviour
 
     public void OnClickFriend()
     {
-        Debug.Log($"<color=red>======= [CLICK] =======</color> Đã nhấn: {myPlayerName}");
+        Debug.Log($"[FriendItemUI] Nhấn: {myPlayerName} ({myPlayerId})");
 
         Select();
 
+        // ChatManager — xử lý DM với prefab đơn giản
         ChatManager chat = FindFirstObjectByType<ChatManager>(FindObjectsInactive.Include);
         if (chat != null)
             chat.SetActiveChatFriend(myPlayerId, myPlayerName, myAvatar);
-        else
-            Debug.LogError("KHÔNG TÌM THẤY ChatManager TRONG SCENE!");
+
+        // DMChatPanel — xử lý DM với MessageItemUI (nếu có trong scene)
+        Game.Chat.DMChatPanel.Instance?.OpenChat(myPlayerId, myPlayerName);
     }
 
     private void Select()

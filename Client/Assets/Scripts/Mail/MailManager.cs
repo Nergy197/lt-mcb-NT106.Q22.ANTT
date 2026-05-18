@@ -3,47 +3,47 @@ using UnityEngine.UI;
 
 public class MailManager : MonoBehaviour
 {
-    public GameObject mailPopup;  // Tab Bạn bè
-    public GameObject worldPopup; // Tab Thế giới
-    public Image mailButtonBottom; // Icon Mail dưới cùng
+    public GameObject mailPopup;
+    public GameObject worldPopup;
+    public Image mailButtonBottom;
 
-    // 1. Nút Mail dưới cùng
+    private ChatManager _chat;
+
+    private void Awake()
+    {
+        _chat = FindFirstObjectByType<ChatManager>(FindObjectsInactive.Include);
+    }
+
     public void ToggleMail()
     {
-        // Nếu một trong hai đang bật -> Đóng tất cả
         if (mailPopup.activeSelf || worldPopup.activeSelf)
-        {
             CloseAll();
-        }
         else
-        {
-            OpenFriendTab(); // Mặc định mở Friend
-        }
+            OpenFriendTab();
     }
 
     private void CloseAll()
     {
         mailPopup.SetActive(false);
         worldPopup.SetActive(false);
-        // Trả về màu trắng gốc (Full sáng)
+        if (_chat != null) _chat.keepSubscribed = false;
         mailButtonBottom.color = Color.white;
     }
 
-    // 2. Chuyển sang World Tab
     public void OpenWorldTab()
     {
         mailPopup.SetActive(false);
         worldPopup.SetActive(true);
-        // Làm tối nút đi một chút để biết là đang mở (Gray)
         mailButtonBottom.color = new Color(0.7f, 0.7f, 0.7f, 1f);
+        // Giữ ChatManager subscribe để không miss DM trong khi đang xem World Chat
+        if (_chat != null) _chat.keepSubscribed = true;
     }
 
-    // 3. Chuyển sang Friend Tab
     public void OpenFriendTab()
     {
         worldPopup.SetActive(false);
         mailPopup.SetActive(true);
-        // Làm tối nút đi một chút
         mailButtonBottom.color = new Color(0.7f, 0.7f, 0.7f, 1f);
+        if (_chat != null) _chat.keepSubscribed = false;
     }
 }

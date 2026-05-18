@@ -17,6 +17,7 @@ namespace Game.Chat
         public event Action<ChatMessageData>    OnWorldMessage;
         public event Action<ChatMessageData>    OnDirectMessage;
         public event Action<string>             OnError;
+        public event Action                     OnConnected;
 
         public bool IsReady => _isListening;
 
@@ -80,6 +81,7 @@ namespace Game.Chat
 
             _isListening = true;
             Debug.Log("[ChatHubClient] Handlers đã đăng ký lên SignalRClient.Chat.");
+            Dispatch(() => OnConnected?.Invoke());
         }
 
         public void LoadWorldHistory()
