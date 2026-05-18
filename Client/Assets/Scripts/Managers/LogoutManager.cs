@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,21 +16,21 @@ namespace PokemonMMO.UI
         private static readonly HttpClient Http = new HttpClient { Timeout = TimeSpan.FromSeconds(8) };
 
         private string ServerUrl =>
-            SignalRClient.Instance != null ? SignalRClient.Instance.serverUrl : "http://127.0.0.1:2567";
+            SignalRClient.Instance != null ? SignalRClient.Instance.serverUrl : "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app";
 
-        // ── Gọi từ nút Đăng xuất ─────────────────────────────────────────
+        // â”€â”€ Gá»i tá»« nÃºt ÄÄƒng xuáº¥t â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         public void OnLogoutClicked()
         {
             _ = LogoutAsync(loadScene: true);
         }
 
-        // ── Gọi từ nút Thoát game ────────────────────────────────────────
+        // â”€â”€ Gá»i tá»« nÃºt ThoÃ¡t game â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         public void OnQuitClicked()
         {
             _ = LogoutThenQuitAsync();
         }
 
-        // ── Nội bộ ───────────────────────────────────────────────────────
+        // â”€â”€ Ná»™i bá»™ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         private async Task LogoutAsync(bool loadScene)
         {
@@ -47,7 +47,7 @@ namespace PokemonMMO.UI
                 }
                 catch (Exception ex)
                 {
-                    Debug.LogWarning($"[Logout] Không gọi được API logout: {ex.Message}");
+                    Debug.LogWarning($"[Logout] KhÃ´ng gá»i Ä‘Æ°á»£c API logout: {ex.Message}");
                 }
             }
 
@@ -55,7 +55,7 @@ namespace PokemonMMO.UI
 
             if (loadScene)
             {
-                // Ngắt SignalR trước khi đổi scene
+                // Ngáº¯t SignalR trÆ°á»›c khi Ä‘á»•i scene
                 if (SignalRClient.Instance != null)
                     await SignalRClient.Instance.DisconnectAsync();
 
@@ -81,7 +81,8 @@ namespace PokemonMMO.UI
             PlayerPrefs.DeleteKey("account_id");
             PlayerPrefs.Save();
             FriendListLoader.ClearAvatarCache();
-            Debug.Log("[Logout] Đã xóa session local.");
+            Debug.Log("[Logout] ÄÃ£ xÃ³a session local.");
         }
     }
 }
+

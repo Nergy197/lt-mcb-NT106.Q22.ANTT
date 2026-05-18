@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -14,12 +14,12 @@ namespace Game.Battle.Logic
         public SpriteRenderer enemyLeadSlot;
         public SpriteRenderer enemySub2Slot;
 
-        private string _serverUrl = "http://127.0.0.1:2567/data/pokemon";
+        private string _serverUrl = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app/data/pokemon";
 
         // Cache sprite da tai de tranh tai lai
         private static readonly Dictionary<string, Sprite> _spriteCache = new();
 
-        // ── API CHINH ────────────────────────────────────────────────────────
+        // â”€â”€ API CHINH â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         /// <summary>
         /// Tai sprite chien dau (SpriteRenderer tren san) + icon mini (Image tren HUD).
@@ -30,7 +30,7 @@ namespace Game.Battle.Logic
         }
 
         /// <summary>
-        /// Tai icon va gan truc tiep vao Image component — dung cho Party Panel, Team Preview.
+        /// Tai icon va gan truc tiep vao Image component â€” dung cho Party Panel, Team Preview.
         /// Khong can tim theo ten, khong bi loi khi object an.
         /// </summary>
         public void LoadIconDirect(string pokemonName, Image targetImage)
@@ -49,7 +49,7 @@ namespace Game.Battle.Logic
             StartCoroutine(DownloadIconDirect(species, targetImage, cacheKey));
         }
 
-        // ── COROUTINES ───────────────────────────────────────────────────────
+        // â”€â”€ COROUTINES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         private IEnumerator DownloadSpriteCoroutine(string slotName, string hudName, string pokemonName, bool isBackSprite)
         {
@@ -83,7 +83,7 @@ namespace Game.Battle.Logic
                         }
                         else if (isBackSprite)
                         {
-                            // FALLBACK: back/ khong co → dung front/
+                            // FALLBACK: back/ khong co â†’ dung front/
                             string fallbackUrl = $"{_serverUrl}/front/{species}.png";
                             string fallbackKey = $"front_{species}";
                             using (UnityWebRequest uwr2 = UnityWebRequest.Get(fallbackUrl))
@@ -204,7 +204,7 @@ namespace Game.Battle.Logic
             }
         }
 
-        // ── HELPERS ──────────────────────────────────────────────────────────
+        // â”€â”€ HELPERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
         private static Sprite MakeSprite(byte[] bytes, Vector2 pivot)
         {
@@ -243,7 +243,7 @@ namespace Game.Battle.Logic
         }
 
         /// <summary>
-        /// Gan icon vao HUD — dung FindInactive de tim ca object dang an.
+        /// Gan icon vao HUD â€” dung FindInactive de tim ca object dang an.
         /// </summary>
         private void ApplyIconToHUD(string hudName, Sprite icon)
         {
@@ -293,3 +293,4 @@ namespace Game.Battle.Logic
         }
     }
 }
+

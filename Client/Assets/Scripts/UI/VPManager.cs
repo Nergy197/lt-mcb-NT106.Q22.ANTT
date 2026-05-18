@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Text;
 using UnityEngine;
@@ -9,7 +9,7 @@ public class VPManager : MonoBehaviour
     public static VPManager Instance { get; private set; }
 
     [Header("Server")]
-    [SerializeField] private string serverUrl = "http://127.0.0.1:2567";
+    [SerializeField] private string serverUrl = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app";
 
     [SerializeField] private int defaultVP = 5000;
     public int CurrentVP { get; private set; }
@@ -47,7 +47,7 @@ public class VPManager : MonoBehaviour
         string token = PlayerPrefs.GetString("jwt_token", "");
         if (string.IsNullOrWhiteSpace(token))
         {
-            Debug.LogWarning("[VP] Không tìm thấy JWT token, chưa thể lấy VP từ server.");
+            Debug.LogWarning("[VP] KhÃ´ng tÃ¬m tháº¥y JWT token, chÆ°a thá»ƒ láº¥y VP tá»« server.");
             yield break;
         }
 
@@ -96,7 +96,7 @@ public class VPManager : MonoBehaviour
         string token = PlayerPrefs.GetString("jwt_token", "");
         if (string.IsNullOrWhiteSpace(token))
         {
-            Debug.LogWarning("[VP] Không tìm thấy JWT token, không thể debug thay đổi VP.");
+            Debug.LogWarning("[VP] KhÃ´ng tÃ¬m tháº¥y JWT token, khÃ´ng thá»ƒ debug thay Ä‘á»•i VP.");
             yield break;
         }
 
