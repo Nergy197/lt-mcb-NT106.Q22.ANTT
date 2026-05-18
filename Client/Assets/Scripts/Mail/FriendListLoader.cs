@@ -19,6 +19,26 @@ public class FriendListLoader : MonoBehaviour
     public static Sprite GetPlayerAvatar(string playerId) =>
         _sessionSpriteCache.TryGetValue(playerId, out var s) ? s : null;
 
+    /// <summary>Lấy avatar đã cache, hoặc random mới từ pool và lưu lại.</summary>
+    public static Sprite GetOrAssignAvatar(string playerId, Sprite[] pool)
+    {
+        if (string.IsNullOrWhiteSpace(playerId) || pool == null || pool.Length == 0)
+            return null;
+
+        if (_sessionSpriteCache.TryGetValue(playerId, out Sprite cached))
+            return cached;
+
+        if (!_sessionAvatarCache.TryGetValue(playerId, out int avatarIndex))
+        {
+            avatarIndex = Random.Range(0, pool.Length);
+            _sessionAvatarCache[playerId] = avatarIndex;
+        }
+
+        Sprite avatar = pool[avatarIndex];
+        _sessionSpriteCache[playerId] = avatar;
+        return avatar;
+    }
+
     [Header("Cấu hình Backend")]
     // Đã sửa lại PORT 2567 và http (không có chữ s) cho khớp với Server
     public string apiUrl = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app/api/friends";
