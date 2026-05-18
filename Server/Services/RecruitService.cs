@@ -1,6 +1,7 @@
 using MongoDB.Driver;
 using PokemonMMO.Data;
 using PokemonMMO.Models;
+using PokemonMMO.Models.DTOs;
 
 namespace PokemonMMO.Services;
 
@@ -45,10 +46,92 @@ public class RecruitService
         "-baile", "-pau", "-pom-pom", "-sensu"
     };
 
+    private static readonly string[] Natures =
+    {
+        "Hardy","Lonely","Brave","Adamant","Naughty",
+        "Bold","Docile","Relaxed","Impish","Lax",
+        "Timid","Hasty","Serious","Jolly","Naive",
+        "Modest","Mild","Quiet","Bashful","Rash",
+        "Calm","Gentle","Sassy","Careful","Quirky"
+    };
+
     public RecruitService(MongoDbContext db, IWebHostEnvironment env)
     {
         _db = db;
         _env = env;
+    }
+
+    /// <summary>
+    /// Xác nhận recruit 1 Pokemon. Yêu cầu JWT (accountId từ token).
+    /// </summary>
+    public async Task<RecruitConfirmResponse> ConfirmAsync(string accountId, RecruitConfirmRequest req)
+    {
+        var player = await _db.Players.Find(p => p.AccountId == accountId).FirstOrDefaultAsync()
+            ?? throw new Exception("Player not found");
+
+        bool isTrial = req.RecruitType.Equals("trial", StringComparison.OrdinalIgnoreCase);
+
+        // Kiểm tra trial box còn chỗ không
+        if (isTrial)
+        {
+            var now = DateTime.UtcNow;
+            long trialCount = await _db.PokemonInstances.CountDocumentsAsync(
+                p => p.OwnerId == player.Id && !p.IsInParty && p.IsTrial && p.TrialExpiry > now);
+
+            if (trialCount >= BoxService.TrialBoxCount * BoxService.SlotsPerBox)
+                throw new Exception("Trial Box đã đầy. Hãy giải phóng chỗ trống trước.");
+        }
+
+        // Lấy party count để biết có vào party không
+        long partyCount = await _db.PokemonInstances.CountDocumentsAsync(
+            p => p.OwnerId == player.Id && p.IsInParty);
+
+        bool goToParty = partyCount < 6;
+        int? partySlot = null;
+
+        if (goToParty)
+        {
+            var takenSlots = await _db.PokemonInstances
+                .Find(p => p.OwnerId == player.Id && p.IsInParty)
+                .Project(p => p.PartySlot)
+                .ToListAsync();
+            partySlot = Enumerable.Range(0, 6).First(i => !takenSlots.Contains(i));
+        }
+
+        var newPokemon = new PokemonInstance
+        {
+            OwnerId     = player.Id,
+            SpeciesId   = req.SpeciesId,
+            Nickname    = "",
+            Level       = 50,
+            Nature      = Natures[_rng.Next(Natures.Length)],
+            MaxHp       = 150,
+            CurrentHp   = 150,
+            IsInParty   = goToParty,
+            PartySlot   = partySlot,
+            IsTrial     = isTrial,
+            TrialExpiry = isTrial ? DateTime.UtcNow.AddDays(7) : null,
+            Ivs = new StatBlock
+            {
+                Hp    = _rng.Next(32),
+                Atk   = _rng.Next(32),
+                Def   = _rng.Next(32),
+                SpAtk = _rng.Next(32),
+                SpDef = _rng.Next(32),
+                Spd   = _rng.Next(32)
+            }
+        };
+
+        await _db.PokemonInstances.InsertOneAsync(newPokemon);
+
+        string dest = goToParty ? "party" : (isTrial ? "Trial Box" : "Box");
+        return new RecruitConfirmResponse
+        {
+            Success   = true,
+            Message   = $"Pokemon đã được thêm vào {dest}.",
+            IsInParty = goToParty,
+            PokemonId = newPokemon.Id
+        };
     }
 
     /// <summary>

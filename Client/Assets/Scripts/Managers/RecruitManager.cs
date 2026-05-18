@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Net.Http;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace PokemonMMO.UI
@@ -25,7 +26,8 @@ namespace PokemonMMO.UI
     {
         // ── Server ────────────────────────────────────────────────────────
         [Header("Server")]
-        public string serverUrl = "http://127.0.0.1:2567";
+        public string serverUrl      = "http://127.0.0.1:2567";
+        public string menuSceneName  = "Menu scene";
 
         // ── UI References ─────────────────────────────────────────────────
         [Header("UI Panels")]
@@ -54,30 +56,42 @@ namespace PokemonMMO.UI
         // ── Navigation State ──────────────────────────────────────────────
         private RecruitResultDto[] _currentResults;
         private int _selectedIndex = -1;
+        private bool _confirmButtonsWired = false;
         private readonly Dictionary<string, Sprite> _frontSpriteCache = new Dictionary<string, Sprite>();
         private Coroutine _currentDetailLoadCoroutine;
 
         // ── New UI References for Navigation ──────────────────────────────
         [Header("Detail View")]
         [Tooltip("Image lớn hiển thị Pokemon đang được chọn")]
-        public Image detailImage; // Kéo thả PokeDetail vào đây
+        public Image detailImage;
         [Tooltip("Màu viền khi ô được chọn")]
-        public Color selectedColor = new Color(1f, 1f, 0.5f); // Màu vàng nhạt
+        public Color selectedColor = new Color(1f, 1f, 0.5f);
         [Tooltip("Màu viền bình thường")]
         public Color normalColor = Color.white;
+
+        [Header("Options Popup")]
+        [Tooltip("Kéo GameObject Options_Popup vào đây")]
+        public GameObject optionsPopup;
+
 
         // ── Unity Lifecycle ───────────────────────────────────────────────
 
         private void Awake()
         {
-            // Trạng thái ban đầu: hiện banner, ẩn list
-            if (recruitPanel != null) recruitPanel.SetActive(true);
+            if (recruitPanel != null)   recruitPanel.SetActive(true);
             if (pokemonListBar != null) pokemonListBar.SetActive(false);
-            if (detailImage != null) detailImage.gameObject.SetActive(false);
+            if (detailImage != null)    detailImage.gameObject.SetActive(false);
 
-            // Gắn sự kiện cho button
             if (recruitButton != null)
-                recruitButton.onClick.AddListener(OnRecruitButtonClicked);
+                recruitButton.image.raycastTarget = false;
+
+            // Khôi phục kết quả cũ nếu chưa quá 24 giờ
+            var saved = LoadSavedResults();
+            if (saved != null)
+            {
+                _currentResults = saved;
+                StartCoroutine(RestoreIcons());
+            }
         }
 
         private void Update()
@@ -87,16 +101,42 @@ namespace PokemonMMO.UI
                 while (_mainThread.Count > 0)
                     _mainThread.Dequeue()?.Invoke();
 
+            // Màn hình banner
+            if (recruitPanel != null && recruitPanel.activeSelf && !_isRolling)
+            {
+                if (Input.GetKeyDown(KeyCode.C))
+                {
+                    if (_currentResults != null && _currentResults.Length > 0)
+                        ShowResultsFromBanner();
+                    else
+                        OnRecruitButtonClicked();
+                }
+                else if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.Escape))
+                    SceneManager.LoadScene(menuSceneName);
+                return;
+            }
+
             // Xử lý phím điều hướng nếu đã có kết quả
             if (_currentResults != null && _currentResults.Length > 0 && !_isRolling)
             {
-                if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+                bool popupOpen = optionsPopup != null && optionsPopup.activeSelf;
+
+                if (popupOpen)
                 {
-                    SelectSlot(Mathf.Max(0, _selectedIndex - 1));
+                    // X đóng popup
+                    if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.Escape))
+                        optionsPopup.SetActive(false);
                 }
-                else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+                else
                 {
-                    SelectSlot(Mathf.Min(_currentResults.Length - 1, _selectedIndex + 1));
+                    if (Input.GetKeyDown(KeyCode.LeftArrow))
+                        SelectSlot(Mathf.Max(0, _selectedIndex - 1));
+                    else if (Input.GetKeyDown(KeyCode.RightArrow))
+                        SelectSlot(Mathf.Min(_currentResults.Length - 1, _selectedIndex + 1));
+                    else if (Input.GetKeyDown(KeyCode.C) && _selectedIndex >= 0)
+                        ShowOptionsPopup();
+                    else if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.Escape))
+                        GoBackToRecruitPanel();
                 }
             }
         }
@@ -151,6 +191,7 @@ namespace PokemonMMO.UI
                     Dispatch(() =>
                     {
                         _currentResults = results;
+                        SaveResults(results);
                         int pendingIcons = Mathf.Min(results.Length, slots.Length);
                         int iconsLoaded = 0;
 
@@ -191,6 +232,72 @@ namespace PokemonMMO.UI
                 Debug.LogError($"[Recruit] Exception: {ex.Message}");
                 Dispatch(() => _isRolling = false);
             }
+        }
+
+        // ── Popup / Back ──────────────────────────────────────────────────
+
+        private void ShowOptionsPopup()
+        {
+            if (optionsPopup == null) return;
+
+            // Wire up confirm buttons lần đầu tiên qua OptionsPopupController.buttons[]
+            // buttons[0] = Trial, buttons[1] = Permanent (theo thứ tự trong Inspector)
+            if (!_confirmButtonsWired)
+            {
+                var ctrl = optionsPopup.GetComponent<PokemonMMO.UI.OptionsPopupController>();
+                if (ctrl != null && ctrl.buttons != null)
+                {
+                    if (ctrl.buttons.Length > 0 && ctrl.buttons[0] != null)
+                        ctrl.buttons[0].onClick.AddListener(() => StartCoroutine(ConfirmRecruitCoroutine("trial")));
+                    if (ctrl.buttons.Length > 1 && ctrl.buttons[1] != null)
+                        ctrl.buttons[1].onClick.AddListener(() => StartCoroutine(ConfirmRecruitCoroutine("permanent")));
+                    _confirmButtonsWired = true;
+                }
+            }
+
+            optionsPopup.SetActive(true);
+        }
+
+        public void CloseOptionsPopup()
+        {
+            if (optionsPopup != null)
+                optionsPopup.SetActive(false);
+        }
+
+        // Quay về banner nhưng GIỮ NGUYÊN kết quả và icons
+        private void GoBackToRecruitPanel()
+        {
+            if (detailImage != null)  detailImage.gameObject.SetActive(false);
+            if (pokemonListBar != null) pokemonListBar.SetActive(false);
+            if (recruitPanel != null)  recruitPanel.SetActive(true);
+        }
+
+        // Hiện lại danh sách kết quả cũ từ banner (không roll mới)
+        private void ShowResultsFromBanner()
+        {
+            if (recruitPanel != null)  recruitPanel.SetActive(false);
+            if (pokemonListBar != null) pokemonListBar.SetActive(true);
+            // Khôi phục slot đang chọn và detail image
+            int idx = _selectedIndex >= 0 ? _selectedIndex : 0;
+            SelectSlot(idx);
+        }
+
+        // Reset hoàn toàn sau khi confirm recruit thành công
+        private void ResetRecruitState()
+        {
+            ClearSavedResults();
+            _currentResults = null;
+            _selectedIndex  = -1;
+            if (_currentDetailLoadCoroutine != null)
+            {
+                StopCoroutine(_currentDetailLoadCoroutine);
+                _currentDetailLoadCoroutine = null;
+            }
+            ClearCache();
+            ClearIcons();
+            if (detailImage != null)   detailImage.gameObject.SetActive(false);
+            if (pokemonListBar != null) pokemonListBar.SetActive(false);
+            if (recruitPanel != null)  recruitPanel.SetActive(true);
         }
 
         // ── Navigation Logic ──────────────────────────────────────────────
@@ -371,6 +478,98 @@ namespace PokemonMMO.UI
             lock (_mainThread) _mainThread.Enqueue(action);
         }
 
+        // ── Persist Results ───────────────────────────────────────────────
+
+        private const string SaveKey = "recruit_saved_results";
+
+        private void SaveResults(RecruitResultDto[] results)
+        {
+            var wrapper = new ResultsWrapper
+            {
+                results   = results,
+                timestamp = DateTimeOffset.UtcNow.ToUnixTimeSeconds()
+            };
+            PlayerPrefs.SetString(SaveKey, JsonUtility.ToJson(wrapper));
+            PlayerPrefs.Save();
+        }
+
+        private RecruitResultDto[] LoadSavedResults()
+        {
+            string json = PlayerPrefs.GetString(SaveKey, "");
+            if (string.IsNullOrEmpty(json)) return null;
+            var wrapper = JsonUtility.FromJson<ResultsWrapper>(json);
+            if (wrapper?.results == null || wrapper.results.Length == 0) return null;
+            long age = DateTimeOffset.UtcNow.ToUnixTimeSeconds() - wrapper.timestamp;
+            if (age > 24 * 3600) { ClearSavedResults(); return null; }
+            return wrapper.results;
+        }
+
+        private void ClearSavedResults()
+        {
+            PlayerPrefs.DeleteKey(SaveKey);
+            PlayerPrefs.Save();
+        }
+
+        private IEnumerator RestoreIcons()
+        {
+            ClearIcons();
+            if (_currentResults == null) yield break;
+            for (int i = 0; i < _currentResults.Length && i < slots.Length; i++)
+            {
+                if (slots[i] == null || _currentResults[i] == null) continue;
+                string iconUrl = $"{serverUrl}{_currentResults[i].IconUrl}";
+                int idx = i;
+                StartCoroutine(LoadIconIntoSlot(slots[idx], iconUrl, _currentResults[idx].Name, null));
+                yield return null; // trải đều qua nhiều frame
+            }
+        }
+
+        [Serializable]
+        private class ResultsWrapper
+        {
+            public RecruitResultDto[] results;
+            public long               timestamp;
+        }
+
+        // ── Confirm Recruit ───────────────────────────────────────────────
+
+        private IEnumerator ConfirmRecruitCoroutine(string recruitType)
+        {
+            if (_selectedIndex < 0 || _currentResults == null) yield break;
+
+            int speciesId = _currentResults[_selectedIndex].SpeciesId;
+            CloseOptionsPopup();
+
+            string token = PlayerPrefs.GetString("jwt_token", "");
+            if (string.IsNullOrEmpty(token))
+            {
+                Debug.LogError("[Recruit] Chưa đăng nhập, không thể confirm recruit.");
+                yield break;
+            }
+
+            var payload = JsonUtility.ToJson(new RecruitConfirmDto { SpeciesId = speciesId, RecruitType = recruitType });
+            var bytes   = System.Text.Encoding.UTF8.GetBytes(payload);
+
+            using var req = new UnityEngine.Networking.UnityWebRequest($"{serverUrl}/api/recruit/confirm", "POST");
+            req.uploadHandler   = new UnityEngine.Networking.UploadHandlerRaw(bytes);
+            req.downloadHandler = new UnityEngine.Networking.DownloadHandlerBuffer();
+            req.SetRequestHeader("Content-Type", "application/json");
+            req.SetRequestHeader("Authorization", "Bearer " + token);
+
+            yield return req.SendWebRequest();
+
+            if (req.result == UnityEngine.Networking.UnityWebRequest.Result.Success)
+            {
+                var resp = JsonUtility.FromJson<RecruitConfirmResponseDto>(req.downloadHandler.text);
+                Debug.Log($"[Recruit] ✅ {resp.Message} (Party: {resp.IsInParty})");
+                ResetRecruitState(); // Reset hoàn toàn sau khi đã recruit
+            }
+            else
+            {
+                Debug.LogError($"[Recruit] ❌ Confirm thất bại: {req.downloadHandler.text}");
+            }
+        }
+
         // ── DTOs ──────────────────────────────────────────────────────────
 
         [Serializable]
@@ -381,6 +580,22 @@ namespace PokemonMMO.UI
             public string[] Types;
             public string IconUrl;
             public string SpriteUrl;
+        }
+
+        [Serializable]
+        private class RecruitConfirmDto
+        {
+            public int    SpeciesId;
+            public string RecruitType;
+        }
+
+        [Serializable]
+        private class RecruitConfirmResponseDto
+        {
+            public bool   Success;
+            public string Message;
+            public bool   IsInParty;
+            public string PokemonId;
         }
     }
 
