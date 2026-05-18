@@ -44,6 +44,7 @@ namespace PokemonMMO.UI
         public void OnPokedexClicked() => SceneManager.LoadScene("PokedexScene");
         public void OnRecruitClicked() => SceneManager.LoadScene("RecuitScene");
         public void OnBattleClicked()  => SceneManager.LoadScene("0_BattleScene");
+        public void OnBoxClicked()     => SceneManager.LoadScene("BoxScene");
         public void OnFriendsClicked() => Debug.Log("[Menu] Friends Clicked");
         public void OnRankClicked()    => Debug.Log("[Menu] Rank Clicked");
         public void OnSettingsClicked() => OpenSettings();

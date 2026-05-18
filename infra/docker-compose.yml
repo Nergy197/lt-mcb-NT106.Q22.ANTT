@@ -3,7 +3,7 @@ services:
     image: mongo:6.0
     container_name: pokemon-mongo
     ports:
-      - "27017:27017"
+      - "${MONGO_PORT}:27017"
     volumes:
       - mongo-data:/data/db
 
@@ -13,7 +13,7 @@ services:
       dockerfile: Dockerfile
     container_name: pokemon-server
     ports:
-      - "2567:2567"
+      - "${SERVER_PORT}:2567"
     depends_on:
       - mongodb
     environment:
