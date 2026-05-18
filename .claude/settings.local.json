@@ -22,7 +22,8 @@
       "Bash(mongosh --quiet --eval ' *)",
       "Bash(dotnet run *)",
       "Bash(python3 -c \"import uuid; print\\(uuid.uuid4\\(\\).hex\\); print\\(uuid.uuid4\\(\\).hex\\); print\\(uuid.uuid4\\(\\).hex\\)\")",
-      "Bash(grep -E \"\\\\.\\(csproj|json\\)$\")"
+      "Bash(grep -E \"\\\\.\\(csproj|json\\)$\")",
+      "Bash(git pull *)"
     ]
   }
 }

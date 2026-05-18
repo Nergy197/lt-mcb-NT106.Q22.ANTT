@@ -104,6 +104,96 @@ public class PokedexService
         {
             Console.WriteLine($"[Seed] Moves OK ({moveCount} entries).");
         }
+
+        // ── 3. Populate LearnableMoves từ species JSON ────────────────────
+        long emptyLearnableCount = await _context.Pokedex.CountDocumentsAsync(
+            p => p.LearnableMoves == null || p.LearnableMoves.Count == 0);
+
+        if (emptyLearnableCount > 100)
+        {
+            Console.WriteLine($"[Seed] Populating LearnableMoves cho {emptyLearnableCount} Pokemon...");
+
+            var validMoveIds = (await _context.Moves.Find(_ => true)
+                .Project(m => m.Id).ToListAsync()).ToHashSet();
+
+            var speciesDir = FindSpeciesDir();
+            if (speciesDir != null)
+            {
+                var entries = await _context.Pokedex.Find(
+                    p => p.LearnableMoves == null || p.LearnableMoves.Count == 0).ToListAsync();
+
+                var updates = new List<MongoDB.Driver.WriteModel<PokedexEntry>>();
+                int updated = 0;
+
+                foreach (var entry in entries)
+                {
+                    var speciesFile = Path.Combine(speciesDir, $"{entry.Name.ToLower()}.json");
+                    if (!File.Exists(speciesFile)) continue;
+
+                    var learnableMoves = ParseLearnableMoves(speciesFile, validMoveIds);
+                    if (learnableMoves.Count == 0) continue;
+
+                    var filter = MongoDB.Driver.Builders<PokedexEntry>.Filter.Eq(p => p.Id, entry.Id);
+                    var update = MongoDB.Driver.Builders<PokedexEntry>.Update
+                        .Set(p => p.LearnableMoves, learnableMoves);
+                    updates.Add(new MongoDB.Driver.UpdateOneModel<PokedexEntry>(filter, update));
+                    updated++;
+
+                    if (updates.Count >= 100)
+                    {
+                        await _context.Pokedex.BulkWriteAsync(updates);
+                        updates.Clear();
+                    }
+                }
+
+                if (updates.Count > 0)
+                    await _context.Pokedex.BulkWriteAsync(updates);
+
+                Console.WriteLine($"[Seed] LearnableMoves đã populate cho {updated} Pokemon.");
+            }
+            else
+            {
+                Console.WriteLine("[Seed] Không tìm thấy thư mục species JSON.");
+            }
+        }
+        else
+        {
+            Console.WriteLine("[Seed] LearnableMoves OK.");
+        }
+    }
+
+    private static List<int> ParseLearnableMoves(string filePath, HashSet<int> validMoveIds)
+    {
+        try
+        {
+            using var doc = System.Text.Json.JsonDocument.Parse(File.ReadAllText(filePath));
+            if (!doc.RootElement.TryGetProperty("moves", out var movesArr)) return new();
+
+            var result = new List<int>();
+            foreach (var m in movesArr.EnumerateArray())
+            {
+                if (!m.TryGetProperty("move", out var move)) continue;
+                if (!move.TryGetProperty("url", out var urlProp)) continue;
+                var url = urlProp.GetString();
+                if (url == null) continue;
+                var parts = url.TrimEnd('/').Split('/');
+                if (int.TryParse(parts[^1], out int id) && validMoveIds.Contains(id))
+                    result.Add(id);
+            }
+            return result;
+        }
+        catch { return new(); }
+    }
+
+    private static string? FindSpeciesDir()
+    {
+        var candidates = new[]
+        {
+            Path.Combine(AppContext.BaseDirectory, "wwwroot", "data", "species"),
+            Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "data", "species"),
+            Path.Combine(Directory.GetCurrentDirectory(), "Server", "wwwroot", "data", "species"),
+        };
+        return candidates.FirstOrDefault(Directory.Exists);
     }
 
     private static string? FindDataFile(string fileName)

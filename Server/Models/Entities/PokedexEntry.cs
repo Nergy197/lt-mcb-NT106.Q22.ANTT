@@ -38,4 +38,8 @@ public class PokedexEntry
 
     [BsonElement("default_moves")]
     public List<int> DefaultMoves { get; set; } = new();
+
+    [BsonElement("learnable_moves")]
+    [JsonPropertyName("learnable_moves")]
+    public List<int> LearnableMoves { get; set; } = new();
 }

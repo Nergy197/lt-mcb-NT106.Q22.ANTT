@@ -98,14 +98,19 @@ public class RecruitService
             partySlot = Enumerable.Range(0, 6).First(i => !takenSlots.Contains(i));
         }
 
-        // Load default moves từ Pokedex
+        // Random 4 skill từ pool learnable moves của Pokemon
         var dex = await _db.Pokedex.Find(d => d.Id == req.SpeciesId).FirstOrDefaultAsync();
         var pokemonMoves = new List<PokemonMove>();
-        if (dex?.DefaultMoves != null && dex.DefaultMoves.Count > 0)
+
+        var movePool = (dex?.LearnableMoves != null && dex.LearnableMoves.Count > 0)
+            ? dex.LearnableMoves
+            : dex?.DefaultMoves ?? new List<int>();
+
+        if (movePool.Count > 0)
         {
-            var moveIds = dex.DefaultMoves.Take(4).ToList();
-            var moveEntries = await _db.Moves.Find(m => moveIds.Contains(m.Id)).ToListAsync();
-            foreach (var moveId in moveIds)
+            var selectedIds = movePool.OrderBy(_ => _rng.Next()).Take(4).ToList();
+            var moveEntries = await _db.Moves.Find(m => selectedIds.Contains(m.Id)).ToListAsync();
+            foreach (var moveId in selectedIds)
             {
                 var moveEntry = moveEntries.FirstOrDefault(m => m.Id == moveId);
                 if (moveEntry != null)
