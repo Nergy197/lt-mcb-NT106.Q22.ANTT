@@ -116,7 +116,7 @@ public class ChatUIFixer
                 var txtComp = text.GetComponent<TextMeshProUGUI>();
                 if (txtComp != null)
                 {
-                    txtComp.enableWordWrapping = true;
+                    txtComp.textWrappingMode = TMPro.TextWrappingModes.Normal;
                     txtComp.alignment = TextAlignmentOptions.TopLeft;
                     txtComp.color = Color.black;
                 }

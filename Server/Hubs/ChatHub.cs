@@ -48,6 +48,7 @@ public class ChatHub : Hub
         if (OnlinePlayers.TryRemove(Context.ConnectionId, out var playerId))
         {
             PlayerConnections.TryRemove(playerId, out _);
+            await _friendService.UpdateLastSeenAsync(playerId);
             Console.WriteLine($"[ChatHub] Player {playerId} disconnected");
         }
         await base.OnDisconnectedAsync(exception);
@@ -104,6 +105,7 @@ public class ChatHub : Hub
         var areFriends = await _friendService.AreFriendsAsync(player.Id, receiverPlayerId);
         if (!areFriends)
         {
+            Console.WriteLine($"[ChatHub] DM rejected: {player.Id} → {receiverPlayerId} (not friends)");
             await Clients.Caller.SendAsync("Error", "Bạn chỉ có thể nhắn tin cho bạn bè.");
             return;
         }

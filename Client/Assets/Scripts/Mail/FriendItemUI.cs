@@ -12,6 +12,18 @@ public class FriendItemUI : MonoBehaviour
     private string myPlayerName;
     private Sprite myAvatar;
 
+    private Image _bg;
+    private Color _normalColor;
+    private static readonly Color HighlightColor = new Color(0.55f, 0.55f, 0.55f, 1f);
+
+    private static FriendItemUI _selected;
+
+    private void Awake()
+    {
+        _bg = GetComponent<Image>();
+        if (_bg != null) _normalColor = _bg.color;
+    }
+
     public void SetData(string id, string name, Sprite avatar, bool isOnline)
     {
         myPlayerId   = id;
@@ -29,11 +41,40 @@ public class FriendItemUI : MonoBehaviour
     {
         Debug.Log($"<color=red>======= [CLICK] =======</color> Đã nhấn: {myPlayerName}");
 
-        ChatManager chat = FindFirstObjectByType<ChatManager>(FindObjectsInactive.Include);
+        Select();
 
+        ChatManager chat = FindFirstObjectByType<ChatManager>(FindObjectsInactive.Include);
         if (chat != null)
             chat.SetActiveChatFriend(myPlayerId, myPlayerName, myAvatar);
         else
             Debug.LogError("KHÔNG TÌM THẤY ChatManager TRONG SCENE!");
+    }
+
+    private void Select()
+    {
+        if (_selected != null && _selected != this)
+            _selected.SetHighlight(false);
+        _selected = this;
+        SetHighlight(true);
+    }
+
+    private void SetHighlight(bool on)
+    {
+        if (_bg == null) return;
+        _bg.color = on ? HighlightColor : _normalColor;
+    }
+
+    public static void ClearSelection()
+    {
+        if (_selected != null)
+        {
+            _selected.SetHighlight(false);
+            _selected = null;
+        }
+    }
+
+    private void OnDestroy()
+    {
+        if (_selected == this) _selected = null;
     }
 }

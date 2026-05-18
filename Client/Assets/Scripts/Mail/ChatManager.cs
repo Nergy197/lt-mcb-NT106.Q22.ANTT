@@ -30,7 +30,12 @@ public class ChatManager : MonoBehaviour
 
     void OnEnable()  => Subscribe();
     void OnDisable() => Unsubscribe();
-    void Start()     { if (!_subscribed) Subscribe(); }
+    void Start()
+    {
+        // Pre-create dispatcher trên main thread trước khi SignalR callback cần dùng
+        _ = UnityMainThreadDispatcher.Instance();
+        if (!_subscribed) Subscribe();
+    }
 
     private void Subscribe()
     {
@@ -40,6 +45,7 @@ public class ChatManager : MonoBehaviour
         ChatHubClient.Instance.OnWorldMessage  += HandleWorldMsg;
         ChatHubClient.Instance.OnDirectMessage += HandleDirectMsg;
         ChatHubClient.Instance.OnChatHistory   += HandleChatHistory;
+        ChatHubClient.Instance.OnError         += HandleChatError;
         _subscribed = true;
         Debug.Log("[ChatManager] Đã subscribe ChatHubClient events.");
     }
@@ -50,6 +56,7 @@ public class ChatManager : MonoBehaviour
         ChatHubClient.Instance.OnWorldMessage  -= HandleWorldMsg;
         ChatHubClient.Instance.OnDirectMessage -= HandleDirectMsg;
         ChatHubClient.Instance.OnChatHistory   -= HandleChatHistory;
+        ChatHubClient.Instance.OnError         -= HandleChatError;
         _subscribed = false;
     }
 
@@ -64,8 +71,9 @@ public class ChatManager : MonoBehaviour
 
     private void HandleWorldMsg(ChatMessageData msg)
     {
-        if (currentChatType == ChatType.World && msg.SenderId != MyPlayerId)
-            ReceiveMessage(msg.Content ?? "", msg.SenderName ?? "", false);
+        if (currentChatType != ChatType.World || msg.SenderId == MyPlayerId) return;
+        RenderMessage(msg.Content ?? "", msg.SenderName ?? "", false);
+        StartCoroutine(ScrollToBottomNextFrame());
     }
 
     private void HandleDirectMsg(ChatMessageData msg)
@@ -73,21 +81,23 @@ public class ChatManager : MonoBehaviour
         string sId = msg.SenderId ?? "";
         if (sId == MyPlayerId) return;
 
-        if (currentChatType == ChatType.Private && sId == currentReceiverId)
+        if (sId == currentReceiverId)
         {
-            ReceiveMessage(msg.Content ?? "", msg.SenderName ?? "", false);
+            // Đang mở đúng cuộc chat với người này — hiện ngay
+            RenderMessage(msg.Content ?? "", msg.SenderName ?? "", false);
+            StartCoroutine(ScrollToBottomNextFrame());
         }
-        else if (string.IsNullOrEmpty(currentReceiverId))
+        else if (string.IsNullOrEmpty(currentReceiverId) || currentChatType == ChatType.World)
         {
-            UnityMainThreadDispatcher.Instance().Enqueue(() => {
-                currentChatType     = ChatType.Private;
-                currentReceiverId   = sId;
-                currentFriendAvatar = null;
-                while (contentContainer.childCount > 0)
-                    UnityEngine.Object.DestroyImmediate(contentContainer.GetChild(0).gameObject);
-                ChatHubClient.Instance?.LoadDirectHistory(sId);
-            });
+            // Đang ở World Chat hoặc chưa mở chat nào — tự động chuyển sang DM
+            currentChatType     = ChatType.Private;
+            currentReceiverId   = sId;
+            currentFriendAvatar = null;
+            while (contentContainer.childCount > 0)
+                UnityEngine.Object.DestroyImmediate(contentContainer.GetChild(0).gameObject);
+            ChatHubClient.Instance?.LoadDirectHistory(sId);
         }
+        // Nếu đang chat với người khác → bỏ qua (cần notification system)
     }
 
     private void HandleChatHistory(ChatHistoryPayload payload)
@@ -120,6 +130,13 @@ public class ChatManager : MonoBehaviour
             LayoutRebuilder.ForceRebuildLayoutImmediate(contentContainer.GetComponent<RectTransform>());
             if (scrollRect != null) scrollRect.verticalNormalizedPosition = 0f;
         });
+    }
+
+    private void HandleChatError(string error)
+    {
+        Debug.LogWarning($"[Chat] Lỗi từ server: {error}");
+        RenderMessage($"[Lỗi] {error}", "System", false);
+        StartCoroutine(ScrollToBottomNextFrame());
     }
 
     // ── Gửi tin ─────────────────────────────────────────────────────────
@@ -183,11 +200,8 @@ public class ChatManager : MonoBehaviour
         currentReceiverId   = playerId;
         currentFriendAvatar = avatar;
 
-        while (contentContainer.childCount > 0)
-            UnityEngine.Object.DestroyImmediate(contentContainer.GetChild(0).gameObject);
-
+        // Không clear ngay — để HandleChatHistory clear khi data về, tránh flash trắng
         Debug.Log($"<color=orange>[UI-SWITCH]</color> → '{playerName}' | isListening={_subscribed}");
-        Debug.Log($"<color=orange>[UI-SWITCH]</color> Gọi LoadDirectHistory({playerId})");
         ChatHubClient.Instance?.LoadDirectHistory(playerId);
     }
 
@@ -195,6 +209,7 @@ public class ChatManager : MonoBehaviour
     {
         currentChatType   = ChatType.World;
         currentReceiverId = "";
+        FriendItemUI.ClearSelection();
         while (contentContainer.childCount > 0)
             UnityEngine.Object.DestroyImmediate(contentContainer.GetChild(0).gameObject);
 
