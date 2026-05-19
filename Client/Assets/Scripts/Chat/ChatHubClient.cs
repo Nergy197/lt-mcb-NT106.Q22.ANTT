@@ -27,6 +27,8 @@ namespace Game.Chat
         private IDisposable _worldToken;
         private IDisposable _directToken;
         private IDisposable _errorToken;
+        // Giữ ref để gỡ Reconnected handler khi đổi connection
+        private Func<string, System.Threading.Tasks.Task> _reconnectedHandler;
 
         private void Awake()
         {
@@ -38,6 +40,8 @@ namespace Game.Chat
 
         private void OnDestroy()
         {
+            if (_registeredHub != null && _reconnectedHandler != null)
+                _registeredHub.Reconnected -= _reconnectedHandler;
             _historyToken?.Dispose();
             _worldToken?.Dispose();
             _directToken?.Dispose();
@@ -62,6 +66,10 @@ namespace Game.Chat
 
         private void SetupHandlers(HubConnection chat)
         {
+            // Gỡ handler cũ nếu đổi connection object
+            if (_registeredHub != null && _reconnectedHandler != null)
+                _registeredHub.Reconnected -= _reconnectedHandler;
+
             _historyToken?.Dispose();
             _worldToken?.Dispose();
             _directToken?.Dispose();
@@ -78,6 +86,14 @@ namespace Game.Chat
 
             _errorToken = chat.On<string>("Error", err =>
                 Dispatch(() => OnError?.Invoke(err)));
+
+            // Khi WithAutomaticReconnect() kết nối lại thành công → reload history
+            _reconnectedHandler = _ => {
+                Debug.Log("[ChatHubClient] Auto-reconnect thành công, reload history.");
+                Dispatch(() => OnConnected?.Invoke());
+                return System.Threading.Tasks.Task.CompletedTask;
+            };
+            chat.Reconnected += _reconnectedHandler;
 
             _isListening = true;
             Debug.Log("[ChatHubClient] Handlers đã đăng ký lên SignalRClient.Chat.");
