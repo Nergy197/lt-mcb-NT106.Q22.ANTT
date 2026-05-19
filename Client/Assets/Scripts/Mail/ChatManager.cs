@@ -142,14 +142,16 @@ public class ChatManager : MonoBehaviour
     {
         string text = inputField.text;
         if (string.IsNullOrWhiteSpace(text)) return;
+        if (ChatHubClient.Instance == null) return;
+
+        // Gửi trước — nếu không có kết nối sẽ bắn OnError và return false, không render
+        if (!ChatHubClient.Instance.SendDirectMessage(currentReceiverId, text)) return;
 
         inputField.text = "";
         inputField.ActivateInputField();
 
         RenderMessage(text, "Tôi", true);
         StartCoroutine(ScrollToBottomNextFrame());
-
-        ChatHubClient.Instance?.SendDirectMessage(currentReceiverId, text);
     }
 
     // ── Render ───────────────────────────────────────────────────────────
