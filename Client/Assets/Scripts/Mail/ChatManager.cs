@@ -19,6 +19,9 @@ public class ChatManager : MonoBehaviour
     public TMP_InputField inputField;
     public ScrollRect scrollRect;
 
+    [Header("Panels")]
+    public GameObject privateChatPanel; // kéo PrivateChat_Panel vào đây — ẩn khi chưa chọn bạn
+
     [Header("Trạng thái Chat")]
     public ChatType currentChatType = ChatType.Private;
     public string currentReceiverId;
@@ -33,6 +36,7 @@ public class ChatManager : MonoBehaviour
     void Start()
     {
         _ = UnityMainThreadDispatcher.Instance();
+        if (privateChatPanel != null) privateChatPanel.SetActive(false);
         if (!_subscribed) Subscribe();
     }
 
@@ -179,9 +183,16 @@ public class ChatManager : MonoBehaviour
 
     public void SetActiveChatFriend(string playerId, string playerName, Sprite avatar)
     {
-        currentChatType     = ChatType.Private;
-        currentReceiverId   = playerId;
         currentFriendAvatar = avatar;
+
+        // Hiện panel khi lần đầu chọn bạn
+        if (privateChatPanel != null) privateChatPanel.SetActive(true);
+
+        // Cùng người → không xóa/reload để tránh mất tin nhắn cục bộ
+        if (playerId == currentReceiverId) return;
+
+        currentChatType   = ChatType.Private;
+        currentReceiverId = playerId;
 
         while (contentContainer.childCount > 0)
             UnityEngine.Object.DestroyImmediate(contentContainer.GetChild(0).gameObject);
