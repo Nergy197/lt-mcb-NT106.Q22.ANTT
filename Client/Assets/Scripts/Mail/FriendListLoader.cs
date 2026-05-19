@@ -43,9 +43,19 @@ public class FriendListLoader : MonoBehaviour
     // Đã sửa lại PORT 2567 và http (không có chữ s) cho khớp với Server
     public string apiUrl = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app/api/friends";
 
+    private bool isRemovingFriend;
+
     void OnEnable()
     {
-        // Mỗi lần Tab được bật lên là đi gọi Backend lấy danh sách ngay
+        Refresh();
+    }
+
+    public void Refresh()
+    {
+        if (container == null || friendPrefab == null)
+            return;
+
+        StopAllCoroutines();
         StartCoroutine(FetchFriendListFromServer());
     }
 
@@ -108,28 +118,67 @@ public class FriendListLoader : MonoBehaviour
 
     void PopulateUI(List<FriendData> friends)
     {
-        // Xóa sạch mấy cái đồ cũ
-        foreach (Transform child in container) { Destroy(child.gameObject); }
+        foreach (Transform child in container)
+            Destroy(child.gameObject);
 
-        foreach (var data in friends)
+        if (pokemonAvatarPool == null || pokemonAvatarPool.Length == 0)
+        {
+            Debug.LogWarning("FriendListLoader: pokemonAvatarPool is empty.");
+            return;
+        }
+
+        foreach (FriendData data in friends)
         {
             GameObject obj = Instantiate(friendPrefab, container);
-            FriendItemUI itemUI = obj.GetComponent<FriendItemUI>();
+            Sprite avatar = GetOrAssignAvatar(data.playerId, pokemonAvatarPool);
 
-            if (itemUI != null)
+            FriendsListItemUI friendsItem = obj.GetComponent<FriendsListItemUI>();
+            if (friendsItem != null)
             {
-                // Lần đầu gặp player này trong session → random và lưu cache
-                // Lần sau → dùng lại index đã lưu, avatar không đổi
-                if (!_sessionAvatarCache.TryGetValue(data.playerId, out int avatarIndex))
-                {
-                    avatarIndex = Random.Range(0, pokemonAvatarPool.Length);
-                    _sessionAvatarCache[data.playerId] = avatarIndex;
-                }
-
-                Sprite avatar = pokemonAvatarPool[avatarIndex];
-                _sessionSpriteCache[data.playerId] = avatar;
-                itemUI.SetData(data.playerId, data.playerName, avatar, data.isOnline);
+                friendsItem.SetData(data.playerId, data.playerName, avatar);
+                friendsItem.BindDelete(OnRemoveFriend);
+                continue;
             }
+
+            FriendItemUI legacyItem = obj.GetComponent<FriendItemUI>();
+            if (legacyItem != null)
+                legacyItem.SetData(data.playerId, data.playerName, avatar, data.isOnline);
         }
+    }
+
+    private void OnRemoveFriend(string friendPlayerId)
+    {
+        StartCoroutine(RemoveFriend(friendPlayerId));
+    }
+
+    private IEnumerator RemoveFriend(string friendPlayerId)
+    {
+        if (isRemovingFriend || string.IsNullOrWhiteSpace(friendPlayerId))
+            yield break;
+
+        isRemovingFriend = true;
+        string token = PlayerPrefs.GetString("jwt_token", "");
+        if (string.IsNullOrWhiteSpace(token))
+        {
+            isRemovingFriend = false;
+            yield break;
+        }
+
+        string url = $"{apiUrl.TrimEnd('/')}/{friendPlayerId}";
+        using UnityWebRequest request = UnityWebRequest.Delete(url);
+        request.SetRequestHeader("Authorization", "Bearer " + token);
+        request.timeout = 10;
+
+        yield return request.SendWebRequest();
+
+        bool success = request.result == UnityWebRequest.Result.Success &&
+                       request.responseCode >= 200 &&
+                       request.responseCode < 300;
+
+        if (!success)
+            Debug.LogError($"Lỗi hủy kết bạn: {request.error} | HTTP {request.responseCode}");
+
+        isRemovingFriend = false;
+        Refresh();
     }
 }
