@@ -102,11 +102,14 @@ namespace Game.Chat
         {
             string text = inputField?.text?.Trim();
             if (string.IsNullOrEmpty(text)) return;
+            if (ChatHubClient.Instance == null) return;
+
+            // Gửi trước — nếu không có kết nối sẽ bắn OnError và return false, không render
+            if (!ChatHubClient.Instance.SendWorldMessage(text)) return;
 
             inputField.text = "";
             inputField.ActivateInputField();
 
-            // Render local ngay lập tức, không chờ server echo
             AppendMessage(new ChatMessageData {
                 SenderId   = MyPlayerId,
                 SenderName = "Tôi",
@@ -115,8 +118,6 @@ namespace Game.Chat
             });
             TrimExcessMessages();
             StartCoroutine(ScrollToBottomNextFrame());
-
-            ChatHubClient.Instance?.SendWorldMessage(text);
         }
 
         // ── Render ───────────────────────────────────────────────────────────

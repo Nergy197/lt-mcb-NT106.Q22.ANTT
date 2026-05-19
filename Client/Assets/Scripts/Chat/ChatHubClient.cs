@@ -27,6 +27,8 @@ namespace Game.Chat
         private IDisposable _worldToken;
         private IDisposable _directToken;
         private IDisposable _errorToken;
+        // Giữ ref để gỡ Reconnected handler khi đổi connection
+        private Func<string, System.Threading.Tasks.Task> _reconnectedHandler;
 
         private void Awake()
         {
@@ -38,6 +40,8 @@ namespace Game.Chat
 
         private void OnDestroy()
         {
+            if (_registeredHub != null && _reconnectedHandler != null)
+                _registeredHub.Reconnected -= _reconnectedHandler;
             _historyToken?.Dispose();
             _worldToken?.Dispose();
             _directToken?.Dispose();
@@ -62,6 +66,10 @@ namespace Game.Chat
 
         private void SetupHandlers(HubConnection chat)
         {
+            // Gỡ handler cũ nếu đổi connection object
+            if (_registeredHub != null && _reconnectedHandler != null)
+                _registeredHub.Reconnected -= _reconnectedHandler;
+
             _historyToken?.Dispose();
             _worldToken?.Dispose();
             _directToken?.Dispose();
@@ -79,6 +87,14 @@ namespace Game.Chat
             _errorToken = chat.On<string>("Error", err =>
                 Dispatch(() => OnError?.Invoke(err)));
 
+            // Khi WithAutomaticReconnect() kết nối lại thành công → reload history
+            _reconnectedHandler = _ => {
+                Debug.Log("[ChatHubClient] Auto-reconnect thành công, reload history.");
+                Dispatch(() => OnConnected?.Invoke());
+                return System.Threading.Tasks.Task.CompletedTask;
+            };
+            chat.Reconnected += _reconnectedHandler;
+
             _isListening = true;
             Debug.Log("[ChatHubClient] Handlers đã đăng ký lên SignalRClient.Chat.");
             Dispatch(() => OnConnected?.Invoke());
@@ -88,29 +104,52 @@ namespace Game.Chat
         {
             var chat = Game.Network.SignalRClient.Instance?.Chat;
             if (chat?.State == HubConnectionState.Connected)
-                _ = chat.InvokeAsync("LoadWorldHistory");
+                chat.InvokeAsync("LoadWorldHistory")
+                    .ContinueWith(t => { if (t.IsFaulted) LogSendError(t); });
         }
 
         public void LoadDirectHistory(string otherPlayerId)
         {
             var chat = Game.Network.SignalRClient.Instance?.Chat;
             if (chat?.State == HubConnectionState.Connected)
-                _ = chat.InvokeAsync("LoadDirectHistory", otherPlayerId);
+                chat.InvokeAsync("LoadDirectHistory", otherPlayerId)
+                    .ContinueWith(t => { if (t.IsFaulted) LogSendError(t); });
         }
 
-        public void SendWorldMessage(string content)
+        public bool SendWorldMessage(string content)
         {
             var chat = Game.Network.SignalRClient.Instance?.Chat;
-            if (chat?.State == HubConnectionState.Connected)
-                _ = chat.InvokeAsync("SendWorldMessage", content);
+            if (chat == null || chat.State != HubConnectionState.Connected)
+            {
+                Dispatch(() => OnError?.Invoke("Mất kết nối — tin nhắn chưa được gửi."));
+                return false;
+            }
+            chat.InvokeAsync("SendWorldMessage", content)
+                .ContinueWith(t => {
+                    if (t.IsFaulted)
+                        Dispatch(() => OnError?.Invoke("Gửi tin thất bại — vui lòng thử lại."));
+                });
+            return true;
         }
 
-        public void SendDirectMessage(string receiverId, string content)
+        public bool SendDirectMessage(string receiverId, string content)
         {
             var chat = Game.Network.SignalRClient.Instance?.Chat;
-            if (chat?.State == HubConnectionState.Connected)
-                _ = chat.InvokeAsync("SendDirectMessage", receiverId, content);
+            if (chat == null || chat.State != HubConnectionState.Connected)
+            {
+                Dispatch(() => OnError?.Invoke("Mất kết nối — tin nhắn chưa được gửi."));
+                return false;
+            }
+            chat.InvokeAsync("SendDirectMessage", receiverId, content)
+                .ContinueWith(t => {
+                    if (t.IsFaulted)
+                        Dispatch(() => OnError?.Invoke("Gửi tin thất bại — vui lòng thử lại."));
+                });
+            return true;
         }
+
+        private void LogSendError(System.Threading.Tasks.Task t) =>
+            Debug.LogWarning("[ChatHubClient] InvokeAsync failed: " + t.Exception?.GetBaseException().Message);
 
         private void Dispatch(Action action) =>
             UnityMainThreadDispatcher.Instance()?.Enqueue(action);

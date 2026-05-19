@@ -16,6 +16,7 @@ public class FriendItemUI : MonoBehaviour
     private Color _normalColor;
     private static readonly Color HighlightColor = new Color(0.55f, 0.55f, 0.55f, 1f);
     private static FriendItemUI _selected;
+    private static string _selectedId; // giữ id qua các lần PopulateUI recreate items
 
     private void Awake()
     {
@@ -34,6 +35,13 @@ public class FriendItemUI : MonoBehaviour
 
         if (statusDot != null)
             statusDot.color = isOnline ? Color.green : Color.gray;
+
+        // Restore highlight nếu đây là người đang được chọn (sau khi PopulateUI tạo lại item)
+        if (myPlayerId == _selectedId)
+        {
+            _selected = this;
+            SetHighlight(true);
+        }
     }
 
     public void OnClickFriend()
@@ -55,7 +63,8 @@ public class FriendItemUI : MonoBehaviour
     {
         if (_selected != null && _selected != this)
             _selected.SetHighlight(false);
-        _selected = this;
+        _selected   = this;
+        _selectedId = myPlayerId;
         SetHighlight(true);
     }
 
@@ -72,6 +81,7 @@ public class FriendItemUI : MonoBehaviour
             _selected.SetHighlight(false);
             _selected = null;
         }
+        _selectedId = null;
     }
 
     private void OnDestroy()

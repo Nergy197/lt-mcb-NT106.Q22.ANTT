@@ -32,11 +32,10 @@ public class MailManager : MonoBehaviour
 
     public void OpenWorldTab()
     {
+        if (_chat != null) _chat.keepSubscribed = true; // phải set TRƯỚC SetActive(false)
         mailPopup.SetActive(false);
         worldPopup.SetActive(true);
         mailButtonBottom.color = new Color(0.7f, 0.7f, 0.7f, 1f);
-        // Giữ ChatManager subscribe để không miss DM trong khi đang xem World Chat
-        if (_chat != null) _chat.keepSubscribed = true;
     }
 
     public void OpenFriendTab()
