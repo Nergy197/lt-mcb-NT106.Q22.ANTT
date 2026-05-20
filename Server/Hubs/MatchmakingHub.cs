@@ -35,6 +35,9 @@ public class MatchmakingHub : Hub
     // Lưu trữ các Task timeout để hủy nếu tìm thấy trận sớm
     private static readonly ConcurrentDictionary<string, CancellationTokenSource> MatchmakingTasks = new();
 
+    // Mutex để tránh race condition khi 2 người cùng tìm trận
+    private static readonly SemaphoreSlim _matchLock = new SemaphoreSlim(1, 1);
+
     public MatchmakingHub(MongoDbContext db, BattleService battleService, GameService gameService, IOptions<BattleOptions> opts)
     {
         _db = db;
@@ -173,9 +176,8 @@ public class MatchmakingHub : Hub
             return;
         }
 
-        // 1. Vào hàng chờ trước để người khác có thể tìm thấy mình
         MatchmakingQueue[myPlayerId] = Context.ConnectionId;
-        
+
         int countdown = _opts.BotFallbackSeconds;
         await Clients.Caller.SendAsync("SearchStarted", new SearchStartedDto { CountdownSeconds = countdown });
 
@@ -186,37 +188,65 @@ public class MatchmakingHub : Hub
         {
             for (int i = countdown; i > 0; i--)
             {
-                // Kiểm tra xem có ai khác trong hàng chờ không (không phải mình)
-                var opponent = MatchmakingQueue.FirstOrDefault(kv => kv.Key != myPlayerId);
-                if (opponent.Key != null)
-                {
-                    // Thử lấy cả mình và đối thủ ra khỏi hàng chờ một cách an toàn
-                    if (MatchmakingQueue.TryRemove(myPlayerId, out var myConnId) && 
-                        MatchmakingQueue.TryRemove(opponent.Key, out var oppConnId))
-                    {
-                        // Hủy Task của đối thủ nếu họ cũng đang đếm ngược
-                        if (MatchmakingTasks.TryRemove(opponent.Key, out var oppCts)) oppCts.Cancel();
-                        MatchmakingTasks.TryRemove(myPlayerId, out _);
+                string opponentId = null;
+                string myConnId = null;
+                string oppConnId = null;
 
-                        await CreateAndNotifyBattle(myPlayerId, opponent.Key, myConnId, oppConnId);
+                await _matchLock.WaitAsync(myCts.Token);
+                try
+                {
+                    // Nếu mình đã bị đối thủ khác "claim" và xóa khỏi hàng, thoát luôn
+                    if (!MatchmakingQueue.ContainsKey(myPlayerId))
                         return;
+
+                    var opponent = MatchmakingQueue.FirstOrDefault(kv => kv.Key != myPlayerId);
+                    if (opponent.Key != null)
+                    {
+                        MatchmakingQueue.TryRemove(myPlayerId, out myConnId);
+                        MatchmakingQueue.TryRemove(opponent.Key, out oppConnId);
+                        opponentId = opponent.Key;
+                        if (MatchmakingTasks.TryRemove(opponentId, out var oppCts)) oppCts.Cancel();
+                        MatchmakingTasks.TryRemove(myPlayerId, out _);
                     }
+                }
+                finally
+                {
+                    _matchLock.Release();
+                }
+
+                if (opponentId != null)
+                {
+                    await CreateAndNotifyBattle(myPlayerId, opponentId, myConnId, oppConnId);
+                    return;
                 }
 
                 await Clients.Caller.SendAsync("SearchTick", new SearchTickDto { SecondsLeft = i });
                 await Task.Delay(1000, myCts.Token);
             }
 
-            // Hết thời gian chờ mà không tìm thấy ai -> Đấu với Bot
-            if (MatchmakingQueue.TryRemove(myPlayerId, out var finalConnId))
+            // Hết thời gian chờ -> Đấu với Bot
+            string finalConnId = null;
+            bool shouldFightBot = false;
+            await _matchLock.WaitAsync();
+            try
             {
-                MatchmakingTasks.TryRemove(myPlayerId, out _);
-                await CreateAndNotifyBattle(myPlayerId, BattleService.BotPlayerId, finalConnId, null);
+                if (MatchmakingQueue.TryRemove(myPlayerId, out finalConnId))
+                {
+                    MatchmakingTasks.TryRemove(myPlayerId, out _);
+                    shouldFightBot = true;
+                }
             }
+            finally
+            {
+                _matchLock.Release();
+            }
+
+            if (shouldFightBot)
+                await CreateAndNotifyBattle(myPlayerId, BattleService.BotPlayerId, finalConnId, null);
         }
-        catch (TaskCanceledException)
+        catch (OperationCanceledException)
         {
-            // Trận đấu đã được tìm thấy bởi người khác hoặc bị hủy
+            // Trận đã được tìm thấy bởi người khác — họ xử lý tạo trận
         }
     }
 
