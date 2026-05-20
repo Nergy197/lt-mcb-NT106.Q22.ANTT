@@ -13,6 +13,9 @@ public class MailManager : MonoBehaviour
     private void Awake()
     {
         _chat = FindFirstObjectByType<ChatManager>(FindObjectsInactive.Include);
+        // Tự tìm Button nếu chưa được kéo vào Inspector
+        if (mailButton == null && mailButtonBottom != null)
+            mailButton = mailButtonBottom.GetComponentInParent<Button>();
     }
 
     public void ToggleMail()

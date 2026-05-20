@@ -27,6 +27,12 @@ public class BottomMenuManager : MonoBehaviour
     /// <summary>Gọi khi một panel vừa được mở. Disable tất cả button trừ button đang active.</summary>
     public void NotifyOpen(Button activeButton)
     {
+        if (activeButton == null)
+        {
+            // Button chưa được assign trong Inspector — không disable gì để tránh kẹt
+            Debug.LogWarning("[BottomMenuManager] NotifyOpen gọi với activeButton = null. Hãy kéo button vào Inspector.");
+            return;
+        }
         foreach (var btn in AllButtons)
             if (btn != null)
                 btn.interactable = (btn == activeButton);
