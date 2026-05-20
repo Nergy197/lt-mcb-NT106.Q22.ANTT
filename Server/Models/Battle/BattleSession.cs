@@ -10,6 +10,7 @@ public class BattleSession
 
     public string Player1Id { get; set; } = null!;
     public string Player2Id { get; set; } = null!;
+    public BattleMode Mode { get; set; } = BattleMode.Casual;
 
     public List<BattlePokemonSnapshot> Team1 { get; set; } = new();
     public List<BattlePokemonSnapshot> Team2 { get; set; } = new();
@@ -38,6 +39,7 @@ public class BattleSession
     public DateTime TurnDeadlineUtc { get; set; } = DateTime.UtcNow;
     public string? WinnerPlayerId { get; set; }
     public DateTime CreatedAtUtc { get; set; } = DateTime.UtcNow;
+    public bool RewardsAwarded { get; set; }
 
     // ── Field conditions ─────────────────────────────────────────────────────
 

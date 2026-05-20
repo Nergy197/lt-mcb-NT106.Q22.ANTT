@@ -5434,7 +5434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69ad53359e1f5407c9515ffe8656ff03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PokemonMMO.UI.AuthUIManager
-  serverUrl: https://lt-mcb-nt106q22antt-production-cc69.up.railway.app
+  serverUrl: http://localhost:2567
   gameSceneName: Menu scene
   mainMenuView: {fileID: 2087641533}
   loginView: {fileID: 881559422}

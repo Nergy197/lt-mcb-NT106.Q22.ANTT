@@ -15,6 +15,13 @@ public enum BattleActionType
     Switch
 }
 
+public enum BattleMode
+{
+    Casual,
+    Ranked,
+    Private
+}
+
 /// <summary>
 /// Non-volatile status conditions (persist after switching out).
 /// Inspired by pbs-unity PokemonStatuses.

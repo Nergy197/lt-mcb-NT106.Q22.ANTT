@@ -31,6 +31,7 @@ public class PokedexService
         var update = Builders<Player>.Update
             .Set(p => p.MMR, 1000)
             .Set(p => p.VP, 0)
+            .Set(p => p.RankPoints, 0)
             .Set(p => p.RankedWins, 0)
             .Set(p => p.RankedMatches, 0);
         await _context.Players.UpdateManyAsync(_ => true, update);

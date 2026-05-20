@@ -100,6 +100,7 @@ public class AuthService
             Name = account.Username,
             VP = 15000,
             MMR = 1000,
+            RankPoints = 0,
             RankedWins = 0,
             RankedMatches = 0
         };

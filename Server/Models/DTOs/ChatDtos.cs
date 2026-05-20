@@ -34,6 +34,9 @@ public class FriendInfoDto
     public string PlayerId { get; set; } = null!;
     public string PlayerName { get; set; } = null!;
     public bool IsOnline { get; set; }
+    public int RankPoints { get; set; }
+    public int RankedWins { get; set; }
+    public int RankedMatches { get; set; }
 
     /// <summary>Thời gian hoạt động gần nhất (null nếu đang online hoặc chưa từng online).</summary>
     public DateTime? LastSeenAt { get; set; }
