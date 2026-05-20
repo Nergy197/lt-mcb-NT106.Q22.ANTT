@@ -2143,7 +2143,7 @@ RectTransform:
   m_Father: {fileID: 1914386287}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.99998236}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2296,7 +2296,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1722, y: -42}
+  m_AnchoredPosition: {x: 1630, y: -66}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &454139730
@@ -2856,7 +2856,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -58.057983, y: -46.8035}
+  m_AnchoredPosition: {x: -83, y: -70}
   m_SizeDelta: {x: 116.11597, y: 93.607}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &583758470
@@ -3000,6 +3000,7 @@ MonoBehaviour:
   mailPopup: {fileID: 1140646752}
   worldPopup: {fileID: 1532259295}
   mailButtonBottom: {fileID: 779266291}
+  mailButton: {fileID: 779266290}
 --- !u!1 &605113150
 GameObject:
   m_ObjectHideFlags: 0
@@ -3903,7 +3904,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -500, y: -298.35242}
+  m_AnchoredPosition: {x: -445, y: -318}
   m_SizeDelta: {x: 421.0598, y: 596.70483}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &739520513
@@ -6678,7 +6679,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1034097566
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7300,7 +7301,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 334152179}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.99998236
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8440,7 +8441,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: -7443756053782179069, guid: d91a06a7b4708934b8fa71cc93f69883, type: 3}
   m_Type: 0
-  m_PreserveAspect: 1
+  m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -8503,6 +8504,7 @@ GameObject:
   - component: {fileID: 1248386264}
   - component: {fileID: 1248386266}
   - component: {fileID: 1248386265}
+  - component: {fileID: 1248386267}
   m_Layer: 5
   m_Name: BottomMenu_Container
   m_TagString: Untagged
@@ -8574,6 +8576,22 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &1248386267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248386263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c17bde5b96ae238408fccda7ad445a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BottomMenuManager
+  mailButton: {fileID: 779266290}
+  pokedexButton: {fileID: 1787829850}
+  friendsButton: {fileID: 45128707}
+  rankButton: {fileID: 1681734113}
 --- !u!1 &1260726132
 GameObject:
   m_ObjectHideFlags: 0
@@ -10193,6 +10211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FriendsController
   friendsPopup: {fileID: 1131380851}
   friendsButtonBottom: {fileID: 45128708}
+  friendsButton: {fileID: 45128707}
   friendsTabPanel: {fileID: 1034097565}
   addFriendTabPanel: {fileID: 919185260}
   friendsTabButton: {fileID: 1127298662}
@@ -10935,6 +10954,7 @@ MonoBehaviour:
   mailPopup: {fileID: 1140646752}
   worldPopup: {fileID: 1532259295}
   mailButtonBottom: {fileID: 779266291}
+  mailButton: {fileID: 0}
 --- !u!114 &1869707712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11303,6 +11323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RankController
   rankPopup: {fileID: 2105921620}
+  rankButton: {fileID: 1681734113}
   backgroundDisplay: {fileID: 370089413}
   spriteTop100: {fileID: -5129399646170129095, guid: 2719f3e9103c42240a544e8015deecda, type: 3}
   spriteFriends: {fileID: -5035167841694168342, guid: 6819d05b86671b249bb190dbea987256, type: 3}
@@ -11417,7 +11438,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 4, y: 0.00012207031}
-  m_SizeDelta: {x: -40, y: 0}
+  m_SizeDelta: {x: -40, y: -466.23682}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1961588792
 MonoBehaviour:
