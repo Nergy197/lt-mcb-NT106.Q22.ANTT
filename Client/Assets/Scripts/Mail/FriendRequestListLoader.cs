@@ -22,7 +22,14 @@ public class FriendRequestListLoader : MonoBehaviour
 
     private void OnEnable()
     {
+        isResponding = false;
         Refresh();
+    }
+
+    private void OnDisable()
+    {
+        isResponding = false;
+        StopAllCoroutines();
     }
 
     public void Refresh()

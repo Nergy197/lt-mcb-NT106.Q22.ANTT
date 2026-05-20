@@ -14,6 +14,8 @@ public class FriendsListItemUI : MonoBehaviour
     [SerializeField] private Button deleteButton;
 
     private string playerId;
+    private string cachedName;
+    private Sprite cachedAvatar;
     private Action<string> onDelete;
 
     private void Awake()
@@ -28,12 +30,14 @@ public class FriendsListItemUI : MonoBehaviour
             deleteButton.onClick.RemoveListener(HandleDeleteClicked);
     }
 
-    public void SetData(string id, string playerName, Sprite avatar)
+    public void SetData(string id, string name, Sprite avatar)
     {
-        playerId = id;
+        playerId      = id;
+        cachedName    = name;
+        cachedAvatar  = avatar;
 
         if (playerNameText != null)
-            playerNameText.text = playerName;
+            playerNameText.text = name;
 
         if (avatarImage != null && avatar != null)
             avatarImage.sprite = avatar;
@@ -42,6 +46,18 @@ public class FriendsListItemUI : MonoBehaviour
     public void BindDelete(Action<string> deleteAction)
     {
         onDelete = deleteAction;
+    }
+
+    // Gọi từ Button OnClick trên toàn bộ row (không phải nút Delete)
+    public void OnClickRow()
+    {
+        if (string.IsNullOrWhiteSpace(playerId)) return;
+
+        ChatManager chat = FindFirstObjectByType<ChatManager>(FindObjectsInactive.Include);
+        if (chat != null)
+            chat.SetActiveChatFriend(playerId, cachedName, cachedAvatar);
+
+        Game.Chat.DMChatPanel.Instance?.OpenChat(playerId, cachedName);
     }
 
     private void HandleDeleteClicked()

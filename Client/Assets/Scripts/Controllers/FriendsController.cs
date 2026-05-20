@@ -135,6 +135,8 @@ public class FriendsController : MonoBehaviour
         if (inactiveTab != null) inactiveTab.SetActive(false);
     }
 
+    private bool _tabButtonsReordered;
+
     private void EnsureTabButtonsClickable()
     {
         if (friendsTabButton != null)
@@ -143,12 +145,13 @@ public class FriendsController : MonoBehaviour
         if (addFriendTabButton != null)
             addFriendTabButton.gameObject.SetActive(true);
 
-        // Keep tab buttons at the top of draw/raycast stack.
-        if (friendsTabButton != null)
-            friendsTabButton.SetAsLastSibling();
-
-        if (addFriendTabButton != null)
-            addFriendTabButton.SetAsLastSibling();
+        // Chỉ đặt thứ tự sibling một lần để tránh đảo render order mỗi lần đổi tab
+        if (!_tabButtonsReordered)
+        {
+            if (friendsTabButton != null)  friendsTabButton.SetAsLastSibling();
+            if (addFriendTabButton != null) addFriendTabButton.SetAsLastSibling();
+            _tabButtonsReordered = true;
+        }
     }
 
     private IEnumerator SendAddFriendRequest(string playerName)
@@ -183,6 +186,7 @@ public class FriendsController : MonoBehaviour
 
         if (success)
         {
+            if (addFriendNameInput != null) addFriendNameInput.text = "";
             SetAddFriendButtonState(isAdded: true);
         }
         else

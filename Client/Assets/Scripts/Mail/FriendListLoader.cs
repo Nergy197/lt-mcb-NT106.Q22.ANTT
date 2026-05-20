@@ -47,7 +47,14 @@ public class FriendListLoader : MonoBehaviour
 
     void OnEnable()
     {
+        isRemovingFriend = false;
         Refresh();
+    }
+
+    void OnDisable()
+    {
+        isRemovingFriend = false;
+        StopAllCoroutines();
     }
 
     public void Refresh()
