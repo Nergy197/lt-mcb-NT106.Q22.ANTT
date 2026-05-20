@@ -1171,6 +1171,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 216724102}
   m_CullTransparentMesh: 1
+--- !u!1 &223450001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 223450004}
+  - component: {fileID: 223450003}
+  - component: {fileID: 223450002}
+  m_Layer: 5
+  m_Name: RankFriends
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &223450002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223450001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -5035167841694168342, guid: 6819d05b86671b249bb190dbea987256, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &223450003
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223450001}
+  m_CullTransparentMesh: 1
+--- !u!224 &223450004
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223450001}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2105921621}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -4.511, y: -2.1702}
+  m_SizeDelta: {x: 1185.0884, y: 743.3914}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &233938084
 GameObject:
   m_ObjectHideFlags: 0
@@ -11086,9 +11161,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RankController
   rankPopup: {fileID: 2105921620}
   rankButton: {fileID: 1681734113}
-  backgroundDisplay: {fileID: 370089413}
-  spriteTop100: {fileID: -5129399646170129095, guid: 2719f3e9103c42240a544e8015deecda, type: 3}
-  spriteFriends: {fileID: -5035167841694168342, guid: 6819d05b86671b249bb190dbea987256, type: 3}
+  top100TabPanel: {fileID: 370089412}
+  friendsRankTabPanel: {fileID: 223450001}
 --- !u!1 &1946426115
 GameObject:
   m_ObjectHideFlags: 0
@@ -12126,7 +12200,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2105921621
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12140,6 +12214,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 370089415}
+  - {fileID: 223450004}
   - {fileID: 305287543}
   - {fileID: 1264799131}
   - {fileID: 1178936256}
