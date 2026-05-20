@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking; // Thư viện để gọi API (HTTP)
-using Newtonsoft.Json;       // Thư viện để dịch JSON (Anh cần cài cái này)
+using UnityEngine.UI;
+using UnityEngine.Networking;
+using Newtonsoft.Json;
 
 public class FriendListLoader : MonoBehaviour
 {
@@ -134,7 +135,7 @@ public class FriendListLoader : MonoBehaviour
         foreach (FriendData data in friends)
         {
             GameObject obj = Instantiate(friendPrefab, container);
-            Sprite avatar = GetOrAssignAvatar(data.playerId, pokemonAvatarPool); // trả null nếu pool trống
+            Sprite avatar = GetOrAssignAvatar(data.playerId, pokemonAvatarPool);
 
             FriendsListItemUI friendsItem = obj.GetComponent<FriendsListItemUI>();
             if (friendsItem != null)
@@ -148,6 +149,15 @@ public class FriendListLoader : MonoBehaviour
             if (legacyItem != null)
                 legacyItem.SetData(data.playerId, data.playerName, avatar, data.isOnline);
         }
+
+        StartCoroutine(RebuildLayoutNextFrame());
+    }
+
+    IEnumerator RebuildLayoutNextFrame()
+    {
+        yield return null; // chờ Destroy() hoàn tất và Instantiate ổn định
+        Canvas.ForceUpdateCanvases();
+        LayoutRebuilder.ForceRebuildLayoutImmediate(container.GetComponent<RectTransform>());
     }
 
     private void OnRemoveFriend(string friendPlayerId)
