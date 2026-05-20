@@ -70,18 +70,6 @@ public class MatchmakingHub : Hub
             Name = player.Name
         });
 
-        // Nạp Pokemon khởi đầu nếu người chơi chưa có con nào trong Party
-        var partyCount = await _db.PokemonInstances
-            .CountDocumentsAsync(p => p.OwnerId == player.Id && p.IsInParty);
-        
-        await Clients.Caller.SendAsync("Debug", $"[Server] Player: {player.Name} ({player.Id}), PartyCount: {partyCount}");
-
-        if (partyCount == 0)
-        {
-            await Clients.Caller.SendAsync("Debug", "[Server] Seeding initial Pokemon...");
-            await _gameService.SeedInitialPokemonAsync(player.Id);
-        }
-
         // Đồng bộ Party khi vừa vào Lobby
         await SyncPartyToClient(player.Id);
     }
