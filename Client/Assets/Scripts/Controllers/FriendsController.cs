@@ -9,6 +9,7 @@ public class FriendsController : MonoBehaviour
 {
     public GameObject friendsPopup;
     public Image friendsButtonBottom;
+    public Button friendsButton; // kéo FRIENDS bottom button vào đây
 
     [Header("Tab Settings")]
     public GameObject friendsTabPanel;
@@ -65,6 +66,7 @@ public class FriendsController : MonoBehaviour
         else
         {
             OpenFriendsTab();
+            BottomMenuManager.Instance?.NotifyOpen(friendsButton);
         }
     }
 
@@ -72,6 +74,7 @@ public class FriendsController : MonoBehaviour
     {
         if (friendsPopup != null) friendsPopup.SetActive(false);
         if (friendsButtonBottom != null) friendsButtonBottom.color = InactiveColor;
+        BottomMenuManager.Instance?.NotifyClose();
     }
 
     public void ShowFriendsTab()

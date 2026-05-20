@@ -6,6 +6,7 @@ public class MailManager : MonoBehaviour
     public GameObject mailPopup;
     public GameObject worldPopup;
     public Image mailButtonBottom;
+    public Button mailButton; // kéo MailButton vào đây
 
     private ChatManager _chat;
 
@@ -19,7 +20,10 @@ public class MailManager : MonoBehaviour
         if (mailPopup.activeSelf || worldPopup.activeSelf)
             CloseAll();
         else
+        {
             OpenFriendTab();
+            BottomMenuManager.Instance?.NotifyOpen(mailButton);
+        }
     }
 
     private void CloseAll()
@@ -28,6 +32,7 @@ public class MailManager : MonoBehaviour
         worldPopup.SetActive(false);
         if (_chat != null) _chat.keepSubscribed = false;
         mailButtonBottom.color = Color.white;
+        BottomMenuManager.Instance?.NotifyClose();
     }
 
     public void OpenWorldTab()

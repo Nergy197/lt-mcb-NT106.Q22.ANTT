@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class RankController : MonoBehaviour
 {
     public GameObject rankPopup;
+    public Button rankButton; // kéo RANK bottom button vào đây
 
     [Header("Tab Sprites")]
     public Image backgroundDisplay;
@@ -14,13 +15,22 @@ public class RankController : MonoBehaviour
     public void ToggleRankPopup()
     {
         rankPopup.SetActive(!rankPopup.activeSelf);
-        if (rankPopup.activeSelf) ShowTop100();
+        if (rankPopup.activeSelf)
+        {
+            ShowTop100();
+            BottomMenuManager.Instance?.NotifyOpen(rankButton);
+        }
+        else
+        {
+            BottomMenuManager.Instance?.NotifyClose();
+        }
     }
 
     // 2. Hàm Đóng chuyên biệt (Dùng cho nút X)
     public void CloseRankPopup()
     {
         rankPopup.SetActive(false);
+        BottomMenuManager.Instance?.NotifyClose();
     }
 
     public void ShowTop100()
