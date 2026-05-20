@@ -138,6 +138,10 @@ public class FriendRequestListLoader : MonoBehaviour
         if (!success)
         {
             Debug.LogError($"Lỗi phản hồi lời mời: {request.error} | HTTP {request.responseCode}");
+            isResponding = false;
+            // Refresh để restore lại item (không bị mất nếu thất bại)
+            Refresh();
+            yield break;
         }
 
         isResponding = false;

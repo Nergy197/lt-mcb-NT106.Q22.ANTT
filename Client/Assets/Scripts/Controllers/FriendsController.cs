@@ -51,6 +51,7 @@ public class FriendsController : MonoBehaviour
 
     private void OnDisable()
     {
+        isSubmittingAddFriend = false; // reset nếu popup đóng giữa chừng request
         if (addFriendNameInput != null)
             addFriendNameInput.onValueChanged.RemoveListener(OnAddFriendNameChanged);
     }
