@@ -129,15 +129,12 @@ public class FriendListLoader : MonoBehaviour
             Destroy(child.gameObject);
 
         if (pokemonAvatarPool == null || pokemonAvatarPool.Length == 0)
-        {
-            Debug.LogWarning("FriendListLoader: pokemonAvatarPool is empty.");
-            return;
-        }
+            Debug.LogWarning("[FriendListLoader] pokemonAvatarPool chưa được assign — hiển thị không có avatar. Hãy kéo sprites vào Inspector.");
 
         foreach (FriendData data in friends)
         {
             GameObject obj = Instantiate(friendPrefab, container);
-            Sprite avatar = GetOrAssignAvatar(data.playerId, pokemonAvatarPool);
+            Sprite avatar = GetOrAssignAvatar(data.playerId, pokemonAvatarPool); // trả null nếu pool trống
 
             FriendsListItemUI friendsItem = obj.GetComponent<FriendsListItemUI>();
             if (friendsItem != null)
