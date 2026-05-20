@@ -59,12 +59,7 @@ public class AuthController : ControllerBase
         if (resetToken is null)
             return NotFound(new { message = error });
 
-        // Trong production: gửi email. Ở đây trả token để test CLI.
-        return Ok(new
-        {
-            message    = "Reset token đã được tạo. (Trong production sẽ gửi qua email)",
-            resetToken
-        });
+        return Ok(new { message = "Mã xác nhận đã được gửi đến email của bạn." });
     }
 
     // POST /api/auth/reset-password

@@ -102,9 +102,9 @@ namespace Game.Network
 
         public async Task DisconnectAsync()
         {
-            if (_matchmakingHub != null) await _matchmakingHub.StopAsync();
-            if (_battleHub != null) await _battleHub.StopAsync();
-            if (_chatHub != null) await _chatHub.StopAsync();
+            if (_matchmakingHub != null) { await _matchmakingHub.StopAsync(); _matchmakingHub = null; }
+            if (_battleHub != null)      { await _battleHub.StopAsync();      _battleHub = null; }
+            if (_chatHub != null)        { await _chatHub.StopAsync();        _chatHub = null; }
         }
 
         [Serializable]
