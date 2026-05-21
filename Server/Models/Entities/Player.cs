@@ -26,6 +26,9 @@ public class Player
     [BsonElement("mmr")]
     public int MMR { get; set; } = 1000; // Matchmaking Rating
 
+    [BsonElement("rank_points")]
+    public int RankPoints { get; set; } = 0;
+
     [BsonElement("ranked_wins")]
     public int RankedWins { get; set; } = 0;
 

@@ -142,6 +142,9 @@ public class FriendService
                 PlayerId   = p.Id,
                 PlayerName = p.Name,
                 IsOnline   = online,
+                RankPoints = p.RankPoints,
+                RankedWins = p.RankedWins,
+                RankedMatches = p.RankedMatches,
                 LastSeenAt = online ? null : p.LastSeenAt // null khi đang online
             };
         }).ToList();

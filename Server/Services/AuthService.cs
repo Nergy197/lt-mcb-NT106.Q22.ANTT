@@ -1,4 +1,5 @@
 using System.IdentityModel.Tokens.Jwt;
+using System.Net;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
@@ -59,6 +60,12 @@ public class AuthService
             return (false, "Email không hợp lệ.");
         }
 
+        if (!await IsEmailDomainValidAsync(req.Email))
+        {
+            _log.LogWarning("[Register] Rejected — Email domain does not exist: {Email}", req.Email);
+            return (false, "Email không tồn tại.");
+        }
+
         var existingByUsername = await _db.Accounts
             .Find(a => a.Username == req.Username)
             .FirstOrDefaultAsync();
@@ -93,6 +100,7 @@ public class AuthService
             Name = account.Username,
             VP = 15000,
             MMR = 1000,
+            RankPoints = 0,
             RankedWins = 0,
             RankedMatches = 0
         };
@@ -180,6 +188,12 @@ public class AuthService
     {
         _log.LogInformation("[ForgotPassword] Request — Email: {Email}", req.Email);
 
+        if (!req.Email.Contains('@') || !await IsEmailDomainValidAsync(req.Email))
+        {
+            _log.LogWarning("[ForgotPassword] Rejected — Email domain does not exist: {Email}", req.Email);
+            return (null, "Email không tồn tại.");
+        }
+
         var account = await _db.Accounts
             .Find(a => a.Email == req.Email)
             .FirstOrDefaultAsync();
@@ -240,6 +254,25 @@ public class AuthService
         await _db.Accounts.UpdateOneAsync(a => a.Id == account.Id, update);
         _log.LogInformation("[ResetPassword] Success — AccountId: {Id}, Username: {Username}", account.Id, account.Username);
         return (true, null);
+    }
+
+    // ── Email domain validation ───────────────────────────────────────────────
+
+    private static async Task<bool> IsEmailDomainValidAsync(string email)
+    {
+        var atIndex = email.IndexOf('@');
+        if (atIndex < 0) return false;
+        var domain = email[(atIndex + 1)..];
+        if (string.IsNullOrWhiteSpace(domain)) return false;
+        try
+        {
+            var addresses = await Dns.GetHostAddressesAsync(domain);
+            return addresses.Length > 0;
+        }
+        catch
+        {
+            return false;
+        }
     }
 
     // ── JWT helper ────────────────────────────────────────────────────────────

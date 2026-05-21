@@ -70,6 +70,11 @@ public class MongoDbContext
         Players.Indexes.CreateOne(new CreateIndexModel<Player>(
             Builders<Player>.IndexKeys.Ascending(p => p.AccountId)));
 
+        Players.Indexes.CreateOne(new CreateIndexModel<Player>(
+            Builders<Player>.IndexKeys
+                .Descending(p => p.RankPoints)
+                .Descending(p => p.RankedWins)));
+
         // PokemonInstance: compound index (owner + party)
         PokemonInstances.Indexes.CreateOne(new CreateIndexModel<PokemonInstance>(
             Builders<PokemonInstance>.IndexKeys

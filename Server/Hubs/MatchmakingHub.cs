@@ -131,7 +131,7 @@ public class MatchmakingHub : Hub
 
         try
         {
-            await CreateAndNotifyBattle(myPlayerId, opponentPlayerId, Context.ConnectionId, opponentConnectionId);
+            await CreateAndNotifyBattle(myPlayerId, opponentPlayerId, Context.ConnectionId, opponentConnectionId, BattleMode.Private);
         }
         catch (Exception ex)
         {
@@ -204,7 +204,7 @@ public class MatchmakingHub : Hub
 
                 if (opponentId != null)
                 {
-                    await CreateAndNotifyBattle(myPlayerId, opponentId, myConnId, oppConnId);
+                    await CreateAndNotifyBattle(myPlayerId, opponentId, myConnId, oppConnId, BattleMode.Ranked);
                     return;
                 }
 
@@ -251,9 +251,14 @@ public class MatchmakingHub : Hub
         }
     }
 
-    private async Task<string> CreateAndNotifyBattle(string p1, string p2, string conn1, string? conn2)
+    private async Task<string> CreateAndNotifyBattle(
+        string p1,
+        string p2,
+        string conn1,
+        string? conn2,
+        BattleMode mode = BattleMode.Casual)
     {
-        var battle = await _battleService.CreateBattle(p1, p2);
+        var battle = await _battleService.CreateBattle(p1, p2, mode);
         var startDto = new BattleStartedEventDto
         {
             BattleId = battle.BattleId,
@@ -262,7 +267,8 @@ public class MatchmakingHub : Hub
             TurnNumber = battle.TurnNumber,
             TurnTimeoutSeconds = _battleService.TurnTimeoutSeconds,
             TurnDeadlineUtc = battle.TurnDeadlineUtc,
-            State = battle.State.ToString()
+            State = battle.State.ToString(),
+            Mode = battle.Mode.ToString()
         };
 
         if (!string.IsNullOrEmpty(conn1))
@@ -316,7 +322,7 @@ public class MatchmakingHub : Hub
             Console.WriteLine($"[Matchmaking] FAIL: Player profile not found for AccountId: {accountId}");
             // Fallback: Tạo profile nếu thiếu
             var username = Context.User.Identity?.Name ?? "Guest_" + accountId[..5];
-            player = new Player { AccountId = accountId, Name = username, MMR = 1000 };
+            player = new Player { AccountId = accountId, Name = username, MMR = 1000, RankPoints = 0 };
             await _db.Players.InsertOneAsync(player);
             Console.WriteLine($"[Matchmaking] FIXED: Created missing player profile for {username}");
         }

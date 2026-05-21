@@ -32,6 +32,7 @@ public class BattleStartedEventDto
     public int TurnTimeoutSeconds { get; set; }
     public DateTime TurnDeadlineUtc { get; set; }
     public string State { get; set; } = null!;
+    public string Mode { get; set; } = BattleMode.Casual.ToString();
     public int ActiveIndex1 { get; set; }
     public int ActiveIndex2 { get; set; }
 }
@@ -75,6 +76,13 @@ public class BattleEndedEventDto
 public class VPChangedDto
 {
     public int Vp { get; set; }
+    public int Delta { get; set; }
+    public string Reason { get; set; } = "";
+}
+
+public class RankChangedDto
+{
+    public int RankPoints { get; set; }
     public int Delta { get; set; }
     public string Reason { get; set; } = "";
 }

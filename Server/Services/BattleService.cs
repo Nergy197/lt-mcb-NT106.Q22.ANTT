@@ -107,6 +107,11 @@ public class BattleService
     public BattleSession? GetSession(string battleId)
         => _sessions.TryGetValue(battleId, out var s) ? s : null;
 
+    public BattleSession? GetActiveSessionForPlayer(string playerId)
+        => _sessions.Values.FirstOrDefault(s =>
+            s.State != BattleState.Ended &&
+            (s.Player1Id == playerId || s.Player2Id == playerId));
+
     public MoveEntry? GetMoveData(int moveId)
         => _moveCache.TryGetValue(moveId, out var m) ? m : null;
 
@@ -194,12 +199,13 @@ public class BattleService
     // Species IDs dùng cho bot team (6 Pokemon, bring 4)
     private static readonly int[] BotSpeciesIds = { 6, 9, 150, 445, 282, 248 };
 
-    public async Task<BattleSession> CreateBattle(string player1Id, string player2Id)
+    public async Task<BattleSession> CreateBattle(string player1Id, string player2Id, BattleMode mode = BattleMode.Casual)
     {
         var session = new BattleSession
         {
             Player1Id = player1Id,
             Player2Id = player2Id,
+            Mode      = mode,
             State     = BattleState.TeamPreview,
         };
 

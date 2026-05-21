@@ -13,7 +13,7 @@ namespace PokemonMMO.UI
     {
         // ── Server ────────────────────────────────────────────────────────────
         [Header("Server")]
-        public string serverUrl     = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app";
+        public string serverUrl     = "http://localhost:2567";
         [Tooltip("Scene load sau khi login thành công. Để trống = không chuyển.")]
         public string gameSceneName = "Menu scene";
 
@@ -272,18 +272,11 @@ namespace PokemonMMO.UI
 
                 if (resp.IsSuccessStatusCode)
                 {
-                    var data = JsonUtility.FromJson<ForgotPasswordResponseDto>(json);
                     Dispatch(async () =>
                     {
                         SetInteractable(true);
-                        // Server trả token thẳng (môi trường dev). Copy token vào ô reset.
-                        if (data != null)
-                        {
-                            resetTokenInput.text = data.resetToken ?? "";
-                        }
-                        SetFeedback(forgotFeedback, "Đã nhận token! Đang chuyển sang đặt lại mật khẩu...", isError: false);
-                        Debug.Log($"[Auth] ForgotPassword OK – token: {data.resetToken}");
-                        await Task.Delay(1200);
+                        SetFeedback(forgotFeedback, "Mã xác nhận đã gửi đến email. Vui lòng kiểm tra hộp thư.", isError: false);
+                        await Task.Delay(2000);
                         Dispatch(ShowResetPasswordView);
                     });
                 }

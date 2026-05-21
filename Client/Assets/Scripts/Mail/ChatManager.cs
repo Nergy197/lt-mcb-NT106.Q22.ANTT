@@ -131,8 +131,9 @@ public class ChatManager : MonoBehaviour
 
     private void HandleChatError(string error)
     {
-        if (!this) return; // đã bị destroy trước khi UnityMainThreadDispatcher chạy
+        if (!this) return;
         Debug.LogWarning($"[Chat] Lỗi: {error}");
+        if (!gameObject.activeInHierarchy) return; // không StartCoroutine trên inactive GameObject
         RenderMessage($"[Lỗi] {error}", "System", false);
         StartCoroutine(ScrollToBottomNextFrame());
     }

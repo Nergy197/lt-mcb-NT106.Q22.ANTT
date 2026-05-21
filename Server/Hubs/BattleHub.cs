@@ -22,6 +22,7 @@ public class BattleHub : Hub
     private readonly MongoDbContext _db;
     private readonly BattleService _battleService;
     private readonly CurrencyService _currency;
+    private readonly RankService _rankService;
 
     // connectionId → playerId (shared across hub instances)
     public static readonly ConcurrentDictionary<string, string> ConnectedPlayers =
@@ -33,11 +34,16 @@ public class BattleHub : Hub
     // battleId → (player1ConnId, player2ConnId)
     private static readonly ConcurrentDictionary<string, (string conn1, string conn2)> BattleConnections = new();
 
-    public BattleHub(MongoDbContext db, BattleService battleService, CurrencyService currency)
+    public BattleHub(
+        MongoDbContext db,
+        BattleService battleService,
+        CurrencyService currency,
+        RankService rankService)
     {
         _db = db;
         _battleService = battleService;
         _currency = currency;
+        _rankService = rankService;
     }
 
     // ═══════════════════════════════════════════════════════════════════════
@@ -151,7 +157,15 @@ public class BattleHub : Hub
         try
         {
             var (session, result) = _battleService.Surrender(battleId, playerId);
+            await AwardBattleRewards(session, result);
             await Clients.Group(battleId).SendAsync("TurnResolved", result);
+            await Clients.Group(session.BattleId).SendAsync("BattleEnded", new BattleEndedEventDto
+            {
+                BattleId = session.BattleId,
+                WinnerPlayerId = result.WinnerPlayerId,
+                TypedEvents = result.TypedEvents,
+                Events = result.Events,
+            });
         }
         catch (Exception ex)
         {
@@ -299,7 +313,7 @@ public class BattleHub : Hub
 
         if (result.State == BattleState.Ended)
         {
-            await AwardBattleVP(session, result);
+            await AwardBattleRewards(session, result);
 
             await Clients.Group(session.BattleId).SendAsync("BattleEnded", new BattleEndedEventDto
             {
@@ -311,10 +325,15 @@ public class BattleHub : Hub
         }
     }
 
-    private async Task AwardBattleVP(BattleSession session, BattleTurnResult result)
+    private async Task AwardBattleRewards(BattleSession session, BattleTurnResult result)
     {
         if (string.IsNullOrEmpty(result.WinnerPlayerId))
             return;
+
+        if (session.RewardsAwarded)
+            return;
+
+        session.RewardsAwarded = true;
 
         var reward = await _currency.AwardBattleVPAsync(
             session.Player1Id,
@@ -340,6 +359,27 @@ public class BattleHub : Hub
                 Vp = reward.LoserVP.Value,
                 Delta = reward.LoserDelta,
                 Reason = "battle_lose"
+            });
+        }
+
+        var rankReward = await _rankService.ApplyRankedBattleResultAsync(session, result.WinnerPlayerId);
+        if (rankReward.WinnerPlayerId != null && rankReward.WinnerRankPoints.HasValue)
+        {
+            await SendToPlayer(rankReward.WinnerPlayerId, "RankChanged", new RankChangedDto
+            {
+                RankPoints = rankReward.WinnerRankPoints.Value,
+                Delta = rankReward.WinnerDelta,
+                Reason = "ranked_win"
+            });
+        }
+
+        if (rankReward.LoserPlayerId != null && rankReward.LoserRankPoints.HasValue)
+        {
+            await SendToPlayer(rankReward.LoserPlayerId, "RankChanged", new RankChangedDto
+            {
+                RankPoints = rankReward.LoserRankPoints.Value,
+                Delta = rankReward.LoserDelta,
+                Reason = "ranked_lose"
             });
         }
     }
@@ -520,6 +560,7 @@ public class BattleHub : Hub
                 AccountId = accountId,
                 Name = username,
                 MMR = 1000,
+                RankPoints = 0,
                 VP = 0
             };
             await _db.Players.InsertOneAsync(player);
@@ -531,7 +572,33 @@ public class BattleHub : Hub
 
     public override async Task OnDisconnectedAsync(Exception? exception)
     {
-        if (ConnectedPlayers.TryRemove(Context.ConnectionId, out var playerId))
+        string? playerId = PlayerConnections
+            .FirstOrDefault(kv => kv.Value == Context.ConnectionId)
+            .Key;
+
+        if (playerId == null)
+            ConnectedPlayers.TryGetValue(Context.ConnectionId, out playerId);
+
+        if (!string.IsNullOrEmpty(playerId))
+        {
+            var session = _battleService.GetActiveSessionForPlayer(playerId);
+            if (session != null)
+            {
+                var (_, result) = _battleService.Surrender(session.BattleId, playerId);
+                await AwardBattleRewards(session, result);
+                await Clients.Group(session.BattleId).SendAsync("TurnResolved", result);
+                await Clients.Group(session.BattleId).SendAsync("BattleEnded", new BattleEndedEventDto
+                {
+                    BattleId = session.BattleId,
+                    WinnerPlayerId = result.WinnerPlayerId,
+                    TypedEvents = result.TypedEvents,
+                    Events = result.Events,
+                });
+            }
+        }
+
+        ConnectedPlayers.TryRemove(Context.ConnectionId, out _);
+        if (!string.IsNullOrEmpty(playerId))
             PlayerConnections.TryRemove(playerId, out _);
 
         await base.OnDisconnectedAsync(exception);
