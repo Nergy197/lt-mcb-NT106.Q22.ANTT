@@ -147,15 +147,39 @@ namespace Game.Battle.Logic
             var matchHub = SignalRClient.Instance.Matchmaking;
             while (matchHub.State != HubConnectionState.Connected) yield return null;
 
-            var task = matchHub.InvokeAsync<string>("FightBot");
-            yield return new WaitUntil(() => task.IsCompleted);
+            // Vào lobby trước để server nhận ra player
+            var joinTask = matchHub.InvokeAsync("JoinLobby");
+            yield return new WaitUntil(() => joinTask.IsCompleted);
 
-            if (task.IsCompletedSuccessfully && !string.IsNullOrEmpty(task.Result)) {
-                _battleId = task.Result;
-                MatchmakingManager.CurrentBattleId = _battleId;
+            // Lắng nghe MatchFound để nhận battleId
+            matchHub.Remove("MatchFound");
+            matchHub.On<object>("MatchFound", raw => {
+                try {
+                    var data = Newtonsoft.Json.JsonConvert.DeserializeObject<BattleStartedEventDto>(raw.ToString());
+                    if (data != null && !string.IsNullOrEmpty(data.battleId)) {
+                        MatchmakingManager.CurrentBattleId = data.battleId;
+                        _battleId = data.battleId;
+                    }
+                } catch (Exception ex) {
+                    Debug.LogError("[Battle] MatchFound parse error: " + ex.Message);
+                }
+            });
+
+            // Bắt đầu tìm trận (server xử lý countdown, fallback bot sau 20s)
+            matchHub.InvokeAsync("FindMatch");
+
+            // Đợi server trả về battleId qua MatchFound (tối đa 30s)
+            float elapsed = 0f;
+            while (string.IsNullOrEmpty(_battleId) && elapsed < 30f) {
+                elapsed += Time.deltaTime;
+                yield return null;
+            }
+
+            if (!string.IsNullOrEmpty(_battleId)) {
                 StartCoroutine(ConnectRoutine());
             } else {
-                Debug.LogError("[Battle] Server rejected FightBot.");
+                Debug.LogError("[Battle] Matchmaking timed out, no battle received.");
+                ReturnToMenu();
             }
         }
 

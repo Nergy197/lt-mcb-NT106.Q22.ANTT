@@ -24,9 +24,10 @@
       "Bash(python3 -c \"import uuid; print\\(uuid.uuid4\\(\\).hex\\); print\\(uuid.uuid4\\(\\).hex\\); print\\(uuid.uuid4\\(\\).hex\\)\")",
       "Bash(grep -E \"\\\\.\\(csproj|json\\)$\")",
       "Bash(git pull *)",
-      "Bash(git -C \"d:\\\\GitHub\\\\lt-mcb-NT106.Q22.ANTT\" status)",
-      "Bash(git -C \"d:\\\\GitHub\\\\lt-mcb-NT106.Q22.ANTT\" fetch origin)",
-      "Bash(git -C \"d:\\\\GitHub\\\\lt-mcb-NT106.Q22.ANTT\" log --oneline HEAD..origin/main)"
+      "Bash(git merge-tree *)",
+      "Bash(git stash *)",
+      "Bash(git commit *)",
+      "Bash(git push *)"
     ]
   }
 }
