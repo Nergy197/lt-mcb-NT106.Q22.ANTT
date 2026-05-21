@@ -11,6 +11,11 @@ namespace Game.Network
         public static SignalRClient Instance { get; private set; }
         public string PlayerId => PlayerPrefs.GetString("player_id", "");
 
+        // (totalVP, delta) — fired on main thread
+        public static event Action<int, int> OnVPRewardReceived;
+        // (totalRankPoints, delta) — fired on main thread
+        public static event Action<int, int> OnRankRewardReceived;
+
         [Header("Cấu hình Server")]
         public string serverUrl = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app";
 
@@ -92,7 +97,17 @@ namespace Game.Network
                     UnityMainThreadDispatcher.Instance().Enqueue(() =>
                     {
                         global::VPManager.Instance?.ApplyServerBalance(payload.Vp);
+                        OnVPRewardReceived?.Invoke(payload.Vp, payload.Delta);
                         Debug.Log($"[VP] Server updated balance: {payload.Vp} ({payload.Delta:+#;-#;0}, {payload.Reason})");
+                    });
+                });
+
+                connection.On<RankChangedPayload>("RankChanged", payload =>
+                {
+                    UnityMainThreadDispatcher.Instance().Enqueue(() =>
+                    {
+                        OnRankRewardReceived?.Invoke(payload.RankPoints, payload.Delta);
+                        Debug.Log($"[Rank] Server updated rank: {payload.RankPoints} ({payload.Delta:+#;-#;0}, {payload.Reason})");
                     });
                 });
             }
@@ -111,6 +126,14 @@ namespace Game.Network
         public class VPChangedPayload
         {
             public int Vp { get; set; }
+            public int Delta { get; set; }
+            public string Reason { get; set; }
+        }
+
+        [Serializable]
+        public class RankChangedPayload
+        {
+            public int RankPoints { get; set; }
             public int Delta { get; set; }
             public string Reason { get; set; }
         }

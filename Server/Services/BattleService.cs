@@ -305,30 +305,31 @@ public class BattleService
         if (session.State != BattleState.TeamPreview)
             throw new InvalidOperationException("Battle is not in Team Preview phase.");
 
-        if (orderedIndices.Count != BringCount)
-            throw new ArgumentException($"VGC requires exactly {BringCount} Pokemon.");
+        var (myTeam, otherTeam) = playerId == session.Player1Id
+            ? (session.Team1, session.Team2)
+            : (session.Team2, session.Team1);
 
-        if (orderedIndices.Distinct().Count() != BringCount)
-            throw new ArgumentException("Duplicate indices are not allowed.");
+        int myBring = Math.Min(BringCount, myTeam.Count);
+
+        if (orderedIndices.Count != myBring)
+            throw new ArgumentException($"Cần chọn đúng {myBring} Pokemon.");
+
+        if (orderedIndices.Distinct().Count() != myBring)
+            throw new ArgumentException("Không được chọn trùng Pokemon.");
+
+        if (orderedIndices.Any(i => i < 0 || i >= myTeam.Count))
+            throw new ArgumentException("Chỉ số Pokemon không hợp lệ.");
 
         if (playerId == session.Player1Id)
-        {
-            if (orderedIndices.Any(i => i < 0 || i >= session.Team1.Count))
-                throw new ArgumentException("Invalid Pokemon index for Team 1.");
             session.TeamOrder1 = orderedIndices;
-        }
         else if (playerId == session.Player2Id)
-        {
-            if (orderedIndices.Any(i => i < 0 || i >= session.Team2.Count))
-                throw new ArgumentException("Invalid Pokemon index for Team 2.");
             session.TeamOrder2 = orderedIndices;
-        }
         else
-        {
             throw new InvalidOperationException("Player is not in this battle.");
-        }
 
-        if (session.TeamOrder1.Count == BringCount && session.TeamOrder2.Count == BringCount)
+        int needed1 = Math.Min(BringCount, session.Team1.Count);
+        int needed2 = Math.Min(BringCount, session.Team2.Count);
+        if (session.TeamOrder1.Count == needed1 && session.TeamOrder2.Count == needed2)
         {
             // Lock in the 4 selected Pokemon in submission order
             var orig1 = session.Team1.ToList();

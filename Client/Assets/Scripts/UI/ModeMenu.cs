@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Game.Network;
 
 namespace PokemonArena.UI
 {
@@ -70,7 +71,17 @@ namespace PokemonArena.UI
             switch (btn.mode)
             {
                 case ModeButton.Mode.Ranked:
-                    UnityEngine.SceneManagement.SceneManager.LoadScene("Battle scene");
+                    var mm = MatchmakingManager.Instance;
+                    if (mm != null)
+                    {
+                        Debug.Log("[ModeMenu] Bắt đầu tìm trận Ranked qua MatchmakingManager...");
+                        mm.StartSearching();
+                    }
+                    else
+                    {
+                        Debug.LogWarning("[ModeMenu] Không tìm thấy MatchmakingManager, load trực tiếp.");
+                        SceneManager.LoadScene("Battle scene");
+                    }
                     break;
                 case ModeButton.Mode.Casual:
                     Debug.LogWarning("[ModeMenu] Casual mode chưa có scene.");

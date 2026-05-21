@@ -296,14 +296,27 @@ namespace Game.Battle.Logic
                 Debug.Log($"[Battle] Event: TeamPreviewReady. Current State: {uiManager?.gameObject.name}");
                 var dto = J<TeamPreviewDto>(raw);
                 _myFullTeam = dto.YourTeam;
-                _myTeamCurrentHp = dto.YourTeam.Select(p => p.MaxHp).ToList(); // Start with full HP
-                
-                uiManager?.SwitchPanel(BattlePanelType.TeamPreview);
-                var data = new PreviewTeamData {
-                    MyTeam = dto.YourTeam.Select(p => new PreviewPokemon { Name = p.SpeciesName, Level = p.Level, SpeciesId = p.SpeciesId }).ToArray(),
-                    OppTeam = dto.OpponentTeam.Select(p => new PreviewPokemon { Name = p.SpeciesName, Level = p.Level, SpeciesId = p.SpeciesId }).ToArray()
-                };
-                BattleEvents.OnTeamPreviewStart?.Invoke(data);
+                _myTeamCurrentHp = dto.YourTeam.Select(p => p.MaxHp).ToList();
+
+                const int bringCount = 4;
+                if (dto.YourTeam.Count < bringCount)
+                {
+                    // Không đủ 4 Pokemon — tự động chọn tất cả, chờ đối thủ
+                    Debug.Log($"[Battle] Team chỉ có {dto.YourTeam.Count} Pokemon, tự động chọn.");
+                    BattleEvents.OnPrintDialog?.Invoke(
+                        $"Đội của bạn chỉ có {dto.YourTeam.Count} Pokemon.\nĐang chờ đối thủ chọn đội...", false);
+                    var allIndices = System.Linq.Enumerable.Range(0, dto.YourTeam.Count).ToArray();
+                    SendTeamOrder(allIndices);
+                }
+                else
+                {
+                    uiManager?.SwitchPanel(BattlePanelType.TeamPreview);
+                    var data = new PreviewTeamData {
+                        MyTeam = dto.YourTeam.Select(p => new PreviewPokemon { Name = p.SpeciesName, Level = p.Level, SpeciesId = p.SpeciesId }).ToArray(),
+                        OppTeam = dto.OpponentTeam.Select(p => new PreviewPokemon { Name = p.SpeciesName, Level = p.Level, SpeciesId = p.SpeciesId }).ToArray()
+                    };
+                    BattleEvents.OnTeamPreviewStart?.Invoke(data);
+                }
             }));
 
             hub.On<object>("BattleRunning", raw => Enqueue(() => {

@@ -216,7 +216,7 @@ public class BattleHub : Hub
 
             if (result != null)
             {
-                await Clients.Group(battleId).SendAsync("TurnResolved", result);
+                await BroadcastTurnResult(updatedSession, result);
             }
         }
         catch (Exception ex)

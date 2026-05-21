@@ -8,12 +8,26 @@ namespace Game.Network
 {
     public class MatchmakingManager : MonoBehaviour
     {
+        public static MatchmakingManager Instance { get; private set; }
         public static string CurrentBattleId { get; set; }
         private bool _shouldLoadBattle = false;
 
         public static event Action<int> OnCountdownTick;
 
         public static void ResetBattleId() => CurrentBattleId = null;
+
+        private void Awake()
+        {
+            if (Instance == null)
+            {
+                Instance = this;
+                DontDestroyOnLoad(gameObject);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
 
         private async void Start()
         {
@@ -25,29 +39,46 @@ namespace Game.Network
             if (SignalRClient.Instance != null && SignalRClient.Instance.Matchmaking != null)
             {
                 var hub = SignalRClient.Instance.Matchmaking;
-                
+
                 hub.Remove("MatchFound");
                 hub.Remove("SearchStarted");
                 hub.Remove("SearchTick");
 
-                // Đăng ký nhận gói tin từ Server
                 hub.On<object>("MatchFound", OnMatchFound);
                 hub.On<SearchStartedDto>("SearchStarted", OnSearchStarted);
                 hub.On<SearchTickDto>("SearchTick", dto => {
                     OnCountdownTick?.Invoke(dto.secondsLeft);
                 });
-                
                 hub.On<string>("Debug", msg => Debug.Log("[Server Debug] " + msg));
                 hub.On<string>("Error", msg => Debug.LogError("[Server Error] " + msg));
-                
+
+                // Gọi lại JoinLobby mỗi khi hub tự reconnect (ConnectionId mới)
+                hub.Reconnected += async _ =>
+                {
+                    Debug.Log("[Matchmaking] Reconnected — re-joining lobby...");
+                    try { await hub.InvokeAsync("JoinLobby"); }
+                    catch (Exception ex) { Debug.LogError("[Matchmaking] Re-JoinLobby failed: " + ex.Message); }
+                };
+
                 await hub.InvokeAsync("JoinLobby");
             }
         }
 
         public async void StartSearching()
         {
-            if (SignalRClient.Instance != null)
-                await SignalRClient.Instance.Matchmaking.InvokeAsync("FindMatch");
+            var hub = SignalRClient.Instance?.Matchmaking;
+            if (hub == null) return;
+
+            try
+            {
+                // Đảm bảo đã join lobby (xử lý trường hợp reconnect thay đổi ConnectionId)
+                await hub.InvokeAsync("JoinLobby");
+                await hub.InvokeAsync("FindMatch");
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError("[Matchmaking] StartSearching error: " + ex.Message);
+            }
         }
 
         public async void FightBotNow()
