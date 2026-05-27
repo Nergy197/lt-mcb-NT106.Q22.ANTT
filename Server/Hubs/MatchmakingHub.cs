@@ -31,9 +31,13 @@ public class MatchmakingHub : Hub
 
     // Hàng chờ tìm trận (PlayerId -> ConnectionId)
     private static readonly ConcurrentDictionary<string, string> MatchmakingQueue = new();
-    
-    // Lưu trữ các Task timeout để hủy nếu tìm thấy trận sớm
     private static readonly ConcurrentDictionary<string, CancellationTokenSource> MatchmakingTasks = new();
+
+    private static readonly ConcurrentDictionary<string, string> CasualQueue = new();
+    private static readonly ConcurrentDictionary<string, CancellationTokenSource> CasualTasks = new();
+
+    // Phòng riêng: mã phòng → (hostPlayerId, hostConnectionId)
+    private static readonly ConcurrentDictionary<string, (string PlayerId, string ConnId)> PrivateRooms = new();
 
     // Mutex để tránh race condition khi 2 người cùng tìm trận
     private static readonly SemaphoreSlim _matchLock = new SemaphoreSlim(1, 1);
@@ -156,6 +160,129 @@ public class MatchmakingHub : Hub
         return await CreateAndNotifyBattle(playerId, BattleService.BotPlayerId, Context.ConnectionId, null);
     }
 
+    public async Task FindCasualMatch()
+    {
+        if (!ConnectedPlayers.TryGetValue(Context.ConnectionId, out var myPlayerId))
+        {
+            await Clients.Caller.SendAsync("Error", "You must join lobby first.");
+            return;
+        }
+
+        CasualQueue[myPlayerId] = Context.ConnectionId;
+
+        int countdown = _opts.BotFallbackSeconds;
+        await Clients.Caller.SendAsync("SearchStarted", new SearchStartedDto { CountdownSeconds = countdown });
+
+        var myCts = new CancellationTokenSource();
+        CasualTasks[myPlayerId] = myCts;
+
+        try
+        {
+            for (int i = countdown; i > 0; i--)
+            {
+                string opponentId = null;
+                string myConnId = null;
+                string oppConnId = null;
+
+                await _matchLock.WaitAsync(myCts.Token);
+                try
+                {
+                    if (!CasualQueue.ContainsKey(myPlayerId))
+                        return;
+
+                    var opponent = CasualQueue.FirstOrDefault(kv => kv.Key != myPlayerId);
+                    if (opponent.Key != null)
+                    {
+                        CasualQueue.TryRemove(myPlayerId, out myConnId);
+                        CasualQueue.TryRemove(opponent.Key, out oppConnId);
+                        opponentId = opponent.Key;
+                        if (CasualTasks.TryRemove(opponentId, out var oppCts)) oppCts.Cancel();
+                        CasualTasks.TryRemove(myPlayerId, out _);
+                    }
+                }
+                finally
+                {
+                    _matchLock.Release();
+                }
+
+                if (opponentId != null)
+                {
+                    await CreateAndNotifyBattle(myPlayerId, opponentId, myConnId, oppConnId, BattleMode.Casual);
+                    return;
+                }
+
+                await Clients.Caller.SendAsync("SearchTick", new SearchTickDto { SecondsLeft = i });
+                await Task.Delay(1000, myCts.Token);
+            }
+
+            string finalConnId = null;
+            bool shouldFightBot = false;
+            await _matchLock.WaitAsync();
+            try
+            {
+                if (CasualQueue.TryRemove(myPlayerId, out finalConnId))
+                {
+                    CasualTasks.TryRemove(myPlayerId, out _);
+                    shouldFightBot = true;
+                }
+            }
+            finally
+            {
+                _matchLock.Release();
+            }
+
+            if (shouldFightBot)
+                await CreateAndNotifyBattle(myPlayerId, BattleService.BotPlayerId, finalConnId, null, BattleMode.Casual);
+        }
+        catch (OperationCanceledException) { }
+    }
+
+    public async Task<string> CreatePrivateRoom()
+    {
+        if (!ConnectedPlayers.TryGetValue(Context.ConnectionId, out var playerId))
+        {
+            await Clients.Caller.SendAsync("Error", "You must join lobby first.");
+            return "";
+        }
+
+        foreach (var kv in PrivateRooms.Where(kv => kv.Value.PlayerId == playerId).ToList())
+            PrivateRooms.TryRemove(kv.Key, out _);
+
+        var code = GenerateRoomCode();
+        PrivateRooms[code] = (playerId, Context.ConnectionId);
+        return code;
+    }
+
+    public async Task JoinPrivateRoom(string code)
+    {
+        if (!ConnectedPlayers.TryGetValue(Context.ConnectionId, out var myPlayerId))
+        {
+            await Clients.Caller.SendAsync("Error", "You must join lobby first.");
+            return;
+        }
+
+        code = code.Trim();
+        if (!PrivateRooms.TryRemove(code, out var host))
+        {
+            await Clients.Caller.SendAsync("Error", "Mã phòng không tồn tại hoặc đã hết hạn.");
+            return;
+        }
+
+        if (host.PlayerId == myPlayerId)
+        {
+            PrivateRooms[code] = host;
+            await Clients.Caller.SendAsync("Error", "Không thể tự tham gia phòng của mình.");
+            return;
+        }
+
+        await CreateAndNotifyBattle(host.PlayerId, myPlayerId, host.ConnId, Context.ConnectionId, BattleMode.Private);
+    }
+
+    private static string GenerateRoomCode()
+    {
+        return new Random().Next(100000, 1000000).ToString();
+    }
+
     public async Task FindMatch()
     {
         if (!ConnectedPlayers.TryGetValue(Context.ConnectionId, out var myPlayerId))
@@ -240,15 +367,27 @@ public class MatchmakingHub : Hub
 
     public async Task CancelMatchmaking()
     {
-        if (ConnectedPlayers.TryGetValue(Context.ConnectionId, out var myPlayerId))
+        if (!ConnectedPlayers.TryGetValue(Context.ConnectionId, out var myPlayerId))
+            return;
+
+        bool cancelled = false;
+
+        MatchmakingQueue.TryRemove(myPlayerId, out _);
+        if (MatchmakingTasks.TryRemove(myPlayerId, out var cts))
         {
-            MatchmakingQueue.TryRemove(myPlayerId, out _);
-            if (MatchmakingTasks.TryRemove(myPlayerId, out var cts)) 
-            {
-                cts.Cancel();
-                await Clients.Caller.SendAsync("SearchCancelled", "Đã hủy tìm trận.");
-            }
+            cts.Cancel();
+            cancelled = true;
         }
+
+        CasualQueue.TryRemove(myPlayerId, out _);
+        if (CasualTasks.TryRemove(myPlayerId, out var casualCts))
+        {
+            casualCts.Cancel();
+            cancelled = true;
+        }
+
+        if (cancelled)
+            await Clients.Caller.SendAsync("SearchCancelled", "Đã hủy tìm trận.");
     }
 
     private async Task<string> CreateAndNotifyBattle(
@@ -284,6 +423,15 @@ public class MatchmakingHub : Hub
     {
         if (ConnectedPlayers.TryRemove(Context.ConnectionId, out var playerId))
         {
+            MatchmakingQueue.TryRemove(playerId, out _);
+            if (MatchmakingTasks.TryRemove(playerId, out var cts)) cts.Cancel();
+
+            CasualQueue.TryRemove(playerId, out _);
+            if (CasualTasks.TryRemove(playerId, out var casualCts)) casualCts.Cancel();
+
+            foreach (var kv in PrivateRooms.Where(kv => kv.Value.PlayerId == playerId).ToList())
+                PrivateRooms.TryRemove(kv.Key, out _);
+
             await Clients.Group("Lobby").SendAsync("PlayerLeft", new PlayerLeftEventDto
             {
                 SessionId = Context.ConnectionId

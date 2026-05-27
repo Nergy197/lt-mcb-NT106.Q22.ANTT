@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Game.Network;
+using PokemonMMO.UI;
 
 namespace PokemonArena.UI
 {
@@ -19,9 +20,12 @@ namespace PokemonArena.UI
 
         public string menuSceneName = "Menu scene";
 
+        [SerializeField] private PrivateRoomPanel privateRoomPanel;
+
         public System.Action<ModeButton.Mode> OnModeConfirmed;
 
-        int currentIndex;
+        int  currentIndex;
+        bool _isSearching;
 
         void Start()
         {
@@ -30,9 +34,18 @@ namespace PokemonArena.UI
             ApplySelection();
         }
 
+        void OnEnable()  => MatchmakingManager.OnSearchCancelled += HandleSearchCancelled;
+        void OnDisable() => MatchmakingManager.OnSearchCancelled -= HandleSearchCancelled;
+
+        private void HandleSearchCancelled()
+        {
+            _isSearching = false;
+            SetButtonsInteractable(true);
+        }
+
         void Update()
         {
-            if (buttons.Count == 0) return;
+            if (_isSearching || buttons.Count == 0) return;
 
             if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
             {
@@ -75,6 +88,8 @@ namespace PokemonArena.UI
                     if (mm != null)
                     {
                         Debug.Log("[ModeMenu] Bắt đầu tìm trận Ranked qua MatchmakingManager...");
+                        _isSearching = true;
+                        SetButtonsInteractable(false);
                         mm.StartSearching();
                     }
                     else
@@ -84,11 +99,34 @@ namespace PokemonArena.UI
                     }
                     break;
                 case ModeButton.Mode.Casual:
-                    Debug.LogWarning("[ModeMenu] Casual mode chưa có scene.");
+                    var mmCasual = MatchmakingManager.Instance;
+                    if (mmCasual != null)
+                    {
+                        _isSearching = true;
+                        SetButtonsInteractable(false);
+                        mmCasual.StartSearchingCasual();
+                    }
+                    else
+                    {
+                        SceneManager.LoadScene("Battle scene");
+                    }
                     break;
                 case ModeButton.Mode.Private:
-                    Debug.LogWarning("[ModeMenu] Private mode chưa có scene.");
+                    if (privateRoomPanel != null)
+                        privateRoomPanel.Show();
+                    else
+                        Debug.LogWarning("[ModeMenu] Chưa gán PrivateRoomPanel trong Inspector.");
                     break;
+            }
+        }
+
+        private void SetButtonsInteractable(bool on)
+        {
+            foreach (var b in buttons)
+            {
+                if (b == null) continue;
+                var btn = b.GetComponent<UnityEngine.UI.Button>();
+                if (btn != null) btn.interactable = on;
             }
         }
 

@@ -13,6 +13,10 @@ namespace Game.Network
         private bool _shouldLoadBattle = false;
 
         public static event Action<int> OnCountdownTick;
+        public static event Action      OnSearchStarted;
+        public static event Action      OnSearchCancelled;
+        public static event Action<string> OnPrivateRoomCreated;
+        public static event Action<string> OnServerError;
 
         public static void ResetBattleId() => CurrentBattleId = null;
 
@@ -45,12 +49,15 @@ namespace Game.Network
                 hub.Remove("SearchTick");
 
                 hub.On<object>("MatchFound", OnMatchFound);
-                hub.On<SearchStartedDto>("SearchStarted", OnSearchStarted);
+                hub.On<SearchStartedDto>("SearchStarted", HandleSearchStartedDto);
                 hub.On<SearchTickDto>("SearchTick", dto => {
                     OnCountdownTick?.Invoke(dto.secondsLeft);
                 });
                 hub.On<string>("Debug", msg => Debug.Log("[Server Debug] " + msg));
-                hub.On<string>("Error", msg => Debug.LogError("[Server Error] " + msg));
+                hub.On<string>("Error", msg => {
+                    Debug.LogError("[Server Error] " + msg);
+                    OnServerError?.Invoke(msg);
+                });
 
                 // Gọi lại JoinLobby mỗi khi hub tự reconnect (ConnectionId mới)
                 hub.Reconnected += async _ =>
@@ -78,6 +85,54 @@ namespace Game.Network
             catch (Exception ex)
             {
                 Debug.LogError("[Matchmaking] StartSearching error: " + ex.Message);
+            }
+        }
+
+        public async void StartSearchingCasual()
+        {
+            var hub = SignalRClient.Instance?.Matchmaking;
+            if (hub == null) return;
+            try
+            {
+                await hub.InvokeAsync("JoinLobby");
+                await hub.InvokeAsync("FindCasualMatch");
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError("[Matchmaking] StartSearchingCasual error: " + ex.Message);
+            }
+        }
+
+        public async void CreatePrivateRoom()
+        {
+            var hub = SignalRClient.Instance?.Matchmaking;
+            if (hub == null) return;
+            try
+            {
+                await hub.InvokeAsync("JoinLobby");
+                string code = await hub.InvokeAsync<string>("CreatePrivateRoom");
+                OnPrivateRoomCreated?.Invoke(code);
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError("[Matchmaking] CreatePrivateRoom error: " + ex.Message);
+                OnServerError?.Invoke(ex.Message);
+            }
+        }
+
+        public async void JoinPrivateRoom(string code)
+        {
+            var hub = SignalRClient.Instance?.Matchmaking;
+            if (hub == null) return;
+            try
+            {
+                await hub.InvokeAsync("JoinLobby");
+                await hub.InvokeAsync("JoinPrivateRoom", code);
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError("[Matchmaking] JoinPrivateRoom error: " + ex.Message);
+                OnServerError?.Invoke(ex.Message);
             }
         }
 
@@ -140,10 +195,30 @@ namespace Game.Network
             }
         }
 
-        private void OnSearchStarted(SearchStartedDto dto)
+        private void HandleSearchStartedDto(SearchStartedDto dto)
         {
             Debug.Log($"[Matchmaking] Search Started. Bot in {dto.countdownSeconds}s");
+            OnSearchStarted?.Invoke();
             OnCountdownTick?.Invoke(dto.countdownSeconds);
+        }
+
+        public async void CancelSearching()
+        {
+            var hub = SignalRClient.Instance?.Matchmaking;
+            if (hub == null) return;
+            try
+            {
+                await hub.InvokeAsync("CancelMatchmaking");
+                Debug.Log("[Matchmaking] CancelMatchmaking sent.");
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError("[Matchmaking] CancelSearching error: " + ex.Message);
+            }
+            finally
+            {
+                OnSearchCancelled?.Invoke();
+            }
         }
     }
 
