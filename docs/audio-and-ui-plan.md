@@ -239,9 +239,111 @@ Client/Assets/Audio/
 
 ---
 
+## Mapping âm thanh theo scene
+
+### BGM
+
+Tất cả file đã tải về `Client/Assets/Audio/BGM/`. Nguồn: Pokemon Black/White OST và Black 2/White 2 OST (archive.org).
+
+| Scene | File BGM | Track gốc | Game | Loop | Ghi chú |
+|---|---|---|---|---|---|
+| `Start menu` | `bgm_title.mp3` | Title Screen | BW | ✅ | Huyền bí, phát ngay khi scene load |
+| `Menu scene` | `bgm_lobby.mp3` | Pokémon Center | BW | ✅ | Nhẹ nhàng, thân quen |
+| `Battle scene` — Team Preview | `bgm_preview.mp3` | Pokémon World Tournament | BW2 | ✅ | Căng thẳng, kịch tính nhẹ |
+| `Battle scene` — Đang đánh | `bgm_battle.mp3` | Battle! (Trainer) | BW | ✅ | Nhanh, mạnh |
+| `Battle scene` — Kết quả thắng | `bgm_win.mp3` | Victory! (Trainer) | BW | ❌ | Phát 1 lần |
+| `Battle scene` — Kết quả thua | `bgm_lose.mp3` | Floccesy Town | BW2 | ❌ | Yên tĩnh, u buồn — phát 1 lần |
+| `RecuitScene` | `bgm_recruit.mp3` | Join Avenue | BW2 | ✅ | Sôi động, hồi hộp |
+| `BoxScene` | `bgm_box.mp3` | Accumula Town | BW | ✅ | Nhẹ nhàng, ambient |
+| `PokedexScene` | `bgm_pokedex.mp3` | Route 1 | BW | ✅ | Khám phá, dịu nhẹ |
+
+> Battle BGM không dùng `SceneBGMConfig` — được điều khiển thủ công trong `BattleNetworkController` theo state machine (xem Phase 3 Bước 2).
+
+---
+
+### SFX theo scene
+
+#### Start menu (`AuthUIManager`)
+
+| Trigger | SFX |
+|---|---|
+| Bấm bất kỳ Button (Login, Register, v.v.) | `sfx_ui_click` |
+| Đăng nhập / đăng ký thành công → chuyển scene | `sfx_ui_confirm` |
+
+#### Menu scene — Navigation & Lobby
+
+| Trigger | SFX |
+|---|---|
+| Bấm bất kỳ Button điều hướng | `sfx_ui_click` |
+| Bấm xác nhận (Heal, Trade, v.v.) | `sfx_ui_confirm` |
+
+#### Menu scene — Matchmaking
+
+| Trigger | SFX |
+|---|---|
+| Mỗi giây countdown bot fallback (`OnCountdownTick`) | `sfx_tick` |
+| `MatchFound` nhận từ server (trước khi load scene) | `sfx_match_found` |
+
+#### Battle scene — Team Preview
+
+| Trigger | SFX |
+|---|---|
+| Click chọn / bỏ chọn slot Pokémon | `sfx_ui_click` |
+| Bấm Confirm | `sfx_ui_confirm` |
+
+#### Battle scene — Combat (`BattleNetworkController.ProcessEventVisuals`)
+
+| Điều kiện | SFX |
+|---|---|
+| `ev.Damage > 0` (hit thường) | `sfx_battle_hit` |
+| `ev.Message` chứa "critical" | `sfx_battle_crit` |
+| `ev.EventType == "PokemonFaintEvent"` | `sfx_battle_faint` |
+| HP sau hit < 20% MaxHP | `sfx_battle_hp_low` (loop — dừng khi HP hồi hoặc Pokémon bị swap) |
+| `StatusInflictedEvent` — `Burn` | `sfx_status_burn` |
+| `StatusInflictedEvent` — `Paralysis` | `sfx_status_para` |
+| `StatusInflictedEvent` — `Sleep` hoặc `Freeze` | `sfx_status_sleep` |
+| `StatChangeEvent` stages > 0 | `sfx_stat_up` |
+| `StatChangeEvent` stages < 0 | `sfx_stat_down` |
+| Weather thay đổi sang Rain | `sfx_weather_rain` |
+| Weather thay đổi sang Sun | `sfx_weather_sun` |
+| Weather thay đổi sang Sandstorm | `sfx_weather_sand` |
+| Weather thay đổi sang Snow/Hail | `sfx_weather_snow` |
+| `IsTerastallized == true` lần đầu trong lượt | `sfx_tera` |
+
+#### Battle scene — Kết quả (`BattleResultPanel`)
+
+| Trigger | SFX |
+|---|---|
+| Màn hình kết quả hiện — thắng | `sfx_victory` |
+| Màn hình kết quả hiện — thua | `sfx_defeat` |
+| Animation đếm VP / RP (mỗi tick số nhảy) | `sfx_coin_tick` |
+
+#### RecuitScene (`RecruitManager`)
+
+| Trigger | SFX |
+|---|---|
+| Bấm nút gacha 10-roll | `sfx_recruit_roll` |
+| Mỗi icon Pokémon pop vào ô kết quả (stagger 0.05s × index) | `sfx_recruit_pop` |
+| Bấm xác nhận nhận Pokémon | `sfx_recruit_confirm` |
+
+#### BoxScene (`PokemonBoxPanel`)
+
+| Trigger | SFX |
+|---|---|
+| Chọn slot / di chuyển Pokémon | `sfx_ui_click` |
+| Thả Pokémon vào slot mới / thả về box | `sfx_ui_confirm` |
+
+#### PokedexScene (`PokedexSceneController`)
+
+| Trigger | SFX |
+|---|---|
+| Chọn entry Pokémon | `sfx_ui_click` |
+
+---
+
 ## Phase 3 — BGM per scene
 
-**Bước 1 — Gán BGM clip vào `SceneBGMConfig.asset`** cho từng scene (xem bảng trong chat)
+**Bước 1 — Gán BGM clip vào `SceneBGMConfig.asset`** theo bảng Mapping ở trên (các scene dùng `SceneBGMConfig`; battle scene điều khiển riêng).
 
 **Bước 2 — Battle BGM thay đổi theo trạng thái trận**
 

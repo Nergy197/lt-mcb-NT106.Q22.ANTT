@@ -28,7 +28,17 @@
       "Bash(git stash *)",
       "Bash(git commit *)",
       "Bash(git push *)",
-      "Bash(xargs cat *)"
+      "Bash(xargs cat *)",
+      "WebFetch(domain:archive.org)",
+      "Bash(curl -L -o bgm_title.mp3 \"https://archive.org/download/pkmn-black-white-soundtrack/Disc%201/03%20-%20Title%20Screen.mp3\" --silent --show-error)",
+      "Bash(curl -L -o bgm_lobby.mp3 \"https://archive.org/download/pkmn-black-white-soundtrack/Disc%201/20%20-%20Pok%C3%A9mon%20Center.mp3\" --silent --show-error)",
+      "Bash(curl -L -o bgm_battle.mp3 \"https://archive.org/download/pkmn-black-white-soundtrack/Disc%201/28%20-%20Battle%21%20%28Trainer%29.mp3\" --silent --show-error)",
+      "Bash(curl -L -o bgm_win.mp3 \"https://archive.org/download/pkmn-black-white-soundtrack/Disc%201/29%20-%20Victory%21%20%28Trainer%29.mp3\" --silent --show-error)",
+      "Bash(curl -L -o bgm_box.mp3 \"https://archive.org/download/pkmn-black-white-soundtrack/Disc%201/18%20-%20Accumula%20Town.mp3\" --silent --show-error)",
+      "Bash(curl -L -o bgm_preview.mp3 \"https://archive.org/download/pkmn-bw2-soundtrack/Disc%202/02%20-%20Pok%C3%A9mon%20World%20Tournament%20%28PWT%29.mp3\" --silent --show-error)",
+      "Bash(curl -L -o bgm_lose.mp3 \"https://archive.org/download/pkmn-bw2-soundtrack/Disc%201/09%20-%20Floccesy%20Town.mp3\" --silent --show-error)",
+      "Bash(curl -L -o bgm_recruit.mp3 \"https://archive.org/download/pkmn-bw2-soundtrack/Disc%201/41%20-%20Join%20Avenue.mp3\" --silent --show-error)",
+      "Bash(wait)"
     ]
   }
 }
