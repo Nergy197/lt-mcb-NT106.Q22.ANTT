@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.SignalR.Client;
 using Newtonsoft.Json;
 using Game.Battle.UI;
 using Game.Network;
+using PokemonMMO.Audio;
 
 namespace Game.Battle.Logic
 {
@@ -22,6 +23,28 @@ namespace Game.Battle.Logic
         [Header("HUD Phe Dich")]
         public EntityHUD enemyHUD1;
         public EntityHUD enemyHUD2;
+
+        [Header("BGM Clips")]
+        [SerializeField] private AudioClip bgmPreview;
+        [SerializeField] private AudioClip bgmBattle;
+        [SerializeField] private AudioClip bgmWin;
+        [SerializeField] private AudioClip bgmLose;
+
+        [Header("Battle SFX")]
+        [SerializeField] private AudioClip sfxHit;
+        [SerializeField] private AudioClip sfxCrit;
+        [SerializeField] private AudioClip sfxFaint;
+        [SerializeField] private AudioClip sfxHpLow;
+        [SerializeField] private AudioClip sfxStatusBurn;
+        [SerializeField] private AudioClip sfxStatusPara;
+        [SerializeField] private AudioClip sfxStatusSleep;
+        [SerializeField] private AudioClip sfxStatUp;
+        [SerializeField] private AudioClip sfxStatDown;
+        [SerializeField] private AudioClip sfxWeatherRain;
+        [SerializeField] private AudioClip sfxWeatherSun;
+        [SerializeField] private AudioClip sfxWeatherSand;
+        [SerializeField] private AudioClip sfxWeatherSnow;
+        [SerializeField] private AudioClip sfxTera;
 
         [Header("Panels")]
         public BattleUIManager uiManager;
@@ -44,6 +67,7 @@ namespace Game.Battle.Logic
         private bool _isForcedSwitchPending = false;
         private int _pendingForcedSlot = 0;
         private bool _isProcessingTurn = false;
+        private bool _hasBattleStarted = false;
         private readonly Queue<Action> _mainThreadQueue = new Queue<Action>();
 
         private void OnEnable()
@@ -219,11 +243,10 @@ namespace Game.Battle.Logic
             SetupHubHandlers(hub);
             Debug.Log("[Battle] Joining Battle Hub: " + _battleId);
 
-            yield return new WaitForSeconds(0.8f);
-            
             bool joinFailed = false;
             try {
                 hub.InvokeAsync("JoinBattle", _battleId);
+                BattleEvents.OnBattleConnected?.Invoke();
             } catch (Exception ex) {
                 Debug.LogError("[Battle] JoinBattle Invoke Error: " + ex.Message);
                 joinFailed = true;
@@ -294,6 +317,7 @@ namespace Game.Battle.Logic
 
             hub.On<object>("TeamPreviewReady", raw => Enqueue(() => {
                 Debug.Log($"[Battle] Event: TeamPreviewReady. Current State: {uiManager?.gameObject.name}");
+                AudioManager.Instance?.PlayBGM(bgmPreview);
                 var dto = J<TeamPreviewDto>(raw);
                 _myFullTeam = dto.YourTeam;
                 _myTeamCurrentHp = dto.YourTeam.Select(p => p.MaxHp).ToList();
@@ -321,6 +345,11 @@ namespace Game.Battle.Logic
 
             hub.On<object>("BattleRunning", raw => Enqueue(() => {
                 Debug.Log("[Battle] Event: BattleRunning");
+                if (!_hasBattleStarted)
+                {
+                    _hasBattleStarted = true;
+                    AudioManager.Instance?.PlayBGM(bgmBattle);
+                }
                 var dto = J<FieldDto>(raw);
                 _field = FieldSnapshot.From(dto);
                 if (dto.YourTeamHp != null) _myTeamCurrentHp = dto.YourTeamHp;
@@ -391,6 +420,7 @@ namespace Game.Battle.Logic
 
         private IEnumerator HandleBattleEnd(bool iWon, string winnerId)
         {
+            AudioManager.Instance?.PlayBGM(iWon ? bgmWin : bgmLose, fadeDuration: 0.3f, loop: false);
             string msg = string.IsNullOrEmpty(winnerId)
                 ? "TRAN DAU KET THUC HOA!"
                 : (iWon ? "BAN DA CHIEN THANG!" : "BAN DA THAT BAI...");
@@ -793,6 +823,7 @@ namespace Game.Battle.Logic
         private void ProcessEventVisuals(EventDto ev)
         {
             var eff = BattleEffectManager.Instance;
+            var audio = AudioManager.Instance;
             if (eff == null) return;
 
             // 1. Move Animation
@@ -800,21 +831,26 @@ namespace Game.Battle.Logic
             {
                 string targetSlot = GetSlotNameByPokemonName(ev.TargetName);
                 if (!string.IsNullOrEmpty(targetSlot))
-                {
                     eff.PlayMoveEffect(ev.MoveName, targetSlot);
-                }
             }
 
-            // 2. Hit / Damage Effect (Shake)
+            // 2. Hit / Damage Effect
             if (ev.Damage > 0 || ev.EventType == "Damage")
             {
                 string targetSlot = GetSlotNameByPokemonName(ev.TargetName ?? ev.PokemonName);
                 if (!string.IsNullOrEmpty(targetSlot))
                 {
                     eff.PlayHitEffect(targetSlot);
-                    
-                    // Trigger health bar update immediately for visual sync
-                    BattleEvents.OnHealthChanged?.Invoke(targetSlot, ev.HpAfter, 100); // MaxHP arbitrary here, HUD handles pct
+                    BattleEvents.OnHealthChanged?.Invoke(targetSlot, ev.HpAfter, 100);
+
+                    bool isCrit = !string.IsNullOrEmpty(ev.Message) &&
+                                  ev.Message.IndexOf("critical", StringComparison.OrdinalIgnoreCase) >= 0;
+                    audio?.PlaySFX(isCrit ? sfxCrit : sfxHit);
+
+                    var slot = GetSlotByName(targetSlot);
+                    if (slot != null && slot.MaxHp > 0 && ev.HpAfter > 0 &&
+                        (float)ev.HpAfter / slot.MaxHp < 0.2f)
+                        audio?.PlaySFX(sfxHpLow);
                 }
             }
 
@@ -825,11 +861,17 @@ namespace Game.Battle.Logic
                 if (!string.IsNullOrEmpty(targetSlot))
                 {
                     Color statusColor = Color.white;
-                    if (ev.Status.Contains("Burn")) statusColor = Color.red;
-                    else if (ev.Status.Contains("Poison") || ev.Status.Contains("Toxic")) statusColor = Color.magenta;
-                    else if (ev.Status.Contains("Paralysis")) statusColor = Color.yellow;
-                    else if (ev.Status.Contains("Freeze")) statusColor = Color.cyan;
-                    else if (ev.Status.Contains("Sleep")) statusColor = Color.gray;
+                    string status = ev.Status ?? "";
+                    if (status.IndexOf("Burn", StringComparison.OrdinalIgnoreCase) >= 0)
+                    { statusColor = Color.red;     audio?.PlaySFX(sfxStatusBurn); }
+                    else if (status.IndexOf("Paralysis", StringComparison.OrdinalIgnoreCase) >= 0)
+                    { statusColor = Color.yellow;  audio?.PlaySFX(sfxStatusPara); }
+                    else if (status.IndexOf("Poison", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                             status.IndexOf("Toxic",  StringComparison.OrdinalIgnoreCase) >= 0)
+                    { statusColor = Color.magenta; audio?.PlaySFX(sfxStatusBurn); }
+                    else if (status.IndexOf("Sleep",  StringComparison.OrdinalIgnoreCase) >= 0 ||
+                             status.IndexOf("Freeze", StringComparison.OrdinalIgnoreCase) >= 0)
+                    { statusColor = Color.cyan;    audio?.PlaySFX(sfxStatusSleep); }
 
                     eff.PlayStatusFlash(targetSlot, statusColor);
                 }
@@ -841,25 +883,54 @@ namespace Game.Battle.Logic
                 string targetSlot = GetSlotNameByPokemonName(ev.PokemonName);
                 if (!string.IsNullOrEmpty(targetSlot))
                 {
-                    // Flash green for raise, blue for lower
                     Color statColor = ev.Stages > 0 ? Color.green : Color.blue;
                     eff.PlayStatusFlash(targetSlot, statColor);
+                    audio?.PlaySFX(ev.Stages > 0 ? sfxStatUp : sfxStatDown);
                 }
             }
 
             // 5. Fainting
             if (ev.EventType == "PokemonFaintEvent")
             {
-                // Sync internal state immediately for UI update
+                audio?.PlaySFX(sfxFaint);
                 string slotName = GetSlotNameByPokemonName(ev.PokemonName);
-                if (slotName == "Player1_HUD" && _field.YourA != null) _field.YourA.IsFainted = true;
-                else if (slotName == "Player2_HUD" && _field.YourB != null) _field.YourB.IsFainted = true;
-                else if (slotName == "Enemy1_HUD" && _field.OppA != null) _field.OppA.IsFainted = true;
-                else if (slotName == "Enemy2_HUD" && _field.OppB != null) _field.OppB.IsFainted = true;
+                if (slotName == "Player_Lead_Slot" && _field.YourA != null) _field.YourA.IsFainted = true;
+                else if (slotName == "Player_Sub2_Slot" && _field.YourB != null) _field.YourB.IsFainted = true;
+                else if (slotName == "Enemy_Lead_Slot"  && _field.OppA != null) _field.OppA.IsFainted = true;
+                else if (slotName == "Enemy_Sub2_Slot"  && _field.OppB != null) _field.OppB.IsFainted = true;
 
                 UpdateHUDs();
                 UpdateSprites();
             }
+
+            // 6. Tera
+            if (ev.EventType == "TerastallizeEvent")
+                audio?.PlaySFX(sfxTera);
+
+            // 7. Weather
+            if (ev.EventType == "WeatherChangeEvent" || ev.EventType == "WeatherSetEvent")
+            {
+                string msg = ev.Message ?? "";
+                if      (msg.IndexOf("rain",      StringComparison.OrdinalIgnoreCase) >= 0) audio?.PlaySFX(sfxWeatherRain);
+                else if (msg.IndexOf("sun",       StringComparison.OrdinalIgnoreCase) >= 0 ||
+                         msg.IndexOf("harsh",     StringComparison.OrdinalIgnoreCase) >= 0) audio?.PlaySFX(sfxWeatherSun);
+                else if (msg.IndexOf("sandstorm", StringComparison.OrdinalIgnoreCase) >= 0) audio?.PlaySFX(sfxWeatherSand);
+                else if (msg.IndexOf("snow",      StringComparison.OrdinalIgnoreCase) >= 0 ||
+                         msg.IndexOf("hail",      StringComparison.OrdinalIgnoreCase) >= 0) audio?.PlaySFX(sfxWeatherSnow);
+            }
+        }
+
+        private PokemonSlot GetSlotByName(string slotName)
+        {
+            if (_field == null) return null;
+            return slotName switch
+            {
+                "Player_Lead_Slot" => _field.YourA,
+                "Player_Sub2_Slot" => _field.YourB,
+                "Enemy_Lead_Slot"  => _field.OppA,
+                "Enemy_Sub2_Slot"  => _field.OppB,
+                _ => null
+            };
         }
 
         private string GetSlotNameByPokemonName(string name)

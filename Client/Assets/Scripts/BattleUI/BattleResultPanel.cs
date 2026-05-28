@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Game.Network;
+using PokemonMMO.Audio;
 
 namespace Game.Battle.UI
 {
@@ -24,6 +25,11 @@ namespace Game.Battle.UI
         [Header("Colors")]
         public Color winColor  = new Color(0.2f, 0.8f, 0.2f);
         public Color loseColor = new Color(0.9f, 0.3f, 0.3f);
+
+        [Header("SFX")]
+        [SerializeField] private AudioClip sfxVictory;
+        [SerializeField] private AudioClip sfxDefeat;
+        [SerializeField] private AudioClip sfxCoinTick;
 
         // Thời gian tối đa chờ reward events trước khi tự hiện
         private const float RewardWaitTimeout = 3f;
@@ -80,6 +86,8 @@ namespace Game.Battle.UI
 
         private void UpdateUI()
         {
+            AudioManager.Instance?.PlaySFX(_iWon ? sfxVictory : sfxDefeat);
+
             if (resultText != null)
             {
                 resultText.text  = _iWon ? "CHIEN THANG!" : "THAT BAI...";
@@ -90,9 +98,8 @@ namespace Game.Battle.UI
             {
                 if (_vpDelta.HasValue)
                 {
-                    string sign = _vpDelta.Value >= 0 ? "+" : "";
-                    vpDeltaText.text  = $"{sign}{_vpDelta.Value} VP";
                     vpDeltaText.color = _vpDelta.Value >= 0 ? winColor : loseColor;
+                    StartCoroutine(CountUpText(vpDeltaText, _vpDelta.Value, "VP"));
                 }
                 else
                 {
@@ -104,15 +111,31 @@ namespace Game.Battle.UI
             {
                 if (_rankDelta.HasValue)
                 {
-                    string sign = _rankDelta.Value >= 0 ? "+" : "";
-                    rankDeltaText.text  = $"{sign}{_rankDelta.Value} RP";
                     rankDeltaText.color = _rankDelta.Value >= 0 ? winColor : loseColor;
+                    StartCoroutine(CountUpText(rankDeltaText, _rankDelta.Value, "RP"));
                 }
                 else
                 {
                     rankDeltaText.text = "";
                 }
             }
+        }
+
+        private IEnumerator CountUpText(TMPro.TextMeshProUGUI label, int target, string suffix)
+        {
+            string sign = target >= 0 ? "+" : "";
+            int abs     = Mathf.Abs(target);
+            int steps   = Mathf.Min(abs, 20);
+            if (steps == 0) { label.text = $"{sign}{target} {suffix}"; yield break; }
+
+            for (int i = 1; i <= steps; i++)
+            {
+                int display = Mathf.RoundToInt(Mathf.Lerp(0, abs, (float)i / steps)) * (target < 0 ? -1 : 1);
+                label.text = $"{sign}{display} {suffix}";
+                AudioManager.Instance?.PlaySFX(sfxCoinTick);
+                yield return new WaitForSeconds(0.05f);
+            }
+            label.text = $"{sign}{target} {suffix}";
         }
 
         private void OnReturnClicked()

@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 using Microsoft.AspNetCore.SignalR.Client;
 using System;
 using System.Threading.Tasks;
+using PokemonMMO.Audio;
 
 namespace Game.Network
 {
@@ -11,6 +12,10 @@ namespace Game.Network
         public static MatchmakingManager Instance { get; private set; }
         public static string CurrentBattleId { get; set; }
         private bool _shouldLoadBattle = false;
+        private bool _shouldPlayMatchFoundSfx = false;
+
+        [Header("SFX")]
+        [SerializeField] private AudioClip sfxMatchFound;
 
         public static event Action<int> OnCountdownTick;
         public static event Action      OnSearchStarted;
@@ -158,6 +163,11 @@ namespace Game.Network
 
         private void Update()
         {
+            if (_shouldPlayMatchFoundSfx)
+            {
+                _shouldPlayMatchFoundSfx = false;
+                AudioManager.Instance?.PlaySFX(sfxMatchFound);
+            }
             if (_shouldLoadBattle)
             {
                 _shouldLoadBattle = false;
@@ -189,6 +199,7 @@ namespace Game.Network
 
                 Debug.Log($"[Matchmaking] SUCCESS! BattleId: {data.battleId}, P1: {data.player1Id}, P2: {data.player2Id}");
                 CurrentBattleId = data.battleId;
+                _shouldPlayMatchFoundSfx = true;
                 _shouldLoadBattle = true;
             } catch (Exception ex) {
                 Debug.LogError("[Matchmaking] MatchFound Parse Error: " + ex.Message);

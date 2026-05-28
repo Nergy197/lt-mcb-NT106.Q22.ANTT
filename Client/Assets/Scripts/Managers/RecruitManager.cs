@@ -5,6 +5,7 @@ using System.Net.Http;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using PokemonMMO.Audio;
 
 namespace PokemonMMO.UI
 {
@@ -72,6 +73,11 @@ namespace PokemonMMO.UI
         [Header("Options Popup")]
         [Tooltip("Kéo GameObject Options_Popup vào đây")]
         public GameObject optionsPopup;
+
+        [Header("SFX")]
+        [SerializeField] private AudioClip sfxRecruitRoll;
+        [SerializeField] private AudioClip sfxRecruitPop;
+        [SerializeField] private AudioClip sfxRecruitConfirm;
 
 
         // ── Unity Lifecycle ───────────────────────────────────────────────
@@ -147,6 +153,7 @@ namespace PokemonMMO.UI
         {
             if (_isRolling) return;
             _isRolling = true;
+            AudioManager.Instance?.PlaySFX(sfxRecruitRoll);
 
             // Ẩn panel banner, hiện list bar
             if (recruitPanel != null) recruitPanel.SetActive(false);
@@ -201,7 +208,7 @@ namespace PokemonMMO.UI
                             {
                                 string iconUrl = $"{serverUrl}{results[i].IconUrl}";
                                 int index = i; // capture loop variable cho coroutine
-                                StartCoroutine(LoadIconIntoSlot(slots[index], iconUrl, results[index].Name, () => {
+                                StartCoroutine(LoadIconIntoSlot(slots[index], iconUrl, results[index].Name, index, () => {
                                     iconsLoaded++;
                                     // Khi load xong tất cả icon, chọn ô đầu tiên
                                     if (iconsLoaded >= pendingIcons)
@@ -383,7 +390,7 @@ namespace PokemonMMO.UI
         /// Tạo một child Image bên trong slot (ô trắng giữ nguyên),
         /// icon Pokémon sẽ hiển thị ở giữa ô.
         /// </summary>
-        private IEnumerator LoadIconIntoSlot(Image slotImage, string url, string pokemonName, Action onComplete)
+        private IEnumerator LoadIconIntoSlot(Image slotImage, string url, string pokemonName, int slotIndex, Action onComplete)
         {
             using (var www = UnityEngine.Networking.UnityWebRequest.Get(url))
             {
@@ -423,6 +430,7 @@ namespace PokemonMMO.UI
                         rt.offsetMax = new Vector2(-padding, -padding);
 
                         Debug.Log($"[Recruit] ✅ {pokemonName} ({texture.width}x{texture.height})");
+                        StartCoroutine(PlayPopSfxDelayed(slotIndex));
                     }
                     else
                     {
@@ -473,6 +481,12 @@ namespace PokemonMMO.UI
             }
         }
 
+        private IEnumerator PlayPopSfxDelayed(int index)
+        {
+            yield return new WaitForSeconds(0.05f * index);
+            AudioManager.Instance?.PlaySFX(sfxRecruitPop);
+        }
+
         private void Dispatch(Action action)
         {
             lock (_mainThread) _mainThread.Enqueue(action);
@@ -519,7 +533,7 @@ namespace PokemonMMO.UI
                 if (slots[i] == null || _currentResults[i] == null) continue;
                 string iconUrl = $"{serverUrl}{_currentResults[i].IconUrl}";
                 int idx = i;
-                StartCoroutine(LoadIconIntoSlot(slots[idx], iconUrl, _currentResults[idx].Name, null));
+                StartCoroutine(LoadIconIntoSlot(slots[idx], iconUrl, _currentResults[idx].Name, idx, null));
                 yield return null; // trải đều qua nhiều frame
             }
         }
@@ -562,6 +576,7 @@ namespace PokemonMMO.UI
             {
                 var resp = JsonUtility.FromJson<RecruitConfirmResponseDto>(req.downloadHandler.text);
                 Debug.Log($"[Recruit] ✅ {resp.Message} (Party: {resp.IsInParty})");
+                AudioManager.Instance?.PlaySFX(sfxRecruitConfirm);
                 ResetRecruitState(); // Reset hoàn toàn sau khi đã recruit
             }
             else

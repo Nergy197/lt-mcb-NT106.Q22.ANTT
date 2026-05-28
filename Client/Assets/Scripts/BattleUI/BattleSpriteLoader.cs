@@ -16,8 +16,15 @@ namespace Game.Battle.Logic
 
         private string _serverUrl = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app/data/pokemon";
 
-        // Cache sprite da tai de tranh tai lai
         private static readonly Dictionary<string, Sprite> _spriteCache = new();
+
+        private void Awake()
+        {
+            foreach (var sr in new[] { playerLeadSlot, playerSub2Slot, enemyLeadSlot, enemySub2Slot })
+            {
+                if (sr != null) sr.color = new Color(1f, 1f, 1f, 0f);
+            }
+        }
 
         // ── API CHINH ────────────────────────────────────────────────────────
 

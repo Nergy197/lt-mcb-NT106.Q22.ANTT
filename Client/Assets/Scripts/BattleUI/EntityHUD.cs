@@ -97,6 +97,8 @@ namespace Game.Battle.UI
 
             if (genderText       == null) genderText       = transform.Find("GenderBadge/GenderText")?.GetComponent<TextMeshProUGUI>();
             if (genderImage      == null) genderImage      = transform.Find("GenderBadge")?.GetComponent<Image>();
+
+            gameObject.SetActive(false);
         }
 
         private void OnEnable()  => BattleEvents.OnHealthChanged += HandleHealthChanged;

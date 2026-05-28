@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Game.Network;
+using PokemonMMO.Audio;
 
 namespace PokemonMMO.UI
 {
@@ -16,6 +17,9 @@ namespace PokemonMMO.UI
 
         [Header("Cancel")]
         [SerializeField] private Button cancelButton;
+
+        [Header("SFX")]
+        [SerializeField] private AudioClip sfxTick;
 
         private bool  _isSearching;
         private float _elapsedSeconds;
@@ -70,6 +74,7 @@ namespace PokemonMMO.UI
 
         private void HandleCountdownTick(int secondsLeft)
         {
+            AudioManager.Instance?.PlaySFX(sfxTick);
             _botSecondsLeft = secondsLeft;
 
             if (matchmakingPanel != null && !matchmakingPanel.activeSelf)

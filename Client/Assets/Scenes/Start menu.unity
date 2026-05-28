@@ -4874,6 +4874,57 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!1 &1011274917
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1011274919}
+  - component: {fileID: 1011274918}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1011274918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011274917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 331c85f8e7b1a44a49804055ac76b9c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PokemonMMO.Audio.AudioManager
+  mainMixer: {fileID: 24100000, guid: ba85364c3982a8e4398efa1fe162ce3b, type: 2}
+  bgmGroup: {fileID: 3234519285401269452, guid: ba85364c3982a8e4398efa1fe162ce3b, type: 2}
+  sfxGroup: {fileID: 1429990158625219950, guid: ba85364c3982a8e4398efa1fe162ce3b, type: 2}
+  bgmVolumeParam: BGMVolume
+  sfxVolumeParam: SFXVolume
+  bgmConfig: {fileID: 11400000, guid: 816d1cddbc724419e984fd8bfe26eebe, type: 2}
+  DefaultClick: {fileID: 0}
+--- !u!4 &1011274919
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011274917}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1022562104
 GameObject:
   m_ObjectHideFlags: 0
@@ -10734,3 +10785,4 @@ SceneRoots:
   - {fileID: 1233919387}
   - {fileID: 309176602}
   - {fileID: 1998810114}
+  - {fileID: 1011274919}

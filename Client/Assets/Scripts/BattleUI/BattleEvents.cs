@@ -26,6 +26,7 @@ namespace Game.Battle.UI
         public static Action                 OnSkillPanelCancelled;
         public static Action                 OnPlayerSurrender;
         public static Action<bool>           OnTeraAvailabilityChanged;
+        public static Action                 OnBattleConnected;
     }
 
     [Serializable]

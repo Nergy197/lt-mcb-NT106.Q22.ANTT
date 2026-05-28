@@ -38,7 +38,14 @@
       "Bash(curl -L -o bgm_preview.mp3 \"https://archive.org/download/pkmn-bw2-soundtrack/Disc%202/02%20-%20Pok%C3%A9mon%20World%20Tournament%20%28PWT%29.mp3\" --silent --show-error)",
       "Bash(curl -L -o bgm_lose.mp3 \"https://archive.org/download/pkmn-bw2-soundtrack/Disc%201/09%20-%20Floccesy%20Town.mp3\" --silent --show-error)",
       "Bash(curl -L -o bgm_recruit.mp3 \"https://archive.org/download/pkmn-bw2-soundtrack/Disc%201/41%20-%20Join%20Avenue.mp3\" --silent --show-error)",
-      "Bash(wait)"
+      "Bash(wait)",
+      "WebFetch(domain:downloads.khinsider.com)",
+      "WebFetch(domain:archive.vg-resource.com)",
+      "WebFetch(domain:bellblitzking.itch.io)",
+      "WebFetch(domain:www.vg-resource.com)",
+      "WebFetch(domain:sounds.spriters-resource.com)",
+      "WebFetch(domain:freesound.org)",
+      "Bash(grep -v \"^\\\\s*$\")"
     ]
   }
 }

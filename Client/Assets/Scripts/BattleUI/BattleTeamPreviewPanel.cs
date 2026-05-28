@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 using System.Linq;
+using PokemonMMO.Audio;
 
 namespace Game.Battle.UI
 {
@@ -20,6 +21,10 @@ namespace Game.Battle.UI
         [Header("Enemy Team Display")]
         public GameObject[]      enemySlots = new GameObject[6];
         public Image[]           enemyIcons = new Image[6];
+
+        [Header("SFX")]
+        [SerializeField] private AudioClip sfxClick;
+        [SerializeField] private AudioClip sfxConfirm;
 
         private static readonly Color ColorUnselected = new(0.15f, 0.15f, 0.20f, 0.90f);
         private static readonly Color ColorSelected   = new(0.15f, 0.40f, 0.20f, 1.00f);
@@ -118,6 +123,7 @@ namespace Game.Battle.UI
 
         private void OnSlotClicked(int index)
         {
+            AudioManager.Instance?.PlaySFX(sfxClick != null ? sfxClick : AudioManager.Instance.DefaultClick);
             if (_orderOf[index] >= 0) _selectedIndices.Remove(index);
             else { if (_selectedIndices.Count >= 4) return; _selectedIndices.Add(index); }
 
@@ -188,6 +194,7 @@ namespace Game.Battle.UI
         private void OnConfirmClicked()
         {
             if (_selectedIndices.Count != 4) return;
+            AudioManager.Instance?.PlaySFX(sfxConfirm != null ? sfxConfirm : AudioManager.Instance.DefaultClick);
             _previewActive = false;
             BattleEvents.OnTeamOrderConfirmed?.Invoke(_selectedIndices.ToArray());
             Hide();
