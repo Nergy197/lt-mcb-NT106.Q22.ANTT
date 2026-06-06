@@ -1081,6 +1081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PokemonMMO.UI.RecruitManager
   serverUrl: https://lt-mcb-nt106q22antt-production-cc69.up.railway.app
+  menuSceneName: Menu scene
   recruitPanel: {fileID: 511663092}
   pokemonListBar: {fileID: 268999013}
   recruitButton: {fileID: 1864505559}
@@ -1099,6 +1100,9 @@ MonoBehaviour:
   selectedColor: {r: 1, g: 1, b: 0.5, a: 1}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   optionsPopup: {fileID: 531338400}
+  sfxRecruitRoll: {fileID: 8300000, guid: bc95b2657d28ff141a3f757a14380d42, type: 3}
+  sfxRecruitPop: {fileID: 8300000, guid: 7825505860d666540ac82a0a535d71b3, type: 3}
+  sfxRecruitConfirm: {fileID: 8300000, guid: 213b733de9f9ed74793990ad4b5e88a7, type: 3}
 --- !u!4 &1359093893
 Transform:
   m_ObjectHideFlags: 0

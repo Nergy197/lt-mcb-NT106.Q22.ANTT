@@ -3878,24 +3878,24 @@ MonoBehaviour:
   playerHUD2: {fileID: 817448135}
   enemyHUD1: {fileID: 25295708}
   enemyHUD2: {fileID: 591472018}
-  bgmPreview: {fileID: 8300000, guid: 4ec9a27780d334bb9bd15caa5791e4ca, type: 3}
-  bgmBattle: {fileID: 8300000, guid: e06b71561d66044a59d40b6455d2ba85, type: 3}
-  bgmWin: {fileID: 8300000, guid: a3e48a8109a1c4ddfbcca5250d176553, type: 3}
-  bgmLose: {fileID: 8300000, guid: 4a52cd322f0424d5d89136273ca10823, type: 3}
-  sfxHit: {fileID: 8300000, guid: 3ad0e2b13fbe44a7f982b6d220629b15, type: 3}
-  sfxCrit: {fileID: 8300000, guid: adb84d6f4332a489da62688917734b5c, type: 3}
-  sfxFaint: {fileID: 8300000, guid: af7ad206ad5244160a12cf7071a10f6a, type: 3}
-  sfxHpLow: {fileID: 8300000, guid: e9d8c265ce0f74e2a9f2bc34012e141b, type: 3}
-  sfxStatusBurn: {fileID: 8300000, guid: 582b8b1e319af4c3f8db3539ad7562db, type: 3}
-  sfxStatusPara: {fileID: 8300000, guid: 841bad2f1dafc4be5b961d8b7e08143f, type: 3}
-  sfxStatusSleep: {fileID: 8300000, guid: 27388328a4bd54390b0ecc01ae28b04d, type: 3}
-  sfxStatUp: {fileID: 8300000, guid: 66f1e95d740c94bb7b60c969c9726a66, type: 3}
-  sfxStatDown: {fileID: 8300000, guid: a73629b08d3594870a6ce2e84f19d93c, type: 3}
-  sfxWeatherRain: {fileID: 8300000, guid: 58c83f0feeb3444c1bb58e173238761d, type: 3}
-  sfxWeatherSun: {fileID: 8300000, guid: 61a7bef9e329c4477a3b7abdac224553, type: 3}
-  sfxWeatherSand: {fileID: 8300000, guid: 4c3ee442a66314c5483bb5ede85cf4ea, type: 3}
-  sfxWeatherSnow: {fileID: 8300000, guid: f0887b9ac35e046f49017643a5b7d695, type: 3}
-  sfxTera: {fileID: 8300000, guid: f26a6577d01a24bca9900487a13be987, type: 3}
+  bgmPreview: {fileID: 8300000, guid: 6bad8ce553a927b4a8c9ff02f57ea316, type: 3}
+  bgmBattle: {fileID: 8300000, guid: a1a3cd4ff18467543b0c1a9532e177c1, type: 3}
+  bgmWin: {fileID: 8300000, guid: 886ccaad8db597a44814c0471c240306, type: 3}
+  bgmLose: {fileID: 8300000, guid: c459e040c9a7a5b448eed29369b5d258, type: 3}
+  sfxHit: {fileID: 8300000, guid: c7ecfe254504a2e48b1305f5edc27d67, type: 3}
+  sfxCrit: {fileID: 8300000, guid: ee963004e89d4e846b6cac3387f9df90, type: 3}
+  sfxFaint: {fileID: 8300000, guid: a07d169ea0509de46b133bc76bef2ac5, type: 3}
+  sfxHpLow: {fileID: 8300000, guid: 8b532d073a023e34db321b3ebaf96d5e, type: 3}
+  sfxStatusBurn: {fileID: 8300000, guid: c7ecfe254504a2e48b1305f5edc27d67, type: 3}
+  sfxStatusPara: {fileID: 8300000, guid: c7ecfe254504a2e48b1305f5edc27d67, type: 3}
+  sfxStatusSleep: {fileID: 8300000, guid: c7ecfe254504a2e48b1305f5edc27d67, type: 3}
+  sfxStatUp: {fileID: 8300000, guid: a01201a689f12f64a9b012b4266f6814, type: 3}
+  sfxStatDown: {fileID: 8300000, guid: 1efcec3904ea87e4783f5f4299a6fd92, type: 3}
+  sfxWeatherRain: {fileID: 0}
+  sfxWeatherSun: {fileID: 0}
+  sfxWeatherSand: {fileID: 0}
+  sfxWeatherSnow: {fileID: 0}
+  sfxTera: {fileID: 0}
   uiManager: {fileID: 0}
   skillPanel: {fileID: 1174109734}
   commandPanel: {fileID: 465560776}
@@ -9143,9 +9143,9 @@ MonoBehaviour:
   returnButton: {fileID: 948529641}
   winColor: {r: 0.2, g: 0.8, b: 0.2, a: 1}
   loseColor: {r: 0.9, g: 0.3, b: 0.3, a: 1}
-  sfxVictory: {fileID: 8300000, guid: 8bb9f5ef0cef2464baf76e718f995b2c, type: 3}
-  sfxDefeat: {fileID: 8300000, guid: eb1b6796b70924f10a01f75ff4dda1a5, type: 3}
-  sfxCoinTick: {fileID: 8300000, guid: cf6e1d455ae2245b3803e28ff517d18e, type: 3}
+  sfxVictory: {fileID: 8300000, guid: d7c33130ba89d8e4f930427447df9ad9, type: 3}
+  sfxDefeat: {fileID: 8300000, guid: 08e774c9c6cc6524784431f8b93822ba, type: 3}
+  sfxCoinTick: {fileID: 8300000, guid: 0d3934e2d30047c49a8b51550df7f9e6, type: 3}
 --- !u!114 &906803690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14351,8 +14351,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  sfxClick: {fileID: 8300000, guid: f5669d0eaca804c6c872c8ebdc8fec60, type: 3}
-  sfxConfirm: {fileID: 8300000, guid: f09c9cfd33bcf40d7a7fb244c201ab0b, type: 3}
+  sfxClick: {fileID: 8300000, guid: a5e2f8ad9509dfe4eaffd87b52d036b6, type: 3}
+  sfxConfirm: {fileID: 8300000, guid: 1c299cd9e27a7d547a0e90fbe2c75053, type: 3}
 --- !u!1 &1455348217
 GameObject:
   m_ObjectHideFlags: 0

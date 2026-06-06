@@ -4909,7 +4909,7 @@ MonoBehaviour:
   bgmVolumeParam: BGMVolume
   sfxVolumeParam: SFXVolume
   bgmConfig: {fileID: 11400000, guid: 816d1cddbc724419e984fd8bfe26eebe, type: 2}
-  DefaultClick: {fileID: 0}
+  DefaultClick: {fileID: 8300000, guid: 6b84e1133f8fc4642a5c97010f569e23, type: 3}
 --- !u!4 &1011274919
 Transform:
   m_ObjectHideFlags: 0
