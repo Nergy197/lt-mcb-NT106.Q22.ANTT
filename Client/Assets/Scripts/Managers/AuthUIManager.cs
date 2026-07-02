@@ -54,6 +54,9 @@ namespace PokemonMMO.UI
         private static readonly HttpClient Http = new HttpClient { Timeout = TimeSpan.FromSeconds(10) };
         private readonly Queue<Action> _mainThread = new Queue<Action>();
 
+        private bool _isVerifyingRegistration = false;
+        private string _registrationEmail = "";
+
         private void Awake()
         {
             // Đảm bảo các ô nhập liệu không bị giới hạn độ dài
@@ -92,6 +95,7 @@ namespace PokemonMMO.UI
 
         public void ShowForgotPasswordView()
         {
+            _isVerifyingRegistration = false;
             SetActiveView(forgotPasswordView);
             ClearAll();
         }
@@ -100,6 +104,25 @@ namespace PokemonMMO.UI
         {
             SetActiveView(resetPasswordView);
             ClearAll();
+
+            if (resetPasswordView != null)
+            {
+                if (resetNewPasswordInput != null) 
+                    resetNewPasswordInput.gameObject.SetActive(!_isVerifyingRegistration);
+
+                var texts = resetPasswordView.GetComponentsInChildren<Text>(true);
+                foreach (var t in texts)
+                {
+                    if (t.text == "ĐẶT LẠI MẬT KHẨU" || t.text == "TẠO TÀI KHOẢN" || t.text == "XÁC NHẬN")
+                    {
+                        t.text = _isVerifyingRegistration ? "TẠO TÀI KHOẢN" : "ĐẶT LẠI MẬT KHẨU";
+                    }
+                    if (t.text == "Reset token" || t.text == "Mã OTP từ email")
+                    {
+                        t.text = _isVerifyingRegistration ? "Mã OTP từ email" : "Reset token";
+                    }
+                }
+            }
         }
 
         private void SetActiveView(GameObject target)
@@ -163,24 +186,36 @@ namespace PokemonMMO.UI
 
         public void OnResetPasswordSubmit()
         {
-            string token       = resetTokenInput?.text?.Trim()       ?? "";
-            string newPassword = resetNewPasswordInput?.text          ?? "";
-
-            if (string.IsNullOrEmpty(token) || string.IsNullOrEmpty(newPassword))
+            string token = resetTokenInput?.text?.Trim() ?? "";
+            
+            if (_isVerifyingRegistration)
             {
-                SetFeedback(resetFeedback, "Vui lòng điền đầy đủ thông tin.", isError: true);
-                return;
+                if (string.IsNullOrEmpty(token))
+                {
+                    SetFeedback(resetFeedback, "Vui lòng nhập mã OTP.", isError: true);
+                    return;
+                }
+                SetFeedback(resetFeedback, "Đang xác thực...", isError: false);
+                SetInteractable(false);
+                _ = VerifyRegistrationAsync(_registrationEmail, token);
             }
-
-            if (newPassword.Length < 6)
+            else
             {
-                SetFeedback(resetFeedback, "Mật khẩu phải có ít nhất 6 ký tự.", isError: true);
-                return;
+                string newPassword = resetNewPasswordInput?.text ?? "";
+                if (string.IsNullOrEmpty(token) || string.IsNullOrEmpty(newPassword))
+                {
+                    SetFeedback(resetFeedback, "Vui lòng điền đầy đủ thông tin.", isError: true);
+                    return;
+                }
+                if (newPassword.Length < 6)
+                {
+                    SetFeedback(resetFeedback, "Mật khẩu phải có ít nhất 6 ký tự.", isError: true);
+                    return;
+                }
+                SetFeedback(resetFeedback, "Đang đặt lại mật khẩu...", isError: false);
+                SetInteractable(false);
+                _ = ResetPasswordAsync(token, newPassword);
             }
-
-            SetFeedback(resetFeedback, "Đang đặt lại mật khẩu...", isError: false);
-            SetInteractable(false);
-            _ = ResetPasswordAsync(token, newPassword);
         }
 
         // ── API tasks ─────────────────────────────────────────────────────────
@@ -238,14 +273,14 @@ namespace PokemonMMO.UI
                     Dispatch(async () =>
                     {
                         SetInteractable(true);
-                        SetFeedback(signUpFeedback, "Đăng ký thành công! Đang chuyển sang đăng nhập...", isError: false);
-                        Debug.Log("[Auth] Register OK");
+                        SetFeedback(signUpFeedback, "Đã gửi mã xác nhận! Đang chuyển sang màn hình nhập OTP...", isError: false);
+                        Debug.Log("[Auth] Register OK (Waiting for verification)");
+                        
+                        _isVerifyingRegistration = true;
+                        _registrationEmail = email;
+                        
                         await Task.Delay(1500);
-                        Dispatch(() =>
-                        {
-                            ShowLoginView();
-                            if (loginUsernameInput != null) loginUsernameInput.text = username;
-                        });
+                        Dispatch(ShowResetPasswordView);
                     });
                 }
                 else
@@ -258,6 +293,43 @@ namespace PokemonMMO.UI
             {
                 Dispatch(() => { SetInteractable(true); SetFeedback(signUpFeedback, "Không kết nối được server.", isError: true); });
                 Debug.LogError($"[Auth] RegisterAsync: {ex.Message}");
+            }
+        }
+
+        private async Task VerifyRegistrationAsync(string email, string token)
+        {
+            try
+            {
+                var body = JsonUtility.ToJson(new VerifyRegistrationDto { Email = email, Token = token });
+                var content = new StringContent(body, Encoding.UTF8, "application/json");
+                var resp = await Http.PostAsync($"{serverUrl}/api/auth/verify-registration", content);
+                var json = await resp.Content.ReadAsStringAsync();
+
+                if (resp.IsSuccessStatusCode)
+                {
+                    Dispatch(async () =>
+                    {
+                        SetInteractable(true);
+                        SetFeedback(resetFeedback, "Xác thực thành công! Đang quay lại đăng nhập...", isError: false);
+                        Debug.Log("[Auth] VerifyRegistration OK");
+                        await Task.Delay(1500);
+                        Dispatch(() =>
+                        {
+                            _isVerifyingRegistration = false;
+                            ShowLoginView();
+                        });
+                    });
+                }
+                else
+                {
+                    string msg = ParseError(json) ?? "Mã xác nhận không đúng hoặc đã hết hạn.";
+                    Dispatch(() => { SetInteractable(true); SetFeedback(resetFeedback, msg, isError: true); });
+                }
+            }
+            catch (Exception ex)
+            {
+                Dispatch(() => { SetInteractable(true); SetFeedback(resetFeedback, "Không kết nối được server.", isError: true); });
+                Debug.LogError($"[Auth] VerifyRegistrationAsync: {ex.Message}");
             }
         }
 
@@ -376,6 +448,7 @@ namespace PokemonMMO.UI
         [Serializable] private class RegisterRequestDto        { public string Username; public string Email; public string Password; }
         [Serializable] private class ForgotPasswordDto         { public string Email; }
         [Serializable] private class ResetPasswordDto          { public string Token; public string NewPassword; }
+        [Serializable] private class VerifyRegistrationDto     { public string Email; public string Token; }
         [Serializable] private class AuthResponseDto           { public string Token; public string Username; public string AccountId; public string PlayerId; }
         [Serializable] private class ForgotPasswordResponseDto { public string message; public string resetToken; }
         [Serializable] private class ErrorDto                  { public string message; }

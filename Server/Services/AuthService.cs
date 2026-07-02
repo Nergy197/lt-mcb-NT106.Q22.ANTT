@@ -71,8 +71,17 @@ public class AuthService
             .FirstOrDefaultAsync();
         if (existingByUsername is not null)
         {
-            _log.LogWarning("[Register] Rejected — Username already taken: {Username}", req.Username);
-            return (false, "Username đã tồn tại.");
+            if (existingByUsername.IsVerified)
+            {
+                _log.LogWarning("[Register] Rejected — Username already taken: {Username}", req.Username);
+                return (false, "Username đã tồn tại.");
+            }
+            else
+            {
+                // Xóa tài khoản ảo chưa được xác thực
+                await _db.Accounts.DeleteOneAsync(a => a.Id == existingByUsername.Id);
+                await _db.Players.DeleteOneAsync(p => p.AccountId == existingByUsername.Id);
+            }
         }
 
         var existingByEmail = await _db.Accounts
@@ -80,8 +89,17 @@ public class AuthService
             .FirstOrDefaultAsync();
         if (existingByEmail is not null)
         {
-            _log.LogWarning("[Register] Rejected — Email already in use: {Email}", req.Email);
-            return (false, "Email đã được sử dụng.");
+            if (existingByEmail.IsVerified)
+            {
+                _log.LogWarning("[Register] Rejected — Email already in use: {Email}", req.Email);
+                return (false, "Email đã được sử dụng.");
+            }
+            else
+            {
+                // Xóa tài khoản ảo chưa được xác thực
+                await _db.Accounts.DeleteOneAsync(a => a.Id == existingByEmail.Id);
+                await _db.Players.DeleteOneAsync(p => p.AccountId == existingByEmail.Id);
+            }
         }
 
         var account = new Account
@@ -89,7 +107,10 @@ public class AuthService
             Username     = req.Username,
             Email        = req.Email,
             PasswordHash = BCrypt.Net.BCrypt.HashPassword(req.Password),
-            CreatedAt    = DateTime.UtcNow
+            CreatedAt    = DateTime.UtcNow,
+            IsVerified   = false,
+            RegistrationToken = RandomNumberGenerator.GetInt32(100000, 999999).ToString(),
+            RegistrationTokenExpiry = DateTime.UtcNow.AddHours(1)
         };
 
         await _db.Accounts.InsertOneAsync(account);
@@ -106,7 +127,32 @@ public class AuthService
         };
         await _db.Players.InsertOneAsync(player);
 
-        _log.LogInformation("[Register] Success — AccountId: {Id}, Username: {Username}, PlayerId: {PlayerId}", account.Id, account.Username, player.Id);
+        await _emailService.SendRegistrationTokenAsync(account.Email, account.RegistrationToken);
+
+        _log.LogInformation("[Register] Sent OTP — AccountId: {Id}, Email: {Email}", account.Id, account.Email);
+        return (true, null);
+    }
+
+    public async Task<(bool Success, string? Error)> VerifyRegistrationAsync(string email, string otp)
+    {
+        var account = await _db.Accounts.Find(a => a.Email == email).FirstOrDefaultAsync();
+        if (account is null) return (false, "Tài khoản không tồn tại.");
+        
+        if (account.IsVerified) return (false, "Tài khoản đã được xác thực.");
+
+        if (account.RegistrationToken != otp)
+            return (false, "Mã xác nhận không đúng.");
+
+        if (account.RegistrationTokenExpiry < DateTime.UtcNow)
+            return (false, "Mã xác nhận đã hết hạn.");
+
+        var update = Builders<Account>.Update
+            .Set(a => a.IsVerified, true)
+            .Unset(a => a.RegistrationToken)
+            .Unset(a => a.RegistrationTokenExpiry);
+
+        await _db.Accounts.UpdateOneAsync(a => a.Id == account.Id, update);
+        _log.LogInformation("[VerifyRegistration] Success — Email: {Email}", email);
         return (true, null);
     }
 
@@ -122,8 +168,14 @@ public class AuthService
 
         if (account is null || !BCrypt.Net.BCrypt.Verify(req.Password, account.PasswordHash))
         {
-            _log.LogWarning("[Login] Failed — Invalid credentials for Username: {Username}", req.Username);
-            return (null, "Username hoặc password không đúng.");
+            _log.LogWarning("[Login] Rejected — Wrong password for user: {Username}", req.Username);
+            return (null, "Mật khẩu không đúng.");
+        }
+
+        if (!account.IsVerified)
+        {
+            _log.LogWarning("[Login] Rejected — Unverified email: {Username}", req.Username);
+            return (null, "Tài khoản chưa được xác thực email. Vui lòng kiểm tra email của bạn.");
         }
 
         var player = await _db.Players
