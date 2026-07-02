@@ -4967,7 +4967,7 @@ MonoBehaviour:
   - {fileID: -1449841923878591982, guid: e474c67bcc959d9449a6a71b2f6f7c8a, type: 3}
   - {fileID: 5960016159667237180, guid: 1b7de4b6c4d9d7d4eaa59f49b1d37c4b, type: 3}
   - {fileID: -8471956944533903022, guid: 0222bf7407394a744a6c9c959c96708c, type: 3}
-  apiUrl: http://localhost:2567/api/friends
+  apiUrl: https://pokemon-mmo-server-123-gkaqfbejgycbcwfb.southeastasia-01.azurewebsites.net/api/friends
 --- !u!1 &2099155203
 GameObject:
   m_ObjectHideFlags: 0

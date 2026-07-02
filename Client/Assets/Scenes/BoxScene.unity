@@ -628,7 +628,7 @@ MonoBehaviour:
   partyPanel: {fileID: 854708557}
   contextMenu: {fileID: 779365030}
   exitButtonRect: {fileID: 456705650}
-  serverBaseUrl: https://lt-mcb-nt106q22antt-production-cc69.up.railway.app
+  serverBaseUrl: https://pokemon-mmo-server-123-gkaqfbejgycbcwfb.southeastasia-01.azurewebsites.net
   menuSceneName: Menu scene
 --- !u!4 &498202506
 Transform:
@@ -1061,7 +1061,7 @@ MonoBehaviour:
   - {fileID: 1743555951}
   exitButton: {fileID: 456705651}
   exitSceneName: PokedexScene
-  serverBaseUrl: https://lt-mcb-nt106q22antt-production-cc69.up.railway.app
+  serverBaseUrl: https://pokemon-mmo-server-123-gkaqfbejgycbcwfb.southeastasia-01.azurewebsites.net
 --- !u!114 &854708558
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1080,7 +1080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01937c1e04b4d0a43abfb3624c5b0a7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PokemonMMO.UI.RecruitManager
-  serverUrl: https://lt-mcb-nt106q22antt-production-cc69.up.railway.app
+  serverUrl: https://pokemon-mmo-server-123-gkaqfbejgycbcwfb.southeastasia-01.azurewebsites.net
   menuSceneName: Menu scene
   recruitPanel: {fileID: 511663092}
   pokemonListBar: {fileID: 268999013}
