@@ -61,6 +61,12 @@ namespace PokemonMMO.UI
         private readonly Dictionary<string, Sprite> _frontSpriteCache = new Dictionary<string, Sprite>();
         private Coroutine _currentDetailLoadCoroutine;
 
+        // Bấm ra ngoài = quay lại/đóng (dùng chung ClickOutsideOverlay)
+        private GameObject _bannerOverlay;
+        private GameObject _resultsOverlay;
+        private GameObject _optionsOverlay;
+        private GameObject _confirmOverlay;
+
         // ── New UI References for Navigation ──────────────────────────────
         [Header("Detail View")]
         [Tooltip("Image lớn hiển thị Pokemon đang được chọn")]
@@ -94,19 +100,47 @@ namespace PokemonMMO.UI
 
         private void Awake()
         {
-            if (recruitPanel != null)   recruitPanel.SetActive(true);
+            if (recruitPanel != null)
+            {
+                recruitPanel.SetActive(true);
+                ClickOutsideOverlay.Show(ref _bannerOverlay, recruitPanel, () => SceneManager.LoadScene(menuSceneName));
+            }
             if (pokemonListBar != null) pokemonListBar.SetActive(false);
             if (detailImage != null)    detailImage.gameObject.SetActive(false);
             if (confirmRecruitPopup != null) confirmRecruitPopup.SetActive(false);
 
             if (recruitButton != null)
-                recruitButton.image.raycastTarget = false;
+            {
+                recruitButton.image.raycastTarget = true;
+                recruitButton.onClick.AddListener(() =>
+                {
+                    if (_currentResults != null && _currentResults.Length > 0)
+                        ShowResultsFromBanner();
+                    else
+                        ShowConfirmPopup();
+                });
+            }
 
             // Wire up confirm recruit popup buttons
             if (confirmRecruitYesButton != null)
                 confirmRecruitYesButton.onClick.AddListener(OnConfirmRecruit);
             if (confirmRecruitNoButton != null)
                 confirmRecruitNoButton.onClick.AddListener(OnCancelRecruit);
+
+            // Click chuột vào từng ô kết quả = chọn ô đó rồi mở popup Trial/Permanent
+            for (int i = 0; i < slots.Length; i++)
+            {
+                if (slots[i] == null) continue;
+                int idx = i;
+                var btn = slots[i].GetComponent<Button>();
+                if (btn == null) btn = slots[i].gameObject.AddComponent<Button>();
+                btn.onClick.AddListener(() =>
+                {
+                    if (_currentResults == null || idx >= _currentResults.Length) return;
+                    SelectSlot(idx);
+                    ShowOptionsPopup();
+                });
+            }
 
             // Khôi phục kết quả cũ nếu chưa quá 24 giờ
             var saved = LoadSavedResults();
@@ -158,7 +192,7 @@ namespace PokemonMMO.UI
                 {
                     // X đóng popup
                     if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.Escape))
-                        optionsPopup.SetActive(false);
+                        CloseOptionsPopup();
                 }
                 else
                 {
@@ -190,6 +224,7 @@ namespace PokemonMMO.UI
                     confirmVpText.text = $"VP hiện tại: {VPManager.Instance.CurrentVP:N0}";
 
                 confirmRecruitPopup.SetActive(true);
+                ClickOutsideOverlay.Show(ref _confirmOverlay, confirmRecruitPopup, OnCancelRecruit);
             }
             else
             {
@@ -205,6 +240,7 @@ namespace PokemonMMO.UI
         {
             if (confirmRecruitPopup != null)
                 confirmRecruitPopup.SetActive(false);
+            ClickOutsideOverlay.Hide(_confirmOverlay);
             OnRecruitButtonClicked();
         }
 
@@ -215,6 +251,7 @@ namespace PokemonMMO.UI
         {
             if (confirmRecruitPopup != null)
                 confirmRecruitPopup.SetActive(false);
+            ClickOutsideOverlay.Hide(_confirmOverlay);
         }
 
         private void OnRecruitButtonClicked()
@@ -226,7 +263,8 @@ namespace PokemonMMO.UI
             // Ẩn panel banner, hiện list bar
             if (recruitPanel != null) recruitPanel.SetActive(false);
             if (pokemonListBar != null) pokemonListBar.SetActive(true);
-            
+            ClickOutsideOverlay.Hide(_bannerOverlay);
+
             _currentResults = null;
             _selectedIndex = -1;
             if (detailImage != null) detailImage.gameObject.SetActive(false);
@@ -283,7 +321,10 @@ namespace PokemonMMO.UI
                                     {
                                         _isRolling = false;
                                         if (results.Length > 0)
+                                        {
                                             SelectSlot(0);
+                                            ClickOutsideOverlay.Show(ref _resultsOverlay, pokemonListBar, GoBackToRecruitPanel);
+                                        }
                                     }
                                 }));
                             }
@@ -331,12 +372,14 @@ namespace PokemonMMO.UI
             }
 
             optionsPopup.SetActive(true);
+            ClickOutsideOverlay.Show(ref _optionsOverlay, optionsPopup, CloseOptionsPopup);
         }
 
         public void CloseOptionsPopup()
         {
             if (optionsPopup != null)
                 optionsPopup.SetActive(false);
+            ClickOutsideOverlay.Hide(_optionsOverlay);
         }
 
         // Quay về banner nhưng GIỮ NGUYÊN kết quả và icons
@@ -345,6 +388,8 @@ namespace PokemonMMO.UI
             if (detailImage != null)  detailImage.gameObject.SetActive(false);
             if (pokemonListBar != null) pokemonListBar.SetActive(false);
             if (recruitPanel != null)  recruitPanel.SetActive(true);
+            ClickOutsideOverlay.Hide(_resultsOverlay);
+            ClickOutsideOverlay.Show(ref _bannerOverlay, recruitPanel, () => SceneManager.LoadScene(menuSceneName));
         }
 
         // Hiện lại danh sách kết quả cũ từ banner (không roll mới)
@@ -352,9 +397,11 @@ namespace PokemonMMO.UI
         {
             if (recruitPanel != null)  recruitPanel.SetActive(false);
             if (pokemonListBar != null) pokemonListBar.SetActive(true);
+            ClickOutsideOverlay.Hide(_bannerOverlay);
             // Khôi phục slot đang chọn và detail image
             int idx = _selectedIndex >= 0 ? _selectedIndex : 0;
             SelectSlot(idx);
+            ClickOutsideOverlay.Show(ref _resultsOverlay, pokemonListBar, GoBackToRecruitPanel);
         }
 
         // Reset hoàn toàn sau khi confirm recruit thành công
@@ -373,6 +420,8 @@ namespace PokemonMMO.UI
             if (detailImage != null)   detailImage.gameObject.SetActive(false);
             if (pokemonListBar != null) pokemonListBar.SetActive(false);
             if (recruitPanel != null)  recruitPanel.SetActive(true);
+            ClickOutsideOverlay.Hide(_resultsOverlay);
+            ClickOutsideOverlay.Show(ref _bannerOverlay, recruitPanel, () => SceneManager.LoadScene(menuSceneName));
         }
 
         // ── Navigation Logic ──────────────────────────────────────────────
