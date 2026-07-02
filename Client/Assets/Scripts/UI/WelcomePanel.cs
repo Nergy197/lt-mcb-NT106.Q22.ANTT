@@ -104,7 +104,7 @@ namespace PokemonMMO.UI
                 var response = JsonUtility.FromJson<ClaimResponse>(req.downloadHandler.text);
                 if (VPManager.Instance != null)
                 {
-                    VPManager.Instance.ApplyServerBalance(response.vp);
+                    VPManager.Instance.ApplyServerBalance(response.Vp);
                 }
 
                 // Đóng panel
@@ -116,8 +116,8 @@ namespace PokemonMMO.UI
         [System.Serializable]
         private class ClaimResponse
         {
-            public int vp;
-            public bool welcomeClaimed;
+            public int Vp;
+            public bool WelcomeClaimed;
         }
     }
 }
