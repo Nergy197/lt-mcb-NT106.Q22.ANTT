@@ -26,12 +26,23 @@ namespace PokemonArena.UI
 
         int  currentIndex;
         bool _isSearching;
+        GameObject _clickOutsideOverlay;
 
         void Start()
         {
             if (buttons.Count == 0) return;
             currentIndex = Mathf.Clamp(defaultIndex, 0, buttons.Count - 1);
             ApplySelection();
+
+            // Bấm ra ngoài vùng 3 nút mode = quay lại Menu chính (giống phím X/Escape)
+            if (buttons[0] != null)
+                ClickOutsideOverlay.Show(ref _clickOutsideOverlay, buttons[0].transform.parent.gameObject, OnClickOutside);
+        }
+
+        void OnClickOutside()
+        {
+            if (_isSearching) return;
+            SceneManager.LoadScene(menuSceneName);
         }
 
         void OnEnable()  => MatchmakingManager.OnSearchCancelled += HandleSearchCancelled;

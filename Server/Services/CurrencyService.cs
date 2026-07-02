@@ -24,6 +24,8 @@ public class CurrencyService
     public const string ReasonDebugAdd      = "debug_add";
     public const string ReasonDebugSpend    = "debug_spend";
     public const string ReasonWelcomeBonus  = "welcome_bonus";
+    public const string ReasonRecruitRoll   = "recruit_roll";
+    public const string ReasonRecruitPerm   = "recruit_permanent";
 
     public const int WelcomeBonus = 30000;
 

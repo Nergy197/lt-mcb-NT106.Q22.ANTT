@@ -121,7 +121,13 @@ builder.Services.AddControllers().AddJsonOptions(options =>
     options.JsonSerializerOptions.Converters.Add(new System.Text.Json.Serialization.JsonStringEnumConverter());
 });
 
-builder.Services.AddSignalR().AddJsonProtocol(options =>
+builder.Services.AddSignalR(options =>
+{
+    // Mặc định SignalR chỉ xử lý 1 lời gọi Hub method/lúc cho mỗi kết nối — nếu FindMatch/FindCasualMatch
+    // đang chạy vòng lặp đếm ngược (await Task.Delay nhiều giây), lệnh CancelMatchmaking gọi cùng
+    // kết nối sẽ bị xếp hàng chờ, coi như bị "treo" cho tới khi vòng lặp kia tự kết thúc.
+    options.MaximumParallelInvocationsPerClient = 4;
+}).AddJsonProtocol(options =>
 {
     options.PayloadSerializerOptions.PropertyNamingPolicy = null;
     // Bắt buộc đồng bộ với AddControllers ở trên

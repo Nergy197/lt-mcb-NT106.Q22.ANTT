@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
 
@@ -10,7 +11,7 @@ namespace PokemonArena.UI
     /// ModeMenu to deselect siblings).
     /// </summary>
     [RequireComponent(typeof(RectTransform))]
-    public class ModeButton : MonoBehaviour
+    public class ModeButton : MonoBehaviour, IPointerEnterHandler, IPointerClickHandler
     {
         public enum Mode { Ranked, Casual, Private }
 
@@ -61,5 +62,11 @@ namespace PokemonArena.UI
             if (arrow != null)      arrow.SetActive(on);
             targetX = on ? hoverX : restX;
         }
+
+        // ── Chuột ─────────────────────────────────────────────────────────
+
+        public void OnPointerEnter(PointerEventData eventData) => menu?.Select(this);
+
+        public void OnPointerClick(PointerEventData eventData) => menu?.Confirm(this);
     }
 }

@@ -55,16 +55,23 @@ namespace Game.Network
                 hub.Remove("SearchTick");
                 hub.Remove("PrivateRoomCancelled");
 
+                // Các callback SignalR chạy trên thread pool, không phải main thread —
+                // phải đẩy về main thread trước khi gọi event có subscriber đụng vào Unity API
+                // (SetActive, v.v.), nếu không exception sẽ bị nuốt âm thầm trong tầng async của SignalR.
                 hub.On<object>("MatchFound", OnMatchFound);
-                hub.On<SearchStartedDto>("SearchStarted", HandleSearchStartedDto);
-                hub.On<SearchTickDto>("SearchTick", dto => {
-                    OnCountdownTick?.Invoke(dto.secondsLeft);
+                hub.On<object>("SearchStarted", raw => {
+                    var dto = Newtonsoft.Json.JsonConvert.DeserializeObject<SearchStartedDto>(raw.ToString());
+                    UnityMainThreadDispatcher.Instance().Enqueue(() => HandleSearchStartedDto(dto));
                 });
-                hub.On("PrivateRoomCancelled", () => OnPrivateRoomCancelled?.Invoke());
+                hub.On<object>("SearchTick", raw => {
+                    var dto = Newtonsoft.Json.JsonConvert.DeserializeObject<SearchTickDto>(raw.ToString());
+                    UnityMainThreadDispatcher.Instance().Enqueue(() => OnCountdownTick?.Invoke(dto.SecondsLeft));
+                });
+                hub.On("PrivateRoomCancelled", () => UnityMainThreadDispatcher.Instance().Enqueue(() => OnPrivateRoomCancelled?.Invoke()));
                 hub.On<string>("Debug", msg => Debug.Log("[Server Debug] " + msg));
                 hub.On<string>("Error", msg => {
                     Debug.LogError("[Server Error] " + msg);
-                    OnServerError?.Invoke(msg);
+                    UnityMainThreadDispatcher.Instance().Enqueue(() => OnServerError?.Invoke(msg));
                 });
 
                 // Gọi lại JoinLobby mỗi khi hub tự reconnect (ConnectionId mới)
@@ -225,9 +232,9 @@ namespace Game.Network
 
         private void HandleSearchStartedDto(SearchStartedDto dto)
         {
-            Debug.Log($"[Matchmaking] Search Started. Bot in {dto.countdownSeconds}s");
+            Debug.Log($"[Matchmaking] Search Started. Bot in {dto.CountdownSeconds}s");
             OnSearchStarted?.Invoke();
-            OnCountdownTick?.Invoke(dto.countdownSeconds);
+            OnCountdownTick?.Invoke(dto.CountdownSeconds);
         }
 
         public async void CancelSearching()
@@ -251,10 +258,10 @@ namespace Game.Network
     }
 
     [Serializable]
-    public class SearchStartedDto { public int countdownSeconds; }
+    public class SearchStartedDto { public int CountdownSeconds; }
 
     [Serializable]
-    public class SearchTickDto { public int secondsLeft; }
+    public class SearchTickDto { public int SecondsLeft; }
 
     [Serializable]
     public class BattleStartedEventDto

@@ -50,7 +50,7 @@ public class MailManager : MonoBehaviour
         if (_chat != null) _chat.keepSubscribed = true; // phải set TRƯỚC SetActive(false)
         mailPopup.SetActive(false);
         worldPopup.SetActive(true);
-        ClickOutsideOverlay.Show(ref _clickOutsideOverlay, worldPopup, CloseAll);
+        ClickOutsideOverlay.Show(ref _clickOutsideOverlay, mailPopup.transform.parent.gameObject, CloseAll);
         mailButtonBottom.color = new Color(0.7f, 0.7f, 0.7f, 1f);
     }
 
@@ -58,7 +58,7 @@ public class MailManager : MonoBehaviour
     {
         worldPopup.SetActive(false);
         mailPopup.SetActive(true);
-        ClickOutsideOverlay.Show(ref _clickOutsideOverlay, mailPopup, CloseAll);
+        ClickOutsideOverlay.Show(ref _clickOutsideOverlay, mailPopup.transform.parent.gameObject, CloseAll);
         mailButtonBottom.color = new Color(0.7f, 0.7f, 0.7f, 1f);
         if (_chat != null) _chat.keepSubscribed = false;
     }

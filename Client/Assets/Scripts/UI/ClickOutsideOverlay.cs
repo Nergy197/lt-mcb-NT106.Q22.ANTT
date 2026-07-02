@@ -15,6 +15,13 @@ namespace PokemonMMO.UI
         {
             if (popup == null) return;
 
+            // Nếu overlay đã tồn tại và đang hiện, KHÔNG tính lại sibling index.
+            // Lý do: GetSiblingIndex() của "topLevelAncestor" đã bị chính overlay làm dịch
+            // chuyển ở lần gọi trước — tính lại nhiều lần liên tiếp (vd: đổi tab qua lại)
+            // khiến overlay "nhảy" từ đằng sau ra đằng trước panel, chặn nhầm click thật.
+            if (overlay != null && overlay.activeSelf)
+                return;
+
             var canvas = popup.GetComponentInParent<Canvas>();
             if (canvas == null) return;
             var canvasRoot = canvas.transform;
