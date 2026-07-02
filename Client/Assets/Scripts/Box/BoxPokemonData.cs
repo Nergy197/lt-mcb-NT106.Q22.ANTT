@@ -11,6 +11,7 @@ namespace PokemonMMO.Box
         public string Nickname;
         public int    Level;
         public string IconUrl;
+        public bool   IsTrial;
     }
 
     [System.Serializable]
@@ -33,6 +34,7 @@ namespace PokemonMMO.Box
         public int    CurrentHp;
         public int    MaxHp;
         public string IconUrl;
+        public bool   IsTrial;
     }
 
     [System.Serializable]

@@ -8,6 +8,7 @@ public class BoxSlotDto
     public string Nickname  { get; set; } = "";
     public int    Level     { get; set; }
     public string IconUrl   { get; set; } = "";
+    public bool   IsTrial   { get; set; }
 }
 
 public class BoxInfoDto
@@ -42,6 +43,7 @@ public class PartySlotDto
     public int    CurrentHp { get; set; }
     public int    MaxHp     { get; set; }
     public string IconUrl   { get; set; } = "";
+    public bool   IsTrial   { get; set; }
 }
 
 public class PartyInfoDto

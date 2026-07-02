@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -7,6 +8,9 @@ namespace PokemonMMO.UI
 {
     public class PrivateRoomPanel : MonoBehaviour
     {
+        // Phải khớp với PrivateRoomTtl ở MatchmakingHub.cs (server)
+        private const float RoomTtlSeconds = 300f;
+        private Coroutine _ttlCoroutine;
         [Header("Root")]
         [SerializeField] private GameObject panel;
 
@@ -78,6 +82,7 @@ namespace PokemonMMO.UI
         {
             MatchmakingManager.OnPrivateRoomCreated -= HandleRoomCreated;
             MatchmakingManager.OnServerError        -= HandleError;
+            StopTtlCountdown();
         }
 
         public void Show()
@@ -100,6 +105,7 @@ namespace PokemonMMO.UI
                 MatchmakingManager.Instance?.CancelPrivateRoom();
                 _roomCreated = false;
             }
+            StopTtlCountdown();
             Hide();
         }
 
@@ -113,6 +119,7 @@ namespace PokemonMMO.UI
                 MatchmakingManager.Instance?.CancelPrivateRoom();
                 _roomCreated = false;
             }
+            StopTtlCountdown();
         }
 
         private void ShowJoinView()
@@ -144,17 +151,50 @@ namespace PokemonMMO.UI
         {
             _roomCreated = true;
             if (codeDisplay != null) codeDisplay.text = code;
-            SetStatus("Chờ đối thủ nhập mã...");
+            StartTtlCountdown();
         }
 
         private void HandleError(string msg)
         {
             SetStatus($"Lỗi: {msg}");
+            StopTtlCountdown();
         }
 
         private void SetStatus(string msg)
         {
             if (statusLabel != null) statusLabel.text = msg;
+        }
+
+        private void StartTtlCountdown()
+        {
+            StopTtlCountdown();
+            _ttlCoroutine = StartCoroutine(TtlCountdownRoutine());
+        }
+
+        private void StopTtlCountdown()
+        {
+            if (_ttlCoroutine != null)
+            {
+                StopCoroutine(_ttlCoroutine);
+                _ttlCoroutine = null;
+            }
+        }
+
+        private IEnumerator TtlCountdownRoutine()
+        {
+            float remaining = RoomTtlSeconds;
+            while (remaining > 0f)
+            {
+                int totalSeconds = Mathf.CeilToInt(remaining);
+                SetStatus($"Chờ đối thủ nhập mã... (hết hạn sau {totalSeconds / 60}:{totalSeconds % 60:00})");
+                yield return new WaitForSeconds(1f);
+                remaining -= 1f;
+            }
+
+            _roomCreated = false;
+            _ttlCoroutine = null;
+            SetStatus("Phòng đã hết hạn. Vui lòng tạo phòng mới.");
+            if (codeDisplay != null) codeDisplay.text = "---";
         }
     }
 }

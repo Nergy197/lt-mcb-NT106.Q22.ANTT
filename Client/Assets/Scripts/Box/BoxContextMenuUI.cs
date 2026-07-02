@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace PokemonMMO.Box
 {
@@ -18,7 +19,24 @@ namespace PokemonMMO.Box
         private int    _selected;
         private Action<int> _onConfirm;
 
-        private void Awake() => gameObject.SetActive(false);
+        private void Awake()
+        {
+            gameObject.SetActive(false);
+            AddClickHandler(option1Text, 0);
+            AddClickHandler(option2Text, 1);
+        }
+
+        private void AddClickHandler(TMP_Text label, int index)
+        {
+            if (label == null) return;
+            var btn = label.GetComponent<Button>();
+            if (btn == null) btn = label.gameObject.AddComponent<Button>();
+            btn.onClick.AddListener(() =>
+            {
+                _selected = index;
+                Confirm();
+            });
+        }
 
         public void Show(string opt1, string opt2, Action<int> onConfirm)
         {

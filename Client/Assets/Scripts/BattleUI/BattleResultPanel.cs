@@ -25,6 +25,7 @@ namespace Game.Battle.UI
         [Header("Colors")]
         public Color winColor  = new Color(0.2f, 0.8f, 0.2f);
         public Color loseColor = new Color(0.9f, 0.3f, 0.3f);
+        public Color drawColor = new Color(0.8f, 0.8f, 0.3f);
 
         [Header("SFX")]
         [SerializeField] private AudioClip sfxVictory;
@@ -35,6 +36,7 @@ namespace Game.Battle.UI
         private const float RewardWaitTimeout = 3f;
 
         private bool _iWon;
+        private bool _isDraw;
         private int? _vpDelta;
         private int? _rankDelta;
 
@@ -61,6 +63,7 @@ namespace Game.Battle.UI
         private void OnBattleResult(bool iWon, string winnerId)
         {
             _iWon = iWon;
+            _isDraw = string.IsNullOrEmpty(winnerId);
             _vpDelta = null;
             _rankDelta = null;
             StartCoroutine(ShowResultRoutine());
@@ -86,12 +89,12 @@ namespace Game.Battle.UI
 
         private void UpdateUI()
         {
-            AudioManager.Instance?.PlaySFX(_iWon ? sfxVictory : sfxDefeat);
+            AudioManager.Instance?.PlaySFX(_isDraw ? null : (_iWon ? sfxVictory : sfxDefeat));
 
             if (resultText != null)
             {
-                resultText.text  = _iWon ? "CHIEN THANG!" : "THAT BAI...";
-                resultText.color = _iWon ? winColor : loseColor;
+                resultText.text  = _isDraw ? "HOA!" : (_iWon ? "CHIEN THANG!" : "THAT BAI...");
+                resultText.color = _isDraw ? drawColor : (_iWon ? winColor : loseColor);
             }
 
             if (vpDeltaText != null)

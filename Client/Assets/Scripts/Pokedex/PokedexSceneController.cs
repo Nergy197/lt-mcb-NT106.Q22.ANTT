@@ -29,6 +29,13 @@ namespace PokemonMMO.UI
         private void Awake()
         {
             SwitchTo(State.Menu, skipInput: false);
+            if (menuPanel != null) menuPanel.OnItemClicked += OnMenuItemClicked;
+        }
+
+        private void OnMenuItemClicked(int index)
+        {
+            if (_state != State.Menu) return;
+            menuPanel?.SelectAndConfirm(index, this);
         }
 
         private void Update()

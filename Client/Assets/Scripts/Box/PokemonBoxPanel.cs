@@ -61,9 +61,58 @@ namespace PokemonMMO.Box
         private static readonly Dictionary<int, Sprite>      _spriteCache = new();
         private static readonly Dictionary<int, BoxInfoData> _boxCache    = new();
 
+        public static PokemonBoxPanel Instance { get; private set; }
+
         // ── Lifecycle ─────────────────────────────────────────────────────────
 
-        private void Awake() => BuildGrid();
+        private void Awake()
+        {
+            Instance = this;
+            BuildGrid();
+
+            if (exitButtonRect != null)
+            {
+                var btn = exitButtonRect.GetComponent<Button>();
+                if (btn == null) btn = exitButtonRect.gameObject.AddComponent<Button>();
+                btn.onClick.AddListener(() => SceneManager.LoadScene(menuSceneName));
+            }
+
+            CreateHeaderNavHitZone(isLeft: true,  PrevBox);
+            CreateHeaderNavHitZone(isLeft: false, NextBox);
+
+            if (partyPanel != null) partyPanel.OnSlotClicked += OnPartySlotClicked;
+        }
+
+        // Mũi tên chuyển box chỉ là hình vẽ (không phải Button) — tạo vùng bấm
+        // trong suốt đè lên đúng vị trí 2 mũi tên đó (2 mép trái/phải header).
+        private void CreateHeaderNavHitZone(bool isLeft, System.Action onClick)
+        {
+            if (boxNameText == null) return;
+            var header = boxNameText.transform.parent as RectTransform;
+            if (header == null) return;
+
+            var go = new GameObject(isLeft ? "PrevBoxHitZone" : "NextBoxHitZone",
+                typeof(RectTransform), typeof(Image), typeof(Button));
+            go.transform.SetParent(header, false);
+            go.transform.SetAsLastSibling();
+
+            var rect = go.GetComponent<RectTransform>();
+            rect.anchorMin = isLeft ? new Vector2(0f, 0f)    : new Vector2(0.82f, 0f);
+            rect.anchorMax = isLeft ? new Vector2(0.18f, 1f) : new Vector2(1f, 1f);
+            rect.offsetMin = Vector2.zero;
+            rect.offsetMax = Vector2.zero;
+
+            var image = go.GetComponent<Image>();
+            image.color = new Color(0f, 0f, 0f, 0f); // vô hình nhưng vẫn chặn raycast
+
+            var button = go.GetComponent<Button>();
+            button.transition = Selectable.Transition.None;
+            button.onClick.AddListener(() => onClick());
+        }
+
+        // Dùng bởi BoxSlotUI/PartySlotUI khi kéo-thả Pokemon giữa Box và Party
+        public void RequestWithdraw(string pokemonId) => StartCoroutine(WithdrawPokemon(pokemonId));
+        public void RequestDeposit(string pokemonId)  => StartCoroutine(DepositPokemon(pokemonId));
 
         private void OnEnable()
         {
@@ -88,7 +137,36 @@ namespace PokemonMMO.Box
                 var obj = Instantiate(slotPrefab, gridContainer);
                 _slots[i] = obj.GetComponent<BoxSlotUI>();
                 _slots[i].SetEmpty();
+
+                int idx = i;
+                var btn = obj.GetComponent<Button>();
+                if (btn == null) btn = obj.AddComponent<Button>();
+                btn.onClick.AddListener(() => OnBoxSlotClicked(idx));
             }
+        }
+
+        private void OnBoxSlotClicked(int index)
+        {
+            if (BoxContextMenuUI.IsOpen) return;
+            _onHeader = false;
+            _isFocusOnParty = false;
+            _onExitButton = false;
+            _cursorRow = index / Cols;
+            _cursorCol = index % Cols;
+            UpdateCursor();
+            ConfirmBoxSlot();
+        }
+
+        private void OnPartySlotClicked(int index)
+        {
+            if (BoxContextMenuUI.IsOpen) return;
+            _onHeader = false;
+            _onExitButton = false;
+            _isFocusOnParty = true;
+            _partyRow = index / PartyCols;
+            _partyCol = index % PartyCols;
+            UpdateCursor();
+            ConfirmPartySlot();
         }
 
         // ── Load box ──────────────────────────────────────────────────────────
@@ -131,6 +209,7 @@ namespace PokemonMMO.Box
                 foreach (var slot in info.Slots)
                 {
                     if (slot.Slot < 0 || slot.Slot >= _slots.Length) continue;
+                    _slots[slot.Slot].SetTrialBadge(slot.IsTrial);
                     StartCoroutine(LoadSlotSprite(slot.Slot, slot.SpeciesId, slot.PokemonId, slot.IconUrl ?? ""));
                 }
             }

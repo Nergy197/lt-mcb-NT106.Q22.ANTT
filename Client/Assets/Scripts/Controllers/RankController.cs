@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using PokemonMMO.UI;
 
 public class RankController : MonoBehaviour
 {
@@ -9,6 +10,14 @@ public class RankController : MonoBehaviour
     [Header("Tab Panels")]
     public GameObject top100TabPanel;
     public GameObject friendsRankTabPanel;
+
+    private GameObject _clickOutsideOverlay;
+
+    private void Awake()
+    {
+        // Phòng trường hợp panel bị để active nhầm trong scene lúc save
+        if (rankPopup != null) rankPopup.SetActive(false);
+    }
 
     // 1. Hàm Toggle (Dùng cho nút Cúp vàng ở menu dưới)
     public void ToggleRankPopup()
@@ -45,18 +54,21 @@ public class RankController : MonoBehaviour
     private void CloseAll()
     {
         if (rankPopup != null) rankPopup.SetActive(false);
+        if (_clickOutsideOverlay != null) _clickOutsideOverlay.SetActive(false);
         BottomMenuManager.Instance?.NotifyClose();
     }
 
     private void OpenTop100Tab()
     {
         if (rankPopup != null) rankPopup.SetActive(true);
+        ClickOutsideOverlay.Show(ref _clickOutsideOverlay, rankPopup, CloseAll);
         SetActiveTab(top100TabPanel, friendsRankTabPanel);
     }
 
     private void OpenFriendsRankTab()
     {
         if (rankPopup != null) rankPopup.SetActive(true);
+        ClickOutsideOverlay.Show(ref _clickOutsideOverlay, rankPopup, CloseAll);
         SetActiveTab(friendsRankTabPanel, top100TabPanel);
     }
 

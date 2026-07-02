@@ -412,9 +412,10 @@ namespace Game.Battle.Logic
                 Debug.Log("[Battle] Event: BattleEnded");
                 var dto = J<TurnDto>(raw); // BattleEnded uses similar structure or explicit DTO
                 string winner = dto.WinnerPlayerId;
-                bool iWon = winner == SignalRClient.Instance.PlayerId;
-                
-                StartCoroutine(HandleBattleEnd(iWon, winner));
+                bool isDraw = string.IsNullOrEmpty(winner) || winner.Equals("draw", System.StringComparison.OrdinalIgnoreCase);
+                bool iWon = !isDraw && winner.Equals(SignalRClient.Instance.PlayerId, System.StringComparison.OrdinalIgnoreCase);
+
+                StartCoroutine(HandleBattleEnd(iWon, isDraw ? "" : winner));
             }));
         }
 
@@ -802,13 +803,14 @@ namespace Game.Battle.Logic
             }
             if (r.State == "Ended") {
                 string myId = SignalRClient.Instance.PlayerId;
-                bool won = !string.IsNullOrEmpty(r.WinnerPlayerId) &&
-                           r.WinnerPlayerId.Equals(myId, System.StringComparison.OrdinalIgnoreCase);
-                string resultMsg = string.IsNullOrEmpty(r.WinnerPlayerId)
+                bool isDraw = string.IsNullOrEmpty(r.WinnerPlayerId) ||
+                              r.WinnerPlayerId.Equals("draw", System.StringComparison.OrdinalIgnoreCase);
+                bool won = !isDraw && r.WinnerPlayerId.Equals(myId, System.StringComparison.OrdinalIgnoreCase);
+                string resultMsg = isDraw
                     ? "TRAN DAU KET THUC HOA!"
                     : (won ? "BAN DA CHIEN THANG!" : "BAN DA THAT BAI...");
                 BattleEvents.OnPrintDialog?.Invoke(resultMsg, false);
-                BattleEvents.OnBattleResult?.Invoke(won, r.WinnerPlayerId ?? "");
+                BattleEvents.OnBattleResult?.Invoke(won, isDraw ? "" : r.WinnerPlayerId);
                 yield return new WaitForSeconds(3f);
                 ReturnToMenu();
             } else {

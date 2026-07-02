@@ -20,12 +20,24 @@ namespace PokemonMMO.Box
         [Header("Settings")]
         public string serverBaseUrl = "https://pokemon-mmo-server-123-gkaqfbejgycbcwfb.southeastasia-01.azurewebsites.net";
 
+        // Bắn ra khi người chơi click chuột vào 1 ô party (0-5)
+        public event System.Action<int> OnSlotClicked;
+
         private static readonly Dictionary<int, Sprite> _spriteCache = new();
 
         private void Start()
         {
             if (exitButton != null)
                 exitButton.onClick.AddListener(OnExitClicked);
+
+            for (int i = 0; i < slots.Length; i++)
+            {
+                if (slots[i] == null) continue;
+                int idx = i;
+                var btn = slots[i].GetComponent<Button>();
+                if (btn == null) btn = slots[i].gameObject.AddComponent<Button>();
+                btn.onClick.AddListener(() => OnSlotClicked?.Invoke(idx));
+            }
         }
 
         private void OnEnable() => StartCoroutine(LoadParty());
@@ -60,6 +72,7 @@ namespace PokemonMMO.Box
             foreach (var slot in info.Slots)
             {
                 if (slot.Slot < 0 || slot.Slot >= slots.Length) continue;
+                slots[slot.Slot]?.SetTrialBadge(slot.IsTrial);
                 StartCoroutine(LoadSlotSprite(slot.Slot, slot.SpeciesId, slot.PokemonId, slot.IconUrl ?? ""));
             }
         }

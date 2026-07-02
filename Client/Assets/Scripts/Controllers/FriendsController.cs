@@ -4,12 +4,13 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
+using PokemonMMO.UI;
 
 public class FriendsController : MonoBehaviour
 {
     public GameObject friendsPopup;
     public Image friendsButtonBottom;
-    public Button friendsButton; // kÈo FRIENDS bottom button v‡o d‚y
+    public Button friendsButton; // kÔøΩo FRIENDS bottom button vÔøΩo dÔøΩy
 
     [Header("Tab Settings")]
     public GameObject friendsTabPanel;
@@ -42,6 +43,13 @@ public class FriendsController : MonoBehaviour
     private static readonly Regex PlayerNameRegex = new("^[a-zA-Z0-9_]{2,20}$", RegexOptions.Compiled);
 
     private bool isSubmittingAddFriend;
+    private GameObject _clickOutsideOverlay;
+
+    private void Awake()
+    {
+        // Ph√≤ng tr∆∞·ªùng h·ª£p panel b·ªã ƒë·ªÉ active nh·∫ßm trong scene l√∫c save
+        if (friendsPopup != null) friendsPopup.SetActive(false);
+    }
 
     private void OnEnable()
     {
@@ -51,7 +59,7 @@ public class FriendsController : MonoBehaviour
 
     private void OnDisable()
     {
-        isSubmittingAddFriend = false; // reset n?u popup dÛng gi?a ch?ng request
+        isSubmittingAddFriend = false; // reset n?u popup dÔøΩng gi?a ch?ng request
         if (addFriendNameInput != null)
             addFriendNameInput.onValueChanged.RemoveListener(OnAddFriendNameChanged);
     }
@@ -74,6 +82,7 @@ public class FriendsController : MonoBehaviour
     private void CloseAll()
     {
         if (friendsPopup != null) friendsPopup.SetActive(false);
+        ClickOutsideOverlay.Hide(_clickOutsideOverlay);
         if (friendsButtonBottom != null) friendsButtonBottom.color = InactiveColor;
         BottomMenuManager.Instance?.NotifyClose();
     }
@@ -112,6 +121,7 @@ public class FriendsController : MonoBehaviour
     private void OpenFriendsTab()
     {
         if (friendsPopup != null) friendsPopup.SetActive(true);
+        ClickOutsideOverlay.Show(ref _clickOutsideOverlay, friendsPopup, CloseAll);
         EnsureTabButtonsClickable();
         SetActiveTab(friendsTabPanel, addFriendTabPanel);
         if (friendsButtonBottom != null) friendsButtonBottom.color = ActiveColor;
@@ -120,6 +130,7 @@ public class FriendsController : MonoBehaviour
     private void OpenAddTab()
     {
         if (friendsPopup != null) friendsPopup.SetActive(true);
+        ClickOutsideOverlay.Show(ref _clickOutsideOverlay, friendsPopup, CloseAll);
         EnsureTabButtonsClickable();
         SetActiveTab(addFriendTabPanel, friendsTabPanel);
         SetAddFriendButtonState(isAdded: false);
@@ -149,7 +160,7 @@ public class FriendsController : MonoBehaviour
         if (addFriendTabButton != null)
             addFriendTabButton.gameObject.SetActive(true);
 
-        // Ch? d?t th? t? sibling m?t l?n d? tr·nh d?o render order m?i l?n d?i tab
+        // Ch? d?t th? t? sibling m?t l?n d? trÔøΩnh d?o render order m?i l?n d?i tab
         if (!_tabButtonsReordered)
         {
             if (friendsTabButton != null)  friendsTabButton.SetAsLastSibling();

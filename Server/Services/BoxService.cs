@@ -97,7 +97,8 @@ public class BoxService
             Level     = p.Level,
             CurrentHp = p.CurrentHp,
             MaxHp     = p.MaxHp,
-            IconUrl   = ResolveIconUrl(p.SpeciesId)
+            IconUrl   = ResolveIconUrl(p.SpeciesId),
+            IsTrial   = p.IsTrial
         }).ToList();
 
         return new PartyInfoDto { Slots = slots };
@@ -178,7 +179,8 @@ public class BoxService
                     SpeciesId = p.SpeciesId,
                     Nickname  = p.Nickname ?? "",
                     Level     = p.Level,
-                    IconUrl   = ResolveIconUrl(p.SpeciesId)
+                    IconUrl   = ResolveIconUrl(p.SpeciesId),
+                    IsTrial   = true
                 }).ToList();
         }
         else
@@ -200,7 +202,8 @@ public class BoxService
                     SpeciesId = p.SpeciesId,
                     Nickname  = p.Nickname ?? "",
                     Level     = p.Level,
-                    IconUrl   = ResolveIconUrl(p.SpeciesId)
+                    IconUrl   = ResolveIconUrl(p.SpeciesId),
+                    IsTrial   = false
                 }).ToList();
         }
 

@@ -1,10 +1,11 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace PokemonMMO.UI
 {
     /// <summary>
     /// Chỉ quản lý cursor và logic menu.
-    /// KHÔNG tự xử lý input — PokedexSceneController gọi vào.
+    /// KHÔNG tự xử lý input — PokedexSceneController gọi vào (bàn phím và click chuột).
     /// </summary>
     public class PokedexMenuPanel : MonoBehaviour
     {
@@ -13,7 +14,24 @@ namespace PokemonMMO.UI
         public RectTransform menuItem0;   // National Pokédex
         public RectTransform menuItem1;   // Thoát
 
+        // Bắn ra khi người chơi click chuột vào 1 mục menu (0 hoặc 1)
+        public event System.Action<int> OnItemClicked;
+
         private int _selectedIndex = 0;
+
+        private void Awake()
+        {
+            AddClickHandler(menuItem0, 0);
+            AddClickHandler(menuItem1, 1);
+        }
+
+        private void AddClickHandler(RectTransform rt, int index)
+        {
+            if (rt == null) return;
+            var btn = rt.GetComponent<Button>();
+            if (btn == null) btn = rt.gameObject.AddComponent<Button>();
+            btn.onClick.AddListener(() => OnItemClicked?.Invoke(index));
+        }
 
         private void OnEnable()
         {
@@ -33,6 +51,14 @@ namespace PokemonMMO.UI
         {
             if (_selectedIndex == 0) ctrl.OpenNationalPokedex();
             else                     ctrl.ExitToMenu();
+        }
+
+        // Click chuột: chọn mục rồi xác nhận ngay (giống nhấn C sau khi di chuyển cursor tới đó)
+        public void SelectAndConfirm(int index, PokedexSceneController ctrl)
+        {
+            _selectedIndex = index;
+            MoveCursorTo(index);
+            Confirm(ctrl);
         }
 
         // ── Cursor ────────────────────────────────────────────────────────
