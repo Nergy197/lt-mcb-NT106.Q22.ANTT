@@ -310,21 +310,11 @@ public class AuthService
 
     // ── Email domain validation ───────────────────────────────────────────────
 
-    private static async Task<bool> IsEmailDomainValidAsync(string email)
+    private static Task<bool> IsEmailDomainValidAsync(string email)
     {
-        var atIndex = email.IndexOf('@');
-        if (atIndex < 0) return false;
-        var domain = email[(atIndex + 1)..];
-        if (string.IsNullOrWhiteSpace(domain)) return false;
-        try
-        {
-            var addresses = await Dns.GetHostAddressesAsync(domain);
-            return addresses.Length > 0;
-        }
-        catch
-        {
-            return false;
-        }
+        // Vì giờ đã có tính năng gửi mã OTP xác nhận, nên không cần check DNS nữa.
+        // Dns.GetHostAddressesAsync(domain) hay bị lỗi với các mail trường đại học (chỉ có bản ghi MX chứ không có bản ghi A).
+        return Task.FromResult(true);
     }
 
     // ── JWT helper ────────────────────────────────────────────────────────────
