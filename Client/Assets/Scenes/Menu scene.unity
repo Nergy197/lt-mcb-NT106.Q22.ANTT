@@ -8067,7 +8067,6 @@ GameObject:
   - component: {fileID: 1045365888}
   - component: {fileID: 1045365887}
   - component: {fileID: 1045365886}
-  - component: {fileID: 1045365889}
   - component: {fileID: 1045365890}
   m_Layer: 0
   m_Name: NetworkManager
@@ -8117,23 +8116,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1045365889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1045365885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ff717c1e8bf6428fa3e2e258800ed46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PokemonMMO.UI.MatchmakingUI
-  matchmakingPanel: {fileID: 0}
-  searchTimerLabel: {fileID: 0}
-  botCountdownLabel: {fileID: 0}
-  cancelButton: {fileID: 0}
-  sfxTick: {fileID: 8300000, guid: d817f672a818c6748b132b5f0a9fd514, type: 3}
 --- !u!114 &1045365890
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -86,6 +86,9 @@ namespace PokemonMMO.UI
 
         private void HandleCountdownTick(int secondsLeft)
         {
+            // Bỏ qua tick trễ đến sau khi đã huỷ tìm trận — nếu không panel sẽ tự bật lại
+            if (!_isSearching) return;
+
             AudioManager.Instance?.PlaySFX(sfxTick);
             _botSecondsLeft = secondsLeft;
 
