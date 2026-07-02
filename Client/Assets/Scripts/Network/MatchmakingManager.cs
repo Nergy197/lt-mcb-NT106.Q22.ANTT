@@ -21,6 +21,7 @@ namespace Game.Network
         public static event Action      OnSearchStarted;
         public static event Action      OnSearchCancelled;
         public static event Action<string> OnPrivateRoomCreated;
+        public static event Action         OnPrivateRoomCancelled;
         public static event Action<string> OnServerError;
 
         public static void ResetBattleId() => CurrentBattleId = null;
@@ -52,12 +53,14 @@ namespace Game.Network
                 hub.Remove("MatchFound");
                 hub.Remove("SearchStarted");
                 hub.Remove("SearchTick");
+                hub.Remove("PrivateRoomCancelled");
 
                 hub.On<object>("MatchFound", OnMatchFound);
                 hub.On<SearchStartedDto>("SearchStarted", HandleSearchStartedDto);
                 hub.On<SearchTickDto>("SearchTick", dto => {
                     OnCountdownTick?.Invoke(dto.secondsLeft);
                 });
+                hub.On("PrivateRoomCancelled", () => OnPrivateRoomCancelled?.Invoke());
                 hub.On<string>("Debug", msg => Debug.Log("[Server Debug] " + msg));
                 hub.On<string>("Error", msg => {
                     Debug.LogError("[Server Error] " + msg);
@@ -138,6 +141,20 @@ namespace Game.Network
             {
                 Debug.LogError("[Matchmaking] JoinPrivateRoom error: " + ex.Message);
                 OnServerError?.Invoke(ex.Message);
+            }
+        }
+
+        public async void CancelPrivateRoom()
+        {
+            var hub = SignalRClient.Instance?.Matchmaking;
+            if (hub == null) return;
+            try
+            {
+                await hub.InvokeAsync("CancelPrivateRoom");
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError("[Matchmaking] CancelPrivateRoom error: " + ex.Message);
             }
         }
 

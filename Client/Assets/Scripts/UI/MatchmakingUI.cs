@@ -27,6 +27,18 @@ namespace PokemonMMO.UI
 
         // ── Lifecycle ─────────────────────────────────────────────────────────
 
+        /// <summary>
+        /// Gán tham chiếu bằng code (dùng khi panel được dựng runtime thay vì
+        /// kéo-thả trong Inspector). Gọi TRƯỚC khi GameObject host được kích hoạt.
+        /// </summary>
+        public void Bind(GameObject panel, TMP_Text timer, TMP_Text bot, Button cancel)
+        {
+            matchmakingPanel  = panel;
+            searchTimerLabel  = timer;
+            botCountdownLabel = bot;
+            cancelButton      = cancel;
+        }
+
         private void Awake()
         {
             cancelButton?.onClick.AddListener(OnCancelClicked);

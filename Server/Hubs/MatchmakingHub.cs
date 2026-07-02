@@ -36,8 +36,11 @@ public class MatchmakingHub : Hub
     private static readonly ConcurrentDictionary<string, string> CasualQueue = new();
     private static readonly ConcurrentDictionary<string, CancellationTokenSource> CasualTasks = new();
 
-    // Phòng riêng: mã phòng → (hostPlayerId, hostConnectionId)
-    private static readonly ConcurrentDictionary<string, (string PlayerId, string ConnId)> PrivateRooms = new();
+    // Phòng riêng: mã phòng → (hostPlayerId, hostConnectionId, thời điểm tạo)
+    private static readonly ConcurrentDictionary<string, (string PlayerId, string ConnId, DateTime CreatedUtc)> PrivateRooms = new();
+
+    // Phòng riêng tự hết hạn nếu không ai vào sau khoảng thời gian này
+    private static readonly TimeSpan PrivateRoomTtl = TimeSpan.FromMinutes(5);
 
     // Mutex để tránh race condition khi 2 người cùng tìm trận
     private static readonly SemaphoreSlim _matchLock = new SemaphoreSlim(1, 1);
@@ -245,11 +248,14 @@ public class MatchmakingHub : Hub
             return "";
         }
 
+        PrunePrivateRooms();
+
+        // Mỗi người chỉ giữ một phòng — xóa phòng cũ (nếu có)
         foreach (var kv in PrivateRooms.Where(kv => kv.Value.PlayerId == playerId).ToList())
             PrivateRooms.TryRemove(kv.Key, out _);
 
         var code = GenerateRoomCode();
-        PrivateRooms[code] = (playerId, Context.ConnectionId);
+        PrivateRooms[code] = (playerId, Context.ConnectionId, DateTime.UtcNow);
         return code;
     }
 
@@ -261,8 +267,17 @@ public class MatchmakingHub : Hub
             return;
         }
 
+        PrunePrivateRooms();
+
         code = code.Trim();
         if (!PrivateRooms.TryRemove(code, out var host))
+        {
+            await Clients.Caller.SendAsync("Error", "Mã phòng không tồn tại hoặc đã hết hạn.");
+            return;
+        }
+
+        // Phòng đã quá hạn giữa lúc kiểm tra — coi như không tồn tại
+        if (DateTime.UtcNow - host.CreatedUtc > PrivateRoomTtl)
         {
             await Clients.Caller.SendAsync("Error", "Mã phòng không tồn tại hoặc đã hết hạn.");
             return;
@@ -275,7 +290,34 @@ public class MatchmakingHub : Hub
             return;
         }
 
-        await CreateAndNotifyBattle(host.PlayerId, myPlayerId, host.ConnId, Context.ConnectionId, BattleMode.Private);
+        // Lấy ConnectionId hiện tại của chủ phòng (có thể đã đổi do reconnect)
+        var hostConnId = ConnectedPlayers.FirstOrDefault(kv => kv.Value == host.PlayerId).Key;
+        if (string.IsNullOrEmpty(hostConnId))
+        {
+            await Clients.Caller.SendAsync("Error", "Chủ phòng hiện không trực tuyến.");
+            return;
+        }
+
+        await CreateAndNotifyBattle(host.PlayerId, myPlayerId, hostConnId, Context.ConnectionId, BattleMode.Private);
+    }
+
+    public async Task CancelPrivateRoom()
+    {
+        if (!ConnectedPlayers.TryGetValue(Context.ConnectionId, out var playerId))
+            return;
+
+        foreach (var kv in PrivateRooms.Where(kv => kv.Value.PlayerId == playerId).ToList())
+            PrivateRooms.TryRemove(kv.Key, out _);
+
+        await Clients.Caller.SendAsync("PrivateRoomCancelled");
+    }
+
+    /// <summary>Dọn các phòng riêng đã quá hạn (không ai vào).</summary>
+    private static void PrunePrivateRooms()
+    {
+        var now = DateTime.UtcNow;
+        foreach (var kv in PrivateRooms.Where(kv => now - kv.Value.CreatedUtc > PrivateRoomTtl).ToList())
+            PrivateRooms.TryRemove(kv.Key, out _);
     }
 
     private static string GenerateRoomCode()

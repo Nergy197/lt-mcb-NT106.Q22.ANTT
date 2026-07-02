@@ -28,6 +28,31 @@ namespace PokemonMMO.UI
         [SerializeField] private Button cancelBtn;
         [SerializeField] private TMP_Text statusLabel;
 
+        // Đánh dấu host đã tạo phòng trên server (cần dọn khi hủy)
+        private bool _roomCreated;
+
+        /// <summary>
+        /// Gán tham chiếu bằng code (dùng khi panel được dựng runtime thay vì
+        /// kéo-thả trong Inspector). Gọi TRƯỚC khi panel được Show() lần đầu.
+        /// </summary>
+        public void Bind(GameObject panel, GameObject createView, GameObject joinView,
+                         TMP_Text codeDisplay, Button createRoomBtn, Button switchToJoinBtn,
+                         TMP_InputField codeInput, Button joinRoomBtn, Button switchToCreateBtn,
+                         Button cancelBtn, TMP_Text statusLabel)
+        {
+            this.panel             = panel;
+            this.createView        = createView;
+            this.joinView          = joinView;
+            this.codeDisplay       = codeDisplay;
+            this.createRoomBtn     = createRoomBtn;
+            this.switchToJoinBtn   = switchToJoinBtn;
+            this.codeInput         = codeInput;
+            this.joinRoomBtn       = joinRoomBtn;
+            this.switchToCreateBtn = switchToCreateBtn;
+            this.cancelBtn         = cancelBtn;
+            this.statusLabel       = statusLabel;
+        }
+
         private void Awake()
         {
             if (codeInput != null)
@@ -40,7 +65,7 @@ namespace PokemonMMO.UI
             joinRoomBtn?.onClick.AddListener(OnJoinRoom);
             switchToJoinBtn?.onClick.AddListener(ShowJoinView);
             switchToCreateBtn?.onClick.AddListener(ShowCreateView);
-            cancelBtn?.onClick.AddListener(Hide);
+            cancelBtn?.onClick.AddListener(OnCancel);
         }
 
         private void OnEnable()
@@ -67,11 +92,27 @@ namespace PokemonMMO.UI
             panel.SetActive(false);
         }
 
+        // Hủy: dọn phòng đã tạo trên server (nếu có) rồi đóng panel
+        private void OnCancel()
+        {
+            if (_roomCreated)
+            {
+                MatchmakingManager.Instance?.CancelPrivateRoom();
+                _roomCreated = false;
+            }
+            Hide();
+        }
+
         private void ShowCreateView()
         {
             createView.SetActive(true);
             joinView.SetActive(false);
             if (codeDisplay != null) codeDisplay.text = "---";
+            if (_roomCreated)
+            {
+                MatchmakingManager.Instance?.CancelPrivateRoom();
+                _roomCreated = false;
+            }
         }
 
         private void ShowJoinView()
@@ -101,6 +142,7 @@ namespace PokemonMMO.UI
 
         private void HandleRoomCreated(string code)
         {
+            _roomCreated = true;
             if (codeDisplay != null) codeDisplay.text = code;
             SetStatus("Chờ đối thủ nhập mã...");
         }

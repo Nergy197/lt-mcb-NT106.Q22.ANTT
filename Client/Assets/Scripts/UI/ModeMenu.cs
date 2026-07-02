@@ -112,10 +112,15 @@ namespace PokemonArena.UI
                     }
                     break;
                 case ModeButton.Mode.Private:
+                    // Tự tìm panel trong scene nếu chưa gán ở Inspector
+                    // (ModeSceneAutoSetup dựng panel này lúc runtime).
+                    if (privateRoomPanel == null)
+                        privateRoomPanel = FindFirstObjectByType<PrivateRoomPanel>(FindObjectsInactive.Include);
+
                     if (privateRoomPanel != null)
                         privateRoomPanel.Show();
                     else
-                        Debug.LogWarning("[ModeMenu] Chưa gán PrivateRoomPanel trong Inspector.");
+                        Debug.LogWarning("[ModeMenu] Không tìm thấy PrivateRoomPanel trong scene.");
                     break;
             }
         }
