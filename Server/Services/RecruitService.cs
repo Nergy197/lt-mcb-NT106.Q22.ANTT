@@ -14,6 +14,7 @@ public class RecruitService
 {
     private readonly MongoDbContext _db;
     private readonly IWebHostEnvironment _env;
+    private readonly CurrencyService _currency;
     private static readonly Random _rng = new();
 
     // Các hậu tố form cần loại bỏ khi tìm icon
@@ -55,10 +56,11 @@ public class RecruitService
         "Calm","Gentle","Sassy","Careful","Quirky"
     };
 
-    public RecruitService(MongoDbContext db, IWebHostEnvironment env)
+    public RecruitService(MongoDbContext db, IWebHostEnvironment env, CurrencyService currency)
     {
         _db = db;
         _env = env;
+        _currency = currency;
     }
 
     /// <summary>
@@ -70,6 +72,19 @@ public class RecruitService
             ?? throw new Exception("Player not found");
 
         bool isTrial = req.RecruitType.Equals("trial", StringComparison.OrdinalIgnoreCase);
+
+        // Trừ VP nếu là chiêu mộ vĩnh viễn (permanent)
+        if (!isTrial)
+        {
+            var vpRemaining = await _currency.SpendVPAsync(
+                player.Id,
+                2500,
+                reason: CurrencyService.ReasonRecruitPerm,
+                refId: req.SpeciesId.ToString());
+
+            if (vpRemaining == null)
+                throw new Exception("Không đủ VP để nhận Pokémon vĩnh viễn (Cần 2500 VP).");
+        }
 
         // Kiểm tra trial box còn chỗ không
         if (isTrial)
@@ -168,9 +183,22 @@ public class RecruitService
     /// <summary>
     /// Roll ngẫu nhiên 10 Pokémon từ toàn bộ Pokédex.
     /// Chỉ chọn Pokémon có icon tồn tại trên server.
+    /// Trừ 2500 VP cho mỗi lần Roll.
     /// </summary>
-    public async Task<List<RecruitResult>> RollAsync(int count = 10)
+    public async Task<List<RecruitResult>> RollAsync(string accountId, int count = 10)
     {
+        var player = await _db.Players.Find(p => p.AccountId == accountId).FirstOrDefaultAsync()
+            ?? throw new Exception("Player not found");
+
+        // Trừ 2500 VP cho lượt Roll
+        var vpRemaining = await _currency.SpendVPAsync(
+            player.Id,
+            2500,
+            reason: CurrencyService.ReasonRecruitRoll);
+
+        if (vpRemaining == null)
+            throw new Exception("Không đủ VP để chiêu mộ (Cần 2500 VP).");
+
         var allPokemon = await _db.Pokedex.Find(_ => true).ToListAsync();
 
         if (allPokemon.Count == 0)

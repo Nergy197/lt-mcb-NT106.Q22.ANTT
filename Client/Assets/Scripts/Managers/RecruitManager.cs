@@ -298,7 +298,14 @@ namespace PokemonMMO.UI
             {
                 Debug.Log("[Recruit] Đang gọi API roll...");
 
-                var response = await Http.GetAsync($"{serverUrl}/api/recruit/roll?count=10");
+                var request = new HttpRequestMessage(HttpMethod.Get, $"{serverUrl}/api/recruit/roll?count=10");
+                string token = PlayerPrefs.GetString("jwt_token", "");
+                if (!string.IsNullOrEmpty(token))
+                {
+                    request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+                }
+
+                var response = await Http.SendAsync(request);
                 var json = await response.Content.ReadAsStringAsync();
 
                 Debug.Log($"[Recruit] Response: {json}");
@@ -310,6 +317,8 @@ namespace PokemonMMO.UI
 
                     Dispatch(() =>
                     {
+                        if (VPManager.Instance != null) VPManager.Instance.RefreshFromServer();
+                        
                         _currentResults = results;
                         SaveResults(results);
                         int pendingIcons = Mathf.Min(results.Length, slots.Length);
@@ -347,7 +356,11 @@ namespace PokemonMMO.UI
                 else
                 {
                     Debug.LogError($"[Recruit] Lỗi API: {json}");
-                    Dispatch(() => _isRolling = false);
+                    Dispatch(() => {
+                        _isRolling = false;
+                        ResetRecruitState();
+                        // Có thể hiện popup báo lỗi không đủ VP ở đây nếu có UI errorPopup
+                    });
                 }
             }
             catch (Exception ex)
@@ -701,7 +714,9 @@ namespace PokemonMMO.UI
                 var resp = JsonUtility.FromJson<RecruitConfirmResponseDto>(req.downloadHandler.text);
                 Debug.Log($"[Recruit] ✅ {resp.Message} (Party: {resp.IsInParty})");
                 AudioManager.Instance?.PlaySFX(sfxRecruitConfirm);
-                
+                // Refresh VP from server
+                if (VPManager.Instance != null) VPManager.Instance.RefreshFromServer();
+
                 // Clear saved results to prevent loading them again
                 ClearSavedResults();
 

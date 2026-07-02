@@ -19,14 +19,21 @@ public class RecruitController : ControllerBase
 
     /// <summary>GET /api/recruit/roll — Roll ngẫu nhiên 10 Pokémon.</summary>
     [HttpGet("roll")]
+    [Authorize]
     public async Task<IActionResult> Roll([FromQuery] int count = 10)
     {
+        var accountId = User.FindFirstValue(ClaimTypes.NameIdentifier)
+                     ?? User.FindFirstValue("sub");
+
+        if (string.IsNullOrEmpty(accountId))
+            return Unauthorized(new { message = "Không xác định được người dùng." });
+
         if (count < 1 || count > 10)
             return BadRequest(new { message = "Số lượng phải từ 1 đến 10." });
 
         try
         {
-            var results = await _recruitService.RollAsync(count);
+            var results = await _recruitService.RollAsync(accountId, count);
             return Ok(results);
         }
         catch (InvalidOperationException ex)
