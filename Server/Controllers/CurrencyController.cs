@@ -25,11 +25,24 @@ public class CurrencyController : ControllerBase
         var accountId = GetAccountId();
         if (accountId == null) return Unauthorized();
 
-        var vp = await _currency.GetVPByAccountIdAsync(accountId);
-        if (vp == null)
+        var player = await _currency.GetPlayerByAccountIdAsync(accountId);
+        if (player == null)
             return NotFound(new { Message = "Player not found." });
 
-        return Ok(new CurrencyBalanceResponse { Vp = vp.Value });
+        return Ok(new CurrencyBalanceResponse { Vp = player.VP, WelcomeClaimed = player.WelcomeClaimed });
+    }
+
+    [HttpPost("claim-welcome")]
+    public async Task<IActionResult> ClaimWelcome()
+    {
+        var accountId = GetAccountId();
+        if (accountId == null) return Unauthorized();
+
+        var newVp = await _currency.ClaimWelcomeBonusAsync(accountId);
+        if (newVp == null)
+            return BadRequest(new { Message = "Already claimed or player not found." });
+
+        return Ok(new CurrencyBalanceResponse { Vp = newVp.Value, WelcomeClaimed = true });
     }
 
     [HttpPost("vp/debug/add")]
@@ -82,6 +95,7 @@ public class CurrencyController : ControllerBase
 public class CurrencyBalanceResponse
 {
     public int Vp { get; set; }
+    public bool WelcomeClaimed { get; set; }
 }
 
 public class DebugVPRequest

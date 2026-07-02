@@ -37,4 +37,7 @@ public class Player
 
     [BsonElement("last_seen_at")]
     public DateTime? LastSeenAt { get; set; }
+
+    [BsonElement("welcome_claimed")]
+    public bool WelcomeClaimed { get; set; } = false;
 }

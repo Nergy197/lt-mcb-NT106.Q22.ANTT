@@ -21,7 +21,18 @@ public class AuthController : ControllerBase
         if (!success)
             return BadRequest(new { message = error });
 
-        return Ok(new { message = "Đăng ký thành công." });
+        return Ok(new { message = "Mã xác nhận đã được gửi đến email của bạn." });
+    }
+
+    // POST /api/auth/verify-registration
+    [HttpPost("verify-registration")]
+    public async Task<IActionResult> VerifyRegistration([FromBody] VerifyRegistrationRequest req)
+    {
+        var (success, error) = await _auth.VerifyRegistrationAsync(req.Email, req.Token);
+        if (!success)
+            return BadRequest(new { message = error });
+
+        return Ok(new { message = "Đăng ký và xác thực thành công." });
     }
 
     // POST /api/auth/login

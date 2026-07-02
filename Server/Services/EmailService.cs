@@ -14,6 +14,44 @@ public class EmailService
         _log = log;
     }
 
+    public async Task SendRegistrationTokenAsync(string toEmail, string token)
+    {
+        try
+        {
+            var host = _config["Smtp:Host"] ?? "smtp.gmail.com";
+            var port = int.Parse(_config["Smtp:Port"] ?? "587");
+            var username = _config["Smtp:Username"];
+            var password = _config["Smtp:Password"];
+
+            var fromAddress = new MailAddress(username!, "Pokemon MMO");
+            var toAddress = new MailAddress(toEmail);
+
+            var smtp = new SmtpClient
+            {
+                Host = host,
+                Port = port,
+                EnableSsl = true,
+                DeliveryMethod = SmtpDeliveryMethod.Network,
+                UseDefaultCredentials = false,
+                Credentials = new NetworkCredential(fromAddress.Address, password)
+            };
+
+            using var message = new MailMessage(fromAddress, toAddress)
+            {
+                Subject = "Mã xác nhận đăng ký tài khoản Pokemon MMO",
+                Body = $"Chào bạn,\n\nMã xác nhận đăng ký của bạn là: {token}\n\nMã này sẽ hết hạn trong 1 giờ. Vui lòng không chia sẻ mã này cho bất kỳ ai.\n\nTrân trọng,\nPokemon MMO Team",
+                IsBodyHtml = false
+            };
+
+            await smtp.SendMailAsync(message);
+            _log.LogInformation("[EmailService] Gửi mã xác nhận đăng ký thành công tới {Email}", toEmail);
+        }
+        catch (Exception ex)
+        {
+            _log.LogError(ex, "[EmailService] Lỗi khi gửi mã xác nhận đăng ký tới {Email}", toEmail);
+        }
+    }
+
     public async Task SendResetTokenAsync(string toEmail, string resetToken)
     {
         try

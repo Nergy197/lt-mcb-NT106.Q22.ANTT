@@ -8,4 +8,6 @@ public record ForgotPasswordRequest(string Email);
 
 public record ResetPasswordRequest(string Token, string NewPassword);
 
+public record VerifyRegistrationRequest(string Email, string Token);
+
 public record AuthResponse(string Token, string Username, string AccountId, string PlayerId);
