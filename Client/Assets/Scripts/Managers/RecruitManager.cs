@@ -87,8 +87,6 @@ namespace PokemonMMO.UI
         public Button confirmRecruitYesButton;
         [Tooltip("Nút 'Hủy' trong popup xác nhận")]
         public Button confirmRecruitNoButton;
-        [Tooltip("Text hiển thị số VP hiện tại trong popup")]
-        public TMPro.TextMeshProUGUI confirmVpText;
 
         [Header("Success Popup")]
         [Tooltip("Panel thông báo thành công trước khi về sảnh")]
@@ -226,9 +224,6 @@ namespace PokemonMMO.UI
             if (_isRolling) return;
             if (confirmRecruitPopup != null)
             {
-                // Cập nhật VP hiện tại vào popup
-                if (confirmVpText != null && VPManager.Instance != null)
-                    confirmVpText.text = $"VP hiện tại: {VPManager.Instance.CurrentVP:N0}";
 
                 confirmRecruitPopup.SetActive(true);
                 ClickOutsideOverlay.Show(ref _confirmOverlay, confirmRecruitPopup, OnCancelRecruit);
