@@ -74,6 +74,16 @@ namespace PokemonMMO.UI
         [Tooltip("Kéo GameObject Options_Popup vào đây")]
         public GameObject optionsPopup;
 
+        [Header("Confirm Recruit Popup")]
+        [Tooltip("Panel xác nhận chi phí chiêu mộ (2500 VP)")]
+        public GameObject confirmRecruitPopup;
+        [Tooltip("Nút 'Đồng ý' trong popup xác nhận")]
+        public Button confirmRecruitYesButton;
+        [Tooltip("Nút 'Hủy' trong popup xác nhận")]
+        public Button confirmRecruitNoButton;
+        [Tooltip("Text hiển thị số VP hiện tại trong popup")]
+        public TMPro.TextMeshProUGUI confirmVpText;
+
         [Header("SFX")]
         [SerializeField] private AudioClip sfxRecruitRoll;
         [SerializeField] private AudioClip sfxRecruitPop;
@@ -87,9 +97,16 @@ namespace PokemonMMO.UI
             if (recruitPanel != null)   recruitPanel.SetActive(true);
             if (pokemonListBar != null) pokemonListBar.SetActive(false);
             if (detailImage != null)    detailImage.gameObject.SetActive(false);
+            if (confirmRecruitPopup != null) confirmRecruitPopup.SetActive(false);
 
             if (recruitButton != null)
                 recruitButton.image.raycastTarget = false;
+
+            // Wire up confirm recruit popup buttons
+            if (confirmRecruitYesButton != null)
+                confirmRecruitYesButton.onClick.AddListener(OnConfirmRecruit);
+            if (confirmRecruitNoButton != null)
+                confirmRecruitNoButton.onClick.AddListener(OnCancelRecruit);
 
             // Khôi phục kết quả cũ nếu chưa quá 24 giờ
             var saved = LoadSavedResults();
@@ -107,6 +124,16 @@ namespace PokemonMMO.UI
                 while (_mainThread.Count > 0)
                     _mainThread.Dequeue()?.Invoke();
 
+            // Popup xác nhận đang mở — xử lý phím riêng
+            if (confirmRecruitPopup != null && confirmRecruitPopup.activeSelf)
+            {
+                if (Input.GetKeyDown(KeyCode.C))
+                    OnConfirmRecruit();
+                else if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.Escape))
+                    OnCancelRecruit();
+                return;
+            }
+
             // Màn hình banner
             if (recruitPanel != null && recruitPanel.activeSelf && !_isRolling)
             {
@@ -115,7 +142,7 @@ namespace PokemonMMO.UI
                     if (_currentResults != null && _currentResults.Length > 0)
                         ShowResultsFromBanner();
                     else
-                        OnRecruitButtonClicked();
+                        ShowConfirmPopup();
                 }
                 else if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.Escape))
                     SceneManager.LoadScene(menuSceneName);
@@ -149,7 +176,48 @@ namespace PokemonMMO.UI
 
         // ── Button Handler ────────────────────────────────────────────────
 
-        public void OnRecruitButtonClicked()
+        /// <summary>
+        /// Hiển thị popup xác nhận chi phí 2500 VP trước khi roll.
+        /// Gọi khi nhấn nút "Meet a New Lineup of Pokémon!" hoặc phím C ở banner.
+        /// </summary>
+        public void ShowConfirmPopup()
+        {
+            if (_isRolling) return;
+            if (confirmRecruitPopup != null)
+            {
+                // Cập nhật VP hiện tại vào popup
+                if (confirmVpText != null && VPManager.Instance != null)
+                    confirmVpText.text = $"VP hiện tại: {VPManager.Instance.CurrentVP:N0}";
+
+                confirmRecruitPopup.SetActive(true);
+            }
+            else
+            {
+                // Fallback: nếu chưa gán popup thì roll thẳng
+                OnRecruitButtonClicked();
+            }
+        }
+
+        /// <summary>
+        /// Người chơi nhấn "Đồng ý" → thực sự roll chiêu mộ.
+        /// </summary>
+        private void OnConfirmRecruit()
+        {
+            if (confirmRecruitPopup != null)
+                confirmRecruitPopup.SetActive(false);
+            OnRecruitButtonClicked();
+        }
+
+        /// <summary>
+        /// Người chơi nhấn "Hủy" → đóng popup, quay lại banner.
+        /// </summary>
+        private void OnCancelRecruit()
+        {
+            if (confirmRecruitPopup != null)
+                confirmRecruitPopup.SetActive(false);
+        }
+
+        private void OnRecruitButtonClicked()
         {
             if (_isRolling) return;
             _isRolling = true;
