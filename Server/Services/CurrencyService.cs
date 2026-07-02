@@ -57,7 +57,7 @@ public class CurrencyService
 
         var filter = Builders<Player>.Filter.And(
             Builders<Player>.Filter.Eq(p => p.Id, player.Id),
-            Builders<Player>.Filter.Eq(p => p.WelcomeClaimed, false));
+            Builders<Player>.Filter.Ne(p => p.WelcomeClaimed, true));
 
         var update = Builders<Player>.Update
             .Inc(p => p.VP, WelcomeBonus)

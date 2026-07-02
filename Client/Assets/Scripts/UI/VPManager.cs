@@ -64,8 +64,8 @@ public class VPManager : MonoBehaviour
             }
 
             var response = JsonUtility.FromJson<VPBalanceResponse>(req.downloadHandler.text);
-            ApplyServerBalance(response.Vp);
-            OnWelcomeCheckComplete?.Invoke(response.WelcomeClaimed);
+            ApplyServerBalance(response.vp);
+            OnWelcomeCheckComplete?.Invoke(response.welcomeClaimed);
         }
     }
 
@@ -121,15 +121,15 @@ public class VPManager : MonoBehaviour
             }
 
             var response = JsonUtility.FromJson<VPBalanceResponse>(req.downloadHandler.text);
-            ApplyServerBalance(response.Vp);
+            ApplyServerBalance(response.vp);
         }
     }
 
     [Serializable]
     private class VPBalanceResponse
     {
-        public int Vp;
-        public bool WelcomeClaimed;
+        public int vp;
+        public bool welcomeClaimed;
     }
 
     [Serializable]

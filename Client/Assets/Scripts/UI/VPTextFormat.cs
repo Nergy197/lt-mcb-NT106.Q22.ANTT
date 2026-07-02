@@ -11,7 +11,7 @@ public class VPTextUI : MonoBehaviour
             vpText = GetComponent<TMP_Text>();
     }
 
-    private void OnEnable()
+    private void Start()
     {
         if (VPManager.Instance != null)
         {
@@ -20,7 +20,7 @@ public class VPTextUI : MonoBehaviour
         }
     }
 
-    private void OnDisable()
+    private void OnDestroy()
     {
         if (VPManager.Instance != null)
             VPManager.Instance.OnVPChanged -= UpdateVPText;
