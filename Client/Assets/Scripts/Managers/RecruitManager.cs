@@ -90,6 +90,12 @@ namespace PokemonMMO.UI
         [Tooltip("Text hiển thị số VP hiện tại trong popup")]
         public TMPro.TextMeshProUGUI confirmVpText;
 
+        [Header("Success Popup")]
+        [Tooltip("Panel thông báo thành công trước khi về sảnh")]
+        public GameObject successPopup;
+        [Tooltip("Text thông báo (chỗ hiển thị chữ đưa vào Trial Box hay Box)")]
+        public TMPro.TextMeshProUGUI successText;
+
         [Header("SFX")]
         [SerializeField] private AudioClip sfxRecruitRoll;
         [SerializeField] private AudioClip sfxRecruitPop;
@@ -108,6 +114,7 @@ namespace PokemonMMO.UI
             if (pokemonListBar != null) pokemonListBar.SetActive(false);
             if (detailImage != null)    detailImage.gameObject.SetActive(false);
             if (confirmRecruitPopup != null) confirmRecruitPopup.SetActive(false);
+            if (successPopup != null)   successPopup.SetActive(false);
 
             if (recruitButton != null)
             {
@@ -694,7 +701,27 @@ namespace PokemonMMO.UI
                 var resp = JsonUtility.FromJson<RecruitConfirmResponseDto>(req.downloadHandler.text);
                 Debug.Log($"[Recruit] ✅ {resp.Message} (Party: {resp.IsInParty})");
                 AudioManager.Instance?.PlaySFX(sfxRecruitConfirm);
-                ResetRecruitState(); // Reset hoàn toàn sau khi đã recruit
+                
+                // Clear saved results to prevent loading them again
+                ClearSavedResults();
+
+                // Show success popup
+                if (successPopup != null && successText != null)
+                {
+                    successPopup.SetActive(true);
+                    if (recruitType == "trial")
+                    {
+                        successText.text = "Pokémon đã được đưa vào Trial Box!";
+                    }
+                    else
+                    {
+                        successText.text = "Pokémon đã được đưa vào Box!";
+                    }
+                }
+
+                // Wait for 2.5 seconds then return to main menu
+                yield return new WaitForSeconds(2.5f);
+                SceneManager.LoadScene(menuSceneName);
             }
             else
             {
