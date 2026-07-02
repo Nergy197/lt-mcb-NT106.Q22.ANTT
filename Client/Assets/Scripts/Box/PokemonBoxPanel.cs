@@ -35,7 +35,7 @@ namespace PokemonMMO.Box
         public RectTransform exitButtonRect;
 
         [Header("Settings")]
-        public string serverBaseUrl = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app";
+        public string serverBaseUrl = "https://pokemon-mmo-server-123-gkaqfbejgycbcwfb.southeastasia-01.azurewebsites.net";
         public string menuSceneName = "Menu scene";
 
         // ── Constants ─────────────────────────────────────────────────────────

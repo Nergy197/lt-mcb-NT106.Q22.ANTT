@@ -15,8 +15,8 @@ public class FriendRequestListLoader : MonoBehaviour
     public Sprite[] pokemonAvatarPool;
 
     [Header("API")]
-    public string requestsApiUrl = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app/api/friends/requests";
-    public string respondApiUrl = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app/api/friends/respond";
+    public string requestsApiUrl = "https://pokemon-mmo-server-123-gkaqfbejgycbcwfb.southeastasia-01.azurewebsites.net/api/friends/requests";
+    public string respondApiUrl = "https://pokemon-mmo-server-123-gkaqfbejgycbcwfb.southeastasia-01.azurewebsites.net/api/friends/respond";
 
     private bool isResponding;
 

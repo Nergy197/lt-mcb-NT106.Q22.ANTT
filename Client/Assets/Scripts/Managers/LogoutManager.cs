@@ -16,7 +16,7 @@ namespace PokemonMMO.UI
         private static readonly HttpClient Http = new HttpClient { Timeout = TimeSpan.FromSeconds(8) };
 
         private string ServerUrl =>
-            SignalRClient.Instance != null ? SignalRClient.Instance.serverUrl : "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app";
+            SignalRClient.Instance != null ? SignalRClient.Instance.serverUrl : "https://pokemon-mmo-server-123-gkaqfbejgycbcwfb.southeastasia-01.azurewebsites.net";
 
         // ── Gọi từ nút Đăng xuất ─────────────────────────────────────────
         public void OnLogoutClicked()

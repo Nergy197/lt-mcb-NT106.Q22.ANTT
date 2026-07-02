@@ -28,7 +28,7 @@ public class RankFriendsListLoader : MonoBehaviour
     public bool useSampleData;
     public bool useGeneratedScoresWhenMissing;
     public int sampleFriendCount = 10;
-    public string friendsApiUrl = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app/api/rank/friends";
+    public string friendsApiUrl = "https://pokemon-mmo-server-123-gkaqfbejgycbcwfb.southeastasia-01.azurewebsites.net/api/rank/friends";
 
     private static readonly Color Top1FallbackColor = new(1f, 0.78f, 0.18f, 0.95f);
     private static readonly Color Top2FallbackColor = new(0.78f, 0.82f, 0.9f, 0.95f);

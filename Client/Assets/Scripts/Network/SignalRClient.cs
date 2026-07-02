@@ -17,7 +17,7 @@ namespace Game.Network
         public static event Action<int, int> OnRankRewardReceived;
 
         [Header("Cấu hình Server")]
-        public string serverUrl = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app";
+        public string serverUrl = "https://pokemon-mmo-server-123-gkaqfbejgycbcwfb.southeastasia-01.azurewebsites.net";
 
         private HubConnection _matchmakingHub;
         private HubConnection _battleHub;

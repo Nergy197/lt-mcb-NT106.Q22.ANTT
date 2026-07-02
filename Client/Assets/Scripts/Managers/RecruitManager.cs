@@ -27,7 +27,7 @@ namespace PokemonMMO.UI
     {
         // ── Server ────────────────────────────────────────────────────────
         [Header("Server")]
-        public string serverUrl      = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app";
+        public string serverUrl      = "https://pokemon-mmo-server-123-gkaqfbejgycbcwfb.southeastasia-01.azurewebsites.net";
         public string menuSceneName  = "Menu scene";
 
         // ── UI References ─────────────────────────────────────────────────

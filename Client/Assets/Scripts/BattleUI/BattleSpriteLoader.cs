@@ -14,7 +14,7 @@ namespace Game.Battle.Logic
         public SpriteRenderer enemyLeadSlot;
         public SpriteRenderer enemySub2Slot;
 
-        private string _serverUrl = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app/data/pokemon";
+        private string _serverUrl = "https://pokemon-mmo-server-123-gkaqfbejgycbcwfb.southeastasia-01.azurewebsites.net/data/pokemon";
 
         private static readonly Dictionary<string, Sprite> _spriteCache = new();
 

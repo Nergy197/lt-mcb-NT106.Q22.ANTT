@@ -26,7 +26,7 @@ public class RankTop100ListLoader : MonoBehaviour
     [Header("Data")]
     public bool useSampleData = true;
     public int sampleCount = 100;
-    public string top100ApiUrl = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app/api/rank/top100";
+    public string top100ApiUrl = "https://pokemon-mmo-server-123-gkaqfbejgycbcwfb.southeastasia-01.azurewebsites.net/api/rank/top100";
 
     private static readonly Color Top1FallbackColor = new(1f, 0.78f, 0.18f, 0.95f);
     private static readonly Color Top2FallbackColor = new(0.78f, 0.82f, 0.9f, 0.95f);

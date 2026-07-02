@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
@@ -9,7 +9,7 @@ public class FriendsController : MonoBehaviour
 {
     public GameObject friendsPopup;
     public Image friendsButtonBottom;
-    public Button friendsButton; // kéo FRIENDS bottom button vào đây
+    public Button friendsButton; // k�o FRIENDS bottom button v�o d�y
 
     [Header("Tab Settings")]
     public GameObject friendsTabPanel;
@@ -28,7 +28,7 @@ public class FriendsController : MonoBehaviour
     public Image addFriendSubmitButtonImage;
     public Sprite addFriendDefaultSprite;
     public Sprite addFriendAddedSprite;
-    public string friendsApiUrl = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app/api/friends/request";
+    public string friendsApiUrl = "https://pokemon-mmo-server-123-gkaqfbejgycbcwfb.southeastasia-01.azurewebsites.net/api/friends/request";
 
     [Header("Incoming Requests")]
     public FriendRequestListLoader friendRequestListLoader;
@@ -51,7 +51,7 @@ public class FriendsController : MonoBehaviour
 
     private void OnDisable()
     {
-        isSubmittingAddFriend = false; // reset nếu popup đóng giữa chừng request
+        isSubmittingAddFriend = false; // reset n?u popup d�ng gi?a ch?ng request
         if (addFriendNameInput != null)
             addFriendNameInput.onValueChanged.RemoveListener(OnAddFriendNameChanged);
     }
@@ -149,7 +149,7 @@ public class FriendsController : MonoBehaviour
         if (addFriendTabButton != null)
             addFriendTabButton.gameObject.SetActive(true);
 
-        // Chỉ đặt thứ tự sibling một lần để tránh đảo render order mỗi lần đổi tab
+        // Ch? d?t th? t? sibling m?t l?n d? tr�nh d?o render order m?i l?n d?i tab
         if (!_tabButtonsReordered)
         {
             if (friendsTabButton != null)  friendsTabButton.SetAsLastSibling();

@@ -9,7 +9,7 @@ public class VPManager : MonoBehaviour
     public static VPManager Instance { get; private set; }
 
     [Header("Server")]
-    [SerializeField] private string serverUrl = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app";
+    [SerializeField] private string serverUrl = "https://pokemon-mmo-server-123-gkaqfbejgycbcwfb.southeastasia-01.azurewebsites.net";
 
     [SerializeField] private int defaultVP = 5000;
     public int CurrentVP { get; private set; }

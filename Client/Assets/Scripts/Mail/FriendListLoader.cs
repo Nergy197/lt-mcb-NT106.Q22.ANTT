@@ -42,7 +42,7 @@ public class FriendListLoader : MonoBehaviour
 
     [Header("Cấu hình Backend")]
     // Đã sửa lại PORT 2567 và http (không có chữ s) cho khớp với Server
-    public string apiUrl = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app/api/friends";
+    public string apiUrl = "https://pokemon-mmo-server-123-gkaqfbejgycbcwfb.southeastasia-01.azurewebsites.net/api/friends";
 
     private bool isRemovingFriend;
 

@@ -26,7 +26,7 @@ namespace PokemonMMO.Pokedex
         public GameObject pokedexMenuPanel;
 
         [Header("Settings")]
-        public string serverBaseUrl = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app";
+        public string serverBaseUrl = "https://pokemon-mmo-server-123-gkaqfbejgycbcwfb.southeastasia-01.azurewebsites.net";
 
         private List<PokedexEntry> _entries  = new();
         private List<PokedexItemUI> _items   = new();

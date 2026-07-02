@@ -18,7 +18,7 @@ namespace PokemonMMO.Box
         public string exitSceneName = "PokedexScene";
 
         [Header("Settings")]
-        public string serverBaseUrl = "https://lt-mcb-nt106q22antt-production-cc69.up.railway.app";
+        public string serverBaseUrl = "https://pokemon-mmo-server-123-gkaqfbejgycbcwfb.southeastasia-01.azurewebsites.net";
 
         private static readonly Dictionary<int, Sprite> _spriteCache = new();
 
