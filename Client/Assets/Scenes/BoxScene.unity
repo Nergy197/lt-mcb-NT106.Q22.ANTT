@@ -1060,7 +1060,7 @@ MonoBehaviour:
   - {fileID: 1749191178}
   - {fileID: 1743555951}
   exitButton: {fileID: 456705651}
-  exitSceneName: PokedexScene
+  exitSceneName: Menu scene
   serverBaseUrl: https://pokemon-mmo-server-123-gkaqfbejgycbcwfb.southeastasia-01.azurewebsites.net
 --- !u!114 &854708558
 MonoBehaviour:

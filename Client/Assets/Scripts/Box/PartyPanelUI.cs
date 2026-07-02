@@ -15,7 +15,7 @@ namespace PokemonMMO.Box
 
         [Header("Exit Button")]
         public Button exitButton;
-        public string exitSceneName = "PokedexScene";
+        public string exitSceneName = "Menu scene";
 
         [Header("Settings")]
         public string serverBaseUrl = "https://pokemon-mmo-server-123-gkaqfbejgycbcwfb.southeastasia-01.azurewebsites.net";
