@@ -30,6 +30,9 @@ namespace PokemonMMO.UI
             if (VPManager.Instance != null)
             {
                 VPManager.Instance.OnWelcomeCheckComplete += HandleWelcomeCheck;
+                // Gọi RefreshFromServer để lấy data VP và trạng thái Welcome mới nhất
+                // (Vì VPManager nằm ở DontDestroyOnLoad nên nó không tự động Start lại khi chuyển Scene)
+                VPManager.Instance.RefreshFromServer();
             }
         }
 
