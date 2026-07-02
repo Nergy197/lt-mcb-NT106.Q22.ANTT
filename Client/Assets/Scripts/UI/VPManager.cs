@@ -12,9 +12,10 @@ public class VPManager : MonoBehaviour
     [SerializeField] private string serverUrl = "https://pokemon-mmo-server-123-gkaqfbejgycbcwfb.southeastasia-01.azurewebsites.net";
 
     [SerializeField] private int defaultVP = 5000;
-    public int CurrentVP { get; private set; }
+    public int CurrentVP { get; set; }
 
     public event Action<int> OnVPChanged;
+    public event Action<bool> OnWelcomeCheckComplete;
 
     private void Awake()
     {
@@ -64,6 +65,7 @@ public class VPManager : MonoBehaviour
 
             var response = JsonUtility.FromJson<VPBalanceResponse>(req.downloadHandler.text);
             ApplyServerBalance(response.Vp);
+            OnWelcomeCheckComplete?.Invoke(response.WelcomeClaimed);
         }
     }
 
@@ -127,6 +129,7 @@ public class VPManager : MonoBehaviour
     private class VPBalanceResponse
     {
         public int Vp;
+        public bool WelcomeClaimed;
     }
 
     [Serializable]

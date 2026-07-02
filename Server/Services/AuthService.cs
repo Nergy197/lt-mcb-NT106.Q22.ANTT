@@ -98,7 +98,7 @@ public class AuthService
         {
             AccountId = account.Id,
             Name = account.Username,
-            VP = 15000,
+            VP = 0,
             MMR = 1000,
             RankPoints = 0,
             RankedWins = 0,

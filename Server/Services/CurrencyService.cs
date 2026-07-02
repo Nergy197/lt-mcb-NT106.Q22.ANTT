@@ -23,6 +23,9 @@ public class CurrencyService
     public const string ReasonMoveSwap      = "move_swap";
     public const string ReasonDebugAdd      = "debug_add";
     public const string ReasonDebugSpend    = "debug_spend";
+    public const string ReasonWelcomeBonus  = "welcome_bonus";
+
+    public const int WelcomeBonus = 30000;
 
     private readonly MongoDbContext _db;
     private readonly ILogger<CurrencyService> _logger;
@@ -44,6 +47,36 @@ public class CurrencyService
     {
         var player = await GetPlayerByAccountIdAsync(accountId);
         return player?.VP;
+    }
+
+    public async Task<int?> ClaimWelcomeBonusAsync(string accountId)
+    {
+        var player = await GetPlayerByAccountIdAsync(accountId);
+        if (player == null) return null;
+        if (player.WelcomeClaimed) return null;
+
+        var filter = Builders<Player>.Filter.And(
+            Builders<Player>.Filter.Eq(p => p.Id, player.Id),
+            Builders<Player>.Filter.Eq(p => p.WelcomeClaimed, false));
+
+        var update = Builders<Player>.Update
+            .Inc(p => p.VP, WelcomeBonus)
+            .Set(p => p.WelcomeClaimed, true);
+
+        var options = new FindOneAndUpdateOptions<Player, Player>
+        {
+            ReturnDocument = ReturnDocument.After
+        };
+
+        var updated = await _db.Players.FindOneAndUpdateAsync(filter, update, options);
+
+        if (updated != null)
+        {
+            await LogTransactionAsync(player.Id, WelcomeBonus, updated.VP, ReasonWelcomeBonus);
+            return updated.VP;
+        }
+
+        return null;
     }
 
     /// <summary>
