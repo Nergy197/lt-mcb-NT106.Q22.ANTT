@@ -29,4 +29,13 @@ public class Account
 
     [BsonElement("password_reset_expiry")]
     public DateTime? PasswordResetExpiry { get; set; }
+
+    [BsonElement("is_verified")]
+    public bool IsVerified { get; set; } = true; // Cho phép acc cũ login bình thường
+
+    [BsonElement("registration_token")]
+    public string? RegistrationToken { get; set; }
+
+    [BsonElement("registration_token_expiry")]
+    public DateTime? RegistrationTokenExpiry { get; set; }
 }
