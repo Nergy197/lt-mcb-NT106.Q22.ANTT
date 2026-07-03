@@ -411,11 +411,13 @@ namespace Game.Battle.Logic
             hub.On<object>("BattleEnded", raw => Enqueue(() => {
                 Debug.Log("[Battle] Event: BattleEnded");
                 var dto = J<TurnDto>(raw); // BattleEnded uses similar structure or explicit DTO
-                string winner = dto.WinnerPlayerId;
-                bool isDraw = string.IsNullOrEmpty(winner) || winner.Equals("draw", System.StringComparison.OrdinalIgnoreCase);
-                bool iWon = !isDraw && winner.Equals(SignalRClient.Instance.PlayerId, System.StringComparison.OrdinalIgnoreCase);
+                // Kết quả thắng/thua do server tính riêng cho người nhận (YouWon/IsDraw),
+                // không tự so WinnerPlayerId với player_id (sai khi 2 client chung PlayerPrefs).
+                bool isDraw = dto.IsDraw;
+                bool iWon   = dto.YouWon;
+                string winnerId = isDraw ? "" : (string.IsNullOrEmpty(dto.WinnerPlayerId) ? "opponent" : dto.WinnerPlayerId);
 
-                StartCoroutine(HandleBattleEnd(iWon, isDraw ? "" : winner));
+                StartCoroutine(HandleBattleEnd(iWon, winnerId));
             }));
         }
 
@@ -427,8 +429,8 @@ namespace Game.Battle.Logic
                 : (iWon ? "BAN DA CHIEN THANG!" : "BAN DA THAT BAI...");
             BattleEvents.OnPrintDialog?.Invoke(msg, false);
             BattleEvents.OnBattleResult?.Invoke(iWon, winnerId ?? "");
-            yield return new WaitForSeconds(3f);
-            ReturnToMenu();
+            // Không tự về menu nữa: BattleResultPanel sẽ về menu khi người chơi click vào màn hình.
+            yield break;
         }
 
         private PartyPokemon[] GetCurrentPartyData()
@@ -802,17 +804,9 @@ namespace Game.Battle.Logic
                 }
             }
             if (r.State == "Ended") {
-                string myId = SignalRClient.Instance.PlayerId;
-                bool isDraw = string.IsNullOrEmpty(r.WinnerPlayerId) ||
-                              r.WinnerPlayerId.Equals("draw", System.StringComparison.OrdinalIgnoreCase);
-                bool won = !isDraw && r.WinnerPlayerId.Equals(myId, System.StringComparison.OrdinalIgnoreCase);
-                string resultMsg = isDraw
-                    ? "TRAN DAU KET THUC HOA!"
-                    : (won ? "BAN DA CHIEN THANG!" : "BAN DA THAT BAI...");
-                BattleEvents.OnPrintDialog?.Invoke(resultMsg, false);
-                BattleEvents.OnBattleResult?.Invoke(won, isDraw ? "" : r.WinnerPlayerId);
-                yield return new WaitForSeconds(3f);
-                ReturnToMenu();
+                // Kết quả thắng/thua + điều hướng do sự kiện "BattleEnded" (server tính per-player) xử lý.
+                // Không tự quyết ở đây để tránh double-fire và so id sai khi 2 client chung PlayerPrefs.
+                Debug.Log("[Battle] Turn ket thuc tran - cho su kien BattleEnded quyet dinh ket qua.");
             } else {
                 // Yeu cau server gui lai trang thai moi nhat
                 var hub = SignalRClient.Instance.Battle;

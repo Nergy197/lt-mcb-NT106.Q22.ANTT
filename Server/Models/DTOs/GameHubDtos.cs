@@ -69,6 +69,9 @@ public class BattleEndedEventDto
 {
     public string BattleId { get; set; } = null!;
     public string? WinnerPlayerId { get; set; }
+    /// <summary>Server-authoritative: người nhận DTO này có thắng không. Tránh việc client tự so id.</summary>
+    public bool YouWon { get; set; }
+    public bool IsDraw { get; set; }
     public List<string> Events { get; set; } = new();
     public List<BattleEvent> TypedEvents { get; set; } = new();
 }

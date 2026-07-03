@@ -60,13 +60,20 @@ public class TurnTimeoutService : BackgroundService
 
         if (result.State == BattleState.Ended)
         {
-            await _hubContext.Clients.Group(session.BattleId).SendAsync("BattleEnded", new BattleEndedEventDto
+            bool isDraw = string.IsNullOrEmpty(result.WinnerPlayerId)
+                          || result.WinnerPlayerId!.Equals("draw", System.StringComparison.OrdinalIgnoreCase);
+            foreach (var pid in new[] { session.Player1Id, session.Player2Id })
             {
-                BattleId       = session.BattleId,
-                WinnerPlayerId = result.WinnerPlayerId,
-                TypedEvents    = result.TypedEvents,
-                Events         = result.Events,
-            });
+                await SendToPlayer(pid, "BattleEnded", new BattleEndedEventDto
+                {
+                    BattleId       = session.BattleId,
+                    WinnerPlayerId = result.WinnerPlayerId,
+                    IsDraw         = isDraw,
+                    YouWon         = !isDraw && result.WinnerPlayerId!.Equals(pid, System.StringComparison.OrdinalIgnoreCase),
+                    TypedEvents    = result.TypedEvents,
+                    Events         = result.Events,
+                });
+            }
         }
     }
 

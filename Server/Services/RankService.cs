@@ -44,6 +44,33 @@ public class RankService
         return result;
     }
 
+    /// <summary>
+    /// Đếm số trận Casual riêng (casual_matches) + số thắng Casual (casual_wins) cho mỗi
+    /// người chơi thật. KHÔNG đụng tới rank_points/ranked_* (Casual không ảnh hưởng xếp hạng).
+    /// Bỏ qua bot (không ghi thống kê cho bot).
+    /// </summary>
+    public async Task ApplyCasualBattleResultAsync(BattleSession session, string? winnerPlayerId)
+    {
+        if (session.Mode != BattleMode.Casual)
+            return;
+
+        bool hasWinner = !string.IsNullOrWhiteSpace(winnerPlayerId) && winnerPlayerId != "draw";
+
+        foreach (var pid in new[] { session.Player1Id, session.Player2Id })
+        {
+            if (pid == BattleService.BotPlayerId)
+                continue;
+
+            var update = Builders<Player>.Update.Inc(p => p.CasualMatches, 1);
+            if (hasWinner && winnerPlayerId == pid)
+                update = update.Inc(p => p.CasualWins, 1);
+
+            await _db.Players.UpdateOneAsync(
+                Builders<Player>.Filter.Eq(p => p.Id, pid),
+                update);
+        }
+    }
+
     public async Task<List<RankLeaderboardEntryDto>> GetTop100Async()
     {
         List<Player> players = await _db.Players

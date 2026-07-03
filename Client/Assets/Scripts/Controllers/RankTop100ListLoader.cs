@@ -218,10 +218,9 @@ public class RankTop100ListLoader : MonoBehaviour
 
     private static int ResolveScore(RankTop100Entry entry)
     {
-        if (entry.score > 0) return entry.score;
-        if (entry.rankPoints > 0) return entry.rankPoints;
-        if (entry.mmr > 0) return entry.mmr;
-        return entry.rankedWins;
+        // Luôn hiển thị ĐIỂM RANK. Không fallback sang MMR/wins để tránh người 0 điểm hiện nhầm 1000.
+        if (entry.rankPoints != 0) return entry.rankPoints;
+        return entry.score; // server đồng bộ score = rankPoints; dữ liệu mẫu chỉ set score
     }
 
     private List<RankTop100Entry> CreateSampleEntries()

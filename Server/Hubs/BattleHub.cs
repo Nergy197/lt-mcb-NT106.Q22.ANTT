@@ -159,13 +159,7 @@ public class BattleHub : Hub
             var (session, result) = _battleService.Surrender(battleId, playerId);
             await AwardBattleRewards(session, result);
             await Clients.Group(battleId).SendAsync("TurnResolved", result);
-            await Clients.Group(session.BattleId).SendAsync("BattleEnded", new BattleEndedEventDto
-            {
-                BattleId = session.BattleId,
-                WinnerPlayerId = result.WinnerPlayerId,
-                TypedEvents = result.TypedEvents,
-                Events = result.Events,
-            });
+            await SendBattleEnded(session, result.WinnerPlayerId, result.TypedEvents, result.Events);
         }
         catch (Exception ex)
         {
@@ -314,14 +308,7 @@ public class BattleHub : Hub
         if (result.State == BattleState.Ended)
         {
             await AwardBattleRewards(session, result);
-
-            await Clients.Group(session.BattleId).SendAsync("BattleEnded", new BattleEndedEventDto
-            {
-                BattleId       = session.BattleId,
-                WinnerPlayerId = result.WinnerPlayerId,
-                TypedEvents    = result.TypedEvents,
-                Events         = result.Events,
-            });
+            await SendBattleEnded(session, result.WinnerPlayerId, result.TypedEvents, result.Events);
         }
     }
 
@@ -382,6 +369,9 @@ public class BattleHub : Hub
                 Reason = "ranked_lose"
             });
         }
+
+        // Casual: đếm số trận riêng (casual_matches/casual_wins), không đụng rank_points.
+        await _rankService.ApplyCasualBattleResultAsync(session, result.WinnerPlayerId);
     }
 
     private async Task SendBattleStateToPlayer(BattleSession session, string playerId)
@@ -414,12 +404,16 @@ public class BattleHub : Hub
         }
         else if (session.State == BattleState.Ended)
         {
+            bool isDraw = string.IsNullOrEmpty(session.WinnerPlayerId)
+                          || session.WinnerPlayerId!.Equals("draw", System.StringComparison.OrdinalIgnoreCase);
             await Clients.Caller.SendAsync("BattleEnded", new BattleEndedEventDto
             {
-                BattleId      = session.BattleId,
+                BattleId       = session.BattleId,
                 WinnerPlayerId = session.WinnerPlayerId,
-                Events        = new(),
-                TypedEvents   = new(),
+                IsDraw         = isDraw,
+                YouWon         = !isDraw && session.WinnerPlayerId!.Equals(playerId, System.StringComparison.OrdinalIgnoreCase),
+                Events         = new(),
+                TypedEvents    = new(),
             });
         }
     }
@@ -531,6 +525,29 @@ public class BattleHub : Hub
             await Clients.Client(connId).SendAsync(method, payload);
     }
 
+    /// <summary>
+    /// Gửi "BattleEnded" riêng cho từng người chơi với cờ thắng/thua do server tính sẵn,
+    /// để client không phải tự so WinnerPlayerId với player_id (dễ sai khi test chung máy).
+    /// </summary>
+    private async Task SendBattleEnded(BattleSession session, string? winnerId,
+        List<BattleEvent>? typedEvents, List<string>? events)
+    {
+        bool isDraw = string.IsNullOrEmpty(winnerId)
+                      || winnerId!.Equals("draw", System.StringComparison.OrdinalIgnoreCase);
+        foreach (var pid in new[] { session.Player1Id, session.Player2Id })
+        {
+            await SendToPlayer(pid, "BattleEnded", new BattleEndedEventDto
+            {
+                BattleId       = session.BattleId,
+                WinnerPlayerId = winnerId,
+                IsDraw         = isDraw,
+                YouWon         = !isDraw && winnerId!.Equals(pid, System.StringComparison.OrdinalIgnoreCase),
+                TypedEvents    = typedEvents ?? new(),
+                Events         = events ?? new(),
+            });
+        }
+    }
+
     private async Task Error(string message)
         => await Clients.Caller.SendAsync("Error", message);
 
@@ -587,13 +604,7 @@ public class BattleHub : Hub
                 var (_, result) = _battleService.Surrender(session.BattleId, playerId);
                 await AwardBattleRewards(session, result);
                 await Clients.Group(session.BattleId).SendAsync("TurnResolved", result);
-                await Clients.Group(session.BattleId).SendAsync("BattleEnded", new BattleEndedEventDto
-                {
-                    BattleId = session.BattleId,
-                    WinnerPlayerId = result.WinnerPlayerId,
-                    TypedEvents = result.TypedEvents,
-                    Events = result.Events,
-                });
+                await SendBattleEnded(session, result.WinnerPlayerId, result.TypedEvents, result.Events);
             }
         }
 
