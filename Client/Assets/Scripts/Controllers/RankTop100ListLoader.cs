@@ -74,8 +74,10 @@ public class RankTop100ListLoader : MonoBehaviour
 
         try
         {
+            string rawJson = request.downloadHandler.text;
+            Debug.Log("Rank API Response: " + rawJson);
             List<RankTop100Entry> entries =
-                JsonConvert.DeserializeObject<List<RankTop100Entry>>(request.downloadHandler.text);
+                JsonConvert.DeserializeObject<List<RankTop100Entry>>(rawJson);
             
             var list = entries ?? new List<RankTop100Entry>();
             

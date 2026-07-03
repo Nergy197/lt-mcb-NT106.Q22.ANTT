@@ -31,6 +31,10 @@ namespace PokemonMMO.Box
         [Header("Context Menu")]
         public BoxContextMenuUI contextMenu;
 
+        [Header("Notification Popup")]
+        public GameObject notificationPopup;
+        public TMP_Text   notificationText;
+
         [Header("Exit Button")]
         public RectTransform exitButtonRect;
 
@@ -397,11 +401,25 @@ namespace PokemonMMO.Box
                 _boxCache.Remove(_currentBox);
                 StartCoroutine(LoadBox(_currentBox, forceRefresh: true));
                 partyPanel?.Refresh();
+                ShowNotification("Đã đưa Pokemon vào đội hình!");
             }
         }
 
         private IEnumerator DepositPokemon(string pokemonId)
         {
+            bool isTrial = false;
+            if (partyPanel != null)
+            {
+                foreach (var slot in partyPanel.slots)
+                {
+                    if (slot != null && slot.PokemonId == pokemonId)
+                    {
+                        isTrial = slot.IsTrial;
+                        break;
+                    }
+                }
+            }
+
             bool ok = false;
             yield return PostAction("deposit", pokemonId, r => ok = r);
             if (ok)
@@ -409,6 +427,38 @@ namespace PokemonMMO.Box
                 _boxCache.Remove(_currentBox);
                 StartCoroutine(LoadBox(_currentBox, forceRefresh: true));
                 partyPanel?.Refresh();
+
+                string targetBox = isTrial ? "Trial Box" : (boxNameText != null && !string.IsNullOrEmpty(boxNameText.text) ? boxNameText.text : $"Box {_currentBox + 1}");
+                ShowNotification($"Đã đưa Pokemon vào {targetBox}!");
+            }
+        }
+
+        // ── Notifications ─────────────────────────────────────────────────────
+        private Coroutine _notificationCoroutine;
+
+        private void ShowNotification(string message)
+        {
+            Debug.Log("[Box] ShowNotification: " + message);
+            if (notificationPopup != null && notificationText != null)
+            {
+                notificationText.text = message;
+                notificationPopup.SetActive(true);
+                
+                if (_notificationCoroutine != null) StopCoroutine(_notificationCoroutine);
+                _notificationCoroutine = StartCoroutine(HideNotificationAfterDelay(2f));
+            }
+            else
+            {
+                Debug.LogWarning("[Box] Bạn chưa kéo thả Notification UI vào PokemonBoxPanel trong Inspector!");
+            }
+        }
+
+        private IEnumerator HideNotificationAfterDelay(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            if (notificationPopup != null)
+            {
+                notificationPopup.SetActive(false);
             }
         }
 

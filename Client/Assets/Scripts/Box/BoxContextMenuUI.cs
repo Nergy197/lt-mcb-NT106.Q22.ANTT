@@ -40,6 +40,7 @@ namespace PokemonMMO.Box
 
         public void Show(string opt1, string opt2, Action<int> onConfirm)
         {
+            if (menuCursor != null) menuCursor.gameObject.SetActive(true);
             option1Text.text = opt1;
             option2Text.text = opt2;
             _onConfirm  = onConfirm;
@@ -47,6 +48,19 @@ namespace PokemonMMO.Box
             gameObject.SetActive(true);
             IsOpen = true;
             MoveCursor();
+        }
+
+        public void ShowAlert(string message, float duration = 2f)
+        {
+            if (menuCursor != null) menuCursor.gameObject.SetActive(false);
+            option1Text.text = message;
+            option2Text.text = "";
+            _onConfirm = null;
+            _selected = 0;
+            gameObject.SetActive(true);
+            IsOpen = true;
+            CancelInvoke(nameof(Hide));
+            Invoke(nameof(Hide), duration);
         }
 
         public void Hide()

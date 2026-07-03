@@ -14,6 +14,7 @@ namespace PokemonMMO.Box
 
         public bool   IsEmpty   => _isEmpty;
         public string PokemonId => _pokemonId;
+        public bool   IsTrial   { get; private set; }
 
         public void SetEmpty()
         {
@@ -39,7 +40,11 @@ namespace PokemonMMO.Box
             }
         }
 
-        public void SetTrialBadge(bool isTrial) => TrialBadge.Show(ref _trialBadge, transform, isTrial);
+        public void SetTrialBadge(bool isTrial)
+        {
+            IsTrial = isTrial;
+            TrialBadge.Show(ref _trialBadge, transform, isTrial);
+        }
 
         // ── Kéo-thả (Party → Box = deposit) ──────────────────────────────
 
