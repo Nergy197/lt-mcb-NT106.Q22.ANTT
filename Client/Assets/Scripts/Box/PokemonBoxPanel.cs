@@ -428,7 +428,7 @@ namespace PokemonMMO.Box
                 StartCoroutine(LoadBox(_currentBox, forceRefresh: true));
                 partyPanel?.Refresh();
 
-                string targetBox = isTrial ? "Trial Box" : (boxNameText != null && !string.IsNullOrEmpty(boxNameText.text) ? boxNameText.text : $"Box {_currentBox + 1}");
+                string targetBox = isTrial ? "Trial Box" : "Box";
                 ShowNotification($"Đã đưa Pokemon vào {targetBox}!");
             }
         }
