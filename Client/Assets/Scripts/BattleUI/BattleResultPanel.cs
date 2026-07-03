@@ -16,8 +16,9 @@ namespace Game.Battle.UI
     {
         [Header("Result Text")]
         public TextMeshProUGUI resultText;       // "CHIẾN THẮNG!" / "THẤT BẠI..."
-        public TextMeshProUGUI vpDeltaText;      // "+200 VP" / "+80 VP"
-        public TextMeshProUGUI rankDeltaText;    // "+84 RP" / "-77 RP" (null nếu không phải ranked)
+        public TextMeshProUGUI vpDeltaText;      // "+200 VP • Tổng: 1200"
+        public TextMeshProUGUI rankDeltaText;    // "+84 RP • Tổng: 840" (rỗng nếu không phải ranked)
+        public TextMeshProUGUI hintText;         // "Nhấn vào màn hình để tiếp tục" (optional)
 
         [Header("Buttons")]
         public Button returnButton;
@@ -39,6 +40,9 @@ namespace Game.Battle.UI
         private bool _isDraw;
         private int? _vpDelta;
         private int? _rankDelta;
+        private int _vpTotal;
+        private int _rankTotal;
+        private bool _readyToClose;   // chỉ cho phép click tắt panel sau khi đã hiện xong kết quả
 
         private void Awake()
         {
@@ -66,11 +70,27 @@ namespace Game.Battle.UI
             _isDraw = string.IsNullOrEmpty(winnerId);
             _vpDelta = null;
             _rankDelta = null;
+            _readyToClose = false;
+            if (hintText != null) hintText.text = "";
             StartCoroutine(ShowResultRoutine());
         }
 
-        private void OnVPReceived(int total, int delta)    => _vpDelta   = delta;
-        private void OnRankReceived(int total, int delta)  => _rankDelta = delta;
+        private void OnVPReceived(int total, int delta)    { _vpDelta   = delta; _vpTotal   = total; }
+        private void OnRankReceived(int total, int delta)  { _rankDelta = delta; _rankTotal = total; }
+
+        private void Update()
+        {
+            // Panel chỉ tắt khi người chơi click/chạm vào màn hình (sau khi đã hiện xong kết quả)
+            if (!_readyToClose) return;
+
+            bool clicked = Input.GetMouseButtonDown(0)
+                           || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began);
+            if (clicked)
+            {
+                _readyToClose = false;
+                OnReturnClicked();
+            }
+        }
 
         private IEnumerator ShowResultRoutine()
         {
@@ -102,7 +122,7 @@ namespace Game.Battle.UI
                 if (_vpDelta.HasValue)
                 {
                     vpDeltaText.color = _vpDelta.Value >= 0 ? winColor : loseColor;
-                    StartCoroutine(CountUpText(vpDeltaText, _vpDelta.Value, "VP"));
+                    StartCoroutine(CountUpText(vpDeltaText, _vpDelta.Value, "VP", _vpTotal));
                 }
                 else
                 {
@@ -115,21 +135,30 @@ namespace Game.Battle.UI
                 if (_rankDelta.HasValue)
                 {
                     rankDeltaText.color = _rankDelta.Value >= 0 ? winColor : loseColor;
-                    StartCoroutine(CountUpText(rankDeltaText, _rankDelta.Value, "RP"));
+                    StartCoroutine(CountUpText(rankDeltaText, _rankDelta.Value, "RP", _rankTotal));
                 }
                 else
                 {
                     rankDeltaText.text = "";
                 }
             }
+
+            // Hiện xong kết quả → cho phép click để tắt panel
+            const string hint = "Nhấn vào màn hình để tiếp tục";
+            if (hintText != null)
+                hintText.text = hint;
+            else if (resultText != null)
+                resultText.text += $"\n<size=45%>{hint}</size>"; // fallback nếu chưa gắn ô hint riêng
+            _readyToClose = true;
         }
 
-        private IEnumerator CountUpText(TMPro.TextMeshProUGUI label, int target, string suffix)
+        private IEnumerator CountUpText(TMPro.TextMeshProUGUI label, int target, string suffix, int total)
         {
-            string sign = target >= 0 ? "+" : "";
-            int abs     = Mathf.Abs(target);
-            int steps   = Mathf.Min(abs, 20);
-            if (steps == 0) { label.text = $"{sign}{target} {suffix}"; yield break; }
+            string sign  = target >= 0 ? "+" : "";
+            string tail  = total > 0 ? $"  •  Tổng: {total}" : "";
+            int abs      = Mathf.Abs(target);
+            int steps    = Mathf.Min(abs, 20);
+            if (steps == 0) { label.text = $"{sign}{target} {suffix}{tail}"; yield break; }
 
             for (int i = 1; i <= steps; i++)
             {
@@ -138,7 +167,7 @@ namespace Game.Battle.UI
                 AudioManager.Instance?.PlaySFX(sfxCoinTick);
                 yield return new WaitForSeconds(0.05f);
             }
-            label.text = $"{sign}{target} {suffix}";
+            label.text = $"{sign}{target} {suffix}{tail}";
         }
 
         private void OnReturnClicked()

@@ -116,6 +116,7 @@ namespace Game.Battle.UI
 
     public class TurnDto {
         public string State; public string WinnerPlayerId;
+        public bool YouWon; public bool IsDraw; // Server-authoritative: kết quả thắng/thua cho chính người nhận
         public List<string> Events;
         public List<EventDto> TypedEvents; // Sửa từ object về EventDto
     }
