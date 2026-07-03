@@ -24,7 +24,6 @@ public class RankTop100ListLoader : MonoBehaviour
     public float defaultRowHeight = 76f;
 
     [Header("Data")]
-    public bool useSampleData = true;
     public int sampleCount = 100;
     public string top100ApiUrl = "https://pokemon-mmo-server-123-gkaqfbejgycbcwfb.southeastasia-01.azurewebsites.net/api/rank/top100";
 
@@ -50,7 +49,7 @@ public class RankTop100ListLoader : MonoBehaviour
 
         StopAllCoroutines();
 
-        if (!useSampleData && !string.IsNullOrWhiteSpace(top100ApiUrl))
+        if (!string.IsNullOrWhiteSpace(top100ApiUrl))
             StartCoroutine(FetchTop100FromServer());
         else
             PopulateUI(CreateSampleEntries());
@@ -77,7 +76,21 @@ public class RankTop100ListLoader : MonoBehaviour
         {
             List<RankTop100Entry> entries =
                 JsonConvert.DeserializeObject<List<RankTop100Entry>>(request.downloadHandler.text);
-            PopulateUI(entries ?? new List<RankTop100Entry>());
+            
+            var list = entries ?? new List<RankTop100Entry>();
+            
+            // Fallback empty state
+            if (list.Count == 0)
+            {
+                list.Add(new RankTop100Entry 
+                { 
+                    playerName = "Chưa có dữ liệu Rank", 
+                    score = 0,
+                    rankPoints = 0
+                });
+            }
+            
+            PopulateUI(list);
         }
         catch (Exception ex)
         {
