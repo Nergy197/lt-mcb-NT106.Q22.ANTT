@@ -135,6 +135,11 @@ namespace Game.Battle.UI
         public List<EventDto> TypedEvents; // Sửa từ object về EventDto
     }
 
+    // Đối thủ mất kết nối / vào lại — server gửi kèm số giây còn lại của ân hạn.
+    public class DisconnectDto {
+        public string BattleId; public int SecondsLeft;
+    }
+
     public class EventDto {
         public string EventType; public string PlayerId; public string PokemonName;
         public string TargetName; public string MoveName; public int Damage;

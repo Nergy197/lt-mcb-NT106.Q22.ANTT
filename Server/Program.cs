@@ -97,6 +97,7 @@ builder.Services.AddSingleton<PokemonDataService>();
 builder.Services.AddScoped<GameService>();
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddSingleton<BattleService>();
+builder.Services.AddSingleton<DisconnectForfeitService>();
 // builder.Services.AddHostedService<TurnTimeoutService>();
 // ── New services for Pokedex, Moves and Email ──────────────────────────────
 builder.Services.AddScoped<PokedexService>();

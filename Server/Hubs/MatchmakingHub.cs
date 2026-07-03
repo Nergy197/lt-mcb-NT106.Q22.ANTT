@@ -160,7 +160,18 @@ public class MatchmakingHub : Hub
             ConnectedPlayers[Context.ConnectionId] = playerId;
         }
 
+        // Rời mọi hàng chờ trước khi đánh bot để không bị người khác ghép trúng trong lúc đánh.
+        RemoveFromAllQueues(playerId);
         return await CreateAndNotifyBattle(playerId, BattleService.BotPlayerId, Context.ConnectionId, null);
+    }
+
+    /// <summary>Xóa người chơi khỏi cả 2 hàng chờ (ranked + casual) và hủy task đếm ngược.</summary>
+    private static void RemoveFromAllQueues(string playerId)
+    {
+        MatchmakingQueue.TryRemove(playerId, out _);
+        if (MatchmakingTasks.TryRemove(playerId, out var c1)) c1.Cancel();
+        CasualQueue.TryRemove(playerId, out _);
+        if (CasualTasks.TryRemove(playerId, out var c2)) c2.Cancel();
     }
 
     public async Task FindCasualMatch()
@@ -168,6 +179,12 @@ public class MatchmakingHub : Hub
         if (!ConnectedPlayers.TryGetValue(Context.ConnectionId, out var myPlayerId))
         {
             await Clients.Caller.SendAsync("Error", "You must join lobby first.");
+            return;
+        }
+
+        if (_battleService.GetActiveSessionForPlayer(myPlayerId) != null)
+        {
+            await Clients.Caller.SendAsync("Error", "Bạn đang ở trong một trận đấu.");
             return;
         }
 
@@ -193,7 +210,9 @@ public class MatchmakingHub : Hub
                     if (!CasualQueue.ContainsKey(myPlayerId))
                         return;
 
-                    var opponent = CasualQueue.FirstOrDefault(kv => kv.Key != myPlayerId);
+                    // Bỏ qua ứng viên đang bận trong một trận khác (VD: đang đánh bot).
+                    var opponent = CasualQueue.FirstOrDefault(kv => kv.Key != myPlayerId
+                        && _battleService.GetActiveSessionForPlayer(kv.Key) == null);
                     if (opponent.Key != null)
                     {
                         CasualQueue.TryRemove(myPlayerId, out myConnId);
@@ -333,6 +352,12 @@ public class MatchmakingHub : Hub
             return;
         }
 
+        if (_battleService.GetActiveSessionForPlayer(myPlayerId) != null)
+        {
+            await Clients.Caller.SendAsync("Error", "Bạn đang ở trong một trận đấu.");
+            return;
+        }
+
         MatchmakingQueue[myPlayerId] = Context.ConnectionId;
 
         int countdown = _opts.BotFallbackSeconds;
@@ -356,7 +381,9 @@ public class MatchmakingHub : Hub
                     if (!MatchmakingQueue.ContainsKey(myPlayerId))
                         return;
 
-                    var opponent = MatchmakingQueue.FirstOrDefault(kv => kv.Key != myPlayerId);
+                    // Bỏ qua ứng viên đang bận trong một trận khác (VD: đang đánh bot).
+                    var opponent = MatchmakingQueue.FirstOrDefault(kv => kv.Key != myPlayerId
+                        && _battleService.GetActiveSessionForPlayer(kv.Key) == null);
                     if (opponent.Key != null)
                     {
                         MatchmakingQueue.TryRemove(myPlayerId, out myConnId);
@@ -439,6 +466,22 @@ public class MatchmakingHub : Hub
         string? conn2,
         BattleMode mode = BattleMode.Casual)
     {
+        // Chống ghép trùng: nếu một người chơi (không phải bot) đang ở trong một trận CHƯA kết
+        // thúc, KHÔNG tạo trận mới cho họ — nếu không họ bị kéo vào 2 trận cùng lúc (VD: đang
+        // đánh bot ở màn team preview mà người khác ghép trúng → lỗi).
+        if (p1 != BattleService.BotPlayerId && _battleService.GetActiveSessionForPlayer(p1) != null)
+        {
+            if (!string.IsNullOrEmpty(conn1))
+                await Clients.Client(conn1).SendAsync("Error", "Bạn đang ở trong một trận đấu khác.");
+            return "";
+        }
+        if (p2 != BattleService.BotPlayerId && _battleService.GetActiveSessionForPlayer(p2) != null)
+        {
+            if (!string.IsNullOrEmpty(conn2))
+                await Clients.Client(conn2).SendAsync("Error", "Đối thủ đang bận ở trận khác.");
+            return "";
+        }
+
         var battle = await _battleService.CreateBattle(p1, p2, mode);
         var startDto = new BattleStartedEventDto
         {

@@ -23,6 +23,7 @@ public class BattleHub : Hub
     private readonly BattleService _battleService;
     private readonly CurrencyService _currency;
     private readonly RankService _rankService;
+    private readonly DisconnectForfeitService _forfeit;
 
     // connectionId → playerId (shared across hub instances)
     public static readonly ConcurrentDictionary<string, string> ConnectedPlayers =
@@ -38,12 +39,14 @@ public class BattleHub : Hub
         MongoDbContext db,
         BattleService battleService,
         CurrencyService currency,
-        RankService rankService)
+        RankService rankService,
+        DisconnectForfeitService forfeit)
     {
         _db = db;
         _battleService = battleService;
         _currency = currency;
         _rankService = rankService;
+        _forfeit = forfeit;
     }
 
     // ═══════════════════════════════════════════════════════════════════════
@@ -80,6 +83,9 @@ public class BattleHub : Hub
 
         await Groups.AddToGroupAsync(Context.ConnectionId, battleId);
         PlayerConnections[playerId] = Context.ConnectionId;
+
+        // Vào (lại) trận kịp thời → huỷ đếm ngược xử thua do mất kết nối (nếu có).
+        _forfeit.CancelForfeit(battleId, playerId);
 
         if (session.State == BattleState.TeamPreview)
         {
@@ -601,10 +607,9 @@ public class BattleHub : Hub
             var session = _battleService.GetActiveSessionForPlayer(playerId);
             if (session != null)
             {
-                var (_, result) = _battleService.Surrender(session.BattleId, playerId);
-                await AwardBattleRewards(session, result);
-                await Clients.Group(session.BattleId).SendAsync("TurnResolved", result);
-                await SendBattleEnded(session, result.WinnerPlayerId, result.TypedEvents, result.Events);
+                // Không xử thua ngay: cho thời gian ân hạn để vào lại. Đối thủ sẽ thấy đếm
+                // ngược; nếu người này không vào lại kịp thì DisconnectForfeitService xử thua.
+                _forfeit.ScheduleForfeit(session.BattleId, playerId);
             }
         }
 

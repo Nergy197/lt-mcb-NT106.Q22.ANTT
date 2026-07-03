@@ -301,12 +301,27 @@ namespace Game.Battle.Logic
         // Hub Event Handlers
         // ═══════════════════════════════════════════════════════════════════════
 
+        private bool _reconnectHooked = false;
+
         private void SetupHubHandlers(HubConnection hub)
         {
             // Ensure EffectManager exists
             if (FindObjectOfType<BattleEffectManager>() == null)
             {
                 new GameObject("BattleEffectManager").AddComponent<BattleEffectManager>();
+            }
+
+            // Sau khi SignalR tự tái kết nối (ConnectionId mới), phải JoinBattle lại để server
+            // huỷ đếm ngược xử thua do mất kết nối. Chỉ gắn 1 lần để tránh chồng handler.
+            if (!_reconnectHooked)
+            {
+                _reconnectHooked = true;
+                hub.Reconnected += async _ =>
+                {
+                    if (string.IsNullOrEmpty(_battleId)) return;
+                    try { await hub.InvokeAsync("JoinBattle", _battleId); }
+                    catch (Exception ex) { Debug.LogError("[Battle] Re-JoinBattle failed: " + ex.Message); }
+                };
             }
 
             hub.Remove("TeamPreviewReady");
@@ -418,6 +433,18 @@ namespace Game.Battle.Logic
                 string winnerId = isDraw ? "" : (string.IsNullOrEmpty(dto.WinnerPlayerId) ? "opponent" : dto.WinnerPlayerId);
 
                 StartCoroutine(HandleBattleEnd(iWon, winnerId));
+            }));
+
+            // Đối thủ mất kết nối — hiện đếm ngược. Nếu họ không vào lại kịp, server xử họ thua.
+            hub.On<object>("OpponentDisconnected", raw => Enqueue(() => {
+                var dto = J<DisconnectDto>(raw);
+                int s = dto?.SecondsLeft ?? 0;
+                BattleEvents.OnPrintDialog?.Invoke(
+                    $"Doi thu mat ket noi. Cho vao lai... ({s}s)", false);
+            }));
+
+            hub.On<object>("OpponentReconnected", raw => Enqueue(() => {
+                BattleEvents.OnPrintDialog?.Invoke("Doi thu da vao lai tran dau.", false);
             }));
         }
 
