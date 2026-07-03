@@ -91,6 +91,18 @@ public class FriendRequestListLoader : MonoBehaviour
             itemUI.SetData(data.friendshipId, data.requesterName, avatar);
             itemUI.BindActions(OnAccept, OnDecline);
         }
+        
+        StartCoroutine(RebuildLayoutNextFrame());
+    }
+
+    private IEnumerator RebuildLayoutNextFrame()
+    {
+        yield return null;
+        Canvas.ForceUpdateCanvases();
+        if (container != null)
+        {
+            UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(container.GetComponent<RectTransform>());
+        }
     }
 
     private Sprite ResolveAvatar(string requesterId) =>
