@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using Game.Network;
 using PokemonMMO.UI;
 
@@ -26,17 +27,41 @@ namespace PokemonArena.UI
 
         int  currentIndex;
         bool _isSearching;
-        GameObject _clickOutsideOverlay;
 
         void Start()
         {
             if (buttons.Count == 0) return;
             currentIndex = Mathf.Clamp(defaultIndex, 0, buttons.Count - 1);
             ApplySelection();
+            CreateClickOutsideOverlay();
+        }
 
-            // Bấm ra ngoài vùng 3 nút mode = quay lại Menu chính (giống phím X/Escape)
-            if (buttons[0] != null)
-                ClickOutsideOverlay.Show(ref _clickOutsideOverlay, buttons[0].transform.parent.gameObject, OnClickOutside);
+        // Bấm ra ngoài vùng 3 nút mode = quay lại Menu chính (giống phím X/Escape).
+        // Tự tạo trực tiếp (không dùng ClickOutsideOverlay dùng chung). Chèn NGAY TRƯỚC
+        // nút đầu tiên (tức là ngay SAU ảnh nền Background) — không phải sibling tuyệt đối
+        // đầu tiên, vì ảnh nền cũng chặn raycast và sẽ "nuốt" hết click nếu overlay bị đặt
+        // ở dưới nó. Cũng không phải cuối cùng, vì sẽ che luôn cả 3 nút.
+        void CreateClickOutsideOverlay()
+        {
+            var canvas = GetComponentInParent<Canvas>();
+            if (canvas == null || buttons[0] == null) return;
+
+            var go = new GameObject("ModeMenuClickOutsideOverlay", typeof(RectTransform), typeof(Image), typeof(Button));
+            go.transform.SetParent(canvas.transform, false);
+            go.transform.SetSiblingIndex(buttons[0].transform.GetSiblingIndex());
+
+            var rect = (RectTransform)go.transform;
+            rect.anchorMin = Vector2.zero;
+            rect.anchorMax = Vector2.one;
+            rect.offsetMin = Vector2.zero;
+            rect.offsetMax = Vector2.zero;
+
+            var image = go.GetComponent<Image>();
+            image.color = new Color(0f, 0f, 0f, 0f); // vô hình nhưng vẫn chặn raycast
+
+            var button = go.GetComponent<Button>();
+            button.transition = Selectable.Transition.None;
+            button.onClick.AddListener(OnClickOutside);
         }
 
         void OnClickOutside()
