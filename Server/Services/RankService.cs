@@ -74,7 +74,7 @@ public class RankService
     public async Task<List<RankLeaderboardEntryDto>> GetTop100Async()
     {
         List<Player> players = await _db.Players
-            .Find(p => p.RankedMatches >= 1)
+            .Find(_ => true)
             .SortByDescending(p => p.RankPoints)
             .ThenByDescending(p => p.RankedWins)
             .Limit(100)

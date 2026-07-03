@@ -25,7 +25,6 @@ public class RankFriendsListLoader : MonoBehaviour
     public float defaultRowHeight = 76f;
 
     [Header("Data")]
-    public bool useSampleData;
     public bool useGeneratedScoresWhenMissing;
     public int sampleFriendCount = 10;
     public string friendsApiUrl = "https://pokemon-mmo-server-123-gkaqfbejgycbcwfb.southeastasia-01.azurewebsites.net/api/rank/friends";
@@ -52,10 +51,10 @@ public class RankFriendsListLoader : MonoBehaviour
 
         StopAllCoroutines();
 
-        if (useSampleData)
-            PopulateUI(CreateSampleEntries());
-        else
+        if (!string.IsNullOrWhiteSpace(friendsApiUrl))
             StartCoroutine(FetchFriendsFromServer());
+        else
+            PopulateUI(CreateSampleEntries());
     }
 
     private IEnumerator FetchFriendsFromServer()
