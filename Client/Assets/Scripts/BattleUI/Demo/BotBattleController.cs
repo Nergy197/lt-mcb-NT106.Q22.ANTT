@@ -614,6 +614,8 @@ namespace Game.Battle.Demo
         IEnumerator EndBattle(bool won, string message)
         {
             Say(message, false);
+            // Cache trước khi phát: BattleResultPanel inactive lúc này, đọc lại trong OnEnable.
+            BattleEvents.SetPendingResult(won, won ? "Player" : "Bot");
             BattleEvents.OnBattleResult?.Invoke(won, won ? "Player" : "Bot");
             yield return new WaitForSeconds(3f);
             UnityEngine.SceneManagement.SceneManager.LoadScene("Menu scene");

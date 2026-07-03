@@ -49,9 +49,46 @@ namespace Game.Battle.UI
         public override void Show()
         {
             base.Show();
-            AutoDiscoverSlots(); 
+            AutoDiscoverSlots();
             SetupSlotListeners();
             UpdateConfirmButton();
+            RepositionHeaderFooter();
+            EnsureSquareCells();
+        }
+
+        // Ép cả 2 lưới (EnemyGrid + PokemonGrid) dùng ô vuông bằng nhau 150x150.
+        private void EnsureSquareCells()
+        {
+            var size = new Vector2(150f, 150f);
+            foreach (var gridName in new[] { "EnemyGrid", "PokemonGrid" })
+            {
+                var grid = transform.Find(gridName)?.GetComponent<GridLayoutGroup>();
+                if (grid != null) grid.cellSize = size;
+            }
+        }
+
+        // Neo tiêu đề "TEAM PREVIEW" vào sát mép TRÊN và nút xác nhận vào sát mép DƯỚI.
+        // Layout gốc dùng toạ độ tuyệt đối canh giữa (tuned cho 1080) nên ở tỉ lệ màn hình
+        // khác, tiêu đề/nút bị đè lên 2 hàng đội hình. Neo về 2 mép để luôn tách khỏi nội dung.
+        private void RepositionHeaderFooter()
+        {
+            var title = transform.Find("Title") as RectTransform;
+            if (title != null)
+            {
+                title.anchorMin = new Vector2(0.5f, 1f);
+                title.anchorMax = new Vector2(0.5f, 1f);
+                title.pivot     = new Vector2(0.5f, 1f);
+                title.anchoredPosition = new Vector2(0f, -24f);
+            }
+
+            var confirm = confirmButton != null ? confirmButton.transform as RectTransform : null;
+            if (confirm != null)
+            {
+                confirm.anchorMin = new Vector2(0.5f, 0f);
+                confirm.anchorMax = new Vector2(0.5f, 0f);
+                confirm.pivot     = new Vector2(0.5f, 0f);
+                confirm.anchoredPosition = new Vector2(0f, 24f);
+            }
         }
 
         public override void Hide()
@@ -148,7 +185,7 @@ namespace Game.Battle.UI
 
                 var pkmn = _data.MyTeam[i];
                 var nameTxt = slotButtons[i].transform.Find("PokemonName")?.GetComponent<TextMeshProUGUI>();
-                if (nameTxt != null) nameTxt.text = pkmn.Name.ToUpper();
+                if (nameTxt != null) { nameTxt.text = pkmn.Name.ToUpper(); PlaceNameAtTop(nameTxt); }
 
                 if (slotIcons[i] != null)
                     loader?.LoadIconDirect(pkmn.Name, slotIcons[i]);
@@ -176,11 +213,24 @@ namespace Game.Battle.UI
 
                 var pkmn = _data.OppTeam[i];
                 var nameTxt = enemySlots[i].GetComponentInChildren<TextMeshProUGUI>();
-                if (nameTxt != null) nameTxt.text = pkmn.Name.ToUpper();
+                if (nameTxt != null) { nameTxt.text = pkmn.Name.ToUpper(); PlaceNameAtTop(nameTxt); }
 
                 if (enemyIcons[i] != null)
                     loader?.LoadIconDirect(pkmn.Name, enemyIcons[i]);
             }
+        }
+
+        // Đưa nhãn tên lên sát mép trên của ô (thay vì đè giữa sprite).
+        // Neo top, spanning chiều ngang, canh giữa-trên; giữ nguyên font.
+        private static void PlaceNameAtTop(TextMeshProUGUI label)
+        {
+            var rt = label.rectTransform;
+            rt.anchorMin = new Vector2(0f, 1f);
+            rt.anchorMax = new Vector2(1f, 1f);
+            rt.pivot     = new Vector2(0.5f, 1f);
+            rt.offsetMin = new Vector2(2f, -26f);  // (left, bottom) → dải cao 24px sát đỉnh
+            rt.offsetMax = new Vector2(-2f, -2f);  // (right, top)
+            label.alignment = TextAlignmentOptions.Top;
         }
 
         private void UpdateConfirmButton()

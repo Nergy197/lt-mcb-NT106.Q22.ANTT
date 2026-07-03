@@ -27,6 +27,20 @@ namespace Game.Battle.UI
         public static Action                 OnPlayerSurrender;
         public static Action<bool>           OnTeraAvailabilityChanged;
         public static Action                 OnBattleConnected;
+
+        // Kết quả trận gần nhất. Cần cache vì BattleResultPanel bị SetActive(false)
+        // trong suốt trận → OnEnable chưa chạy → CHƯA subscribe OnBattleResult lúc sự
+        // kiện được phát. Panel đọc lại giá trị này trong OnEnable (khi vừa được bật).
+        public static bool   HasPendingResult;
+        public static bool   PendingResultIWon;
+        public static string PendingResultWinnerId;
+
+        public static void SetPendingResult(bool iWon, string winnerId)
+        {
+            HasPendingResult      = true;
+            PendingResultIWon     = iWon;
+            PendingResultWinnerId = winnerId ?? "";
+        }
     }
 
     [Serializable]

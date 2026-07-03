@@ -55,6 +55,15 @@ namespace Game.Battle.UI
             BattleEvents.OnBattleResult    += OnBattleResult;
             SignalRClient.OnVPRewardReceived   += OnVPReceived;
             SignalRClient.OnRankRewardReceived += OnRankReceived;
+
+            // Panel bị inactive lúc trận kết thúc nên KHÔNG nhận được OnBattleResult
+            // (chưa subscribe khi event phát). BattleUIManager bật panel lên để phản ứng
+            // với chính event đó → giờ OnEnable chạy, ta đọc lại kết quả đã cache.
+            if (BattleEvents.HasPendingResult)
+            {
+                BattleEvents.HasPendingResult = false;
+                OnBattleResult(BattleEvents.PendingResultIWon, BattleEvents.PendingResultWinnerId);
+            }
         }
 
         private void OnDisable()
@@ -72,7 +81,25 @@ namespace Game.Battle.UI
             _rankDelta = null;
             _readyToClose = false;
             if (hintText != null) hintText.text = "";
+
+            // Đặt tiêu đề thắng/thua NGAY (không đợi phần thưởng) để tránh nháy:
+            // panel vừa bật lên đang hiển thị text placeholder "CHIEN THANG!" của scene.
+            ApplyResultTitle();
+            // Ẩn số VP/RP placeholder trong lúc chờ event thưởng để không hiện nhầm.
+            if (vpDeltaText   != null) vpDeltaText.text   = "";
+            if (rankDeltaText != null) rankDeltaText.text = "";
+
             StartCoroutine(ShowResultRoutine());
+        }
+
+        private void ApplyResultTitle()
+        {
+            AudioManager.Instance?.PlaySFX(_isDraw ? null : (_iWon ? sfxVictory : sfxDefeat));
+            if (resultText != null)
+            {
+                resultText.text  = _isDraw ? "HOA!" : (_iWon ? "CHIEN THANG!" : "THAT BAI...");
+                resultText.color = _isDraw ? drawColor : (_iWon ? winColor : loseColor);
+            }
         }
 
         private void OnVPReceived(int total, int delta)    { _vpDelta   = delta; _vpTotal   = total; }
@@ -109,14 +136,8 @@ namespace Game.Battle.UI
 
         private void UpdateUI()
         {
-            AudioManager.Instance?.PlaySFX(_isDraw ? null : (_iWon ? sfxVictory : sfxDefeat));
-
-            if (resultText != null)
-            {
-                resultText.text  = _isDraw ? "HOA!" : (_iWon ? "CHIEN THANG!" : "THAT BAI...");
-                resultText.color = _isDraw ? drawColor : (_iWon ? winColor : loseColor);
-            }
-
+            // Tiêu đề thắng/thua đã đặt ngay trong OnBattleResult (ApplyResultTitle).
+            // UpdateUI chỉ lo phần thưởng VP/RP và hint sau khi đã chờ event thưởng.
             if (vpDeltaText != null)
             {
                 if (_vpDelta.HasValue)

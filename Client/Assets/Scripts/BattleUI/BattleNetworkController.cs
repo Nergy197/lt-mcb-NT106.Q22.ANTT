@@ -409,14 +409,13 @@ namespace Game.Battle.Logic
             }));
 
             hub.On<object>("BattleEnded", raw => Enqueue(() => {
-                Debug.Log($"[Battle] Event: BattleEnded, raw={raw}");
+                Debug.Log("[Battle] Event: BattleEnded");
                 var dto = J<TurnDto>(raw); // BattleEnded uses similar structure or explicit DTO
                 // Kết quả thắng/thua do server tính riêng cho người nhận (YouWon/IsDraw),
                 // không tự so WinnerPlayerId với player_id (sai khi 2 client chung PlayerPrefs).
                 bool isDraw = dto.IsDraw;
                 bool iWon   = dto.YouWon;
                 string winnerId = isDraw ? "" : (string.IsNullOrEmpty(dto.WinnerPlayerId) ? "opponent" : dto.WinnerPlayerId);
-                Debug.Log($"[Battle] BattleEnded parsed: isDraw={isDraw}, iWon={iWon}, dto.WinnerPlayerId={dto.WinnerPlayerId}, winnerId={winnerId}, myPlayerId={SignalRClient.Instance?.PlayerId}");
 
                 StartCoroutine(HandleBattleEnd(iWon, winnerId));
             }));
@@ -424,12 +423,13 @@ namespace Game.Battle.Logic
 
         private IEnumerator HandleBattleEnd(bool iWon, string winnerId)
         {
-            Debug.Log($"[Battle] HandleBattleEnd() gọi với iWon={iWon}, winnerId={winnerId}");
             AudioManager.Instance?.PlayBGM(iWon ? bgmWin : bgmLose, fadeDuration: 0.3f, loop: false);
             string msg = string.IsNullOrEmpty(winnerId)
                 ? "TRAN DAU KET THUC HOA!"
                 : (iWon ? "BAN DA CHIEN THANG!" : "BAN DA THAT BAI...");
-            Debug.Log($"[Battle] HandleBattleEnd() msg='{msg}'");
+            // Cache kết quả TRƯỚC khi phát sự kiện: BattleResultPanel đang inactive nên sẽ
+            // đọc lại giá trị này trong OnEnable (khi BattleUIManager bật nó lên).
+            BattleEvents.SetPendingResult(iWon, winnerId);
             BattleEvents.OnPrintDialog?.Invoke(msg, false);
             BattleEvents.OnBattleResult?.Invoke(iWon, winnerId ?? "");
             // Không tự về menu nữa: BattleResultPanel sẽ về menu khi người chơi click vào màn hình.
