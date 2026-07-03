@@ -19,6 +19,14 @@ namespace PokemonMMO.UI
             }
         }
 
+        private async void Start()
+        {
+            if (Game.Network.SignalRClient.Instance != null)
+            {
+                await Game.Network.SignalRClient.Instance.ConnectAsync();
+            }
+        }
+
         public void LoadBattleScene()
         {
             var matchmaking = FindFirstObjectByType<Game.Network.MatchmakingManager>();
