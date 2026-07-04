@@ -150,6 +150,11 @@ namespace Game.Chat
                 if (avatarImg != null)
                 {
                     Sprite cached = FriendListLoader.GetPlayerAvatar(msg.SenderId);
+                    if (cached == null) 
+                    {
+                        Sprite[] pool = FriendListLoader.GetGlobalAvatarPool();
+                        cached = FriendListLoader.GetOrAssignAvatar(msg.SenderId, pool);
+                    }
                     if (cached != null) avatarImg.sprite = cached;
                 }
             }

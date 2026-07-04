@@ -12,6 +12,25 @@ public class FriendListLoader : MonoBehaviour
     public Transform container;
     public Sprite[] pokemonAvatarPool;
 
+    public static FriendListLoader Instance { get; private set; }
+
+    void Awake()
+    {
+        if (Instance == null) Instance = this;
+    }
+
+    public static Sprite[] GetGlobalAvatarPool()
+    {
+        if (Instance != null) return Instance.pokemonAvatarPool;
+        var loader = FindObjectOfType<FriendListLoader>(true);
+        if (loader != null)
+        {
+            Instance = loader;
+            return loader.pokemonAvatarPool;
+        }
+        return null;
+    }
+
     // Cache avatar theo playerId — tồn tại suốt session, xóa khi logout
     private static readonly Dictionary<string, int>    _sessionAvatarCache  = new();
     private static readonly Dictionary<string, Sprite> _sessionSpriteCache  = new();
