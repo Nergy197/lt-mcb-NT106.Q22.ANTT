@@ -11,6 +11,7 @@ public class FriendsListItemUI : MonoBehaviour
     [Header("UI Refs")]
     [SerializeField] private Image avatarImage;
     [SerializeField] private TMP_Text playerNameText;
+    [SerializeField] private TMP_Text statusText; // NEW: Trạng thái Online/Offline
     [SerializeField] private Button deleteButton;
 
     private string playerId;
@@ -30,7 +31,7 @@ public class FriendsListItemUI : MonoBehaviour
             deleteButton.onClick.RemoveListener(HandleDeleteClicked);
     }
 
-    public void SetData(string id, string name, Sprite avatar)
+    public void SetData(string id, string name, Sprite avatar, bool isOnline = false, string lastSeenAt = null)
     {
         playerId      = id;
         cachedName    = name;
@@ -41,6 +42,35 @@ public class FriendsListItemUI : MonoBehaviour
 
         if (avatarImage != null && avatar != null)
             avatarImage.sprite = avatar;
+
+        if (statusText != null)
+        {
+            if (isOnline)
+            {
+                statusText.text = "<color=#00FF00>Đang Online</color>";
+            }
+            else if (!string.IsNullOrEmpty(lastSeenAt) && DateTime.TryParse(lastSeenAt, null, System.Globalization.DateTimeStyles.RoundtripKind, out DateTime lastSeenTime))
+            {
+                // Chuyển lastSeenTime về giờ địa phương nếu nó là UTC
+                if (lastSeenTime.Kind == DateTimeKind.Utc)
+                    lastSeenTime = lastSeenTime.ToLocalTime();
+                
+                TimeSpan diff = DateTime.Now - lastSeenTime;
+                
+                if (diff.TotalMinutes < 1)
+                    statusText.text = "<color=#AAAAAA>Vừa mới truy cập</color>";
+                else if (diff.TotalMinutes < 60)
+                    statusText.text = $"<color=#AAAAAA>Hoạt động {(int)diff.TotalMinutes} phút trước</color>";
+                else if (diff.TotalHours < 24)
+                    statusText.text = $"<color=#AAAAAA>Hoạt động {(int)diff.TotalHours} giờ trước</color>";
+                else
+                    statusText.text = $"<color=#AAAAAA>Hoạt động {(int)diff.TotalDays} ngày trước</color>";
+            }
+            else
+            {
+                statusText.text = "<color=#AAAAAA>Offline</color>";
+            }
+        }
     }
 
     public void BindDelete(Action<string> deleteAction)

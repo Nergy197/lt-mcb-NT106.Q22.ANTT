@@ -7,6 +7,7 @@ public class FriendItemUI : MonoBehaviour
     public Image pokemonIcon;
     public TextMeshProUGUI nameText;
     public Image statusDot;
+    public TextMeshProUGUI statusText; // Text hiển thị thời gian hoạt động
 
     private string myPlayerId;
     private string myPlayerName;
@@ -24,7 +25,7 @@ public class FriendItemUI : MonoBehaviour
         if (_bg != null) _normalColor = _bg.color;
     }
 
-    public void SetData(string id, string name, Sprite avatar, bool isOnline)
+    public void SetData(string id, string name, Sprite avatar, bool isOnline, string lastSeenAt = null)
     {
         myPlayerId   = id;
         myPlayerName = name;
@@ -35,6 +36,34 @@ public class FriendItemUI : MonoBehaviour
 
         if (statusDot != null)
             statusDot.color = isOnline ? Color.green : Color.gray;
+            
+        if (statusText != null)
+        {
+            if (isOnline)
+            {
+                statusText.text = "<color=#00FF00>Đang Online</color>";
+            }
+            else if (!string.IsNullOrEmpty(lastSeenAt) && System.DateTime.TryParse(lastSeenAt, null, System.Globalization.DateTimeStyles.RoundtripKind, out System.DateTime lastSeenTime))
+            {
+                if (lastSeenTime.Kind == System.DateTimeKind.Utc)
+                    lastSeenTime = lastSeenTime.ToLocalTime();
+                
+                System.TimeSpan diff = System.DateTime.Now - lastSeenTime;
+                
+                if (diff.TotalMinutes < 1)
+                    statusText.text = "<color=#AAAAAA>Vừa mới truy cập</color>";
+                else if (diff.TotalMinutes < 60)
+                    statusText.text = $"<color=#AAAAAA>Hoạt động {(int)diff.TotalMinutes} phút trước</color>";
+                else if (diff.TotalHours < 24)
+                    statusText.text = $"<color=#AAAAAA>Hoạt động {(int)diff.TotalHours} giờ trước</color>";
+                else
+                    statusText.text = $"<color=#AAAAAA>Hoạt động {(int)diff.TotalDays} ngày trước</color>";
+            }
+            else
+            {
+                statusText.text = "<color=#AAAAAA>Offline</color>";
+            }
+        }
 
         // Restore highlight nếu đây là người đang được chọn (sau khi PopulateUI tạo lại item)
         if (myPlayerId == _selectedId)
