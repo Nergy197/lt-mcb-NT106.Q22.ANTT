@@ -140,14 +140,14 @@ public class FriendListLoader : MonoBehaviour
             FriendsListItemUI friendsItem = obj.GetComponent<FriendsListItemUI>();
             if (friendsItem != null)
             {
-                friendsItem.SetData(data.playerId, data.playerName, avatar);
+                friendsItem.SetData(data.playerId, data.playerName, avatar, data.isOnline, data.lastSeenAt);
                 friendsItem.BindDelete(OnRemoveFriend);
                 continue;
             }
 
             FriendItemUI legacyItem = obj.GetComponent<FriendItemUI>();
             if (legacyItem != null)
-                legacyItem.SetData(data.playerId, data.playerName, avatar, data.isOnline);
+                legacyItem.SetData(data.playerId, data.playerName, avatar, data.isOnline, data.lastSeenAt);
         }
 
         StartCoroutine(RebuildLayoutNextFrame());
