@@ -758,6 +758,23 @@ namespace Game.Battle.Logic
         private async void SendTeamOrder(int[] order)
         {
             Debug.Log("[Battle] Sending Team Order: " + string.Join(",", order));
+
+            // Sắp lại _myFullTeam đúng 4 Pokemon đã chọn + đúng thứ tự chọn — khớp với cách
+            // server tự sắp lại session.Team1 (TeamOrder1.Select(i => orig1[i])). Nếu không làm
+            // bước này, GetCurrentPartyData() (nuôi BattlePartyPanel khi đổi Pokemon trong trận)
+            // vẫn dùng roster gốc 6 con theo thứ tự cũ → panel luôn hiện 4 con đầu của roster gốc
+            // thay vì 4 con thực sự được chọn.
+            var reorderedTeam = new List<TeamPreviewPokemonDto>();
+            var reorderedHp   = new List<int>();
+            foreach (var idx in order)
+            {
+                if (idx < 0 || idx >= _myFullTeam.Count) continue;
+                reorderedTeam.Add(_myFullTeam[idx]);
+                reorderedHp.Add(idx < _myTeamCurrentHp.Count ? _myTeamCurrentHp[idx] : _myFullTeam[idx].MaxHp);
+            }
+            _myFullTeam = reorderedTeam;
+            _myTeamCurrentHp = reorderedHp;
+
             try {
                 var hub = SignalRClient.Instance.Battle;
                 if (hub != null && hub.State == HubConnectionState.Connected)
